@@ -1,0 +1,85 @@
+.zozo-content-carousel-wrapper .content-carousel-slider .owl-item {
+    overflow: hidden;
+}
+.vc_row .vc_images_carousel .vc_carousel-indicators .vc_active { 
+    background: none; 
+}
+
+/* ================================================================
+ * OWL CAROUSEL
+ * ================================================================ */
+.zozo-content-carousel-wrapper .content-carousel-slider .owl-item {
+    overflow: hidden;
+}
+.owl-carousel .owl-wrapper-outer {
+    z-index: 100;
+}
+.owl-carousel.owl-theme .owl-controls .owl-nav {
+    margin-top: 0;
+}
+.owl-carousel.owl-theme .owl-controls .owl-nav div {
+    text-align: center;
+    font-size: 16px;
+    opacity: 1;
+    filter: alpha(opacity = 1);
+    line-height: 22px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background: transparent;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    height:25px;
+    width:25px;
+    border:1px solid;
+    position: absolute;
+    z-index: 101;
+    top:-35px;
+    right:0;
+}
+.owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
+    margin-right: 10px;
+    right: 20px;
+}
+.owl-carousel.owl-theme .owl-controls .owl-nav div:hover {
+    color: #222;
+}
+.owl-carousel.owl-theme .owl-dots {
+    text-align: center;
+    margin-top:25px;
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.owl-carousel.owl-theme .owl-controls .owl-dots span {
+    width: 22px;
+    height: 7px;
+    background: #cbcbcb;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    opacity: 1;
+    display: block;
+    margin: 5px 2px;
+}
+.owl-carousel.owl-theme .owl-controls .owl-dots .owl-dot.active span {
+    background:#000;
+}
+.owl-slides-container {
+    position: relative;
+}
+.owl-carousel .itemsScale .owl-item img {
+    width: 100%;
+}
+.zozo-client-slider-wrapper .owl-carousel .owl-item img{
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+}

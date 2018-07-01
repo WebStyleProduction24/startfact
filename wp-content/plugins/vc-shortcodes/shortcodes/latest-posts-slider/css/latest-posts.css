@@ -1,0 +1,82 @@
+.break-news {
+    height: 50px;
+    line-height: 50px;
+    margin: 15px 0;
+    overflow: hidden;
+    padding: 0 30px 0 160px;
+    position: relative;
+    border: 1px solid #e8e8e8;
+}
+span.lbl {
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    max-width: 160px;
+    overflow: hidden;
+    padding: 0 15px;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+    background: #f1f1f1 none repeat scroll 0 0;
+}
+.break-news-slider {
+    overflow: visible;
+}
+.slick-slider {
+    -moz-user-select: none;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y;
+}
+.slick-list {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+    transform: translate3d(0px, 0px, 0px);
+}
+.break-news-slider .slick-prev {
+    right: -5px;
+}
+.break-news-slider .slick-prev, .break-news-slider .slick-next {
+    position: absolute;
+    right: 4px;
+    top: 16px;
+}
+.break-news-slider.slick-initialized.slick-slider.slick-vertical {
+    margin-left: 25px;
+}
+.slick-next, .slick-prev {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #777;
+    cursor: pointer;
+    font-size: 0;
+    height: 28px;
+    line-height: 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: center;
+    width: 0px;
+}
+
+.slick-prev i {
+    display: block;
+    font-size: 15px;
+    left: -35px;
+    position: absolute;
+}
+.slick-next i {
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+}

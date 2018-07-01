@@ -1,0 +1,194 @@
+# Translation of Plugins - menu-image - Development (trunk) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - menu-image - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-09-23 07:14:37+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - menu-image - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://makeyoulivebetter.org.ua/"
+msgstr "http://makeyoulivebetter.org.ua/"
+
+#. Author of the plugin/theme
+msgid "Alex Davyskiba aka Zviryatko"
+msgstr "Alex Davyskiba aka Zviryatko"
+
+#. Description of the plugin/theme
+msgid "Provide uploading images to menu item"
+msgstr "提供上傳選單項目的圖像"
+
+#. Plugin URI of the plugin/theme
+msgid "http://html-and-cms.com/plugins/menu-image/"
+msgstr "http://html-and-cms.com/plugins/menu-image/"
+
+#. Plugin Name of the plugin/theme
+msgid "Menu Image"
+msgstr "選單圖像"
+
+#: menu-image.php:749
+msgid "Cancel"
+msgstr "取消"
+
+#: menu-image.php:735
+msgid "Original: %s"
+msgstr "原圖： %s"
+
+#: menu-image.php:728
+msgid "To the top"
+msgstr "至頂"
+
+#: menu-image.php:725
+msgid "Down one"
+msgstr "下移一層"
+
+#: menu-image.php:724
+msgid "Up one"
+msgstr "上移一層"
+
+#: menu-image.php:723
+msgid "Move"
+msgstr "移動"
+
+#: menu-image.php:717
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr "若目前的主題支援，將會顯示選單描述。"
+
+#: menu-image.php:715
+msgid "Description"
+msgstr "描述"
+
+#: menu-image.php:702
+msgid "Link Relationship (XFN)"
+msgstr "連結關聯性（XFN）"
+
+#: menu-image.php:696
+msgid "CSS Classes (optional)"
+msgstr "CSS 類別（選擇性）"
+
+#: menu-image.php:691
+msgid "Open link in a new window/tab"
+msgstr "以新視窗／分頁開起連結"
+
+#: menu-image.php:684
+msgid "Title Attribute"
+msgstr "標題屬性"
+
+#: menu-image.php:678
+msgid "Navigation Label"
+msgstr "瀏覽標籤"
+
+#: menu-image.php:671
+msgid "URL"
+msgstr "網址"
+
+#: menu-image.php:660 menu-image.php:662
+msgid "Edit Menu Item"
+msgstr "編輯選單項目"
+
+#: menu-image.php:658
+msgid "Move down"
+msgstr "向下移動"
+
+#: menu-image.php:645
+msgid "Move up"
+msgstr "向上移動"
+
+#: menu-image.php:630
+msgid "sub item"
+msgstr "子項目"
+
+#. translators: %s: title of menu item in draft status
+#: menu-image.php:617
+msgid "%s (Pending)"
+msgstr "%s （擱置中）"
+
+#. translators: %s: title of menu item which is invalid
+#: menu-image.php:613
+msgid "%s (Invalid)"
+msgstr "%s （無效）"
+
+#: menu-image.php:456
+msgid "After"
+msgstr "後方"
+
+#: menu-image.php:455
+msgid "Before"
+msgstr "前方"
+
+#: menu-image.php:454
+msgid "Below"
+msgstr "下方"
+
+#: menu-image.php:453
+msgid "Above"
+msgstr "上方"
+
+#: menu-image.php:452
+msgid "Hide"
+msgstr "隱藏"
+
+#: menu-image.php:449
+msgid "Title position"
+msgstr "標題位置"
+
+#: menu-image.php:436
+msgid "Original Size"
+msgstr "原始大小"
+
+#: menu-image.php:431
+msgid "Image size"
+msgstr "圖像大小"
+
+#: menu-image.php:398
+msgid "Set image on hover"
+msgstr "圖像懸停設定"
+
+#: menu-image.php:395
+msgid "Set menu item image on hover"
+msgstr "選單項目懸停設定"
+
+#: menu-image.php:395
+msgid "Change menu item image on hover"
+msgstr "選單項目圖像懸停變更"
+
+#: menu-image.php:394
+msgid "Image on hover"
+msgstr "圖像懸停"
+
+#: menu-image.php:388 menu-image.php:399 menu-image.php:748
+msgid "Remove"
+msgstr "移除"
+
+#: menu-image.php:387
+msgid "Set image"
+msgstr "設定圖像"
+
+#: menu-image.php:384
+msgid "Set menu item image"
+msgstr "設定選單項目圖像"
+
+#: menu-image.php:384
+msgid "Change menu item image"
+msgstr "選單項目圖像變更"
+
+#: menu-image.php:383
+msgid "Menu image"
+msgstr "選單圖像"
+
+#: menu-image.php:339
+msgid "Select"
+msgstr "選擇"
+
+#: menu-image.php:338
+msgid "Chose menu image"
+msgstr "選擇選單圖像"
+
+#: menu-image.php:142
+msgid "Image"
+msgstr "圖像"

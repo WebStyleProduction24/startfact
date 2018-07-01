@@ -1,0 +1,162 @@
+.bg-6 {
+    background-color: #181818;
+}
+.pad-b-50 {
+    padding-bottom: 50px;
+}
+.pad-t-50 {
+    padding-top: 50px;
+}
+.call-box-1 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.call-box-1 h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+.call-box-1 h3 span {
+    color: #bf9865;
+    font-weight: 700;
+}
+.call-box-1 p {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.call-box-2 {
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 60px 0;
+    position: relative;
+    width: 100%;
+}
+.call-box-2 h3 {
+    font-weight: 400;
+    margin-top: 0;
+}
+.call-box-2 h4 {
+    color: #181818;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.call-box-2 p {
+    margin-bottom: 0;
+}
+.call-box-2 i {
+    margin-right: 5px;
+}
+.call-box-2-info {
+    background-color: #f5f5f5;
+    transition: all 0.3s ease-in-out 0s;
+}
+.call-box-2-info:hover {
+    background-color: #e7e7e7;
+}
+.call-box-3 {
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 70px 0;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+}
+.call-box-3 h3 {
+    margin-top: 0;
+}
+.call-box-3 h3 span {
+    font-weight: 700;
+}
+.call-box-3 p {
+    margin-bottom: 0;
+}
+.btn-gray, .btn-gray:focus {
+    background-color: #3e3e3e;
+    border: 1px solid #3e3e3e;
+    color: #fff;
+}
+.btn-l {
+    font-size: 11px;
+    padding: 15px 70px;
+}
+.promo-btn {
+    border-radius: 2px;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none
+}
+.btn-gray:hover {
+    background-color: #646464;
+    border: 1px solid #646464;
+    color: #fff;
+}
+.btn-orange, .btn-orange:focus {
+    background-color: #bf9865;
+    border: 1px solid #bf9865;
+    color: #fff;
+}
+.btn-orange:hover {
+    background-color: #b4874c;
+    border: 1px solid #b4874c;
+    color: #181818;
+}
+.btn-dark, .btn-dark:focus {
+    background: #181818 none repeat scroll 0 0;
+    border: 1px solid #181818;
+    color: #fff;
+}
+.btn-dark:hover {
+    background-color: #565656;
+    border: 1px solid #565656;
+    color: #fff;
+}
+.overlay-light::before {
+    background-color: #fff;
+    opacity: 0.5;
+}
+.overlay-dark::before, .overlay-light::before, .overlay-gray::before, .overlay-orange::before, .overlay-blue::before, .overlay-red::before {
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.overlay-orange::before {
+    background-color: #e0bb81;
+    opacity: 0.5;
+}
+.overlay-blue::before {
+    background-color: #4d5c71;
+    opacity: 0.5;
+}
+.overlay-red::before {
+    background-color: #ea4a4c;
+    opacity: 0.5;
+}
+.overlay-dark::before {
+    background-color: #000;
+    opacity: 0.8;
+}
+.asvc-overlay h3, p, a {
+    position: relative;
+}
+.v-align {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.promo-btn {
+    color: #fff !important;
+}

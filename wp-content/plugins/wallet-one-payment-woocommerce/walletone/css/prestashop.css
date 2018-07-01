@@ -1,0 +1,108 @@
+.w1-tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.w1-tabs nav a {
+        color: #00aff0;
+    text-decoration: none;
+    margin: 0 -1px 0 0;
+    font-size: 1.5em;
+    vertical-align: top;
+    position: relative;
+    top: -5px;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    padding: 8px 25px 8px 25px;
+}
+
+.w1-tabs nav a.active, .w1-tabs nav a:hover {
+    background-color: #F5F8F9;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+
+.w1-tabs nav a.active:hover {
+    cursor: default;
+}
+
+.w1-tabs .content {
+    margin: 0;
+    padding: 10px;
+    background-color: #F5F8F9;
+    border: 1px solid #ccc;
+    border-radius: 0 3px 3px 3px;
+}
+
+.w1-tabs .media {
+    padding: 20px;
+    position: relative;
+}
+
+.w1-tabs .media-left, .media-right, .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.w1-tabs .media-left, .media > .pull-left {
+    padding-right: 10px;
+}
+
+.w1-tabs .media, .media-body {
+    overflow: hidden;
+}
+
+.w1-tabs .media blockquote {
+    border-left: 1px solid #ecedf1;
+    font-size: 17.5px;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+}
+
+.w1-tabs .media-body blockquote p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.w1-tabs .form-group {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    margin: 0 !important;
+}
+
+.w1-tabs .form-group:first-child {
+    border-top: none;
+}
+
+.w1-tabs .payment-label {
+    font-weight: normal;
+    font-size: 1.2em
+}
+
+.w1-tabs .switch-label {
+    padding-right: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 1199px) {
+    .switch-label {
+        padding: 10px 0 0 0 !important;
+        text-align: left !important;
+        width: 75% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1309px) {
+    .switch-label {
+        padding: 0 !important;
+        text-align: left !important;
+        width: 75% !important;
+    }
+}
+

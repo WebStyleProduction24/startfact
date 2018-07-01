@@ -1,0 +1,64 @@
+/* Alert Boxes
+====================================*/
+.asvc-notification {
+font-size:14px;
+line-height:18px;
+margin-bottom:15px;
+position:relative;
+padding:13px 40px 13px 18px;
+border-radius:2px;
+box-shadow:0 1px 1px 0 rgba(0,0,0,0.03);
+}
+
+.asvc-notification p {
+margin:0;
+line-height:24px;
+}
+
+.asvc-notification span {
+font-weight:600;
+}
+
+.asvc-notification i {
+font-size:18px;
+padding-right:10px;
+}
+
+.asvc-notification.success,.asvc-notification.success strong {
+background-color:#EBF6E0;
+color:#5f9025;
+border:1px solid #b3dc82;
+}
+
+.asvc-notification.error,.asvc-notification.error strong {
+background-color:#ffe9e9;
+color:#de5959;
+border:1px solid #fbc4c4;
+}
+
+.asvc-notification.warning,.asvc-notification.warning strong {
+background-color:#FBFADD;
+color:#8f872e;
+border:1px solid #ded58a;
+}
+
+.asvc-notification.notice,.asvc-notification.notice strong {
+background-color:#E9F7FE;
+color:#5091b2;
+border:1px solid #b6d7e8;
+}
+
+.asvc-notification strong {
+border:none!important;
+}
+
+.asvc-notification.success .close,.asvc-notification.error .close,.asvc-notification.warning .close,.asvc-notification.notice .close {
+padding:0 9px;
+position:absolute;
+right:10px;
+top:13px;
+display:block;
+height:8px;
+width:8px;
+cursor:pointer;
+}

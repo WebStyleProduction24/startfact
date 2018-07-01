@@ -1,0 +1,194 @@
+# Translation of Plugins - menu-image - Development (trunk) in Greek
+# This file is distributed under the same license as the Plugins - menu-image - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-07-06 07:17:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: el_GR\n"
+"Project-Id-Version: Plugins - menu-image - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://makeyoulivebetter.org.ua/"
+msgstr "http://makeyoulivebetter.org.ua/"
+
+#. Author of the plugin/theme
+msgid "Alex Davyskiba aka Zviryatko"
+msgstr "Alex Davyskiba aka Zviryatko"
+
+#. Description of the plugin/theme
+msgid "Provide uploading images to menu item"
+msgstr "Παρέχει δυνατότητα για μεταφόρτωση εικόνων σε στοιχείο μενού"
+
+#. Plugin URI of the plugin/theme
+msgid "http://html-and-cms.com/plugins/menu-image/"
+msgstr "http://html-and-cms.com/plugins/menu-image/"
+
+#. Plugin Name of the plugin/theme
+msgid "Menu Image"
+msgstr "Menu Image"
+
+#: menu-image.php:749
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: menu-image.php:735
+msgid "Original: %s"
+msgstr "Αρχικές διαστάσεις %s"
+
+#: menu-image.php:728
+msgid "To the top"
+msgstr "Στην κορυφή"
+
+#: menu-image.php:725
+msgid "Down one"
+msgstr "Ένα κάτω"
+
+#: menu-image.php:724
+msgid "Up one"
+msgstr "Ένα πάνω"
+
+#: menu-image.php:723
+msgid "Move"
+msgstr "Μετακίνηση"
+
+#: menu-image.php:717
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr "Η περιγραφή θα εμφανιστεί στο μενού μόνο αν το θέμα εμφάνισης υποστηρίζει τη δυνατότητα αυτή."
+
+#: menu-image.php:715
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: menu-image.php:702
+msgid "Link Relationship (XFN)"
+msgstr "Link Relationship (XFN)"
+
+#: menu-image.php:696
+msgid "CSS Classes (optional)"
+msgstr "Κλάσεις CSS (προαιρετικό)"
+
+#: menu-image.php:691
+msgid "Open link in a new window/tab"
+msgstr "Άνοιγμα συνδέσμου σε νέο παράθυρο/καρτέλα"
+
+#: menu-image.php:684
+msgid "Title Attribute"
+msgstr "Ιδιότητα TITLE"
+
+#: menu-image.php:678
+msgid "Navigation Label"
+msgstr "Ετικέτα πλοήγησης"
+
+#: menu-image.php:671
+msgid "URL"
+msgstr "Διεύθυνση URL"
+
+#: menu-image.php:660 menu-image.php:662
+msgid "Edit Menu Item"
+msgstr "Επεξεργασία στοιχείου μενού"
+
+#: menu-image.php:658
+msgid "Move down"
+msgstr "Μετακίνηση προς τα κάτω"
+
+#: menu-image.php:645
+msgid "Move up"
+msgstr "Μετακίνηση προς τα πάνω"
+
+#: menu-image.php:630
+msgid "sub item"
+msgstr "Επιμέρους στοιχείο"
+
+#. translators: %s: title of menu item in draft status
+#: menu-image.php:617
+msgid "%s (Pending)"
+msgstr "%s (Εκκρεμή)"
+
+#. translators: %s: title of menu item which is invalid
+#: menu-image.php:613
+msgid "%s (Invalid)"
+msgstr "%s (Άκυρα)"
+
+#: menu-image.php:456
+msgid "After"
+msgstr "Μετά"
+
+#: menu-image.php:455
+msgid "Before"
+msgstr "Πριν"
+
+#: menu-image.php:454
+msgid "Below"
+msgstr "Κάτω"
+
+#: menu-image.php:453
+msgid "Above"
+msgstr "Πάνω"
+
+#: menu-image.php:452
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+#: menu-image.php:449
+msgid "Title position"
+msgstr "Θέση τίτλου"
+
+#: menu-image.php:436
+msgid "Original Size"
+msgstr "Αρχικό μέγεθος"
+
+#: menu-image.php:431
+msgid "Image size"
+msgstr "Μέγεθος εικόνας"
+
+#: menu-image.php:398
+msgid "Set image on hover"
+msgstr "Ορίστε εικόνα για όταν το ποντίκι περνάει από πάνω"
+
+#: menu-image.php:395
+msgid "Set menu item image on hover"
+msgstr "Ορίστε εικόνα μενού για όταν το ποντίκι περνάει από πάνω"
+
+#: menu-image.php:395
+msgid "Change menu item image on hover"
+msgstr "Αλλάξτε την εικόνα μενού για όταν το ποντίκι περνάει από πάνω"
+
+#: menu-image.php:394
+msgid "Image on hover"
+msgstr "Εικόνα όταν το ποντίκι περνάει από πάνω"
+
+#: menu-image.php:388 menu-image.php:399 menu-image.php:748
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: menu-image.php:387
+msgid "Set image"
+msgstr "Ορισμός εικόνας"
+
+#: menu-image.php:384
+msgid "Set menu item image"
+msgstr "Ορίστε εικόνα αντικειμένου μενού"
+
+#: menu-image.php:384
+msgid "Change menu item image"
+msgstr "Αλλαγή εικόνας αντικειμένου μενού"
+
+#: menu-image.php:383
+msgid "Menu image"
+msgstr "ΕΙκόνα μενού"
+
+#: menu-image.php:339
+msgid "Select"
+msgstr "Επιλογή"
+
+#: menu-image.php:338
+msgid "Chose menu image"
+msgstr "Επιλέξτε εικόνα μενου"
+
+#: menu-image.php:142
+msgid "Image"
+msgstr "Εικόνα"

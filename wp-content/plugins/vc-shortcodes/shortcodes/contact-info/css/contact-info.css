@@ -1,0 +1,6 @@
+.contact_info {
+    list-style: outside none none;
+}
+.contact_info > li span {
+    padding-left: 7px;
+}

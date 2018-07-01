@@ -1,0 +1,194 @@
+# Translation of Plugins - menu-image - Development (trunk) in Dutch
+# This file is distributed under the same license as the Plugins - menu-image - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-03-24 11:11:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - menu-image - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://makeyoulivebetter.org.ua/"
+msgstr "http://makeyoulivebetter.org.ua/"
+
+#. Author of the plugin/theme
+msgid "Alex Davyskiba aka Zviryatko"
+msgstr "Alex Davyskiba oftewel Zviryatko"
+
+#. Description of the plugin/theme
+msgid "Provide uploading images to menu item"
+msgstr "Biedt de mogelijkheid afbeeldingen te uploaden voor menu-items"
+
+#. Plugin URI of the plugin/theme
+msgid "http://html-and-cms.com/plugins/menu-image/"
+msgstr "http://html-and-cms.com/plugins/menu-image/"
+
+#. Plugin Name of the plugin/theme
+msgid "Menu Image"
+msgstr "Menu-afbeelding"
+
+#: menu-image.php:749
+msgid "Cancel"
+msgstr "Be&euml;indig"
+
+#: menu-image.php:735
+msgid "Original: %s"
+msgstr "Origineel: %s"
+
+#: menu-image.php:728
+msgid "To the top"
+msgstr "Helemaal naar boven"
+
+#: menu-image.php:725
+msgid "Down one"
+msgstr "Eén naar beneden"
+
+#: menu-image.php:724
+msgid "Up one"
+msgstr "Eén naar boven"
+
+#: menu-image.php:723
+msgid "Move"
+msgstr "Verplaatsen"
+
+#: menu-image.php:717
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr "De beschrijving word weergegeven in het menu als het huidige thema dit ondersteunt."
+
+#: menu-image.php:715
+msgid "Description"
+msgstr "Beschrijving"
+
+#: menu-image.php:702
+msgid "Link Relationship (XFN)"
+msgstr "Linkrelatie (XFN)"
+
+#: menu-image.php:696
+msgid "CSS Classes (optional)"
+msgstr "CSS-klassen (optioneel)"
+
+#: menu-image.php:691
+msgid "Open link in a new window/tab"
+msgstr "Open link in nieuw venster/tabblad"
+
+#: menu-image.php:684
+msgid "Title Attribute"
+msgstr "Titel-attribuut"
+
+#: menu-image.php:678
+msgid "Navigation Label"
+msgstr "Navigatie-label"
+
+#: menu-image.php:671
+msgid "URL"
+msgstr "URL"
+
+#: menu-image.php:660 menu-image.php:662
+msgid "Edit Menu Item"
+msgstr "Aanpassen menu-item"
+
+#: menu-image.php:658
+msgid "Move down"
+msgstr "naar beneden halen"
+
+#: menu-image.php:645
+msgid "Move up"
+msgstr "omhoog halen"
+
+#: menu-image.php:630
+msgid "sub item"
+msgstr "Sub-item"
+
+#. translators: %s: title of menu item in draft status
+#: menu-image.php:617
+msgid "%s (Pending)"
+msgstr "%s (Wachtend)"
+
+#. translators: %s: title of menu item which is invalid
+#: menu-image.php:613
+msgid "%s (Invalid)"
+msgstr "%s (Ongeldig)"
+
+#: menu-image.php:456
+msgid "After"
+msgstr "Na"
+
+#: menu-image.php:455
+msgid "Before"
+msgstr "Voor"
+
+#: menu-image.php:454
+msgid "Below"
+msgstr "Onderaan"
+
+#: menu-image.php:453
+msgid "Above"
+msgstr "Bovenstaand"
+
+#: menu-image.php:452
+msgid "Hide"
+msgstr "Verbergen"
+
+#: menu-image.php:449
+msgid "Title position"
+msgstr "Titel-positie"
+
+#: menu-image.php:436
+msgid "Original Size"
+msgstr "Orginele grootte"
+
+#: menu-image.php:431
+msgid "Image size"
+msgstr "Afbeeldingsgrootte"
+
+#: menu-image.php:398
+msgid "Set image on hover"
+msgstr "Instellen afbeelding bij aanwijzen"
+
+#: menu-image.php:395
+msgid "Set menu item image on hover"
+msgstr "Instellen menu-item bij aanwijzen"
+
+#: menu-image.php:395
+msgid "Change menu item image on hover"
+msgstr "Verander afbeelding van menu-item bij aanwijzen"
+
+#: menu-image.php:394
+msgid "Image on hover"
+msgstr "Afbeelding bij aanwijzen"
+
+#: menu-image.php:388 menu-image.php:399 menu-image.php:748
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: menu-image.php:387
+msgid "Set image"
+msgstr "stel afbeelding in"
+
+#: menu-image.php:384
+msgid "Set menu item image"
+msgstr "Instellen afbeelding van menu-item"
+
+#: menu-image.php:384
+msgid "Change menu item image"
+msgstr "Aanpassen afbeelding van menu-item"
+
+#: menu-image.php:383
+msgid "Menu image"
+msgstr "Menu-afbeelding"
+
+#: menu-image.php:339
+msgid "Select"
+msgstr "Selecteren"
+
+#: menu-image.php:338
+msgid "Chose menu image"
+msgstr "Kies menu-afbeelding"
+
+#: menu-image.php:142
+msgid "Image"
+msgstr "Afbeelding"

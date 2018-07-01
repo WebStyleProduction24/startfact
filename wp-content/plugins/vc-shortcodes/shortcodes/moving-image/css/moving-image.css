@@ -1,0 +1,127 @@
+.vca-moving-image img {
+    width: auto !important;
+    display: inline-block !important;
+}
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.vca-floating-vertical {
+    animation: 2s linear 0s normal none infinite running vca_float;
+    position: relative;
+}
+.vca-floating-horizontal {
+    animation: 2s linear 0s normal none infinite running vca_floatx;
+    position: relative;
+}
+.vca-floating-tossing {
+    animation: 2s linear 0s normal none infinite running mk_tossing;
+}
+.vca-floating-pulse {
+    animation: 2s linear 0s normal none infinite running vca_pulse;
+}
+@-webkit-keyframes vca_float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 15px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes vca_float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 15px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-webkit-keyframes vca_floatx {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 15px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@keyframes vca_floatx {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 15px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@-webkit-keyframes vca_tossing {
+    0% {
+        -webkit-transform: rotate(-6deg);
+    }
+    50% {
+        -webkit-transform: rotate(6deg);
+    }
+    100% {
+        -webkit-transform: rotate(-6deg);
+    }
+}
+@keyframes vca_tossing {
+    0% {
+        -webkit-transform: rotate(-6deg);
+                        transform: rotate(-6deg);
+    }
+    50% {
+        -webkit-transform: rotate(6deg);
+                        transform: rotate(6deg);
+    }
+    100% {
+        -webkit-transform: rotate(-6deg);
+                        transform: rotate(-6deg);
+    }
+}
+@-webkit-keyframes vca_pulse {
+    0% {
+        -webkit-transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+@keyframes vca_pulse {
+    0% {
+        -webkit-transform: scale(0.9);
+                        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1);
+                        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+                        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}

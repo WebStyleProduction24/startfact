@@ -1,0 +1,126 @@
+.mgt-process-wrapper {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mgt-process-wrapper.text-left {
+    text-align: left;
+}
+.mgt-process-wrapper.text-right {
+    text-align: right;
+}
+.mgt-process-wrapper.text-center {
+    text-align: center;
+}
+.mgt-process-wrapper h5.mgt-process-title {
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.mgt-process-wrapper .mgt-process-text {
+    color: #828282;
+}
+.mgt-process-wrapper.text-white h5.mgt-process-title {
+    color: #ffffff;
+}
+.mgt-process-wrapper.text-white .mgt-process-text {
+    color: #b8b8b8;
+}
+.mgt-process-wrapper .mgt-process-icon-wrapper {
+    font-size: 50px;
+    line-height: 160px;
+    background: #2C99ED;
+    width: 160px;
+    height: 160px;
+    display: table;
+    margin: 0 auto;
+    color: #2A2F35;
+    margin-bottom: 30px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    cursor: default;
+}
+.mgt-process-wrapper.mgt-process-icon-size-small .mgt-process-icon-wrapper {
+    font-size: 40px;
+}
+.mgt-process-wrapper.mgt-process-icon-size-large .mgt-process-icon-wrapper {
+    font-size: 60px;
+}
+.mgt-process-wrapper .mgt-process-icon-wrapper:after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    width: 158px;
+    height: 158px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 10;
+}
+.mgt-process-wrapper.mgt-process-border-circle .mgt-process-icon-wrapper,
+.mgt-process-wrapper.mgt-process-border-circle .mgt-process-icon-wrapper:after {
+    border-radius: 50%;
+}
+.mgt-process-wrapper.mgt-process-border-rounded .mgt-process-icon-wrapper,
+.mgt-process-wrapper.mgt-process-border-rounded .mgt-process-icon-wrapper:after {
+    border-radius: 5px;
+}
+.mgt-process-wrapper .mgt-process-icon-wrapper .mgt-process-icon i:before {
+    display: block;
+    width: 100%;
+}
+.mgt-process-wrapper .mgt-process-icon-wrapper .mgt-process-icon {
+    position: relative;
+    z-index: 15;
+}
+.mgt-process-wrapper .mgt-process-icon-wrapper .mgt-process-icon .vc-material { 
+    line-height: inherit;
+}
+.mgt-process-wrapper.mgt-process-dots-none:after {
+    display: none;
+}
+.mgt-process-wrapper:after {
+    background-image: radial-gradient(circle closest-side, #d2d2d2 99%, transparent 100%);
+    background-position: 50% 70%;
+    background-repeat: repeat-x;
+    background-size: 25px 4px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 77px;
+    width: 100%;
+    z-index: 1;
+}
+.mgt-process-wrapper.mgt-process-dots-right:after {
+    left: 125px;
+}
+.mgt-process-wrapper.mgt-process-dots-left:after {
+    left: -125px;
+}
+.vc_col-sm-2 .mgt-process-wrapper .mgt-process-icon-wrapper {
+    font-size: 44px;
+    line-height: 110px;
+    width: 110px;
+    height: 110px;
+}
+.vc_col-sm-2 .mgt-process-wrapper .mgt-process-icon-wrapper:after {
+    width: 108px;
+    height: 108px;
+}
+.vc_col-sm-2 .mgt-process-wrapper:after {
+    top: 50px;
+}
+.mgt-process-wrapper.mgt-process-shadow:hover .mgt-process-icon-wrapper {
+    box-shadow: 0px 9px 25px 0px rgba(0,0,0,0.15);
+    transform: translate3d(0px, -6px, 0px);
+    -moz-transform: translate3d(0px, -6px, 0px);
+    -webkit-transform: translate3d(0px, -6px, 0px);
+}
+.mgt-promo-block-wrapper.mgt-promo-block-shadow, .mgt-process-wrapper.mgt-process-shadow .mgt-process-icon-wrapper, .mgt-promo-block-wrapper.mgt-promo-block-hover {
+    transition: all 0.3s ease-in-out 0s;
+}

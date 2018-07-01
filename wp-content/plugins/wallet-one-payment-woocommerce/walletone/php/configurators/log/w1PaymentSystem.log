@@ -1,0 +1,5 @@
+2016-12-13T11:39:20+00:00 ERROR WalletOne\Classes\StandardsMethods\W1Settings Поле Индентификатор (номер кассы) не должно быть пустым.
+2016-12-13T11:39:20+00:00 ERROR WalletOne\Classes\StandardsMethods\W1Settings Поле Ключ (ЭЦП) интернет-магазина не должно быть пустым.
+2016-12-13T11:39:20+00:00 ERROR WalletOne\Classes\StandardsMethods\W1Settings Поле Идентификатор валюты по умолчанию не должно быть пустым.
+2016-12-13T11:39:20+00:00 ERROR WalletOne\Classes\StandardsMethods\W1Html Данный файл C:/OpenServer/domains/wordpresswoo.cms/wp-content/plugins/wallet-one-payment-woocommerce/walletone/Classes/StandardsMethods/../files/payments_out.php не существует.
+2016-12-13T11:39:20+00:00 ERROR WalletOne\Classes\StandardsMethods\W1Html Данный файл C:/OpenServer/domains/wordpresswoo.cms/wp-content/plugins/wallet-one-payment-woocommerce/walletone/Classes/StandardsMethods/../files/payments_out.php не существует.

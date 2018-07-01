@@ -1,0 +1,89 @@
+.skill-bar-container {
+text-align:left!important;
+margin:0!important;
+}
+
+.skill-bar {
+list-style:none!important;
+margin-bottom:20px;
+position:relative;
+}
+
+.skill-bar .bar-wrap {
+margin-bottom:13px;
+background-color:#e6e6e6;
+padding:0;
+margin-right:80px;
+border-radius:8px;
+}
+.skill-bar h5 {
+font-weight:600;
+margin-bottom:15px;
+}
+.skill-bar span {
+height:10px;
+width:0;
+display:block;
+background-color:#969696;
+border-radius:8px;
+}
+
+.skill-bar p {
+padding-top:10px;
+font-weight:600;
+line-height:0;
+}
+
+.skill-bar span {
+overflow:visible!important;
+}
+
+.skill-bar strong {
+position:absolute;
+width:30px;
+height:30px;
+text-align:center;
+right:15px;
+top:20px;
+color:#333333;
+line-height:30px!important;
+font-size:13px!important;
+display:block;
+border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+-o-border-radius:50%;
+}
+
+.skill-bar.compact h5 {
+font-weight:400;
+margin:0 0 0 15px;
+color:#fff;
+line-height:32px;
+font-size:13px;
+}
+.skill-bar.compact span {
+height:30px;
+width:0;
+display:block;
+border-radius:15px;
+position:relative;
+}
+.skill-bar.compact .bar-wrap {
+margin-bottom:13px;
+background-color:#e6e6e6;
+padding:0;
+border-radius:15px;
+margin-right:0;
+}
+.skill-bar.compact strong {
+top:0;
+right:15px;
+font-weight:400;
+color:#fff;
+opacity:0;
+}
+
+.skill-bar span {
+    background-color: #ff3368;
+}

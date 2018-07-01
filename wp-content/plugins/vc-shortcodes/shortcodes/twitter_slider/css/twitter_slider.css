@@ -1,0 +1,42 @@
+.asvc-twitter-slider-wrapper{
+    margin-top:100px;
+    position:relative;
+}
+.asvc-twitter-slider-wrapper:before{
+    content: "\f099";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    color:#fff;
+    height:48px;
+    width:48px;
+    line-height:48px;
+    border:1px solid #fff;
+    position:absolute;
+    right: 0;
+    left:0;
+    top: -80px;
+    text-align:center;
+    margin:0 auto;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.asvc-twitter-slider-wrapper .tweet-list span{
+    display:block;
+    text-align:center;
+    /*color:#fff;*/
+    font-size:20px;
+}
+.asvc-twitter-slider-wrapper .tweet-list span.status{
+    margin-bottom:10px;
+}
+.asvc-twitter-slider-wrapper .tweet-list span.meta{
+    font-size:17px;
+    font-style:italic;
+}
+/*.asvc-twitter-slider-wrapper .tweet-list span.meta > a:hover{
+    color:#fff;
+}*/

@@ -1,0 +1,14 @@
+.kc-dropcaps .dropcaps-text {
+    background: #42bce2 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 40px;
+    font-weight: 700;
+    height: 45px;
+    line-height: 45px;
+    margin: 5px 18px 0 0;
+    position: relative;
+    text-align: center;
+    width: 45px;
+}

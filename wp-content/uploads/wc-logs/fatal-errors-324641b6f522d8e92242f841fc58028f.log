@@ -1,0 +1,22 @@
+2018-01-15T13:54:30+00:00 CRITICAL Class 'QodefTwitterApi' not found
+
+2018-01-15T20:24:06+00:00 CRITICAL Class 'QodefTwitterApi' not found
+
+2018-02-06T10:25:27+00:00 CRITICAL Class 'QodefTwitterApi' not found
+
+2018-02-09T13:57:42+00:00 CRITICAL Uncaught exception 'Exception' with message 'Element must be mapped in system' in /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php:1432
+Stack trace:
+#0 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php(1490): Vc_Shortcodes_Manager->getElementClass('vc_btn')
+#1 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/vc-hoverbox.php(47): Vc_Shortcodes_Manager->render(Array)
+#2 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/templates/shortcodes/vc_hoverbox.php(49): WPBakeryShortCode_VC_Hoverbox->renderButton(Array)
+#3 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php(473): include('/home/p450909/w...')
+#4 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php(453): WPBakeryShortCode->loadTemplate(Array, '\xD0\xB2\xD0\xB8\xD0\xB4\xD0\xB5\xD0\xBE \xD0
+
+2018-02-09T13:57:44+00:00 CRITICAL Uncaught exception 'Exception' with message 'Element must be mapped in system' in /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php:1432
+Stack trace:
+#0 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php(1490): Vc_Shortcodes_Manager->getElementClass('vc_btn')
+#1 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/vc-hoverbox.php(47): Vc_Shortcodes_Manager->render(Array)
+#2 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/templates/shortcodes/vc_hoverbox.php(49): WPBakeryShortCode_VC_Hoverbox->renderButton(Array)
+#3 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php(473): include('/home/p450909/w...')
+#4 /home/p450909/www/startfact.ru/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php(453): WPBakeryShortCode->loadTemplate(Array, '\xD0\xB2\xD0\xB8\xD0\xB4\xD0\xB5\xD0\xBE \xD0
+

@@ -1,0 +1,3075 @@
+# Translation of Plugins - Popup Maker &#8211; Popup Forms, Optins &amp; More - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - Popup Maker &#8211; Popup Forms, Optins &amp; More - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-05-05 15:35:02+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Popup Maker &#8211; Popup Forms, Optins &amp; More - Stable (latest release)\n"
+
+#: classes/Extension/Activator.php:130
+msgid " requires Popup Maker v%s or higher! Please %s to continue!"
+msgstr "Erfordert Popup Maker v%s oder höher! Bitte %s um fortzufahren!"
+
+#: classes/Extension/Activator.php:129
+msgid "update it"
+msgstr "aktualisieren"
+
+#: classes/Abstract/Upgrade/Posts.php:197
+msgid "Updating %d %2$s."
+msgid_plural "Updating %d %3$s."
+msgstr[0] "Aktualisiere %d %2$s."
+msgstr[1] "Aktualisiere %d %3$s."
+
+#: classes/Admin/Popups.php:365
+msgid "Disable automatic re-triggering of popup after non-ajax form submission."
+msgstr "Deaktiviere das automatische re-triggern von Popups nach non-ajax Formular-Übertragungen."
+
+#: classes/Admin/Popups.php:312
+msgid "Triggers & Cookies"
+msgstr "Auslöser & Cookies"
+
+#: classes/Admin/Popups.php:167 classes/Admin/Settings.php:416
+msgid "If you are seeing this, the most likely cause is that there are Javascript errors on this page. %sView troubleshooting guide%s"
+msgstr "Falls du das hier siehst hast du mit hoher Wahrscheinlichkeit einen Javascript-Fehler auf der Seite. %sSchau dir die Anleitung zur Problembehandlung an%s "
+
+#: classes/Admin/Settings.php:338
+msgid "Disable the Popup Maker shortcode button"
+msgstr "Deaktiviere den Popup Maker Shortcode Button"
+
+#: includes/integrations/class-pum-cf7.php:152
+#: includes/integrations/class-pum-gravity-forms.php:147
+#: includes/integrations/ninja-forms/Actions/ClosePopup.php:43
+msgid "seconds"
+msgstr "Sekunden"
+
+#: includes/admin/themes/metabox.php:174
+msgid "Did you know:"
+msgstr "Wusstest Du schon:"
+
+#: includes/admin/themes/metabox.php:171
+msgid "Clicking on an element in this theme preview will take you to its relevant settings in the editor?"
+msgstr "Das Klicken auf ein Element in dieser Theme-Vorschau wird dich zu dessen relevanten Einstellungen im Editor führen?"
+
+#: includes/admin/themes/metabox.php:170
+msgid "If you move this theme preview to the bottom of your sidebar here it will follow you down the page?"
+msgstr "Wenn du diese Theme-Vorschau hier zum Ende deiner Seitenleiste bewegst wird es im Sichtbereich deiner Seite bleiben."
+
+#: classes/Upgrades.php:561
+msgid "No upgrades currently required."
+msgstr "Aktuell sind keine Upgrades erforderlich."
+
+#: classes/Upgrades.php:550
+msgid "Upgrades"
+msgstr "Upgrades"
+
+#: classes/Upgrades.php:239
+msgid "Process Upgrades"
+msgstr "Upgrades durchführen"
+
+#: classes/Upgrades.php:239
+msgid "Finish Upgrades"
+msgstr "Beende Upgrades"
+
+#: classes/Upgrades.php:236
+msgid "This can sometimes take a few minutes, are you ready to begin?"
+msgstr "Das kann ein paar Minuten dauern, können wir starten?"
+
+#: classes/Upgrades.php:215
+msgid "Popup Maker needs to complete a database upgrade that was previously started."
+msgstr "Popup Maker muss ein Datenbank Upgrade fertigstellen, das zuvor gestartet wurde."
+
+#: classes/Upgrades.php:213
+msgid "Your database needs to be upgraded following the latest Popup Maker or Popup Maker extension update."
+msgstr "Nach dem letzten Update von Popup Maker oder einer Popup Maker - Erweiterung ist ein Upgrade Deiner Datenbank erforderlich."
+
+#: classes/Types.php:92
+msgctxt "Post Type Plural: \"Popups\", \"Popup Themes\""
+msgid "No %2$s found in Trash"
+msgstr "Kein %2$s im Papierkorb gefunden"
+
+#: classes/Types.php:91
+msgctxt "Post Type Plural: \"Popups\", \"Popup Themes\""
+msgid "No %2$s found"
+msgstr "Kein %2$s gefunden"
+
+#: classes/Types.php:90
+msgctxt "Post Type Plural: \"Popups\", \"Popup Themes\""
+msgid "Search %2$s"
+msgstr "Suche %2$s"
+
+#: classes/Types.php:89
+msgctxt "Post Type Singular: \"Popup\", \"Popup Theme\""
+msgid "View %1$s"
+msgstr "%1$s anzeigen"
+
+#: classes/Types.php:88
+msgctxt "Post Type Plural: \"Popups\", \"Popup Themes\""
+msgid "All %2$s"
+msgstr "Alle %2$s"
+
+#: classes/Types.php:87
+msgctxt "Post Type Singular: \"Popup\", \"Popup Theme\""
+msgid "New %1$s"
+msgstr "Neue %1$s"
+
+#: classes/Types.php:86
+msgctxt "Post Type Singular: \"Popup\", \"Popup Theme\""
+msgid "Edit %1$s"
+msgstr "Bearbeite %1$s"
+
+#: classes/Types.php:85
+msgctxt "Post Type Singular: \"Popup\", \"Popup Theme\""
+msgid "Add %1$s"
+msgstr "%1$s hinzufügen"
+
+#: classes/Types.php:84
+msgctxt "Post Type Singular: \"Popup\", \"Popup Theme\""
+msgid "Add New %1$s"
+msgstr "Füge %1$s neu hinzu"
+
+#: classes/Triggers.php:263
+msgid "Choose which cookies will disable this trigger?"
+msgstr "Welche Cookies sollen diesen Auslöser deaktivieren?"
+
+#: classes/Triggers.php:163
+msgid "Time Delay Settings"
+msgstr "Einstellungen für Zeitverzögerung"
+
+#: classes/Triggers.php:162
+msgid "Time Delay / Auto Open"
+msgstr "Zeitverzögerung / Automatisches Öffnen"
+
+#: classes/Triggers.php:148
+msgid ".class-here"
+msgstr ".class-here"
+
+#: classes/Triggers.php:147
+msgid " .class-here, .class-2-here, #button_id"
+msgstr " .class-here, .class-2-here, #button_id"
+
+#: classes/Triggers.php:147
+msgid "For more than one selector, separate by comma (,)"
+msgstr "Wenn du mehr als einen Selektor hast, separiere diese mit einem Komma (,)"
+
+#: classes/Site/Assets.php:256
+msgid "Event: %s"
+msgstr "Ereignis: %s"
+
+#: classes/Site/Assets.php:255
+msgid "Tablet Disabled:"
+msgstr "Tablet deaktiviert:"
+
+#: classes/Site/Assets.php:254
+msgid "Mobile Disabled:"
+msgstr "Mobil deaktiviert:"
+
+#: classes/Site/Assets.php:253
+msgid "Selector:"
+msgstr "Selektor:"
+
+#: classes/Site/Assets.php:252
+msgid "Settings:"
+msgstr "Einstellungen:"
+
+#: classes/Site/Assets.php:251
+msgid "Cookie:"
+msgstr "Cookie:"
+
+#: classes/Site/Assets.php:249
+msgid "Delay:"
+msgstr "Verzögerung:"
+
+#: classes/Site/Assets.php:245
+msgid "Method Arguments:"
+msgstr "Methoden-Argumente:"
+
+#: classes/Site/Assets.php:244
+msgid "Method Call:"
+msgstr "Methoden-Aufruf:"
+
+#: classes/Site/Assets.php:243
+msgid "Theme ID: "
+msgstr "Theme ID: "
+
+#: classes/Site/Assets.php:242
+msgid "Popup: #"
+msgstr "Popup: #"
+
+#: classes/Site/Assets.php:241
+msgid "Popups Initialized"
+msgstr "Popups initialisiert"
+
+#: classes/Site/Assets.php:240
+msgid "Popups Initializing"
+msgstr "Popups initialisierend"
+
+#: classes/Site/Assets.php:239
+msgid "Localized variables"
+msgstr "Lokalisierte Variablen"
+
+#: classes/Site/Assets.php:238
+msgid "Global Information"
+msgstr "Globale Information"
+
+#: classes/Site/Assets.php:237
+msgid "For more information on how to use this information visit %s"
+msgstr "Um mehr darüber zu erfahren wie du diese Information nutzen kannst besuche %s"
+
+#: classes/Site/Assets.php:236
+msgid "Debug started at:"
+msgstr "Fehlerbereinigung begonnen um:"
+
+#: classes/Site/Assets.php:235
+msgid "Debug Mode Enabled"
+msgstr "Fehlerbereinigungsmodus aktiviert"
+
+#: classes/Shortcode/Subscribe.php:582
+msgid "Subscription Form Placeholder"
+msgstr "Platzhalter Anmeldeformular"
+
+#: classes/Shortcode/Subscribe.php:337
+msgid "Leave blank to refresh, or enter a url that users will be taken to after success."
+msgstr "Lasse dies leer um zu aktualisieren oder gib eine URL ein zu welcher Benutzer nach Erfolg weitergeleitet werden sollen."
+
+#: classes/Shortcode/Subscribe.php:336
+msgid "Redirect URL"
+msgstr "Weiterleitungs URL"
+
+#: classes/Shortcode/Subscribe.php:332
+msgid "Enable refreshing the page or redirecting after success."
+msgstr "Ermögliche das Aktualisieren der Seite oder Weiterleitung nach Erfolg."
+
+#: classes/Shortcode/Subscribe.php:277
+msgid "Choose how you want your form styled."
+msgstr "Wähle wie du dein Formular gestylt haben möchtest."
+
+#: classes/Shortcode/Subscribe.php:276
+msgid "Form Style"
+msgstr "Formular-Stil"
+
+#: classes/Shortcode/Subscribe.php:265
+msgid "Choose a form alignment."
+msgstr "Wähle eine Ausrichtung für das Formular."
+
+#: classes/Shortcode/Subscribe.php:264
+msgid "Form Alignment"
+msgstr "Formular-Ausrichtung"
+
+#: classes/Shortcode/Subscribe.php:258
+msgid "Inline"
+msgstr "Inline"
+
+#: classes/Shortcode/Subscribe.php:257
+msgid "Block"
+msgstr "Block"
+
+#: classes/Shortcode/Subscribe.php:254
+msgid "Choose a form layout."
+msgstr "Wähle ein Formular-Layout."
+
+#: classes/Shortcode/Subscribe.php:253
+msgid "Form Layout"
+msgstr "Formular Layout"
+
+#: classes/Shortcode/Subscribe.php:202
+msgid "Subscribe"
+msgstr "Anmelden"
+
+#: classes/Shortcode/Subscribe.php:201
+msgid "Submit Button"
+msgstr "Senden-Button"
+
+#: classes/Shortcode/Subscribe.php:161
+msgid "Field label text"
+msgstr "Feld-Label-Text"
+
+#: classes/Shortcode/Subscribe.php:155
+msgid "Disables the display of field labels."
+msgstr "Deaktiviere das Anzeigen von Feld Labeln."
+
+#: classes/Shortcode/Subscribe.php:154
+msgid "Disable Labels"
+msgstr "Labels deaktivieren"
+
+#: classes/Shortcode/Subscribe.php:143
+msgid "Removes the name field."
+msgstr "Entfernt das Namensfeld."
+
+#: classes/Shortcode/Subscribe.php:142
+msgid "Name Disabled"
+msgstr "Name deaktiviert"
+
+#: classes/Shortcode/Subscribe.php:134
+msgid "Makes the name field optional."
+msgstr "Macht das Namensfeld optional."
+
+#: classes/Shortcode/Subscribe.php:133
+msgid "Name Optional"
+msgstr "Name optional"
+
+#: classes/Shortcode/Subscribe.php:127
+msgid "First & Last"
+msgstr "Zuerst & Zuletzt"
+
+#: classes/Shortcode/Subscribe.php:126
+msgid "First Only"
+msgstr "Nur zuerst"
+
+#: classes/Shortcode/Subscribe.php:125
+msgid "Full"
+msgstr "Voll"
+
+#: classes/Shortcode/Subscribe.php:121
+msgid "Name Field Type"
+msgstr "Name Feld Typ"
+
+#: classes/Shortcode/Subscribe.php:111
+msgid "Choose which service provider to submit to."
+msgstr "Wähle zu welchem Dienst-Provider das übermittelt werden soll."
+
+#: classes/Shortcode/Subscribe.php:110
+msgid "Service Provider"
+msgstr "Dienst-Provider"
+
+#: classes/Shortcode/Subscribe.php:89 classes/Shortcode/Subscribe.php:331
+msgid "Redirect"
+msgstr "Weiterleiten"
+
+#: classes/Shortcode/Subscribe.php:85
+msgid "Placeholders"
+msgstr "Platzhalter"
+
+#: classes/Shortcode/Subscribe.php:84 classes/Shortcode/Subscribe.php:160
+msgid "Labels"
+msgstr "Label"
+
+#: classes/Shortcode/Subscribe.php:83
+msgid "Fields"
+msgstr "Felder"
+
+#: classes/Shortcode/Subscribe.php:61
+msgid "Form"
+msgstr "Formular"
+
+#: classes/Shortcode/Subscribe.php:45
+msgid "A customizable newsletter subscription form."
+msgstr "Ein individualisierbares Newsletter-Anmeldeformular."
+
+#: classes/Shortcode/Subscribe.php:38
+msgid "Subscription Form"
+msgstr "Anmeldeformular"
+
+#: classes/Shortcode/PopupTrigger.php:91
+msgid "Custom Popup ID"
+msgstr "Individuelle Popup ID"
+
+#: classes/Shortcode/PopupClose.php:51
+msgid "The HTML tag used for this element."
+msgstr "Das HTML-Tag das für dieses Element verwendet wurde."
+
+#: classes/ListTable.php:811
+msgid "Last page"
+msgstr "Letzte Seite"
+
+#: classes/ListTable.php:801
+msgid "Next page"
+msgstr "Nächste Seite"
+
+#: classes/ListTable.php:794
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s von %2$s"
+
+#: classes/ListTable.php:785 classes/ListTable.php:788
+msgid "Current Page"
+msgstr "Aktuelle Seite"
+
+#: classes/ListTable.php:778
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+#: classes/ListTable.php:768
+msgid "First page"
+msgstr "Erste Seite"
+
+#: classes/ListTable.php:727 classes/ListTable.php:1301
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s Element"
+msgstr[1] "%s Elemente"
+
+#: classes/ListTable.php:653
+msgid "No pending comments"
+msgstr "Keine ausstehenden Kommentare"
+
+#: classes/ListTable.php:640
+msgid "No approved comments"
+msgstr "Keine freigegebenen Kommentare"
+
+#: classes/ListTable.php:628 classes/ListTable.php:640
+#: classes/ListTable.php:653
+msgid "No comments"
+msgstr "Keine Kommentare"
+
+#: classes/ListTable.php:623
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s ausstehender Kommentar"
+msgstr[1] "%s ausstehende Kommentare"
+
+#: classes/ListTable.php:622
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s freigegebener Kommentar"
+msgstr[1] "%s freigegegebene Kommentare"
+
+#: classes/ListTable.php:621
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s Kommentar"
+msgstr[1] "%s Kommentare"
+
+#. translators: 1: month name, 2: 4-digit year
+#: classes/ListTable.php:571
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: classes/ListTable.php:558
+msgid "All dates"
+msgstr "Alle Daten"
+
+#: classes/ListTable.php:556
+msgid "Filter by date"
+msgstr "Nach Datum filtern"
+
+#: classes/ListTable.php:494 classes/ListTable.php:1277
+msgid "Show more details"
+msgstr "Zeige mehr Details"
+
+#: classes/ListTable.php:446
+msgid "Apply"
+msgstr "Anwenden"
+
+#: classes/ListTable.php:436
+msgid "Bulk Actions"
+msgstr "Sammelaktionen"
+
+#: classes/ListTable.php:434
+msgid "Select bulk action"
+msgstr "Wähle Sammelaktion"
+
+#: classes/ListTable.php:312
+msgid "No items found."
+msgstr "Kein Element gefunden."
+
+#: classes/ListTable.php:152
+msgid "Excerpt View"
+msgstr "Ansicht mit Textauszug"
+
+#: classes/ListTable.php:151
+msgid "List View"
+msgstr "Listen-Ansicht"
+
+#: classes/Licensing.php:110
+msgid "Your license key has reached its activation limit. %sView possible upgrades%s now."
+msgstr "Dein Lizenzschlüssel hat das Limit für Aktivierungen erreicht. %sZeige mögliche Upgrades%s an."
+
+#: classes/Cookies.php:191
+msgid "%sNote%s: Modern browsers that reopen your last browser session's tabs do not properly clear session cookies"
+msgstr "%sHinweis%s: Moderne Browser die die Tabs der letzten Browser-Session neu öffnen löschen Session-Cookies nicht korrekt."
+
+#: classes/Cookies.php:81
+msgid "Subscription Form: Already Subscribed"
+msgstr "Anmeldeformular: Bereits abonniert"
+
+#: classes/Cookies.php:78
+msgid "Subscription Form: Successful"
+msgstr "Anmeldeform: Erfolgreich"
+
+#: classes/Conditions.php:430
+msgid "404 Error Page"
+msgstr "404 Fehler-Seite"
+
+#: classes/Conditions.php:424
+msgid "Search Result Page"
+msgstr "Suchergebnis-Seite"
+
+#: classes/Batch/Process/Registry.php:84
+msgid "An invalid batch class handler file has been supplied."
+msgstr "Eine ungültiger Gruppen Klassen Handler Datei wurde ausgegeben."
+
+#: classes/Batch/Process/Registry.php:79
+msgid "No batch class handler file has been supplied."
+msgstr "Es wurde keine Gruppen Klassen Handler Datei ausgegeben."
+
+#: classes/Batch/Process/Registry.php:75
+msgid "A batch process class must be specified."
+msgstr "Eine Gruppen Prozess Klasse muss festgelegt werden."
+
+#: classes/Analytics.php:140
+msgid "Event Type"
+msgstr "Ereignis-Typ"
+
+#: classes/Admin/Tools.php:88
+msgid "Popup Maker Tools"
+msgstr "Popup Maker Werkzeuge"
+
+#: classes/Admin/Templates.php:693
+msgid "Select a cookie type."
+msgstr "Wähle einen Cookie-Typ."
+
+#: classes/Admin/Templates.php:692
+msgid "When should your cookie be created?"
+msgstr "Wann soll dein Cookie erstellt werden?"
+
+#: classes/Admin/Templates.php:632
+msgid "Cookies control the repeat display of a popup."
+msgstr "Cookies kontrollieren die wiederholte Anzeige von Popups."
+
+#: classes/Admin/Templates.php:569 classes/Admin/Templates.php:602
+msgid "Choose a condition"
+msgstr "Wähle eine Bedingung"
+
+#: classes/Admin/Templates.php:564
+msgid "Choose a condition to target your popup to specific content or various other segments."
+msgstr "Wähle eine Bedingung um dein Popup für spezielle Inhalte oder bestimmte andere Segmente zu planen."
+
+#: classes/Admin/Templates.php:549
+msgid "Click the %s button for any condition to check the opposite of the chosen condition. The button will turn red %s when active."
+msgstr "Klicke den %s Button für jede Bedingung um das Gegenteil der ausgewählten Bedingung zu wählen. Der Button wird rot %s wenn aktiviert."
+
+#: classes/Admin/Templates.php:548
+msgid "Target the popup to a specific segment by adding conditions below."
+msgstr "Plane das Popup für ein spezielles Segment indem du unten Bedingungen hinzufügst. "
+
+#: classes/Admin/Templates.php:547
+msgid "By default, this popup will be loaded on every page of your site for all users."
+msgstr "Standardmäßig wird dieses Popup auf jeder Seite deiner Website für alle Benutzer geladen."
+
+#: classes/Admin/Templates.php:542
+msgid "Learn more about %s"
+msgstr "Erfahre mehr über %s"
+
+#: classes/Admin/Templates.php:540
+msgid "Conditions allow you to show your popup to a targeted segment of your sites users."
+msgstr "Bedingungen ermöglichen es, dass Dein PopUp in einem festgelegten Segment Deiner Website Benutzer erscheint."
+
+#: classes/Admin/Templates.php:504
+msgid "When will the cookie be set?"
+msgstr "Wann wird das Cookie gesetzt?"
+
+#: classes/Admin/Templates.php:498
+msgid "Would you like to set up a cookie as well?"
+msgstr "Möchtest Du auch ein Cookie einrichten?"
+
+#: classes/Admin/Templates.php:404
+msgid "Triggers cause a popup to open."
+msgstr "Auslöser lösen das Öffnen eines Popups aus."
+
+#: classes/Admin/Templates.php:254
+msgid "Value"
+msgstr "Wert"
+
+#: classes/Admin/Templates.php:250
+msgid "Label"
+msgstr "Label"
+
+#: classes/Admin/Templates.php:246
+msgid "Action"
+msgstr "Aktion"
+
+#: classes/Admin/Templates.php:242
+msgid "Category"
+msgstr "Kategorie"
+
+#: classes/Admin/Templates.php:202
+msgid "Inactive"
+msgstr "Nicht aktiv"
+
+#: classes/Admin/Templates.php:199
+msgid "Active"
+msgstr "Aktiv"
+
+#: classes/Admin/Templates.php:49
+msgid "Check"
+msgstr "Prüfen"
+
+#: classes/Admin/Subscribers.php:67
+msgid "Subscribers Per Page"
+msgstr "Abonnenten je Seite"
+
+#: classes/Admin/Subscribers.php:37
+msgid "Find"
+msgstr "Finden"
+
+#: classes/Admin/Subscribers/Table.php:430
+msgid "Invalid Nonce"
+msgstr "Ungültige Nonce"
+
+#: classes/Admin/Subscribers/Table.php:364
+msgid "Uh oh, the subscribers was not deleted successfully!"
+msgstr "Ohweh, die Abonnenten wurden nicht erfolgreich gelöscht!"
+
+#: classes/Admin/Subscribers/Table.php:355
+msgid "%d Subscribers deleted, %d failed"
+msgstr "%d Abonnenten gelöscht, %d fehlgeschlagen"
+
+#: classes/Admin/Subscribers/Table.php:349
+msgid "Deleting subscriber failed."
+msgstr "Löschen von Abonnenten fehlgeschlagen."
+
+#: classes/Admin/Subscribers/Table.php:340 includes/modules/admin-bar.php:487
+msgid "Success"
+msgstr "Erfolg"
+
+#: classes/Admin/Subscribers/Table.php:340
+msgid "Subscriber deleted!"
+msgid_plural "%d Subscribers deleted!"
+msgstr[0] "Abonnent gelöscht!"
+msgstr[1] "%d Abonnenten gelöscht!"
+
+#: classes/Admin/Subscribers/Table.php:299
+msgid "Delete"
+msgstr "Löschen"
+
+#: classes/Admin/Subscribers/Table.php:165
+msgid "Select %s"
+msgstr "Wähle %s"
+
+#: classes/Admin/Subscribers/Table.php:135
+msgid "No subscribers available."
+msgstr "Keine Abonnenten verfügbar."
+
+#: classes/Admin/Subscribers/Table.php:96
+msgctxt "column name"
+msgid "Subscribed On"
+msgstr "Eingetragen am"
+
+#: classes/Admin/Subscribers/Table.php:93 classes/Shortcode/Subscribe.php:184
+#: classes/Shortcode/Subscribe.php:189 classes/Shortcode/Subscribe.php:237
+#: classes/Shortcode/Subscribe.php:241
+msgid "Last Name"
+msgstr "Nachname"
+
+#: classes/Admin/Subscribers/Table.php:92 classes/Shortcode/Subscribe.php:175
+#: classes/Shortcode/Subscribe.php:180 classes/Shortcode/Subscribe.php:229
+#: classes/Shortcode/Subscribe.php:233
+msgid "First Name"
+msgstr "Vorname"
+
+#: classes/Admin/Subscribers/Table.php:91 classes/Shortcode/Subscribe.php:166
+#: classes/Shortcode/Subscribe.php:221
+msgid "Full Name"
+msgstr "Voller Name"
+
+#: classes/Admin/Settings.php:503
+msgid "Extension Settings"
+msgstr "Einstellungen für Erweiterungen"
+
+#: classes/Admin/Settings.php:475
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#: classes/Admin/Settings.php:412
+msgid "Popup Maker Settings"
+msgstr "Popup Maker Einstellungen"
+
+#: classes/Admin/Settings.php:334
+msgid "Disable Popup Maker caching"
+msgstr "Deaktiviere das caching für Popup Maker"
+
+#: classes/Admin/Settings.php:286 includes/functions/newsletter.php:57
+msgid "You are already a subscriber."
+msgstr "Du hast dich bereits eingetragen."
+
+#: classes/Admin/Settings.php:284
+msgid "Message to show user who is already subscribed."
+msgstr "Nachricht die dem Benutzer gezeigt wird der bereits eingetragen ist."
+
+#: classes/Admin/Settings.php:283
+msgid "Already Subscribed Message"
+msgstr "Bereits Eingetragen Nachricht"
+
+#: classes/Admin/Settings.php:280 includes/functions/newsletter.php:56
+msgid "Error occurred when subscribing. Please try again."
+msgstr "Es gab einen Fehler als du dich eintragen wolltest. Bitte versuche es erneut."
+
+#: classes/Admin/Settings.php:278
+msgid "Message to show user when an error has occurred."
+msgstr "Nachricht die dem Benutzer angezeigt wird wenn es einen Fehler gab."
+
+#: classes/Admin/Settings.php:277
+msgid "Error Message"
+msgstr "Fehler-Nachricht"
+
+#: classes/Admin/Settings.php:274 includes/functions/newsletter.php:59
+msgid "Email provided is not a valid email address."
+msgstr "Die angegebene E-Mail ist keine gültige E-Mail-Adresse."
+
+#: classes/Admin/Settings.php:268 includes/functions/newsletter.php:58
+msgid "Please enter a valid email."
+msgstr "Bitt gib eine gültige E-Mail an."
+
+#: classes/Admin/Settings.php:266
+msgid "Message to show user when no email is entered."
+msgstr "Nachricht die dem Benutzer gezeigt wird wenn keine E-Mail eingetragen wurde."
+
+#: classes/Admin/Settings.php:265
+msgid "Empty Email Message"
+msgstr "Leere E-Mail Nachricht"
+
+#: classes/Admin/Settings.php:262 includes/functions/newsletter.php:55
+msgid "Please check your email and confirm your subscription."
+msgstr "Bitte prüfe Deine E-Mail und bestätige Deine Anmeldung."
+
+#: classes/Admin/Settings.php:260 classes/Admin/Settings.php:272
+msgid "Message to show user when an invalid email is entered."
+msgstr "Nachricht die dem Benutzer gezeigt wird wenn eine ungültige E-Mail eingetragen wurde."
+
+#: classes/Admin/Settings.php:259 classes/Admin/Settings.php:271
+msgid "Invalid Email Message"
+msgstr "Ungültige E-Mail Nachricht"
+
+#: classes/Admin/Settings.php:256 includes/functions/newsletter.php:54
+msgid "You have been subscribed!"
+msgstr "Du wurdest eingetragen!"
+
+#: classes/Admin/Settings.php:254
+msgid "Message to show user when successfuly subscribed."
+msgstr "Nachricht die dem Benutzer angezeigt wird wenn er sich erfolgreich eingetragen hat."
+
+#: classes/Admin/Settings.php:253
+msgid "Success Message"
+msgstr "Erfolgs-Nachricht."
+
+#: classes/Admin/Settings.php:246
+msgid "The default mailing provider used for the subscription form."
+msgstr "Der Standard Mail-Provider der für das Anmeldeformular genutzt wurde."
+
+#: classes/Admin/Settings.php:245
+msgid "Default Newsletter Provider"
+msgstr "Standard Newsletter Provider"
+
+#: classes/Admin/Settings.php:85
+msgid "There must have been an error, settings not saved successfully!"
+msgstr "Es muss einen Fehler aufgetreten sein, die Einstellungen wurden nicht erfolgreich gespeichert!"
+
+#: classes/Admin/Settings.php:80
+msgid "Settings saved successfully!"
+msgstr "Einstellungen wurden erfolgreich gespeichert!"
+
+#: classes/Admin/Settings.php:51 classes/Admin/Tools.php:64
+msgid "Dismiss this notice."
+msgstr "Diese Mitteilung verwerfen."
+
+#: classes/Admin/Popups.php:1066 classes/Admin/Subscribers/Table.php:281
+msgid "N/A"
+msgstr "N/A"
+
+#: classes/Admin/Popups.php:915
+msgid "Lifetime Conversions"
+msgstr "Lebenslange Umwandlungen"
+
+#: classes/Admin/Popups.php:908
+msgid "Previous Conversions"
+msgstr "Vorherige Umstellungen"
+
+#: classes/Admin/Popups.php:899
+msgid "Reset Counts"
+msgstr "Zähler zurücksetzen"
+
+#: classes/Admin/Popups.php:892 classes/Admin/Popups.php:994
+msgid "Conversion Rate"
+msgstr "Umwandlungs-Verhältnis"
+
+#: classes/Admin/Popups.php:886 classes/Admin/Popups.php:993
+msgid "Conversions"
+msgstr "Umwandlungen"
+
+#: classes/Admin/Popups.php:667
+msgid "Override the default close text."
+msgstr "Überschreibe den Standard für den Schließen-Text."
+
+#: classes/Admin/Popups.php:419
+msgid "Other Sizes"
+msgstr "Andere Größen"
+
+#: classes/Admin/Popups.php:409
+msgid "Responsive Sizes"
+msgstr "Responsive Größen"
+
+#: classes/Admin/Popups.php:327
+msgid "Alternate Methods"
+msgstr "Alternative Methoden"
+
+#: classes/Admin/Popups.php:326
+msgid "Button"
+msgstr "Button"
+
+#: classes/Admin/Popups.php:313 classes/Admin/Popups.php:323
+#: classes/Cookies.php:158 classes/Triggers.php:290
+msgid "Advanced"
+msgstr "Fortgeschritten"
+
+#: classes/Admin/Popups.php:319 classes/Shortcode/Subscribe.php:82
+msgid "Appearance"
+msgstr "Design"
+
+#: classes/Admin/Popups.php:309
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: classes/Admin/Popups.php:297
+msgid "Targeting"
+msgstr "Targeting"
+
+#: classes/Admin/Popups.php:113
+msgid "Register a popup name. The CSS class ‘popmake-{popup-name}’ can be used to set a trigger to display a popup."
+msgstr "Registriere einen Popup Namen. Die CSS-Klasse ‘popmake-{popup-name}’ kann verwendet werden um die Anzeige eines Popups auszulösen."
+
+#: classes/Admin/Popups.php:113
+msgid "Required"
+msgstr "Erforderlich"
+
+#: classes/Admin/Popups.php:93
+msgid "Display a title inside the popup container. May be left empty."
+msgstr "Zeige einen Titel innerhalb des Popup-Containers. Kann leer bleiben."
+
+#: classes/Admin/Popups.php:93
+msgid "Optional"
+msgstr "Optional"
+
+#: classes/Admin/Popups.php:90 classes/Admin/Popups.php:92
+msgid "Popup Title (appears on front end inside the popup container)"
+msgstr "Popup Titel (wird im Frontend innerhalb des Popup Containers angezeigt)"
+
+#: classes/Admin/Popups.php:68
+msgid "Popup Name (appears under \"Name\" column on \"All Popups\" screen"
+msgstr "Popup Name (wird in der \"Name\" - Spalte unter der Ansicht \"Alle Popups\" angezeigt"
+
+#: classes/Admin/Pages.php:51 classes/Admin/Subscribers.php:30
+msgid "Subscribers"
+msgstr "Abonnenten"
+
+#: classes/Admin/Assets.php:132
+msgid "We are sorry but your browser is not compatible with this kind of file upload. Please upgrade your browser."
+msgstr "Es tut uns leid, aber dein Browser ist nicht kompatibel mit dieser Art von Datei upload. Bitte upgrade deinen Browser."
+
+#: classes/Admin/Assets.php:131
+msgid "Your all set, the upgrades completed successfully!"
+msgstr "Du hast es geschafft, die Upgrades wurden erfolgreich ausgeführt!"
+
+#: classes/Admin/Assets.php:66
+msgid "Preview"
+msgstr "Vorschau"
+
+#: classes/Admin/Ajax.php:159 classes/Upgrades.php:530
+msgid "%1$s is an invalid handler for the %2$s batch process. Please try again."
+msgstr "%1$s ist ein ungültiger Handler für den %2$s Gruppen-Prozess. Bitte versuche es erneut."
+
+#: classes/Abstract/Upgrade/Settings.php:61
+msgid "Settings updated successfully."
+msgstr "Einstellungen erfolgreich aktualisiert."
+
+#: classes/Abstract/Upgrade/Settings.php:57
+msgid "Updating settings for v%s compatibility."
+msgstr "Einstellungen für v%s Kompatibilität aktualisiert."
+
+#: classes/Abstract/Upgrade/Posts.php:203
+msgid "%s %2$s was updated successfully."
+msgid_plural "%s %3$s were updated successfully."
+msgstr[0] "%s %2$s wurde erfolgreich aktualisiert."
+msgstr[1] "%s %3$s wurden erfolgreich aktualisiert."
+
+#: classes/Admin/Ajax.php:126 classes/Upgrades.php:391
+msgid "A batch process ID must be present to continue."
+msgstr "Es muss eine Gruppen-Prozess ID gebenn um fortzufahren."
+
+#: classes/Admin/Ajax.php:133 classes/Upgrades.php:398
+msgid "You do not have permission to initiate this request. Contact an administrator for more information."
+msgstr "Du hast nicht die Berechtigung für diese Anforderung. Kontaktiere einen Administrator für mehr Informationen."
+
+#: classes/Admin/Ajax.php:142 classes/Upgrades.php:417
+msgid "%s is an invalid batch process ID."
+msgstr "%s ist eine ungültige Gruppen Prozess ID."
+
+#: classes/Admin/Ajax.php:151 classes/Upgrades.php:524
+msgid "An invalid file path is registered for the %1$s batch process handler."
+msgstr "Es wurde ein ungültiger Dateipfad registriert für den %1$s Gruppen Prozess Handler."
+
+#: classes/Abstract/Batch/Process.php:121
+msgid "%s item was successfully processed."
+msgid_plural "%s items were successfully processed."
+msgstr[0] "%s Element wurde erfolgreich ausgeführt."
+msgstr[1] "%s Elemente wurdden erfolgreich ausgeführt."
+
+#: classes/Admin/Assets.php:77 classes/Admin/Shortcode/UI.php:105
+msgid "There was an error in generating the preview"
+msgstr "Bei der Erstellung der Vorschau gab es einen Fehler"
+
+#: includes/integrations/class-pum-gravity-forms.php:105
+msgid "Gravity Form Success"
+msgstr "Gravity Form - Abgeschickt"
+
+#: includes/integrations/class-pum-cf7.php:132
+msgid "These settings control popups after successful form submissions."
+msgstr "Diese Einstellungen steuern die Popups nachdem das Formular erfolgreich eingereicht wurde. "
+
+#: classes/Admin/Popups.php:122 includes/integrations/class-pum-cf7.php:117
+#: includes/integrations/class-pum-cf7.php:131
+#: includes/integrations/class-pum-gravity-forms.php:121
+msgid "Popup Settings"
+msgstr "Einstellungen für Popup"
+
+#: includes/integrations/class-pum-cf7.php:99
+msgid "Contact Form 7 Success"
+msgstr "Contact Form 7 - Abgeschickt"
+
+#: includes/modules/menus.php:41
+msgctxt "%s represent opening and closing link html"
+msgid "Use this if there is a conflict with your theme or another plugin in the nav menu editor. %sSee Details%s"
+msgstr "Verwende dies wenn es einen Konflikt gibt mit deinem Theme oder einem anderen Plugin im Navigations-Menü-Editor. %sMehr Informationen%s"
+
+#: includes/modules/menus.php:39
+msgid "Disable Popups Menu Editor"
+msgstr "Deaktiviere den Menu Editor für Popups"
+
+#: includes/modules/admin-bar.php:532
+msgid "Get Selector"
+msgstr "Selektor holen"
+
+#: includes/modules/admin-bar.php:391
+msgctxt "JS alert for CSS get selector tool"
+msgid "Selector"
+msgstr "Selektor"
+
+#: includes/modules/admin-bar.php:380
+msgid "After clicking ok, click the element you want a selector for."
+msgstr "Nachdem du auf ok geklickt hast, klicke auf das Element für das du eine Auswahl möchtest."
+
+#: classes/Admin/Settings.php:305
+msgid "This will disable the admin Popups menu item."
+msgstr "Das wird das administrative Popup Menu Element deaktivieren."
+
+#: classes/Admin/Settings.php:304
+msgid "Disable Popups Admin Bar"
+msgstr "Deaktiviere die Admin Bar für Popups"
+
+#. Author URI of the plugin/theme
+msgid "https://wppopupmaker.com/?utm_campaign=PluginInfo&utm_source=plugin-header&utm_medium=author-uri"
+msgstr "https://wppopupmaker.com/?utm_campaign=PluginInfo&utm_source=plugin-header&utm_medium=author-uri"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wppopupmaker.com/?utm_campaign=PluginInfo&utm_source=plugin-header&utm_medium=plugin-uri"
+msgstr "https://wppopupmaker.com/?utm_campaign=PluginInfo&utm_source=plugin-header&utm_medium=plugin-uri"
+
+#: classes/Admin/Templates.php:471
+msgid "Insert Preset"
+msgstr "Voreinstellungen einfügen"
+
+#: classes/Admin/Templates.php:465
+msgid "Link: Ends With"
+msgstr "Link: Endet mit"
+
+#: classes/Admin/Templates.php:464
+msgid "Link: Begins With"
+msgstr "Link: Beginnt mit"
+
+#: classes/Admin/Templates.php:463
+msgid "Link: Containing"
+msgstr "Link: Enthält"
+
+#: classes/Admin/Templates.php:462
+msgid "Link: Exact Match"
+msgstr "Link: Stimmt exakt überein"
+
+#: classes/Extension/Activator.php:124 classes/Extension/Activator.php:136
+#: includes/pum-sdk/class-pum-extension-activation.php:89
+msgid " requires Popup Maker! Please %s to continue!"
+msgstr "Popup Maker erforderlich! Bitte %s um fortzufahren!"
+
+#: classes/Extension/Activator.php:135
+#: includes/pum-sdk/class-pum-extension-activation.php:86
+msgid "install it"
+msgstr "installiere es"
+
+#: classes/Extension/Activator.php:123
+#: includes/pum-sdk/class-pum-extension-activation.php:83
+msgid "activate it"
+msgstr "aktiviere es"
+
+#: includes/pum-sdk/class-pum-extension-activation.php:50
+msgid "This plugin"
+msgstr "Dieses Plugin"
+
+#: classes/Conditions.php:281
+msgctxt "condition: post type plural label ie. Posts: ID"
+msgid "%s: Ancestor Of"
+msgstr "%s: Verwandt mit"
+
+#: classes/Conditions.php:266
+msgctxt "condition: post type plural label ie. Posts: ID"
+msgid "%s: Child Of"
+msgstr "%s: Kind von"
+
+#: includes/modules/reviews.php:418
+msgid "I already did"
+msgstr "Habe ich schon"
+
+#: includes/modules/reviews.php:413
+msgid "Nope, maybe later"
+msgstr "Nein, später vielleicht"
+
+#: includes/modules/reviews.php:408
+msgid "Ok, you deserve it"
+msgstr "Ja, du hast es verdient"
+
+#: includes/modules/reviews.php:265
+msgid "Hi there! You've recently hit %s popup views on your site – that’s awesome!! If you'd like to celebrate this milestone, rate Popup Maker 5-stars to help spread the word!"
+msgstr "Hey! Du hast kürzlich %s Popup-Anzeigen erreicht - das ist großartig!! Falls du diesen Meilenstein feiern möchtest, dann gib Popup Maker eine 5-Sterne Bewertung und hilf die Botschaft weiter zu verbreiten!"
+
+#: includes/modules/reviews.php:247
+msgid "3 months"
+msgstr "3 Monate"
+
+#: includes/modules/reviews.php:239
+msgid "1 month"
+msgstr "1 Monat"
+
+#: includes/modules/reviews.php:231
+msgid "1 week"
+msgstr "1 Woche"
+
+#: includes/modules/reviews.php:226
+msgid "Hi there! You've been using Popup Maker on your site for %s - I hope it's been helpful. If you're enjoying my plugin, would you mind rating it 5-stars to help spread the word?"
+msgstr "Hey! Du hast Popup Maker auf deiner Seite schon seit %s im Einsatz - Ich hoffe, es war nützlich. Falls du mein Plugin magst, würde es Dir etwas ausmachen es mit 5 Sternen zu bewerten um die Botschaft weiter zu verbreiten?"
+
+#: includes/modules/menus.php:170
+msgid "Choose a popup to trigger when this item is clicked."
+msgstr "Wähle ein Popup das ausgewählt wird wenn dieses Element angeklickt wird."
+
+#: includes/modules/menus.php:159
+msgid "Trigger a Popup"
+msgstr "Popup anwählen"
+
+#: classes/Analytics.php:108
+msgid "Missing Parameters."
+msgstr "Fehlende Angaben. "
+
+#: includes/modules/admin-bar.php:507
+msgid "No Popups Loaded"
+msgstr "Es wurden keine Popups geladen"
+
+#: includes/modules/admin-bar.php:497
+msgid "Edit Popup"
+msgstr "Popup bearbeiten"
+
+#: includes/modules/admin-bar.php:485
+msgid "Reset Cookies"
+msgstr "Cookies zurücksetzen"
+
+#: includes/modules/admin-bar.php:474
+msgid "Check Conditions"
+msgstr "Bedingungen prüfen"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:61
+msgid "Selected Endpoints"
+msgstr "Ausgewählte Endpunkte"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:58
+msgid "Is Endpoint"
+msgstr "Ist Endpunkt"
+
+#: classes/Extension/Updater.php:216
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "Eine neue Version von %1$s ist verfügbar. %2$sVersion anzeigen %3$s Details%4$s oder %5$sJetzt updaten%6$s."
+
+#: classes/Extension/Updater.php:208
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "Eine neue Version von %1$s ist verfügbar. %2$sVersion anzeigen %3$s Details%4$s."
+
+#: classes/Extension/License.php:431
+msgid "Enter valid license key for automatic updates."
+msgstr "Gib einen gültigen Lizenzschlüssel ein um automatische Updates zu ermöglichen. "
+
+#: classes/Extension/License.php:398
+msgid "You have invalid or expired license keys for Popup Maker. Please go to the %sLicenses page%s to correct this issue."
+msgstr "Du verwendest einen ungültigen oder abgelaufenen Lizenzschlüssel für Popup Maker. Bitte rufe die %sLizenz Seite%s auf um das zu korrigieren. "
+
+#: classes/Extension/License.php:203
+msgid "Enter your extension license keys here to receive updates for purchased extensions. If your license key has expired, please %srenew your license%s."
+msgstr "Gib hier deinen Lizenzschlüssel für die Erweiterung ein um Updates für die Erweiterungen zu erhalten. Falls Dein Lizenzschlüssel abgelaufen ist, %serneuere bitte deine Lizenz%s. "
+
+#: classes/Extension/License.php:167
+msgid "%1$s"
+msgstr "%1$s"
+
+#: classes/Admin/Tools.php:496
+msgid "Get updates for pre-release versions of %s"
+msgstr "Erhalte Updates für die Vorabversion von %s"
+
+#: classes/Admin/Tools.php:484
+msgid "Checking any of the below checkboxes will opt you in to receive pre-release update notifications. You can opt-out at any time. Pre-release updates do not install automatically, you will still have the opportunity to ignore update notifications."
+msgstr "Wenn Sie eines der untenstehenden Kontrollkästchen aktivieren, erhalten Sie Benachrichtigungen über Updates vor der Veröffentlichung. Sie können sich jederzeit abmelden. Vorab-Updates werden nicht automatisch installiert, Sie haben trotzdem die Möglichkeit, Update-Benachrichtigungen zu ignorieren."
+
+#: classes/Admin/Tools.php:482
+msgid "Enable Beta Versions"
+msgstr "Aktiviere die Beta Versionen"
+
+#: classes/Admin/Tools.php:124
+msgid "Beta Versions"
+msgstr "Beta Versions"
+
+#: includes/admin/settings/register-settings.php:1013
+msgid "User Theme Styles"
+msgstr "Benutzer Themenstile"
+
+#: includes/admin/settings/register-settings.php:1007
+msgid "Core Styles"
+msgstr "Haupt-Stile"
+
+#: includes/admin/settings/register-settings.php:1003
+msgid "Show Popup Maker CSS"
+msgstr "Zeige das CSS von Popup Maker"
+
+#: classes/Licensing.php:141 includes/admin/settings/register-settings.php:879
+msgid "To receive updates, please enter your valid %s license key."
+msgstr "Um Updates zu erhalten gib bitte einen gültigen %s Lizenzschlüssel ein. "
+
+#: classes/Licensing.php:134 includes/admin/settings/register-settings.php:864
+msgid "Your license key expires on %s."
+msgstr "Dein Lizenzschlüssel läuft am %s ab. "
+
+#: classes/Licensing.php:132 includes/admin/settings/register-settings.php:858
+msgid "Your license key expires soon! It expires on %s. %sRenew your license key%s."
+msgstr "Dein Lizenzschlüssel läuft bald ab! Er endet am %s. %sErneuere Deinen Lizenzschlüssel%s."
+
+#: classes/Licensing.php:130 includes/admin/settings/register-settings.php:852
+msgid "License key never expires."
+msgstr "Lizenschlüssel läuft nie ab. "
+
+#: classes/Licensing.php:117 includes/admin/settings/register-settings.php:832
+msgid "There was an error with this license key: %s. Please %scontact our support team%s."
+msgstr "Es gab ein Problem mit diesem Lizenzschlüssel: %s. Bitte %skontaktiere unser Support-Team%s. "
+
+#: classes/Licensing.php:116 includes/admin/settings/register-settings.php:831
+msgid "unknown_error"
+msgstr "unbekannter_fehler"
+
+#: classes/Licensing.php:113 includes/admin/settings/register-settings.php:823
+msgid "The key you entered belongs to a bundle, please use the product specific license key."
+msgstr "Die Lizenz die du eingetragen hast gehört zu einem Paket. Bitte verwenden den produktspezifischen Lizenzschlüssel. "
+
+#: includes/admin/settings/register-settings.php:813
+msgid "Your license key has reached its activation limit. %View possible upgrades% now."
+msgstr "Dein Lizenschlüssel hat das Limit der möglichen Aktivierungen erreicht. %Schaue Dir jetzt mögliche Upgrades an%."
+
+#: classes/Licensing.php:107 includes/admin/settings/register-settings.php:803
+msgid "This appears to be an invalid license key for %s."
+msgstr "Das scheint ein ungüliter Lizenzschlüssel für %s zu sein. "
+
+#: classes/Licensing.php:104 includes/admin/settings/register-settings.php:793
+msgid "Your %s is not active for this URL. Please %svisit your account page%s to manage your license key URLs."
+msgstr "Dein %s ist für diese URL nicht aktiviert. Bitte %besuche die Account-Seite%s um den Lizenzschlüssel für URLs zu administrieren."
+
+#: classes/Licensing.php:100 includes/admin/settings/register-settings.php:781
+msgid "Invalid license. Please %svisit your account page%s and verify it."
+msgstr "Ungültige Lizenz. Bitte %srufe die Account-Seite auf%s und überprüfe das."
+
+#: classes/Licensing.php:97 includes/admin/settings/register-settings.php:771
+msgid "Your license key has been disabled. Please %scontact support%s for more information."
+msgstr "Dein Lizenzschlüssel wurde deaktiviert. Bitte %skontaktiere den Support%s für weitere Informationen."
+
+#: classes/Licensing.php:94 includes/admin/settings/register-settings.php:761
+msgid "Your license key expired on %s. Please %srenew your license key%s."
+msgstr "Dein Lizenzschlüssel ist am %s abgelaufen. Bitte %serneuere deinen Lizenschlüssel%s."
+
+#: classes/Admin/Settings.php:320
+msgid "This will disable the built in analytics functionality."
+msgstr "Das wird die eingebaute Analyse-Funktion deaktivieren."
+
+#: classes/Admin/Settings.php:319
+msgid "Disables popup open tracking?"
+msgstr "Deaktiviere das Tracking von Popup-Öffnungen?"
+
+#: classes/Admin/Settings.php:310
+msgid "This will turn on multiple debug tools used to quickly find issues."
+msgstr "Das aktiviert verschiedene Werkzeuge zur Fehlersuche um Probleme schnell zu identifizieren."
+
+#: classes/Admin/Settings.php:309
+msgid "Enable Debug Mode"
+msgstr "Fehlersuche-Modus aktivieren"
+
+#: classes/Admin/Settings.php:350
+msgid "Check this if you have copied the Popup Maker core styles to your own stylesheet or are using custom styles."
+msgstr "Überprüfe das wenn du die Popup Maker Styles in dein eigenes Stylesheet kopiert hast oder wenn du benutzerdefinierte Styles verwendest. "
+
+#: classes/Admin/Settings.php:349
+msgid "Don't load Popup Maker core stylesheet."
+msgstr "Lade nicht das Popum Maker Stylesheet"
+
+#: classes/Admin/Popups.php:620
+msgid "This will position the popup in relation to the %sClick Trigger%s."
+msgstr "Hiermit wird das PopUp im Verhältnis zum %sKlick-Auslöser%s positioniert."
+
+#: classes/Admin/Popups.php:619
+msgid "Position from Trigger"
+msgstr "Postion vom Auslöser"
+
+#: classes/Upsell.php:22 includes/admin/themes/metabox-close-fields.php:35
+msgctxt "%s represent the opening & closing link html"
+msgid "Want to disable the close button? Check out %sForced Interaction%s!"
+msgstr "Du willst den Schließen-Button deaktivieren? Wirf einen Blick in die %sErzwungenen Interaktionen%s!"
+
+#: classes/Upsell.php:51
+msgid "Need more %sadvanced targeting%s options?"
+msgstr "Benötigtst Du mehr %sfortgeschrittene Targeting%s Optionen?"
+
+#: classes/Admin/Popups.php:385
+msgid "Disable this popup on tablet devices."
+msgstr "Deativiere dieses Popup auf Tablets."
+
+#: includes/admin/pages/support.php:56
+msgid "<b>Secure HTTPS contact page</b>, running via iframe from external domain"
+msgstr "<b>Sichere HTTPS-Kontakt-Seite</b>, läuft über Iframe von externer Domain aus"
+
+#: classes/Admin/Pages.php:66 classes/Admin/Pages.php:154
+msgid "Help & Support"
+msgstr "Hilfe & Support"
+
+#: classes/Admin/Popups.php:380
+msgid "Disable this popup on mobile devices."
+msgstr "Deaktiviere dieses Popup auf mobilen Geräten."
+
+#: classes/Shortcode/Subscribe.php:321
+#: includes/integrations/class-pum-cf7.php:220
+#: includes/integrations/class-pum-gravity-forms.php:230
+#: includes/integrations/ninja-forms/Actions/OpenPopup.php:78
+msgid "Select a popup"
+msgstr "Wähle ein Popup"
+
+#: classes/Analytics.php:145 classes/Shortcode/Subscribe.php:318
+#: includes/integrations/ninja-forms/Actions/OpenPopup.php:42
+msgid "Popup ID"
+msgstr "Popup ID"
+
+#: includes/integrations/ninja-forms/Actions/ClosePopup.php:46
+msgid "0"
+msgstr "0"
+
+#: classes/Shortcode/Subscribe.php:298
+#: includes/integrations/class-pum-cf7.php:137
+#: includes/integrations/class-pum-gravity-forms.php:132
+#: includes/integrations/ninja-forms/Actions/ClosePopup.php:36
+#: includes/modules/admin-bar.php:463
+msgid "Close Popup"
+msgstr "Popup schließen"
+
+#: includes/integrations/class-pum-ninja-forms.php:98
+msgid "Ninja Form Success"
+msgstr "Ninja Form Erfolgreich"
+
+#: classes/Shortcode/PopupClose.php:71
+msgid "This prevents us from disabling the browsers default action when a close button is clicked. It can be used to allow a link to a file to both close a popup and still download the file."
+msgstr "Das hindert uns daran, die Browser-Standardaktion zu unterdrücken wenn ein Schließen-Button geklickt wird. Das kann genutzt werden damit ein Link zu einer Datei ein Popup schließt und die Datei trotzdem heruntergeladen werden kann. "
+
+#: classes/Conditions.php:309 classes/Shortcode/Subscribe.php:113
+#: classes/Shortcode/Subscribe.php:281
+msgid "Default"
+msgstr "Standard"
+
+#: classes/Conditions.php:302
+msgctxt "condition: post type plural label ie. Pages: With Template"
+msgid "%s: With Template"
+msgstr "%s: Mit Vorlage"
+
+#: classes/Admin/Popups.php:647
+msgid "This will disable automatic repositioning of the popup on window resizing."
+msgstr "Hiermit wird die automatische Repositionierung des Popups bei Anpassung der Fenstergröße deaktiviert."
+
+#: classes/Admin/Popups.php:646
+msgid "Disable Repositioning"
+msgstr "Repositionierung deaktivieren"
+
+#: classes/Admin/Templates.php:203
+msgid "Activate License"
+msgstr "Lizenz aktivieren"
+
+#: includes/integrations/class-pum-buddypress-integration.php:126
+msgid "Which action variables?"
+msgstr "Welche Aktionsvariablen?"
+
+#: includes/integrations/class-pum-buddypress-integration.php:122
+msgid "BP: Is Action Variable"
+msgstr "BP: Ist eine Aktionsvariable"
+
+#: includes/integrations/class-pum-buddypress-integration.php:114
+msgid "Which actions?"
+msgstr "Welche Aktionen?"
+
+#: includes/integrations/class-pum-buddypress-integration.php:110
+msgid "BP: Is Current Action"
+msgstr "BP: Ist die aktuelle Aktion"
+
+#: includes/integrations/class-pum-buddypress-integration.php:102
+msgid "Which components?"
+msgstr "Welche Komponenten?"
+
+#: includes/integrations/class-pum-buddypress-integration.php:94
+msgid "BP: Is Current Component"
+msgstr "BP: Ist eine aktuelle Komponente"
+
+#: includes/integrations/class-pum-buddypress-integration.php:82
+msgid "BP: Is Directory"
+msgstr "BP: Ist ein Verzeichnis"
+
+#: includes/integrations/class-pum-buddypress-integration.php:76
+msgid "BP: Is Item Mod"
+msgstr "BP: Ist ein Artikelmoderator"
+
+#: includes/integrations/class-pum-buddypress-integration.php:70
+msgid "BP: Is Item Admin"
+msgstr "BP: Ist ein Item Administrator"
+
+#: includes/integrations/class-pum-buddypress-integration.php:64
+msgid "BP: Is Register Page"
+msgstr "BP: Ist eine Registrierungsseite"
+
+#: includes/integrations/class-pum-buddypress-integration.php:58
+msgid "BP: Is Activation Page"
+msgstr "BP: Ist eine Aktivierungsseite"
+
+#: includes/integrations/class-pum-buddypress-integration.php:52
+msgid "BP: Is User Messages Page"
+msgstr "BP: Ist eine Benutzer-Nachrichtenseite"
+
+#: includes/integrations/class-pum-buddypress-integration.php:46
+msgid "BP: Is Group Page"
+msgstr "BP: Ist eine Gruppenseite"
+
+#: includes/integrations/class-pum-buddypress-integration.php:40
+msgid "BP: Is User Page"
+msgstr "BP: Ist eine Benutzerseite"
+
+#: includes/integrations/class-pum-buddypress-integration.php:34
+msgid "BP: Is a BuddyPress Page"
+msgstr "BP: Ist eine BuddyPress Seite"
+
+#: includes/integrations/class-pum-buddypress-integration.php:33
+#: includes/integrations/class-pum-buddypress-integration.php:39
+#: includes/integrations/class-pum-buddypress-integration.php:45
+#: includes/integrations/class-pum-buddypress-integration.php:51
+#: includes/integrations/class-pum-buddypress-integration.php:57
+#: includes/integrations/class-pum-buddypress-integration.php:63
+#: includes/integrations/class-pum-buddypress-integration.php:69
+#: includes/integrations/class-pum-buddypress-integration.php:75
+#: includes/integrations/class-pum-buddypress-integration.php:81
+#: includes/integrations/class-pum-buddypress-integration.php:93
+#: includes/integrations/class-pum-buddypress-integration.php:109
+#: includes/integrations/class-pum-buddypress-integration.php:121
+#: includes/integrations/class-pum-buddypress-integration.php:232
+msgid "BuddyPress"
+msgstr "BuddyPress"
+
+#: classes/Conditions.php:390
+msgctxt "condition: taxonomy plural label ie. Category IDs"
+msgid "%s IDs: 128, 129"
+msgstr "%s IDs: 128, 129"
+
+#: classes/Conditions.php:387
+msgctxt "condition: taxonomy plural label ie. Categories: Selected"
+msgid "%s: IDs"
+msgstr "%s: IDs"
+
+#: classes/Conditions.php:256
+msgctxt "condition: post type singular label ie. Posts IDs"
+msgid "%s IDs: 128, 129"
+msgstr "%s IDs: 128, 129"
+
+#: classes/Conditions.php:253
+msgctxt "condition: post type plural label ie. Posts: ID"
+msgid "%s: ID"
+msgstr "%s: ID"
+
+#: classes/Types.php:158
+msgctxt "Post Type Singular: Popup, Theme"
+msgid "%1$s submitted."
+msgstr "%1$s eingereicht."
+
+#: classes/Types.php:157
+msgctxt "Post Type Singular: Popup, Theme"
+msgid "%1$s saved."
+msgstr "%1$s gespeichert."
+
+#: classes/Types.php:156
+msgctxt "Post Type Singular: Popup, Theme"
+msgid "%1$s published."
+msgstr "%1$s veröffentlicht."
+
+#: classes/Types.php:154 classes/Types.php:155
+msgctxt "Post Type Singular: Popup, Theme"
+msgid "%1$s updated."
+msgstr "%1$s aktualisiert."
+
+#: classes/Admin/Popups.php:564 classes/Admin/Popups.php:578
+#: classes/Admin/Popups.php:592 classes/Admin/Popups.php:606
+#: classes/Shortcode/Popup.php:177 classes/Shortcode/Popup.php:188
+#: classes/Shortcode/Popup.php:199 classes/Shortcode/Popup.php:210
+msgctxt "Screen Edge: top, bottom"
+msgid "Distance from the %s edge of the screen."
+msgstr "Abstand vom %s Rand des Bildschirms"
+
+#: classes/Shortcode/PopupTrigger.php:122 classes/Triggers.php:156
+msgid "This prevents us from disabling the browsers default action when a trigger is clicked. It can be used to allow a link to a file to both trigger a popup and still download the file."
+msgstr "Das verhindert, dass wir die Standard-Aktion des Browsers unterdrücken wenn ein Trigger angeklickt wird. Das kann verwendet werden um einem Link zu einer Datei zu erlauben sowohl einen PopUp auszulösen als auch die Datei herunterzuladen."
+
+#: classes/Shortcode/PopupClose.php:70 classes/Shortcode/PopupTrigger.php:121
+#: classes/Triggers.php:155
+msgid "Do not prevent the default click functionality."
+msgstr "Die Standard Click-Funktionalität nicht unterdrücken."
+
+#: classes/Admin/Popups.php:395
+msgid "Customize This Theme"
+msgstr "Passe dieses Theme an"
+
+#: classes/Admin/Pages.php:106 classes/Types.php:52 classes/Types.php:54
+msgid "Popup Themes"
+msgstr "Popup Themes"
+
+#: classes/Shortcode/Popup.php:157
+msgid "Height Unit"
+msgstr "Einheiten-Höhe"
+
+#: classes/Shortcode/Popup.php:146
+msgid "Width Unit"
+msgstr "Einheiten-Breite"
+
+#: classes/Shortcode/Popup.php:119
+msgid "Choose which popup theme will be used."
+msgstr "Wähle welches Popup-Theme genutzt wird. "
+
+#: classes/Shortcode/Popup.php:118
+msgid "Choose a theme,"
+msgstr "Wähle ein Theme"
+
+#: classes/Admin/Popups.php:63 classes/Admin/Popups.php:394
+#: classes/Shortcode/Popup.php:117 classes/Types.php:52 classes/Types.php:165
+msgid "Popup Theme"
+msgstr "Popup Theme"
+
+#: classes/Shortcode/Popup.php:108
+msgid "This will be displayed above the content. Leave it empty to disable it."
+msgstr "Das wird über dem Inhalt angezeigt. Lasse es leer um es zu deaktivieren. "
+
+#: classes/Shortcode/Popup.php:107
+msgid "Enter popup title text,"
+msgstr "Gib den Text für den Popup-Titel an,"
+
+#: classes/Shortcode/Popup.php:106
+msgid "Popup Title"
+msgstr "Popup Titel"
+
+#: classes/Shortcode/Popup.php:101
+msgid "Used in popup triggers to target this popup"
+msgstr "In einem Popup-Auslöser verwendet um das Popup anzusprechen"
+
+#: classes/Shortcode/Popup.php:100
+msgid "`offer`, `more-info`"
+msgstr "`Angebot`, `mehr Infos`"
+
+#: classes/Shortcode/Popup.php:99
+msgid "Unique Popup ID"
+msgstr "Eindeutige Popup ID"
+
+#: classes/Admin/Popups.php:294 classes/Shortcode/Popup.php:52
+#: classes/Shortcode/Popup.php:68
+msgid "Display"
+msgstr "Anzeige"
+
+#: classes/Shortcode/Popup.php:32
+msgid "Insert a popup inline rather. Great for simple popups used for supporting content."
+msgstr "Füge das Popup stattdessen inline ein. Großartig für einfache Popups die verwendet werden für unterstützende Inhalte."
+
+#: classes/Shortcode/PopupTrigger.php:80
+msgid "Choose which popup will be targeted by this trigger."
+msgstr "Wähle, welches Popup durch diesen Auslöser angesprochen wird."
+
+#: classes/Shortcode/PopupTrigger.php:79
+msgid "Choose a Popup"
+msgstr "Wähle ein Popup"
+
+#: classes/Shortcode/PopupTrigger.php:78
+msgid "Targeted Popup"
+msgstr "Angesprochenes Popup"
+
+#: classes/Shortcode/PopupTrigger.php:52
+msgid "Trigger Content"
+msgstr "Inhalt auslösen"
+
+#: classes/Shortcode/PopupTrigger.php:44
+msgid "Inserts a click-able popup trigger."
+msgstr "Fügt einen klickbaren Popup-Auslöser ein."
+
+#: classes/Shortcode/PopupClose.php:65 classes/Shortcode/PopupTrigger.php:115
+msgid "Add additional classes for styling."
+msgstr "Füge weiter Klassen für das Styling hinzu. "
+
+#: classes/Shortcode/PopupClose.php:62 classes/Shortcode/PopupTrigger.php:112
+#: classes/Shortcode/PopupTrigger.php:113
+msgid "CSS Class"
+msgstr "CSS Klasse"
+
+#: classes/Shortcode/PopupTrigger.php:105
+msgid "The HTML tag used to generate the trigger and wrap your text."
+msgstr "Der HTML Tag der verwendet wurde um den Auslöser zu erstellen und der den Text umschließt."
+
+#: classes/Shortcode/PopupTrigger.php:104
+msgid "HTML Tags: button, span etc."
+msgstr "HTML Tags: button, span etc."
+
+#: classes/Shortcode/PopupClose.php:49 classes/Shortcode/PopupClose.php:50
+#: classes/Shortcode/PopupTrigger.php:103
+msgid "HTML Tag"
+msgstr "HTML Tag"
+
+#: classes/Shortcode/Popup.php:38 classes/Shortcode/PopupClose.php:36
+#: classes/Shortcode/PopupTrigger.php:53
+msgid "Can contain other shortcodes, images, text or html content."
+msgstr "Kann andere Shortcodes, Bilder, Text oder HTML beinhalten. "
+
+#: classes/Shortcode/Popup.php:37 classes/Shortcode/PopupClose.php:35
+msgid "Content"
+msgstr "Inhalt"
+
+#: classes/Shortcode/PopupClose.php:30
+msgid "Make text or html a close trigger for your popup."
+msgstr "Erstelle Text oder HTML als Schließen-Trigger für dein PopUp"
+
+#: classes/Shortcode/PopupClose.php:26
+msgid "Popup Close Button"
+msgstr "Popup Schließen Button"
+
+#: classes/Triggers.php:142
+msgid "Extra Selectors"
+msgstr "Zusätzliche Selektoren"
+
+#: classes/Triggers.php:141
+msgid "Click Trigger Settings"
+msgstr "Einstellungen für den Klick-Auslöser"
+
+#: classes/Triggers.php:140
+msgid "Click Open"
+msgstr "Öffnen durch Klick"
+
+#: includes/pum-install-functions.php:63
+msgid "Framed Border"
+msgstr "Rahmen"
+
+#: includes/pum-install-functions.php:53
+msgid "Cutting Edge"
+msgstr "Spitzenposition"
+
+#: includes/pum-install-functions.php:43
+msgid "Hello Box"
+msgstr "Hallo Box"
+
+#: includes/pum-install-functions.php:33
+msgid "Enterprise Blue"
+msgstr "Enterprise Blue"
+
+#: includes/pum-install-functions.php:23
+msgid "Light Box"
+msgstr "Light Box"
+
+#: classes/Cookies.php:84
+msgid "Manual JavaScript"
+msgstr "Manuelles JavaScript"
+
+#: classes/Cookies.php:75
+msgid "On Popup Open"
+msgstr "Wenn PopUp öffnet"
+
+#: classes/Cookies.php:176
+msgid "The name that will be used when checking for or saving this cookie."
+msgstr "Der Name der verwendet wird wenn nach diesem Cookie gesucht oder wenn es gespeichert wird. "
+
+#: classes/Cookies.php:175
+msgid "Cookie Name ex. popmaker-123"
+msgstr "Cookie Name z.B. popmaker-123"
+
+#: classes/Cookies.php:174 classes/Triggers.php:262
+msgid "Cookie Name"
+msgstr "Cookie Name"
+
+#: classes/Conditions.php:417
+msgid "Blog Index"
+msgstr "Blog Index"
+
+#: classes/Conditions.php:410
+msgid "Home Page"
+msgstr "Home Page"
+
+#: classes/Conditions.php:375
+msgctxt "condition: taxonomy plural label ie. Select Categories"
+msgid "Select %s."
+msgstr "Wähle %s."
+
+#: classes/Conditions.php:372
+msgctxt "condition: taxonomy plural label ie. Categories: Selected"
+msgid "%s: Selected"
+msgstr "%s: Ausgewählt"
+
+#: classes/Conditions.php:366
+msgctxt "condition: taxonomy plural label ie. Categories: All"
+msgid "%s: All"
+msgstr "%s: Alle"
+
+#: classes/Conditions.php:339
+msgctxt "condition: post type plural label ie. Select categories"
+msgid "Select %s."
+msgstr "Wähle %s."
+
+#: classes/Conditions.php:336
+msgctxt "condition: post type plural and taxonomy singular label ie. Posts: With Category"
+msgid "%1$s: With %2$s"
+msgstr "%1$s: Mit %2$s"
+
+#: classes/Conditions.php:240 classes/Conditions.php:269
+#: classes/Conditions.php:284
+msgctxt "condition: post type plural label ie. Select Posts"
+msgid "Select %s."
+msgstr "Wähle %s."
+
+#: classes/Conditions.php:237
+msgctxt "condition: post type plural label ie. Posts: Selected"
+msgid "%s: Selected"
+msgstr "%s: Ausgewählt"
+
+#: classes/Conditions.php:231
+msgctxt "condition: post type plural label ie. Posts: All"
+msgid "All %s"
+msgstr "Alle %s"
+
+#: classes/Conditions.php:223
+msgctxt "condition: post type plural label ie. Posts: All"
+msgid "%s Archive"
+msgstr "%s Archiv"
+
+#: classes/Admin/Subscribers/Table.php:245
+msgid "User ID"
+msgstr "Benutzer ID"
+
+#: classes/Admin/Subscribers/Table.php:279
+msgid "ID"
+msgstr "ID"
+
+#: classes/Admin/Subscribers/Table.php:90 classes/Shortcode/Subscribe.php:193
+#: classes/Shortcode/Subscribe.php:197 classes/Shortcode/Subscribe.php:245
+#: classes/Shortcode/Subscribe.php:246
+msgid "Email"
+msgstr "E-Mail"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:52
+msgid "Account Page"
+msgstr "Konto Seite"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:47
+msgid "Checkout Page"
+msgstr "Kassa Seite"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:42
+msgid "Cart Page"
+msgstr "Warenkorb Seite"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:37
+msgid "Shop Page"
+msgstr "Shop Seite"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:32
+msgid "All WooCommerce"
+msgstr "Alle WooCommerce"
+
+#: includes/integrations/class-pum-woocommerce-integration.php:31
+#: includes/integrations/class-pum-woocommerce-integration.php:36
+#: includes/integrations/class-pum-woocommerce-integration.php:41
+#: includes/integrations/class-pum-woocommerce-integration.php:46
+#: includes/integrations/class-pum-woocommerce-integration.php:51
+#: includes/integrations/class-pum-woocommerce-integration.php:57
+#: includes/integrations/class-pum-woocommerce-integration.php:85
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: classes/Shortcode.php:152 classes/Shortcode.php:164
+#: classes/Shortcode.php:179
+msgid "Options"
+msgstr "Optionen"
+
+#: classes/Model/Post.php:442
+msgid "Can't get property %s"
+msgstr "Kann die Eigenschaft %s nicht abrufen"
+
+#: classes/Admin/Templates.php:701
+msgid "Reset Cookie Key"
+msgstr "Cookie-Schlüssel zurücksetzen"
+
+#: classes/Cookies.php:116
+msgid "Sessions"
+msgstr "Sitzungen"
+
+#: classes/Conditions.php:112
+msgid "Format"
+msgstr "Format"
+
+#: classes/Conditions.php:109 classes/Conditions.php:416
+msgid "Posts"
+msgstr "Beiträge"
+
+#: classes/Conditions.php:108
+msgid "Pages"
+msgstr "Seiten"
+
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine.php:60
+msgid "Step %d of approximately %d running"
+msgstr "Schritt %d von ungefähr %d läuft"
+
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-6.php:42
+msgid "Clean up old data and verify data integrity."
+msgstr "Alte Daten bereinigen und Integrität der Daten überprüfen."
+
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-5.php:30
+msgid "Initialize popup analytics."
+msgstr "Popup Statistik initialisieren."
+
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-4.php:32
+msgid "Upgrade popup targeting conditions."
+msgstr "Aktualisiere Popup Auswahl-Konditionen."
+
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-3.php:32
+msgid "Upgrade popup triggers &amp; cookies."
+msgstr "Aktualisiere Popup Auslöser &amp; Cookies."
+
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-2.php:27
+msgid "Update your popups & themes settings."
+msgstr "Aktualisiere deinen Popups & Theme-Einstellungen"
+
+#: classes/Admin/Shortcode/UI.php:168
+msgid "You do not have access to preview this post."
+msgstr "Du hast keine Berechtigung die Vorschau dieses Beitrags anzusehen. "
+
+#: classes/Admin/Templates.php:455
+msgid "Delete` this trigger"
+msgstr "Lösche ` diesen Auslöser"
+
+#: classes/Admin/Templates.php:445 classes/Admin/Templates.php:454
+msgid "Edit this trigger"
+msgstr "Bearbeite diesen Auslöser"
+
+#: classes/Admin/Templates.php:490 classes/Admin/Templates.php:516
+msgid "Choose what type of trigger to add?"
+msgstr "Wähle den hinzuzufügenden Typ von Auslöser."
+
+#: classes/Admin/Templates.php:414 classes/Triggers.php:289
+msgid "Cookie"
+msgstr "Cookie"
+
+#: classes/Admin/Templates.php:413
+msgid "Type"
+msgstr "Typ"
+
+#: classes/Admin/Templates.php:400
+msgid "Add New Trigger"
+msgstr "Neuen Auslöser hinzufügen"
+
+#: classes/Admin/Popups.php:296 classes/Site/Assets.php:247
+msgid "Triggers"
+msgstr "Auslöser"
+
+#: classes/Admin/Templates.php:683
+msgid "Delete` this cookie"
+msgstr "Dieses Cookie löschen"
+
+#: classes/Admin/Templates.php:673 classes/Admin/Templates.php:682
+msgid "Edit this cookie"
+msgstr "Dieses Cookie bearbeiten"
+
+#: classes/Cookies.php:72
+msgid "On Popup Close"
+msgstr "Bei Schließen des Popup"
+
+#: classes/Cookies.php:115
+msgid "Cookie Settings"
+msgstr "Cookie Einstellungen"
+
+#: classes/Admin/Templates.php:416 classes/Admin/Templates.php:644
+#: classes/Shortcode/Subscribe.php:62
+msgid "Actions"
+msgstr "Aktionen"
+
+#: classes/Admin/Templates.php:641
+msgid "Event"
+msgstr "Anlass"
+
+#: classes/Admin/Templates.php:628 classes/Triggers.php:269
+msgid "Add New Cookie"
+msgstr "Neues Cookie hinzufügen"
+
+#: classes/Site/Assets.php:248
+msgid "Cookies"
+msgstr "Cookies"
+
+#: classes/Admin/Templates.php:589
+msgid "and"
+msgstr "und"
+
+#: classes/Admin/Templates.php:589
+msgctxt "aria-label for add new AND condition button"
+msgid "Add another AND condition group"
+msgstr "Füge eine weitere Gruppe für UND Bedingungen hinzu"
+
+#: classes/Admin/Templates.php:585 classes/Admin/Templates.php:596
+msgid "or"
+msgstr "oder"
+
+#: classes/Admin/Templates.php:585
+msgctxt "aria-label for add new OR condition button"
+msgid "Add another OR condition"
+msgstr "Füge eine weitere Gruppe für ODER Bedingungen hinzu"
+
+#: classes/Admin/Templates.php:610
+msgid "Remove Condition"
+msgstr "Entferne die Bedingung"
+
+#: classes/Admin/Templates.php:566 classes/Admin/Templates.php:598
+msgid "Enable the Not Operand"
+msgstr "Aktiviere das Not Operand"
+
+#: classes/Admin/Popups.php:316 classes/Site/Assets.php:250
+msgid "Conditions"
+msgstr "Bedingungen"
+
+#: classes/Admin/Popups.php:911
+msgid "Lifetime Opens"
+msgstr "bisherige Öffnungen"
+
+#: classes/Admin/Popups.php:904
+msgid "Previous Opens"
+msgstr "vorherige Öffnungen"
+
+#: classes/Admin/Popups.php:903
+msgid "Last Reset"
+msgstr "Letztes zurücksetzen"
+
+#: classes/Admin/Popups.php:881 classes/Admin/Popups.php:992
+msgid "Opens"
+msgstr "Öffnungen"
+
+#: classes/Admin/Popups.php:123
+msgid "Analytics"
+msgstr "Analysen"
+
+#: includes/admin/class-pum-admin-upgrades.php:656
+msgid "Upgrade failed, please try again."
+msgstr "Upgrade fehlgeschlagen, bitte versuche es erneut."
+
+#: includes/admin/class-pum-admin-upgrades.php:581
+msgid "The upgrade process has started, please be patient. This could take several minutes. You will be automatically redirected when the upgrade is finished."
+msgstr "Der Upgrade-Prozess hat begonnen, bitte habe Geduld. Das kann mehrere Minuten dauern. Du wirst automatisch umgeleitet, sobald das Upgrade fertig ist."
+
+#: includes/admin/class-pum-admin-upgrades.php:566
+msgid "Popup Maker - Upgrades"
+msgstr "Popup Maker - Upgrades"
+
+#: includes/admin/class-pum-admin-upgrades.php:301
+msgid "Upgrades have been completed successfully."
+msgstr "Upgrades wurden erfolgreich durchgeführt."
+
+#: includes/admin/class-pum-admin-upgrades.php:280
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-2.php:32
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-3.php:43
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-4.php:43
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-5.php:38
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-6.php:50
+msgid "You do not have permission to do upgrades"
+msgstr "Du hast keine Berechtigung, um Upgrades durchzuführen"
+
+#: includes/admin/class-pum-admin-upgrades.php:260
+msgid "Please click %shere%s to complete these changes now."
+msgstr "Bitte klicke %shier%s um deine Änderungen zu bestätigen."
+
+#: includes/admin/class-pum-admin-upgrades.php:258
+msgid "Database upgrades required."
+msgstr "Ein Upgrade der Datenbank ist erforderlich. "
+
+#: includes/admin/class-pum-admin-upgrades.php:257
+msgid "Important"
+msgstr "Wichtig"
+
+#: includes/admin/class-pum-admin-upgrades.php:248
+msgid "Popup Maker needs to complete a database upgrade that was previously started, click <a href=\"%s\">here</a> to resume the upgrade."
+msgstr "Popup Maker muss ein Datenbank Upgrade beenden das früher gestartet wurde, klicke <a href=\"%s\">hier</a> um das Upgrade fortzusetzen."
+
+#: includes/admin/class-pum-admin-upgrades.php:123
+#: includes/admin/class-pum-admin-upgrades.php:124
+msgid "Popup Maker Upgrades"
+msgstr "Popup Maker Upgrades"
+
+#. Author of the plugin/theme
+msgid "WP Popup Maker"
+msgstr "WP Popup Maker"
+
+#: classes/Admin/Helpers.php:387 classes/Admin/Popups.php:295
+#: classes/Admin/Popups.php:666 classes/Admin/Templates.php:334
+#: classes/Shortcode/Popup.php:55 classes/Shortcode/Popup.php:77
+#: templates/popup.php:44
+msgid "Close"
+msgstr "Schließen"
+
+#: classes/Admin/Assets.php:75
+msgid "Are you sure you want to reset the open count?"
+msgstr "Bist du sicher dass du den Öffnungs-Zähler zurücksetzen möchtest?"
+
+#: classes/Admin/Assets.php:73
+msgid "Are you sure you want to delete this cookie?"
+msgstr "Bist du sicher dass due dieses Cookie löschen möchtest?"
+
+#: classes/Admin/Assets.php:72
+msgid "Are you sure you want to delete this trigger?"
+msgstr "Bist du sicher dass du diesen Auslöser löschen möchtest?"
+
+#: classes/Admin/Assets.php:76 classes/Admin/Shortcode/UI.php:104
+msgid "Popup Maker Shortcodes"
+msgstr "Popup Maker Shortcodes"
+
+#: classes/Admin/Assets.php:71 classes/Admin/Helpers.php:370
+#: classes/Admin/Shortcode/UI.php:103
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: classes/Admin/Assets.php:70 classes/Admin/Shortcode/UI.php:102
+msgid "Insert"
+msgstr "Einfügen"
+
+#: classes/Admin/Assets.php:69
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: classes/Admin/Assets.php:67 classes/Admin/Helpers.php:372
+#: classes/Admin/Templates.php:518 classes/Admin/Templates.php:694
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: classes/Admin/Settings.php:330
+msgid "This will disable the popup tags & categories."
+msgstr "Hiermit werden die Popup Schlagwörter und Kategorien deaktiviert."
+
+#: classes/Admin/Settings.php:329
+msgid "Disable categories & tags?"
+msgstr "Kategorien & Schlagwörter deaktivieren?"
+
+#: classes/Admin/Templates.php:286 classes/Admin/Templates.php:291
+#: includes/admin/metabox-support.php:42
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: includes/admin/extensions/extensions-page.php:202
+msgid "Check it out"
+msgstr "Überprüfe das"
+
+#: classes/Admin/Pages.php:141
+msgid "All Popups"
+msgstr "Alle Popus"
+
+#: classes/Admin/Pages.php:61 classes/Admin/Pages.php:148
+msgid "Extend"
+msgstr "Erweitern"
+
+#: classes/Admin/Pages.php:143
+msgid "All Themes"
+msgstr "Alle Themes"
+
+#: classes/Admin/Pages.php:152
+msgid "Account"
+msgstr "Konto"
+
+#: classes/Admin/Pages.php:151
+msgid "Support Forum"
+msgstr "Support-Forum"
+
+#: classes/Admin/Pages.php:153
+msgid "Contact Us"
+msgstr "Kontaktiere uns"
+
+#: includes/admin/extensions/extensions-page.php:18
+msgid "Extend Popup Maker"
+msgstr "Erweitere Popup Maker"
+
+#: includes/admin/extensions/extensions-page.php:27
+#: includes/admin/extensions/extensions-page.php:145
+msgid "Browse All Extensions"
+msgstr "Durchsuche alle Erweiterungen"
+
+#: includes/admin/extensions/extensions-page.php:29
+msgid "These extensions <strong>add extra functionality</strong> to your popups."
+msgstr "Diese Erweiterungen <strong>ergänzen die Funktionalitäten</strong> deiner Popups."
+
+#: includes/admin/extensions/extensions-page.php:154
+msgid "Other Compatible Plugins"
+msgstr "Andere kompatible Plugins"
+
+#: includes/admin/extensions/extensions-page.php:134
+msgid "Get this Extension"
+msgstr "Hol dir diese Erweiterung"
+
+#: includes/admin/extensions/extensions-page.php:156
+msgid "These plugins should work in popups with no extra setup."
+msgstr "Diese Plugins sollten in Popups ohne weitere Einrichtung funktionieren."
+
+#: includes/admin/extensions/extensions-page.php:162
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+#: includes/admin/extensions/extensions-page.php:164
+msgid "Gravity Forms is one of the most popular form building plugins."
+msgstr "Gravity Forms ist eines der bekanntestesten Plugins zur Erstellung von Formularen."
+
+#: includes/admin/extensions/extensions-page.php:168
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: includes/admin/extensions/extensions-page.php:186
+msgid "Ninja Forms has fast become the most extensible form plugin available. Build super custom forms and integrate with your favorite services."
+msgstr "Ninja Forms wurde schnell das erweiterungsfähigste Formular-Plugin. Erstelle super individuelle Formulare und integriere deine bevorzugten Dienste."
+
+#: includes/admin/extensions/extensions-page.php:184
+msgid "Ninja Forms"
+msgstr "Ninja Forms"
+
+#: includes/admin/extensions/extensions-page.php:170
+msgid "CF7 is one of the most downloaded plugins on the WordPress repo. Make simple forms with ease and plenty of free addons available."
+msgstr "CF7 ist eines der am häufigsten heruntergeladenen Plugins im WordPress Repo. Erstellt einfache Formulare mit Leichtigkeit, dazu stehen viele kostenlose Add-ons zur Verfügung."
+
+#: includes/admin/extensions/extensions-page.php:174
+msgid "Quiz & Survey Master"
+msgstr "Quiz & Survey Master"
+
+#: includes/admin/extensions/extensions-page.php:176
+msgid "If you need more from your forms data look no further, QSM is all about the statistics & collective data, something other form plugins neglect."
+msgstr "Falls Du mehr von den Daten deiner Formulare benötigst suche nicht länger, QSM bietet alles für Statistiken & gesammelte Daten, die andere Formular-Plugins ablehnen."
+
+#. Description of the plugin/theme
+msgid "Easily create & style popups with any content. Theme editor to quickly style your popups. Add forms, social media boxes, videos & more."
+msgstr "Ganz einfach Popups mit beliebigem Inhalt erstellen und stylen. Mit dem Theme Editor kannst Du die Styles Deiner Popups schnell anpassen. Füge Formulare, Boxen für soziale Netzwerke, Videos und mehr hinzu."
+
+#. #-#-#-#-#  popup-maker-code.pot (Popup Maker 1.7.19)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: classes/Site/Assets.php:235 classes/Types.php:23
+#: includes/admin/class-pum-admin-upgrades.php:256
+#: includes/integrations/class-pum-gravity-forms.php:53
+#: includes/modules/admin-bar.php:414
+msgid "Popup Maker"
+msgstr "Popup Maker"
+
+#: classes/Admin/Popups.php:64
+msgid "%s Name"
+msgstr "%s "
+
+#: classes/Types.php:21 includes/modules/admin-bar.php:424
+msgid "Popups"
+msgstr "Popups"
+
+#: classes/Admin/Popups.php:63 classes/Admin/Subscribers/Table.php:94
+#: classes/Shortcode/Popup.php:28 classes/Shortcode/Popup.php:355
+#: classes/Shortcode/Subscribe.php:88 classes/Types.php:21
+#: classes/Types.php:164 includes/integrations/class-pum-cf7.php:165
+#: includes/integrations/class-pum-gravity-forms.php:160
+#: includes/modules/menus.php:52
+msgid "Popup"
+msgstr "Popup"
+
+#: classes/Admin/Pages.php:142
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: classes/Admin/Subscribers/Table.php:349
+#: classes/Admin/Subscribers/Table.php:355
+#: classes/Admin/Subscribers/Table.php:364
+#: classes/Admin/Subscribers/Table.php:430 classes/Extension/Updater.php:401
+#: includes/admin/class-pum-admin-upgrades.php:280
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-2.php:32
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-3.php:43
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-4.php:43
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-5.php:38
+#: includes/admin/upgrades/class-pum-admin-upgrade-routine-6.php:50
+msgid "Error"
+msgstr "Fehler"
+
+#: classes/Extension/Updater.php:401
+msgid "You do not have permission to install plugin updates"
+msgstr "Du hast keine Berechtigung, um Plugins zu installieren!"
+
+#: includes/install.php:28
+msgid "Default Theme"
+msgstr "Standard-Theme"
+
+#: includes/input-options.php:182
+msgid "Manual"
+msgstr "Manuell"
+
+#: includes/input-options.php:181
+msgid "On Close"
+msgstr "Beim Schließen"
+
+#: includes/input-options.php:180
+msgid "On Open"
+msgstr "Beim Öffnen"
+
+#: includes/input-options.php:179
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: classes/Admin/Popups.php:535 classes/Admin/Popups.php:559
+#: includes/input-options.php:141 includes/input-options.php:158
+#: includes/input-options.php:170
+msgid "Bottom Right"
+msgstr "Unten rechts"
+
+#: classes/Admin/Popups.php:534 classes/Admin/Popups.php:558
+#: includes/input-options.php:140 includes/input-options.php:157
+msgid "Bottom Center"
+msgstr "Unten mittig"
+
+#: classes/Admin/Popups.php:533 classes/Admin/Popups.php:557
+#: includes/input-options.php:139 includes/input-options.php:156
+#: includes/input-options.php:169
+msgid "Bottom Left"
+msgstr "Unten links"
+
+#: classes/Admin/Popups.php:532 classes/Admin/Popups.php:556
+#: includes/input-options.php:138 includes/input-options.php:155
+msgid "Middle Right"
+msgstr "Mittel rechts"
+
+#: classes/Admin/Popups.php:531 classes/Admin/Popups.php:555
+#: includes/input-options.php:137 includes/input-options.php:154
+msgid "Middle Center"
+msgstr "Mitte zentriert"
+
+#: classes/Admin/Popups.php:530 classes/Admin/Popups.php:554
+#: includes/input-options.php:136 includes/input-options.php:153
+msgid "Middle Left"
+msgstr "Mittel links"
+
+#: classes/Admin/Popups.php:529 classes/Admin/Popups.php:553
+#: includes/input-options.php:135 includes/input-options.php:152
+#: includes/input-options.php:168
+msgid "Top Right"
+msgstr "Oben rechts"
+
+#: classes/Admin/Popups.php:528 classes/Admin/Popups.php:552
+#: includes/input-options.php:134 includes/input-options.php:151
+msgid "Top Center"
+msgstr "Oben mittig"
+
+#: classes/Admin/Popups.php:527 classes/Admin/Popups.php:551
+#: includes/input-options.php:133 includes/input-options.php:150
+#: includes/input-options.php:167
+msgid "Top Left"
+msgstr "Oben links"
+
+#: includes/input-options.php:120
+msgid "Grow and Slide"
+msgstr "Wachsen und sliden"
+
+#: includes/input-options.php:119
+msgid "Grow"
+msgstr "Wachsen"
+
+#: classes/Admin/Popups.php:498 includes/input-options.php:118
+msgid "Fade and Slide"
+msgstr "Verblassen und sliden"
+
+#: classes/Admin/Popups.php:497 includes/input-options.php:117
+msgid "Fade"
+msgstr "Ein-/ Ausblenden"
+
+#: classes/Admin/Popups.php:496 includes/input-options.php:116
+msgid "Slide"
+msgstr "Slide"
+
+#: classes/Admin/Popups.php:421 classes/Shortcode/PopupTrigger.php:86
+#: includes/input-options.php:106
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: classes/Admin/Popups.php:420 includes/input-options.php:105
+msgid "Auto"
+msgstr "Auto"
+
+#: includes/input-options.php:104
+msgid "Non Responsive Sizes&#10549;"
+msgstr "Nicht responsive Größen&#10549;"
+
+#: classes/Admin/Popups.php:417 includes/input-options.php:103
+msgid "X Large - 95%"
+msgstr "Sehr groß - 95%"
+
+#: classes/Admin/Popups.php:416 includes/input-options.php:102
+msgid "Large - 80%"
+msgstr "Groß - 80%"
+
+#: classes/Admin/Popups.php:415 includes/input-options.php:101
+msgid "Normal - 70%"
+msgstr "Normal - 70%"
+
+#: classes/Admin/Popups.php:414 includes/input-options.php:100
+msgid "Medium - 60%"
+msgstr "Mittel - 60%"
+
+#: classes/Admin/Popups.php:413 includes/input-options.php:99
+msgid "Small - 40%"
+msgstr "Klein - 40%"
+
+#: classes/Admin/Popups.php:412 includes/input-options.php:98
+msgid "Tiny - 30%"
+msgstr "Sehr klein - 30%"
+
+#: classes/Admin/Popups.php:411 includes/input-options.php:97
+msgid "Micro - 20%"
+msgstr "Mikro - 20%"
+
+#: classes/Admin/Popups.php:410 includes/input-options.php:96
+msgid "Nano - 10%"
+msgstr "Nano - 10%"
+
+#: includes/input-options.php:95
+msgid "Responsive Sizes&#10549;"
+msgstr "Responsive Größen&#10549;"
+
+#: includes/input-options.php:58 includes/input-options.php:75
+msgid "Normal"
+msgstr "Normal"
+
+#: includes/input-options.php:43
+msgid "Use Your Themes"
+msgstr "Nutze Deine Themes"
+
+#: includes/input-options.php:34
+msgid "Ridge"
+msgstr "Gezahnt"
+
+#: includes/input-options.php:33
+msgid "Outset"
+msgstr "Beginn"
+
+#: includes/input-options.php:31
+msgid "Groove"
+msgstr "Geriffelt"
+
+#: includes/input-options.php:30
+msgid "Double"
+msgstr "Doppelt"
+
+#: includes/input-options.php:29
+msgid "Dashed"
+msgstr "Gestrichelt"
+
+#: includes/input-options.php:28
+msgid "Dotted"
+msgstr "Gepunktet"
+
+#: includes/input-options.php:27
+msgid "Solid"
+msgstr "Durchgehend"
+
+#: classes/Admin/Assets.php:74 classes/Admin/Popups.php:495
+#: classes/Admin/Settings.php:249 classes/Shortcode/Subscribe.php:113
+#: classes/Shortcode/Subscribe.php:124 classes/Shortcode/Subscribe.php:280
+#: includes/input-options.php:26 includes/input-options.php:115
+msgid "None"
+msgstr "Nichts"
+
+#: includes/google-fonts.php:58
+msgid "Google Web Fonts&#10549;"
+msgstr "Google Web Fonts&#10549;"
+
+#: classes/Cookies.php:205
+msgid "Changing this will cause all existing cookies to be invalid."
+msgstr "Dies zu ändern wird alle bereits existierende Cookies ungültig machen."
+
+#: classes/Cookies.php:198
+msgid "This will prevent the popup from triggering on all pages until the cookie expires."
+msgstr "Dies verhindert das Auslösen von Popups auf allen Seiten bis das Cookie abläuft."
+
+#: classes/Cookies.php:183
+msgid "Enter a plain english time before cookie expires."
+msgstr "Gib eine eindeutige Zeitspanne ( in Englisch ) an, wie lange das Cookie gültig sein soll. "
+
+#: classes/Cookies.php:182
+msgid "364 days 23 hours 59 minutes 59 seconds"
+msgstr "364 Tage 23 Stunden 59 Minuten 59 Sekunden"
+
+#: classes/Admin/Helpers.php:199 classes/Admin/Popups.php:511
+#: classes/Admin/Popups.php:679 classes/Admin/Popups.php:761
+#: classes/Shortcode/Popup.php:240 includes/class-popmake-fields.php:175
+msgid "ms"
+msgstr "ms"
+
+#: includes/class-popmake-cron.php:49
+msgid "Once Weekly"
+msgstr "Einmal wöchentlich"
+
+#: classes/Admin/Tools.php:170
+msgid "To copy the system info, click below then press Ctrl + C (PC) or Cmd + C (Mac)."
+msgstr "Um die System-Info zu kopieren, klicke unten und dann drücke Ctrl + C (PC) oder Cmd + C (Mac)."
+
+#: classes/Admin/Tools.php:412
+msgid "Import From Easy Modal v2"
+msgstr "Import aus Easy Modal v2"
+
+#: classes/Admin/Tools.php:126
+msgid "Import / Export"
+msgstr "Import / Export"
+
+#: classes/Admin/Tools.php:125
+msgid "System Info"
+msgstr "System Informationen"
+
+#: classes/Admin/Tools.php:44
+msgid "Successfully Imported your themes &amp; modals from Easy Modal."
+msgstr "Deine Themes &amp; modale wurden erfolgreich von Easy Modal importiert."
+
+#: includes/admin/themes/metabox.php:162
+msgid "Title Text"
+msgstr "Text der Überschrift"
+
+#: includes/admin/themes/metabox.php:40
+msgid "Content Settings"
+msgstr "Inhaltseinstellungen"
+
+#: includes/admin/themes/metabox.php:37
+msgid "Title Settings"
+msgstr "Überschriften-Einstellungen"
+
+#: includes/admin/themes/metabox.php:34
+msgid "Container Settings"
+msgstr "Container-Einstellungen"
+
+#: includes/admin/themes/metabox.php:31
+msgid "Overlay Settings"
+msgstr "Überlagerungseinstellungen"
+
+#: includes/admin/themes/metabox.php:28
+msgid "Theme Preview"
+msgstr "Theme-Vorschau"
+
+#: includes/admin/themes/metabox-title-fields.php:111
+#: includes/class-popmake-popup-theme-fields.php:210
+msgid "Align"
+msgstr "Ausrichten"
+
+#: includes/admin/themes/metabox-title-fields.php:10
+msgid "Theme the title of the popups."
+msgstr "Theme den Titel der Popups."
+
+#: includes/admin/themes/metabox-overlay-fields.php:39
+msgid "The opacity value for the overlay."
+msgstr "Der Wert für die Deckkraft der Überlagerung."
+
+#: includes/admin/themes/metabox-overlay-fields.php:20
+msgid "Choose the overlay color."
+msgstr "Wähle die Farbe der Überlagerung."
+
+#: includes/admin/themes/metabox-overlay-fields.php:9
+msgid "Theme the overlay behind the popups."
+msgstr "Das Theme für die Überlagerung hinter dem Popup."
+
+#: includes/admin/themes/metabox-content-fields.php:10
+msgid "Theme the content inside the popups."
+msgstr "Theme der Inhalt innerhalb der Popups."
+
+#: includes/admin/themes/metabox-container-fields.php:114
+#: includes/class-popmake-popup-theme-fields.php:71
+msgid "Choose a border style for your container button."
+msgstr "Wähle einen Stil für die Umrandung deines Container Buttons."
+
+#: includes/admin/themes/metabox-container-fields.php:98
+#: includes/class-popmake-popup-theme-fields.php:60
+msgid "Choose a corner radius for your container button."
+msgstr "Wähle einen Radius für die Ecken deines Container Buttons."
+
+#: includes/admin/themes/metabox-container-fields.php:10
+msgid "Theme the container inside the popups."
+msgstr "Theme der Container innerhalb der Popups."
+
+#: includes/admin/themes/metabox-close-fields.php:392
+#: includes/admin/themes/metabox-title-fields.php:131
+msgid "Text Shadow"
+msgstr "Text-Schatten"
+
+#: includes/admin/themes/metabox-close-fields.php:363
+#: includes/admin/themes/metabox-container-fields.php:221
+#: includes/class-popmake-popup-theme-fields.php:135
+#: includes/class-popmake-popup-theme-fields.php:179
+#: includes/class-popmake-popup-theme-fields.php:518
+msgid "Spread"
+msgstr "Ausdehnen"
+
+#: includes/admin/themes/metabox-close-fields.php:354
+#: includes/admin/themes/metabox-close-fields.php:414
+#: includes/admin/themes/metabox-container-fields.php:204
+#: includes/admin/themes/metabox-title-fields.php:169
+#: includes/class-popmake-popup-theme-fields.php:125
+#: includes/class-popmake-popup-theme-fields.php:237
+#: includes/class-popmake-popup-theme-fields.php:508
+#: includes/class-popmake-popup-theme-fields.php:564
+msgid "Blur Radius"
+msgstr "Unschärfe-Radius"
+
+#: includes/admin/themes/metabox-close-fields.php:345
+#: includes/admin/themes/metabox-close-fields.php:405
+#: includes/admin/themes/metabox-container-fields.php:187
+#: includes/admin/themes/metabox-title-fields.php:152
+#: includes/class-popmake-popup-theme-fields.php:115
+#: includes/class-popmake-popup-theme-fields.php:227
+#: includes/class-popmake-popup-theme-fields.php:498
+#: includes/class-popmake-popup-theme-fields.php:554
+msgid "Vertical Position"
+msgstr "Vertikale Position"
+
+#: includes/admin/themes/metabox-close-fields.php:336
+#: includes/admin/themes/metabox-close-fields.php:396
+#: includes/admin/themes/metabox-container-fields.php:170
+#: includes/admin/themes/metabox-title-fields.php:135
+#: includes/class-popmake-popup-theme-fields.php:105
+#: includes/class-popmake-popup-theme-fields.php:217
+#: includes/class-popmake-popup-theme-fields.php:488
+#: includes/class-popmake-popup-theme-fields.php:544
+msgid "Horizontal Position"
+msgstr "Horizontale Position"
+
+#: includes/admin/themes/metabox-close-fields.php:331
+#: includes/admin/themes/metabox-container-fields.php:165
+#: includes/class-popmake-popup-theme-fields.php:95
+#: includes/class-popmake-popup-theme-fields.php:478
+msgid "Set the box shadow to inset (inner shadow)."
+msgstr "Lege den Box-Schatten für den Einsatzes (innerer Schatten) fest."
+
+#: includes/admin/themes/metabox-close-fields.php:323
+#: includes/admin/themes/metabox-container-fields.php:157
+#: includes/class-popmake-popup-theme-fields.php:101
+#: includes/class-popmake-popup-theme-fields.php:484
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/admin/themes/metabox-close-fields.php:322
+#: includes/admin/themes/metabox-container-fields.php:156
+#: includes/class-popmake-popup-theme-fields.php:100
+#: includes/class-popmake-popup-theme-fields.php:483
+msgid "No"
+msgstr "Nein"
+
+#: includes/admin/themes/metabox-close-fields.php:316
+#: includes/admin/themes/metabox-container-fields.php:151
+#: includes/class-popmake-popup-theme-fields.php:94
+#: includes/class-popmake-popup-theme-fields.php:477
+#: includes/input-options.php:32
+msgid "Inset"
+msgstr "Einfügung"
+
+#: includes/admin/themes/metabox-close-fields.php:312
+#: includes/admin/themes/metabox-container-fields.php:147
+msgid "Drop Shadow"
+msgstr "Schattenwurf"
+
+#: includes/admin/themes/metabox-close-fields.php:299
+#: includes/admin/themes/metabox-container-fields.php:127
+#: includes/class-popmake-popup-theme-fields.php:84
+#: includes/class-popmake-popup-theme-fields.php:467
+msgid "Thickness"
+msgstr "Dicke"
+
+#: includes/admin/themes/metabox-close-fields.php:286
+#: includes/class-popmake-popup-theme-fields.php:454
+msgid "Choose a border style for your close button."
+msgstr "Wähle einen Stil für die Umrandung deines Schließen Buttons."
+
+#: includes/admin/themes/metabox-close-fields.php:271
+#: includes/class-popmake-popup-theme-fields.php:443
+msgid "Choose a corner radius for your close button."
+msgstr "Wähle einen Radius für die Ecken deines Schließen Buttons."
+
+#: includes/admin/themes/metabox-close-fields.php:266
+#: includes/admin/themes/metabox-container-fields.php:85
+#: includes/class-popmake-popup-theme-fields.php:59
+#: includes/class-popmake-popup-theme-fields.php:442
+msgid "Radius"
+msgstr "Radius"
+
+#: includes/admin/themes/metabox-close-fields.php:260
+#: includes/admin/themes/metabox-container-fields.php:81
+msgid "Border"
+msgstr "Rand"
+
+#: includes/admin/themes/metabox-close-fields.php:250
+#: includes/admin/themes/metabox-container-fields.php:73
+#: includes/admin/themes/metabox-overlay-fields.php:48
+msgid "Check out Advanced Theme Builder!"
+msgstr "Schau dir die erweiterten Optionen für den Theme-Builder an!"
+
+#: includes/admin/themes/metabox-close-fields.php:249
+#: includes/admin/themes/metabox-container-fields.php:73
+#: includes/admin/themes/metabox-overlay-fields.php:48
+msgid "Want to use background images?"
+msgstr "Willst du ein Hintergrundbild verwenden?"
+
+#: includes/admin/themes/metabox-close-fields.php:235
+#: includes/admin/themes/metabox-close-fields.php:380
+#: includes/admin/themes/metabox-close-fields.php:431
+#: includes/admin/themes/metabox-container-fields.php:51
+#: includes/admin/themes/metabox-container-fields.php:246
+#: includes/admin/themes/metabox-overlay-fields.php:25
+#: includes/admin/themes/metabox-title-fields.php:194
+#: includes/class-popmake-popup-theme-fields.php:21
+#: includes/class-popmake-popup-theme-fields.php:49
+#: includes/class-popmake-popup-theme-fields.php:151
+#: includes/class-popmake-popup-theme-fields.php:253
+#: includes/class-popmake-popup-theme-fields.php:432
+#: includes/class-popmake-popup-theme-fields.php:534
+#: includes/class-popmake-popup-theme-fields.php:580
+msgid "Opacity"
+msgstr "Deckkraft"
+
+#: includes/admin/themes/metabox-close-fields.php:223
+#: includes/admin/themes/metabox-container-fields.php:39
+msgid "Background"
+msgstr "Hintergrund"
+
+#: includes/admin/themes/metabox-close-fields.php:204
+#: includes/admin/themes/metabox-close-fields.php:276
+#: includes/admin/themes/metabox-container-fields.php:103
+#: includes/admin/themes/metabox-content-fields.php:62
+#: includes/admin/themes/metabox-title-fields.php:96
+#: includes/class-popmake-popup-theme-fields.php:70
+#: includes/class-popmake-popup-theme-fields.php:203
+#: includes/class-popmake-popup-theme-fields.php:285
+#: includes/class-popmake-popup-theme-fields.php:419
+#: includes/class-popmake-popup-theme-fields.php:453
+msgid "Style"
+msgstr "Stil"
+
+#: includes/admin/themes/metabox-close-fields.php:189
+#: includes/admin/themes/metabox-content-fields.php:46
+#: includes/admin/themes/metabox-title-fields.php:81
+#: includes/class-popmake-popup-theme-fields.php:196
+#: includes/class-popmake-popup-theme-fields.php:278
+#: includes/class-popmake-popup-theme-fields.php:412
+msgid "Weight"
+msgstr "Rechtsbündig"
+
+#: includes/admin/themes/metabox-close-fields.php:174
+#: includes/admin/themes/metabox-content-fields.php:31
+#: includes/admin/themes/metabox-title-fields.php:65
+#: includes/class-popmake-popup-theme-fields.php:189
+#: includes/class-popmake-popup-theme-fields.php:271
+#: includes/class-popmake-popup-theme-fields.php:405
+msgid "Family"
+msgstr "Familie"
+
+#: includes/admin/themes/metabox-close-fields.php:165
+#: includes/admin/themes/metabox-title-fields.php:48
+#: includes/class-popmake-popup-theme-fields.php:169
+#: includes/class-popmake-popup-theme-fields.php:379
+msgid "Line Height"
+msgstr "Zeilenhöhe"
+
+#: includes/admin/themes/metabox-close-fields.php:147
+#: includes/admin/themes/metabox-close-fields.php:227
+#: includes/admin/themes/metabox-close-fields.php:291
+#: includes/admin/themes/metabox-close-fields.php:372
+#: includes/admin/themes/metabox-close-fields.php:423
+#: includes/admin/themes/metabox-container-fields.php:43
+#: includes/admin/themes/metabox-container-fields.php:119
+#: includes/admin/themes/metabox-container-fields.php:238
+#: includes/admin/themes/metabox-content-fields.php:23
+#: includes/admin/themes/metabox-overlay-fields.php:16
+#: includes/admin/themes/metabox-title-fields.php:23
+#: includes/admin/themes/metabox-title-fields.php:186
+#: includes/class-popmake-popup-theme-fields.php:15
+#: includes/class-popmake-popup-theme-fields.php:43
+#: includes/class-popmake-popup-theme-fields.php:78
+#: includes/class-popmake-popup-theme-fields.php:145
+#: includes/class-popmake-popup-theme-fields.php:163
+#: includes/class-popmake-popup-theme-fields.php:247
+#: includes/class-popmake-popup-theme-fields.php:265
+#: includes/class-popmake-popup-theme-fields.php:389
+#: includes/class-popmake-popup-theme-fields.php:426
+#: includes/class-popmake-popup-theme-fields.php:461
+#: includes/class-popmake-popup-theme-fields.php:528
+#: includes/class-popmake-popup-theme-fields.php:574
+msgid "Color"
+msgstr "Farbe"
+
+#: includes/admin/themes/metabox-close-fields.php:143
+#: includes/admin/themes/metabox-content-fields.php:17
+#: includes/admin/themes/metabox-title-fields.php:19
+msgid "Font"
+msgstr "Schriftart"
+
+#: includes/admin/themes/metabox-close-fields.php:95
+#: includes/class-popmake-popup-theme-fields.php:332
+msgid "Choose which corner the close button will be positioned."
+msgstr "Wähle in welcher Ecke dein Schließen Button positioniert werden soll."
+
+#: includes/admin/themes/metabox-close-fields.php:48
+#: includes/admin/themes/metabox-container-fields.php:17
+#: includes/class-popmake-popup-theme-fields.php:33
+#: includes/class-popmake-popup-theme-fields.php:301
+msgid "Padding"
+msgstr "Innenabstand"
+
+#: includes/admin/themes/metabox-close-fields.php:22
+#: includes/class-popmake-popup-theme-fields.php:296
+msgid "Enter the close button text."
+msgstr "Gib den Text für den Schließen Button ein."
+
+#: includes/admin/themes/metabox-close-fields.php:18
+#: includes/class-popmake-popup-theme-fields.php:294
+msgid "Text"
+msgstr "Text"
+
+#: includes/admin/themes/metabox-close-fields.php:11
+msgid "Theme the close button for the popups."
+msgstr "Theme den Schließen Button für die Popups."
+
+#: classes/Admin/Assets.php:68 classes/Admin/Settings.php:410
+#: classes/Admin/Settings.php:439 classes/Admin/Tools.php:86
+#: classes/Admin/Tools.php:504
+#: includes/integrations/class-pum-gravity-forms.php:175
+msgid "Save"
+msgstr "Speichern"
+
+#: classes/Admin/Templates.php:200
+#: includes/admin/settings/register-settings.php:892
+msgid "Deactivate License"
+msgstr "Lizenz deaktivieren"
+
+#: includes/admin/settings/register-settings.php:674
+msgid "Upload File"
+msgstr "Datei hochladen"
+
+#: includes/admin/settings/register-settings.php:540
+msgid "The callback function used for the <strong>%s</strong> setting is missing."
+msgstr "Die Rückfall-Funktion die für die <strong>%s</strong> Einstellung verwendet wird fehlt."
+
+#: classes/Admin/Settings.php:478 classes/Admin/Settings.php:509
+msgid "Misc"
+msgstr "Verschiedenes"
+
+#: classes/Admin/Settings.php:477 classes/Admin/Settings.php:506
+msgid "Licenses"
+msgstr "Lizenzen"
+
+#: classes/Admin/Settings.php:510
+msgid "Assets"
+msgstr "Anlagen"
+
+#: classes/Admin/Popups.php:293 classes/Admin/Settings.php:474
+#: classes/Admin/Settings.php:497 classes/Admin/Settings.php:500
+#: classes/Conditions.php:107 classes/Conditions.php:409
+#: classes/Conditions.php:423 classes/Conditions.php:429
+#: classes/Cookies.php:157 classes/Shortcode/Popup.php:51
+#: classes/Shortcode/Popup.php:65 classes/Shortcode/Subscribe.php:60
+#: classes/Shortcode/Subscribe.php:79 classes/Shortcode.php:151
+#: classes/Shortcode.php:163 classes/Shortcode.php:176 classes/Triggers.php:288
+#: includes/class-popmake-fields.php:57
+msgid "General"
+msgstr "Allgemein"
+
+#: includes/admin/settings/register-settings.php:268
+msgid "Settings updated."
+msgstr "Einstellungen aktualisiert."
+
+#: classes/Admin/Settings.php:325
+msgid "This will hide the support widget on all popup maker admin pages."
+msgstr "Das wird das Support Widget auf allen Popup Maker Admin-Seiten verstecken."
+
+#: classes/Admin/Settings.php:324
+msgid "Hide Admin Support Widget"
+msgstr "Admin-Support Widget ausblenden"
+
+#: classes/Admin/Settings.php:315
+msgid "This will automatically make any eModal classes you have added to your site launch the appropriate Popup after import."
+msgstr "Das wird dazu führen das alle eModal - Klassen die du zu Deiner Website hinzugefügt hast automatisch das entsprechende Popup nach dem Import starten."
+
+#: classes/Admin/Settings.php:314
+msgid "Enable Easy Modal v2 Compatibility Mode"
+msgstr "Aktiviere den Easy Modal v2 Kompatibilitäts-Modus"
+
+#: classes/Admin/Settings.php:355
+msgid "Check this if you have copied the popup theme styles to your own stylesheet or are using custom styles."
+msgstr "Aktiviere diese Option, wenn du die Popup-Themenstile in dein eigenes Stylesheet kopiert hast oder individuelle Stile verwendest."
+
+#: classes/Admin/Settings.php:354
+msgid "Don't load popup theme styles to the head."
+msgstr "Lade keine Popup-Themenstile in den Kopf."
+
+#: classes/Admin/Settings.php:345
+msgid "Check this disable loading of google fonts, useful if the fonts you chose are already loaded with your theme."
+msgstr "Aktiviere diese Option, um das Laden von Google-Fonts zu deaktivieren. Dies ist nützlich, wenn die von dir gewählten Fonts bereits mit deinem Theme geladen sind."
+
+#: classes/Admin/Settings.php:344
+msgid "Don't Load Google Fonts"
+msgstr "Google Fonts nicht laden"
+
+#: classes/Shortcode/Subscribe.php:269 includes/input-options.php:86
+msgid "Center"
+msgstr "Zentriert"
+
+#: includes/input-options.php:76
+msgid "Italic"
+msgstr "Kursiv"
+
+#: classes/Shortcode/PopupTrigger.php:37
+msgid "Popup Trigger"
+msgstr "Popup Auslöser"
+
+#: classes/ListTable.php:1031
+msgid "Select All"
+msgstr "Alle auswählen"
+
+#: classes/Admin/Templates.php:542
+msgid "Targeting Conditions"
+msgstr "Targeting von Bedingungen"
+
+#: includes/admin/themes/metabox.php:43
+msgid "Close Settings"
+msgstr "Einstellungen schließen"
+
+#: classes/Admin/Popups.php:395
+msgid "Choose a theme for this popup."
+msgstr "Wähle ein Theme für dieses Popup."
+
+#: classes/Admin/Popups.php:653
+msgid "Change the z-index layer level for the popup."
+msgstr "Ändere die z-index-Ebene für das Popup."
+
+#: classes/Admin/Popups.php:652
+msgid "Popup Z-Index"
+msgstr "Popup Z-Index"
+
+#: classes/Admin/Popups.php:526 classes/Admin/Popups.php:605
+#: classes/Admin/Popups.php:606 classes/Shortcode/Popup.php:209
+#: classes/Shortcode/Popup.php:210 classes/Shortcode/Subscribe.php:270
+#: includes/admin/themes/metabox-close-fields.php:130
+#: includes/class-popmake-popup-theme-fields.php:369
+#: includes/input-options.php:87 includes/input-options.php:132
+msgid "Right"
+msgstr "Rechts"
+
+#: classes/Admin/Popups.php:524 classes/Admin/Popups.php:591
+#: classes/Admin/Popups.php:592 classes/Shortcode/Popup.php:198
+#: classes/Shortcode/Popup.php:199 classes/Shortcode/Subscribe.php:268
+#: includes/admin/themes/metabox-close-fields.php:112
+#: includes/class-popmake-popup-theme-fields.php:349
+#: includes/input-options.php:85 includes/input-options.php:130
+msgid "Left"
+msgstr "Links"
+
+#: classes/Admin/Popups.php:525 classes/Admin/Popups.php:577
+#: classes/Admin/Popups.php:578 classes/Shortcode/Popup.php:187
+#: classes/Shortcode/Popup.php:188
+#: includes/admin/themes/metabox-close-fields.php:121
+#: includes/class-popmake-popup-theme-fields.php:359
+#: includes/input-options.php:131
+msgid "Bottom"
+msgstr "Unten"
+
+#: classes/Admin/Popups.php:523 classes/Admin/Popups.php:563
+#: classes/Admin/Popups.php:564 classes/Shortcode/Popup.php:176
+#: classes/Shortcode/Popup.php:177
+#: includes/admin/themes/metabox-close-fields.php:103
+#: includes/class-popmake-popup-theme-fields.php:339
+#: includes/input-options.php:129
+msgid "Top"
+msgstr "Oben"
+
+#: classes/Admin/Popups.php:627
+msgid "Checking this sets the positioning of the popup to fixed."
+msgstr "Wenn du diese Option aktivierst, wird die Positionierung des Popups fixiert."
+
+#: classes/Admin/Popups.php:626
+msgid "Fixed Postioning"
+msgstr "Feste Positionierung"
+
+#: classes/Admin/Popups.php:546 classes/Shortcode/Popup.php:169
+msgid "Choose where the popup will be displayed."
+msgstr "Wähle wo das Popup angezeigt werden soll."
+
+#: classes/Admin/Popups.php:545 classes/Shortcode/Popup.php:168
+#: includes/admin/themes/metabox-close-fields.php:85
+#: includes/class-popmake-popup-theme-fields.php:331
+msgid "Location"
+msgstr "Ort"
+
+#: classes/Admin/Popups.php:641
+msgid "This enables other popups to remain open."
+msgstr "Dies ermöglicht es, dass andere Popups geöffnet bleiben."
+
+#: classes/Admin/Popups.php:640
+msgid "Stackable"
+msgstr "Stapelbar"
+
+#: classes/Admin/Popups.php:322 classes/Shortcode/Popup.php:53
+#: classes/Shortcode/Popup.php:71
+#: includes/admin/themes/metabox-close-fields.php:99
+msgid "Position"
+msgstr "Position"
+
+#: classes/Admin/Popups.php:519 classes/Shortcode/Popup.php:244
+msgid "Choose where the animation will begin."
+msgstr "Wähle wo die Animation beginnen soll."
+
+#: classes/Admin/Popups.php:518 classes/Shortcode/Popup.php:243
+msgid "Animation Origin"
+msgstr "Animations-Beginn"
+
+#: classes/Admin/Popups.php:505 classes/Shortcode/Popup.php:233
+msgid "Set the animation speed for the popup."
+msgstr "Lege die Animationsgeschwindigkeit für das Popup fest."
+
+#: classes/Admin/Popups.php:504 classes/Shortcode/Popup.php:232
+msgid "Animation Speed"
+msgstr "Animationsgeschwindigkeit"
+
+#: classes/Admin/Popups.php:490 classes/Shortcode/Popup.php:225
+msgid "Select an animation type for your popup."
+msgstr "Wähle eine Animationsart für Dein Popup."
+
+#: classes/Admin/Popups.php:489 classes/Shortcode/Popup.php:224
+msgid "Animation Type"
+msgstr "Art der Animation"
+
+#: classes/Admin/Popups.php:321 classes/Shortcode/Popup.php:54
+#: classes/Shortcode/Popup.php:74
+msgid "Animation"
+msgstr "Animation"
+
+#: classes/Admin/Popups.php:635 classes/Shortcode/Popup.php:128
+msgid "Checking this will disable and hide the overlay for this popup."
+msgstr "Markiere das Kästchen, um die Überlagerung für das Popup zu deaktivieren und zu verstecken."
+
+#: classes/Admin/Popups.php:634 classes/Shortcode/Popup.php:127
+msgid "Disable Overlay"
+msgstr "Überlagerung deaktivieren"
+
+#: classes/Admin/Popups.php:466
+msgid "Set a custom height for the popup."
+msgstr "Wähle eine individuelle Höhe für das Popup."
+
+#: classes/Admin/Popups.php:465 classes/Shortcode/Popup.php:153
+#: includes/admin/themes/metabox-close-fields.php:62
+#: includes/class-popmake-popup-theme-fields.php:311
+msgid "Height"
+msgstr "Höhe"
+
+#: classes/Admin/Popups.php:477
+msgid "Checking this option will add a scroll bar to your content."
+msgstr "Wenn du diese Option aktivierst, wird deinem Inhalt eine Bildlaufleiste hinzugefügt."
+
+#: classes/Admin/Popups.php:476
+msgid "Scrollable Content"
+msgstr "Scrollbarer Inhalt"
+
+#: classes/Admin/Popups.php:457
+msgid "Checking this option will set height to fit the content."
+msgstr "Wenn du diese Option aktivierst wird die Höhe an den Inhalt angepasst."
+
+#: classes/Admin/Popups.php:456
+msgid "Auto Adjusted Height"
+msgstr "Automatische Höhenanpassung"
+
+#: classes/Admin/Popups.php:447
+msgid "Set a custom width for the popup."
+msgstr "Wähle eine individuelle Breite für das Popup."
+
+#: classes/Admin/Popups.php:446 classes/Shortcode/Popup.php:142
+#: includes/admin/themes/metabox-close-fields.php:71
+#: includes/class-popmake-popup-theme-fields.php:321
+msgid "Width"
+msgstr "Breite"
+
+#: classes/Admin/Popups.php:437
+msgid "Set a maximum width for the popup."
+msgstr "Lege eine maximale Breite für das Popup fest."
+
+#: classes/Admin/Popups.php:436
+msgid "Max Width"
+msgstr "Max. Breite"
+
+#: classes/Admin/Popups.php:427
+msgid "Set a minimum width for the popup."
+msgstr "Lege eine Mindestbreite für das Popup fest."
+
+#: classes/Admin/Popups.php:426
+msgid "Min Width"
+msgstr "Mindestbreite"
+
+#: classes/Admin/Popups.php:404 classes/Shortcode/Popup.php:135
+msgid "Select the size of the popup."
+msgstr "Wähle die Größe des Popups."
+
+#: classes/Admin/Popups.php:320 classes/Admin/Popups.php:403
+#: classes/Shortcode/Popup.php:134
+#: includes/admin/themes/metabox-close-fields.php:156
+#: includes/admin/themes/metabox-title-fields.php:31
+#: includes/class-popmake-popup-theme-fields.php:395
+msgid "Size"
+msgstr "Größe"
+
+#: classes/Admin/Popups.php:698
+msgid "Checking this will cause popup to close when user presses F4 key."
+msgstr "Wenn Du das Kästchen markierst, wird das Popup geschlossen, sobald ein Nutzer die F4-Taste drückt."
+
+#: classes/Admin/Popups.php:697
+msgid "Press F4 to Close"
+msgstr "Zum Schließen F4 drücken"
+
+#: classes/Admin/Popups.php:692
+msgid "Checking this will cause popup to close when user presses ESC key."
+msgstr "Wenn Du das Kästchen markierst, wird das Popup geschlossen, sobald ein Nutzer die ESC-Taste drückt."
+
+#: classes/Admin/Popups.php:691
+msgid "Press ESC to Close"
+msgstr "Zum Schließen ESC drücken"
+
+#: classes/Admin/Popups.php:686 classes/Shortcode/Popup.php:256
+msgid "Checking this will cause popup to close when user clicks on overlay."
+msgstr "Wenn Du das Kästchen markierst, wird das Popup geschlossen, sobald ein Nutzer auf die Überlagerung klickt."
+
+#: classes/Admin/Popups.php:685 classes/Shortcode/Popup.php:255
+msgid "Click Overlay to Close"
+msgstr "Klicken, um Überlagerung zu schließen."
+
+#: classes/Admin/Popups.php:673
+msgid "This delays the display of the close button."
+msgstr "Dies verzögert die Anzeige des Schließen Buttons."
+
+#: classes/Admin/Popups.php:672
+msgid "Close Button Delay"
+msgstr "Verzögerung des Schließen-Buttons"
+
+#: includes/class-popmake-popup-theme-fields.php:295
+#: includes/class-popmake-popup-theme-fields.php:297 includes/defaults.php:130
+msgid "CLOSE"
+msgstr "Schließen"
+
+#: classes/Admin/Popups.php:665
+msgid "Close Text"
+msgstr "Text für \"Schließen\""
+
+#: classes/Triggers.php:146
+msgid "Extra CSS Selectors"
+msgstr "Zusätzliche CSS-Selektoren"
+
+#: classes/Cookies.php:204
+msgid "Cookie Key"
+msgstr "Cookie-Key"
+
+#: classes/Cookies.php:197
+msgid "Sitewide Cookie"
+msgstr "Seitenweites Cookie"
+
+#: classes/Cookies.php:181
+msgid "Cookie Time"
+msgstr "Cookie-Laufzeit"
+
+#: classes/Cookies.php:191
+msgid "Session cookies expire when the user closes their browser."
+msgstr "Session Cookies verfallen wenn die Benutzer ihren Browser schließen."
+
+#: classes/Cookies.php:190
+msgid "Use Session Cookie?"
+msgstr "Sitzungs-Cookie verwenden?"
+
+#: classes/Triggers.php:170
+msgid "The delay before the popup will open in milliseconds."
+msgstr "Die Verzögerung in Millisekunden bevor das Popup sich öffnet."
+
+#: classes/Shortcode/Subscribe.php:302 classes/Triggers.php:164
+#: classes/Triggers.php:169 includes/integrations/class-pum-cf7.php:145
+#: includes/integrations/class-pum-gravity-forms.php:140
+#: includes/integrations/ninja-forms/Actions/ClosePopup.php:43
+msgid "Delay"
+msgstr "Verzögerung"
+
+#: classes/Admin/Popups.php:1165
+msgid "Show all tags"
+msgstr "Zeige alle Schlagworte"
+
+#: classes/Admin/Popups.php:1152
+msgid "Show all categories"
+msgstr "Zeige alle Kategorien"
+
+#: classes/Admin/Pages.php:145 classes/Admin/Popups.php:1003
+#: classes/Conditions.php:111
+msgid "Tags"
+msgstr "Schlagworte"
+
+#: classes/Admin/Pages.php:144 classes/Admin/Popups.php:1007
+#: classes/Conditions.php:110
+msgid "Categories"
+msgstr "Kategorien"
+
+#: classes/Admin/Popups.php:990
+msgid "Title"
+msgstr "Titel"
+
+#: classes/Admin/Popups.php:991
+msgid "CSS Classes"
+msgstr "CSS Klassen"
+
+#: classes/Admin/Popups.php:989 classes/Admin/Templates.php:642
+#: classes/Shortcode/Subscribe.php:171 classes/Shortcode/Subscribe.php:225
+msgid "Name"
+msgstr "Name"
+
+#: includes/admin/metabox-support.php:54
+msgid "Extension Support"
+msgstr "Erweiterte Unterstützung"
+
+#: includes/admin/metabox-support.php:48
+msgid "Free Support Forums"
+msgstr "Freie Support-Foren"
+
+#: classes/Shortcode/Subscribe.php:314
+#: includes/integrations/class-pum-cf7.php:157
+#: includes/integrations/class-pum-gravity-forms.php:152
+#: includes/integrations/ninja-forms/Actions/OpenPopup.php:35
+#: includes/modules/admin-bar.php:453
+msgid "Open Popup"
+msgstr "Popup öffnen"
+
+#: includes/admin/admin-setup.php:57
+msgid "A Popup Preview"
+msgstr "Popup Vorschau"
+
+#: classes/Admin/Settings.php:476 includes/admin/admin-setup.php:23
+#: includes/admin/extensions/extensions-page.php:26
+msgid "Extensions"
+msgstr "Extensions"
+
+#: classes/Admin/Pages.php:71 classes/Admin/Pages.php:150
+#: includes/modules/admin-bar.php:522
+msgid "Tools"
+msgstr "Werkzeug"
+
+#: classes/Admin/Pages.php:56 classes/Admin/Pages.php:149
+#: classes/Admin/Templates.php:415 classes/Admin/Templates.php:643
+#: classes/Site/Assets.php:246 includes/admin/admin-setup.php:24
+msgid "Settings"
+msgstr "Einstellungen"

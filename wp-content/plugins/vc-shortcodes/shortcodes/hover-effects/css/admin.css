@@ -1,0 +1,95 @@
+/* Switch Params */
+.onoffswitch {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    width: 95px;
+}
+.onoffswitch-checkbox {
+    left: 0;
+    outline: 0 none;
+    position: absolute;
+    top: 2px;
+}
+.onoffswitch-label {
+    border: 0 solid #999999;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+.onoffswitch-inner {
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    width: 200%;
+}
+.onoffswitch-inner > div {
+    box-sizing: border-box;
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+    position: relative;
+    width: 50%;
+}
+.chosen-container *, .onoffswitch-inner > div {
+    box-sizing: border-box;
+}
+.ult-expand, .ultbs-icon {
+    line-height: 20px;
+    min-width: 16px;
+}
+.onoffswitch-inner .onoffswitch-active {
+    background-color: #cccccc;
+    color: #ffffff;
+    padding-left: 15px;
+}
+.onoffswitch-inner .onoffswitch-inactive {
+    background-color: #cccccc;
+    color: #ffffff;
+    padding-right: 15px;
+    text-align: right;
+}
+.onoffswitch-switch {
+    border: 0 solid #999999;
+    border-radius: 0;
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 35px;
+}
+.onoffswitch-active .onoffswitch-switch {
+    background: #3f9cc7 none repeat scroll 0 0;
+    left: 0;
+}
+.onoffswitch-inactive .onoffswitch-switch {
+    background: #7d7d7d none repeat scroll 0 0;
+    right: 0;
+}
+.onoffswitch-active .onoffswitch-switch::before {
+    border-color: #3f9cc7 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #3f9cc7;
+    border-style: solid;
+    border-width: 15px;
+    content: " ";
+    left: 35px;
+    position: absolute;
+    top: 0;
+}
+.onoffswitch-inactive .onoffswitch-switch::before {
+    border-color: rgba(0, 0, 0, 0) #7d7d7d #7d7d7d rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 50px;
+    content: " ";
+    position: absolute;
+    right: 35px;
+    top: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}

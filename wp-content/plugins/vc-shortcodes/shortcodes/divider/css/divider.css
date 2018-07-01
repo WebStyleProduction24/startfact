@@ -1,0 +1,43 @@
+.divider_line {
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+.divider_line .divider_inner {
+    border-bottom: 1px solid #ccc;
+    border-left: 0 none !important;
+    border-right: 0 none !important;
+    border-top: 0 none !important;
+    display: inline-block;
+    width: 100%;
+}
+.divider_line2 {
+    height: 1px;
+    position: relative;
+}
+.divider_line2 i {
+    border-radius: 100%;
+    color: #fff;
+    height: 27px;
+    left: 50%;
+    line-height: 27px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    width: 27px;
+}
+.divider_line3 {
+    position: relative;
+}
+.divider_line3 .line_text {
+    background: #fff none repeat scroll 0 0;
+    left: 50%;
+    padding: 0 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

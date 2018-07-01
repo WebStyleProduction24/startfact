@@ -1,0 +1,58 @@
+.list-paysystem {
+    height: 300px;
+    max-width: 600px;
+    overflow-y: scroll;
+}
+
+.list-paysystem > p {
+    font-size: 115%;
+    margin: 15px 0;
+    clear: both;
+}
+
+.list-paysystem > p strong {
+    font-size: 115%;
+}
+
+.list-paysystem > p:first-child {
+    margin: 0;
+}
+
+.list-paysystem > span {
+    border-bottom: 1px solid #cacaca;
+    display: block;
+    margin: 15px 0;
+    clear: both;
+}
+
+.list-paysystem > span > strong{
+    float: left;
+    line-height: 40px;
+}
+
+.list-paysystem > div{
+    clear: both;
+    position: relative;
+    margin: 0;
+    bottom: 0;
+}
+
+.list-paysystem input {
+    float: left;
+    margin-top: 1px;
+}
+
+.list-paysystem > div label{
+    float: left;
+    margin: 0 0 10px 5px;
+}
+
+.list-paysystem > div img{
+    float: left;
+    margin-right: 7px;
+    margin-top: -6px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+

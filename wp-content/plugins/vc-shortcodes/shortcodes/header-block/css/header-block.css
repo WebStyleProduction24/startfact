@@ -1,0 +1,62 @@
+.mgt-header-block.wpb_content_element {
+    margin-top: 45px;
+}
+.mgt-header-block .mgt-header-block-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.mgt-header-block p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #828282;
+}
+.mgt-header-block .mgt-header-line {
+    height: 3px;
+    width: 70px;
+    background: #2C99ED;
+    display: table;
+}
+.mgt-header-block .mgt-header-line.mgt-header-line-margin-large {
+    margin-top: 30px!important;
+}
+.mgt-header-block .mgt-header-line.mgt-header-line-margin-small {
+    margin-top: 10px!important;
+}
+.mgt-header-block .mgt-header-line.mgt-header-line-margin-regular {
+    margin-top: 20px!important;
+}
+.mgt-header-block.mgt-header-block-fontsize-large .mgt-header-block-title {
+    font-size: 72px;
+}
+.mgt-header-block.mgt-header-block-fontsize-medium .mgt-header-block-title {
+    font-size: 36px;
+}
+.mgt-header-block.text-center .mgt-header-line {
+    margin: 10px auto 0;
+}
+.mgt-header-block.text-right .mgt-header-line {
+    float: right;
+}
+.mgt-header-block.text-white .mgt-header-block-title {
+    color: #ffffff;
+}
+.mgt-header-block.text-white p {
+    color: #b8b8b8;
+}
+.mgt-header-block.mgt-header-block-style-2 .mgt-header-block-title {
+    text-transform: none;
+}
+.mgt-header-block.mgt-header-block-style-2 p {
+    margin-bottom: 0;
+}
+.mgt-header-block.mgt-header-texttransform-both p,
+.mgt-header-block.mgt-header-texttransform-both .mgt-header-block-title {
+    text-transform: uppercase;
+}
+.mgt-header-block.mgt-header-texttransform-header .mgt-header-block-title {
+    text-transform: uppercase;
+}
+.mgt-header-block.mgt-header-texttransform-subheader p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

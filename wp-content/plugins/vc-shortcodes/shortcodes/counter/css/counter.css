@@ -1,0 +1,37 @@
+.mgt-counter-wrapper {
+    text-align: left;
+}
+.mgt-counter-wrapper .mgt-counter-value {
+    font-size: 36px;
+    color: #000000;
+}
+.mgt-counter-wrapper.mgt-counter-icon-position-left .mgt-counter-icon {
+    display: inline-block;
+    margin-right: 20px;
+}
+.mgt-counter-wrapper.text-white .mgt-counter-value {
+    color: #ffffff;
+}
+.mgt-counter-wrapper.text-center {
+    text-align: center;
+}
+.mgt-counter-wrapper.text-right {
+    text-align: right;
+}
+.mgt-counter-wrapper h5.mgt-counter-title {
+    color: #828282;
+    margin-top: 0;
+    font-size: 18px;
+}
+.mgt-counter-wrapper.text-white h5.mgt-counter-title {
+    color: #b8b8b8;
+}
+.mgt-counter-wrapper .mgt-counter-icon {
+    color: #2C99ED;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+.mgt-counter-wrapper {
+    line-height: 55px;
+}

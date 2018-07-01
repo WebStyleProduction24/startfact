@@ -1,0 +1,56 @@
+.team-member {
+    overflow: hidden;
+    position: relative;
+}
+.designation {
+    padding-top: 10px;
+    text-align: center;
+}
+.designation h3 {
+    color: #333;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.team-photo img {
+    width: 100%;
+}
+.team-hover ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.team-hover ul li {
+    display: inline-block;
+}
+.team-hover i.fa {
+    color: #fff;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 2px;
+    padding: 0;
+    text-align: center;
+    width: 35px;
+}
+.team-hover i.fa:hover {
+    color: #333;
+}
+.team-hover {
+    background: #0f8bcf none repeat scroll 0 0;
+    bottom: 98px;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    padding: 6px 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.team-member:hover .team-hover {
+    height: 40px;
+    opacity: 1;
+}
+.team-photo > img {
+    max-width: 100%;
+}

@@ -1,0 +1,35 @@
+/* ================================================================
+ * FEATURES LIST
+ * ================================================================ */
+.asvc-features-list-wrapper .features-list-inner {
+    margin-bottom: 20px;
+    position: relative;
+}
+.asvc-features-list-wrapper.vc-features-list:last-child .features-list-inner {
+    margin-bottom: 0;
+}
+.asvc-features-list-wrapper .features-list-inner .features-icon {
+    display: inline-block;
+    font-size: 30px;
+    left: 0;
+    line-height: 10px;
+    position: absolute;
+    top: 0;
+}
+.asvc-features-list-wrapper .features-list-inner.list-text-right .features-icon {
+    right:0;
+    left:auto;
+}
+.asvc-features-list-wrapper .features-list-inner.list-text-right {
+    text-align:right;
+}
+.asvc-features-list-wrapper .features-list-inner .list-desc {
+    margin-left: 35px;
+}
+.asvc-features-list-wrapper .features-list-inner.list-text-right .list-desc {
+    margin-right: 35px;
+    margin-left: 0;
+}
+.list-desc > p {
+    line-height: 1.3;
+}

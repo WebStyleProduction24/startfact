@@ -1,0 +1,521 @@
+/*---------------------------------------------
+    Buttons Set
+---------------------------------------------*/
+.ts-buttons{
+    position: relative;
+    min-height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    margin: 0 10px 10px 0;
+    opacity: 0;
+}
+
+.ts-button-left,
+.ts-button-right{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 25px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.ts-button-center{
+    z-index: 1;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 -15px;
+    line-height: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.ts-button-left{
+    border-width: 0;
+    border-right-width: 1px;
+    border-style: solid;
+    padding-right: 35px;
+}
+
+.direction-rtl .ts-button-left{
+    border-right-width: 0;
+    border-left-width: 1px;
+}
+
+.ts-button-right{
+    padding-left: 35px;
+}
+
+.text-center .ts-buttons{
+    margin-right: 0;
+}
+
+.ts-buttons-init{
+    opacity: 1;
+}
+
+.ts-buttons-init .ts-buttons-btn{
+    width: 50%;
+}
+
+.ts-align-right{
+    float: right !important;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.ts-align-center{
+    display: table !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.text-center .ts-button{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------
+    BG & Text Colors Types
+---------------------------------------------*/
+
+/*Dark Blue BG*/
+.ts-bg-darkblue,
+.ts-white-bg .ts-color-darkblue .ts-current-tab a,
+.ts-clients a.ts-color-darkblue,
+.ts-color-darkblue.ts-pricing-table .ts-table-title,
+.ts-color-darkblue.ts-highlight-table .ts-price,
+.ts-color-darkblue.ts-dropcap,
+.ts-color-darkblue.ts-highlight,
+.ts-color-darkblue.ts-button,
+.ts-color-darkblue.ts-button.ts-border-button:hover,
+.ts-color-darkblue .ts-bar-color,
+.ts-color-darkblue .ts-buttons-btn,
+.ts-color-darkblue .ts-current-tab a,
+.ts-color-darkblue .ts-skill-title span,
+.ts-color-darkblue .ts-tab-nav li a:hover{
+    background-color: #31353e;
+}
+
+.ts-color-darkblue .ts-button-center,
+.ts-color-darkblue .ts-button-left:hover,
+.ts-color-darkblue .ts-button-right:hover,
+.ts-color-darkblue.ts-highlight-table .ts-table-title,
+.ts-color-darkblue.ts-button:hover {
+    background-color: #1d2026;
+}
+
+/*Dark Blue Color*/
+.ts-text-darkblue,
+.ts-color-darkblue.ts-milestone,
+.ts-color-darkblue.ts-border-button,
+.ts-color-darkblue.ts-border-button .ts-button-right,
+.ts-color-darkblue.ts-border-button .ts-button-left,
+.ts-color-darkblue.ts-border-button .ts-button-title,
+.ts-color-darkblue.ts-border-button .ts-button-icon,
+.ts-color-darkblue.ts-highlight-table .ts-price:after,
+.ts-color-darkblue.ts-blockquote:after,
+.ts-color-darkblue.ts-dropcap-transparent,
+.ts-color-darkblue .ts-skill-title span:after,
+.ts-color-darkblue .ts-current-tab a:after,
+.ts-color-darkblue .ts-active-accordion .ts-accordion-button:after{
+    color:#31353e;
+}
+
+/*Dark Blue Border*/
+.ts-border-darkblue,
+.ts-color-darkblue.ts-border-button,
+.ts-color-darkblue.ts-table,
+.ts-color-darkblue.ts-blockquote,
+.ts-color-darkblue .ts-tab-nav li:hover,
+.ts-color-darkblue .ts-current-tab,
+.ts-color-darkblue .ts-active-accordion .ts-accordion-button{
+    border-color: #31353e;
+}
+
+.ts-color-darkblue .ts-button-left{
+    border-color: #1d2026;
+}
+
+/*Orange BG*/
+.ts-bg-orange,
+.ts-white-bg .ts-color-orange .ts-current-tab a,
+.ts-alertbox.ts-error-alertbox .ts-alert-icon,
+.ts-clients a.ts-color-orange,
+.ts-color-orange.ts-buttons a,
+.ts-color-orange.ts-pricing-table .ts-table-title,
+.ts-color-orange.ts-highlight-table .ts-price,
+.ts-color-orange.ts-dropcap,
+.ts-color-orange.ts-highlight,
+.ts-color-orange.ts-button,
+.ts-color-orange.ts-button.ts-border-button:hover,
+.ts-color-orange .ts-bar-color,
+.ts-color-orange .ts-current-tab a,
+.ts-color-orange .ts-skill-title span,
+.ts-color-orange .ts-tab-nav a:hover{
+    background-color: #fc5513;
+}
+
+.ts-color-orange .ts-button-center,
+.ts-color-orange .ts-button-left:hover,
+.ts-color-orange .ts-button-right:hover,
+.ts-color-orange.ts-highlight-table .ts-table-title,
+.ts-color-orange.ts-button:hover{
+    background-color: #e14c13;
+}
+
+/*Orange Color*/
+.ts-text-orange,
+.ts-alertbox.ts-error-alertbox .ts-alert-icon:after,
+.ts-color-orange.ts-milestone,
+.ts-color-orange.ts-border-button,
+.ts-color-orange.ts-border-button .ts-button-right,
+.ts-color-orange.ts-border-button .ts-button-left,
+.ts-color-orange.ts-border-button .ts-button-title,
+.ts-color-orange.ts-border-button .ts-button-icon,
+.ts-color-orange.ts-highlight-table .ts-price:after,
+.ts-color-orange.ts-blockquote:after,
+.ts-color-orange.ts-dropcap-transparent,
+.ts-color-orange .ts-current-tab a:after,
+.ts-color-orange .ts-skill-title span:after,
+.ts-color-orange .ts-active-accordion .ts-accordion-button:after{
+    color:#fc5513;
+}
+
+/*Orange Border*/
+.ts-border-orange,
+.ts-color-orange.ts-border-button,
+.ts-color-orange.ts-table,
+.ts-color-orange.ts-blockquote,
+.ts-color-orange .ts-tab-nav li:hover,
+.ts-color-orange .ts-current-tab,
+.ts-color-orange .ts-active-accordion .ts-accordion-button{
+    border-color: #fc5513;
+}
+
+.ts-color-orange .ts-button-left{
+    border-color: #e14c13;
+}
+
+/*Ocean Blue BG*/
+.ts-bg-blue,
+.ts-white-bg .ts-color-blue .ts-current-tab a,
+.ts-alertbox.ts-info-alertbox .ts-alert-icon,
+.ts-clients a.ts-color-blue,
+.ts-color-blue.ts-buttons a,
+.ts-color-blue.ts-pricing-table .ts-table-title,
+.ts-color-blue.ts-highlight-table .ts-price,
+.ts-color-blue.ts-dropcap,
+.ts-color-blue.ts-highlight,
+.ts-color-blue.ts-button,
+.ts-color-blue.ts-button.ts-border-button:hover,
+.ts-color-blue .ts-bar-color,
+.ts-color-blue .ts-current-tab a,
+.ts-color-blue .ts-skill-title span,
+.ts-color-blue .ts-tab-nav a:hover{
+    background-color: #1ca2f1;
+}
+
+.ts-color-blue .ts-button-center,
+.ts-color-blue .ts-button-left:hover,
+.ts-color-blue .ts-button-right:hover,
+.ts-color-blue.ts-highlight-table .ts-table-title,
+.ts-color-blue.ts-button:hover{
+    background-color: #0094e0;
+}
+
+/*Ocean Blue Color*/
+.ts-text-blue,
+.ts-alertbox.ts-info-alertbox .ts-alert-icon:after,
+.ts-color-blue.ts-milestone,
+.ts-color-blue.ts-border-button .ts-button-right,
+.ts-color-blue.ts-border-button .ts-button-left,
+.ts-color-blue.ts-border-button,
+.ts-color-blue.ts-border-button .ts-button-title,
+.ts-color-blue.ts-border-button .ts-button-icon,
+.ts-color-blue.ts-highlight-table .ts-price:after,
+.ts-color-blue.ts-blockquote:after,
+.ts-color-blue.ts-dropcap-transparent,
+.ts-color-blue .ts-current-tab a:after,
+.ts-color-blue .ts-skill-title span:after,
+.ts-color-blue .ts-active-accordion .ts-accordion-button:after{
+    color:#1ca2f1;
+}
+
+/*Ocean Blue Border*/
+.ts-border-blue,
+.ts-color-blue.ts-border-button,
+.ts-color-blue.ts-table,
+.ts-color-blue.ts-blockquote,
+.ts-color-blue .ts-tab-nav li:hover,
+.ts-color-blue .ts-current-tab,
+.ts-color-blue .ts-active-accordion .ts-accordion-button{
+    border-color: #1ca2f1;
+}
+
+.ts-color-blue .ts-button-left{
+    border-color: #0094e0;
+}
+
+/*Green BG*/
+.ts-bg-green,
+.ts-white-bg .ts-color-green .ts-current-tab a,
+.ts-alertbox.ts-success-alertbox .ts-alert-icon,
+.ts-clients a.ts-color-green,
+.ts-color-green.ts-buttons a,
+.ts-color-green.ts-pricing-table .ts-table-title,
+.ts-color-green.ts-highlight-table .ts-price,
+.ts-color-green.ts-dropcap,
+.ts-color-green.ts-highlight,
+.ts-color-green.ts-button,
+.ts-color-green.ts-button.ts-border-button:hover,
+.ts-color-green .ts-bar-color,
+.ts-color-green .ts-current-tab a,
+.ts-color-green .ts-skill-title span,
+.ts-color-green .ts-tab-nav a:hover{
+    background-color: #82bf06;
+}
+
+.ts-color-green .ts-button-center,
+.ts-color-green .ts-button-left:hover,
+.ts-color-green .ts-button-right:hover,
+.ts-color-green.ts-highlight-table .ts-table-title,
+.ts-color-green.ts-button:hover{
+    background-color: #71ac00;
+}
+
+/*Green Color*/
+.ts-text-green,
+.ts-alertbox.ts-success-alertbox .ts-alert-icon:after,
+.ts-color-green.ts-milestone,
+.ts-color-green.ts-border-button .ts-button-right,
+.ts-color-green.ts-border-button .ts-button-left,
+.ts-color-green.ts-border-button,
+.ts-color-green.ts-border-button .ts-button-title,
+.ts-color-green.ts-border-button .ts-button-icon,
+.ts-color-green.ts-highlight-table .ts-price:after,
+.ts-color-green.ts-blockquote:after,
+.ts-color-green.ts-dropcap-transparent,
+.ts-color-green .ts-current-tab a:after,
+.ts-color-green .ts-skill-title span:after,
+.ts-color-green .ts-active-accordion .ts-accordion-button:after{
+    color:#82bf06;
+}
+
+/*Green Border*/
+.ts-border-green,
+.ts-color-green.ts-border-button,
+.ts-color-green.ts-table,
+.ts-color-green.ts-blockquote,
+.ts-color-green .ts-tab-nav li:hover,
+.ts-color-green .ts-current-tab,
+.ts-color-green .ts-active-accordion .ts-accordion-button{
+    border-color: #82bf06;
+}
+
+.ts-color-green .ts-button-left{
+    border-color: #71ac00;
+}
+
+/*Yellow BG*/
+.ts-bg-yellow,
+.ts-white-bg .ts-color-yellow .ts-current-tab a,
+.ts-notice-alertbox .ts-alert-icon,
+.ts-clients a.ts-color-yellow,
+.ts-color-yellow .ts-current-tab a,
+.ts-color-yellow .ts-tab-nav a:hover,
+.ts-color-yellow .ts-bar-color,
+.ts-color-yellow .ts-skill-title span,
+.ts-color-yellow.ts-dropcap,
+.ts-color-yellow.ts-button,
+.ts-color-yellow.ts-button.ts-border-button:hover,
+.ts-color-yellow.ts-buttons a,
+.ts-color-yellow.ts-highlight,
+.ts-color-yellow.ts-pricing-table .ts-table-title,
+.ts-color-yellow.ts-highlight-table .ts-price{
+    background-color: #ffbe05;
+}
+
+.ts-color-yellow .ts-button-center,
+.ts-color-yellow .ts-button-left:hover,
+.ts-color-yellow .ts-button-right:hover,
+.ts-color-yellow.ts-highlight-table .ts-table-title,
+.ts-color-yellow.ts-button:hover {
+    background-color: #e9ac00;
+}
+
+/*Yellow Color*/
+.ts-text-yellow,
+.ts-notice-alertbox .ts-alert-icon:after,
+.ts-color-yellow.ts-milestone,
+.ts-color-yellow.ts-border-button .ts-button-right,
+.ts-color-yellow.ts-border-button .ts-button-left,
+.ts-color-yellow.ts-border-button,
+.ts-color-yellow.ts-border-button .ts-button-title,
+.ts-color-yellow.ts-border-button .ts-button-icon,
+.ts-color-yellow.ts-highlight-table .ts-price:after,
+.ts-color-yellow.ts-blockquote:after,
+.ts-color-yellow.ts-dropcap-transparent,
+.ts-color-yellow .ts-current-tab a:after,
+.ts-color-yellow .ts-skill-title span:after,
+.ts-color-yellow .ts-active-accordion .ts-accordion-button:after{
+    color:#ffbe05;
+}
+
+/*Yellow Border*/
+.ts-border-yellow,
+.ts-color-yellow.ts-border-button,
+.ts-color-yellow.ts-table,
+.ts-color-yellow.ts-blockquote,
+.ts-color-yellow .ts-tab-nav li:hover,
+.ts-color-yellow .ts-current-tab,
+.ts-color-yellow .ts-active-accordion .ts-accordion-button{
+    border-color: #ffbe05;
+}
+
+.ts-color-yellow .ts-button-left{
+    border-color: #e9ac00;
+}
+
+/*White*/
+.ts-button,
+.ts-button:hover,
+.ts-button:visited,
+.ts-button.ts-color-white:hover,
+.ts-buttons-btn,
+.ts-buttons-btn:hover,
+.ts-color-white .ts-buttons-btn:hover,
+.ts-buttons-btn:visited{
+    color: #fff;
+    font-weight: 400;
+}
+
+.ts-color-white.ts-buttons.ts-border-button{
+    border-color: #fff !important;
+}
+
+.ts-color-white.ts-buttons.ts-border-button:hover .ts-button-center,
+.ts-color-white.ts-buttons.ts-border-button .ts-buttons-btn:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.ts-color-white.ts-button.ts-border-button{
+    border-color: #fff !important;
+}
+
+.ts-color-white.ts-button.ts-border-button:hover{
+    background-color: #fff;
+}
+
+.ts-color-white.ts-button.ts-border-button:hover .ts-button-icon,
+.ts-color-white.ts-button.ts-border-button:hover .ts-button-title{
+    color: #444;
+}
+
+.ts-color-white.ts-border-button .ts-button-center,
+.ts-color-white .ts-buttons-btn,
+.ts-color-white.ts-dropcap,
+.ts-color-white.ts-button{
+    background-color: #fff;
+    color: #444;
+}
+
+.ts-color-white.ts-milestone,
+.ts-color-white.ts-border-button:hover .ts-button-center{
+    color: #fff;
+}
+
+.ts-color-white.ts-border-button .ts-button-right,
+.ts-color-white.ts-border-button .ts-button-left,
+.ts-color-white.ts-border-button,
+.ts-color-white.ts-border-button .ts-button-title,
+.ts-color-white.ts-border-button .ts-button-icon,
+.ts-color-white.ts-dropcap-transparent{
+    color: #fff;
+}
+
+.ts-color-white.ts-border-button:hover .ts-button-left,
+.ts-color-white.ts-border-button:hover .ts-button-right,
+.ts-color-white.ts-border-button:hover{
+    font-weight: bold;
+}
+
+.ts-color-white .ts-button-center{
+    background-color: #c6c6c8;
+    color: #fff;
+}
+
+.ts-color-white .ts-skill-title span{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.ts-social a:hover{
+    color: #fff;
+}
+
+/*White BG Elements*/
+.ts-white-bg .ts-tab-nav a,
+.ts-white-bg .ts-table table th,
+.ts-white-bg .ts-table table td,
+.ts-white-bg .ts-bar-white-label .ts-bar-title,
+.ts-white-bg .ts-dropcap.ts-color-white,
+.ts-white-bg .ts-buttons.ts-color-white a,
+.ts-white-bg .ts-button.ts-color-white{
+    background-color: #f6f3f3;
+}
+
+.ts-white-bg .ts-border-button.ts-button.ts-color-white{
+    background-color: transparent;
+}
+
+.ts-white-bg .ts-border-button.ts-button.ts-color-white:hover{
+    background-color: #fff;
+}
+
+.ts-white-bg .ts-buttons.ts-color-white.ts-border-button a{
+    background-color: transparent;
+}
+
+.ts-white-bg .ts-bars.ts-bar-white-label .ts-bar-title:after{
+    color: #f3f3f3;
+}
+
+.ts-white-bg .ts-dropcap.ts-color-white.ts-dropcap-transparent{
+    color: #eee;
+}
+
+.ts-white-bg .ts-clients span.ts-img-effect,
+.ts-white-bg code,
+.ts-white-bg .ts-box-icon,
+.ts-white-bg pre{
+    border: 1px solid #eaeaea;
+}
+
+.ts-white-bg .ts-box-icon{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ts-color-white .ts-button-left{
+    border-color: #c6c6c8;
+}

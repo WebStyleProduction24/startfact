@@ -1,0 +1,194 @@
+# Translation of Plugins - menu-image - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - menu-image - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-11-23 01:52:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - menu-image - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://makeyoulivebetter.org.ua/"
+msgstr "http://makeyoulivebetter.org.ua/"
+
+#. Author of the plugin/theme
+msgid "Alex Davyskiba aka Zviryatko"
+msgstr "Alex Davyskiba aka Zviryatko"
+
+#. Description of the plugin/theme
+msgid "Provide uploading images to menu item"
+msgstr "メニュー項目に画像をアップロードする機能を提供します"
+
+#. Plugin URI of the plugin/theme
+msgid "http://html-and-cms.com/plugins/menu-image/"
+msgstr "http://html-and-cms.com/plugins/menu-image/"
+
+#. Plugin Name of the plugin/theme
+msgid "Menu Image"
+msgstr "メニュー画像"
+
+#: menu-image.php:749
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: menu-image.php:735
+msgid "Original: %s"
+msgstr "オリジナル: %s"
+
+#: menu-image.php:728
+msgid "To the top"
+msgstr "一番上に"
+
+#: menu-image.php:725
+msgid "Down one"
+msgstr "ひとつ下に"
+
+#: menu-image.php:724
+msgid "Up one"
+msgstr "ひとつ上に"
+
+#: menu-image.php:723
+msgid "Move"
+msgstr "移動"
+
+#: menu-image.php:717
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr "使用中のテーマが対応している場合はメニューに説明が表示されます。"
+
+#: menu-image.php:715
+msgid "Description"
+msgstr "説明"
+
+#: menu-image.php:702
+msgid "Link Relationship (XFN)"
+msgstr "自分とリンク先の関係/間柄 (XFN)"
+
+#: menu-image.php:696
+msgid "CSS Classes (optional)"
+msgstr "CSS クラス (オプション)"
+
+#: menu-image.php:691
+msgid "Open link in a new window/tab"
+msgstr "リンクを新しいウィンドウまたはタブで開く"
+
+#: menu-image.php:684
+msgid "Title Attribute"
+msgstr "タイトル属性"
+
+#: menu-image.php:678
+msgid "Navigation Label"
+msgstr "ナビゲーションラベル"
+
+#: menu-image.php:671
+msgid "URL"
+msgstr "URL"
+
+#: menu-image.php:660 menu-image.php:662
+msgid "Edit Menu Item"
+msgstr "メニュー項目を編集"
+
+#: menu-image.php:658
+msgid "Move down"
+msgstr "下に移動"
+
+#: menu-image.php:645
+msgid "Move up"
+msgstr "上に移動"
+
+#: menu-image.php:630
+msgid "sub item"
+msgstr "サブ項目"
+
+#. translators: %s: title of menu item in draft status
+#: menu-image.php:617
+msgid "%s (Pending)"
+msgstr "%s (保留)"
+
+#. translators: %s: title of menu item which is invalid
+#: menu-image.php:613
+msgid "%s (Invalid)"
+msgstr "%s (無効)"
+
+#: menu-image.php:456
+msgid "After"
+msgstr "更新後 "
+
+#: menu-image.php:455
+msgid "Before"
+msgstr "前"
+
+#: menu-image.php:454
+msgid "Below"
+msgstr "下"
+
+#: menu-image.php:453
+msgid "Above"
+msgstr "上"
+
+#: menu-image.php:452
+msgid "Hide"
+msgstr "非表示"
+
+#: menu-image.php:449
+msgid "Title position"
+msgstr "タイトル位置"
+
+#: menu-image.php:436
+msgid "Original Size"
+msgstr "オリジナルの画像サイズ"
+
+#: menu-image.php:431
+msgid "Image size"
+msgstr "画像サイズ"
+
+#: menu-image.php:398
+msgid "Set image on hover"
+msgstr "マウスオーバー時の画像を設定"
+
+#: menu-image.php:395
+msgid "Set menu item image on hover"
+msgstr "マウスオーバー時のメニュー項目画像を変更"
+
+#: menu-image.php:395
+msgid "Change menu item image on hover"
+msgstr "マウスオーバー時にメニュー項目画像を変更する"
+
+#: menu-image.php:394
+msgid "Image on hover"
+msgstr "マウスオーバー時の画像"
+
+#: menu-image.php:388 menu-image.php:399 menu-image.php:748
+msgid "Remove"
+msgstr "削除"
+
+#: menu-image.php:387
+msgid "Set image"
+msgstr "画像を設定"
+
+#: menu-image.php:384
+msgid "Set menu item image"
+msgstr "メニュー項目画像を設定"
+
+#: menu-image.php:384
+msgid "Change menu item image"
+msgstr "メニュー項目画像を変更"
+
+#: menu-image.php:383
+msgid "Menu image"
+msgstr "メニュー画像"
+
+#: menu-image.php:339
+msgid "Select"
+msgstr "選択"
+
+#: menu-image.php:338
+msgid "Chose menu image"
+msgstr "メニュー画像を選択"
+
+#: menu-image.php:142
+msgid "Image"
+msgstr "画像"

@@ -1,0 +1,35 @@
+#w1-drupal-commerce-config .form-item-w1-PTENABLED, 
+#w1-drupal-commerce-config .form-item-w1-PTDISABLED {
+    height: 450px;
+    overflow-x: hidden;
+}
+
+#w1-drupal-commerce-config .form-item-w1-PTENABLED label.option,
+#w1-drupal-commerce-config .form-item-w1-PTDISABLED label.option {
+    float: left;
+    margin-left: 20px;
+}
+
+#w1-drupal-commerce-config .form-item-w1-PTENABLED label.option input,
+#w1-drupal-commerce-config .form-item-w1-PTDISABLED label.option input {
+    float: left;
+}
+
+#w1-drupal-commerce-config .form-item-w1-PTENABLED > div > div,
+#w1-drupal-commerce-config .form-item-w1-PTDISABLED > div > div {
+    float: left;
+    width: 100%;
+}
+
+#w1-drupal-commerce-config .form-item-w1-PTENABLED div > input,
+#w1-drupal-commerce-config .form-item-w1-PTDISABLED div >  input {
+    float: left;
+    margin-top: 5px;
+}
+
+#w1-drupal-commerce-config .form-item-w1-PTENABLED label.option img,
+#w1-drupal-commerce-config .form-item-w1-PTDISABLED label.option img {
+    float: left;
+    margin-right: 7px;
+    margin-top: -3px;
+}

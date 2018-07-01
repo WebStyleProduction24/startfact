@@ -1,0 +1,126 @@
+.teachers .teacher-item {
+    background-color: #92278f;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.teachers > div > div > div > div:nth-child(2) .teacher-item {
+    background-color: #e84b3a;
+}
+.teachers > div > div > div > div:nth-child(3) .teacher-item {
+    background-color: #fc7f0c;
+}
+.teachers > div > div > div > div:nth-child(4) .teacher-item {
+    background-color: #14b7f1;
+}
+.teachers .teacher-item .teacher-image {
+    float: left;
+}
+.teachers .teacher-item .teacher-image img {
+    width: 100%;
+}
+.teachers .teacher-item .teacher-content {
+    color: #fff;
+    display: table;
+    padding: 20px;
+}
+.teachers .teacher-item .teacher-content h4 {
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.teachers .teacher-item .teacher-content h4 span {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+}
+.teachers .teacher-item .teacher-content ul li {
+    display: inline-block;
+    list-style: outside none none;
+    margin-right: 15px;
+}
+.teachers .teacher-item .teacher-content ul li a {
+    color: #fff;
+}
+.teachers .teacher-item .teacher-content p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.teachers .teacher-item .teacher-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.teachers-three .teacher-item {
+    background: transparent none repeat scroll 0 0 !important;
+    margin: 0;
+    text-align: center;
+}
+.teachers-three .teacher-item .teacher-image {
+    border-radius: 100%;
+    float: initial !important;
+    height: 262px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 262px;
+}
+.teachers-three .teacher-item .teacher-content {
+    display: block !important;
+    padding: 0 !important;
+}
+
+
+.teacher-details .teacher-image img {
+    width: 100%;
+}
+.teacher-details .teacher-content {
+    margin-bottom: 40px;
+}
+.teacher-details .teacher-content h4 {
+    color: #92278f;
+    font-size: 24px;
+    line-height: 30px;
+}
+.teacher-details .teacher-content > span {
+    color: #707070;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.teacher-details .teacher-content p {
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.teacher-details .social-default {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.teacher-details .teacher-award h4 {
+    color: #fc7f0c;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.teacher-details .teacher-award li {
+    display: inline-block;
+    list-style: outside none none;
+    margin-right: 60px;
+    text-align: center;
+}
+.teacher-details .teacher-award li:last-child {
+    margin: 0;
+}
+.teacher-details .teacher-award li img {
+    margin: 10px auto 32px;
+}
+.teacher-details .teacher-award li span {
+    color: #ffc000;
+    font-size: 16px;
+}
+
+.href {
+    font-size: 15px;
+}
