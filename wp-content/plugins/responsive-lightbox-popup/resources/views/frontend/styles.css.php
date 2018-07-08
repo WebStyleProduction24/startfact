@@ -15,6 +15,7 @@
     padding: <?php echo GDLightbox()->settings->getOption('gd_lightbox_padding_top_and_bottom_px'); ?>px 40px;
     position: fixed;
     right: 0;
+    opacity: <?php echo GDLightbox()->settings->getOption('gd_lightbox_title_opacity')/100; ?>;
     text-align: <?php echo GDLightbox()->settings->getOption('gd_lightbox_text_align'); ?>;
     z-index: 1080;
 }

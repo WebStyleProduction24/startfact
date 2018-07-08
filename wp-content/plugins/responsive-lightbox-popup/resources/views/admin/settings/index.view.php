@@ -12,10 +12,16 @@
     </div>
     <ul>
         <li>
-            <a href="http://grandwp.com/wordpress-responsive-lightbox"><?php _e('Go Pro','gd_lightbox');?></a>
+            <a href="https://demo.grandwp.com/wordpress-responsive-lightbox-demo/"><?php _e('Demo','gd_lightbox');?></a>
         </li>
         <li>
-            <a href="https://wordpress.org/support/plugin/responsive-lightbox-popup"><?php _e('Help','gd_lightbox');?></a>
+            <a href="https://wordpress.org/support/plugin/responsive-lightbox-popup"><?php _e('Support Forum','gd_lightbox');?></a>
+        </li>
+        <li>
+            <a href="https://grandwp.com/wordpress-responsive-lightbox"><?php _e('Go Pro','gd_lightbox');?></a>
+        </li>
+        <li>
+            <a href="https://grandwp.com/wordpress-responsive-lightbox-user-manual"><?php _e('Help','gd_lightbox');?></a>
         </li>
     </ul>
 </div>

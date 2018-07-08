@@ -24,7 +24,7 @@ $classes = apply_filters( 'yotu_classes', array("yotu-videos yotu-mode-grid"), $
 					<div class="yotu-video-thumb-wrp">
 						<div>
 							<?php do_action('yotuwp_before_thumbnail', $videoId, $video);?>
-							<img class="yotu-video-thumb" src="<?php echo $thumb;?>" alt="<?php echo $video->snippet->title;?>">	
+							<img class="yotu-video-thumb" src="<?php echo $thumb;?>" alt="<?php echo $yotuwp->encode($video->snippet->title);?>">	
 							<?php do_action('yotuwp_after_thumbnail', $videoId, $video);?>
 						</div>
 					</div>

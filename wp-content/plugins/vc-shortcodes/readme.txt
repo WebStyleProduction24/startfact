@@ -4,7 +4,7 @@ Donate link: https://themebon.com/item/visual-composer-shortcodes-pro/
 Tags: 3d, add-on, bundle, css3, flip box, advanced, hotspot, lightbox, parallax, visual composer, WPBakery Page Builder, hover effects, visual composer addon. 
 Requires at least: 4.0.1
 Tested up to: 4.9
-Stable tag: 1.9.2
+Stable tag: 1.9.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -104,6 +104,24 @@ This addon plugin works like other page builder addon plugin. Go to new page the
 7. screenshot 7
 
 == Changelog ==
+
+= 1.9.8 =
+* Added new shortcode
+
+= 1.9.7 =
+* Added new shortcode
+
+= 1.9.6 =
+* Fixed flip box button issue
+
+= 1.9.5 =
+* Added new shortcode
+
+= 1.9.4 =
+* Added new shortcode
+
+= 1.9.3 =
+* Added new feature
 
 = 1.9.2 =
 * Added new effect
@@ -380,6 +398,24 @@ This addon plugin works like other page builder addon plugin. Go to new page the
 
 
 == Upgrade Notice ==
+
+= 1.9.8 =
+* Added new shortcode
+
+= 1.9.7 =
+* Added new shortcode
+
+= 1.9.6 =
+* Fixed flip box button issue
+
+= 1.9.5 =
+* Added new shortcode
+
+= 1.9.4 =
+* Added new shortcode
+
+= 1.9.3 =
+* Added new feature
 
 = 1.9.2 =
 * Added new effect

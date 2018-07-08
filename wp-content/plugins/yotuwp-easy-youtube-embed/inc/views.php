@@ -101,7 +101,7 @@ class YotuViews{
 					'type'			=> 'select',
 					'label'			=> __('Video Thumbnail Ratio', 'yotuwp-easy-youtube-embed'),
 					'default'		=> '43',
-					'priority' 		=> 80,
+					'priority' 		=> 59,
 					'description'	=> __('', 'yotuwp-easy-youtube-embed'),
 					'options' => array(
 						'43'  => 'Normal - 4:3',
@@ -264,6 +264,7 @@ class YotuViews{
 						),
 					)
 				),
+				
 				array(
 					'name'			=> 'button',
 					'type'			=> 'buttons',
@@ -335,14 +336,14 @@ class YotuViews{
 			)
 		);
 
+		$sections = apply_filters('yotu_settings', $sections, array());
+
 		$this->sections = $sections;
 
 	}
 	
 	public function settings( $data ) {
 		global $yotuwp;
-
-
 
 		foreach( $this->sections as $tab => $section ) {
 			foreach( $section['fields'] as $ind => $field ) {
@@ -356,8 +357,9 @@ class YotuViews{
 			}
 		}
 
-		if( !isset( $data['styling']) ){
+		if( !isset( $data['is_panel']) ){
 			unset($this->sections['styling']);
+			unset($this->sections['premium']);
 		}
 
 		//API settings
@@ -377,7 +379,7 @@ class YotuViews{
 						'label'			=> __('Youtube API Key', 'yotuwp-easy-youtube-embed'),
 						'default'		=> '',
 						'description'	=> sprintf(__('Follow %s to get your own YouTube API key', 'yotuwp-easy-youtube-embed'), '<a href="https://www.yotuwp.com/how-to-get-youtube-api-key/" target="_blank">this guide</a>'),
-						'value'			=> $api['api_key'],
+						'value'			=> isset($api['api_key'])? $api['api_key'] : '',
 					),
 
 				)
@@ -441,27 +443,26 @@ class YotuViews{
 			);
 		}
 
+		if( isset($data['is_panel']) ) {
+			$this->sections['intro'] = array(
+				'icon' 		=> 'dashicons-megaphone',
+				'key' 		=> 'intro',
+				'title' 	=> __('Intro', 'yotuwp-easy-youtube-embed'),
+				'priority' 	=> 90,
+				'fields' 	=> array(
+					array(
+						'name'			=> 'intro',
+						'type'			=> 'intro',
+						'priority' 		=> 10,
+						'default'		=> '',
+						'description'	=> ''
+					),
 
-	
-		// $this->sections['premium'] = array(
-		// 	'icon' 		=> 'dashicons-awards',
-		// 	'key' 		=> 'premium',
-		// 	'title' 	=> __('Premium', 'yotuwp-easy-youtube-embed'),
-		// 	'priority' 	=> 60,
-		// 	'fields' 	=> array(
-		// 		array(
-		// 			'name'			=> 'premium',
-		// 			'type'			=> 'intro',
-		// 			'priority' 		=> 10,
-		// 			'default'		=> '',
-		// 			'description'	=> '',
-		// 		),
-		// 	)
-		// );
+				)
+			);
+		}
 
-		$this->sections = apply_filters('yotu_settings', $this->sections, $data);
-
-		$this->render_tabs( $this->sections, ( isset( $data['api'] )? true : false ) );
+		$this->render_tabs( $this->sections, ( isset( $data['is_panel'] )? true : false ) );
 	}
 
 	public function styling_fields( $styling ){
@@ -605,15 +606,11 @@ class YotuViews{
 				<?php _e('Or send us message from ', 'yotuwp-easy-youtube-embed');?> <a href="https://www.yotuwp.com/contact/?utm_source=clientsite&utm_medium=contact&utm_campaign=contact" target="_blank"><?php _e('contact form', 'yotuwp-easy-youtube-embed');?></a>
 			</p>
 		</div>
-
-		
-
 	</div>
 	<?php
 	}
 
-	public function popup( $yotuwp, $is_panel = true)
-	{
+	public function popup( $yotuwp, $is_panel = true) {
 	?>
 
 	<div class="yotu_insert_popup" data-type="playlist">
@@ -730,9 +727,9 @@ class YotuViews{
 			<?php endif;?>
 		<?php else :?>
 			<h4 style="color: #f00;">
-				<?php printf( __( 'Please enter your Youtube API key from <a href="%s">setting page</a> to use this feature.', 'yotuwp-easy-youtube-embed' ), menu_page_url('yotuwp', false) );?>
+				<?php printf( __( 'Please enter your Youtube API key from <a href="%s#api">setting page</a> to use this feature.', 'yotuwp-easy-youtube-embed' ), menu_page_url('yotuwp', false) );?>
 			</h4>
-			<p><?php _e('You can follow guide to get API Key and setup it.', 'yotuwp-easy-youtube-embed');?> <a href="#"><?php _e('Check out document here', 'yotuwp-easy-youtube-embed');?> >></a></p>
+			<p><?php _e('You can follow guide to get API Key and setup it.', 'yotuwp-easy-youtube-embed');?> <a href="https://www.yotuwp.com/how-to-get-youtube-api-key/" target="_blank"><?php _e('Check out document here', 'yotuwp-easy-youtube-embed');?> >></a></p>
 		<?php endif;?>
 	</div>
 	<?php
@@ -854,29 +851,33 @@ class YotuViews{
 				<?php endif?>
 				
 				<div class="yotu-body-form">
-					<div class="yotu-settings-title">
-						<div class="yotu-logo">
-							<img src="<?php echo $yotuwp->url . 'assets/images/yotu-small.png';?>" height="80"/>
-							<div><?php _e('Version', 'yotuwp-easy-youtube-embed'); echo ' '. $yotuwp->version;?></div>
-							
-						</div>
-						<span><?php _e('YotuWP Settings', 'yotuwp-easy-youtube-embed');?></span>
-					</div>
-					<?php settings_errors(); ?>
 					<form method="post" action="options.php">
-					<?php
+						<input type="hidden" id="yotu-settings-last_tab" class="yotu-param" name="yotu-settings[last_tab]" value="<?php echo $yotuwp->options['last_tab'];?>">
+						<input type="hidden" id="yotu-settings-last_update" class="yotu-param" name="yotu-settings[last_update]" value="<?php echo time();?>">
+						<div class="yotu-settings-title">
+							<div class="yotu-logo">
+								<img src="<?php echo $yotuwp->url . 'assets/images/yotu-small.png';?>" height="80"/>
+								<div><?php _e('Version', 'yotuwp-easy-youtube-embed'); echo ' '. $yotuwp->version;?></div>
+							</div>
+							<span><?php _e('YotuWP Settings', 'yotuwp-easy-youtube-embed');?></span>
+							<?php submit_button(); ?>
+						</div>
+						<?php settings_errors(); ?>
+						
+						<?php
+						//unset($yotuwp->options['premium']);
+						$data = array(
+							'settings' => $yotuwp->options,
+							'player'   => $yotuwp->player,
+							'cache'    => $yotuwp->cache_cfg,
+							'styling'  => $yotuwp->styling,
+							'api'      => $yotuwp->api,
+							'is_panel' => true
+						);
 
-					$data = array(
-						'settings' => $yotuwp->options,
-						'player'   => $yotuwp->player,
-						'cache'    => $yotuwp->cache_cfg,
-						'styling'  => $yotuwp->styling,
-						'api'      => $yotuwp->api
-					);
+						$this->settings( $data );
 
-					$this->settings( $data);
-
-					?>
+						?>
 					</form>
 				</div>
 				
@@ -948,7 +949,7 @@ class YotuViews{
 		$tabs_content = apply_filters( 'yotuwp_tabs_content', $tabs_content, $is_panel );
 
 		?>
-		<div class="yotu-tabs"<?php echo (isset($sections['api']))?' style="max-width:100px;"':'';?>>
+		<div class="yotu-tabs">
 			<ul><?php echo implode( '',$tabs_control );?></ul>
 		</div>
 		

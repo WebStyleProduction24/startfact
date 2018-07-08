@@ -9,7 +9,7 @@ Author URI: https://www.livemeshthemes.com
 
 class LVCA_Clients {
 
-    protected $_per_line;
+    protected $_animation;
 
     /**
      * Get things started
@@ -36,26 +36,41 @@ class LVCA_Clients {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $per_line = $bar_color = $track_color = '';
+        $per_line = $per_line_tablet = $per_line_mobile = $bar_color = $track_color = $animation = '';
 
         extract(shortcode_atts(array(
             'per_line' => '4',
+            'per_line_tablet' => '3',
+            'per_line_mobile' => '2',
+            'animation' => 'none'
 
         ), $atts));
 
-        $this->_per_line = $per_line;
+        $settings = array();
+
+        $settings['per_line'] = $per_line;
+
+        $settings['per_line_tablet'] = $per_line_tablet;
+
+        $settings['per_line_mobile'] = $per_line_mobile;
+
+        $this->_animation = $animation;
 
         ob_start();
 
         ?>
 
-        <div class="lvca-clients lvca-grid-container lvca-gapless-grid">
+        <div class="lvca-clients lvca-gapless-grid">
 
-            <?php
+            <div class="lvca-grid-container <?php echo lvca_get_grid_classes($settings); ?> ">
 
-            do_shortcode($content);
+                <?php
 
-            ?>
+                do_shortcode($content);
+
+                ?>
+
+            </div>
 
         </div>
 
@@ -76,11 +91,11 @@ class LVCA_Clients {
 
         ), $atts));
 
-        $column_style = lvca_get_column_class(intval($this->_per_line));
+        list($animate_class, $animation_attr) = lvca_get_animation_atts($this->_animation);
 
         ?>
 
-        <div class="lvca-client <?php echo $column_style; ?>">
+        <div class="lvca-grid-item lvca-client <?php echo $animate_class; ?>" <?php echo $animation_attr; ?>">
 
             <?php echo wp_get_attachment_image($client_image, 'full', false, array('class' => 'lvca-image full', 'alt' => $client_name)); ?>
 
@@ -127,12 +142,42 @@ class LVCA_Clients {
                     array(
                         "type" => "lvca_number",
                         "param_name" => "per_line",
-                        "value" => 4,
+                        "value" => 5,
                         "min" => 1,
                         "max" => 6,
                         "suffix" => '',
                         "heading" => __("Clients per row", "livemesh-vc-addons"),
                         "description" => __("The number of columns to display per row of the clients", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_tablet",
+                        "value" => 4,
+                        "min" => 1,
+                        "max" => 6,
+                        "suffix" => '',
+                        "heading" => __("Clients per row in Tablet Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the clients in tablet resolution", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_mobile",
+                        "value" => 2,
+                        "min" => 1,
+                        "max" => 4,
+                        "suffix" => '',
+                        "heading" => __("Clients per row in Mobile Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the clients in mobile resolution", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "dropdown",
+                        "param_name" => "animation",
+                        "heading" => __("Choose Animation Type", "livemesh-vc-addons"),
+                        'value' => lvca_get_animation_options(),
+                        'std' => 'none',
                     ),
                 ),
             ));

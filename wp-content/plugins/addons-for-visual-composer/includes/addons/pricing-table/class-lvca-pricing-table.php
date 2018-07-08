@@ -74,20 +74,28 @@ class LVCA_Pricing_Table {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $per_line = '';
+        $per_line = $per_line_tablet = $per_line_mobile = '';
 
         extract(shortcode_atts(array(
-            'per_line' => '4'
+            'per_line' => '4',
+            'per_line_tablet' => '2',
+            'per_line_mobile' => '1',
 
         ), $atts));
 
-        $this->_per_line = $per_line;
+        $settings = array();
+
+        $settings['per_line'] = $per_line;
+
+        $settings['per_line_tablet'] = $per_line_tablet;
+
+        $settings['per_line_mobile'] = $per_line_mobile;
 
         ob_start();
 
         ?>
 
-        <div class="lvca-pricing-table lvca-grid-container">
+        <div class="lvca-pricing-table lvca-grid-container <?php echo lvca_get_grid_classes($settings); ?>">
 
             <?php
 
@@ -106,7 +114,7 @@ class LVCA_Pricing_Table {
 
     public function child_shortcode_func($atts, $content = null, $tag) {
 
-        $pricing_title = $tagline = $price_tag = $highlight = $button_text = $button_url = $button_new_window = $pricing_img = '';
+        $pricing_title = $tagline = $price_tag = $highlight = $button_text = $button_url = $button_new_window = $pricing_img = $animation = '';
         extract(shortcode_atts(array(
             'pricing_title' => '',
             'tagline' => '',
@@ -116,10 +124,11 @@ class LVCA_Pricing_Table {
             "button_url" => '#',
             "button_new_window" => '',
             "pricing_img" => '',
+            'animation' => 'none'
 
         ), $atts));
 
-        $column_style = lvca_get_column_class(intval($this->_per_line));
+        list($animate_class, $animation_attr) = lvca_get_animation_atts($animation);
 
         $price_tag = htmlspecialchars_decode(wp_kses_post($price_tag));
 
@@ -134,7 +143,7 @@ class LVCA_Pricing_Table {
         ?>
 
         <div
-            class="lvca-pricing-plan <?php echo(!empty($highlight) ? ' lvca-highlight' : ''); ?> <?php echo $column_style; ?>">
+            class="lvca-grid-item lvca-pricing-plan <?php echo(!empty($highlight) ? ' lvca-highlight' : ''); ?> <?php echo $animate_class; ?>" <?php echo $animation_attr; ?>>
 
             <div class="lvca-top-header">
 
@@ -202,16 +211,38 @@ class LVCA_Pricing_Table {
                 "js_view" => 'VcColumnView',
                 "icon" => 'icon-lvca-pricing-table',
                 "params" => array(
-                    // add params same as with any other content element
+
                     array(
                         "type" => "lvca_number",
                         "param_name" => "per_line",
-                        "value" => 3,
+                        "value" => 4,
                         "min" => 1,
-                        "max" => 5,
+                        "max" => 6,
                         "suffix" => '',
                         "heading" => __("Pricing Plans per row", "livemesh-vc-addons"),
-                        "description" => __("The number of pricing plans to display per row of the pricing table", "livemesh-vc-addons")
+                        "description" => __("The number of columns to display per row of the pricing table", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_tablet",
+                        "value" => 2,
+                        "min" => 1,
+                        "max" => 6,
+                        "suffix" => '',
+                        "heading" => __("Pricing Plans per row in Tablet Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the pricing table in tablet resolution", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_mobile",
+                        "value" => 1,
+                        "min" => 1,
+                        "max" => 4,
+                        "suffix" => '',
+                        "heading" => __("Pricing Plans per row in Mobile Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the pricing table in mobile resolution", "livemesh-vc-addons")
                     ),
                 ),
             ));
@@ -293,6 +324,14 @@ class LVCA_Pricing_Table {
                             'param_name' => 'button_new_window',
                             'heading' => __('Open Button URL in a new window', 'livemesh-vc-addons'),
                             'group' => 'Pricing Link'
+                        ),
+                        array(
+                            "type" => "dropdown",
+                            "param_name" => "animation",
+                            "heading" => __("Choose Animation Type", "livemesh-vc-addons"),
+                            'value' => lvca_get_animation_options(),
+                            'std' => 'none',
+                            'group' => __('Settings', 'livemesh-vc-addons')
                         ),
 
                     )

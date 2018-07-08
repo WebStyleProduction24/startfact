@@ -5,7 +5,7 @@
     .lvca-posts-carousel {
       max-width: 96%; } }
   .lvca-posts-carousel .lvca-posts-carousel-item .hentry {
-    background: #ffffff;
+    background: #fff;
     border-radius: 6px;
     border: none;
     padding: 0;
@@ -23,6 +23,8 @@
   .lvca-posts-carousel .lvca-posts-carousel-item .lvca-project-image {
     position: relative;
     overflow: hidden; }
+    .lvca-posts-carousel .lvca-posts-carousel-item .lvca-project-image .fl-photo-content {
+      width: 100%; }
     .lvca-posts-carousel .lvca-posts-carousel-item .lvca-project-image img {
       width: 100%;
       display: block;

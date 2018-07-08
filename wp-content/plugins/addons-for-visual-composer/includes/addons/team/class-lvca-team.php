@@ -10,8 +10,8 @@ Author URI: https://www.livemeshthemes.com
 
 class LVCA_Team {
 
-    protected $_per_line;
     protected $_style;
+    protected $_image_size;
 
     /**
      * Get things started
@@ -38,16 +38,28 @@ class LVCA_Team {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $per_line = $style = '';
+        $per_line = $per_line_tablet = $per_line_mobile = $style = $image_size = '';
 
         extract(shortcode_atts(array(
             'per_line' => '3',
+            'per_line_tablet' => '2',
+            'per_line_mobile' => '1',
             'style' => 'style1',
+            'image_size' => 'large',
 
         ), $atts));
 
-        $this->_per_line = $per_line;
+
+        $settings = array();
+
+        $settings['per_line'] = $per_line;
+
+        $settings['per_line_tablet'] = $per_line_tablet;
+
+        $settings['per_line_mobile'] = $per_line_mobile;
+
         $this->_style = $style;
+        $this->_image_size = $image_size;
 
         ob_start();
 
@@ -57,7 +69,7 @@ class LVCA_Team {
 
         <?php if ($style == 'style1'): ?>
 
-            <?php $container_style = 'lvca-grid-container'; ?>
+            <?php $container_style = 'lvca-grid-container' .  lvca_get_grid_classes($settings); ?>
 
         <?php endif; ?>
 
@@ -80,7 +92,8 @@ class LVCA_Team {
 
     public function child_shortcode_func($atts, $content = null, $tag) {
 
-        $member_name = $member_image = $member_details = $member_position = $member_email = '';
+        $member_name = $member_image = $member_details = $member_position = $member_email = $animation = '';
+
         extract(shortcode_atts(array(
             'member_name' => '',
             'member_image' => '',
@@ -99,26 +112,29 @@ class LVCA_Team {
             'pinterest_url' => false,
             'skype_url' => false,
             'dribbble_url' => false,
+            'animation' => 'none',
 
         ), $atts));
 
         $style = $this->_style;
 
-        $column_style = '';
+        $item_style = '';
 
         if ($style == 'style1') {
-            $column_style = lvca_get_column_class(intval($this->_per_line));
+            $item_style = 'lvca-grid-item';
         }
-        
+
+        list($animate_class, $animation_attr) = lvca_get_animation_atts($animation);
+
         ?>
 
-        <div class="lvca-team-member-wrapper <?php echo $column_style; ?>">
+        <div class="<?php echo $item_style; ?> lvca-team-member-wrapper">
 
-            <div class="lvca-team-member">
+            <div class="lvca-team-member <?php echo $animate_class; ?>" <?php echo $animation_attr; ?>>
 
                 <div class="lvca-image-wrapper">
 
-                    <?php echo wp_get_attachment_image($member_image, 'full', false, array('class' => 'lvca-image full')); ?>
+                    <?php echo wp_get_attachment_image($member_image, $this->_image_size, false, array('class' => 'lvca-image full')); ?>
 
                     <?php if ($style == 'style1'): ?>
 
@@ -156,7 +172,7 @@ class LVCA_Team {
 
         </div>
 
-    <?php
+        <?php
     }
 
     function map_vc_element() {
@@ -192,14 +208,51 @@ class LVCA_Team {
                         "param_name" => "per_line",
                         "value" => 3,
                         "min" => 1,
-                        "max" => 5,
+                        "max" => 6,
                         "suffix" => '',
-                        "heading" => __("Columns per row", "livemesh-vc-addons"),
+                        "heading" => __("Team Members per row", "livemesh-vc-addons"),
                         "description" => __("The number of team members to display per row of the team", "livemesh-vc-addons"),
                         'dependency' => array(
                             'element' => 'style',
                             'value' => 'style1',
                         ),
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_tablet",
+                        "value" => 2,
+                        "min" => 1,
+                        "max" => 6,
+                        "suffix" => '',
+                        "heading" => __("Team Members per row in Tablet Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of team members to display per row of the team in tablet resolution", "livemesh-vc-addons"),
+                        'dependency' => array(
+                            'element' => 'style',
+                            'value' => 'style1',
+                        ),
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_mobile",
+                        "value" => 1,
+                        "min" => 1,
+                        "max" => 4,
+                        "suffix" => '',
+                        "heading" => __("Team Members per row in Mobile Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of team members to display per row of the team in mobile resolution", "livemesh-vc-addons"),
+                        'dependency' => array(
+                            'element' => 'style',
+                            'value' => 'style1',
+                        ),
+                    ),
+                    array(
+                        'type' => 'dropdown',
+                        'param_name' => 'image_size',
+                        'heading' => __('Image Size', 'livemesh-vc-addons'),
+                        'std' => 'large',
+                        'value' => lvca_get_image_sizes()
                     ),
                 ),
             ));
@@ -309,6 +362,15 @@ class LVCA_Team {
                             'group' => __('Social Profile', 'livemesh-vc-addons'),
                             'heading' => __('Instagram Page URL', 'livemesh-vc-addons'),
                             'description' => __('URL of the Instagram feed for the team member.', 'livemesh-vc-addons'),
+                        ),
+
+                        array(
+                            "type" => "dropdown",
+                            "param_name" => "animation",
+                            "heading" => __("Choose Animation Type", "livemesh-vc-addons"),
+                            'value' => lvca_get_animation_options(),
+                            'std' => 'none',
+                            'group' => __('Settings', 'livemesh-vc-addons')
                         ),
                     )
                 )

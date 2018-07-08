@@ -16,6 +16,7 @@ if (typeof (jQuery) != 'undefined') {
                 init: function () {
                     this.carousel();
                     this.output_custom_css();
+                    this.setup_animations();
                 },
 
                 isMobile: function () {
@@ -51,6 +52,22 @@ if (typeof (jQuery) != 'undefined') {
                     }
                 },
 
+                setup_animations: function () {
+
+                    /* Hide the elements if required to prepare for animation */
+                    $(".lvca-visible-on-scroll:not(.animated)").css('opacity', 0);
+
+                    "function" != typeof window.lvca_animate_widgets && (window.lvca_animate_widgets = function () {
+                        "undefined" != typeof $.fn.waypoint && $(".lvca-animate-on-scroll:not(.animated)").waypoint(function () {
+                            var animateClass = $(this).data("animation");
+                            $(this).addClass("animated " + animateClass).css('opacity', 1);
+                        }, {
+                            offset: "85%"
+                        })
+                    });
+
+                    window.setTimeout(lvca_animate_widgets, 500)
+                },
 
                 carousel: function () {
 
@@ -58,7 +75,7 @@ if (typeof (jQuery) != 'undefined') {
                         return;
                     }
 
-                    var carousel_elements = $('.lvca-carousel, .lvca-posts-carousel');
+                    var carousel_elements = $('.lvca-carousel, .lvca-posts-carousel, .lvca-gallery-carousel');
 
                     carousel_elements.each(function () {
 

@@ -1,11 +1,11 @@
-=== Addons for WPBakery Page Builder ===
+=== Livemesh Addons for WPBakery Page Builder ===
 Author URI: https://www.livemeshthemes.com/wpbakery-page-builder-addons
 Plugin URI: https://www.livemeshthemes.com/wpbakery-page-builder-addons
-Contributors: livemesh
+Contributors: livemesh, freemius
 Tags: wpbakery page builder, wpbakery page builder addons, wpbakery, wpbakery page builder extensions, visual composer, visual composer addons, visual composer extensions, page builder, portfolio, carousel, post, posts, shortcodes, tabs, plugin, page
 Requires at least: 4.5
 Tested up to: 4.9
-Stable Tag: 1.9.1
+Stable Tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html-func
 
@@ -13,15 +13,15 @@ A collection of premium quality addons or extensions for WPBakery Page Builder(f
 
 == Description ==
 
-Addons for WPBakery Page Builder(formerly Visual Composer) features professional looking, easy to use yet highly functional extensions that can be used in WPBakery Page Builder. This is really a premium plugin that you can get for free.
+Livemesh Addons for WPBakery Page Builder(formerly Visual Composer) features professional looking, easy to use yet highly functional extensions that can be used in WPBakery Page Builder. This is really a premium plugin that you can get for free.
 
-This plugin comes with widgets for just about everything you need to build a professional website without switching to a premium theme - services, team profiles, counters, bar charts, piecharts, testimonials, clients list, portfolio/posts grid, posts carousels, varieties of tabs, accordions or toggles, pricing plan and much more in the <a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons" title="Addons for WPBakery Page Builder Premium Version">PRO version</a>. All the addons that help turn your free theme into a premium one with just a few clicks. Every premium page builder element you need is available for easy drag and drop into your page by just activating this plugin.
+This plugin comes with widgets for just about everything you need to build a professional website without switching to a premium theme - services, team profiles, counters, bar charts, piecharts, testimonials, clients list, portfolio/posts grid, posts carousels, varieties of tabs, accordions or toggles, pricing plan and much more in the <a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons" title="Livemesh Addons for WPBakery Page Builder Premium Version">PRO version</a>. All the addons that help turn your free theme into a premium one with just a few clicks. Every premium page builder element you need is available for easy drag and drop into your page by just activating this plugin.
 
 WPBakery Page Builder(formerly Visual Composer) plugin must be installed and activated to use this plugin. After you activate the required plugins, the elements should be available for use in WPBakery Page Builder.
 
 See the all of addon elements in action here -
 
-<a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/addons-demo#demo-section" title="Addons for WPBakery Page Builder Demo Site"><strong>LIVE DEMO</strong></a> | <a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/pricing/" title="Addons for WPBakery Page Builder Premium Version"><strong>PRO Version</strong></a>.
+<a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/addons-demo#demo-section" title="Livemesh Addons for WPBakery Page Builder Demo Site"><strong>LIVE DEMO</strong></a> | <a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/pricing/" title="Livemesh Addons for WPBakery Page Builder Premium Version"><strong>PRO Version</strong></a>.
 
 The plugin comes with the following WPBakery Page Builder Addons or extensions. <strong>Almost all of the elements come with a dark version.</strong> -
 
@@ -44,7 +44,7 @@ The plugin comes with the following WPBakery Page Builder Addons or extensions. 
 <li><a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/clients-element/" title="Clients List Element">Clients List</a> extension to showcase the clients that you have handled.</li>
 <li><a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/pricing-table/" title="Pricing Table Extension">Pricing Plans</a> to help get more sales.</li></ul>
 
-The <strong><a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/" title="Addons for WPBakery Page Builder Pro" target="_blank">PRO version</a></strong> of the plugin comes with additional addons and advanced features added to elements above -
+The <strong><a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/" title="Livemesh Addons for WPBakery Page Builder Pro" target="_blank">PRO version</a></strong> of the plugin comes with additional addons and advanced features added to elements above -
 
 <ul>
 <li><a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/posts-block/" title="Posts Block Addon">Posts Block</a> to help present your blog posts, events, news items or portfolio in a dozen creative ways. Comes with AJAX filtering, pagination and load more features to help visitors navigate your entire collection of blog posts or custom post types and their categories without reloading the page.</li>
@@ -77,7 +77,7 @@ http://twitter.com/live_mesh
 2. Unzip the downloaded addons-for-visual-composer.zip file and upload to the `/wp-content/plugins/` directory or install the WPBakery Page Builder Addons by Livemesh plugin from WordPress repository. Activate the plugin through the 'Plugins' menu in WordPress.
 4. For Portfolio element, install and activate the <strong>optional plugin</strong> <a href="https://wordpress.org/plugins/portfolio-post-type/" title="Portfolio Post Type">Portfolio Post Type plugin</a>. The Portfolio addon can be built using custom post type registered by this plugin.
 
-Optionally, you can import the sample data that replicates the demo site for you by importing the file sample-data.xml file located in the plugin directory. The import option is available under Tools &gt; Import in WordPress admin. 
+Optionally, you can import the sample data that replicates the demo site for you by importing the file sample-data.xml file located in the plugin directory. The import option is available under Tools &gt; Import in WordPress admin.
 
 == Frequently Asked Questions ==
 
@@ -85,7 +85,7 @@ Optionally, you can import the sample data that replicates the demo site for you
 
 Our tests indicate that the addons work well with most themes that are well coded. You may need some minor custom CSS with themes that hijack the styling for heading tags by using !important keyword.
 
-Some themes override default templates provided by WPBakery Page Builder. The themes that override VC Row template may require you to manually set the attributes required for the dark version (see below).
+Some themes override default templates provided by WPBakery Page Builder. The themes that override WPBakery Page Builder Row template may require you to manually set the attributes required for the dark version (see below).
 
 The demo site is best recreated with a theme that supports a full width page template without sidebars. The elements can still be used in the pages of default template.
 
@@ -93,28 +93,42 @@ The demo site is best recreated with a theme that supports a full width page tem
 
 In WPBakery Page Builder, add a row wrapper for the element, edit row and check the option 'Dark Background?' at the end of General tab of the row or an inner row element.
 
-For themes that override the VC row template with one of their own, you may need to add a custom class 'lvca-dark-bg' manually to the VC row wrapper element to activate the dark version of an element.
+For themes that override the WPBakery Page Builder row template with one of their own, you may need to add a custom class 'lvca-dark-bg' manually to the WPBakery Page Builder row wrapper element to activate the dark version of an element.
 
 = My portfolio does not show any items. =
 
 Pls install and activate the <a href="https://wordpress.org/plugins/portfolio-post-type/" title="Portfolio Post Type">Portfolio Post Type plugin</a> to enable custom post type Portfolio.
 
 == Screenshots ==
-1. The plugin Addons for WPBakery Page Builder tab in WPBakery Page Builder Add Element window.
+1. The plugin Livemesh Addons for WPBakery Page Builder tab in WPBakery Page Builder Add Element window.
 2. WPBakery Page Builder addon elements in action in WPBakery Page Builder tab of Page Edit window.
 3. Editing a addon/extension element in the WPBakery Page Builder.
 
 == Changelog ==
 
+= 2.2.1 =
+* Fixed - Bug fixes.
+
+= 2.2 =
+* Added – Seamless control of number of columns at all device resolutions for all those elements that involve grid – posts/portfolio grid, clients, services, testimonials, team, charts, pricing table etc.
+* Added - Sample animations for services, clients, testimonials, team and pricing table.
+
+= 2.1 =
+* Added – New simpler grid system for all elements that use grid.
+
+= 2.0 =
+* Moved to a single code base for premium and free versions
+
 = 1.9.1 =
 * Rolled back – Update done to WayPoints script since WPBakery Page Builder is yet to upgrade to new version. Some reports have come in which suggests that the change broke some pages with certain WPBakery page builder elements.
 
 = 1.9.0 =
-* Updated – Changed plugin name to Addons for WPBakery Page Builder to help reflect recent renaming of Visual Composer to WPBakery Page Builder.
-* Updated - Changed plugin options menu title from VC Addons to WPBakery Addons in WordPress admin.
+* Updated – Changed plugin name to Livemesh Addons for WPBakery Page Builder to help reflect recent renaming of Visual Composer to WPBakery Page Builder.
+* Updated - Changed plugin options menu title from WPBakery Page Builder Addons to WPBakery Addons in WordPress admin.
 * Updated - Removed annoying Livemesh prefix from all elements. For example, Livemesh Services is now named Services, Livemesh Tabs is now Tabs, Livemesh Grid is now Posts Grid etc.
 * Updated - Moved to latest version of waypoints script.
 * Fixed - The grid won't display filters when specific taxonomy terms are chosen in the build query.
+* Fixed - Most elements display a default icon in the Add Element window and in the WPBakery builder.
 
 = 1.8.2 =
 * Fixed – Posts Grid columns can break in certain resolutions in FireFox.
@@ -179,7 +193,7 @@ Pls install and activate the <a href="https://wordpress.org/plugins/portfolio-po
 
 = 1.1 =
 * New elements - Responsive Tabs and Accordion of variety of styles
-* Fixed a bug that caused many elements to become uneditable in VC editor
+* Fixed a bug that caused many elements to become uneditable in WPBakery Page Builder editor
 * New services element style
 * Ability to choose entry meta contents for carousel and grid
 * Ability to set a link to the clients website in clients element

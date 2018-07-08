@@ -3,7 +3,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
- * Interface for WPBakery Page Builder Addons
+ * Interface for WPBakery Page Builder addons
  */
 interface LVCA_Addon {
 

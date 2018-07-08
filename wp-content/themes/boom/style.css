@@ -10,3 +10,106 @@
 .custom-color-row h5 {margin: 5px !important; font-size: 14px !important;}
 .title-home-services{text-align: center;}
 .page-services img {height: 80px !important; width: auto !important;}
+
+
+
+/*!!!
+=========================================================
+
+Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
+
+=========================================================
+!!!*/
+
+.wsp24_container-center {
+	margin: 0 auto;
+}
+.wsp24_float-left {
+	float: left;
+}
+.wsp24_width-50 {
+	width: 50%;
+}
+.wsp24_block-with-img > div{
+	margin:20px;
+	width: calc(100%/2 - 40px);
+	float: left;
+	height: 175px;
+	text-align: center;
+}
+.wsp24_block-with-img > div:last-child{
+	margin: 0 auto;
+	float: none;
+	clear: both;
+	height: 175px;
+}
+.wsp24_block-with-img img {
+	border-radius: 50%;
+	width: 150px;
+	height: auto;
+	max-width: none;
+}
+
+.wsp24_block-with-img h4 {
+	 text-align: center !important;
+	 color: #000 !important;
+}
+.wsp24_width-50-b-m {
+	width: calc(50% - 36px);
+}
+.wsp24_width-50-border {
+	width: calc(50% - 6px);
+}
+.wsp24_margin-t-b-35-l-r-15 {
+	margin: 35px 15px;
+}
+.wsp24_margin-t-b-35 {
+	margin: 35px auto;
+}
+
+.wsp24_padding-t-35-b-15 {
+	padding:35px 0 15px;
+}
+
+.wsp24_background-f7f7f7 {
+	background-color: #f7f7f7 !important;
+}
+
+.wsp24_ {
+	color: #000 !important;
+}
+
+.wsp24_ h2 {
+	font-size: 17px !important;
+	font-weight: bold !important;
+}
+.wsp24_ li{
+		margin-bottom: 0px!important;
+    text-indent: 0!important;
+    list-style-position: outside!important;
+}
+
+.wsp24_ td {
+	text-align: left;
+	font-size: 1.15vw;
+	text-indent: 0 !important;
+	line-height: 22px !important;
+}
+
+.wsp24_ .wpb_wrapper p {
+	text-align: justify !important;
+}
+.wsp24_border {
+	border-radius: 1px;
+	border: 3px solid #ebebeb;
+  }
+
+  @media (max-width: 991px) {
+  }
+
+  @media (max-width: 767px) {
+  	.wsp24_width-50 {
+  		width: 100%;
+  	}
+  }
+

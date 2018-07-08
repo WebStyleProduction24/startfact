@@ -114,7 +114,7 @@ class LVCA_Carousel {
                 "show_settings_on_create" => true,
                 "category" => __("Livemesh Addons", "livemesh-vc-addons"),
                 "is_container" => true,
-                'description' => __('Display a carousel of HTML elements.', 'livemesh-vc-addons'),
+                'description' => __('Display a carousel of html elements.', 'livemesh-vc-addons'),
                 "js_view" => 'VcColumnView',
                 "icon" => 'icon-lvca-carousel',
                 "params" => $carousel_params
@@ -148,7 +148,7 @@ class LVCA_Carousel {
                             'type' => 'textarea_html',
                             'param_name' => 'content',
                             'heading' => __('HTML element', 'livemesh-vc-addons'),
-                            'description' => __('The HTML content for the carousel item. Custom CSS for presentation of the HTML elements should be entered by the user in Settings->Custom CSS panel in VC or in the theme files.', 'livemesh-vc-addons'),
+                            'description' => __('The HTML content for the carousel item. Custom CSS for presentation of the HTML elements should be entered by the user in Settings->Custom CSS panel in WPBakery Page Builder or in the theme files.', 'livemesh-vc-addons'),
                         ),
                     )
 

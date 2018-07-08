@@ -30,6 +30,8 @@
 					cli.next().addClass('nextactive');
 					cli.prev().addClass('prevactive');
 
+					jQuery('#yotu-settings-last_tab').val(tab);
+
 					if(yotu === 'insert'){
 						jQuery('.yotu_insert_popup').data('type', tab);
 						jQuery('.yotu_insert_popup .yotu-info-res').html('');
@@ -58,13 +60,27 @@
 			
 			
 			//active tab with hash
-			var hash = window.location.hash;
-
-            if(hash && hash.indexOf('?')<0) {
-                jQuery('.yotu-tabs a[data-tab='+hash.replace('#','')+']').trigger('click');
-            }else{
+			var hash = window.location.hash,
+				last_tab = jQuery('#yotu-settings-last_tab').val(),
+				active_tab = '';
+			if(
+				last_tab !== 'undefined' &&
+				last_tab !== ''
+			){
+				active_tab = last_tab;
+				
+			}
+			if(hash && hash.indexOf('?')<0) {
+				active_tab = hash.replace('#','');
+			}
+			
+			if( active_tab !==''){
+				jQuery('.yotu-tabs a[data-tab='+active_tab+']').trigger('click');
+			}else{
             	jQuery('.yotu-tabs li:first-child a').trigger('click');
-            }
+			}
+			
+			jQuery('.yotu_insert_popup .yotu-tabs li:first-child a').trigger('click');
 
 			jQuery('.yotu_insert_popup .yotu-actions a').on('click', function (){
 				var params = yotu_wp.get_params();

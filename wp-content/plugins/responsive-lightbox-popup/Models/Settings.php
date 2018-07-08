@@ -52,6 +52,7 @@ class Settings
         'gd_lightbox_text_align' => 'center',
         'gd_lightbox_padding_top_and_bottom_px' => '10',
         'gd_lightbox_bottom_top_px_bottoms' => '0',
+        'gd_lightbox_title_opacity' => '100',
         'gd_lightbox_image_border_px' => '0',
         'gd_lightbox_image_border_color' => 'fff',
         'gd_lightbox_image_border_radius_px' => '0',

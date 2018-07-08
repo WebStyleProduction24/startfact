@@ -124,6 +124,70 @@
       }
     }
   }
+
+/* Style 4 */
+
+.lvca-services.lvca-style4 {
+  .lvca-service {
+    margin-bottom: 60px;
+    .lvca-image-wrapper img, .lvca-icon-wrapper span {
+      display: block;
+      margin-bottom: 20px;
+      text-align: left;
+      }
+    .lvca-icon-wrapper span {
+      font-size: 36px;
+      line-height: 1;
+      color: #888;
+      }
+    .lvca-service-text .lvca-title {
+      @include lvca-heading-style();
+      }
+    }
+  }
+
+/* Style 5 */
+.lvca-services.lvca-style5 {
+  .lvca-service {
+    margin-bottom: 80px;
+    @include respond-to-max(767) {
+      margin-bottom: 50px;
+      }
+    .lvca-icon-wrapper span {
+      display: block;
+      text-align: center;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 15px;
+      color: #999;
+      transition: color .4s ease-in-out 0s;
+      }
+    .lvca-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto 25px;
+      transition: all .4s ease-in-out 0s;
+      }
+    .lvca-service-text {
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto;
+      .lvca-title {
+        @include lvca-heading-style();
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 10px;
+        }
+      }
+    &:hover {
+      .lvca-image-wrapper img {
+        transform: scale(0.9, 0.9);
+        }
+      }
+    }
+  }
+
 /* -------- General services -------- */
 
 .lvca-services {

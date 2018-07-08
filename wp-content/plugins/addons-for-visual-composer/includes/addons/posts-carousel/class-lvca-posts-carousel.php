@@ -44,11 +44,15 @@ class LVCA_Posts_Carousel {
                   'display_post_date' => '',
                   'display_taxonomy' => '',
                   'taxonomy_chosen' => 'category',
-                  'image_linkable' => ''),
+                  'image_linkable' => '',
+                  'post_link_new_window' => '',
+                  'image_size' => 'large',),
             lvca_get_default_atts_carousel()
         );
 
         $settings = shortcode_atts($defaults, $atts);
+
+        $taxonomies = array();
 
         $posts_query = $settings['posts_query'];
 
@@ -59,7 +63,7 @@ class LVCA_Posts_Carousel {
             $posts_query .= '|post_status:publish';
         }
         if (function_exists('vc_build_loop_query')) {
-            list($args, $loop) = vc_build_loop_query($posts_query);
+            list($query_args, $loop) = vc_build_loop_query($posts_query);
         }
         else {
             // just display first 10 posts if the user came directly to this shortcode
@@ -87,7 +91,13 @@ class LVCA_Posts_Carousel {
              class="lvca-posts-carousel lvca-container"
              data-settings='<?php echo wp_json_encode($carousel_settings); ?>'>
 
-            <?php $taxonomy = $settings['taxonomy_chosen']; ?>
+            <?php
+            // Check if any taxonomy filter has been applied
+            list($chosen_terms, $taxonomies) = lvca_get_chosen_terms($query_args);
+            if (empty($chosen_terms))
+                $taxonomies[] = $settings['taxonomy_chosen'];
+
+            ?>
 
             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
@@ -97,15 +107,17 @@ class LVCA_Posts_Carousel {
 
             <?php if ($thumbnail_exists = has_post_thumbnail()): ?>
 
+                <?php $target = $settings['post_link_new_window'] ? 'target="_blank"' : '';; ?>
+
                 <div class="lvca-project-image">
 
                     <?php if ($settings['image_linkable']): ?>
 
-                        <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('large'); ?> </a>
+                        <a href="<?php the_permalink(); ?>" <?php echo $target; ?>> <?php the_post_thumbnail($settings['image_size']); ?> </a>
 
                     <?php else: ?>
 
-                        <?php the_post_thumbnail('large'); ?>
+                        <?php the_post_thumbnail($settings['image_size']); ?>
 
                     <?php endif; ?>
 
@@ -113,10 +125,9 @@ class LVCA_Posts_Carousel {
 
                         <div class="lvca-entry-info">
 
-                            <?php the_title('<h3 class="lvca-post-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '"
-                                               rel="bookmark">', '</a></h3>'); ?>
+                            <?php the_title('<h3 class="lvca-post-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '" ' . $target . ' rel="bookmark">', '</a></h3>'); ?>
 
-                            <?php echo lvca_get_taxonomy_info($taxonomy); ?>
+                            <?php echo lvca_get_info_for_taxonomies($taxonomies); ?>
 
                         </div>
 
@@ -133,8 +144,7 @@ class LVCA_Posts_Carousel {
 
                     <?php if ($settings['display_title']) : ?>
 
-                        <?php the_title('<h3 class="entry-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '"
-                                               rel="bookmark">', '</a></h3>'); ?>
+                        <?php the_title('<h3 class="entry-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '" ' . $target . ' rel="bookmark">', '</a></h3>'); ?>
 
                     <?php endif; ?>
 
@@ -156,7 +166,7 @@ class LVCA_Posts_Carousel {
 
                             <?php if ($settings['display_taxonomy']): ?>
 
-                                <?php echo lvca_get_taxonomy_info($taxonomy); ?>
+                                <?php echo lvca_get_info_for_taxonomies($taxonomies); ?>
 
                             <?php endif; ?>
 
@@ -227,6 +237,21 @@ class LVCA_Posts_Carousel {
                     'param_name' => 'image_linkable',
                     'heading' => __('Link Images to Posts?', 'livemesh-vc-addons'),
                     "value" => array(__("Yes", "livemesh-vc-addons") => 'true'),
+                ),
+
+                array(
+                    'type' => 'checkbox',
+                    'param_name' => 'post_link_new_window',
+                    'heading' => __('Open post links in new window?', 'livemesh-vc-addons'),
+                    "value" => array(__("Yes", "livemesh-vc-addons") => 'true'),
+                ),
+
+                array(
+                    'type' => 'dropdown',
+                    'param_name' => 'image_size',
+                    'heading' => __('Image Size', 'livemesh-vc-addons'),
+                    'std' => 'large',
+                    'value' => lvca_get_image_sizes()
                 ),
 
                 array(

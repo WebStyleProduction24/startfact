@@ -1,20 +1,20 @@
 === Simple Responsive Lightbox - Popup Lightbox for WordPress  ===
 Contributors: GrandWP
-Donate link: http://grandwp.com/wordpress-responsive-lightbox
-Tags: lightbox, responsive lightbox, photos, images, popup
+Donate link: https://grandwp.com/wordpress-responsive-lightbox
+Tags: lightbox, responsive lightbox, photos, images, popup, image, photo, popup, fancybox, WordPress lightbox, photography, gallery
 Requires at least: 3.6
 Tested up to: 4.9.6
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 GrandWP Responsive Lightbox Popup is the thing you will definitely need if you are looking for a flexible Lightbox.
 
 == Description ==
 
-* [Wordpress Responsive Lightbox](http://grandwp.com/wordpress-responsive-lightbox)
-* [Demo](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
-* [User Manual](http://grandwp.com/wordpress-responsive-lightbox-user-manual)
+* [Wordpress Responsive Lightbox](https://grandwp.com/wordpress-responsive-lightbox)
+* [Demo](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+* [User Manual](https://grandwp.com/wordpress-responsive-lightbox-user-manual)
 * [Forum](https://wordpress.org/support/plugin/responsive-lightbox-popup)
 
 * GrandWP Responsive Lightbox is the thing you will definitely need if you are looking for a flexible Lightbox, easy to use tool to display various images on your website.
@@ -118,9 +118,9 @@ The plugin will automatically move revert to the first image published in projec
 
 From plugin this section, you can turn on/off the Responsive Lightbox Popup main options related to Social Sharing.
 
-* [Popup lightbox Demo](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+* [Popup lightbox Demo](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
 
-If there are issues with lightbox installation process, please click here to [contact us](http://grandwp.com/contact-us).
+If there are issues with lightbox installation process, please click here to [contact us](https://grandwp.com/contact-us).
 
 == Installation ==
 
@@ -147,24 +147,24 @@ If there are issues with lightbox installation process, please click here to [co
 
 == Screenshots ==
 
-1.  [Demos](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
-2.  [Demos](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
-31.  [Demos](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
-32.  [Demos](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
-33.  [Demos](http://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
-41.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-42.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-43.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-44.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-45.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-46.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-47.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-51.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-52.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
-53.  [Demo Admin Page](http://grandwp.com/wordpress-responsive-lightbox)
+1.  [Demos](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+2.  [Demos](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+31.  [Demos](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+32.  [Demos](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+33.  [Demos](https://demo.grandwp.com/wordpress-responsive-lightbox-demo/)
+41.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+42.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+43.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+44.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+45.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+46.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+47.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+51.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+52.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
+53.  [Demo Admin Page](https://grandwp.com/wordpress-responsive-lightbox)
 
 
-If there are issues with installation process, please [click here to contact us](http://grandwp.com/contact-us).    
+If there are issues with installation process, please [click here to contact us](https://grandwp.com/contact-us).    
 
 == Frequently Asked Questions ==
 
@@ -193,9 +193,12 @@ If there are issues with installation process, please [click here to contact us]
 *  Yes, the plugin has a built in option to share the images to the offered social accounts. To turn the option of, detect Lightbox plugin from the dashboard> Lightbox Settings> Social Sharing
 
 
-If there are issues with lightbox installation process, please click here to [contact us](http://grandwp.com/contact-us).
+If there are issues with lightbox installation process, please click here to [contact us](https://grandwp.com/contact-us).
 
 == Changelog ==
+
+= 1.0.9 =
+* Added a free option
 
 = 1.0.8 =
 * Bug fix to prevent displaying social icons as thumbnail items.
@@ -346,4 +349,4 @@ The  plugin allows sharing images directly from project. This is a very handy op
 * Google Plus
 * Pinterest
 
-If there are issues with lightbox installation process, please click here to [contact us](http://grandwp.com/contact-us)
+If there are issues with lightbox installation process, please click here to [contact us](https://grandwp.com/contact-us)

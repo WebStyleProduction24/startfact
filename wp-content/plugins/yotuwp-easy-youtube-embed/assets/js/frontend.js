@@ -51,6 +51,11 @@
 					if(settings.player['autoplay'] == 0) delete settings.player['autoplay'];
 
 					if(player !== 'modal' && firstId !== false && typeof yotuwp.data.players[player] === 'undefined'){
+						
+						if(settings.player.loop){
+							settings.player['playlist'] = firstId;
+						}
+
 						yotuwp.data.players[player] = new YT.Player('yotu-player-' + player, {
 							width: 1000,
 							height: 600,

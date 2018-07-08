@@ -188,6 +188,8 @@ if (!function_exists('lvca_get_default_atts_carousel')) {
     function lvca_get_default_atts_carousel() {
 
         $atts = array(
+            'enable_lightbox' => '',
+            'image_size' => 'large',
             'arrows' => '',
             'dots' => '',
             'autoplay' => '',

@@ -1,6 +1,9 @@
 Responsive Lightbox
 by GrandWP
 
+= 1.0.9 =
+* Added a free option
+
 = 1.0.8 =
 * Bug fix to prevent displaying social icons as thumbnail items.
 

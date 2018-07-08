@@ -7,7 +7,7 @@ Author: themebon
 Author URI: https://themebon.com/
 License: GPLv2 or later
 Text Domain: asvc
-Version: 1.9.2
+Version: 1.9.8
 */
 
 // Don't load directly

@@ -83,12 +83,10 @@
 /*-------- Style 2 ----------------*/
 .lvca-team-members.lvca-style2 {
   position: relative;
-  overflow: hidden;
   max-width: 960px; }
   .lvca-team-members.lvca-style2 .lvca-team-member-wrapper {
     clear: both;
     margin-top: 100px;
-    overflow: hidden;
     /* Make that flip-flop possible */ }
     .lvca-team-members.lvca-style2 .lvca-team-member-wrapper:first-child {
       margin-top: 0; }

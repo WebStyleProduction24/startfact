@@ -9,7 +9,6 @@ Author URI: https://www.livemeshthemes.com
 
 class LVCA_Piecharts {
 
-    protected $_per_line;
     protected $_bar_color;
     protected $_track_color;
 
@@ -44,16 +43,25 @@ class LVCA_Piecharts {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $per_line = $bar_color = $track_color = '';
+        $per_line = $per_line_tablet = $per_line_mobile = $bar_color = $track_color = '';
 
         extract(shortcode_atts(array(
-            'per_line' => '3',
+            'per_line' => '4',
+            'per_line_tablet' => '2',
+            'per_line_mobile' => '1',
             'bar_color' => '#f94213',
             'track_color' => '#dddddd',
 
         ), $atts));
 
-        $this->_per_line = $per_line;
+        $settings = array();
+
+        $settings['per_line'] = $per_line;
+
+        $settings['per_line_tablet'] = $per_line_tablet;
+
+        $settings['per_line_mobile'] = $per_line_mobile;
+
         $this->_bar_color = $bar_color;
         $this->_track_color = $track_color;
 
@@ -61,7 +69,7 @@ class LVCA_Piecharts {
 
         ?>
 
-        <div class="lvca-piecharts lvca-grid-container">
+        <div class="lvca-piecharts lvca-grid-container <?php echo lvca_get_grid_classes($settings); ?>">
 
             <?php
 
@@ -87,14 +95,12 @@ class LVCA_Piecharts {
 
         ), $atts));
 
-        $column_style = lvca_get_column_class(intval($this->_per_line));
-
         $bar_color = ' data-bar-color="' . esc_attr($this->_bar_color) . '"';
         $track_color = ' data-track-color="' . esc_attr($this->_track_color) . '"';
 
         ?>
 
-        <div class="lvca-piechart <?php echo $column_style; ?>">
+        <div class="lvca-grid-item lvca-piechart">
 
             <div class="lvca-percentage" <?php echo $bar_color; ?> <?php echo $track_color; ?>
                  data-percent="<?php echo round($percentage); ?>">
@@ -145,10 +151,32 @@ class LVCA_Piecharts {
                         "param_name" => "per_line",
                         "value" => 4,
                         "min" => 1,
-                        "max" => 5,
+                        "max" => 6,
                         "suffix" => '',
                         "heading" => __("Piecharts per row", "livemesh-vc-addons"),
                         "description" => __("The number of columns to display per row of the piecharts", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_tablet",
+                        "value" => 2,
+                        "min" => 1,
+                        "max" => 6,
+                        "suffix" => '',
+                        "heading" => __("Piecharts per row in Tablet Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the piecharts in tablet resolution", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_mobile",
+                        "value" => 1,
+                        "min" => 1,
+                        "max" => 4,
+                        "suffix" => '',
+                        "heading" => __("Piecharts per row in Mobile Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the piecharts in mobile resolution", "livemesh-vc-addons")
                     ),
                 ),
             ));

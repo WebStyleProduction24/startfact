@@ -18,7 +18,7 @@ class GDLightbox
      * Current version of plugin
      * @var string
      */
-    public $version = '1.0.8';
+    public $version = '1.0.9';
 
     /**
      * @var AdminController

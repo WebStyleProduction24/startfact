@@ -81,6 +81,13 @@ class DesignSettingsController
                 'section' => 'title_options',
                 'help' => __('Set top title in px.')
             ),
+            'gd_lightbox_title_opacity' => array(
+                'type' => 'number',
+                'label' => __('Title Opacity in %', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'title_options',
+                'help' => __('Set Title Opacity in %.')
+            ),
             'gd_lightbox_image_border_px' => array(
                 'type' => 'number',
                 'label' => __('Image border size in px', 'gd_lightbox'),

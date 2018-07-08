@@ -30,15 +30,16 @@ class LVCA_Heading {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $heading = $style = $subtitle = $short_text = '';
+        $heading = $style = $align = $subtitle = $short_text = $animation = '';
 
         extract(shortcode_atts(array(
 
-            'style' => 'style1',
-            'align' => 'center',
             'heading' => '',
             'subtitle' => false,
-            'short_text' => false
+            'short_text' => false,
+            'style' => 'style1',
+            'align' => 'center',
+            'animation' => 'none'
 
         ), $atts));
 
@@ -46,7 +47,9 @@ class LVCA_Heading {
 
         ?>
 
-        <div class="lvca-heading lvca-<?php echo $style; ?> lvca-align<?php echo $align; ?>">
+        <?php list($animate_class, $animation_attr) = lvca_get_animation_atts($animation); ?>
+
+        <div class="lvca-heading lvca-<?php echo $style; ?> lvca-align<?php echo $align; ?><?php echo $animate_class; ?>" <?php echo $animation_attr; ?>>
 
             <?php if ($style == 'style2' && !empty($subtitle)): ?>
 
@@ -136,6 +139,14 @@ class LVCA_Heading {
                             __('Right', 'livemesh-vc-addons') => 'right',
                         ),
                         'std' => 'center',
+                        'group' => __('Settings', 'livemesh-vc-addons')
+                    ),
+                    array(
+                        "type" => "dropdown",
+                        "param_name" => "animation",
+                        "heading" => __("Choose Animation Type", "livemesh-vc-addons"),
+                        'value' => lvca_get_animation_options(),
+                        'std' => 'none',
                         'group' => __('Settings', 'livemesh-vc-addons')
                     ),
                 ),

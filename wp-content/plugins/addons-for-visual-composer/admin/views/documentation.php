@@ -98,7 +98,9 @@ else {
                             href="https://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431?ref=livemesh" rel="nofollow" target="_blank">WPBakery Page Builder</a>.
                         WPBakery Page Builder is a premium WordPress page builder plugin available for purchase from <a
                                 href="https://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431?ref=livemesh" rel="nofollow" target="_blank">CodeCanyon</a>.
-                        With over 1.5m installed sites, VC is certainly the most popular page builder plugin for WordPress.
+                        With over 1.5m installed sites, WPBakery Page Builder is certainly the most popular page builder plugin for WordPress.
+                    </li>
+                    <li><strong>Make sure you deactivate the free plugin</strong> <a href="https://wordpress.org/plugins/addons-for-visual-composer/" rel="nofollow">Addons for WPBakery Page Builder</a> upon installing the premium version.
                     </li>
                     <li>Unzip the downloaded addons-for-visual-composer.zip file and upload to the <code>/wp-content/plugins/</code>
                         directory or upload the plugin zip with the help of Plugins→Installed Plugins→Add New button.<br>
@@ -820,7 +822,7 @@ else {
 
                 <p><img class="alignnone size-large" src="https://www.livemeshthemes.com/wp-content/uploads/plugin-doc/livemesh-vc-addons/image-slider-edit1.png" alt="Image Slider Addon Edit Window"></p>
 
-                <p>The slider element is a container VC element that requires you to input multiple child slide elements
+                <p>The slider element is a container WPBakery Page Builder element that requires you to input multiple child slide elements
                     that are part of the slider.</p>
                 <p><img class="alignnone size-large" src="https://www.livemeshthemes.com/wp-content/uploads/plugin-doc/livemesh-vc-addons/image-slider-settings1.png" alt="Image Slider Addon Settings Window 1"></p>
 
@@ -1181,7 +1183,7 @@ else {
                 <p>Our tests indicate that the elements work well with most themes that are well coded. You may need some
                     minor custom CSS with themes that hijack the styling for heading tags by using !important
                     keyword.</p>
-                <p>Some themes override default templates provided by WPBakery Page Builder. The themes that override VC Row
+                <p>Some themes override default templates provided by WPBakery Page Builder. The themes that override WPBakery Page Builder Row
                     template may require you to manually set the attributes required for the dark version (see below).</p>
 
                 <p>The demo site is best recreated with a theme that supports a full width page template without
@@ -1195,8 +1197,8 @@ else {
                 <p>In WPBakery Page Builder, add a row wrapper for the element, edit row and check the option
                     ‘Dark Background?’ at the end of General tab of the row or an inner row element.</p>
 
-                <p>For themes that override the VC row template with one of their own, you may need to add a custom
-                    class ‘lvca-dark-bg’ manually to the VC row wrapper element to activate the dark version of an element.</p>
+                <p>For themes that override the WPBakery Page Builder row template with one of their own, you may need to add a custom
+                    class ‘lvca-dark-bg’ manually to the WPBakery Page Builder row wrapper element to activate the dark version of an element.</p>
 
                 <hr/>
 
@@ -1210,71 +1212,139 @@ else {
 
             <!-- Updates panel -->
             <div id="updates-panel" class="panel-left">
-                <h3>1.9.1</h3>
+
+                <h2>Change Log for the Premium Version</h2>
+                <br>
+                <h3>2.2.1</h3>
                 <ul>
-                    <li>Rolled back – Update done to WayPoints script since WPBakery Page Builder is yet to upgrade to new version. Some reports have come in which suggests that the change broke some pages with certain WPBakery page builder elements.</li>
+                    <li>Fixed - Bug fixes related to Freemius integration.</li>
                 </ul>
-                <h3>1.9.0</h3>
+                <h3>2.2</h3>
+                <ul>
+                    <li>Added – Freemius integration for easy upgrade, quick support/feedback and opt-in usage tracking with GDPR compliance.</li>
+                </ul>
+                <h3>2.1.1</h3>
                 <ul>
                     <li>Updated – Changed plugin name to Addons for WPBakery Page Builder to help reflect recent renaming of Visual Composer to WPBakery Page Builder.</li>
-                    <li>Updated - Changed plugin options menu title from VC Addons to WPBakery Addons in WordPress admin.</li>
-                    <li>Updated - Removed annoying Livemesh prefix from all elements. For example, Livemesh Services is now named Services, Livemesh Tabs is now Tabs, Livemesh Grid is now Posts Grid etc.</li>
-                    <li>Updated - Moved to latest version of waypoints script.</li>
-                    <li>Fixed - The grid won't display filters when specific taxonomy terms are chosen in the build query</li>
+                    <li>Updated - Changed plugin options menu title from WPBakery Page Builder Addons to WPBakery Addons in WordPress admin.</li>
+                    <li>Updated - Removed annoying Livemesh prefix from all elements. For example, Livemesh Services is now named Services, Livemesh Tabs is now Tabs, Posts Grid is now Posts Grid etc.</li>
+                    <li>Fixed - Most elements display a default icon in the Add Element window and in the WPBakery builder.</li>
+                    <li>Rolled back – Update done to WayPoints script since WPBakery Page Builder is yet to upgrade to new version. Some reports have come in which suggests that the change broke some pages with certain WPBakery page builder elements.</li>
+                </ul>
+                <h3>2.1.0</h3>
+                <ul>
+                    <li>Added – New simpler grid system for all elements that use grid.</li>
+                    <li>Added – Seamless control of number of columns at all device resolutions for all those elements that involve grid – posts/portfolio grid, posts block, image/video gallery, clients, services, testimonials, team, charts, pricing table, faq etc.</li>
+                    <li>Added - Option to preserve shortcodes and HTML tags in excerpt. Option is disabled by default.</li>
+                </ul>
+                <h3>2.0.1</h3>
+                <ul>
+                    <li>Fixed – Pagination and Load More for gallery would break when special characters are present in title or description.</li>
+                    <li>Fixed - The Load More in gallery would not stop loading in certain situations.</li>
+                    <li>Fixed - Duplicate tags filters generated in gallery when tags have spaces around them.</li>
+                </ul>
+                <h3>2.0.0</h3>
+                <ul>
+                    <li>Added - Support for multiple url formats for YouTube and Vimeo videos in video gallery</li>
+                    <li>Added - Support for inline responsive videos of YouTube, Vimeo and self-hosted MP4/WebM video formats</li>
+                    <li>Added - If no custom thumbnail is set, the thumbnails for YouTube/Vimeo videos automatically set from the service provider</li>
+                    <li>Fixed - Next/Prev navigation for gallery not working</li>
+                    <li>Added – Ability to display description for the image/video element in the gallery and gallery carousel lightbox window.</li>
+                    <li>Added – The lightbox for posts grid and posts block now displays post summary and a link to the post in the lightbox.</li>
+                    <li>Added – Option to disable display of post summary/excerpt in the lightbox window of posts block or posts grid.</li>
+                    <li>Added – Fancybox lightbox integration for grid, posts block, image gallery, video gallery and gallery carousel modules.</li>
+                    <li>Added – Advanced features like touch/swipe controls, pinch out/in, double tap, keyboard navigation, full screen, thumbnails, social media sharing, hardware accelerated animations, direct linking now supported with lightbox.</li>
+                    <li>Added - Support for creating stunning masonry gallery layouts using flexible widths and heights for images.</li>
+                    <li>Added - Ability to specify wide width for images in masonry layout of gallery.</li>
+                    <li>Added - Options to enable/disable display of image/video titles and image/video tags in gallery and gallery carousel addons.</li>
+                    <li>Added – HTML5 video support in video gallery and video carousel modules. Support for MP4 and WebM formats.</li>
+                    <li>Fixed - Posts Grid excerpt would not display shortcodes or HTML content</li>
+                    <li>Fixed - Livemesh Gallery styling controls not taking effect for thumbnail hover and titles</li>
+                    <li>Updated - Waypoints script with new API for handling events on scroll</li>
+                    <li>Fixed - Some themes can break animations and report script errors for elements like piecharts, odometers, progress bars etc.</li>
+                </ul>
+                <h3>1.8.3</h3>
+                <ul>
+                    <li>Improved – License activation page with less confusing interface.</li>
+                    <li>Added - The license code entered is now masked upon activation.</li>
                 </ul>
                 <h3>1.8.2</h3>
                 <ul>
                     <li>Fixed – Posts Grid columns can break in certain resolutions in FireFox.</li>
-                    <li>Fixed - The piechart value is not being rounded.</li>
-                    <li>Fixed - The post grid and posts carousel date format not reflecting the user preference specified in Settings page.</li>
                 </ul>
                 <h3>1.8.1</h3>
                 <ul>
-                    <li>Fixed – Some themes have trouble rendering grid columns</li>
-                    <li>Fixed - Comma shows up in category list for the image hover in grid</li>
+                    <li>Added - Option to have all accordion panels expanded during initial page load.</li>
+                    <li>Updated - Refactored the tab and accordion related JS functions.</li>
                 </ul>
                 <h3>1.8</h3>
                 <ul>
                     <li>Upgrade – Simpler grid system based on NEAT 2.1 version</li>
                     <li>Updated - The CSS is now optimized for vendor prefixes with reduced properties and file size.</li>
+                    <li>Added - Scroll to the top of the posts block to display new posts during paged navigation (when new posts are not visible).</li>
                 </ul>
-                <h3>1.7.1</h3>
+                <h3>1.7.5</h3>
                 <ul>
-                    <li>Added - Ability to rate plugin from admin screen</li>
+                    <li>Added – Image size option for all major addons including grid, gallery and carousels.</li>
+                    <li>Added - The lightbox now opens on clicking anywhere on the image if no destination URL is specified for gallery item</li>
+                    <li>Added - The link target option for all major addons like grid, gallery and carousels</li>
+                    <li>Fixed – The gallery image was not clickable to the link specified</li>
+                    <li>Fixed – The gallery filters would not center when a heading was not specified.</li>
+                    <li>Fixed – The gallery filters will not display multi-line on devices of lower resolutions like mobile devices.</li>
+                    <li>Fixed – The gallery pagination and load more loading icon overlapping the pagination and load more buttons.</li>
                 </ul>
                 <h3>1.7</h3>
                 <ul>
-                    <li>Fixed – The post image in a grid or posts carousel was not clickable to the link specified</li>
-                    <li>Fixed – The grid filters would not center when a heading was not specified.</li>
+                    <li>Added – Moved the Posts Grid addon to new framework based on reusable blocks. Pls note that the class names have changed to keep it consistent with the new framework.</li>
+                    <li>Added – 6 different styles for grid items plus 7 header styles too</li>
+                    <li>Added – Next Prev pagination options for Posts Grid addon</li>
+                    <li>Added – Ability to handle large number of grid pages by providing dotted navigation</li>
+                    <li>Added – AJAX Category or taxonomy filtering for Grid addon. No more empty grid on category/taxonomy filtering</li>
+                    <li>Added – Read More option for the grid items</li>
+                    <li>Added – Open in new window option for links to posts in the grid</li>
+                    <li>Added – Two more header styles to posts blocks</li>
+                    <li>Fixed – The grid image was not clickable to the post</li>
+                    <li>Fixed – The filters would not center when a heading was not specified.</li>
                     <li>Fixed – The grid filters will not display multi-line on devices of lower resolutions like mobile devices.</li>
-                    <li>Fixed – The plugin caused some minor styling changes to occur in WPBakery Page Builder backend.</li>
-                    <li>Updated - Compatibility with WordPress 4.9 version.</li>
                 </ul>
-                <h4>1.6.1</h4>
-                <ul>
-                    <li>Fixed - Translations not working with default files provided by plugin</li>
-                    <li>Fixed - The client images would show up misaligned and with additional padding in certain sites</li>
-                </ul>
-
                 <h3>1.6</h3>
                 <ul>
-                    <li>Fixed - Missing instagram icon in team profiles addon</li>
-                    <li>Fixed - The portfolio grid addon leaves an empty space on the top when no heading is specified and when no taxonomy filters are specified</li>
+                    <li>Added - Brand new Post Blocks addon with more than a dozen styles and options to present your posts or custom post types</li>
+                    <li>Added - AJAX Pagination, Next Prev and Load More options for Post Blocks addon</li>
+                    <li>Added - AJAX Category or taxonomy filtering for Post Blocks addon</li>
+                </ul>
+
+                <h3>1.5.2</h3>
+
+                <ul>
+                    <li>Added - Advanced tab and accordion functions that help directly link to Tabs and Accordion panels from external pages. On page load, the corresponding tab/panel opens upon auto-scrolling to the tab or accordion panel.</li>
+                    <li>Added - Smooth scroll to tabs and accordion panels from internal links within a page.</li>
+                    <li>Added - Open Tab or accordion panels clicking the internal links within a page.</li>
+                    <li>Added - Ability to specify new window for URL pointed to by image gallery items</li>
+                </ul>
+
+                <h3>1.5.1</h3>
+                <ul>
+                    <li>Added - Automatic plugin updates and license key activation</li>
+                    <li>Fixed - In a few installations, the grid elements may not occupy full width between 769px to 800px device resolutions</li>
+                    <li>Fixed - The instagram icon not showing up for team profiles widget</li>
                     <li>Fixed - The posts carousel dots navigation was not clickable</li>
                     <li>Fixed - The posts carousel would not expand beyond 960px in width</li>
-                    <li>Fixed - In a few installations, the grid elements may not occupy full width between 769px to 800px device resolutions</li>
-                    <li>Tweak – Moved to the_excerpt() from get_the_excerpt() in posts carousel and livemesh grid addons for plugin compatibility</li>
                 </ul>
 
                 <h3>1.5</h3>
                 <ul>
                     <li>Added - Detailed documentation for all addon elements</li>
+                    <li>Added - New addons including Gallery, Gallery Carousel, Image Slider, Custom Content Slider, Countdown, Features and FAQ.</li>
+                    <li>Added - AJAX based Pagination and Load More options to Grid and Gallery addons.</li>
+                    <li>Added - New styles and ability to specify custom icon color and icon size for services extensions.</li>
                     <li>Added - Plugin options panel for enabling or disabling addons along with other options.</li>
                     <li>Added - Ability to enter Custom CSS in plugin options</li>
                     <li>Added - Default theme color option for addons</li>
                     <li>Added - Support for lightweight Portfolio Post Type plugin. Jetpack custom post types module no longer recommended.</li>
                     <li>Fixed - The grid heading was not being displayed</li>
-                    <li>Some styling improvements and fixes</li>
+                    <li>Updated - Sample data file based on new addons added</li>
+                    <li>Updated - Some styling improvements and fixes</li>
                 </ul>
                 <h3>1.4</h3>
                 <ul>
@@ -1292,14 +1362,14 @@ else {
                 </ul>
                 <h3>1.2</h3>
                 <ul>
-                    <li>Fixed PHP warnings raised in certain themes that customize VC.</li>
+                    <li>Fixed PHP warnings raised in certain themes that customize WPBakery Page Builder.</li>
                     <li>Performed compatibility checks with a number of premium themes; fixed any issues found.</li>
                     <li>Compatibility fixes along with some minor styling tweaks for tabs, accordion, carousel and portfolio/post grid elements.</li>
                 </ul>
                 <h3>1.1</h3>
                 <ul>
                     <li>New elements - Responsive Tabs and Accordion of variety of styles</li>
-                    <li>Fixed a bug that caused many elements to become uneditable in VC editor</li>
+                    <li>Fixed a bug that caused many elements to become uneditable in WPBakery Page Builder editor</li>
                     <li>New services element style</li>
                     <li>Ability to choose entry meta contents for carousel and grid</li>
                     <li>Ability to set a link to the clients website in clients element</li>
@@ -1316,21 +1386,48 @@ else {
 
                 <div class="panel-inner">
 
-                    <div class="panel-aside banner">
-                        <a href="https://www.livemeshthemes.com/wpbakery-page-builder-addons/pricing/" title="Purchase Now"><img class="dashboard-image"
-                                                                                        src="https://www.livemeshthemes.com/wp-content/uploads/plugin-doc/livemesh-vc-addons/dashboard/purchase-banner1.jpg"
-                                                                                        alt="Sale Banner"></a>
-                    </div>
+                    <?php if (lvca_fs()->is_not_paying()): ?>
+
+                        <div class="panel-aside banner">
+                            <a href="<?php echo lvca_fs()->get_upgrade_url(); ?>" title="Purchase Now"><img class="dashboard-image"
+                                                                                                                                     src="https://www.livemeshthemes.com/wp-content/uploads/plugin-doc/livemesh-vc-addons/dashboard/purchase-banner1.jpg"
+                                                                                                                                     alt="Sale Banner"></a>
+                        </div>
+
+                        <!-- Knowledge base -->
+                        <div class="panel-aside">
+                            <h4><?php _e('Why upgrade to Premium version?', 'livemesh-vc-addons'); ?></h4>
+                            <p><?php _e('Premium version offers multiple benefits - more addon elements, advanced features for addons including those part of the free plugin and priority support through a dedicated support forum.', 'livemesh-vc-addons'); ?></p>
+
+                            <a class="button button-primary"
+                               href="<?php echo admin_url() . 'admin.php?page=livemesh_vc_addons_pro_upgrade'; ?>"
+                               title="<?php esc_attr_e('Know More', 'livemesh-vc-addons'); ?>"><?php _e('Know More Details', 'livemesh-vc-addons'); ?></a>
+                        </div><!-- .panel-aside knowledge base -->
+
+                    <?php else: ?>
 
                     <!-- Knowledge base -->
-                    <div class="panel-aside">
-                        <h4><?php _e('Why upgrade to Premium version?', 'livemesh-vc-addons'); ?></h4>
-                        <p><?php _e('Premium version offers multiple benefits - more addon elements, advanced features for addons including those part of the free plugin and priority support through a dedicated support forum.', 'livemesh-vc-addons'); ?></p>
+                        <div class="panel-aside">
+                            <h4>Need support for the plugin?</h4>
+                            <p>Support for premium version is provided through our <a href="https://support.livemeshthemes.com/forums/forum/wpbakery-page-builder-addons-support/" title="Addons for WPBakery Page Builder Support forum">dedicated support forum</a>.</p>
+                            <p>To register with support, pls send us your purchase details along with desired forum username through our <a href="https://www.livemeshthemes.com/contact-us/" title="Livemesh Contact form">contact form</a> and we will create a support account and email you the forum access details.</p>
 
-                        <a class="button button-primary"
-                           href="<?php echo admin_url() . 'admin.php?page=livemesh_vc_addons_pro_upgrade'; ?>"
-                           title="<?php esc_attr_e('Know More', 'livemesh-vc-addons'); ?>"><?php _e('Know More Details', 'livemesh-vc-addons'); ?></a>
-                    </div><!-- .panel-aside knowledge base -->
+                            <a class="button button-primary"
+                               href="https://www.livemeshthemes.com/contact-us/"
+                               title="<?php esc_attr_e('Contact Us', 'livemesh-vc-addons'); ?>"><?php _e('Contact Us', 'livemesh-vc-addons'); ?></a>
+                        </div><!-- .panel-aside knowledge base -->
+
+                        <!-- Knowledge base -->
+                        <div class="panel-aside">
+                            <h4>Have questions or want to leave feedback?</h4>
+                            <p>If you need to leave your feedback or have a query regarding one of our <a href="https://www.livemeshthemes.com/" title="WordPress Themes and Plugins">WordPress plugins or themes</a>, feel free to leave us a message through our contact form and we will get back to you promptly.</p>
+
+                            <a class="button button-primary"
+                               href="https://www.livemeshthemes.com/contact-us/"
+                               title="<?php esc_attr_e('Write to Us', 'livemesh-vc-addons'); ?>"><?php _e('Write to Us', 'livemesh-vc-addons'); ?></a>
+                        </div><!-- .panel-aside knowledge base -->
+
+                    <?php endif; ?>
 
                 </div><!-- .panel-inner -->
             </div><!-- .panel-right -->

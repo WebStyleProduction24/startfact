@@ -6,7 +6,7 @@ Donate link:
 Tags: marketing, popup, popups, optin, advertising, conversion, responsive popups, promotion, popover, pop-up, pop over, lightbox, conversion, modal
 Requires at least: 3.6
 Tested up to: 4.9.6
-Stable tag: 1.7.25
+Stable tag: 1.7.29
 License: GNU Version 3 or Any Later Version
 
 Everything you need to create unique user experiences. Insert forms & other content from your favorite plugins to create custom responsive popups.
@@ -101,7 +101,22 @@ There are several common causes for this which include:
 
 == Changelog ==
 
-= v1.7.25 - 06/??/2018 =
+= v1.7.29 - 06/13/2018 =
+* Improvement: Added new enabled() method for the PUM_AssetCache class that checks both is writable and not disabled.
+* Improvement: Added option to disable just asset caching. This should help in the case your server is blocking the use of our JS from the /uploads/ folder with a 403 error.
+* Fix: Bug caused by string representations of boolean values passed in our subscription forms.
+
+= v1.7.28 - 06/10/2018 =
+* Tweak: Improved validation of subscription form data and messaging.
+* Fix: Bug with front end form serialization issue with single checkboxes (privacy field).
+
+= v1.7.27 - 06/08/2018 =
+* Improvement: Added additional variable checks to allow graceful failing during certain JS errors when page cache is out of date.
+
+= v1.7.26 - 06/07/2018 =
+* Fix: Add empty popups array to prevent errors due to page caching.
+
+= v1.7.25 - 06/05/2018 =
 * Tweak: Localized most variables earlier to prevent errors. Added in default values in case they do not get rendered to prevent fatal JS errors.
 * Fix: Tweaked extension activation class to be compatible with PHP 5.2.
 * Fix: Bug where boolean scalar values were changed to "" for json_encode.

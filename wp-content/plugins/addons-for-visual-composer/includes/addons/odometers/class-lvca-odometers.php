@@ -8,9 +8,6 @@ Author URI: https://www.livemeshthemes.com
 */
 
 class LVCA_Odometers {
-
-    protected $_per_line;
-
     /**
      * Get things started
      */
@@ -42,20 +39,28 @@ class LVCA_Odometers {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $per_line = $style = '';
+        $per_line = $per_line_tablet = $per_line_mobile = $style = '';
 
         extract(shortcode_atts(array(
             'per_line' => '4',
+            'per_line_tablet' => '2',
+            'per_line_mobile' => '1',
 
         ), $atts));
 
-        $this->_per_line = $per_line;
+        $settings = array();
+
+        $settings['per_line'] = $per_line;
+
+        $settings['per_line_tablet'] = $per_line_tablet;
+
+        $settings['per_line_mobile'] = $per_line_mobile;
 
         ob_start();
 
         ?>
 
-        <div class="lvca-odometers lvca-grid-container">
+        <div class="lvca-odometers lvca-grid-container <?php echo lvca_get_grid_classes($settings); ?>">
 
             <?php
 
@@ -92,8 +97,6 @@ class LVCA_Odometers {
 
         ), $atts));
 
-        $column_style = lvca_get_column_class(intval($this->_per_line));
-
         $icon_type = esc_html($icon_type);
 
         if ($icon_type == 'icon' && !empty(${'icon_' . $icon_family}) && function_exists('vc_icon_element_fonts_enqueue'))
@@ -104,7 +107,7 @@ class LVCA_Odometers {
 
         ?>
 
-        <div class="lvca-odometer <?php echo $column_style; ?>">
+        <div class="lvca-grid-item lvca-odometer">
 
             <?php echo (!empty ($prefix)) ? '<span class="lvca-prefix">' . $prefix . '</span>' : ''; ?>
 
@@ -163,10 +166,32 @@ class LVCA_Odometers {
                         "param_name" => "per_line",
                         "value" => 4,
                         "min" => 1,
-                        "max" => 5,
+                        "max" => 6,
                         "suffix" => '',
-                        "heading" => __("Columns per row", "livemesh-vc-addons"),
+                        "heading" => __("Odometers per row", "livemesh-vc-addons"),
                         "description" => __("The number of columns to display per row of the odometers", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_tablet",
+                        "value" => 2,
+                        "min" => 1,
+                        "max" => 6,
+                        "suffix" => '',
+                        "heading" => __("Odometers per row in Tablet Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the odometers in tablet resolution", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_mobile",
+                        "value" => 1,
+                        "min" => 1,
+                        "max" => 4,
+                        "suffix" => '',
+                        "heading" => __("Odometers per row in Mobile Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the odometers in mobile resolution", "livemesh-vc-addons")
                     ),
                 ),
             ));

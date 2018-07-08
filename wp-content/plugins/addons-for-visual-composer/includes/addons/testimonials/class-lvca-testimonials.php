@@ -10,8 +10,6 @@ Author URI: https://www.livemeshthemes.com
 
 class LVCA_Testimonials {
 
-    protected $_per_line;
-
     /**
      * Get things started
      */
@@ -37,20 +35,28 @@ class LVCA_Testimonials {
 
     public function shortcode_func($atts, $content = null, $tag) {
 
-        $per_line = '';
+        $per_line = $per_line_tablet = $per_line_mobile = '';
 
         extract(shortcode_atts(array(
             'per_line' => '3',
+            'per_line_tablet' => '2',
+            'per_line_mobile' => '1',
 
         ), $atts));
 
-        $this->_per_line = $per_line;
+        $settings = array();
+
+        $settings['per_line'] = $per_line;
+
+        $settings['per_line_tablet'] = $per_line_tablet;
+
+        $settings['per_line_mobile'] = $per_line_mobile;
 
         ob_start();
 
         ?>
 
-        <div class="lvca-testimonials lvca-grid-container">
+        <div class="lvca-testimonials lvca-grid-container <?php echo lvca_get_grid_classes($settings); ?>">
 
             <?php
 
@@ -69,24 +75,23 @@ class LVCA_Testimonials {
 
     public function child_shortcode_func($atts, $content = null, $tag) {
 
-        $author = $credentials = $author_image = '';
+        $author = $credentials = $author_image = $animation = '';
         extract(shortcode_atts(array(
             'author' => '',
             'credentials' => '',
-            'author_image' => ''
+            'author_image' => '',
+            'animation' => 'none'
 
         ), $atts));
 
-
-        $column_style = lvca_get_column_class(intval($this->_per_line));
-
+        list($animate_class, $animation_attr) = lvca_get_animation_atts($animation);
 
         if (function_exists('wpb_js_remove_wpautop'))
             $content = wpb_js_remove_wpautop($content); // fix unclosed/unwanted paragraph tags in $content
 
         ?>
 
-        <div class="lvca-testimonial <?php echo $column_style; ?>">
+        <div class="lvca-grid-item lvca-testimonial <?php echo $animate_class; ?>" <?php echo $animation_attr; ?>>
 
             <div class="lvca-testimonial-text">
                 <?php echo wp_kses_post($content) ?>
@@ -107,7 +112,7 @@ class LVCA_Testimonials {
 
         </div>
 
-    <?php
+        <?php
     }
 
     function map_vc_element() {
@@ -131,10 +136,32 @@ class LVCA_Testimonials {
                         "param_name" => "per_line",
                         "value" => 3,
                         "min" => 1,
-                        "max" => 5,
+                        "max" => 6,
                         "suffix" => '',
-                        "heading" => __("Columns per row", "livemesh-vc-addons"),
-                        "description" => __("The number of testimonials members to display per row of the testimonials", "livemesh-vc-addons")
+                        "heading" => __("Testimonials per row", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the testimonials", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_tablet",
+                        "value" => 2,
+                        "min" => 1,
+                        "max" => 6,
+                        "suffix" => '',
+                        "heading" => __("Testimonials per row in Tablet Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the testimonials in tablet resolution", "livemesh-vc-addons")
+                    ),
+
+                    array(
+                        "type" => "lvca_number",
+                        "param_name" => "per_line_mobile",
+                        "value" => 1,
+                        "min" => 1,
+                        "max" => 4,
+                        "suffix" => '',
+                        "heading" => __("Testimonials per row in Mobile Resolution", "livemesh-vc-addons"),
+                        "description" => __("The number of columns to display per row of the testimonials in mobile resolution", "livemesh-vc-addons")
                     ),
                 ),
             ));
@@ -179,6 +206,14 @@ class LVCA_Testimonials {
                             'param_name' => 'content',
                             'heading' => __('Text', 'livemesh-vc-addons'),
                             'description' => __('What your client/customer has to say', 'livemesh-vc-addons'),
+                        ),
+                        array(
+                            "type" => "dropdown",
+                            "param_name" => "animation",
+                            "heading" => __("Choose Animation Type", "livemesh-vc-addons"),
+                            'value' => lvca_get_animation_options(),
+                            'std' => 'none',
+                            'group' => __('Settings', 'livemesh-vc-addons')
                         ),
                     )
                 )

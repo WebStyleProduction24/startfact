@@ -9,8 +9,13 @@ msgid ""
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/fields.php:150
+#: yotuwp-easy-youtube-embed/inc/fields.php:193
 msgid " Settings"
+msgstr ""
+
+#. Text in function
+#: yotuwp-easy-youtube-embed/inc/fields.php:248
+msgid "%s"
 msgstr ""
 
 #. Text in function
@@ -69,7 +74,7 @@ msgid "Button Text Color"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:640
+#: yotuwp-easy-youtube-embed/inc/views.php:637
 msgid "By Keyword"
 msgstr ""
 
@@ -84,18 +89,18 @@ msgid "Center No Text"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:628
+#: yotuwp-easy-youtube-embed/inc/views.php:625
 msgid "Channel"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:708
-#: yotuwp-easy-youtube-embed/inc/views.php:735
+#: yotuwp-easy-youtube-embed/inc/views.php:705
+#: yotuwp-easy-youtube-embed/inc/views.php:732
 msgid "Check out document here"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:725
+#: yotuwp-easy-youtube-embed/inc/views.php:722
 msgid "Click on the input the select shortcode text then paste into your place you want to display gallery."
 msgstr ""
 
@@ -135,12 +140,12 @@ msgid "Display your brand logo from displaying in the control bar. This option w
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:708
+#: yotuwp-easy-youtube-embed/inc/views.php:705
 msgid "Do you need help?"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:586
+#: yotuwp-easy-youtube-embed/inc/views.php:587
 msgid "Document"
 msgstr ""
 
@@ -160,17 +165,17 @@ msgid "Enable?"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:686
+#: yotuwp-easy-youtube-embed/inc/views.php:683
 msgid "Enter your keyword into text box below to listing all videos with that keyword."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:668
+#: yotuwp-easy-youtube-embed/inc/views.php:665
 msgid "Enter your video URL into text box below. Each video filled into each line. Then press Verify button to checking data."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:677
+#: yotuwp-easy-youtube-embed/inc/views.php:674
 msgid "Enter your videos URL into text box below. Each video filled into each line. Then press Verify button to checking data."
 msgstr ""
 
@@ -180,7 +185,7 @@ msgid "Follow %s to get your own YouTube API key"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:602
+#: yotuwp-easy-youtube-embed/inc/views.php:603
 msgid "For futher question and suggestion, please open theard on"
 msgstr ""
 
@@ -205,8 +210,13 @@ msgid "In the case of a single video player, enable this for the player to play 
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:720
+#: yotuwp-easy-youtube-embed/inc/views.php:717
 msgid "Insert"
+msgstr ""
+
+#. Text in function
+#: yotuwp-easy-youtube-embed/inc/views.php:1
+msgid "Intro"
 msgstr ""
 
 #. Text in function
@@ -250,18 +260,18 @@ msgid "Modal Thumbnails"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:637
+#: yotuwp-easy-youtube-embed/inc/views.php:634
 msgid "Multi Videos"
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/fields.php:177
+#: yotuwp-easy-youtube-embed/inc/fields.php:220
 #: yotuwp-easy-youtube-embed/templates/pagination.php:1
 msgid "Next"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:605
+#: yotuwp-easy-youtube-embed/inc/views.php:606
 msgid "Or send us message from "
 msgstr ""
 
@@ -306,27 +316,27 @@ msgid "Playing Title"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:625
+#: yotuwp-easy-youtube-embed/inc/views.php:622
 msgid "Playlist/List"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:652
+#: yotuwp-easy-youtube-embed/inc/views.php:649
 msgid "Please enter channel URL for getting info. Then press Verify button to checking data."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:645
+#: yotuwp-easy-youtube-embed/inc/views.php:642
 msgid "Please enter playlist/list URL for getting info. Then press Verify button to checking data."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:659
+#: yotuwp-easy-youtube-embed/inc/views.php:656
 msgid "Please enter username you want to get videos. Then press Verify button to checking data."
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/views.php:733
+#: yotuwp-easy-youtube-embed/inc/views.php:730
 msgid "Please enter your Youtube API key from <a href=\"%s\">setting page</a> to use this feature."
 msgstr ""
 
@@ -336,23 +346,18 @@ msgid "Popup"
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/views.php:1
-msgid "Premium"
-msgstr ""
-
-#. Text in function
-#: yotuwp-easy-youtube-embed/inc/fields.php:176
+#: yotuwp-easy-youtube-embed/inc/fields.php:219
 #: yotuwp-easy-youtube-embed/templates/pagination.php:1
 msgid "Prev"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:588
+#: yotuwp-easy-youtube-embed/inc/views.php:589
 msgid "Read more"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:591
+#: yotuwp-easy-youtube-embed/inc/views.php:592
 msgid "Read this article"
 msgstr ""
 
@@ -387,27 +392,27 @@ msgid "Show title playing video on top of player. Default disabled."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:634
+#: yotuwp-easy-youtube-embed/inc/views.php:631
 msgid "Single Video"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:622
+#: yotuwp-easy-youtube-embed/inc/views.php:619
 msgid "Step #1: Select type videos you want to inserts"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:697
+#: yotuwp-easy-youtube-embed/inc/views.php:694
 msgid "Step #2: Layout Settings"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:724
+#: yotuwp-easy-youtube-embed/inc/views.php:721
 msgid "Step #3: Copy your shortcode"
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/fields.php:180
+#: yotuwp-easy-youtube-embed/inc/fields.php:223
 msgid "Style %s"
 msgstr ""
 
@@ -422,7 +427,7 @@ msgid "Styling"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:600
+#: yotuwp-easy-youtube-embed/inc/views.php:601
 msgid "Support"
 msgstr ""
 
@@ -432,7 +437,7 @@ msgid "Template not found : "
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:852
+#: yotuwp-easy-youtube-embed/inc/views.php:849
 msgid "Thank you for activation YotuWP! Set your API key to start using. <a href=\"https://www.yotuwp.com/document/?utm_source=clientsite&amp;utm_medium=docs&amp;utm_campaign=doc\" target=\"_blank\">Read more</a>"
 msgstr ""
 
@@ -507,7 +512,7 @@ msgid "The type display and loading of pagination. Pager display next/preve butt
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:986
+#: yotuwp-easy-youtube-embed/inc/views.php:987
 msgid "This feature helps you generate YotuWP shortcode to adding to any page builder, product description or widget."
 msgstr ""
 
@@ -532,23 +537,23 @@ msgid "Timeout"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:699
+#: yotuwp-easy-youtube-embed/inc/views.php:696
 msgid "Use default options"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:631
+#: yotuwp-easy-youtube-embed/inc/views.php:628
 msgid "Username"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:691
+#: yotuwp-easy-youtube-embed/inc/views.php:688
 msgid "Verify"
 msgstr ""
 
 #. Text in echo
 #: yotuwp-easy-youtube-embed/inc/views.php:860
-#: yotuwp-easy-youtube-embed/inc/views.php:982
+#: yotuwp-easy-youtube-embed/inc/views.php:983
 msgid "Version"
 msgstr ""
 
@@ -583,7 +588,7 @@ msgid "Videos per page"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:602
+#: yotuwp-easy-youtube-embed/inc/views.php:603
 msgid "WordPress.org forum"
 msgstr ""
 
@@ -608,37 +613,37 @@ msgid "YotuWP"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:588
+#: yotuwp-easy-youtube-embed/inc/views.php:589
 msgid "YotuWP Document"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:863
+#: yotuwp-easy-youtube-embed/inc/views.php:862
 msgid "YotuWP Settings"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:985
+#: yotuwp-easy-youtube-embed/inc/views.php:986
 msgid "YotuWP Shortcode Generate"
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/views.php:738
+#: yotuwp-easy-youtube-embed/inc/views.php:735
 msgid "YotuWP warning: API Key was removed, please contact to your admin about this issues."
 msgstr ""
 
 #. Text in function
-#: yotuwp-easy-youtube-embed/inc/views.php:738
+#: yotuwp-easy-youtube-embed/inc/views.php:735
 msgid "YotuWP: An issue happend when getting the videos, please check your connection and refresh page again ."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:735
+#: yotuwp-easy-youtube-embed/inc/views.php:732
 msgid "You can follow guide to get API Key and setup it."
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:591
+#: yotuwp-easy-youtube-embed/inc/views.php:592
 msgid "You do not know how to get YouTube API key"
 msgstr ""
 
@@ -648,7 +653,7 @@ msgid "Youtube API Key"
 msgstr ""
 
 #. Text in echo
-#: yotuwp-easy-youtube-embed/inc/views.php:605
+#: yotuwp-easy-youtube-embed/inc/views.php:606
 msgid "contact form"
 msgstr ""
 

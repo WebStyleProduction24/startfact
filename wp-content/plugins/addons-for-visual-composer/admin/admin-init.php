@@ -20,13 +20,7 @@ class LVCA_Admin {
     public function includes() {
 
         // load class admin ajax function
-        require_once(LVCA_PLUGIN_DIR . 'admin/admin-ajax.php');
-
-        /**
-         * Classes responsible for displaying admin notices.
-         */
-        require_once LVCA_PLUGIN_DIR . 'admin/notices/admin-notice.php';
-        require_once LVCA_PLUGIN_DIR . 'admin/notices/admin-notice-rate.php';
+        require_once(LVCA_PLUGIN_DIR . '/admin/admin-ajax.php');
 
     }
 
@@ -40,22 +34,12 @@ class LVCA_Admin {
 
         add_action('current_screen', array($this, 'remove_admin_notices'));
 
-
-        /**
-         * Notice: Rate plugin
-         */
-        $rate = new LVCA_Notice_Rate('rate', LVCA_PLUGIN_DIR . 'admin/notices/templates/rate.php');
-
-        add_action('load-plugins.php', array($rate, 'defer_first_time'));
-        add_action('admin_notices', array($rate, 'display_notice'));
-        add_action('admin_post_lvca_dismiss_notice', array($rate, 'dismiss_notice'));
-
     }
 
     public function remove_admin_notices($screen) {
 
         // If this screen is Livemesh Addons plugin options page, remove annoying admin notices
-        if (strpos($screen->id, $this->plugin_slug) !== false) {
+        if (strpos($screen->id, $this->plugin_slug) !== false && strpos($screen->id, $this->plugin_slug . '_license') === false) {
             add_action('admin_notices', array(&$this, 'remove_notices_start'));
             add_action('admin_notices', array(&$this, 'remove_notices_end'), 999);
         }
@@ -79,7 +63,7 @@ class LVCA_Admin {
     public function add_plugin_admin_menu() {
 
         add_menu_page(
-            'WPBakery Page Builder Addons',
+            __('WPBakery Page Builder Addons', 'livemesh-vc-addons'),
             __('WPBakery Addons', 'livemesh-vc-addons'),
             'manage_options',
             $this->plugin_slug,
@@ -90,7 +74,7 @@ class LVCA_Admin {
         // add plugin settings submenu page
         add_submenu_page(
             $this->plugin_slug,
-            'WPBakery Page Builder Addons Settings',
+            __('WPBakery Page Builder Addons Settings', 'livemesh-vc-addons'),
             __('Settings', 'livemesh-vc-addons'),
             'manage_options',
             $this->plugin_slug,
@@ -100,21 +84,11 @@ class LVCA_Admin {
         // add import/export submenu page
         add_submenu_page(
             $this->plugin_slug,
-            'WPBakery Page Builder Addons Documentation',
+            __('WPBakery Page Builder Addons Documentation', 'livemesh-vc-addons'),
             __('Documentation', 'livemesh-vc-addons'),
             'manage_options',
             $this->plugin_slug . '_documentation',
             array($this, 'display_plugin_documentation')
-        );
-
-        // add global settings submenu page
-        add_submenu_page(
-            $this->plugin_slug,
-            'Upgrade to Pro Version',
-            __('Upgrade to Pro', 'livemesh-vc-addons'),
-            'manage_options',
-            $this->plugin_slug . '_pro_upgrade',
-            array($this, 'display_plugin_premium_upgrade')
         );
 
     }
@@ -134,16 +108,6 @@ class LVCA_Admin {
         require_once('views/admin-header.php');
         require_once('views/admin-banner1.php');
         require_once('views/documentation.php');
-        require_once('views/admin-footer.php');
-
-    }
-
-    public function display_plugin_premium_upgrade() {
-
-
-        require_once('views/admin-header.php');
-        require_once('views/admin-banner3.php');
-        require_once('views/premium-upgrade.php');
         require_once('views/admin-footer.php');
 
     }
@@ -177,7 +141,7 @@ class LVCA_Admin {
             wp_enqueue_style('lvca-admin-page-styles');
         }
 
-        if (strpos($screen->id, $this->plugin_slug . '_documentation') !== false || strpos($screen->id, $this->plugin_slug . '_pro_upgrade') !== false) {
+        if (strpos($screen->id, $this->plugin_slug . '_documentation') !== false) {
 
             // Load scripts and styles for documentation
             wp_register_script('lvca-doc-scripts', LVCA_PLUGIN_URL . 'admin/assets/js/documentation' . $suffix . '.js', array(), LVCA_VERSION, true);
@@ -188,17 +152,6 @@ class LVCA_Admin {
 
             // Thickbox
             add_thickbox();
-
-        }
-
-        if (strpos($screen->id, $this->plugin_slug . '_pro_upgrade') !== false) {
-
-            // Load scripts and styles for premium upgrade
-            wp_register_script('lvca-pro-upgrade-scripts', LVCA_PLUGIN_URL . 'admin/assets/js/premium-upgrade' . $suffix . '.js', array(), LVCA_VERSION, true);
-            wp_enqueue_script('lvca-pro-upgrade-scripts');
-
-            wp_register_style('lvca-pro-upgrade-styles', LVCA_PLUGIN_URL . 'admin/assets/css/premium-upgrade.css', array(), LVCA_VERSION);
-            wp_enqueue_style('lvca-pro-upgrade-styles');
 
         }
 

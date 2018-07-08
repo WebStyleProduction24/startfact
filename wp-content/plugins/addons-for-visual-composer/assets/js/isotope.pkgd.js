@@ -1,11 +1,11 @@
 /*!
- * Isotope PACKAGED v3.0.2
+ * Isotope PACKAGED v3.0.3
  *
  * Licensed GPLv3 for open source use
  * or Isotope Commercial License for commercial use
  *
  * http://isotope.metafizzy.co
- * Copyright 2016 Metafizzy
+ * Copyright 2017 Metafizzy
  */
 
 /**
@@ -18,7 +18,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /*jshint strict: false */ /* globals define, module, require */
+  /*jshint strict: false */ /* globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'jquery-bridget/jquery-bridget',[ 'jquery' ], function( jQuery ) {
@@ -162,7 +162,7 @@
 
 ( function( global, factory ) {
     // universal module definition
-    /* jshint strict: false */ /* globals define, module, window */
+  /* jshint strict: false */ /* globals define, module, window */
     if ( typeof define == 'function' && define.amd ) {
         // AMD - RequireJS
         define( 'ev-emitter/ev-emitter',factory );
@@ -473,7 +473,7 @@
 });
 
 /**
- * matchesSelector v2.0.1
+ * matchesSelector v2.0.2
  * matchesSelector( element, '.selector' )
  * MIT license
  */
@@ -481,7 +481,7 @@
 /*jshint browser: true, strict: true, undef: true, unused: true */
 
 ( function( window, factory ) {
-    /*global define: false, module: false */
+  /*global define: false, module: false */
     'use strict';
     // universal module definition
     if ( typeof define == 'function' && define.amd ) {
@@ -499,7 +499,7 @@
     'use strict';
 
     var matchesMethod = ( function() {
-        var ElemProto = Element.prototype;
+        var ElemProto = window.Element.prototype;
         // check for the standard method name first
         if ( ElemProto.matches ) {
             return 'matches';
@@ -527,7 +527,7 @@
 }));
 
 /**
- * Fizzy UI utils v2.0.3
+ * Fizzy UI utils v2.0.4
  * MIT license
  */
 
@@ -535,7 +535,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /*jshint strict: false */ /*globals define, module, require */
+  /*jshint strict: false */ /*globals define, module, require */
 
     if ( typeof define == 'function' && define.amd ) {
         // AMD
@@ -588,7 +588,8 @@
         if ( Array.isArray( obj ) ) {
             // use object if already an array
             ary = obj;
-        } else if ( obj && typeof obj.length == 'number' ) {
+        } else if ( obj && typeof obj == 'object' &&
+            typeof obj.length == 'number' ) {
             // convert nodeList to array
             for ( var i=0; i < obj.length; i++ ) {
                 ary.push( obj[i] );
@@ -770,7 +771,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /* globals define, module, require */
+  /* jshint strict: false */ /* globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD - RequireJS
         define( 'outlayer/item',[
@@ -1327,7 +1328,7 @@
 ( function( window, factory ) {
     'use strict';
     // universal module definition
-    /* jshint strict: false */ /* globals define, module, require */
+  /* jshint strict: false */ /* globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD - RequireJS
         define( 'outlayer/outlayer',[
@@ -2264,7 +2265,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'isotope/js/item',[
@@ -2342,7 +2343,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'isotope/js/layout-mode',[
@@ -2504,7 +2505,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'masonry/masonry',[
@@ -2708,7 +2709,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'isotope/js/layout-modes/masonry',[
@@ -2781,7 +2782,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'isotope/js/layout-modes/fit-rows',[
@@ -2850,7 +2851,7 @@
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( 'isotope/js/layout-modes/vertical',[
@@ -2900,18 +2901,18 @@
 }));
 
 /*!
- * Isotope v3.0.2
+ * Isotope v3.0.3
  *
  * Licensed GPLv3 for open source use
  * or Isotope Commercial License for commercial use
  *
  * http://isotope.metafizzy.co
- * Copyright 2016 Metafizzy
+ * Copyright 2017 Metafizzy
  */
 
 ( function( window, factory ) {
     // universal module definition
-    /* jshint strict: false */ /*globals define, module, require */
+  /* jshint strict: false */ /*globals define, module, require */
     if ( typeof define == 'function' && define.amd ) {
         // AMD
         define( [
@@ -3260,8 +3261,8 @@
             var parser = Isotope.sortDataParsers[ args[1] ];
             // parse the value, if there was a parser
             sorter = parser ? function( elem ) {
-                    return elem && parser( getValue( elem ) );
-                } :
+                return elem && parser( getValue( elem ) );
+            } :
                 // otherwise just return value
                 function( elem ) {
                     return elem && getValue( elem );
@@ -3303,20 +3304,28 @@
 
     // sort filteredItem order
     proto._sort = function() {
-        var sortByOpt = this.options.sortBy;
-        if ( !sortByOpt ) {
+        if ( !this.options.sortBy ) {
             return;
         }
-        // concat all sortBy and sortHistory
-        var sortBys = [].concat.apply( sortByOpt, this.sortHistory );
-        // sort magic
-        var itemSorter = getItemSorter( sortBys, this.options.sortAscending );
-        this.filteredItems.sort( itemSorter );
         // keep track of sortBy History
-        if ( sortByOpt != this.sortHistory[0] ) {
-            // add to front, oldest goes in last
-            this.sortHistory.unshift( sortByOpt );
+        var sortBys = utils.makeArray( this.options.sortBy );
+        if ( !this._getIsSameSortBy( sortBys ) ) {
+            // concat all sortBy and sortHistory, add to front, oldest goes in last
+            this.sortHistory = sortBys.concat( this.sortHistory );
         }
+        // sort magic
+        var itemSorter = getItemSorter( this.sortHistory, this.options.sortAscending );
+        this.filteredItems.sort( itemSorter );
+    };
+
+    // check if sortBys is same as start of sortHistory
+    proto._getIsSameSortBy = function( sortBys ) {
+        for ( var i=0; i < sortBys.length; i++ ) {
+            if ( sortBys[i] != this.sortHistory[i] ) {
+                return false;
+            }
+        }
+        return true;
     };
 
     // returns a function used for sorting

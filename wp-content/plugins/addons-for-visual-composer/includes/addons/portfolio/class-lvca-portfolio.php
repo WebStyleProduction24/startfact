@@ -9,8 +9,6 @@ Author URI: https://www.livemeshthemes.com
 
 class LVCA_Portfolio {
 
-    private $_taxonomy_filter;
-
     /**
      * Get things started
      */
@@ -23,39 +21,6 @@ class LVCA_Portfolio {
         // Do it as late as possible so that all taxonomies are registered
         add_action('init', array($this, 'map_vc_element'), 9999);
 
-    }
-
-    private function get_chosen_terms($query_args) {
-
-        $chosen_terms = array();
-
-        if (empty($query_args))
-            return $chosen_terms;
-
-        if (!empty($query_args['cat'])) {
-            $this->_taxonomy_filter = 'category';
-            $term_ids = explode(',', $query_args['cat']);
-            foreach ($term_ids as $term_id) {
-                $chosen_terms[] = get_term($term_id, 'category');
-            }
-        }
-        elseif (!empty($query_args['tag__in'])) {
-            $this->_taxonomy_filter = 'post_tag';
-            $term_ids = $query_args['tag__in'];
-            foreach ($term_ids as $term_id) {
-                $chosen_terms[] = get_term($term_id, 'post_tag');
-            }
-        }
-        elseif (isset($query_args['tax_query'][0])) {
-            $terms_query = $query_args['tax_query'][0];
-            $taxonomy_filter = $terms_query['taxonomy'];
-            $terms = $terms_query['terms'];
-            foreach ($terms as $term_id) {
-                $chosen_terms[] = get_term_by('id', $term_id, $taxonomy_filter);
-            }
-            $this->_taxonomy_filter = $taxonomy_filter;
-        }
-        return $chosen_terms;
     }
 
     function load_scripts() {
@@ -82,11 +47,15 @@ class LVCA_Portfolio {
                 'display_taxonomy' => '',
                 'display_summary' => '',
                 'image_linkable' => '',
+                'post_link_new_window' => '',
                 'filterable' => '',
-                'post_type' => 'jetpack-portfolio',
-                'taxonomy_filter' => 'jetpack-portfolio-type',
-                'per_line' => 4,
+                'post_type' => 'post',
+                'taxonomy_filter' => 'category',
+                'per_line' => 3,
+                'per_line_tablet' => 2,
+                'per_line_mobile' => 1,
                 'layout_mode' => 'fitRows',
+                'image_size' => 'large',
                 'packed' => '',
                 'gutter' => 20,
                 'tablet_gutter' => 10,
@@ -127,15 +96,13 @@ class LVCA_Portfolio {
 
             <?php
             // Check if any taxonomy filter has been applied
-            $chosen_terms = $this->get_chosen_terms($query_args);
+            list($chosen_terms, $taxonomies) = lvca_get_chosen_terms($query_args);
             if (empty($chosen_terms))
-                $this->_taxonomy_filter = $settings['taxonomy_filter'];
+                $taxonomies[] = $settings['taxonomy_filter'];
 
             ?>
 
             <div class="lvca-portfolio-wrap lvca-gapless-grid">
-
-                <?php $column_style = lvca_get_column_class(intval($settings['per_line'])); ?>
 
                 <?php if (!empty($settings['heading']) || $settings['filterable']): ?>
 
@@ -152,7 +119,7 @@ class LVCA_Portfolio {
                         <?php
 
                         if ($settings['filterable'])
-                            echo lvca_get_taxonomy_terms_filter($this->_taxonomy_filter, $chosen_terms);
+                            echo lvca_get_taxonomy_terms_filter($taxonomies, $chosen_terms);
 
                         ?>
 
@@ -163,7 +130,7 @@ class LVCA_Portfolio {
                 <?php $uniqueid = uniqid(); ?>
 
                 <div id="lvca-portfolio-<?php echo $uniqueid; ?>"
-                     class="lvca-portfolio js-isotope lvca-<?php echo $settings['layout_mode']; ?> lvca-grid-container"
+                     class="lvca-portfolio js-isotope lvca-<?php echo $settings['layout_mode']; ?> lvca-grid-container <?php echo lvca_get_grid_classes($settings); ?>"
                      data-gutter="<?php echo $settings['gutter']; ?>"
                      data-tablet_gutter="<?php echo $settings['tablet_gutter']; ?>"
                      data-tablet_width="<?php echo $settings['tablet_width']; ?>"
@@ -179,31 +146,40 @@ class LVCA_Portfolio {
                         ?>
 
                         <?php
+
                         $style = '';
-                        $terms = get_the_terms(get_the_ID(), $this->_taxonomy_filter);
-                        if (!empty($terms) && !is_wp_error($terms)) {
-                            foreach ($terms as $term) {
-                                $style .= ' term-' . $term->term_id;
+
+                        foreach ($taxonomies as $taxonomy) {
+
+                            $terms = get_the_terms(get_the_ID(), $taxonomy);
+
+                            if (!empty($terms) && !is_wp_error($terms)) {
+
+                                foreach ($terms as $term) {
+                                    $style .= ' term-' . $term->term_id;
+                                }
                             }
                         }
                         ?>
 
                         <div data-id="id-<?php the_ID(); ?>"
-                             class="lvca-portfolio-item <?php echo $style; ?> <?php echo $column_style; ?>">
+                             class="lvca-grid-item lvca-portfolio-item <?php echo $style; ?>">
 
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                                 <?php if ($thumbnail_exists = has_post_thumbnail()): ?>
 
+                                    <?php $target = $settings['post_link_new_window'] ? 'target="_blank"' : '';; ?>
+
                                     <div class="lvca-project-image">
 
                                         <?php if ($settings['image_linkable']): ?>
 
-                                            <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('large'); ?> </a>
+                                            <a href="<?php the_permalink(); ?>" <?php echo $target; ?>> <?php the_post_thumbnail($settings['image_size']); ?> </a>
 
                                         <?php else: ?>
 
-                                            <?php the_post_thumbnail('large'); ?>
+                                            <?php the_post_thumbnail($settings['image_size']); ?>
 
                                         <?php endif; ?>
 
@@ -211,10 +187,9 @@ class LVCA_Portfolio {
 
                                             <div class="lvca-entry-info">
 
-                                                <?php the_title('<h3 class="lvca-post-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '"
-                                               rel="bookmark">', '</a></h3>'); ?>
+                                                <?php the_title('<h3 class="lvca-post-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '" ' . $target . ' rel="bookmark">', '</a></h3>'); ?>
 
-                                                <?php echo lvca_get_taxonomy_info($this->_taxonomy_filter); ?>
+                                                <?php echo lvca_get_info_for_taxonomies($taxonomies); ?>
 
                                             </div>
 
@@ -231,8 +206,7 @@ class LVCA_Portfolio {
 
                                         <?php if ($settings['display_title']) : ?>
 
-                                            <?php the_title('<h3 class="entry-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '"
-                                               rel="bookmark">', '</a></h3>'); ?>
+                                            <?php the_title('<h3 class="entry-title"><a href="' . get_permalink() . '" title="' . get_the_title() . '" ' . $target . ' rel="bookmark">', '</a></h3>'); ?>
 
                                         <?php endif; ?>
 
@@ -254,7 +228,7 @@ class LVCA_Portfolio {
 
                                                 <?php if ($settings['display_taxonomy']): ?>
 
-                                                    <?php echo lvca_get_taxonomy_info($this->_taxonomy_filter); ?>
+                                                    <?php echo lvca_get_info_for_taxonomies($taxonomies); ?>
 
                                                 <?php endif; ?>
 
@@ -336,14 +310,30 @@ class LVCA_Portfolio {
                     "value" => array(__("Yes", "livemesh-vc-addons") => 'true'),
                 ),
 
+
+                array(
+                    'type' => 'checkbox',
+                    'param_name' => 'post_link_new_window',
+                    'heading' => __('Open post links in new window?', 'livemesh-vc-addons'),
+                    "value" => array(__("Yes", "livemesh-vc-addons") => 'true'),
+                ),
+
                 array(
                     'type' => 'dropdown',
                     'param_name' => 'taxonomy_filter',
                     'heading' => __('Choose the taxonomy to display and filter on.', 'livemesh-vc-addons'),
                     'description' => __('Choose the taxonomy information to display for posts/portfolio and the taxonomy that is used to filter the portfolio/post. Takes effect only if no query category/tag/taxonomy filters are specified when building query.', 'livemesh-vc-addons'),
                     'value' => lvca_get_taxonomies_map(),
-                    'std' => 'jetpack-portfolio-type',
+                    'std' => 'post',
                     'group' => 'Options'
+                ),
+
+                array(
+                    'type' => 'dropdown',
+                    'param_name' => 'image_size',
+                    'heading' => __('Image Size', 'livemesh-vc-addons'),
+                    'std' => 'large',
+                    'value' => lvca_get_image_sizes()
                 ),
 
                 array(
@@ -411,13 +401,39 @@ class LVCA_Portfolio {
                 ),
 
                 array(
-                    'type' => 'lvca_number',
-                    'param_name' => 'per_line',
-                    'heading' => __('Columns per row', 'livemesh-vc-addons'),
-                    'min' => 1,
-                    'max' => 5,
-                    'integer' => true,
-                    'value' => 3
+                    "type" => "lvca_number",
+                    "param_name" => "per_line",
+                    "value" => 3,
+                    "min" => 1,
+                    "max" => 6,
+                    "suffix" => '',
+                    "heading" => __("Columns per row", "livemesh-vc-addons"),
+                    "description" => __("The number of columns to display per row of the posts grid", "livemesh-vc-addons"),
+                    'group' => __('Layout', 'livemesh-vc-addons')
+                ),
+
+                array(
+                    "type" => "lvca_number",
+                    "param_name" => "per_line_tablet",
+                    "value" => 2,
+                    "min" => 1,
+                    "max" => 6,
+                    "suffix" => '',
+                    "heading" => __("Columns per row in Tablet Resolution", "livemesh-vc-addons"),
+                    "description" => __("The number of columns to display per row of the posts grid in tablet resolution", "livemesh-vc-addons"),
+                    'group' => __('Layout', 'livemesh-vc-addons')
+                ),
+
+                array(
+                    "type" => "lvca_number",
+                    "param_name" => "per_line_mobile",
+                    "value" => 1,
+                    "min" => 1,
+                    "max" => 4,
+                    "suffix" => '',
+                    "heading" => __("Columns per row in Mobile Resolution", "livemesh-vc-addons"),
+                    "description" => __("The number of columns to display per row of the posts grid in mobile resolution", "livemesh-vc-addons"),
+                    'group' => __('Layout', 'livemesh-vc-addons')
                 ),
 
                 array(

@@ -2,30 +2,32 @@
 
 jQuery(function ($) {
 
-    $('.lvca-tabs').each(function () {
+    // Don't do any of this if there are no tabs present here
+    if ($('.lvca-tabs').length) {
 
-        var tabs = $(this);
-        new LVCA_Tabs(tabs);
+        $('.lvca-tabs').each(function () {
 
-    });
+            var $tabs = $(this);
+
+            new LVCA_Tabs($tabs);
+
+        });
+    }
 
 });
 
-var LVCA_Tabs = function (tabs) {
+var LVCA_Tabs = function ($tabsElement) {
 
-    this.tabs = tabs;
+    this.tabs = $tabsElement;
 
     // tabs elems
-    this.tabNavs = tabs.find('.lvca-tab');
+    this.tabNavs = $tabsElement.find('.lvca-tab');
 
     // content items
-    this.items = tabs.find('.lvca-tab-pane');
+    this.items = $tabsElement.find('.lvca-tab-pane');
 
-    // current index
-    this.current = 0;
-
-    // show current content item
-    this.show();
+    // show first tab item
+    this.show(0);
 
     // init events
     this.initEvents();
@@ -35,23 +37,30 @@ var LVCA_Tabs = function (tabs) {
 };
 
 LVCA_Tabs.prototype.show = function (index) {
-    // Clear out existing tab
-    this.tabNavs.eq(this.current).removeClass('lvca-active');
-    this.items.eq(this.current).removeClass('lvca-active');
 
-    // change current
-    if (index != undefined)
-        this.current = index;
-    this.tabNavs.eq(this.current).addClass('lvca-active');
-    this.items.eq(this.current).addClass('lvca-active');
+    // Clear out existing tab
+    this.tabNavs.removeClass('lvca-active');
+    this.items.removeClass('lvca-active');
+
+    this.tabNavs.eq(index).addClass('lvca-active');
+    this.items.eq(index).addClass('lvca-active');
 };
 
 LVCA_Tabs.prototype.initEvents = function () {
+
     var self = this;
 
     this.tabNavs.click(function (event) {
+
         event.preventDefault();
+
+        var $anchor = jQuery(this).children('a').eq(0);
+
+        var target = $anchor.attr('href').split('#').pop();
+
         self.show(self.tabNavs.index(jQuery(this)));
+
+        history.pushState ? history.pushState(null, null, "#" + target) : window.location.hash = "#" + target;
     });
 
 };

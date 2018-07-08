@@ -5,7 +5,7 @@
     </div>
     <ul>
         <li>
-            <a href="http://grandwp.com/wordpress-responsive-lightbox"><?php _e('Go Pro','gd_lightbox');?></a>
+            <a href="https://grandwp.com/wordpress-responsive-lightbox"><?php _e('Go Pro','gd_lightbox');?></a>
         </li>
         <li>
             <a href="https://wordpress.org/support/plugin/responsive-lightbox-popup"><?php _e('Help','gd_lightbox');?></a>

@@ -2,12 +2,12 @@
 
 /**
  * Plugin Name: Responsive Lightbox
- * Plugin URI: http://grandwp.com
+ * Plugin URI: https://grandwp.com
  * Description: GrandWP Responsive Lightbox Popup is the thing you will definitely need if you are looking for a flexible Lightbox.
- * Version:     1.0.8
+ * Version:     1.0.9
  * Author:      GrandWP
- * Author URI:  http://grandwp.com
- * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author URI:  https://grandwp.com
+ * License: GNU/GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
  * Domain Path: /languages
  * Text Domain: gd_lightbox
  */
