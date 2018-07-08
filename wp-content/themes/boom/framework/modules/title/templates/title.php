@@ -1,7 +1,7 @@
 <?php do_action('qode_startit_before_page_title'); ?>
 <?php if($show_title_area) { ?>
 
-    <div class="qodef-title <?php echo qode_startit_title_classes(); ?>" style="<?php echo esc_attr($title_height); echo esc_attr($title_background_color); echo esc_attr($title_background_image); ?>" data-height="<?php echo esc_attr(intval(preg_replace('/[^0-9]+/', '', $title_height), 10));?>" <?php echo esc_attr($title_background_image_width); ?>>
+    <div class="qodef-title wsp24_title-page <?php echo qode_startit_title_classes(); ?>" style="<?php echo esc_attr($title_height); echo esc_attr($title_background_color); echo esc_attr($title_background_image); ?>" data-height="<?php echo esc_attr(intval(preg_replace('/[^0-9]+/', '', $title_height), 10));?>" <?php echo esc_attr($title_background_image_width); ?>>
         <div class="qodef-title-image"><?php if($title_background_image_src != ""){ ?><img src="<?php echo esc_url($title_background_image_src); ?>" alt="&nbsp;" /> <?php } ?></div>
         <div class="qodef-title-holder" <?php qode_startit_inline_style($title_holder_height); ?>>
             <div class="qodef-container clearfix">

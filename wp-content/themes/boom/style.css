@@ -21,6 +21,15 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 =========================================================
 !!!*/
 
+.dslc-modules-section {
+	padding-top: 20px !important;
+}
+
+
+
+
+
+
 .wsp24_container-center {
 	margin: 0 auto;
 }
@@ -51,8 +60,8 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 }
 
 .wsp24_block-with-img h4 {
-	 text-align: center !important;
-	 color: #000 !important;
+	text-align: center !important;
+	color: #000 !important;
 }
 .wsp24_width-50-b-m {
 	width: calc(50% - 36px);
@@ -84,9 +93,9 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 	font-weight: bold !important;
 }
 .wsp24_ li{
-		margin-bottom: 0px!important;
-    text-indent: 0!important;
-    list-style-position: outside!important;
+	margin-bottom: 0px!important;
+	text-indent: 0!important;
+	list-style-position: outside!important;
 }
 
 .wsp24_ td {
@@ -102,20 +111,48 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 .wsp24_border {
 	border-radius: 1px;
 	border: 3px solid #ebebeb;
-  }
+}
+.wsp24_title-page h1 span{
+	font-size: 40px !important;
+}
 
-  @media (max-width: 991px) {
-  	.wsp24_block-with-img img {
-  		width: 100%;
-  	}
-  }
+.wsp24_content-padding-top {
+	padding-top: 20px !important;
+}
 
-  @media (max-width: 767px) {
-  	.wsp24_width-50 {
-  		width: 100%;
-  	}
-  	.wsp24_width-50-b-m {
-  		width: calc(100% - 36px);
-  	}
-  }
+@media (max-width: 991px) {
+	.wsp24_block-with-img img {
+		width: 100%;
+	}
+	.wsp24_title-page.qodef-title.qodef-has-background {
+		height: 75px !important;
+	}
+	.wsp24_title-page img, .wsp24_title-page .qodef-title-image {
+		height: inherit;
+	}
+	.wsp24_title-page h1 span{
+		font-size: 30px !important;
+	}
+	.wsp24_ .qodef-icon-list-text {
+		font-size: 16px !important;
+	}
+
+	.wsp24_ .qodef-content-aligment-left {
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+	}
+
+	.wsp24_ h4 {
+		font-size: 15px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.wsp24_width-50 {
+		width: 100%;
+	}
+	.wsp24_width-50-b-m {
+		width: calc(100% - 36px);
+	}
+}
 
