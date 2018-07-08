@@ -105,11 +105,17 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
   }
 
   @media (max-width: 991px) {
+  	.wsp24_block-with-img img {
+  		width: 100%;
+  	}
   }
 
   @media (max-width: 767px) {
   	.wsp24_width-50 {
   		width: 100%;
+  	}
+  	.wsp24_width-50-b-m {
+  		width: calc(100% - 36px);
   	}
   }
 
