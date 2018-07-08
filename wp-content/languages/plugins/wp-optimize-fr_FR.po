@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP-Optimize - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-05-08 14:07:52+0000\n"
+"PO-Revision-Date: 2018-06-20 20:12:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -783,7 +783,7 @@ msgstr "Obtenir UpdraftCentral"
 #: templates/notices/horizontal-notice.php:16
 #: templates/notices/horizontal-notice.php:18
 msgid "Dismiss"
-msgstr "Rejeter"
+msgstr "Ignorer"
 
 #: templates/notices/horizontal-notice.php:6
 msgid "notice image"
@@ -1131,7 +1131,7 @@ msgstr "Taille des données"
 
 #: templates/tables.php:23
 msgid "Records"
-msgstr "Archives"
+msgstr "Enregistrements"
 
 #: templates/tables.php:21
 msgid "No."

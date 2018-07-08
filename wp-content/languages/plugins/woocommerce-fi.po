@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-05-23 16:00:46+0000\n"
+"PO-Revision-Date: 2018-06-07 12:34:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,55 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fi\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: includes/class-wc-privacy-exporters.php:293
+msgid "Payer last name"
+msgstr "Maksajan sukunimi"
+
+#: includes/class-wc-privacy-exporters.php:292
+msgid "Payer first name"
+msgstr "Maksajan etunimi"
+
+#: includes/class-wc-privacy-exporters.php:249
+msgid "Billing Address"
+msgstr "Laskutusosoite"
+
+#: includes/class-wc-privacy-exporters.php:250
+msgid "Shipping Address"
+msgstr "Toimitusosoite"
+
+#: includes/class-wc-privacy-erasers.php:58
+#: includes/class-wc-privacy-exporters.php:196
+msgid "Shipping Address 1"
+msgstr "Toimitusosoite 1"
+
+#: includes/class-wc-privacy-erasers.php:47
+#: includes/class-wc-privacy-exporters.php:185
+msgid "Billing Address 1"
+msgstr "Laskutusosoite 1"
+
+#: includes/class-wc-privacy-exporters.php:294
+msgid "Payer PayPal address"
+msgstr "Maksajan PayPal-osoite"
+
+#. translators: %d: shipping package number
+#: includes/wc-cart-functions.php:228
+msgctxt "shipping packages"
+msgid "Shipping %d"
+msgstr "Toimitus %d"
+
+#: includes/api/class-wc-rest-system-status-controller.php:232
+msgid "MySQL version string."
+msgstr "MySQL version merkkijono."
+
+#. translators: 1: Link to tax rates sample file 2: Closing link.
+#: includes/admin/importers/class-wc-tax-rate-importer.php:248
+msgid "Your CSV needs to include columns in a specific order. %1$sClick here to download a sample%2$s."
+msgstr "CSV tiedostossa tulee olla sarakkeet tietyssä järjestyksessä. %1$sLataa tästä esimerkki%2$s."
+
+#: includes/class-wc-privacy.php:45 includes/class-wc-privacy.php:51
+msgid "Customer Payment Tokens"
+msgstr "Asiakkaan maksutietojen poletit"
 
 #: templates/myaccount/form-edit-account.php:38
 msgid "This will be how your name will be displayed in the account section and in reviews"
@@ -34,6 +83,12 @@ msgstr "Yksityisyyden suoja"
 #: includes/gateways/paypal/includes/settings-paypal.php:94
 msgid "PayPal allows us to send one address. If you are using PayPal for shipping labels you may prefer to send the shipping address rather than billing. Turning this option off may prevent PayPal Seller protection from applying."
 msgstr "PayPal:ille voi lähettää yhden osoitteen. Jos käytät PayPal-palvelua osoitelappujen tekemiseen, on ehkä parempi lähettää toimitusosoite eikä laskutusosoitetta. Kun tämä otetaan pois käytöstä, se voi estää PayPal:in myyjänsuojelu ominaisuuden toiminnan."
+
+#. translators: 1: credit card type 2: last 4 digits 3: expiry month 4: expiry
+#. year
+#: includes/payment-tokens/class-wc-payment-token-echeck.php:50
+msgid "eCheck ending in %1$s"
+msgstr "eCheck joka päättyy %1$s"
 
 #: includes/gateways/cod/class-wc-gateway-cod.php:99
 msgid "Other locations"
@@ -103,102 +158,261 @@ msgstr "Korosta vaaditut kentät tähtimerkillä"
 msgid "These options let you change the appearance of the WooCommerce checkout."
 msgstr "Näillä valinnoilla voit muuttaa WooCommerce kassan ilmettä."
 
-#: includes/class-wc-privacy-exporters.php:245
+#. translators: %s terms and conditions page name and link
+#: includes/customizer/class-wc-shop-customizer.php:724
+#: includes/wc-template-functions.php:740
+msgid "I have read and agree to the website %s"
+msgstr "Olen lukenut ja hyväksyn sivuston ehdot %s"
+
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:32
+msgid "Take payments in person via checks. This offline gateway can also be useful to test purchases."
+msgstr "Vastaanota sekkimaksuja henkilökohtaisesti. Tämä maksutapa ei käytä nettiä ja se on myös hyödyllinen maksamisen testaamisessa."
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:40
+msgid "Take payments in person via BACS. More commonly known as direct bank/wire transfer"
+msgstr "Vastaanota maksuja henkilökohtaisesti pankkisiirrolla (esim. SEPA-maksu). Tunnetaan myös nimillä direct bank - tai wire transfer."
+
+#. translators: %s: URL
+#: includes/gateways/paypal/includes/settings-paypal.php:58
+msgid "Log PayPal events, such as IPN requests, inside %s Note: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
+msgstr "Kirjaa lokiin PayPal tapahtumat, kuten IPN-pyynnöt, tänne: %s Huom. Tämä voi kirjata henkilökohtaisia tietoja. Suosittelemme että käytät tätä vain testaukseen ja poistat lokin kun valmista."
+
+#: includes/class-wc-privacy.php:117
+msgid "Please see the <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">PayPal Privacy Policy</a> for more details."
+msgstr "Katso <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">täältä lisää PayPal yksityisyydensuojasta</a>."
+
+#: includes/class-wc-privacy.php:116
+msgid "We accept payments through PayPal. When processing payments, some of your data will be passed to PayPal, including information required to process or support the payment, such as the purchase total and billing information."
+msgstr "Hyväksymme PayPal-maksuja. Kun maksuja käsitellään, joitakin tietojasi siirretään PayPal-maksupalveluun. Näitä tietoja ovat mm. tiedot joita tarvitaan maksun toteuttamisessa tai -tukemisessa, esimerkiksi ostosten kokonaissumma ja laskutus tiedot."
+
+#: includes/class-wc-privacy.php:114
+msgid "In this subsection you should list which third party payment processors you’re using to take payments on your store since these may handle customer data. We’ve included PayPal as an example, but you should remove this if you’re not using PayPal."
+msgstr "Tässä osassa sinun tulisi listata ne kolmannen osapuolen maksukäytävät joita käytät sivustolla maksujen vastaanottamisessa koska ne voivat käsitellä asiakkaan tietoja. Olemme sisällyttäneet PayPal:in esimerkkinä, mutta poista se jos et käytä PayPal-maksupalvelua."
+
+#: includes/class-wc-privacy.php:111
+msgid "We share information with third parties who help us provide our orders and store services to you; for example --"
+msgstr "Jaamme tietoja niiden kolmansien osapuolten kanssa jotka auttavat meitä käsittelemään tilauksia ja tuottamaan sivuston palveluita; esimerkiksi --"
+
+#: includes/class-wc-privacy.php:109
+msgid "In this section you should list who you’re sharing data with, and for what purpose. This could include, but may not be limited to, analytics, marketing, payment gateways, shipping providers, and third party embeds."
+msgstr "Tässä osassa sinun tulisi listata kenen kanssa jaat tietoja ja mitä tarkoitusta varten. Tämä voi sisältää, mutta ei rajoitu, sivuston analytiikkaan, markkinointiin, maksukäytäviin, toimittajiin ja kolmannen osapuolen upotuksiin sivustolla."
+
+#: includes/class-wc-privacy.php:107
+msgid "What we share with others"
+msgstr "Mitä jaamme muiden kanssa"
+
+#: includes/class-wc-privacy.php:100
+msgid "Who on our team has access"
+msgstr "Ketkä tiimistämme pääsevät käsiksi"
+
+#: includes/class-wc-privacy.php:103
+msgid "Order information like what was purchased, when it was purchased and where it should be sent, and"
+msgstr "Tilaustiedot kuten mitä ja milloin ostettiin ja minne tilaus lähetettiin sekä"
+
+#: includes/class-wc-privacy.php:106
+msgid "Our team members have access to this information to help fulfill orders, process refunds and support you."
+msgstr "Tiimimme jäsenet pääsevät näihin tietoihin jotta voivat täyttää tilaukset, käsitellä hyvitykset ja voivat tarjota tukea."
+
+#: includes/class-wc-privacy.php:104
+msgid "Customer information like your name, email address, and billing and shipping information."
+msgstr "Asiakkaan tiedot kuten nimi, sähköpostiosoite ja laskutus- ja toimitus tiedot."
+
+#: includes/class-wc-privacy.php:101
+msgid "Members of our team have access to the information you provide us. For example, both Administrators and Shop Managers can access:"
+msgstr "Tiimimme jäsenet pääsevät tietoihin joita annat meille. Esimerksi, sekä Ylläpitäjät että Kauppiaat pääsevät näihin:"
+
+#: includes/class-wc-privacy.php:99
+msgid "We will also store comments or reviews, if you choose to leave them."
+msgstr "Tallennamme myös kaupan kommentit ja tuotearvioinnit jos kirjoitat sellaisia."
+
+#: includes/class-wc-privacy.php:98
+msgid "We generally store information about you for as long as we need the information for the purposes for which we collect and use it, and we are not legally required to continue to keep it. For example, we will store order information for XXX years for tax and accounting purposes. This includes your name, email address and billing and shipping addresses."
+msgstr "Yleensä säilytämme tietojasi niin kauan kuin tarvitsemme niitä niihin tarkoituksiin joita varten keräämme tiedot ja käytämme tietoja ja niin kauan kuin meidän on ne lain mukaan säilytettävä. Esimerkiksi, säilytämme kaupan tiedot (?) vuodeksi verotusta ja kirjanpitoa varten.Tämä sisältää nimen, sähköpostiosoitteen ja laskutus- ja toimitusosoitteet."
+
+#: includes/class-wc-privacy.php:97
+msgid "If you create an account, we will store your name, address, email and phone number, which will be used to populate the checkout for future orders."
+msgstr "Jos luot tilin, tallennamme nimen, osoitteen, sähköpostiosoitteen ja puhelinnumeron joita käytetään kassalla täyttämään kenttiä tulevissa tilauksissa."
+
+#: includes/class-wc-privacy.php:95
+msgid "Send you marketing messages, if you choose to receive them"
+msgstr "Lähettää markkinointiviestejä, jos valitset että haluat vastaanottaa niitä."
+
+#: includes/class-wc-privacy.php:94
+msgid "Improve our store offerings"
+msgstr "Parantaa kaupan tarjontaa"
+
+#: includes/class-wc-privacy.php:93
+msgid "Comply with any legal obligations we have, such as calculating taxes"
+msgstr "Noudattaa kaikkia lain velvotteita, kuten verojen maksaminen"
+
+#: includes/class-wc-privacy.php:92
+msgid "Set up your account for our store"
+msgstr "Luoda käyttäjätilisi kauppaamme"
+
+#: includes/class-wc-privacy.php:91
+msgid "Process payments and prevent fraud"
+msgstr "Käsitellä maksuja ja estää petollista toimintaa"
+
+#: includes/class-wc-privacy.php:90
+msgid "Respond to your requests, including refunds and complaints"
+msgstr "Vastata pyyntöihisi, mukaan lukien hyvitykset ja valitukset"
+
+#: includes/class-wc-privacy.php:89
+msgid "Send you information about your account and order"
+msgstr "Lähettää tietoja tilistäsi ja tilauksesta"
+
+#: includes/class-wc-privacy.php:87
+msgid "When you purchase from us, we’ll ask you to provide information including your name, billing address, shipping address, email address, phone number, credit card/payment details and optional account information like username and password. We’ll use this information for purposes, such as, to:"
+msgstr "Kun ostat meiltä, pyydämme tietoja kuten nimi, laskutusosoite, toimitusosoite, sähköpostiosoite, puhelinnumero, luottokortin tai maksamisen tiedot ja valinnaiset käyttäjätilin tiedot kuten käyttäjätunnus ja salasana. Käytämme näitä tietoja tarkoituksiin kuten :"
+
+#: includes/class-wc-privacy.php:83
+msgid "We’ll also use cookies to keep track of cart contents while you’re browsing our site."
+msgstr "Käytämme evästeitä myös jotta säilytät ostoskorin sisällön kun selaat sivustoa."
+
+#: includes/class-wc-privacy.php:85
+msgid "Note: you may want to further detail your cookie policy, and link to that section from here."
+msgstr "Huom.: Voit halutessasi kuvailla tarkemmin evästeiden käytön ja linkittää täältä evästeiden selostukseen."
+
+#: includes/class-wc-privacy.php:81
+msgid "Shipping address: we’ll ask you to enter this so we can, for instance, estimate shipping before you place an order, and send you the order!"
+msgstr "Toimitusosoite: Kysymme tätä, jotta voimme -esimerkiksi-  arvioida toimituskulut ennen kuin teet tilauksen ja lopuksi lähettää tilauksen."
+
+#: includes/class-wc-privacy.php:80
+msgid "Location, IP address and browser type: we’ll use this for purposes like estimating taxes and shipping"
+msgstr "Sijainti, IP-osoite ja selaimen tyyppi: Näiden avulla arvioimme verojen ja toimituskulujen määrän"
+
+#: includes/class-wc-privacy.php:79
+msgid "Products you’ve viewed:  we’ll use this to, for example, show you products you’ve recently viewed"
+msgstr "Tuotteet joita olet katsonut: Käytämme tätä, esimerkiksi, kun näytämme tuotteita joita olet äskettäin katsonut."
+
+#: includes/class-wc-privacy.php:76
+msgid "What we collect and store"
+msgstr "Mitä keräämme ja säilytämme"
+
+#: includes/class-wc-privacy.php:77
+msgid "While you visit our site, we’ll track:"
+msgstr "Kun vierailet tällä sivustolla, seuraamme:"
+
+#: includes/class-wc-privacy.php:75
+msgid "We collect information about you during the checkout process on our store."
+msgstr "Keräämme tietoja sinusta kaupan kassalla."
+
+#: includes/class-wc-privacy.php:72
+msgid "This sample language includes the basics around what personal data your store may be collecting, storing and sharing, as well as who may have access to that data. Depending on what settings are enabled and which additional plugins are used, the specific information shared by your store will vary. We recommend consulting with a lawyer when deciding what information to disclose on your privacy policy."
+msgstr "Tämä esimerkkiteksti sisältää perusasiat tiedoista joita kauppasi voi mahdollisesti kerätä, tallentaa ja jakaa ja lisäksi kenellä on pääsy tietoihin. Riippuen asetuksista ja käytössä olevista lisäosista, eri kauppojen jakamat tiedot voivat vaihdella. Suosittelemme kysymään lakihenkilöltä mitä tietoja voit paljastaa yksityisyydensuojassa."
+
+#: includes/class-wc-privacy-exporters.php:248
 msgid "Browser User Agent"
 msgstr "Selain"
 
-#: includes/class-wc-privacy-exporters.php:243
+#: includes/class-wc-privacy-exporters.php:246
 msgid "Items Purchased"
 msgstr "Ostetut tuotteet"
 
-#: includes/class-wc-privacy-exporters.php:240
+#: includes/class-wc-privacy-exporters.php:243
 msgid "Order Number"
 msgstr "Tilauksen numero"
 
-#: includes/class-wc-privacy-exporters.php:354
+#: includes/class-wc-privacy-exporters.php:357
 msgid "Access granted"
 msgstr "Pääsy sallittu"
 
-#: includes/class-wc-privacy-exporters.php:350
+#: includes/class-wc-privacy-exporters.php:353
 msgid "Download count"
 msgstr "Latausten lukumäärä"
 
-#: includes/class-wc-privacy-exporters.php:342
+#: includes/class-wc-privacy-exporters.php:345
 msgid "User email"
 msgstr "Käyttäjän sähköpostiosoite"
+
+#: includes/class-wc-privacy.php:44 includes/class-wc-privacy.php:50
+msgid "Customer Downloads"
+msgstr "Asiakkaan lataukset"
+
+#: includes/class-wc-privacy.php:43 includes/class-wc-privacy.php:49
+msgid "Customer Orders"
+msgstr "Asiakkaan tilaukset"
+
+#: includes/class-wc-privacy-exporters.php:411
+msgid "Token"
+msgstr "Poletti"
+
+#: includes/class-wc-privacy-exporters.php:407
+msgid "Payment Tokens"
+msgstr "Maksutietojen poletit"
 
 #: includes/class-wc-privacy-erasers.php:339
 msgid "Personal data removed."
 msgstr "Henkilökohtaiset tiedot poistettu."
 
 #: includes/class-wc-privacy-erasers.php:63
-#: includes/class-wc-privacy-exporters.php:198
+#: includes/class-wc-privacy-exporters.php:201
 msgid "Shipping Country"
 msgstr "Toimitusmaa"
 
 #: includes/class-wc-privacy-erasers.php:62
-#: includes/class-wc-privacy-exporters.php:197
+#: includes/class-wc-privacy-exporters.php:200
 msgid "Shipping State"
 msgstr "Toimitusalue"
 
 #: includes/class-wc-privacy-erasers.php:61
-#: includes/class-wc-privacy-exporters.php:196
+#: includes/class-wc-privacy-exporters.php:199
 msgid "Shipping Postal/Zip Code"
 msgstr "Postinumero/-koodi"
 
 #: includes/class-wc-privacy-erasers.php:60
-#: includes/class-wc-privacy-exporters.php:195
+#: includes/class-wc-privacy-exporters.php:198
 msgid "Shipping City"
 msgstr "Toimituskaupunki"
 
 #: includes/class-wc-privacy-erasers.php:57
-#: includes/class-wc-privacy-exporters.php:192
+#: includes/class-wc-privacy-exporters.php:195
 msgid "Shipping Company"
 msgstr "Toimittava yritys"
 
 #: includes/class-wc-privacy-erasers.php:56
-#: includes/class-wc-privacy-exporters.php:191
+#: includes/class-wc-privacy-exporters.php:194
 msgid "Shipping Last Name"
 msgstr "Toimitus, sukunimi"
 
 #: includes/class-wc-privacy-erasers.php:55
-#: includes/class-wc-privacy-exporters.php:190
+#: includes/class-wc-privacy-exporters.php:193
 msgid "Shipping First Name"
 msgstr "Toimitus, etunimi"
 
 #: includes/class-wc-privacy-erasers.php:53
-#: includes/class-wc-privacy-exporters.php:188
-#: includes/class-wc-privacy-exporters.php:248
+#: includes/class-wc-privacy-exporters.php:191
+#: includes/class-wc-privacy-exporters.php:251
 msgid "Phone Number"
 msgstr "Puhelinnumero"
 
 #: includes/class-wc-privacy-erasers.php:52
-#: includes/class-wc-privacy-exporters.php:187
+#: includes/class-wc-privacy-exporters.php:190
 msgid "Billing Country"
 msgstr "Laskutusmaa"
 
 #: includes/class-wc-privacy-erasers.php:51
-#: includes/class-wc-privacy-exporters.php:186
+#: includes/class-wc-privacy-exporters.php:189
 msgid "Billing State"
 msgstr "Laskutusalue"
 
 #: includes/class-wc-privacy-erasers.php:50
-#: includes/class-wc-privacy-exporters.php:185
+#: includes/class-wc-privacy-exporters.php:188
 msgid "Billing Postal/Zip Code"
 msgstr "Laskutus postinumero/-koodi"
 
 #: includes/class-wc-privacy-erasers.php:49
-#: includes/class-wc-privacy-exporters.php:184
+#: includes/class-wc-privacy-exporters.php:187
 msgid "Billing City"
 msgstr "Laskutuskaupunki"
 
 #: includes/class-wc-privacy-erasers.php:46
-#: includes/class-wc-privacy-exporters.php:181
+#: includes/class-wc-privacy-exporters.php:184
 msgid "Billing Company"
 msgstr "Laskutettava yritys"
 
 #: includes/class-wc-privacy-erasers.php:45
-#: includes/class-wc-privacy-exporters.php:180
+#: includes/class-wc-privacy-exporters.php:183
 msgid "Billing Last Name"
 msgstr "Laskutus, sukunimi"
 
@@ -222,29 +436,29 @@ msgctxt "display name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: includes/class-wc-privacy-exporters.php:137
-#: includes/class-wc-privacy-exporters.php:330
+#: includes/class-wc-privacy-exporters.php:140
+#: includes/class-wc-privacy-exporters.php:333
 msgid "Download ID"
 msgstr "Latauksen tunnus/ID"
 
-#: includes/class-wc-privacy-exporters.php:30 includes/class-wc-privacy.php:42
+#: includes/class-wc-privacy-exporters.php:32 includes/class-wc-privacy.php:42
 #: includes/class-wc-privacy.php:48
 msgid "Customer Data"
 msgstr "Asiakkaan tiedot"
 
-#: includes/class-wc-order.php:379
+#: includes/class-wc-order.php:369
 msgid "Error during status transition."
 msgstr "Tilan vaihtamisessa tapahtui virhe."
 
-#: includes/class-wc-order.php:339
+#: includes/class-wc-order.php:329
 msgid "Update status event failed."
 msgstr "Tilan päivitystapahtuma ei onnistunut."
 
-#: includes/class-wc-order.php:243
+#: includes/class-wc-order.php:239
 msgid "Error saving order."
 msgstr "Virhe tilauksen tallentamisessa."
 
-#: includes/class-wc-order.php:139
+#: includes/class-wc-order.php:136
 msgid "Payment complete event failed."
 msgstr "Maksun loppuunsaattaminen ei onnistunut."
 
@@ -291,7 +505,7 @@ msgid "%1$s has been removed from your cart because it has since been modified. 
 msgstr "%1$s on poistettu ostoskorista koska sitä on muutettu lisäämisen jälkeen. Voit lisätä tuotteen takaisin ostoskoriin <a href=\"%2$s\">täällä</a>."
 
 #: includes/class-wc-privacy-erasers.php:44
-#: includes/class-wc-privacy-exporters.php:179
+#: includes/class-wc-privacy-exporters.php:182
 msgid "Billing First Name"
 msgstr "Laskutus, etunimi"
 
@@ -311,6 +525,83 @@ msgstr "Monisivustolla olevan tiedon blogitunnus/ID "
 #: includes/admin/views/html-notice-secure-connection.php:18
 msgid "Your store does not appear to be using a secure connection. We highly recommend serving your entire website over an HTTPS connection to help keep customer data secure. <a href=\"%s\">Learn more here.</a>"
 msgstr "Kauppa ei näyttäisi käyttävän suojattua yhteyttä. Suosittelemme että koko sivusto toimii suojatun HTTPS-yhteyden kautta jotta asiakkaiden tiedot ovat turvassa. <a href=\"%s\">Lisätietoja täällä.</a>"
+
+#. translators: This is the headline for a list of access logs for downloads
+#. purchased from the store for a given user.
+#: includes/class-wc-privacy-exporters.php:136
+msgid "Access to Purchased Downloads"
+msgstr "Pääsy ostettuihin digitaalisiin latauksiin"
+
+#. translators: user role
+#: includes/class-wc-install.php:891
+msgctxt "User role"
+msgid "Customer"
+msgstr "Asiakas"
+
+#: includes/api/class-wc-rest-system-status-tools-controller.php:139
+msgid "Clean up download permissions"
+msgstr "Tyhjennä latausten oikeudet"
+
+#. Translators: %s Prop name.
+#: includes/class-wc-privacy-erasers.php:82
+msgid "Removed customer \"%s\""
+msgstr "Käyttäjä \"%s\" poistettu"
+
+#. translators: This is the headline for a list of downloads purchased from the
+#. store for a given user.
+#: includes/class-wc-privacy-exporters.php:125
+msgid "Purchased Downloads"
+msgstr "Ostetut lataukset"
+
+#: includes/class-wc-checkout.php:1038
+msgid "Unable to create order."
+msgstr "Tilausta ei voitu luoda."
+
+#. Translators: %s Prop name.
+#: includes/class-wc-privacy-erasers.php:384
+msgid "Removed payment token \"%d\""
+msgstr "Maksutietojen poletti \"%d\" poistettiin"
+
+#: includes/class-wc-privacy-erasers.php:199
+msgid "Customer download permissions have been retained."
+msgstr "Asiakkaan latausoikeudet säilytettiin."
+
+#: includes/class-wc-privacy-erasers.php:195
+msgid "Removed access to downloadable files."
+msgstr "Poistettiin pääsy ladattaviin tiedostoihin."
+
+#. Translators: %s Order number.
+#: includes/class-wc-privacy-erasers.php:142
+msgid "Personal data within order %s has been retained."
+msgstr "Tilauksen %s sisältämät henkilökohtaiset tiedot säilytettiin."
+
+#. Translators: %s Order number.
+#: includes/class-wc-privacy-erasers.php:138
+msgid "Removed personal data from order %s."
+msgstr "Tilauksesta %s poistettiin henkilökohtaiset tiedot."
+
+#. translators: user role
+#: includes/class-wc-install.php:893
+msgctxt "User role"
+msgid "Shop manager"
+msgstr "Kauppias"
+
+#. translators: %d: amount of permissions
+#: includes/api/class-wc-rest-system-status-tools-controller.php:447
+msgid "%d permissions deleted"
+msgstr "%d oikeudet poistettiin"
+
+#: includes/api/class-wc-rest-system-status-tools-controller.php:140
+msgid "This tool will delete expired download permissions and permissions with 0 remaining downloads."
+msgstr "Tämä työkalu poistaa umpeutuneet latausoikeudet ja oikeudet joissa on jäljellä 0 latauskertaa."
+
+#: includes/api/class-wc-rest-system-status-tools-controller.php:138
+msgid "Used-up download permissions"
+msgstr "\"Kaikki käytetty\" -latausoikeudet"
+
+#: includes/api/class-wc-rest-products-controller.php:2096
+msgid "Limit result set to products with a specific attribute. Use the taxonomy name/attribute slug."
+msgstr "Rajoita tulokset tuotteisiin joilla tietty ominaisuus. Käytä luokittelunimeä tai ominaisuuden polkutunnusta."
 
 #: includes/admin/views/html-admin-page-status-report.php:674
 msgid "WooCommerce pages"
@@ -416,6 +707,34 @@ msgstr "Näyttää käyttääkö WordPress ulkopuolista välimuistia."
 msgid "Rates will be configurable and taxes will be calculated during checkout."
 msgstr "Veroprosentteja voi muuttaa ja verot lasketaan kassalla."
 
+#: includes/admin/settings/class-wc-settings-accounts.php:205
+msgid "Retain completed orders for a specified duration before anonymizing the personal data within them."
+msgstr "Säilytä valmiit tilaukset tietty aika jonka jälkeen henkilökohtaiset tiedot muutetaan tunnistamattomaan muotoon."
+
+#: includes/admin/settings/class-wc-settings-accounts.php:204
+msgid "Retain completed orders"
+msgstr "Säilytä valmiit tilaukset"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:196
+msgid "Cancelled orders are unpaid and may have been cancelled by the store owner or customer. They will be trashed after the specified duration."
+msgstr "Peruttuja tilauksia ei ole maksettu ja joko kauppias tai asiakas on voinut tehdä peruutuksen. Ne siirretään roskakoriin tietyn ajan kuluttua. "
+
+#: includes/admin/settings/class-wc-settings-accounts.php:195
+msgid "Retain cancelled orders"
+msgstr "Säilytä perutut tilaukset"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:187
+msgid "Failed orders are unpaid and may have been abandoned by the customer. They will be trashed after the specified duration."
+msgstr "Epäonnistuneita tilauksia ei ole maksettu ja joko kauppias tai asiakas on voinut tehdä peruutuksen. Ne siirretään roskakoriin tietyn ajan kuluttua."
+
+#: includes/admin/settings/class-wc-settings-accounts.php:186
+msgid "Retain failed orders"
+msgstr "Säilytä epäonnistuneet tilaukset"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:178
+msgid "Pending orders are unpaid and may have been abandoned by the customer. They will be trashed after the specified duration."
+msgstr "Odottavia tilauksia ei ole maksettu ja joko kauppias tai asiakas on voinut tehdä peruutuksen. Ne siirretään roskakoriin tietyn ajan kuluttua."
+
 #: includes/admin/settings/class-wc-settings-accounts.php:42
 msgid "Guest checkout"
 msgstr "Kassa vierailijoille"
@@ -463,12 +782,12 @@ msgstr "Täällä asetetaan kuinka sivuston yksityisyyden suoja näytetään. Al
 msgid "Allow customers to log into an existing account during checkout"
 msgstr "Salli asiakkaiden kirjautua olemassa olevalle tilille kassalla."
 
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:733
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:736
 msgid "Filter by registered customer"
 msgstr "Suodata rekisteröityneiden asiakkaiden mukaan."
 
 #. translators: %d: orders count
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:697
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:700
 msgid "Removed personal data from %d order."
 msgid_plural "Removed personal data from %d orders."
 msgstr[0] "Henkilökohtaiset tiedot poistettu %d tilauksesta."
@@ -481,6 +800,89 @@ msgstr "Poista henkilökohtaiset tiedot"
 #: includes/admin/importers/views/html-product-csv-import-form.php:78
 msgid "Use previous column mapping preferences?"
 msgstr "Käytetäänkö edellisen sarakkeen kohdistusvalintoja?"
+
+#. translators: %s privacy policy page name and link
+#: includes/admin/settings/class-wc-settings-accounts.php:150
+#: includes/customizer/class-wc-shop-customizer.php:736
+#: includes/wc-template-functions.php:756
+msgid "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s."
+msgstr "Henkilökohtaisia tietoja käytetään tilausten käsittelyssä, sivuston käyttökokemuksen tukemisessa ja muissa tarkoituksissa kuten on esitetty %s."
+
+#. translators: %s privacy policy page name and link
+#: includes/admin/settings/class-wc-settings-accounts.php:140
+#: includes/wc-template-functions.php:760
+msgid "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our %s."
+msgstr "Henkilökohtaisia tietoja käytetään sivuston käyttökokemuksen tukemisessa tällä sivustolla, pääsyssä tiliisi ja muissa tarkoituksissa kuten on esitetty %s."
+
+#: includes/admin/settings/class-wc-settings-accounts.php:85
+msgid "When creating an account, automatically generate an account password"
+msgstr "Kun tili luodaan, salasana muodostetaan automaattisesti"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:77
+msgid "When creating an account, automatically generate a username from the customer's email address"
+msgstr "Kun tili luodaan, käyttäjätunnus muodostetaan automaattisesti asiakkaan sähköpostiosoitteesta"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:69
+msgid "Allow customers to create an account on the \"My account\" page"
+msgstr "Salli asiakkaiden luoda tili \"Oma tili\" sivulla"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:61
+msgid "Allow customers to create an account during checkout"
+msgstr "Salli asiakkaiden luoda tili kassalla"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:43
+msgid "Allow customers to place orders without an account"
+msgstr "Salli asiakkaiden tehdä tilaus ilman tilin perustamista"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:268
+msgid "Whitelist of billing emails to check against when an order is placed. Separate email addresses with commas. You can also use an asterisk (*) to match parts of an email. For example \"*@gmail.com\" would match all gmail addresses."
+msgstr "Luettelo sallitusta sähköpostiosoitteista johon verrataan asiakkaan laskutus sähköpostiosoitetta kun tilaus tehdään. Erota sähköpostiosoitteet pilkulla. Voit myös käyttää tähtimerkkiä (*) joka kattaa osan sähköpostiosoitetta. Esimerkiksi \"*@gmail.com\" sallii kaikki Gmail sähköpostiosoitteet."
+
+#: includes/admin/settings/class-wc-settings-accounts.php:165
+msgid "Retain inactive accounts "
+msgstr "Säilytä ei-käytetyt käyttäjätilit"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:177
+msgid "Retain pending orders "
+msgstr "Säilytä odottavat tilaukset"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:266
+msgid "Allowed emails"
+msgstr "Sallitut sähköpostit"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:94
+msgid "Remove personal data from orders"
+msgstr "Poista henkilökohtaiset tiedot tilauksista"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:93
+msgid "Account erasure requests"
+msgstr "Tilinpoistopyynnöt"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:166
+msgid "Inactive accounts are those which have not logged in, or placed an order, for the specified duration. They will be deleted. Any orders will be converted into guest orders."
+msgstr "Ei-käytetyt tilit ovat tilejä joihin ei ole kirjauduttu, tai ei ole tehty tilausta tietyn ajan kuluessa. Ne poistetaan. Tehdyt tilalukset muutetaan vierailijoiden tilauksiksi."
+
+#: includes/admin/settings/class-wc-settings-accounts.php:160
+msgid "Choose how long to retain personal data when it's no longer needed for processing. Leave the following options blank to retain this data indefinitely."
+msgstr "Valitse kuinka kauan henkilökohtaisia tietoja säilytetään kun niitä ei enää tarvita käsittelyssä. Kun tyhjä, tiedot säilytetään ilman aikarajoitusta."
+
+#: includes/admin/settings/class-wc-settings-accounts.php:159
+msgid "Personal data retention"
+msgstr "Henkilökohtaisten tietojen säilyttäminen"
+
+#. Translators: %s URL to erasure request screen.
+#: includes/admin/settings/class-wc-settings-accounts.php:106
+msgid "When handling an <a href=\"%s\">account erasure request</a>, should access to downloadable files be revoked and download logs cleared?"
+msgstr "Käsiteltäessä <a href=\"%s\">tilin poistamispyyntöä</a>, pitääkö poistaa pääsy ladattaviin tiedostoihin ja latauslokit pyyhkiä?"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:104
+msgid "Remove access to downloads"
+msgstr "Poista pääsy latauksiin"
+
+#. Translators: %s URL to erasure request screen.
+#: includes/admin/settings/class-wc-settings-accounts.php:96
+msgid "When handling an <a href=\"%s\">account erasure request</a>, should personal data within orders be retained or removed?"
+msgstr "Käsiteltäessä <a href=\"%s\">tilin poistamispyyntöä</a>, pitääkö tilauksissa olevat henkilökohtaiset tiedot säilyttää vai poistaa?"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:2171
 msgid "Review Settings"
@@ -570,6 +972,50 @@ msgstr "PayFast laajennus WooCommercelle antaa mahdollisuuden hyväksyä maksuja
 #: includes/admin/class-wc-admin-setup-wizard.php:1314
 msgid "The eWAY extension for WooCommerce allows you to take credit card payments directly on your store without redirecting your customers to a third party site to make payment."
 msgstr "eWAY laajennus WooCommercelle antaa kaupalle mahdollisuuden hyväksyä luottokorttimaksuja ilman että asiakkaat ohjataan maksamaan kolmannen osapuolen sivustolle."
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1289
+msgid "Klarna Checkout for WooCommerce"
+msgstr "Klarna Checkout WooCommercelle"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1305
+msgid "WooCommerce Square"
+msgstr "WooCommerce Square"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1249
+msgid "WooCommerce PayPal Express Checkout Gateway"
+msgstr "WooCommerce PayPal Express Checkout -maksukäytävä"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1321
+msgid "WooCommerce PayFast Gateway"
+msgstr "WooCommerce PayFast -maksukäytävä"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1313
+msgid "WooCommerce eWAY Gateway"
+msgstr "WooCommerce eWAY -maksukäytävä"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1297
+msgid "Klarna Payments for WooCommerce"
+msgstr "Klarna Payments WooCommercelle"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1224
+msgid "WooCommerce Stripe Gateway"
+msgstr "WooCommerce Stripe -maksukäytävä"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:722
+msgid "The following plugins will be installed and activated for you:"
+msgstr "Seuraavat lisäosat asennetaan ja otetaan käyttöön:"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1269
+msgid "Enter your email address and we'll authenticate payments for you. Powered by WooCommerce Services and Jetpack."
+msgstr "Kirjoita sähköpostiosoite ja varmennamme maksut puolestasi. Palvelun tarjoaa WooCommerce Services ja Jetpack-lisäosat."
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1243
+msgid "Enter your email address and we'll handle account creation. Powered by WooCommerce Services and Jetpack."
+msgstr "Kirjoita sähköpostiosoite ja luomme tilin puolestasi. Palvelun tarjoaa WooCommerce Services ja Jetpack-lisäosat."
+
+#: includes/admin/class-wc-admin-setup-wizard.php:759
+msgid "Powered by WooCommerce Services and Jetpack."
+msgstr "Palvelut tarjoaa WooCommerce Services ja Jetpack-lisäosat."
 
 #. translators: 1: currency name 2: currency symbol, 3: currency code
 #: includes/admin/class-wc-admin-setup-wizard.php:448
@@ -832,7 +1278,7 @@ msgstr "Ladataan verkkotilauksia"
 msgid "WooCommerce network orders"
 msgstr "WooCommerce verkkotilaukset"
 
-#: includes/admin/class-wc-admin-notices.php:136
+#: includes/admin/class-wc-admin-notices.php:139
 #: includes/emails/class-wc-email.php:813
 msgid "You don&#8217;t have permission to do this."
 msgstr "Et voi tehdä tätä. Tarvitset laajemmat oikeudet."
@@ -1017,6 +1463,18 @@ msgstr "Nimba"
 #: i18n/states/LR.php:24
 msgid "Montserrado"
 msgstr "Montserrado"
+
+#: i18n/states/LR.php:21
+msgid "Lofa"
+msgstr "Lofa"
+
+#: includes/admin/class-wc-admin-help.php:81
+msgid "Further education"
+msgstr "Enemmän opiskelua/tietoja"
+
+#: includes/admin/class-wc-admin-help.php:80
+msgid "If you would like to learn about using WooCommerce from an expert, consider a WooCommerce course to further your education."
+msgstr "Jos haluat oppia WooCommercen käyttöä asiantuntijalta, harkitse WooCommerce kurssia jotta opit lisää."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:283
 msgid "Profile &rarr;"
@@ -1289,7 +1747,7 @@ msgid "Buy &ldquo;%s&rdquo;"
 msgstr "Osta &ldquo;%s&rdquo;"
 
 #: includes/admin/class-wc-admin-taxonomies.php:309
-#: includes/class-wc-install.php:488 includes/class-wc-install.php:494
+#: includes/class-wc-install.php:492 includes/class-wc-install.php:498
 msgctxt "Default category slug"
 msgid "Uncategorized"
 msgstr "Yleinen"
@@ -1324,7 +1782,7 @@ msgstr "Pienin sallittu asetus on %d"
 msgid "Invalid permission ID."
 msgstr "Oikeuksien tunnus/ID ei kelpaa."
 
-#: includes/class-wc-countries.php:1096
+#: includes/class-wc-countries.php:1107
 msgid "Municipality / District"
 msgstr "Kunta / Kuntaryhmä"
 
@@ -1978,7 +2436,7 @@ msgstr "Valkovenäjän rupla (vanha) BYN"
 msgid "New payment methods can only be added during checkout. Please contact us if you require assistance."
 msgstr "Uusia maksutapoja voi lisätä ainoastaan kassalla. Ole meihin yhteydessä mikäli tarvitset apua."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:723
+#: includes/api/class-wc-rest-product-variations-controller.php:733
 #: includes/api/class-wc-rest-products-controller.php:1549
 msgid "End date of sale price, as GMT."
 msgstr "Alennushinnan päättymispäivä (GMT aikavyöhyke)."
@@ -1991,7 +2449,7 @@ msgstr "Asiakkaan lasku / Tilauksen tiedot"
 msgid "Email invoice / order details to customer"
 msgstr "Lähetä lasku / tilauksen tiedot asiakkaalle"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:734
+#: includes/api/class-wc-rest-product-variations-controller.php:744
 msgid "Define if the variation is visible on the product's page."
 msgstr "Määritä onko muunnelma näkyvissä tuotesivulla."
 
@@ -2870,11 +3328,11 @@ msgstr "Tilaus ajastettu: %s."
 msgid "Extensions %s"
 msgstr "Laajennukset %s"
 
-#: includes/admin/class-wc-admin-assets.php:334
+#: includes/admin/class-wc-admin-assets.php:335
 msgid "Enter a fixed amount or percentage to apply as a fee."
 msgstr "Kirjoita kiinteä määrä tai prosenttiluku jota käytetään maksuna."
 
-#: includes/admin/class-wc-admin-assets.php:333
+#: includes/admin/class-wc-admin-assets.php:334
 msgid "Enter a coupon code to apply to this order."
 msgstr "Kirjoita kupongin koodi jota käytetään tässä tilauksessa."
 
@@ -2945,7 +3403,7 @@ msgstr[0] "Arvio %1$s 5:stä perustuen %2$s asiakkaan arvotukseen."
 msgstr[1] "Arvio %1$s 5:stä perustuen %2$s asiakkaan arvotukseen."
 
 #. translators: use local order of street name and house number.
-#: includes/class-wc-countries.php:649
+#: includes/class-wc-countries.php:650
 msgid "House number and street name"
 msgstr "Kadunnimi ja talon numero"
 
@@ -3677,11 +4135,11 @@ msgstr "Tapahtui virhe kun %s yritettiin ottaa käyttöön. Yritä myöhemmin uu
 msgid "%s activated successfully. You will now receive updates for this product."
 msgstr "%s otettiin käyttöön. Saat nyt päivityksiä tähän tuotteeseen."
 
-#: includes/admin/class-wc-admin-webhooks.php:315
+#: includes/admin/class-wc-admin-webhooks.php:290
 msgid "Create a new webhook"
 msgstr "Luo uusi verkkotoimintokutsu"
 
-#: includes/admin/class-wc-admin-webhooks.php:314
+#: includes/admin/class-wc-admin-webhooks.php:289
 msgid "Webhooks are event notifications sent to URLs of your choice. They can be used to integrate with third-party services which support them."
 msgstr "Verkkotoimintokutsut ovat tapahtumailmoituksia jatka lähetetään valitsemaasi verkko-osoitteeseen. Niitä voidaan käytää niitä tukevien kolmansien osapuolten palveluihin liittymisessä."
 
@@ -3708,7 +4166,7 @@ msgstr "Lajittelu"
 msgid "Subscription for %1$s deactivated successfully. You will no longer receive updates for this product. <a href=\"%2$s\">Click here</a> if you wish to deactivate the plugin as well."
 msgstr "%1$s tilaus otettiin pois käytöstä. Et saa enää päivityksiä tälle tuotteelle. <a href=\"%2$s\">Napsauta tähän</a> jos haluat ottaa pois käytöstä myös lisäosan."
 
-#: includes/admin/class-wc-admin-assets.php:175
+#: includes/admin/class-wc-admin-assets.php:176
 msgid "Export"
 msgstr "Vie"
 
@@ -3748,11 +4206,11 @@ msgstr "WooCommerce verkko-osoitteen loppuliite"
 msgid "Back to Attributes"
 msgstr "Takaisin ominaisuuksiin"
 
-#: includes/admin/class-wc-admin-assets.php:396
+#: includes/admin/class-wc-admin-assets.php:397
 msgid "Are you sure you want to delete this log?"
 msgstr "Haluatko varmasti poistaa tämän lokin?"
 
-#: includes/admin/class-wc-admin-assets.php:174
+#: includes/admin/class-wc-admin-assets.php:175
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:102
 msgid "Import"
 msgstr "Tuo"
@@ -3917,12 +4375,12 @@ msgstr "Tunniste (ID)."
 msgid "Zone ID."
 msgstr "Postitusvyöhykkeen tunniste (ID)."
 
-#: includes/admin/class-wc-admin-assets.php:263
+#: includes/admin/class-wc-admin-assets.php:264
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:50
 msgid "Value (required)"
 msgstr "Arvo (pakollinen)"
 
-#: includes/admin/class-wc-admin-assets.php:262
+#: includes/admin/class-wc-admin-assets.php:263
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:49
 msgid "Name (required)"
 msgstr "Nimi (pakollinen)"
@@ -3931,7 +4389,7 @@ msgstr "Nimi (pakollinen)"
 msgid "Recalculate"
 msgstr "Laske uudelleen"
 
-#: includes/admin/class-wc-admin-assets.php:297
+#: includes/admin/class-wc-admin-assets.php:298
 msgid "Recalculate totals? This will calculate taxes based on the customers country (or the store base country) and update totals."
 msgstr "Laske kokonaissumma uudelleen? Tämä laskee verot perustuen asiakkaan maahan (tai kaupan maahan) ja päivittää kokonaissumman."
 
@@ -4045,7 +4503,7 @@ msgstr "Suurin palvelimelle siirrettävä tiedosto"
 msgid "Number of decimals"
 msgstr "Desimaalien lukumäärä"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:462
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:466
 msgid "Customer provided note:"
 msgstr "Asiakkaan kommentti:"
 
@@ -4149,6 +4607,11 @@ msgstr "Iranian toman"
 #: includes/wc-order-functions.php:495
 msgid "Invalid refund amount."
 msgstr "Hyvityksen määrä ei kelpaa."
+
+#: includes/wc-cart-functions.php:228
+msgctxt "shipping package"
+msgid "Shipping"
+msgstr "Toimitus"
 
 #: includes/wc-order-functions.php:636
 msgid "The payment gateway for this order does not support automatic refunds."
@@ -4312,10 +4775,6 @@ msgstr "Pankki"
 msgid "%1$d updates complete. Database version is %2$s"
 msgstr "%1$d päivitystä valmis. Tietokannan versio on %2$s"
 
-#: includes/data-stores/class-wc-payment-token-data-store.php:174
-msgid "Invalid payment token."
-msgstr "Maksun (valtuutus)merkki ei kelpaa."
-
 #: includes/data-stores/class-wc-payment-token-data-store.php:44
 #: includes/data-stores/class-wc-payment-token-data-store.php:88
 msgid "Invalid or missing payment token fields."
@@ -4343,6 +4802,10 @@ msgstr "Kutsutaan päivitystoimintoa: %s"
 #: includes/cli/class-wc-cli-runner.php:230
 msgid "Output just the id when the operation is successful."
 msgstr "Näytä vain tunnus/ID kun toiminto on onnistunut."
+
+#: includes/data-stores/class-wc-payment-token-data-store.php:174
+msgid "Invalid payment token."
+msgstr "Maksutietojen poletti ei kelpaa."
 
 #: includes/cli/class-wc-cli-rest-command.php:345
 msgid "Make sure to include the --user flag with an account that has permissions for this action."
@@ -4442,7 +4905,7 @@ msgid "Invalid variation ID"
 msgstr "Muunnelman tunnus/ID ei kelpaa"
 
 #. translators: %s: new order status
-#: includes/class-wc-order.php:366
+#: includes/class-wc-order.php:356
 msgid "Order status set to %s."
 msgstr "Tilauksen tila asetettu: %s."
 
@@ -4510,11 +4973,11 @@ msgstr "Osasto"
 msgid "Invalid product"
 msgstr "Tuote ei kelpaa"
 
-#: includes/class-wc-install.php:1074
+#: includes/class-wc-install.php:1108
 msgid "Visit premium customer support"
 msgstr "Siirry korkealuokkaiseen tukipalveluun (maksullinen)"
 
-#: includes/class-wc-countries.php:647
+#: includes/class-wc-countries.php:648
 msgid "Street address"
 msgstr "Katuosoite"
 
@@ -4539,7 +5002,7 @@ msgstr "%1$s varasto on vähissä. Jäljellä on %2$d kpl."
 msgid "Invalid data store."
 msgstr "'data store' ei kelpaa."
 
-#: includes/class-wc-customer.php:962 includes/class-wc-order.php:1075
+#: includes/class-wc-customer.php:962 includes/class-wc-order.php:1065
 msgid "Invalid billing email address"
 msgstr "Laskutuksen sähköpostiosoite ei kelpaa"
 
@@ -4559,11 +5022,11 @@ msgstr "Sähköpostiosoitteen rajoite ei kelpaa"
 msgid "Invalid discount type"
 msgstr "Alennuksen laji ei kelpaa"
 
-#: includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:928
 msgid "Eircode"
 msgstr "Eircode (Irlanti)"
 
-#: includes/class-wc-countries.php:656
+#: includes/class-wc-countries.php:657
 msgid "Apartment, suite, unit etc. (optional)"
 msgstr "Huoneisto, yksikkö jne. (valinnainen)"
 
@@ -4598,7 +5061,7 @@ msgid "%1$s - API %2$s (created on %3$s at %4$s)."
 msgstr "%1$s - API %2$s (luotu %3$s klo %4$s)."
 
 #. translators: 1: key 2: URL
-#: includes/class-wc-cache-helper.php:206
+#: includes/class-wc-cache-helper.php:224
 msgid "In order for <strong>database caching</strong> to work with WooCommerce you must add %1$s to the \"Ignored Query Strings\" option in <a href=\"%2$s\">W3 Total Cache settings</a>."
 msgstr "Jotta <strong>tietokannan välimuisti</strong> toimii WooCommercen kanssa, sinun on lisättävä %1$s kohtaan \"Ignored Query Strings\" täällä <a href=\"%2$s\">W3 Total Cache asetukset</a>."
 
@@ -5068,14 +5531,14 @@ msgstr "Valintojen matriisi (avain arvo parit) tiedoille kuten valitse, monivali
 msgid "Placeholder text to be displayed in text inputs."
 msgstr "Paikanvaraus teksti joka näytetään tekstilaatikoissa."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:790
+#: includes/api/class-wc-rest-product-variations-controller.php:800
 #: includes/api/class-wc-rest-products-controller.php:1622
 #: includes/api/v1/class-wc-rest-products-controller.php:1905
 #: includes/api/v1/class-wc-rest-products-controller.php:2383
 msgid "Number of days until access to downloadable files expires."
 msgstr "Kuinka monen päivän kuluttua pääsy ladattaviin tiedostoihin umpeutuu."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:784
+#: includes/api/class-wc-rest-product-variations-controller.php:794
 #: includes/api/class-wc-rest-products-controller.php:1616
 #: includes/api/v1/class-wc-rest-products-controller.php:1899
 #: includes/api/v1/class-wc-rest-products-controller.php:2377
@@ -5113,13 +5576,13 @@ msgid "A human readable label for the setting used in interfaces."
 msgstr "Asetuksen selkokielinen tunnus jota käytetään käyttöliittymissä."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:173
-#: includes/api/class-wc-rest-product-variations-controller.php:914
+#: includes/api/class-wc-rest-product-variations-controller.php:924
 #: includes/api/class-wc-rest-products-controller.php:1884
 msgid "The date the image was last modified, as GMT."
 msgstr "Päiväys jolloin kuvaa viimeksi muokattiin, GMT aika."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:161
-#: includes/api/class-wc-rest-product-variations-controller.php:902
+#: includes/api/class-wc-rest-product-variations-controller.php:912
 #: includes/api/class-wc-rest-products-controller.php:1872
 msgid "The date the image was created, as GMT."
 msgstr "Päiväys jolloin kuva luotiin, GMT aika."
@@ -5132,17 +5595,17 @@ msgstr "Päiväys jolloin tuotetta viimeksi muokattiin, GMT aika."
 msgid "The date the product was created, as GMT."
 msgstr "Päiväys jolloin tuote luotiin, GMT aika."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:718
+#: includes/api/class-wc-rest-product-variations-controller.php:728
 #: includes/api/class-wc-rest-products-controller.php:1544
 msgid "End date of sale price, in the site's timezone."
 msgstr "Päiväys jolloin ale-hinnan voimassaolo päättyy, sivuston aikavyöhykkeellä."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:713
+#: includes/api/class-wc-rest-product-variations-controller.php:723
 #: includes/api/class-wc-rest-products-controller.php:1539
 msgid "Start date of sale price, as GMT."
 msgstr "Päiväys jolloin ale-hinnan voimassaolo alkaa, GMT aika."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:708
+#: includes/api/class-wc-rest-product-variations-controller.php:718
 #: includes/api/class-wc-rest-products-controller.php:1534
 msgid "Start date of sale price, in the site's timezone."
 msgstr "Päiväys jolloin ale-hinnan voimassaolo alkaa, sivuston aikavyöhykkeellä."
@@ -5289,7 +5752,7 @@ msgstr "Päiväys jolloin pääsy lataukseen umpeutuu, GMT aika."
 #: includes/api/class-wc-rest-orders-controller.php:1424
 #: includes/api/class-wc-rest-orders-controller.php:1522
 #: includes/api/class-wc-rest-orders-controller.php:1580
-#: includes/api/class-wc-rest-product-variations-controller.php:973
+#: includes/api/class-wc-rest-product-variations-controller.php:983
 #: includes/api/class-wc-rest-products-controller.php:2006
 msgid "Meta data."
 msgstr "Meta tiedot."
@@ -5316,7 +5779,7 @@ msgstr "Onko asiakas maksava asiakas?"
 #: includes/api/class-wc-rest-orders-controller.php:1431
 #: includes/api/class-wc-rest-orders-controller.php:1529
 #: includes/api/class-wc-rest-orders-controller.php:1587
-#: includes/api/class-wc-rest-product-variations-controller.php:980
+#: includes/api/class-wc-rest-product-variations-controller.php:990
 #: includes/api/class-wc-rest-products-controller.php:2013
 msgid "Meta ID."
 msgstr "Meta tunnus/ID."
@@ -5503,19 +5966,19 @@ msgstr "Poista kaikki lokit"
 msgid "To allow logging, make %1$s writable or define a custom %2$s."
 msgstr "Jotta loki toimii, aseta %1$s kirjoituskelpoiseksi tai määritä mukautettu %2$s."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:136
+#: includes/admin/settings/views/html-webhooks-edit.php:139
 msgid "WP REST API Integration v2"
 msgstr "WP REST API -liitos v2"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:138
+#: includes/admin/settings/views/html-webhooks-edit.php:141
 msgid "Legacy API v3 (deprecated)"
 msgstr "Vanha rajapinta/API v3 (vanhentunut)"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:137
+#: includes/admin/settings/views/html-webhooks-edit.php:140
 msgid "WP REST API Integration v1"
 msgstr "WP REST -rajapinta/API liitos v1"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:131
+#: includes/admin/settings/views/html-webhooks-edit.php:134
 msgid "REST API version used in the webhook deliveries."
 msgstr "REST API -versio jota käytetty verkkotoimintokutsun toimituksissa."
 
@@ -5740,12 +6203,12 @@ msgstr "Kommentin laji"
 msgid "%s (No longer exists)"
 msgstr "%s (Ei ole enää)"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:428
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:432
 msgid "Copy billing address"
 msgstr "Kopioi laskutusosoite"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:325
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:438
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "Address:"
 msgstr "Osoite:"
 
@@ -5803,7 +6266,7 @@ msgid "This is the WooCommerce shop page. The shop page is a special archive tha
 msgstr "Tämä on WooCommerce kauppasivu. Kauppasivu on erikoinen arkisto/luettelo jossa tuotteet listataan. <a href=\"%s\">Lisätietoja täällä</a>."
 
 #. translators: 1: user display name 2: user ID 3: user email
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:726
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:729
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:296
 #: includes/admin/settings/views/html-keys-edit.php:39
 #: includes/class-wc-ajax.php:1517
@@ -5863,7 +6326,7 @@ msgstr "Taso"
 
 #: includes/admin/class-wc-admin-log-table-list.php:103
 #: includes/admin/reports/class-wc-report-downloads.php:214
-#: includes/class-wc-privacy-exporters.php:141
+#: includes/class-wc-privacy-exporters.php:144
 msgid "Timestamp"
 msgstr "Aikaleima"
 
@@ -6403,7 +6866,7 @@ msgstr "Pakota SSL (HTTPS) suojaustila kassasivuilla (<a href=\"%s\" target=\"_b
 
 #: includes/api/legacy/v2/class-wc-api-products.php:1734
 #: includes/api/legacy/v3/class-wc-api-products.php:2267
-#: includes/wc-rest-functions.php:117
+#: includes/wc-rest-functions.php:118
 msgid "Invalid image type."
 msgstr "Kuvan laji ei kelpaa."
 
@@ -6428,7 +6891,7 @@ msgstr "Valitse toimitustapa jonka haluat lisätä. Listassa on vain ne toimitus
 #. translators: %s: error message
 #: includes/api/legacy/v2/class-wc-api-products.php:1711
 #: includes/api/legacy/v3/class-wc-api-products.php:2244
-#: includes/class-wc-auth.php:405 includes/wc-rest-functions.php:92
+#: includes/class-wc-auth.php:401 includes/wc-rest-functions.php:92
 msgid "Error: %s."
 msgstr "Virhe: %s."
 
@@ -6628,7 +7091,7 @@ msgstr "Virhe ulkopuolisen %s kuvan noudossa."
 
 #: includes/api/legacy/v2/class-wc-api-products.php:1751
 #: includes/api/legacy/v3/class-wc-api-products.php:2284
-#: includes/wc-rest-functions.php:135
+#: includes/wc-rest-functions.php:136
 msgid "Zero size file downloaded."
 msgstr "Ladatun tiedoston koko on nolla."
 
@@ -6681,7 +7144,7 @@ msgid "Swazi lilangeni"
 msgstr "Swazimaan lilangeni SZL"
 
 #. translators: 1: param 2: type
-#: includes/wc-rest-functions.php:205
+#: includes/wc-rest-functions.php:206
 msgid "%1$s is not of type %2$s"
 msgstr "%1$s ei ole tätä lajia %2$s"
 
@@ -7052,7 +7515,7 @@ msgstr "Kun poistettu käytöstä, tämä vanha tapa ei ole enää saatavilla."
 msgid "Allow customers to pick up orders themselves. By default, when using local pickup store base taxes will apply regardless of customer address."
 msgstr "Salli asiakkaiden noutaa itse tuotteet. Oletuksena tällöin kaupan sijainti määrää verot riippumatta asiakkaan osoitteesta."
 
-#: includes/wc-rest-functions.php:212
+#: includes/wc-rest-functions.php:213
 msgid "The date you provided is invalid."
 msgstr "Annettu päiväys ei kelpaa."
 
@@ -7455,7 +7918,7 @@ msgid "This is an order notification sent to customers containing order details 
 msgstr "Tämä ilmoitus lähetetään asiakkaalle kun tilaus on asetettu pysäytetty -tilaan. Se sisältää tilauksen tiedot."
 
 #. translators: 1: plugin name, 2: URL to WP plugin page.
-#: includes/class-wc-install.php:1228
+#: includes/class-wc-install.php:1262
 msgid "%1$s was installed but could not be activated. <a href=\"%2$s\">Please activate it manually by clicking here.</a>"
 msgstr "%1$s on asennettu mutta ei voitu ottaa käyttöön. <a href=\"%2$s\">Ota käyttöön manuaalisesti napsauttamalla tähän.</a>"
 
@@ -7463,7 +7926,7 @@ msgstr "%1$s on asennettu mutta ei voitu ottaa käyttöön. <a href=\"%2$s\">Ota
 #. manually.
 #. translators: 1: theme slug, 2: error message, 3: URL to install theme
 #. manually.
-#: includes/class-wc-install.php:1201 includes/class-wc-install.php:1288
+#: includes/class-wc-install.php:1235 includes/class-wc-install.php:1322
 msgid "%1$s could not be installed (%2$s). <a href=\"%3$s\">Please install it manually by clicking here.</a>"
 msgstr "%1$s ei voitu asentaa (%2$s). <a href=\"%3$s\">Asenna manuaalisesti napsauttamalla tästä.</a>"
 
@@ -7706,7 +8169,7 @@ msgstr "Resurssin kirjaimista ja numeroista koostuva tunniste joka poikkeaa muis
 msgid "Number of published products for the resource."
 msgstr "Resurssin julkaistujen tuotteiden lukumäärä."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:955
+#: includes/api/class-wc-rest-product-variations-controller.php:965
 #: includes/api/class-wc-rest-products-controller.php:1926
 #: includes/api/class-wc-rest-products-controller.php:1971
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:462
@@ -7749,7 +8212,7 @@ msgid "Category archive display type."
 msgstr "Osastojen arkisto, näyttämisen laji."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:179
-#: includes/api/class-wc-rest-product-variations-controller.php:920
+#: includes/api/class-wc-rest-product-variations-controller.php:930
 #: includes/api/class-wc-rest-products-controller.php:1890
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:238
 #: includes/api/v1/class-wc-rest-products-controller.php:2168
@@ -7842,7 +8305,7 @@ msgstr "Tuotteen kuvaus."
 msgid "Product short description."
 msgstr "Tuotteen lyhyt kuvaus."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:687
+#: includes/api/class-wc-rest-product-variations-controller.php:697
 #: includes/api/class-wc-rest-products-controller.php:1513
 #: includes/api/v1/class-wc-rest-products-controller.php:1806
 #: includes/api/v1/class-wc-rest-products-controller.php:2291
@@ -7899,14 +8362,14 @@ msgstr "Jos tuote on palvelu."
 msgid "If the product is downloadable."
 msgstr "Jos tuote on ladattava tuote."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:758
+#: includes/api/class-wc-rest-product-variations-controller.php:768
 #: includes/api/class-wc-rest-products-controller.php:1590
 #: includes/api/v1/class-wc-rest-products-controller.php:1873
 #: includes/api/v1/class-wc-rest-products-controller.php:2351
 msgid "List of downloadable files."
 msgstr "Ladattavien tiedostojen lista."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:765
+#: includes/api/class-wc-rest-product-variations-controller.php:775
 #: includes/api/class-wc-rest-products-controller.php:1597
 #: includes/api/v1/class-wc-rest-products-controller.php:1880
 #: includes/api/v1/class-wc-rest-products-controller.php:2358
@@ -7927,7 +8390,7 @@ msgstr "Tuotteen ulkopuolinen verkko-osoite. Vain ulkopuolisille tuotteille."
 msgid "Product external button text. Only for external products."
 msgstr "Tuotteen ulkopuolisen painikkeen teksti. Vain ulkopuolisille tuotteille."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:796
+#: includes/api/class-wc-rest-product-variations-controller.php:806
 #: includes/api/class-wc-rest-products-controller.php:1639
 #: includes/api/v1/class-wc-rest-products-controller.php:1929
 #: includes/api/v1/class-wc-rest-products-controller.php:2389
@@ -7939,21 +8402,21 @@ msgstr "Veron tila."
 msgid "Stock management at product level."
 msgstr "Varaston hallinta tuotetasolla."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:814
+#: includes/api/class-wc-rest-product-variations-controller.php:824
 #: includes/api/class-wc-rest-products-controller.php:1657
 #: includes/api/v1/class-wc-rest-products-controller.php:1947
 #: includes/api/v1/class-wc-rest-products-controller.php:2407
 msgid "Stock quantity."
 msgstr "Varaston määrä."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:825
+#: includes/api/class-wc-rest-product-variations-controller.php:835
 #: includes/api/class-wc-rest-products-controller.php:1668
 #: includes/api/v1/class-wc-rest-products-controller.php:1958
 #: includes/api/v1/class-wc-rest-products-controller.php:2418
 msgid "If managing stock, this controls if backorders are allowed."
 msgstr "Jos hallitaan varastoa, tässä asetetaan sallitaanko jälkitoimitukset."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:832
+#: includes/api/class-wc-rest-product-variations-controller.php:842
 #: includes/api/class-wc-rest-products-controller.php:1675
 #: includes/api/v1/class-wc-rest-products-controller.php:1965
 #: includes/api/v1/class-wc-rest-products-controller.php:2425
@@ -8004,14 +8467,14 @@ msgstr "Näyttää tarvitseeko tuote toimittaa."
 msgid "Shows whether or not the product shipping is taxable."
 msgstr "Näyttää onko tuotteen toimitus verotettava."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:875
+#: includes/api/class-wc-rest-product-variations-controller.php:885
 #: includes/api/class-wc-rest-products-controller.php:1736
 #: includes/api/v1/class-wc-rest-products-controller.php:2026
 #: includes/api/v1/class-wc-rest-products-controller.php:2468
 msgid "Shipping class slug."
 msgstr "Toimitusluokan polkutunnus."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:880
+#: includes/api/class-wc-rest-product-variations-controller.php:890
 #: includes/api/class-wc-rest-products-controller.php:1741
 #: includes/api/v1/class-wc-rest-products-controller.php:2031
 #: includes/api/v1/class-wc-rest-products-controller.php:2473
@@ -8093,7 +8556,7 @@ msgid "List of images."
 msgstr "Kuvien lista."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:150
-#: includes/api/class-wc-rest-product-variations-controller.php:891
+#: includes/api/class-wc-rest-product-variations-controller.php:901
 #: includes/api/class-wc-rest-products-controller.php:1861
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:221
 #: includes/api/v1/class-wc-rest-products-controller.php:2151
@@ -8102,7 +8565,7 @@ msgid "Image ID."
 msgstr "Kuvan tunnus/ID."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:155
-#: includes/api/class-wc-rest-product-variations-controller.php:896
+#: includes/api/class-wc-rest-product-variations-controller.php:906
 #: includes/api/class-wc-rest-products-controller.php:1866
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:226
 #: includes/api/v1/class-wc-rest-products-controller.php:2156
@@ -8111,7 +8574,7 @@ msgid "The date the image was created, in the site's timezone."
 msgstr "Päiväys jolloin kuva luotiin, sivuston aikavyöhykkeellä."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:167
-#: includes/api/class-wc-rest-product-variations-controller.php:908
+#: includes/api/class-wc-rest-product-variations-controller.php:918
 #: includes/api/class-wc-rest-products-controller.php:1878
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:232
 #: includes/api/v1/class-wc-rest-products-controller.php:2162
@@ -8120,7 +8583,7 @@ msgid "The date the image was last modified, in the site's timezone."
 msgstr "Päiväys jolloin kuvaa viimeksi muokattiin, sivuston aikavyöhykkeellä."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:185
-#: includes/api/class-wc-rest-product-variations-controller.php:926
+#: includes/api/class-wc-rest-product-variations-controller.php:936
 #: includes/api/class-wc-rest-products-controller.php:1896
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:244
 #: includes/api/v1/class-wc-rest-products-controller.php:2174
@@ -8129,7 +8592,7 @@ msgid "Image name."
 msgstr "Kuvan nimi."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:190
-#: includes/api/class-wc-rest-product-variations-controller.php:931
+#: includes/api/class-wc-rest-product-variations-controller.php:941
 #: includes/api/class-wc-rest-products-controller.php:1901
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:249
 #: includes/api/v1/class-wc-rest-products-controller.php:2179
@@ -8137,14 +8600,14 @@ msgstr "Kuvan nimi."
 msgid "Image alternative text."
 msgstr "Kuvan vaihtoehtoinen (alt) teksti."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:936
+#: includes/api/class-wc-rest-product-variations-controller.php:946
 #: includes/api/class-wc-rest-products-controller.php:1906
 #: includes/api/v1/class-wc-rest-products-controller.php:2184
 #: includes/api/v1/class-wc-rest-products-controller.php:2517
 msgid "Image position. 0 means that the image is featured."
 msgstr "Kuvan sijainti. 0 tarkoittaa, että kuva on artikkelikuva."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:943
+#: includes/api/class-wc-rest-product-variations-controller.php:953
 #: includes/api/class-wc-rest-products-controller.php:1914
 #: includes/api/v1/class-wc-rest-products-controller.php:2192
 #: includes/api/v1/class-wc-rest-products-controller.php:2524
@@ -8179,12 +8642,12 @@ msgstr "Muunnelmien lista."
 msgid "Variation ID."
 msgstr "Muunnelman tunnus/ID."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:663
+#: includes/api/class-wc-rest-product-variations-controller.php:673
 #: includes/api/v1/class-wc-rest-products-controller.php:2272
 msgid "The date the variation was created, in the site's timezone."
 msgstr "Päiväys jolloin muunnelma luotiin, sivuston aikavyöhykkeellä."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:669
+#: includes/api/class-wc-rest-product-variations-controller.php:679
 #: includes/api/v1/class-wc-rest-products-controller.php:2278
 msgid "The date the variation was last modified, in the site's timezone."
 msgstr "Päiväys jolloin muunnelmaa viimeksi muokattiin, sivuston aikavyöhykkeellä."
@@ -8194,7 +8657,7 @@ msgstr "Päiväys jolloin muunnelmaa viimeksi muokattiin, sivuston aikavyöhykke
 msgid "List of grouped products ID."
 msgstr "Joukkotuotteiden tunnusten/ID lista."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:968
+#: includes/api/class-wc-rest-product-variations-controller.php:978
 #: includes/api/class-wc-rest-products-controller.php:2001
 #: includes/api/v1/class-wc-rest-products-controller.php:2561
 msgid "Menu order, used to custom sort products."
@@ -8362,6 +8825,21 @@ msgstr "Meta-tunnus/nimi."
 msgid "Number of decimal points to use in each resource."
 msgstr "Desimaalien määrä jota käytetään resursseissa."
 
+#: includes/api/class-wc-rest-orders-controller.php:519
+#: includes/api/legacy/class-wc-rest-legacy-orders-controller.php:249
+#: includes/api/legacy/v2/class-wc-api-orders.php:388
+#: includes/api/legacy/v2/class-wc-api-orders.php:535
+#: includes/api/legacy/v3/class-wc-api-orders.php:423
+#: includes/api/legacy/v3/class-wc-api-orders.php:573
+#: includes/api/v1/class-wc-rest-orders-controller.php:534
+msgid "Customer ID is invalid."
+msgstr "Asiakkaan tunnus/ID ei kelpaa."
+
+#: includes/api/class-wc-rest-orders-controller.php:591
+#: includes/api/v1/class-wc-rest-orders-controller.php:621
+msgid "Product ID or SKU is required."
+msgstr "Tuotteen tunnus/ID tai tuotetunnus/SKU tarvitaan."
+
 #: includes/api/class-wc-rest-coupons-controller.php:508
 #: includes/api/class-wc-rest-customers-controller.php:347
 #: includes/api/class-wc-rest-order-refunds-controller.php:406
@@ -8372,7 +8850,7 @@ msgstr "Desimaalien määrä jota käytetään resursseissa."
 #: includes/api/class-wc-rest-orders-controller.php:1437
 #: includes/api/class-wc-rest-orders-controller.php:1535
 #: includes/api/class-wc-rest-orders-controller.php:1593
-#: includes/api/class-wc-rest-product-variations-controller.php:986
+#: includes/api/class-wc-rest-product-variations-controller.php:996
 #: includes/api/class-wc-rest-products-controller.php:2019
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:483
 #: includes/api/v1/class-wc-rest-orders-controller.php:1314
@@ -8389,62 +8867,47 @@ msgstr "Meta-avain."
 #: includes/api/class-wc-rest-orders-controller.php:1442
 #: includes/api/class-wc-rest-orders-controller.php:1540
 #: includes/api/class-wc-rest-orders-controller.php:1598
-#: includes/api/class-wc-rest-product-variations-controller.php:991
+#: includes/api/class-wc-rest-product-variations-controller.php:1001
 #: includes/api/class-wc-rest-products-controller.php:2024
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:495
 #: includes/api/v1/class-wc-rest-orders-controller.php:1326
 msgid "Meta value."
 msgstr "Meta-arvo."
 
-#: includes/api/class-wc-rest-orders-controller.php:519
-#: includes/api/legacy/class-wc-rest-legacy-orders-controller.php:249
-#: includes/api/legacy/v2/class-wc-api-orders.php:390
-#: includes/api/legacy/v2/class-wc-api-orders.php:542
-#: includes/api/legacy/v3/class-wc-api-orders.php:427
-#: includes/api/legacy/v3/class-wc-api-orders.php:582
-#: includes/api/v1/class-wc-rest-orders-controller.php:534
-msgid "Customer ID is invalid."
-msgstr "Asiakkaan tunnus/ID ei kelpaa."
-
-#: includes/api/class-wc-rest-orders-controller.php:591
-#: includes/api/v1/class-wc-rest-orders-controller.php:621
-msgid "Product ID or SKU is required."
-msgstr "Tuotteen tunnus/ID tai tuotetunnus/SKU tarvitaan."
-
-#: includes/api/legacy/v2/class-wc-api-orders.php:907
-#: includes/api/legacy/v3/class-wc-api-orders.php:953
+#: includes/api/legacy/v2/class-wc-api-orders.php:900
+#: includes/api/legacy/v3/class-wc-api-orders.php:944
 msgid "Product is invalid."
 msgstr "Tuote ei kelpaa."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:912
-#: includes/api/legacy/v3/class-wc-api-orders.php:958
+#: includes/api/legacy/v2/class-wc-api-orders.php:905
+#: includes/api/legacy/v3/class-wc-api-orders.php:949
 msgid "Product quantity must be a positive float."
 msgstr "Tuotteen määrä on oltava positiivinen liukuluku."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:917
-#: includes/api/legacy/v3/class-wc-api-orders.php:963
+#: includes/api/legacy/v2/class-wc-api-orders.php:910
+#: includes/api/legacy/v3/class-wc-api-orders.php:954
 msgid "Product quantity is required."
 msgstr "Tuotteen määrä tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:960
-#: includes/api/legacy/v3/class-wc-api-orders.php:1007
+#: includes/api/legacy/v2/class-wc-api-orders.php:953
+#: includes/api/legacy/v3/class-wc-api-orders.php:998
 msgid "Cannot create line item, try again."
 msgstr "Tuoteriviä ei voi luoda, yritä uudelleen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1036
-#: includes/api/legacy/v3/class-wc-api-orders.php:1083
+#: includes/api/legacy/v2/class-wc-api-orders.php:1029
+#: includes/api/legacy/v3/class-wc-api-orders.php:1074
 msgid "Shipping total must be a positive amount."
 msgstr "Toimituskulut yhteensä on oltava positiivinen luku."
 
 #: includes/api/class-wc-rest-orders-controller.php:683
-#: includes/api/legacy/v2/class-wc-api-orders.php:1043
-#: includes/api/legacy/v3/class-wc-api-orders.php:1090
+#: includes/api/legacy/v2/class-wc-api-orders.php:1036
+#: includes/api/legacy/v3/class-wc-api-orders.php:1081
 #: includes/api/v1/class-wc-rest-orders-controller.php:693
 msgid "Shipping method ID is required."
 msgstr "Toimitustavan tunnus/ID tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1070
-#: includes/api/legacy/v3/class-wc-api-orders.php:1117
+#: includes/api/legacy/v2/class-wc-api-orders.php:1063
+#: includes/api/legacy/v3/class-wc-api-orders.php:1108
 msgid "Cannot update shipping method, try again."
 msgstr "Toimitustapaa ei voi päivittää, yritä uudelleen."
 
@@ -8453,31 +8916,31 @@ msgstr "Toimitustapaa ei voi päivittää, yritä uudelleen."
 msgid "Fee name is required."
 msgstr "Tiedoston nimi tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1101
-#: includes/api/legacy/v3/class-wc-api-orders.php:1148
+#: includes/api/legacy/v2/class-wc-api-orders.php:1094
+#: includes/api/legacy/v3/class-wc-api-orders.php:1139
 msgid "Fee tax class is required when fee is taxable."
 msgstr "Maksun veroluokka tarvitaan kun maksu on verollinen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1141
-#: includes/api/legacy/v3/class-wc-api-orders.php:1188
+#: includes/api/legacy/v2/class-wc-api-orders.php:1134
+#: includes/api/legacy/v3/class-wc-api-orders.php:1179
 msgid "Cannot update fee, try again."
 msgstr "Maksua ei voi päivittää, yritä uudelleen."
 
 #: includes/api/class-wc-rest-orders-controller.php:731
-#: includes/api/legacy/v2/class-wc-api-orders.php:1166
-#: includes/api/legacy/v3/class-wc-api-orders.php:1213
+#: includes/api/legacy/v2/class-wc-api-orders.php:1159
+#: includes/api/legacy/v3/class-wc-api-orders.php:1204
 #: includes/api/v1/class-wc-rest-orders-controller.php:739
 msgid "Coupon code is required."
 msgstr "Kupongin koodi tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1192
-#: includes/api/legacy/v3/class-wc-api-orders.php:1239
+#: includes/api/legacy/v2/class-wc-api-orders.php:1185
+#: includes/api/legacy/v3/class-wc-api-orders.php:1230
 msgid "Cannot update coupon, try again."
 msgstr "Kuponkia ei voi päivittää, yritä uudelleen."
 
 #: includes/api/class-wc-rest-orders-controller.php:768
-#: includes/api/legacy/v2/class-wc-api-orders.php:851
-#: includes/api/legacy/v3/class-wc-api-orders.php:897
+#: includes/api/legacy/v2/class-wc-api-orders.php:844
+#: includes/api/legacy/v3/class-wc-api-orders.php:888
 #: includes/api/v1/class-wc-rest-orders-controller.php:777
 msgid "Order item ID provided is not associated with order."
 msgstr "Annettu tuotteen tunnus/ID ei liity tilaukseen."
@@ -8487,86 +8950,86 @@ msgstr "Annettu tuotteen tunnus/ID ei liity tilaukseen."
 msgid "Shows if the product is on backordered."
 msgstr "Näyttää onko tuote jälkitoimituksessa."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:886
+#: includes/api/class-wc-rest-product-variations-controller.php:896
 #: includes/api/v1/class-wc-rest-products-controller.php:2479
 msgid "Variation image data."
 msgstr "Muunnelman kuvan tiedot."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:850
+#: includes/api/class-wc-rest-product-variations-controller.php:860
 #: includes/api/v1/class-wc-rest-products-controller.php:2443
 msgid "Variation dimensions."
 msgstr "Muunnelman mitat."
 
 #. translators: %s: weight unit
-#: includes/api/class-wc-rest-product-variations-controller.php:845
+#: includes/api/class-wc-rest-product-variations-controller.php:855
 #: includes/api/v1/class-wc-rest-products-controller.php:2438
 msgid "Variation weight (%s)."
 msgstr "Muunnelman paino (%s)."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:838
+#: includes/api/class-wc-rest-product-variations-controller.php:848
 #: includes/api/v1/class-wc-rest-products-controller.php:2431
 msgid "Shows if the variation is on backordered."
 msgstr "Näyttää jos muunnelma on jälkitoimituksessa."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:752
+#: includes/api/class-wc-rest-product-variations-controller.php:762
 #: includes/api/v1/class-wc-rest-products-controller.php:2345
 msgid "If the variation is downloadable."
 msgstr "Jos muunnelma on ladattava."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:746
+#: includes/api/class-wc-rest-product-variations-controller.php:756
 #: includes/api/v1/class-wc-rest-products-controller.php:2339
 msgid "If the variation is virtual."
 msgstr "Jos muunnelma on palvelu."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:740
+#: includes/api/class-wc-rest-product-variations-controller.php:750
 #: includes/api/v1/class-wc-rest-products-controller.php:2328
 msgid "Shows if the variation can be bought."
 msgstr "Näyttää jos muunnelman voi ostaa."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:728
+#: includes/api/class-wc-rest-product-variations-controller.php:738
 #: includes/api/v1/class-wc-rest-products-controller.php:2322
 msgid "Shows if the variation is on sale."
 msgstr "Näyttää jos muunnelma on alennuksessa."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:703
+#: includes/api/class-wc-rest-product-variations-controller.php:713
 #: includes/api/v1/class-wc-rest-products-controller.php:2307
 msgid "Variation sale price."
 msgstr "Muunnelman alennettu hinta."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:698
+#: includes/api/class-wc-rest-product-variations-controller.php:708
 #: includes/api/v1/class-wc-rest-products-controller.php:2302
 msgid "Variation regular price."
 msgstr "Muunnelman tavallinen hinta."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:692
+#: includes/api/class-wc-rest-product-variations-controller.php:702
 #: includes/api/v1/class-wc-rest-products-controller.php:2296
 msgid "Current variation price."
 msgstr "Nykyinen muunnelman hinta."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:680
+#: includes/api/class-wc-rest-product-variations-controller.php:690
 #: includes/api/v1/class-wc-rest-products-controller.php:2284
 msgid "Variation URL."
 msgstr "Muunnelman verkko-osoite."
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:868
+#: includes/api/class-wc-rest-product-variations-controller.php:878
 #: includes/api/v1/class-wc-rest-products-controller.php:2461
 msgid "Variation height (%s)."
 msgstr "Muunnelman korkeus (%s)."
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:862
+#: includes/api/class-wc-rest-product-variations-controller.php:872
 #: includes/api/v1/class-wc-rest-products-controller.php:2455
 msgid "Variation width (%s)."
 msgstr "Muunnelman leveys (%s)."
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:856
+#: includes/api/class-wc-rest-product-variations-controller.php:866
 #: includes/api/v1/class-wc-rest-products-controller.php:2449
 msgid "Variation length (%s)."
 msgstr "\tMuunnelman pituus (%s)."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:950
+#: includes/api/class-wc-rest-product-variations-controller.php:960
 #: includes/api/class-wc-rest-products-controller.php:1921
 #: includes/api/class-wc-rest-products-controller.php:1966
 #: includes/api/v1/class-wc-rest-products-controller.php:2199
@@ -8576,7 +9039,7 @@ msgstr "\tMuunnelman pituus (%s)."
 msgid "Attribute ID."
 msgstr "Ominaisuuden tunnus/ID."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:960
+#: includes/api/class-wc-rest-product-variations-controller.php:970
 #: includes/api/class-wc-rest-products-controller.php:1976
 #: includes/api/v1/class-wc-rest-products-controller.php:2251
 #: includes/api/v1/class-wc-rest-products-controller.php:2541
@@ -8620,12 +9083,12 @@ msgstr "Lista hyvityksistä."
 msgid "Line taxes."
 msgstr "Rivin verot."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:808
+#: includes/api/class-wc-rest-product-variations-controller.php:818
 #: includes/api/v1/class-wc-rest-products-controller.php:2401
 msgid "Stock management at variation level."
 msgstr "Varaston hallinta muunnelmien tasolla."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:819
+#: includes/api/class-wc-rest-product-variations-controller.php:829
 #: includes/api/v1/class-wc-rest-products-controller.php:2412
 msgid "Controls whether or not the variation is listed as \"in stock\" or \"out of stock\" on the frontend."
 msgstr "Asettaa kuinka muunnelma esitetään julkisella puolella; joko \"varastossa\" tai \"loppu varastosta\". "
@@ -8896,7 +9359,7 @@ msgid "Order key."
 msgstr "Tilauksen avain."
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:147
-#: includes/api/class-wc-rest-product-variations-controller.php:771
+#: includes/api/class-wc-rest-product-variations-controller.php:781
 #: includes/api/class-wc-rest-products-controller.php:1603
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:223
 #: includes/api/v1/class-wc-rest-products-controller.php:1886
@@ -8905,7 +9368,7 @@ msgid "File name."
 msgstr "Tiedoston nimi."
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:776
+#: includes/api/class-wc-rest-product-variations-controller.php:786
 #: includes/api/class-wc-rest-products-controller.php:1608
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:229
 #: includes/api/v1/class-wc-rest-products-controller.php:1891
@@ -8932,43 +9395,6 @@ msgstr "Sähköpostiosoite ei kelpaa."
 msgid "Invalid resource id for reassignment."
 msgstr "Uudelleenkohdistamiselle resurssin tunnus/ID ei kelpaa."
 
-#: includes/api/class-wc-rest-customers-controller.php:130
-msgid "The date the customer was created, in the site's timezone."
-msgstr "Päiväys jolloin asiakas luotiin, sivuston aikavyöhykkeellä."
-
-#: includes/api/class-wc-rest-customers-controller.php:142
-msgid "The date the customer was last modified, in the site's timezone."
-msgstr "Päiväys jolloin asiakasta viimeksi muokattiin, sivuston aikavyöhykkeellä."
-
-#: includes/api/class-wc-rest-customers-controller.php:154
-#: includes/api/v1/class-wc-rest-customers-controller.php:650
-msgid "The email address for the customer."
-msgstr "Asiakkaan sähköpostiosoite."
-
-#: includes/api/class-wc-rest-customers-controller.php:160
-#: includes/api/v1/class-wc-rest-customers-controller.php:656
-msgid "Customer first name."
-msgstr "Asiakkaan etunimi."
-
-#: includes/api/class-wc-rest-customers-controller.php:168
-#: includes/api/v1/class-wc-rest-customers-controller.php:664
-msgid "Customer last name."
-msgstr "Asiakkaan sukunimi."
-
-#: includes/api/class-wc-rest-customers-controller.php:182
-#: includes/api/v1/class-wc-rest-customers-controller.php:672
-msgid "Customer login name."
-msgstr "Asiakkaan kirjautumistunnus."
-
-#: includes/api/class-wc-rest-customers-controller.php:190
-#: includes/api/v1/class-wc-rest-customers-controller.php:680
-msgid "Customer password."
-msgstr "Asiakkaan salasana."
-
-#: includes/api/v1/class-wc-rest-customers-controller.php:685
-msgid "Last order data."
-msgstr "Tuoreimman tilauksen tiedot."
-
 #: includes/abstracts/abstract-wc-rest-terms-controller.php:66
 #: includes/api/class-wc-rest-coupons-controller.php:76
 #: includes/api/class-wc-rest-customers-controller.php:124
@@ -8980,7 +9406,7 @@ msgstr "Tuoreimman tilauksen tiedot."
 #: includes/api/class-wc-rest-payment-gateways-controller.php:54
 #: includes/api/class-wc-rest-product-categories-controller.php:103
 #: includes/api/class-wc-rest-product-reviews-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:657
+#: includes/api/class-wc-rest-product-variations-controller.php:667
 #: includes/api/class-wc-rest-products-controller.php:82
 #: includes/api/class-wc-rest-products-controller.php:1429
 #: includes/api/class-wc-rest-setting-options-controller.php:84
@@ -9019,6 +9445,43 @@ msgstr "Tuoreimman tilauksen tiedot."
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:615
 msgid "Unique identifier for the resource."
 msgstr "Muista poikkeava resurssin tunniste."
+
+#: includes/api/class-wc-rest-customers-controller.php:130
+msgid "The date the customer was created, in the site's timezone."
+msgstr "Päiväys jolloin asiakas luotiin, sivuston aikavyöhykkeellä."
+
+#: includes/api/class-wc-rest-customers-controller.php:142
+msgid "The date the customer was last modified, in the site's timezone."
+msgstr "Päiväys jolloin asiakasta viimeksi muokattiin, sivuston aikavyöhykkeellä."
+
+#: includes/api/class-wc-rest-customers-controller.php:154
+#: includes/api/v1/class-wc-rest-customers-controller.php:650
+msgid "The email address for the customer."
+msgstr "Asiakkaan sähköpostiosoite."
+
+#: includes/api/class-wc-rest-customers-controller.php:160
+#: includes/api/v1/class-wc-rest-customers-controller.php:656
+msgid "Customer first name."
+msgstr "Asiakkaan etunimi."
+
+#: includes/api/class-wc-rest-customers-controller.php:168
+#: includes/api/v1/class-wc-rest-customers-controller.php:664
+msgid "Customer last name."
+msgstr "Asiakkaan sukunimi."
+
+#: includes/api/class-wc-rest-customers-controller.php:182
+#: includes/api/v1/class-wc-rest-customers-controller.php:672
+msgid "Customer login name."
+msgstr "Asiakkaan kirjautumistunnus."
+
+#: includes/api/class-wc-rest-customers-controller.php:190
+#: includes/api/v1/class-wc-rest-customers-controller.php:680
+msgid "Customer password."
+msgstr "Asiakkaan salasana."
+
+#: includes/api/v1/class-wc-rest-customers-controller.php:685
+msgid "Last order data."
+msgstr "Tuoreimman tilauksen tiedot."
 
 #: includes/api/v1/class-wc-rest-customers-controller.php:691
 msgid "Last order ID."
@@ -9151,8 +9614,8 @@ msgstr "Puhelinnumero."
 msgid "List of shipping address data."
 msgstr "Toimitusosoitteen tietojen lista."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1323
-#: includes/api/legacy/v3/class-wc-api-orders.php:1370
+#: includes/api/legacy/v2/class-wc-api-orders.php:1316
+#: includes/api/legacy/v3/class-wc-api-orders.php:1361
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:233
 msgid "Cannot create order note, please try again."
 msgstr "Tilauksen kommenttia ei voi luoda, yritä uudelleen ole hyvä."
@@ -9184,12 +9647,12 @@ msgid "Invalid order ID."
 msgstr "Tilauksen tilausnumero ei kelpaa."
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:195
-#: includes/api/legacy/v2/class-wc-api-orders.php:1518
-#: includes/api/legacy/v2/class-wc-api-orders.php:1680
-#: includes/api/legacy/v2/class-wc-api-orders.php:1741
-#: includes/api/legacy/v3/class-wc-api-orders.php:1565
-#: includes/api/legacy/v3/class-wc-api-orders.php:1727
-#: includes/api/legacy/v3/class-wc-api-orders.php:1788
+#: includes/api/legacy/v2/class-wc-api-orders.php:1511
+#: includes/api/legacy/v2/class-wc-api-orders.php:1673
+#: includes/api/legacy/v2/class-wc-api-orders.php:1734
+#: includes/api/legacy/v3/class-wc-api-orders.php:1556
+#: includes/api/legacy/v3/class-wc-api-orders.php:1718
+#: includes/api/legacy/v3/class-wc-api-orders.php:1779
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:133
 msgid "Invalid order refund ID."
 msgstr "Tilauksen hyvityksen tunnus/ID ei kelpaa."
@@ -9204,14 +9667,14 @@ msgid "Refund amount must be greater than zero."
 msgstr "Hyvityksen määrän on oltava suurempi kuin nolla."
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:296
-#: includes/api/legacy/v2/class-wc-api-orders.php:1617
-#: includes/api/legacy/v3/class-wc-api-orders.php:1664
+#: includes/api/legacy/v2/class-wc-api-orders.php:1610
+#: includes/api/legacy/v3/class-wc-api-orders.php:1655
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:308
 msgid "Cannot create order refund, please try again."
 msgstr "Ei voi luoda tilauksen hyvitystä, yritä uudelleen ole hyvä."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1634
-#: includes/api/legacy/v3/class-wc-api-orders.php:1681
+#: includes/api/legacy/v2/class-wc-api-orders.php:1627
+#: includes/api/legacy/v3/class-wc-api-orders.php:1672
 #: includes/wc-order-functions.php:642
 msgid "An error occurred while attempting to create the refund using the payment gateway API."
 msgstr "Virhe kun yritettiin luoda hyvitystä käyttäen maksukäytävän rajapintaa/API."
@@ -9233,6 +9696,17 @@ msgstr "Hyvityksen määrä."
 msgid "Line items data."
 msgstr "Tuoterivien tiedot."
 
+#: includes/api/class-wc-rest-customer-downloads-controller.php:99
+#: includes/api/class-wc-rest-order-refunds-controller.php:433
+#: includes/api/class-wc-rest-orders-controller.php:1174
+#: includes/api/class-wc-rest-products-controller.php:1435
+#: includes/api/v1/class-wc-rest-order-refunds-controller.php:380
+#: includes/api/v1/class-wc-rest-orders-controller.php:1218
+#: includes/api/v1/class-wc-rest-products-controller.php:1740
+#: includes/api/v1/class-wc-rest-report-top-sellers-controller.php:152
+msgid "Product name."
+msgstr "Tuotteen nimi."
+
 #: includes/api/class-wc-rest-order-refunds-controller.php:427
 #: includes/api/class-wc-rest-orders-controller.php:1168
 #: includes/api/class-wc-rest-orders-controller.php:1296
@@ -9247,17 +9721,6 @@ msgstr "Tuoterivien tiedot."
 #: includes/api/v1/class-wc-rest-orders-controller.php:1529
 msgid "Item ID."
 msgstr "Tuotteen tunnus/ID."
-
-#: includes/api/class-wc-rest-customer-downloads-controller.php:99
-#: includes/api/class-wc-rest-order-refunds-controller.php:433
-#: includes/api/class-wc-rest-orders-controller.php:1174
-#: includes/api/class-wc-rest-products-controller.php:1435
-#: includes/api/v1/class-wc-rest-order-refunds-controller.php:380
-#: includes/api/v1/class-wc-rest-orders-controller.php:1218
-#: includes/api/v1/class-wc-rest-products-controller.php:1740
-#: includes/api/v1/class-wc-rest-report-top-sellers-controller.php:152
-msgid "Product name."
-msgstr "Tuotteen nimi."
 
 #: includes/api/v1/class-wc-rest-customers-controller.php:412
 msgid "Username isn't editable."
@@ -9434,6 +9897,7 @@ msgstr "Teemassa on woocommerce.php -tiedosto. Et voi ohittaa woocommerce/archiv
 #: includes/admin/views/html-notice-template-check.php:13
 #: includes/admin/views/html-notice-theme-support.php:12
 #: includes/admin/views/html-notice-updated.php:12
+#: includes/admin/views/html-notice-wootenberg.php:12
 #: includes/wc-template-functions.php:969
 msgid "Dismiss"
 msgstr "Piilota tämä ilmoitus"
@@ -9463,7 +9927,7 @@ msgstr "alueiden joukko joka voidaan osoittaa eri toimitustavoille ja -maksuille
 msgid "Archive template"
 msgstr "Arkiston sivupohja"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:120
+#: includes/admin/settings/views/html-webhooks-edit.php:123
 msgid "The secret key is used to generate a hash of the delivered webhook and provided in the request headers."
 msgstr "Salaista avainta käytetään toimitetun verkkotoimintokutsun salausavaimen luomisessa ja joka on pyynnön headereissa."
 
@@ -9753,7 +10217,7 @@ msgstr "Veron tila"
 msgid "Stock quantity"
 msgstr "Varaston määrä"
 
-#: includes/admin/class-wc-admin-assets.php:332
+#: includes/admin/class-wc-admin-assets.php:333
 msgid "Are you sure you wish to delete this note? This action cannot be undone."
 msgstr "Haluatko varmasti poistaa tämän kommentin? Toimintoa ei voi perua."
 
@@ -9761,11 +10225,11 @@ msgstr "Haluatko varmasti poistaa tämän kommentin? Toimintoa ei voi perua."
 #: includes/abstracts/abstract-wc-rest-controller.php:103
 #: includes/api/legacy/v2/class-wc-api-coupons.php:529
 #: includes/api/legacy/v2/class-wc-api-customers.php:792
-#: includes/api/legacy/v2/class-wc-api-orders.php:1789
+#: includes/api/legacy/v2/class-wc-api-orders.php:1782
 #: includes/api/legacy/v2/class-wc-api-products.php:2306
 #: includes/api/legacy/v3/class-wc-api-coupons.php:529
 #: includes/api/legacy/v3/class-wc-api-customers.php:782
-#: includes/api/legacy/v3/class-wc-api-orders.php:1836
+#: includes/api/legacy/v3/class-wc-api-orders.php:1827
 #: includes/api/legacy/v3/class-wc-api-products.php:3119
 #: includes/api/legacy/v3/class-wc-api-taxes.php:465
 msgid "Unable to accept more than %s items for this request."
@@ -9878,7 +10342,7 @@ msgstr "Tunnus/ID ei kelpaa."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:421
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:438
-#: includes/api/class-wc-rest-product-variations-controller.php:520
+#: includes/api/class-wc-rest-product-variations-controller.php:530
 #: includes/api/class-wc-rest-products-controller.php:1336
 #: includes/api/v1/class-wc-rest-products-controller.php:1656
 msgid "Sorry, you are not allowed to delete %s."
@@ -9887,7 +10351,7 @@ msgstr "Pahoittelemme, et voi poistaa %s."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:442
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:457
-#: includes/api/class-wc-rest-product-variations-controller.php:549
+#: includes/api/class-wc-rest-product-variations-controller.php:559
 #: includes/api/class-wc-rest-products-controller.php:1378
 #: includes/api/v1/class-wc-rest-products-controller.php:1689
 msgid "The %s has already been deleted."
@@ -9896,7 +10360,7 @@ msgstr "%s on jo poistettu."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:452
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:467
-#: includes/api/class-wc-rest-product-variations-controller.php:563
+#: includes/api/class-wc-rest-product-variations-controller.php:573
 #: includes/api/class-wc-rest-products-controller.php:1392
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:316
 #: includes/api/v1/class-wc-rest-products-controller.php:1700
@@ -10003,7 +10467,7 @@ msgstr "Kupongit ovat hyvä tapa tarjota alennuksia ja palkita asiakkaita. Kun n
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:435
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:451
-#: includes/api/class-wc-rest-product-variations-controller.php:538
+#: includes/api/class-wc-rest-product-variations-controller.php:548
 #: includes/api/class-wc-rest-products-controller.php:1367
 #: includes/api/v1/class-wc-rest-products-controller.php:1683
 msgid "The %s does not support trashing."
@@ -10114,7 +10578,7 @@ msgstr "Tallenna tiliin"
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:235
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:404
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:499
+#: includes/api/class-wc-rest-product-variations-controller.php:509
 #: includes/api/class-wc-rest-products-controller.php:1307
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:303
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:460
@@ -10220,7 +10684,7 @@ msgstr "Yhdysvallat (USA) Neitsytsaaret"
 msgid "Samoa"
 msgstr "Samoa"
 
-#: includes/admin/class-wc-admin-assets.php:383
+#: includes/admin/class-wc-admin-assets.php:384
 #: includes/admin/views/html-admin-page-status-report.php:46
 msgid "Copying to clipboard failed. Please press Ctrl/Cmd+C to copy."
 msgstr "Kopiointi leikepöydälle ei onnistunut. Kun haluat kopioida, paina Ctrl/Cmd+C -näppäimiä."
@@ -10271,7 +10735,7 @@ msgstr "Piilota tyhjät osastot"
 
 #. translators: %s: taxes
 #. translators: %s: tax information
-#: includes/class-wc-order.php:177 includes/wc-cart-functions.php:317
+#: includes/class-wc-order.php:173 includes/wc-cart-functions.php:317
 msgid "(includes %s)"
 msgstr "(sisältää %s)"
 
@@ -10299,7 +10763,7 @@ msgstr "[{site_title}] Epäonnistunut tilaus ({order_number})"
 msgid "Invalid product ID."
 msgstr "Tuotetunnus/ID ei kelpaa."
 
-#: includes/class-wc-countries.php:1117
+#: includes/class-wc-countries.php:1128
 msgid "ZIP"
 msgstr "Postinumero"
 
@@ -10361,7 +10825,7 @@ msgstr "Veroluokkaa ei voitu poistaa"
 msgid "You do not have permission to read the tax classes count"
 msgstr "Et voi lukea veroluokkien lukumäärää. Tarvitset laajemmat oikeudet"
 
-#: includes/class-wc-countries.php:1015
+#: includes/class-wc-countries.php:1021
 msgid "State / Zone"
 msgstr "Alue / vyöhyke"
 
@@ -10751,7 +11215,7 @@ msgstr "Kirjoita tämän ilmoituksen vastaanottajat (erota pilkulla)."
 msgid "%s removed."
 msgstr "%s poistettu."
 
-#: includes/class-wc-install.php:345
+#: includes/class-wc-install.php:349
 msgid "Monthly"
 msgstr "Kuukausittain"
 
@@ -10764,7 +11228,7 @@ msgstr "Tilaus"
 #. translators: %s: method
 #. translators: %s: payment method
 #. translators: %s: shipping method
-#: includes/abstracts/abstract-wc-order.php:1719
+#: includes/abstracts/abstract-wc-order.php:1726
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:251
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:303
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:320
@@ -10793,7 +11257,7 @@ msgstr "l j. F Y H:i:s"
 msgid "To track your order please enter your Order ID in the box below and press the \"Track\" button. This was given to you on your receipt and in the confirmation email you should have received."
 msgstr "Kun haluat seurata tilauksen etenemistä, kirjoita tilausnumero alla olevaan kenttään ja paina \"Seuraa\" painiketta. Tilausnumero on kuitissa ja tilausvahvistuksessa jonka olisi pitänyt saapua sinulle."
 
-#: includes/class-wc-privacy-exporters.php:334
+#: includes/class-wc-privacy-exporters.php:337
 #: templates/order/form-tracking.php:27
 msgid "Order ID"
 msgstr "Tilausnumero (ID)"
@@ -11502,7 +11966,7 @@ msgstr "Ale!"
 #: includes/admin/class-wc-admin-profile.php:89
 #: includes/admin/class-wc-admin-setup-wizard.php:2116
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:84
-#: includes/class-wc-countries.php:1231 includes/class-wc-form-handler.php:243
+#: includes/class-wc-countries.php:1242 includes/class-wc-form-handler.php:243
 #: templates/myaccount/form-edit-account.php:43
 #: templates/myaccount/form-login.php:90
 msgid "Email address"
@@ -11899,17 +12363,17 @@ msgid "Top rated products"
 msgstr "Parhaaksi arvotetut tuotteet"
 
 #: includes/class-wc-privacy-erasers.php:48
-#: includes/class-wc-privacy-exporters.php:183
+#: includes/class-wc-privacy-exporters.php:186
 msgid "Billing Address 2"
 msgstr "Laskutusosoite 2"
 
 #: includes/class-wc-privacy-erasers.php:59
-#: includes/class-wc-privacy-exporters.php:194
+#: includes/class-wc-privacy-exporters.php:197
 msgid "Shipping Address 2"
 msgstr "Toimitusosoite 2"
 
-#: includes/class-wc-privacy-exporters.php:145
-#: includes/class-wc-privacy-exporters.php:244
+#: includes/class-wc-privacy-exporters.php:148
+#: includes/class-wc-privacy-exporters.php:247
 msgid "IP Address"
 msgstr "IP osoite"
 
@@ -12399,10 +12863,6 @@ msgstr "Edistyneet valinnat"
 msgid "If your main PayPal email differs from the PayPal email entered above, input your main receiver email for your PayPal account here. This is used to validate IPN requests."
 msgstr "Jos PayPal sähköpostiosoitteesi on muu kuin ylle kirjoitamasi osoite, niin kirjoita pääasiallinen vastaanottava osoite tähän. Tätä käytetään IPN viestien todentamiseen."
 
-#: includes/gateways/paypal/includes/settings-paypal.php:78
-msgid "Optionally enable \"Payment Data Transfer\" (Profile > Profile and Settings > My Selling Tools > Website Preferences) and then copy your identity token here. This will allow payments to be verified without the need for PayPal IPN."
-msgstr "Valinnaisesti ota käyttöön 'Payment Data Transfer' (Profile > Profile and Settings > My Selling Tools > Website Preferences) ja kopioi ID merkki tähän. Tällöin maksut voidaan varmistaa ilman PayPal IPN menetelmää."
-
 #: includes/gateways/paypal/includes/settings-paypal.php:86
 msgid "Please enter a prefix for your invoice numbers. If you use your PayPal account for multiple stores ensure this prefix is unique as PayPal will not allow orders with the same invoice number."
 msgstr "Aseta etuliite laskuille. Jos myyt usean verkkokaupan kautta ja maksut ohjataan samalle PayPal-tilille niin varmista että etuliite on toisista poikkeava. PayPal ei salli laskuja joilla on sama numero. "
@@ -12470,10 +12930,6 @@ msgstr "Maksua ei hyväksytty - asiakkaan on kokeiltava toista korttia."
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:681
 msgid "Payment was declined by Simplify Commerce."
 msgstr "Simplify Commerce ei hyväksynyt maksua."
-
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:25
-msgid "Take payments via Simplify Commerce - uses simplify.js to create card tokens and the Simplify Commerce SDK. Requires SSL when sandbox is disabled."
-msgstr "Vastaanota maksuja Simplify Commerce:n kautta. Se käyttää simplify.js skriptiä luodessaan Simplify Commerce SDK. Tarvitsee SSL yhteyden kun ei käytetä hiekkalaatikkoa."
 
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:90
 msgid "Simplify Commerce by MasterCard"
@@ -12814,10 +13270,6 @@ msgstr "Testaustilan loki"
 msgid "Receiver email"
 msgstr "Vastaanotto s-postiosoite"
 
-#: includes/gateways/paypal/includes/settings-paypal.php:76
-msgid "PayPal identity token"
-msgstr "PayPal ID merkki (Identity Token)"
-
 #: includes/gateways/paypal/includes/settings-paypal.php:84
 msgid "Invoice prefix"
 msgstr "Maksun etuliite"
@@ -13062,6 +13514,18 @@ msgstr "Tilaus #%1$s on merkitty pysäytetyksi perumisen takia – PayPal-selity
 msgid "Failed order emails are sent to chosen recipient(s) when orders have been marked failed (if they were previously processing or on-hold)."
 msgstr "Epäonnistunut tilaus -sähköpostit lähetetään valituille vastaanottajille kun tilaus on merkitty epäonnistuneeksi (jos ne on sitä ennen merkitty odottaa maksua tai pysäytetty tilaan)."
 
+#: includes/gateways/paypal/includes/settings-paypal.php:76
+msgid "PayPal identity token"
+msgstr "PayPal maksutietojen poletti"
+
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:25
+msgid "Take payments via Simplify Commerce - uses simplify.js to create card tokens and the Simplify Commerce SDK. Requires SSL when sandbox is disabled."
+msgstr "Vastaanota maksuja Simplify Commerce:n kautta. Se käyttää simplify.js skriptiä luodessaan maksutietojen poletteja ja Simplify Commerce SDK. Tarvitsee SSL yhteyden kun ei käytetä hiekkalaatikkoa."
+
+#: includes/gateways/paypal/includes/settings-paypal.php:78
+msgid "Optionally enable \"Payment Data Transfer\" (Profile > Profile and Settings > My Selling Tools > Website Preferences) and then copy your identity token here. This will allow payments to be verified without the need for PayPal IPN."
+msgstr "Valinnaisesti ota käyttöön 'Payment Data Transfer' (Profile > Profile and Settings > My Selling Tools > Website Preferences) ja kopioi maksutietojen poletti tähän. Tällöin maksut voidaan varmistaa ilman PayPal IPN menetelmää."
+
 #: includes/api/legacy/v2/class-wc-api-products.php:2248
 msgid "Invalid product SKU"
 msgstr "Tuotetunnus -SKU- ei ole kelvollinen"
@@ -13166,11 +13630,7 @@ msgstr "%s ei ole kelvollinen verkko-osoite URL"
 msgid "An error occurred in the request and at the time were unable to send the consumer data"
 msgstr "Pyynnössä tapahtui virhe ja silloin ei voitu lähettää asiakkaan tietoja"
 
-#: includes/class-wc-auth.php:322
-msgid "API disabled!"
-msgstr "API ei ole käytössä!"
-
-#: includes/class-wc-auth.php:379
+#: includes/class-wc-auth.php:375
 msgid "Invalid nonce verification"
 msgstr "Kertakäyttöavaimen -nonce- varmistuksen tulos ei kelpaa"
 
@@ -13245,39 +13705,39 @@ msgstr "Maksutapa ei kelpaa."
 msgid "Please rate the product."
 msgstr "Arvostele tuote, ole hyvä."
 
-#: includes/class-wc-countries.php:378
+#: includes/class-wc-countries.php:379
 msgid "to the"
 msgstr "->"
 
-#: includes/class-wc-countries.php:378
+#: includes/class-wc-countries.php:379
 msgid "to"
 msgstr "->"
 
-#: includes/class-wc-countries.php:392
+#: includes/class-wc-countries.php:393
 msgid "the"
 msgstr "-"
 
-#: includes/class-wc-countries.php:403
+#: includes/class-wc-countries.php:404
 msgid "VAT"
 msgstr "alv./VAT"
 
-#: includes/class-wc-countries.php:414
+#: includes/class-wc-countries.php:415
 msgid "(incl. VAT)"
 msgstr "(sis. alv.)"
 
-#: includes/class-wc-countries.php:414
+#: includes/class-wc-countries.php:415
 msgid "(incl. tax)"
 msgstr "(verollinen)"
 
-#: includes/class-wc-countries.php:425
+#: includes/class-wc-countries.php:426
 msgid "(ex. VAT)"
 msgstr "(ei sis. alv.)"
 
-#: includes/class-wc-countries.php:425
+#: includes/class-wc-countries.php:426
 msgid "(ex. tax)"
 msgstr "(veroton)"
 
-#: includes/class-wc-countries.php:664
+#: includes/class-wc-countries.php:665
 msgid "Town / City"
 msgstr "Postitoimipaikka"
 
@@ -13285,7 +13745,7 @@ msgstr "Postitoimipaikka"
 #: includes/admin/class-wc-admin-profile.php:140
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:79
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:130
-#: includes/class-wc-countries.php:672
+#: includes/class-wc-countries.php:673
 #: templates/cart/shipping-calculator.php:55
 #: templates/cart/shipping-calculator.php:60
 #: templates/cart/shipping-calculator.php:72
@@ -13300,56 +13760,56 @@ msgstr "Lääni / alue ym."
 #: includes/admin/settings/class-wc-settings-general.php:100
 #: includes/admin/settings/class-wc-settings-tax.php:195
 #: includes/admin/settings/views/html-settings-tax.php:28
-#: includes/class-wc-countries.php:680
+#: includes/class-wc-countries.php:681
 #: templates/cart/shipping-calculator.php:91
 msgid "Postcode / ZIP"
 msgstr "Postinumero"
 
-#: includes/class-wc-countries.php:757
+#: includes/class-wc-countries.php:758
 msgid "Suburb"
 msgstr "Lähiö"
 
-#: includes/class-wc-countries.php:779
+#: includes/class-wc-countries.php:780
 msgid "District"
 msgstr "Alue"
 
-#: includes/class-wc-countries.php:788 includes/class-wc-countries.php:810
-#: includes/class-wc-countries.php:835 includes/class-wc-countries.php:916
-#: includes/class-wc-countries.php:955 includes/class-wc-countries.php:993
-#: includes/class-wc-countries.php:1077 includes/class-wc-countries.php:1112
-#: includes/class-wc-countries.php:1159
+#: includes/class-wc-countries.php:789 includes/class-wc-countries.php:816
+#: includes/class-wc-countries.php:841 includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:961 includes/class-wc-countries.php:999
+#: includes/class-wc-countries.php:1083 includes/class-wc-countries.php:1123
+#: includes/class-wc-countries.php:1170
 msgid "Province"
 msgstr "Provinssi"
 
-#: includes/class-wc-countries.php:818
+#: includes/class-wc-countries.php:824
 msgid "Canton"
 msgstr "Piirikunta"
 
-#: includes/class-wc-countries.php:830 includes/class-wc-countries.php:906
-#: includes/class-wc-countries.php:1002
+#: includes/class-wc-countries.php:836 includes/class-wc-countries.php:912
+#: includes/class-wc-countries.php:1008
 msgid "Region"
 msgstr "Alue"
 
-#: includes/class-wc-countries.php:903
+#: includes/class-wc-countries.php:909
 msgid "Town / District"
 msgstr "Kaupunki / alue"
 
-#: includes/class-wc-countries.php:911 includes/class-wc-countries.php:925
-#: includes/class-wc-countries.php:1041 includes/class-wc-countries.php:1128
+#: includes/class-wc-countries.php:917 includes/class-wc-countries.php:931
+#: includes/class-wc-countries.php:1047 includes/class-wc-countries.php:1139
 msgid "County"
 msgstr "Kunta"
 
-#: includes/class-wc-countries.php:960
+#: includes/class-wc-countries.php:966
 msgid "Prefecture"
 msgstr "Prefektuuri"
 
-#: includes/class-wc-countries.php:1085
+#: includes/class-wc-countries.php:1091
 msgid "Municipality"
 msgstr "Kunta"
 
 #: includes/class-wc-privacy-erasers.php:54
-#: includes/class-wc-privacy-exporters.php:189
-#: includes/class-wc-privacy-exporters.php:249
+#: includes/class-wc-privacy-exporters.php:192
+#: includes/class-wc-privacy-exporters.php:252
 msgid "Email Address"
 msgstr "Sähköpostiosoite"
 
@@ -13721,22 +14181,22 @@ msgid_plural "Refunded <span class=\"count\">(%s)</span>"
 msgstr[0] "Hyvitetty <span class=\"count\">(%s)</span>"
 msgstr[1] "Hyvitetty <span class=\"count\">(%s)</span>"
 
-#: includes/class-wc-install.php:391
+#: includes/class-wc-install.php:395
 msgctxt "Page slug"
 msgid "shop"
 msgstr "kauppa"
 
-#: includes/class-wc-install.php:396
+#: includes/class-wc-install.php:400
 msgctxt "Page slug"
 msgid "cart"
 msgstr "ostoskori"
 
-#: includes/class-wc-install.php:401
+#: includes/class-wc-install.php:405
 msgctxt "Page slug"
 msgid "checkout"
 msgstr "kassa"
 
-#: includes/class-wc-install.php:406
+#: includes/class-wc-install.php:410
 msgctxt "Page slug"
 msgid "my-account"
 msgstr "oma-tili"
@@ -13868,7 +14328,7 @@ msgctxt "Admin menu name"
 msgid "Shipping classes"
 msgstr "Toimitusluokat"
 
-#: includes/class-wc-countries.php:632
+#: includes/class-wc-countries.php:633
 #: includes/customizer/class-wc-shop-customizer.php:677
 msgid "Company name"
 msgstr "Yrityksen nimi"
@@ -13877,23 +14337,23 @@ msgstr "Yrityksen nimi"
 msgid "Product backorder"
 msgstr "Tuotteen jälkitoimitus"
 
-#: includes/class-wc-install.php:1056
+#: includes/class-wc-install.php:1090
 msgid "View WooCommerce settings"
 msgstr "Tarkastele WooCommerce asetuksia"
 
-#: includes/class-wc-install.php:1072
+#: includes/class-wc-install.php:1106
 msgid "View WooCommerce documentation"
 msgstr "Tarkastele WooCommerce seloste asiakirjoja"
 
-#: includes/class-wc-install.php:1073
+#: includes/class-wc-install.php:1107
 msgid "API docs"
 msgstr "API-ohjeet"
 
-#: includes/class-wc-install.php:1073
+#: includes/class-wc-install.php:1107
 msgid "View WooCommerce API docs"
 msgstr "Tarkastele WooCommerce API-ohjeita"
 
-#: includes/class-wc-install.php:1074
+#: includes/class-wc-install.php:1108
 msgid "Premium support"
 msgstr "Korkealuokkainen tukipalvelu"
 
@@ -14038,7 +14498,7 @@ msgstr "Asiakkaan salasana puuttuu."
 msgid "Item #%1$s stock increased from %2$s to %3$s."
 msgstr "Tuotteen #%1$s varastoa lisätty määrästä %2$s määrään %3$s."
 
-#: includes/class-wc-auth.php:405
+#: includes/class-wc-auth.php:401
 msgid "Access denied"
 msgstr "Pääsy kielletty"
 
@@ -14107,7 +14567,7 @@ msgstr "Verkkotoimintokutsun kohteen tunnus -ID- ei kelpaa."
 msgid "Invalid webhook delivery."
 msgstr "Verkkotoimintokutsun kohde ei kelpaa."
 
-#: includes/class-wc-auth.php:399
+#: includes/class-wc-auth.php:395
 msgid "You do not have permission to access this page"
 msgstr "Sivulle pääsy on rajoitettu. Tarvitset laajemmat oikeudet."
 
@@ -14183,10 +14643,6 @@ msgstr "Pisin aika (sekunteina) jonka sivustosi voi viettää yhtä tehtävää 
 msgid "The maximum number of variables your server can use for a single function to avoid overloads."
 msgstr "Suurin muuttujien lukumäärä jota palvelimesi voi käsitellä yhdessä funktiossa ilman että se ylikuormittuu."
 
-#: includes/admin/views/html-admin-page-status-report.php:233
-msgid "Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself. If enabled on your server, Suhosin may need to be configured to increase its data submission limits."
-msgstr "Suhosin on PHP asennuksia varten tehty, kehittynyt suojausjärjestelmä. Se suunniteltiin suojaamaan palvelimia tunnetuilta PHP sovellusten ongelmakohdilta ja myös vielä tuntemattomilta mutta mahdollisilta heikkouksilta PHP sovelluksissa tai PHP ytimessä itsessään. Jos Suhosin on käytössä palvelimellasi, niin sen data lähetys rajoja voidaan joutua kasvattamaan."
-
 #: includes/admin/views/html-admin-page-status-report.php:244
 msgid "The version of MySQL installed on your hosting server."
 msgstr "Palvelimellasi olevan MySQL tietokannan versio."
@@ -14203,6 +14659,10 @@ msgstr "Oletus aikavyöhyke on %s – sen pitäisi olla UTC"
 #: includes/admin/views/html-admin-page-status-report.php:278
 msgid "Payment gateways can use cURL to communicate with remote servers to authorize payments, other plugins may also use it when communicating with remote services."
 msgstr "Maksukäytävät voivat käyttää cURL menetelmää kun ne hakevat valtuutusta maksulle toiselta palvelimelta. Toiset lisäosat voivat käyttää sitä kun ne viestivät eri palveluiden kanssa."
+
+#: includes/admin/views/html-admin-page-status-report.php:233
+msgid "Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself. If enabled on your server, Suhosin may need to be configured to increase its data submission limits."
+msgstr "Suhosin on PHP asennuksia varten tehty, kehittynyt suojausjärjestelmä. Se suunniteltiin suojaamaan palvelimia tunnetuilta PHP sovellusten ongelmakohdilta ja myös vielä tuntemattomilta mutta mahdollisilta heikkouksilta PHP sovelluksissa tai PHP ytimessä itsessään. Jos Suhosin on käytössä palvelimellasi, niin sen data lähetys rajoja voidaan joutua kasvattamaan."
 
 #: includes/admin/views/html-admin-page-status-report.php:284
 msgid "Your server does not have fsockopen or cURL enabled - PayPal IPN and other scripts which communicate with other servers will not work. Contact your hosting provider."
@@ -14272,7 +14732,7 @@ msgstr "Hinnoissa näytettävien desimaalien lukumäärä."
 msgid "Does your site have REST API enabled?"
 msgstr "Onko sivustollasi käytössä REST API /rajapinta?"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:130
+#: includes/admin/settings/views/html-webhooks-edit.php:133
 msgid "API Version"
 msgstr "API-versio"
 
@@ -14511,17 +14971,17 @@ msgstr "Kupongin koodi ei kelpaa"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:212
 #: includes/api/legacy/v2/class-wc-api-customers.php:349
-#: includes/api/legacy/v2/class-wc-api-orders.php:367
-#: includes/api/legacy/v2/class-wc-api-orders.php:1292
-#: includes/api/legacy/v2/class-wc-api-orders.php:1585
+#: includes/api/legacy/v2/class-wc-api-orders.php:365
+#: includes/api/legacy/v2/class-wc-api-orders.php:1285
+#: includes/api/legacy/v2/class-wc-api-orders.php:1578
 #: includes/api/legacy/v2/class-wc-api-products.php:214
 #: includes/api/legacy/v2/class-wc-api-products.php:2019
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:171
 #: includes/api/legacy/v3/class-wc-api-coupons.php:210
 #: includes/api/legacy/v3/class-wc-api-customers.php:350
-#: includes/api/legacy/v3/class-wc-api-orders.php:404
-#: includes/api/legacy/v3/class-wc-api-orders.php:1339
-#: includes/api/legacy/v3/class-wc-api-orders.php:1632
+#: includes/api/legacy/v3/class-wc-api-orders.php:400
+#: includes/api/legacy/v3/class-wc-api-orders.php:1330
+#: includes/api/legacy/v3/class-wc-api-orders.php:1623
 #: includes/api/legacy/v3/class-wc-api-products.php:263
 #: includes/api/legacy/v3/class-wc-api-products.php:702
 #: includes/api/legacy/v3/class-wc-api-products.php:959
@@ -14538,6 +14998,24 @@ msgstr "Puuttuu %1$s tiedot jotta voidaan luoda %1$s"
 #: includes/api/legacy/v3/class-wc-api-coupons.php:217
 msgid "You do not have permission to create coupons"
 msgstr "Et voi luoda alennuskoodeja. Tarvitset laajemmat oikeudet."
+
+#. translators: %s: parameter
+#: includes/api/legacy/v1/class-wc-api-server.php:412
+#: includes/api/legacy/v2/class-wc-api-coupons.php:226
+#: includes/api/legacy/v2/class-wc-api-customers.php:363
+#: includes/api/legacy/v2/class-wc-api-products.php:228
+#: includes/api/legacy/v2/class-wc-api-products.php:1981
+#: includes/api/legacy/v2/class-wc-api-server.php:430
+#: includes/api/legacy/v3/class-wc-api-coupons.php:224
+#: includes/api/legacy/v3/class-wc-api-customers.php:364
+#: includes/api/legacy/v3/class-wc-api-products.php:277
+#: includes/api/legacy/v3/class-wc-api-products.php:2539
+#: includes/api/legacy/v3/class-wc-api-products.php:2938
+#: includes/api/legacy/v3/class-wc-api-server.php:431
+#: includes/api/legacy/v3/class-wc-api-taxes.php:575
+#: includes/class-wc-auth.php:171
+msgid "Missing parameter %s"
+msgstr "Parametri %s puuttuu"
 
 #: includes/api/class-wc-rest-coupons-controller.php:286
 #: includes/api/legacy/class-wc-rest-legacy-coupons-controller.php:129
@@ -14565,11 +15043,11 @@ msgstr "Alennuskoodin päivittäminen ei onnistunut."
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:521
 #: includes/api/legacy/v2/class-wc-api-customers.php:784
-#: includes/api/legacy/v2/class-wc-api-orders.php:1781
+#: includes/api/legacy/v2/class-wc-api-orders.php:1774
 #: includes/api/legacy/v2/class-wc-api-products.php:2298
 #: includes/api/legacy/v3/class-wc-api-coupons.php:521
 #: includes/api/legacy/v3/class-wc-api-customers.php:774
-#: includes/api/legacy/v3/class-wc-api-orders.php:1828
+#: includes/api/legacy/v3/class-wc-api-orders.php:1819
 #: includes/api/legacy/v3/class-wc-api-products.php:3111
 #: includes/api/legacy/v3/class-wc-api-taxes.php:457
 msgid "No %1$s data specified to create/edit %1$s"
@@ -14581,37 +15059,25 @@ msgstr "Puuttuu %1$s tiedot jotta voidaan luoda/muokata %1$s"
 msgid "You do not have permission to read the customers count"
 msgstr "Et voi lukea asiakkaiden lukumäärää. Tarvitset laajemmat oikeudet."
 
-#. translators: %s: parameter
-#: includes/api/legacy/v1/class-wc-api-server.php:412
-#: includes/api/legacy/v2/class-wc-api-coupons.php:226
-#: includes/api/legacy/v2/class-wc-api-customers.php:363
-#: includes/api/legacy/v2/class-wc-api-products.php:228
-#: includes/api/legacy/v2/class-wc-api-products.php:1981
-#: includes/api/legacy/v2/class-wc-api-server.php:430
-#: includes/api/legacy/v3/class-wc-api-coupons.php:224
-#: includes/api/legacy/v3/class-wc-api-customers.php:364
-#: includes/api/legacy/v3/class-wc-api-products.php:277
-#: includes/api/legacy/v3/class-wc-api-products.php:2539
-#: includes/api/legacy/v3/class-wc-api-products.php:2938
-#: includes/api/legacy/v3/class-wc-api-server.php:431
-#: includes/api/legacy/v3/class-wc-api-taxes.php:575
-#: includes/class-wc-auth.php:171
-msgid "Missing parameter %s"
-msgstr "Parametri %s puuttuu"
+#: includes/api/legacy/v1/class-wc-api-customers.php:202
+#: includes/api/legacy/v2/class-wc-api-customers.php:356
+#: includes/api/legacy/v3/class-wc-api-customers.php:357
+msgid "You do not have permission to create this customer"
+msgstr "Et voi tehdä tätä asiakasta. Tarvitset laajemmat oikeudet."
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:324
 #: includes/api/legacy/v2/class-wc-api-customers.php:404
-#: includes/api/legacy/v2/class-wc-api-orders.php:511
-#: includes/api/legacy/v2/class-wc-api-orders.php:1351
-#: includes/api/legacy/v2/class-wc-api-orders.php:1664
+#: includes/api/legacy/v2/class-wc-api-orders.php:504
+#: includes/api/legacy/v2/class-wc-api-orders.php:1344
+#: includes/api/legacy/v2/class-wc-api-orders.php:1657
 #: includes/api/legacy/v2/class-wc-api-products.php:323
 #: includes/api/legacy/v2/class-wc-api-products.php:2102
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:242
 #: includes/api/legacy/v3/class-wc-api-coupons.php:322
 #: includes/api/legacy/v3/class-wc-api-customers.php:405
-#: includes/api/legacy/v3/class-wc-api-orders.php:551
-#: includes/api/legacy/v3/class-wc-api-orders.php:1398
-#: includes/api/legacy/v3/class-wc-api-orders.php:1711
+#: includes/api/legacy/v3/class-wc-api-orders.php:542
+#: includes/api/legacy/v3/class-wc-api-orders.php:1389
+#: includes/api/legacy/v3/class-wc-api-orders.php:1702
 #: includes/api/legacy/v3/class-wc-api-products.php:377
 #: includes/api/legacy/v3/class-wc-api-products.php:779
 #: includes/api/legacy/v3/class-wc-api-products.php:1004
@@ -14622,12 +15088,6 @@ msgstr "Parametri %s puuttuu"
 #: includes/api/legacy/v3/class-wc-api-webhooks.php:242
 msgid "No %1$s data specified to edit %1$s"
 msgstr "Puuttuu %1$s tiedot jotta voidaan muokata %1$s"
-
-#: includes/api/legacy/v1/class-wc-api-customers.php:202
-#: includes/api/legacy/v2/class-wc-api-customers.php:356
-#: includes/api/legacy/v3/class-wc-api-customers.php:357
-msgid "You do not have permission to create this customer"
-msgstr "Et voi tehdä tätä asiakasta. Tarvitset laajemmat oikeudet."
 
 #: includes/api/legacy/v1/class-wc-api-customers.php:434
 #: includes/api/legacy/v2/class-wc-api-customers.php:719
@@ -14677,88 +15137,88 @@ msgstr "JSONP 'callback' toiminto ei kelpaa"
 msgid "You do not have permission to read the orders count"
 msgstr "Et voi lukea tilausten lukumäärää. Tarvitset laajemmat oikeudet."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:374
-#: includes/api/legacy/v3/class-wc-api-orders.php:411
+#: includes/api/legacy/v2/class-wc-api-orders.php:372
+#: includes/api/legacy/v3/class-wc-api-orders.php:407
 msgid "You do not have permission to create orders"
 msgstr "Et voi luoda tilauksia. Tarvitset laajemmat oikeudet."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:400
-#: includes/api/legacy/v3/class-wc-api-orders.php:437
+#: includes/api/legacy/v2/class-wc-api-orders.php:398
+#: includes/api/legacy/v3/class-wc-api-orders.php:433
 msgid "Cannot create order: %s"
 msgstr "Tilausta %s ei voi luoda"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:434
-#: includes/api/legacy/v3/class-wc-api-orders.php:476
+#: includes/api/legacy/v2/class-wc-api-orders.php:432
+#: includes/api/legacy/v3/class-wc-api-orders.php:472
 msgid "Payment method ID and title are required"
 msgstr "Maksutavan tunnus -ID- ja otsikko tarvitaan"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:872
-#: includes/api/legacy/v3/class-wc-api-orders.php:918
+#: includes/api/legacy/v2/class-wc-api-orders.php:865
+#: includes/api/legacy/v3/class-wc-api-orders.php:909
 msgid "Product ID or SKU is required"
 msgstr "Tuotteen ID tai tuotetunnus -SKU- tarvitaan"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:882
-#: includes/api/legacy/v3/class-wc-api-orders.php:928
+#: includes/api/legacy/v2/class-wc-api-orders.php:875
+#: includes/api/legacy/v3/class-wc-api-orders.php:919
 msgid "Product ID provided does not match this line item"
 msgstr "Tuotteelle annettu tunnus -ID- on sopimaton tämän rivin tuotteelle"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:897
-#: includes/api/legacy/v3/class-wc-api-orders.php:943
+#: includes/api/legacy/v2/class-wc-api-orders.php:890
+#: includes/api/legacy/v3/class-wc-api-orders.php:934
 msgid "The product variation is invalid"
 msgstr "Tuotteen muunnelma ei kelpaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1090
-#: includes/api/legacy/v3/class-wc-api-orders.php:1137
+#: includes/api/legacy/v2/class-wc-api-orders.php:1083
+#: includes/api/legacy/v3/class-wc-api-orders.php:1128
 msgid "Fee title is required"
 msgstr "Maksun otsikko tarvitaan"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1259
-#: includes/api/legacy/v2/class-wc-api-orders.php:1369
-#: includes/api/legacy/v2/class-wc-api-orders.php:1433
-#: includes/api/legacy/v3/class-wc-api-orders.php:1306
-#: includes/api/legacy/v3/class-wc-api-orders.php:1416
-#: includes/api/legacy/v3/class-wc-api-orders.php:1480
+#: includes/api/legacy/v2/class-wc-api-orders.php:1252
+#: includes/api/legacy/v2/class-wc-api-orders.php:1362
+#: includes/api/legacy/v2/class-wc-api-orders.php:1426
+#: includes/api/legacy/v3/class-wc-api-orders.php:1297
+#: includes/api/legacy/v3/class-wc-api-orders.php:1407
+#: includes/api/legacy/v3/class-wc-api-orders.php:1471
 msgid "Invalid order note ID"
 msgstr "Tilauksen kommentin tunnus -ID- ei kelpaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1265
-#: includes/api/legacy/v2/class-wc-api-orders.php:1376
-#: includes/api/legacy/v2/class-wc-api-orders.php:1440
-#: includes/api/legacy/v3/class-wc-api-orders.php:1312
-#: includes/api/legacy/v3/class-wc-api-orders.php:1423
-#: includes/api/legacy/v3/class-wc-api-orders.php:1487
+#: includes/api/legacy/v2/class-wc-api-orders.php:1258
+#: includes/api/legacy/v2/class-wc-api-orders.php:1369
+#: includes/api/legacy/v2/class-wc-api-orders.php:1433
+#: includes/api/legacy/v3/class-wc-api-orders.php:1303
+#: includes/api/legacy/v3/class-wc-api-orders.php:1414
+#: includes/api/legacy/v3/class-wc-api-orders.php:1478
 msgid "An order note with the provided ID could not be found"
 msgstr "Annetulla tilauksen kommentin tunnuksella -ID- ei löytynyt kommenttia"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1299
-#: includes/api/legacy/v3/class-wc-api-orders.php:1346
+#: includes/api/legacy/v2/class-wc-api-orders.php:1292
+#: includes/api/legacy/v3/class-wc-api-orders.php:1337
 msgid "You do not have permission to create order notes"
 msgstr "Et voi luoda tilauksen kommentteja. Tarvitset laajemmat oikeudet."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1314
-#: includes/api/legacy/v3/class-wc-api-orders.php:1361
+#: includes/api/legacy/v2/class-wc-api-orders.php:1307
+#: includes/api/legacy/v3/class-wc-api-orders.php:1352
 msgid "Order note is required"
 msgstr "Tilaukselle tarvitaan kommentti"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1381
-#: includes/api/legacy/v2/class-wc-api-orders.php:1445
-#: includes/api/legacy/v3/class-wc-api-orders.php:1428
-#: includes/api/legacy/v3/class-wc-api-orders.php:1492
+#: includes/api/legacy/v2/class-wc-api-orders.php:1374
+#: includes/api/legacy/v2/class-wc-api-orders.php:1438
+#: includes/api/legacy/v3/class-wc-api-orders.php:1419
+#: includes/api/legacy/v3/class-wc-api-orders.php:1483
 msgid "The order note ID provided is not associated with the order"
 msgstr "Tilauksen kommentille annettu tunnus -ID- ei ole liitetty tilaukseen"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1452
-#: includes/api/legacy/v3/class-wc-api-orders.php:1499
+#: includes/api/legacy/v2/class-wc-api-orders.php:1445
+#: includes/api/legacy/v3/class-wc-api-orders.php:1490
 msgid "This order note cannot be deleted"
 msgstr "Tätä tilauksen kommenntia ei voi poistaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1457
-#: includes/api/legacy/v3/class-wc-api-orders.php:1504
+#: includes/api/legacy/v2/class-wc-api-orders.php:1450
+#: includes/api/legacy/v3/class-wc-api-orders.php:1495
 msgid "Permanently deleted order note"
 msgstr "Pysyvästi poistettu tilauksen kommennti"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1592
-#: includes/api/legacy/v3/class-wc-api-orders.php:1639
+#: includes/api/legacy/v2/class-wc-api-orders.php:1585
+#: includes/api/legacy/v3/class-wc-api-orders.php:1630
 msgid "You do not have permission to create order refunds"
 msgstr "Et voi luoda tilauksille hyvityksiä. Tarvitset laajemmat oikeudet."
 
@@ -14990,10 +15450,10 @@ msgstr "Pyyntötapaa ja URL koskevaa reittiä ei löytynyt"
 msgid "Templates"
 msgstr "Pohjat/mallinet"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:528
-#: includes/api/legacy/v2/class-wc-api-orders.php:1598
-#: includes/api/legacy/v3/class-wc-api-orders.php:568
-#: includes/api/legacy/v3/class-wc-api-orders.php:1645
+#: includes/api/legacy/v2/class-wc-api-orders.php:521
+#: includes/api/legacy/v2/class-wc-api-orders.php:1591
+#: includes/api/legacy/v3/class-wc-api-orders.php:559
+#: includes/api/legacy/v3/class-wc-api-orders.php:1636
 msgid "Order ID is invalid"
 msgstr "Tilauksen tilausnumero ei kelpaa"
 
@@ -15094,41 +15554,41 @@ msgstr "WooCommerce API /rajapinta. Käytä asiakasavainta käyttäjätunnus -ke
 msgid "Invalid customer email"
 msgstr "Asiakkaan sähköposti ei kelpaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:450
-#: includes/api/legacy/v2/class-wc-api-orders.php:607
-#: includes/api/legacy/v3/class-wc-api-orders.php:492
-#: includes/api/legacy/v3/class-wc-api-orders.php:646
+#: includes/api/legacy/v2/class-wc-api-orders.php:448
+#: includes/api/legacy/v2/class-wc-api-orders.php:600
+#: includes/api/legacy/v3/class-wc-api-orders.php:488
+#: includes/api/legacy/v3/class-wc-api-orders.php:637
 msgid "Provided order currency is invalid."
 msgstr "Tilaukselle valittu valuutta ei kelpaa."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1159
-#: includes/api/legacy/v3/class-wc-api-orders.php:1206
+#: includes/api/legacy/v2/class-wc-api-orders.php:1152
+#: includes/api/legacy/v3/class-wc-api-orders.php:1197
 msgid "Coupon discount total must be a positive amount."
 msgstr "Kuponkien alennusten summa on oltava positiivinen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1525
-#: includes/api/legacy/v2/class-wc-api-orders.php:1687
-#: includes/api/legacy/v2/class-wc-api-orders.php:1748
-#: includes/api/legacy/v3/class-wc-api-orders.php:1572
-#: includes/api/legacy/v3/class-wc-api-orders.php:1734
-#: includes/api/legacy/v3/class-wc-api-orders.php:1795
+#: includes/api/legacy/v2/class-wc-api-orders.php:1518
+#: includes/api/legacy/v2/class-wc-api-orders.php:1680
+#: includes/api/legacy/v2/class-wc-api-orders.php:1741
+#: includes/api/legacy/v3/class-wc-api-orders.php:1563
+#: includes/api/legacy/v3/class-wc-api-orders.php:1725
+#: includes/api/legacy/v3/class-wc-api-orders.php:1786
 msgid "An order refund with the provided ID could not be found."
 msgstr "Annetulla tilauksen hyvityksen tunnuksella -ID- ei löytynyt hyvitystä"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1605
-#: includes/api/legacy/v3/class-wc-api-orders.php:1652
+#: includes/api/legacy/v2/class-wc-api-orders.php:1598
+#: includes/api/legacy/v3/class-wc-api-orders.php:1643
 msgid "Refund amount is required."
 msgstr "Hyvityksen määrä tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1607
-#: includes/api/legacy/v3/class-wc-api-orders.php:1654
+#: includes/api/legacy/v2/class-wc-api-orders.php:1600
+#: includes/api/legacy/v3/class-wc-api-orders.php:1645
 msgid "Refund amount must be positive."
 msgstr "Hyvityksen määrän on oltava positiivinen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1692
-#: includes/api/legacy/v2/class-wc-api-orders.php:1753
-#: includes/api/legacy/v3/class-wc-api-orders.php:1739
-#: includes/api/legacy/v3/class-wc-api-orders.php:1800
+#: includes/api/legacy/v2/class-wc-api-orders.php:1685
+#: includes/api/legacy/v2/class-wc-api-orders.php:1746
+#: includes/api/legacy/v3/class-wc-api-orders.php:1730
+#: includes/api/legacy/v3/class-wc-api-orders.php:1791
 msgid "The order refund ID provided is not associated with the order."
 msgstr "Tilauksen hyvitykselle annettu tunnus -ID- ei ole liitetty tilaukseen."
 
@@ -15599,16 +16059,16 @@ msgstr "Toiminto"
 msgid "Custom"
 msgstr "Mukautettu"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:119
+#: includes/admin/settings/views/html-webhooks-edit.php:122
 msgid "Secret"
 msgstr "Salainen"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:156
-#: includes/admin/settings/views/html-webhooks-edit.php:165
+#: includes/admin/settings/views/html-webhooks-edit.php:159
+#: includes/admin/settings/views/html-webhooks-edit.php:168
 msgid "Created at"
 msgstr "Luotu"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:173
+#: includes/admin/settings/views/html-webhooks-edit.php:176
 msgid "Updated at"
 msgstr "Päivitetty"
 
@@ -15721,7 +16181,7 @@ msgstr "Helposti muistettava nimi verkkotoimintokutsulle. Oletus: Verkkotoiminto
 msgid "Select when the webhook will fire."
 msgstr "Aseta milloin verkkotoimintokutsu laukeaa."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:109
+#: includes/admin/settings/views/html-webhooks-edit.php:112
 msgid "URL where the webhook payload is delivered."
 msgstr "Verkko-osoite jonne verkkotoimintokutsun 'kuorma' toimitetaan."
 
@@ -15916,7 +16376,7 @@ msgstr "Tuote päivitetty"
 msgid "Product deleted"
 msgstr "Tuote poistettu"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:97
+#: includes/admin/settings/views/html-webhooks-edit.php:100
 msgid "Action event"
 msgstr "Toiminta tapahtuma"
 
@@ -15957,15 +16417,15 @@ msgstr "Lataa järjestelmän tila -raportti"
 msgid "Webhook data"
 msgstr "Verkkotoimintokutsun tiedot"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:98
+#: includes/admin/settings/views/html-webhooks-edit.php:101
 msgid "Enter the action that will trigger this webhook."
 msgstr "Kirjoita aihe joka laukaisee tämän verkkotoimintokutsun."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:149
+#: includes/admin/settings/views/html-webhooks-edit.php:152
 msgid "Webhook actions"
 msgstr "Verkkotoimintokutsun toiminnot"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:184
+#: includes/admin/settings/views/html-webhooks-edit.php:187
 msgid "Save webhook"
 msgstr "Tallenna verkkotoimintokutsu"
 
@@ -16230,7 +16690,7 @@ msgstr "Esitysjärjestys"
 msgid "Custom ordering position."
 msgstr "Mukautettu järjestys (paikka numerona)"
 
-#: includes/admin/class-wc-admin-assets.php:200
+#: includes/admin/class-wc-admin-assets.php:201
 #: includes/admin/meta-boxes/views/html-product-data-advanced.php:47
 #: includes/admin/settings/class-wc-settings-products.php:410
 msgid "Enable reviews"
@@ -16436,7 +16896,7 @@ msgstr "Määrä"
 #: includes/admin/meta-boxes/views/html-order-items.php:39
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:155
 #: includes/admin/settings/class-wc-settings-tax.php:29
-#: includes/class-wc-countries.php:403 includes/class-wc-order-item-tax.php:159
+#: includes/class-wc-countries.php:404 includes/class-wc-order-item-tax.php:159
 #: includes/class-wc-tax.php:762
 msgid "Tax"
 msgstr "Verot"
@@ -16450,7 +16910,7 @@ msgid "To edit this order change the status back to \"Pending\""
 msgstr "Vaihda tilauksen tila \"Odottaa maksua\" tilaksi jotta voit muokata tilausta. "
 
 #: includes/admin/meta-boxes/views/html-order-items.php:235
-#: includes/class-wc-order.php:1971
+#: includes/class-wc-order.php:1961
 msgid "Refund"
 msgstr "Hyvitys"
 
@@ -16961,7 +17421,7 @@ msgstr "Alennus alkaa (pvm)"
 msgid "Sale end date"
 msgstr "Alennus loppuu (pvm)"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:803
+#: includes/api/class-wc-rest-product-variations-controller.php:813
 #: includes/api/class-wc-rest-products-controller.php:1646
 #: includes/api/v1/class-wc-rest-products-controller.php:1936
 #: includes/api/v1/class-wc-rest-products-controller.php:2396
@@ -17004,13 +17464,13 @@ msgid "Purchase note"
 msgstr "Viesti ostajalle"
 
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:27
-#: includes/class-wc-privacy-exporters.php:346
+#: includes/class-wc-privacy-exporters.php:349
 #: includes/wc-account-functions.php:212
 msgid "Downloads remaining"
 msgstr "Latauksia jäljellä"
 
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:32
-#: includes/class-wc-privacy-exporters.php:358
+#: includes/class-wc-privacy-exporters.php:361
 msgid "Access expires"
 msgstr "Pääsy umpeutuu"
 
@@ -17241,7 +17701,7 @@ msgstr "Tilin luominen"
 msgid "General options"
 msgstr "Yleisasetukset"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:675
+#: includes/api/class-wc-rest-product-variations-controller.php:685
 msgid "Variation description."
 msgstr "Muunnelman kuvaus"
 
@@ -17270,7 +17730,7 @@ msgstr "Ladattavaa tiedostoa %1$s ei voi käyttää koska tiedoston muotoa ei hy
 msgid "Upsells are products which you recommend instead of the currently viewed product, for example, products that are more profitable or better quality or more expensive."
 msgstr "Parempi tuote -tuotteet ovat vaihtoehto näkyvissä olevalle tuotteelle. Tuoteen kate voi olla suurempi, se voi olla kalliimpi ja/tai se on ominaisuuksiltaan parempi tuote."
 
-#: includes/class-wc-privacy-exporters.php:242
+#: includes/class-wc-privacy-exporters.php:245
 msgid "Order Total"
 msgstr "Tilaus yhteensä"
 
@@ -17408,11 +17868,11 @@ msgid "Topic"
 msgstr "Aihe"
 
 #: includes/admin/class-wc-admin-webhooks-table-list.php:51
-#: includes/admin/settings/views/html-webhooks-edit.php:108
+#: includes/admin/settings/views/html-webhooks-edit.php:111
 msgid "Delivery URL"
 msgstr "Toimitus verkko-osoite"
 
-#: includes/class-wc-install.php:1072
+#: includes/class-wc-install.php:1106
 msgid "Docs"
 msgstr "Ohjeet"
 
@@ -17580,7 +18040,7 @@ msgstr "Suorita"
 #: includes/admin/class-wc-admin-profile.php:85
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:360
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:87
-#: includes/class-wc-countries.php:1221
+#: includes/class-wc-countries.php:1232
 #: includes/customizer/class-wc-shop-customizer.php:679
 msgid "Phone"
 msgstr "Puhelin"
@@ -17612,7 +18072,7 @@ msgstr "Laskutusosoitetta ei ole asetettu."
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:606
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:607
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:387
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:391
 #: includes/admin/meta-boxes/views/html-order-shipping.php:24
 #: includes/admin/settings/class-wc-settings-accounts.php:169
 #: includes/admin/settings/class-wc-settings-accounts.php:181
@@ -17638,23 +18098,23 @@ msgstr "Laskutusosoitetta ei ole asetettu."
 msgid "N/A"
 msgstr "Ei saatavilla/-tietoa"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:401
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:403
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:405
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:407
 #: includes/admin/meta-boxes/views/html-order-shipping.php:39
 #: includes/admin/meta-boxes/views/html-order-shipping.php:41
 msgid "Other"
 msgstr "Muu"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:413
-#: includes/class-wc-privacy-exporters.php:292
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:417
+#: includes/class-wc-privacy-exporters.php:295
 msgid "Transaction ID"
 msgstr "Tapahtuman tunnus ID"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:427
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:431
 msgid "Load shipping address"
 msgstr "Tuo toimitusosoite"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:438
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "No shipping address set."
 msgstr "Toimitusosoitetta ei ole asetettu."
 
@@ -17730,7 +18190,7 @@ msgstr "Varasto"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:165
 #: includes/admin/class-wc-admin-setup-wizard.php:881
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:424
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:428
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:99
 #: includes/admin/meta-boxes/views/html-order-shipping.php:17
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:79
@@ -17965,15 +18425,15 @@ msgstr "Siirrä palvelimelle/Lisää kuva"
 msgid "Webhook created on %s"
 msgstr "Verkkotoimintokutsu luotu %s"
 
-#: includes/admin/class-wc-admin-webhooks.php:255
+#: includes/admin/class-wc-admin-webhooks.php:229
 msgid "Webhook updated successfully."
 msgstr "Verkkotoimintokutsu päivitettiin."
 
-#: includes/admin/class-wc-admin-webhooks.php:259
+#: includes/admin/class-wc-admin-webhooks.php:233
 msgid "Webhook created successfully."
 msgstr "Verkkotoimintokutsu luotiin."
 
-#: includes/admin/class-wc-admin-webhooks.php:295
+#: includes/admin/class-wc-admin-webhooks.php:269
 #: includes/admin/settings/class-wc-settings-advanced.php:44
 msgid "Webhooks"
 msgstr "Verkkotoimintokutsut"
@@ -17996,7 +18456,7 @@ msgstr "Ladattavat tiedostot"
 msgid "Allow backorders?"
 msgstr "Hyväksy jälkitoimitukset?"
 
-#: includes/admin/class-wc-admin-webhooks.php:309
+#: includes/admin/class-wc-admin-webhooks.php:284
 msgid "Search webhooks"
 msgstr "Etsi verkkotoimintokutsuja"
 
@@ -18018,13 +18478,13 @@ msgid "Product transients cleared"
 msgstr "'Väliaikaisesti tarvitut tiedot' tyhjennetty"
 
 #. translators: %d: count
-#: includes/admin/class-wc-admin-webhooks.php:251
+#: includes/admin/class-wc-admin-webhooks.php:225
 msgid "%d webhook permanently deleted."
 msgid_plural "%d webhooks permanently deleted."
 msgstr[0] "%d verkkotoimintokutsu poistettu pysyvästi."
 msgstr[1] "%d verkkotoimintokutsua poistettu pysyvästi."
 
-#: includes/admin/class-wc-admin-webhooks.php:295
+#: includes/admin/class-wc-admin-webhooks.php:269
 msgid "Add webhook"
 msgstr "Lisää verkkotoimintokutsu"
 
@@ -18082,7 +18542,7 @@ msgstr "Laskutustiedot"
 msgid "Shipping details"
 msgstr "Toimitustiedot"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:501
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:505
 msgid "Customer provided note"
 msgstr "Asiakkaan lähettämä kommentti"
 
@@ -18098,7 +18558,7 @@ msgstr "Kaupan osastoja hallitaan tässä. Osastojen järjestystä voi muuttaa V
 msgid "Check this box if the coupon should not apply to items on sale. Per-item coupons will only work if the item is not on sale. Per-cart coupons will only work if there are items in the cart that are not on sale."
 msgstr "Valitse ruutu, kun kuponki ei kelpaa tarjoustuotteille. Tuotekohtainen kuponki kelpaa vain silloin, kun tuote ei ole tarjouksessa. Ostoskorikuponki kelpaa vain, kun ostoskorissa ei ole yhtään tarjoustuotetta."
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:502
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:506
 msgid "Customer notes about the order"
 msgstr "Asiakkaan kommentti tilauksesta"
 
@@ -18114,7 +18574,7 @@ msgstr "Seuraava askel"
 msgid "Delete WooCommerce tax rates"
 msgstr "Poista WooCommerce veroprosentit"
 
-#: includes/admin/class-wc-admin-webhooks.php:189
+#: includes/admin/class-wc-admin-webhooks-table-list.php:218
 msgid "You do not have permission to edit Webhooks"
 msgstr "Tarvitset laajemmat oikeudet verkkotoimintokutsujen muokkaamiseen"
 
@@ -18134,7 +18594,7 @@ msgstr "Tarvitset laajemmat oikeudet verkkotoimintokutsujen päivittämiseen"
 msgid "Order Status"
 msgstr "Tilauksen vaihe:"
 
-#: includes/class-wc-privacy-exporters.php:241
+#: includes/class-wc-privacy-exporters.php:244
 msgid "Order Date"
 msgstr "Tilauksen päiväys:"
 
@@ -18218,9 +18678,9 @@ msgstr "Tuote tallennettu."
 #: includes/admin/class-wc-admin-post-types.php:134
 #: includes/admin/class-wc-admin-post-types.php:153
 #: includes/admin/class-wc-admin-post-types.php:172
-#: includes/admin/settings/views/html-webhooks-edit.php:159
-#: includes/admin/settings/views/html-webhooks-edit.php:168
-#: includes/admin/settings/views/html-webhooks-edit.php:176
+#: includes/admin/settings/views/html-webhooks-edit.php:162
+#: includes/admin/settings/views/html-webhooks-edit.php:171
+#: includes/admin/settings/views/html-webhooks-edit.php:179
 #: includes/class-wc-webhook.php:397
 msgid "M j, Y @ G:i"
 msgstr "j.n.Y @ H:i"
@@ -18421,16 +18881,6 @@ msgstr "Käyttö / Raja"
 msgid "Expiry date"
 msgstr "Viim. voimassaolopäivä"
 
-#: includes/admin/class-wc-admin-dashboard.php:347
-#: includes/admin/class-wc-admin-menus.php:123
-#: includes/admin/class-wc-admin-webhooks-table-list.php:49
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:116
-#: includes/admin/meta-boxes/views/html-product-data-variations.php:58
-#: includes/admin/settings/views/html-webhooks-edit.php:36
-#: includes/wc-account-functions.php:192 templates/myaccount/my-orders.php:15
-msgid "Status"
-msgstr "Vaihe"
-
 #: includes/admin/class-wc-admin-dashboard.php:346
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:114
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:169
@@ -18536,7 +18986,7 @@ msgstr "Käsittelyssä"
 msgid "Complete"
 msgstr "Valmis"
 
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:649
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:652
 msgid "Order status changed by bulk edit:"
 msgstr "Tilauksen vaihe vaihdettu massamuokkauksella:"
 
@@ -18617,7 +19067,7 @@ msgstr "Peruuta"
 #: includes/admin/class-wc-admin-profile.php:105
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:44
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:95
-#: includes/class-wc-countries.php:618 includes/class-wc-form-handler.php:240
+#: includes/class-wc-countries.php:619 includes/class-wc-form-handler.php:240
 #: templates/myaccount/form-edit-account.php:27
 msgid "First name"
 msgstr "Etunimi"
@@ -18626,7 +19076,7 @@ msgstr "Etunimi"
 #: includes/admin/class-wc-admin-profile.php:109
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:48
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:99
-#: includes/class-wc-countries.php:625 includes/class-wc-form-handler.php:241
+#: includes/class-wc-countries.php:626 includes/class-wc-form-handler.php:241
 #: templates/myaccount/form-edit-account.php:31
 msgid "Last name"
 msgstr "Sukunimi"
@@ -18650,8 +19100,8 @@ msgstr "Yritys"
 msgid "City"
 msgstr "Kaupunki"
 
-#: includes/class-wc-countries.php:760 includes/class-wc-countries.php:998
-#: includes/class-wc-countries.php:1125
+#: includes/class-wc-countries.php:761 includes/class-wc-countries.php:1004
+#: includes/class-wc-countries.php:1136
 msgid "Postcode"
 msgstr "Postinumero"
 
@@ -18662,7 +19112,7 @@ msgstr "Postinumero"
 #: includes/admin/class-wc-admin-setup-wizard.php:396
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:72
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:123
-#: includes/class-wc-countries.php:640
+#: includes/class-wc-countries.php:641
 msgid "Country"
 msgstr "Maa"
 
@@ -18686,7 +19136,7 @@ msgstr "Sähköposti"
 #: includes/admin/reports/class-wc-report-customer-list.php:215
 #: includes/admin/settings/class-wc-settings-advanced.php:222
 #: includes/class-wc-post-types.php:370
-#: includes/class-wc-privacy-exporters.php:73 includes/class-wc-query.php:109
+#: includes/class-wc-privacy-exporters.php:76 includes/class-wc-query.php:109
 #: includes/wc-account-functions.php:99
 msgid "Orders"
 msgstr "Tilaukset"
@@ -18865,21 +19315,21 @@ msgstr "yd (jaardi)"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:415
 #: includes/admin/class-wc-admin-setup-wizard.php:417
-#: includes/class-wc-countries.php:763 includes/class-wc-countries.php:1120
+#: includes/class-wc-countries.php:764 includes/class-wc-countries.php:1131
 msgid "State"
 msgstr "Osavaltio"
 
-#: includes/class-wc-install.php:392
+#: includes/class-wc-install.php:396
 msgctxt "Page title"
 msgid "Shop"
 msgstr "Kauppa"
 
-#: includes/class-wc-install.php:397
+#: includes/class-wc-install.php:401
 msgctxt "Page title"
 msgid "Cart"
 msgstr "Ostoskori"
 
-#: includes/class-wc-install.php:402
+#: includes/class-wc-install.php:406
 msgctxt "Page title"
 msgid "Checkout"
 msgstr "Kassa"
@@ -18945,7 +19395,7 @@ msgstr "Tuotekuvat"
 msgid "Publish your product!"
 msgstr "Julkaise tuote!"
 
-#: includes/class-wc-install.php:407
+#: includes/class-wc-install.php:411
 msgctxt "Page title"
 msgid "My account"
 msgstr "Oma tili"
@@ -18974,7 +19424,7 @@ msgstr "Tilauksen kommentit"
 #: includes/admin/class-wc-admin-webhooks-table-list.php:92
 #: includes/admin/class-wc-admin-webhooks-table-list.php:206
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:63
-#: includes/admin/settings/views/html-webhooks-edit.php:195
+#: includes/admin/settings/views/html-webhooks-edit.php:198
 msgid "Delete permanently"
 msgstr "Poista lopullisesti"
 
@@ -19041,7 +19491,7 @@ msgid "You can optionally \"tag\" your products here. Tags are a method of label
 msgstr "Voit valinnaisesti asettaa tässä avainsanan tuotteelle. Avainsanat ovat tuotteiden merkitesemistapa joka auttaa asiakasta helpommin löytämään tuotteen."
 
 #. translators: %d: orders count
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:689
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:692
 msgid "%d order status changed."
 msgid_plural "%d order statuses changed."
 msgstr[0] "%d tilauksen vaihe muutettu."
@@ -19050,6 +19500,16 @@ msgstr[1] "%d tilauksen vaihe muutettu."
 #: includes/admin/class-wc-admin-reports.php:114
 msgid "Most stocked"
 msgstr "Eniten varastossa"
+
+#: includes/admin/class-wc-admin-dashboard.php:347
+#: includes/admin/class-wc-admin-menus.php:123
+#: includes/admin/class-wc-admin-webhooks-table-list.php:49
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:116
+#: includes/admin/meta-boxes/views/html-product-data-variations.php:58
+#: includes/admin/settings/views/html-webhooks-edit.php:36
+#: includes/wc-account-functions.php:192 templates/myaccount/my-orders.php:15
+msgid "Status"
+msgstr "Tila"
 
 #: includes/admin/class-wc-admin-api-keys-table-list.php:48
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:470
@@ -19126,7 +19586,7 @@ msgstr "Lue/kirjoita"
 msgid "Unknown"
 msgstr "Tuntematon"
 
-#: includes/admin/class-wc-admin-notices.php:132
+#: includes/admin/class-wc-admin-notices.php:135
 #: includes/admin/class-wc-admin-status.php:271
 #: includes/admin/class-wc-admin-status.php:290
 #: includes/admin/class-wc-admin-status.php:306
@@ -19134,7 +19594,7 @@ msgstr "Tuntematon"
 msgid "Action failed. Please refresh the page and retry."
 msgstr "Toiminto ei onnistunut. Päivitä sivu ja yritä uudelleen."
 
-#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.4.1)  #-#-#-#-#
+#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.4.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/admin/class-wc-admin-assets.php:84
 #: includes/admin/class-wc-admin-menus.php:59
@@ -19142,8 +19602,8 @@ msgstr "Toiminto ei onnistunut. Päivitä sivu ja yritä uudelleen."
 #: includes/admin/helper/class-wc-helper.php:448
 #: includes/admin/helper/class-wc-helper.php:591
 #: includes/admin/helper/class-wc-helper.php:1338
-#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1638
-#: includes/class-wc-order.php:1639 includes/class-wc-privacy.php:31
+#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1628
+#: includes/class-wc-order.php:1629 includes/class-wc-privacy.php:31
 #: includes/customizer/class-wc-shop-customizer.php:36
 #: includes/wc-order-functions.php:913
 msgid "WooCommerce"
@@ -19162,115 +19622,115 @@ msgstr "Kirjoita kaksikirjaiminen maakoodi isoilla aakkosilla."
 msgid "Please enter in a value less than the regular price."
 msgstr "Kirjoita arvo joka on pienempi kuin normaali hinta."
 
-#: includes/admin/class-wc-admin-assets.php:229
+#: includes/admin/class-wc-admin-assets.php:230
 msgid "Enter a value"
 msgstr "Kirjoita arvo"
 
-#: includes/admin/class-wc-admin-assets.php:230
+#: includes/admin/class-wc-admin-assets.php:231
 msgid "Variation menu order (determines position in the list of variations)"
 msgstr "Muunnelmien järjestys (asettaa paikan muunnelmien listassa)"
 
-#: includes/admin/class-wc-admin-assets.php:231
+#: includes/admin/class-wc-admin-assets.php:232
 msgid "Enter a value (fixed or %)"
 msgstr "Kirjoita arvo (kiinteä määrä tai %)"
 
-#: includes/admin/class-wc-admin-assets.php:232
+#: includes/admin/class-wc-admin-assets.php:233
 msgid "Are you sure you want to delete all variations? This cannot be undone."
 msgstr "Haluatko varmasti poistaa kaikki muunnelmat? Toimintoa ei voi peruuttaa."
 
-#: includes/admin/class-wc-admin-assets.php:233
+#: includes/admin/class-wc-admin-assets.php:234
 msgid "Last warning, are you sure?"
 msgstr "Viimeinen varoitus, oletko varma?"
 
-#: includes/admin/class-wc-admin-assets.php:234
+#: includes/admin/class-wc-admin-assets.php:235
 #: includes/admin/class-wc-admin-taxonomies.php:135
 #: includes/admin/class-wc-admin-taxonomies.php:245
 msgid "Choose an image"
 msgstr "Valitse kuva"
 
-#: includes/admin/class-wc-admin-assets.php:235
+#: includes/admin/class-wc-admin-assets.php:236
 msgid "Set variation image"
 msgstr "Aseta muunnelman kuva"
 
-#: includes/admin/class-wc-admin-assets.php:236
+#: includes/admin/class-wc-admin-assets.php:237
 msgid "variation added"
 msgstr "muunnelma lisätty"
 
-#: includes/admin/class-wc-admin-assets.php:237
+#: includes/admin/class-wc-admin-assets.php:238
 msgid "variations added"
 msgstr "muunnelmat lisätty"
 
-#: includes/admin/class-wc-admin-assets.php:238
+#: includes/admin/class-wc-admin-assets.php:239
 msgid "No variations added"
 msgstr "Muunnelmia ei lisätty"
 
-#: includes/admin/class-wc-admin-assets.php:239
+#: includes/admin/class-wc-admin-assets.php:240
 msgid "Are you sure you want to remove this variation?"
 msgstr "Oletko varma, että haluat poistaa tämän muunnelman?"
 
-#: includes/admin/class-wc-admin-assets.php:240
+#: includes/admin/class-wc-admin-assets.php:241
 msgid "Sale start date (YYYY-MM-DD format or leave blank)"
 msgstr "Alennusmyynti alkaa (VVVV-KK-PP muotoilu tai jätä tyhjäksi) "
 
-#: includes/admin/class-wc-admin-assets.php:241
+#: includes/admin/class-wc-admin-assets.php:242
 msgid "Sale end date (YYYY-MM-DD format or leave blank)"
 msgstr "Alennusmyynti loppuu (VVVV-KK-PP muotoilu tai jätä tyhjäksi) "
 
-#: includes/admin/class-wc-admin-assets.php:242
+#: includes/admin/class-wc-admin-assets.php:243
 msgid "Save changes before changing page?"
 msgstr "Tallennetaanko muutokset ennen sivun vaihtoa? "
 
-#: includes/admin/class-wc-admin-assets.php:243
+#: includes/admin/class-wc-admin-assets.php:244
 msgid "%qty% variation"
 msgstr "%qty% muunnelma"
 
-#: includes/admin/class-wc-admin-assets.php:244
+#: includes/admin/class-wc-admin-assets.php:245
 msgid "%qty% variations"
 msgstr "%qty% muunnelmaa"
 
-#: includes/admin/class-wc-admin-assets.php:259
-#: includes/admin/class-wc-admin-assets.php:409
+#: includes/admin/class-wc-admin-assets.php:260
+#: includes/admin/class-wc-admin-assets.php:410
 #: includes/admin/settings/views/html-webhooks-edit.php:67
 #: includes/class-wc-frontend-scripts.php:566
 msgid "Select an option&hellip;"
 msgstr "Valitse joku vaihtoehto..."
 
-#: includes/admin/class-wc-admin-assets.php:282
+#: includes/admin/class-wc-admin-assets.php:283
 msgid "Are you sure you want to remove the selected items? If you have previously reduced this item's stock, or this order was submitted by a customer, you will need to manually restore the item's stock."
 msgstr "Oletko varma, että haluat poistaa valitut tuotteet? Jos olet aiemmin vähentänyt tämän tuotteen varastosta tai asiakas teki tilauksen (jolloin varastoa vähennettiin), niin tuotteen varastosaldo on manuaalisesti korotettava."
 
-#: includes/admin/class-wc-admin-assets.php:283
+#: includes/admin/class-wc-admin-assets.php:284
 msgid "Please select some items."
 msgstr "Valitse joitakin tuotteita, ole hyvä."
 
-#: includes/admin/class-wc-admin-assets.php:284
+#: includes/admin/class-wc-admin-assets.php:285
 msgid "Are you sure you wish to process this refund? This action cannot be undone."
 msgstr "Oletko varma, että haluat toteuttaa tämän hyvityksen? Toimintoa ei voi perua."
 
-#: includes/admin/class-wc-admin-assets.php:285
+#: includes/admin/class-wc-admin-assets.php:286
 msgid "Are you sure you wish to delete this refund? This action cannot be undone."
 msgstr "Oletko varma, että haluat poistaa tämän hyvityksen? Toimintoa ei voi perua."
 
-#: includes/admin/class-wc-admin-assets.php:286
+#: includes/admin/class-wc-admin-assets.php:287
 msgid "Are you sure you wish to delete this tax column? This action cannot be undone."
 msgstr "Oletko varma, että haluat poistaa tämän vero sarakkeen? Toimintoa ei voi perua."
 
-#: includes/admin/class-wc-admin-assets.php:287
+#: includes/admin/class-wc-admin-assets.php:288
 msgid "Remove this item meta?"
 msgstr "Poista kohteen lisätieto?"
 
-#: includes/admin/class-wc-admin-assets.php:288
+#: includes/admin/class-wc-admin-assets.php:289
 msgid "Remove this attribute?"
 msgstr "Poistetaanko tämä ominaisuus?"
 
-#: includes/admin/class-wc-admin-assets.php:290
+#: includes/admin/class-wc-admin-assets.php:291
 #: includes/admin/meta-boxes/views/html-product-attribute.php:8
 #: includes/admin/meta-boxes/views/html-variation-admin.php:16
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:54
 msgid "Remove"
 msgstr "Poista"
 
-#: includes/admin/class-wc-admin-assets.php:289
+#: includes/admin/class-wc-admin-assets.php:290
 #: includes/admin/class-wc-admin-attributes.php:187
 #: includes/admin/class-wc-admin-attributes.php:254
 #: includes/admin/class-wc-admin-attributes.php:289
@@ -19292,49 +19752,49 @@ msgstr "Poista"
 msgid "Name"
 msgstr "Nimi"
 
-#: includes/admin/class-wc-admin-assets.php:291
+#: includes/admin/class-wc-admin-assets.php:292
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:9
 #: includes/admin/meta-boxes/views/html-product-attribute.php:9
 #: includes/admin/meta-boxes/views/html-variation-admin.php:17
 msgid "Click to toggle"
 msgstr "Vaihda tila painamalla"
 
-#: includes/admin/class-wc-admin-assets.php:292
+#: includes/admin/class-wc-admin-assets.php:293
 #: includes/admin/meta-boxes/views/html-product-attribute.php:29
 msgid "Value(s)"
 msgstr "Arvo(t)"
 
-#: includes/admin/class-wc-admin-assets.php:293
+#: includes/admin/class-wc-admin-assets.php:294
 msgid "Enter some text, or some attributes by pipe (|) separating values."
 msgstr "Kirjoita tekstiä tai lisää ominaisuuksia. Erota pystyviivalla (|)."
 
-#: includes/admin/class-wc-admin-assets.php:294
+#: includes/admin/class-wc-admin-assets.php:295
 #: includes/admin/meta-boxes/views/html-product-attribute.php:74
 msgid "Visible on the product page"
 msgstr "Näkyy tuotesivulla"
 
-#: includes/admin/class-wc-admin-assets.php:295
+#: includes/admin/class-wc-admin-assets.php:296
 #: includes/admin/meta-boxes/views/html-product-attribute.php:80
 msgid "Used for variations"
 msgstr "Käytetään muunnelmissa"
 
-#: includes/admin/class-wc-admin-assets.php:296
+#: includes/admin/class-wc-admin-assets.php:297
 msgid "Enter a name for the new attribute term:"
 msgstr "Kirjoita nimi uudelle ominaisuuden arvolle:"
 
-#: includes/admin/class-wc-admin-assets.php:298
+#: includes/admin/class-wc-admin-assets.php:299
 msgid "Copy billing information to shipping information? This will remove any currently entered shipping information."
 msgstr "Kopioi laskutusosoite toimitusosoitteeksi? Tämä korvaa jo syötetyn toimitusosoitteen."
 
-#: includes/admin/class-wc-admin-assets.php:299
+#: includes/admin/class-wc-admin-assets.php:300
 msgid "Load the customer's billing information? This will remove any currently entered billing information."
 msgstr "Ladataanko asiakkaan laskutustiedot? Tämä poistaa jo syötetyt laskutustiedot."
 
-#: includes/admin/class-wc-admin-assets.php:300
+#: includes/admin/class-wc-admin-assets.php:301
 msgid "Load the customer's shipping information? This will remove any currently entered shipping information."
 msgstr "Ladataanko asiakkaan toimitustustiedot? Tämä poistaa jo syötetyt toimitustiedot."
 
-#: includes/admin/class-wc-admin-assets.php:301
+#: includes/admin/class-wc-admin-assets.php:302
 #: includes/admin/class-wc-admin-post-types.php:746
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:120
 #: includes/admin/views/html-bulk-edit-product.php:200
@@ -19342,19 +19802,19 @@ msgstr "Ladataanko asiakkaan toimitustustiedot? Tämä poistaa jo syötetyt toim
 msgid "Featured"
 msgstr "Esittelyssä"
 
-#: includes/admin/class-wc-admin-assets.php:305
+#: includes/admin/class-wc-admin-assets.php:306
 msgid "No customer selected"
 msgstr "Asiakasta ei valittu"
 
-#: includes/admin/class-wc-admin-assets.php:329
+#: includes/admin/class-wc-admin-assets.php:330
 msgid "Could not grant access - the user may already have permission for this file or billing email is not set. Ensure the billing email is set, and the order has been saved."
 msgstr "Pääsyä ei voitu asettaa – käyttäjällä on ehkä jo pääsy tähän tiedostoon tai laskutus sähköpostia ei ole asetettu. Varmista että tuo s-posti on asetettu ja tilaus on tallennettu."
 
-#: includes/admin/class-wc-admin-assets.php:330
+#: includes/admin/class-wc-admin-assets.php:331
 msgid "Are you sure you want to revoke access to this download?"
 msgstr "Haluatko varmasti estää tämän lataamisen?"
 
-#: includes/admin/class-wc-admin-assets.php:331
+#: includes/admin/class-wc-admin-assets.php:332
 msgid "You cannot add the same tax rate twice!"
 msgstr "Et voi lisätä samaa veroprosenttia -veroa- kahdesti!"
 
@@ -19525,7 +19985,7 @@ msgstr "Kopioi ja tee uusi luonnos"
 #: includes/admin/class-wc-admin-webhooks-table-list.php:82
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:401
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:313
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:425
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:429
 #: includes/admin/reports/class-wc-report-customer-list.php:159
 #: includes/admin/reports/class-wc-report-stock.php:135
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:54
@@ -19593,7 +20053,7 @@ msgstr "Tuo <strong>veroprosentit</strong> CSV-tiedoston avulla."
 
 #: includes/admin/class-wc-admin-menus.php:79
 #: includes/admin/views/html-admin-page-status-report.php:604
-#: includes/class-wc-install.php:1056
+#: includes/class-wc-install.php:1090
 msgid "Settings"
 msgstr "Asetukset"
 
@@ -19651,7 +20111,7 @@ msgstr "Kirjoita tässä uudelle tuotteelle nimi. Tämä tieto vaaditaan ja asia
 #: includes/admin/reports/class-wc-report-downloads.php:215
 #: includes/admin/reports/class-wc-report-stock.php:173
 #: includes/class-wc-emails.php:402 includes/class-wc-post-types.php:303
-#: includes/class-wc-privacy-exporters.php:338
+#: includes/class-wc-privacy-exporters.php:341
 #: includes/data-stores/class-wc-product-data-store-cpt.php:105
 #: includes/wc-account-functions.php:211 templates/cart/cart.php:32
 #: templates/cart/cart.php:76 templates/checkout/form-pay.php:27
@@ -19853,26 +20313,26 @@ msgstr "Western Cape"
 msgid "Backordered"
 msgstr "Jälkitoimitus"
 
-#: includes/abstracts/abstract-wc-order.php:1724
+#: includes/abstracts/abstract-wc-order.php:1731
 #: includes/class-wc-cart.php:1434 includes/class-wc-product-grouped.php:120
 msgid "Free!"
 msgstr "Maksuton!"
 
-#: includes/abstracts/abstract-wc-order.php:1753
+#: includes/abstracts/abstract-wc-order.php:1760
 msgid "Subtotal:"
 msgstr "Välisumma:"
 
-#: includes/abstracts/abstract-wc-order.php:1768
+#: includes/abstracts/abstract-wc-order.php:1775
 #: includes/admin/meta-boxes/views/html-order-items.php:151
 msgid "Discount:"
 msgstr "Alennus:"
 
-#: includes/abstracts/abstract-wc-order.php:1783
+#: includes/abstracts/abstract-wc-order.php:1790
 #: includes/admin/meta-boxes/views/html-order-items.php:163
 msgid "Shipping:"
 msgstr "Toimitus:"
 
-#: includes/abstracts/abstract-wc-order.php:1844
+#: includes/abstracts/abstract-wc-order.php:1851
 #: includes/admin/meta-boxes/views/html-order-item.php:98
 #: includes/admin/meta-boxes/views/html-order-item.php:144
 #: templates/checkout/order-receipt.php:34 templates/checkout/thankyou.php:63
@@ -19946,7 +20406,7 @@ msgstr "Arvostelu tuotteesta: %s / 5"
 #. translators: 1: first name 2: last name
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:168
 #: includes/api/class-wc-rest-network-orders-controller.php:127
-#: includes/class-wc-order.php:848 includes/class-wc-order.php:858
+#: includes/class-wc-order.php:838 includes/class-wc-order.php:848
 msgctxt "full name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
@@ -19957,12 +20417,12 @@ msgid "From:"
 msgstr "Alkaen:"
 
 #. translators: 1: old order status 2: new order status
-#: includes/class-wc-order.php:360
+#: includes/class-wc-order.php:350
 msgid "Order status changed from %1$s to %2$s."
 msgstr "Tilaus vaihdettu %1$s -tilasta %2$s -tilaan."
 
 #. translators: %d: Number of variations
-#: includes/admin/class-wc-admin-assets.php:228
+#: includes/admin/class-wc-admin-assets.php:229
 msgid "Are you sure you want to link all variations? This will create a new variation for each and every possible combination of variation attributes (max %d per run)."
 msgstr "Haluatko varmasti linkittää kaikki muunnelmat? Jokainen mahdollinen ominaisuuksien yhdistelmä käydään läpi ja kullekin yhdistelmälle luodaan uusi muunnelma (max %d kerrallaan)."
 
@@ -19980,8 +20440,8 @@ msgid_plural "<strong>%s products</strong> low in stock"
 msgstr[0] "<strong>%s tuote</strong> vähän varastossa"
 msgstr[1] "<strong>%s tuotetta</strong> vähän varastossa"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:385
-#: includes/class-wc-order.php:1954 templates/checkout/order-receipt.php:39
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:389
+#: includes/class-wc-order.php:1944 templates/checkout/order-receipt.php:39
 #: templates/checkout/thankyou.php:69
 msgid "Payment method:"
 msgstr "Maksutapa:"

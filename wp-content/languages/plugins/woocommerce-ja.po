@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-06-04 06:21:52+0000\n"
+"PO-Revision-Date: 2018-07-06 01:04:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,35 +11,56 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
 
+#. Translators: %d parent ID.
+#: includes/api/class-wc-rest-product-variations-controller.php:410
+msgid "Cannot set attributes due to invalid parent product."
+msgstr "親製品が無効であるため、属性を設定できません。"
+
+#: includes/admin/views/html-notice-wootenberg.php:30
+msgid "Install the WooCommerce Gutenberg Products Block"
+msgstr "WooCommerce Gutenberg Products Block をインストール"
+
+#: includes/admin/views/html-notice-wootenberg.php:19
+msgid "Active the Gutenberg Products Block"
+msgstr "WooCommerce Gutenberg Products Block を有効化"
+
+#: includes/admin/views/html-notice-wootenberg.php:15
+msgid "We noticed you're experimenting with Gutenberg: Try the WooCommerce Gutenberg Products Block for a powerful new way to feature products in posts."
+msgstr "Gutenberg を現在お試しになっています。WooCommerce Gutenberg Products Block で、投稿に製品を組み込む新しい強力な機能をお試しください。"
+
+#: includes/admin/class-wc-admin-assets.php:170
+msgid "This action cannot be reversed. Are you sure you wish to erase personal data from the selected orders?"
+msgstr "この操作を元に戻すことはできません。選択した注文から個人情報データを消去してよいですか ?"
+
 #. translators: %d: shipping package number
 #: includes/wc-cart-functions.php:228
 msgctxt "shipping packages"
 msgid "Shipping %d"
 msgstr "%d を配送中"
 
-#: includes/class-wc-privacy-exporters.php:247
+#: includes/class-wc-privacy-exporters.php:250
 msgid "Shipping Address"
 msgstr "配送先住所"
 
-#: includes/class-wc-privacy-exporters.php:246
+#: includes/class-wc-privacy-exporters.php:249
 msgid "Billing Address"
 msgstr "請求先住所"
 
 #: includes/class-wc-privacy-erasers.php:58
-#: includes/class-wc-privacy-exporters.php:193
+#: includes/class-wc-privacy-exporters.php:196
 msgid "Shipping Address 1"
 msgstr "配送先住所1"
 
 #: includes/class-wc-privacy-erasers.php:47
-#: includes/class-wc-privacy-exporters.php:182
+#: includes/class-wc-privacy-exporters.php:185
 msgid "Billing Address 1"
 msgstr "請求先住所1"
 
-#: includes/class-wc-privacy-exporters.php:290
+#: includes/class-wc-privacy-exporters.php:293
 msgid "Payer last name"
 msgstr "顧客 名"
 
-#: includes/class-wc-privacy-exporters.php:289
+#: includes/class-wc-privacy-exporters.php:292
 msgid "Payer first name"
 msgstr "顧客 姓"
 
@@ -52,7 +73,7 @@ msgstr "顧客決済トークン"
 msgid "Your CSV needs to include columns in a specific order. %1$sClick here to download a sample%2$s."
 msgstr "CSV には特定の注文に列を含める必要があります。 %1$sサンプルをダウンロードするには、ここをクリックしてください。%2$s"
 
-#: includes/class-wc-privacy-exporters.php:291
+#: includes/class-wc-privacy-exporters.php:294
 msgid "Payer PayPal address"
 msgstr "顧客住所"
 
@@ -301,27 +322,27 @@ msgstr "WordPress.com ストアでの購入処理中にお客様の情報を収�
 msgid "This sample language includes the basics around what personal data your store may be collecting, storing and sharing, as well as who may have access to that data. Depending on what settings are enabled and which additional plugins are used, the specific information shared by your store will vary. We recommend consulting with a lawyer when deciding what information to disclose on your privacy policy."
 msgstr "この例文には、ストアが収集、保管、共有する可能性のある個人データに関する基本的な情報と、そのデータにアクセスできる関係者が記載されています。有効な設定や追加で使用されるプラグインによって、ストアで共有する具体的な情報は異なります。個人情報保護方針で公開する情報を決定する際は、弁護士に相談することをおすすめします。"
 
-#: includes/class-wc-privacy-exporters.php:245
+#: includes/class-wc-privacy-exporters.php:248
 msgid "Browser User Agent"
 msgstr "ブラウザーユーザーエージェント"
 
-#: includes/class-wc-privacy-exporters.php:243
+#: includes/class-wc-privacy-exporters.php:246
 msgid "Items Purchased"
 msgstr "購入した商品数"
 
-#: includes/class-wc-privacy-exporters.php:240
+#: includes/class-wc-privacy-exporters.php:243
 msgid "Order Number"
 msgstr "注文番号"
 
-#: includes/class-wc-privacy-exporters.php:354
+#: includes/class-wc-privacy-exporters.php:357
 msgid "Access granted"
 msgstr "付与されたアクセス権"
 
-#: includes/class-wc-privacy-exporters.php:350
+#: includes/class-wc-privacy-exporters.php:353
 msgid "Download count"
 msgstr "ダウンロード回数"
 
-#: includes/class-wc-privacy-exporters.php:342
+#: includes/class-wc-privacy-exporters.php:345
 msgid "User email"
 msgstr "ユーザーのメールアドレス"
 
@@ -333,11 +354,11 @@ msgstr "顧客によるダウンロード"
 msgid "Customer Orders"
 msgstr "顧客による注文"
 
-#: includes/class-wc-privacy-exporters.php:408
+#: includes/class-wc-privacy-exporters.php:411
 msgid "Token"
 msgstr "トークン"
 
-#: includes/class-wc-privacy-exporters.php:404
+#: includes/class-wc-privacy-exporters.php:407
 msgid "Payment Tokens"
 msgstr "支払いトークン"
 
@@ -346,104 +367,104 @@ msgid "Personal data removed."
 msgstr "個人データが削除されました。"
 
 #: includes/class-wc-privacy-erasers.php:63
-#: includes/class-wc-privacy-exporters.php:198
+#: includes/class-wc-privacy-exporters.php:201
 msgid "Shipping Country"
 msgstr "配送先の国"
 
 #: includes/class-wc-privacy-erasers.php:62
-#: includes/class-wc-privacy-exporters.php:197
+#: includes/class-wc-privacy-exporters.php:200
 msgid "Shipping State"
 msgstr "配送先の都道府県"
 
 #: includes/class-wc-privacy-erasers.php:61
-#: includes/class-wc-privacy-exporters.php:196
+#: includes/class-wc-privacy-exporters.php:199
 msgid "Shipping Postal/Zip Code"
 msgstr "配送先の郵便番号"
 
 #: includes/class-wc-privacy-erasers.php:60
-#: includes/class-wc-privacy-exporters.php:195
+#: includes/class-wc-privacy-exporters.php:198
 msgid "Shipping City"
 msgstr "配送先の市区町村"
 
 #: includes/class-wc-privacy-erasers.php:57
-#: includes/class-wc-privacy-exporters.php:192
+#: includes/class-wc-privacy-exporters.php:195
 msgid "Shipping Company"
 msgstr "配送業者"
 
 #: includes/class-wc-privacy-erasers.php:56
-#: includes/class-wc-privacy-exporters.php:191
+#: includes/class-wc-privacy-exporters.php:194
 msgid "Shipping Last Name"
 msgstr "配送先の姓"
 
 #: includes/class-wc-privacy-erasers.php:55
-#: includes/class-wc-privacy-exporters.php:190
+#: includes/class-wc-privacy-exporters.php:193
 msgid "Shipping First Name"
 msgstr "配送先の名"
 
 #: includes/class-wc-privacy-erasers.php:53
-#: includes/class-wc-privacy-exporters.php:188
-#: includes/class-wc-privacy-exporters.php:248
+#: includes/class-wc-privacy-exporters.php:191
+#: includes/class-wc-privacy-exporters.php:251
 msgid "Phone Number"
 msgstr "電話番号"
 
 #: includes/class-wc-privacy-erasers.php:52
-#: includes/class-wc-privacy-exporters.php:187
+#: includes/class-wc-privacy-exporters.php:190
 msgid "Billing Country"
 msgstr "請求先の国"
 
 #: includes/class-wc-privacy-erasers.php:51
-#: includes/class-wc-privacy-exporters.php:186
+#: includes/class-wc-privacy-exporters.php:189
 msgid "Billing State"
 msgstr "請求先の都道府県"
 
 #: includes/class-wc-privacy-erasers.php:50
-#: includes/class-wc-privacy-exporters.php:185
+#: includes/class-wc-privacy-exporters.php:188
 msgid "Billing Postal/Zip Code"
 msgstr "請求先の郵便番号"
 
 #: includes/class-wc-privacy-erasers.php:49
-#: includes/class-wc-privacy-exporters.php:184
+#: includes/class-wc-privacy-exporters.php:187
 msgid "Billing City"
 msgstr "請求先の市区町村"
 
 #: includes/class-wc-privacy-erasers.php:46
-#: includes/class-wc-privacy-exporters.php:181
+#: includes/class-wc-privacy-exporters.php:184
 msgid "Billing Company"
 msgstr "請求会社"
 
 #: includes/class-wc-privacy-erasers.php:45
-#: includes/class-wc-privacy-exporters.php:180
+#: includes/class-wc-privacy-exporters.php:183
 msgid "Billing Last Name"
 msgstr "請求先の姓"
 
 #: includes/class-wc-privacy-erasers.php:44
-#: includes/class-wc-privacy-exporters.php:179
+#: includes/class-wc-privacy-exporters.php:182
 msgid "Billing First Name"
 msgstr "請求先の名"
 
-#: includes/class-wc-privacy-exporters.php:137
-#: includes/class-wc-privacy-exporters.php:330
+#: includes/class-wc-privacy-exporters.php:140
+#: includes/class-wc-privacy-exporters.php:333
 msgid "Download ID"
 msgstr "ダウンロード ID"
 
-#: includes/class-wc-privacy-exporters.php:30 includes/class-wc-privacy.php:42
+#: includes/class-wc-privacy-exporters.php:32 includes/class-wc-privacy.php:42
 #: includes/class-wc-privacy.php:48
 msgid "Customer Data"
 msgstr "顧客データ"
 
-#: includes/class-wc-order.php:379
+#: includes/class-wc-order.php:369
 msgid "Error during status transition."
 msgstr "ステータスの移行中にエラーが発生しました。"
 
-#: includes/class-wc-order.php:339
+#: includes/class-wc-order.php:329
 msgid "Update status event failed."
 msgstr "ステータスの更新イベントが失敗しました。"
 
-#: includes/class-wc-order.php:243
+#: includes/class-wc-order.php:239
 msgid "Error saving order."
 msgstr "注文の保存中にエラーが発生しました。"
 
-#: includes/class-wc-order.php:139
+#: includes/class-wc-order.php:136
 msgid "Payment complete event failed."
 msgstr "支払の完了イベントが失敗しました。"
 
@@ -528,13 +549,13 @@ msgstr "ストアでは安全な接続が使用されていないようです。
 
 #. translators: This is the headline for a list of access logs for downloads
 #. purchased from the store for a given user.
-#: includes/class-wc-privacy-exporters.php:133
+#: includes/class-wc-privacy-exporters.php:136
 msgid "Access to Purchased Downloads"
 msgstr "購入されたダウンロードへのアクセス権"
 
 #. translators: This is the headline for a list of downloads purchased from the
 #. store for a given user.
-#: includes/class-wc-privacy-exporters.php:122
+#: includes/class-wc-privacy-exporters.php:125
 msgid "Purchased Downloads"
 msgstr "購入されたダウンロード"
 
@@ -567,13 +588,13 @@ msgid "Removed customer \"%s\""
 msgstr "顧客「%s」が削除されました"
 
 #. translators: user role
-#: includes/class-wc-install.php:859
+#: includes/class-wc-install.php:893
 msgctxt "User role"
 msgid "Shop manager"
 msgstr "ショップ運営者"
 
 #. translators: user role
-#: includes/class-wc-install.php:857
+#: includes/class-wc-install.php:891
 msgctxt "User role"
 msgid "Customer"
 msgstr "顧客"
@@ -782,12 +803,12 @@ msgstr "ゲストの購入処理"
 msgid "Accounts &amp; Privacy"
 msgstr "アカウントとプライバシー"
 
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:733
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:736
 msgid "Filter by registered customer"
 msgstr "登録済みの顧客で絞り込み"
 
 #. translators: %d: orders count
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:697
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:700
 msgid "Removed personal data from %d order."
 msgid_plural "Removed personal data from %d orders."
 msgstr[0] "%d個の注文から個人データを削除しました。"
@@ -1057,7 +1078,7 @@ msgstr "週"
 msgid "Day(s)"
 msgstr "日"
 
-#: includes/admin/class-wc-admin-notices.php:136
+#: includes/admin/class-wc-admin-notices.php:139
 #: includes/emails/class-wc-email.php:813
 msgid "You don&#8217;t have permission to do this."
 msgstr "この操作を行う権限がありません。"
@@ -1760,7 +1781,7 @@ msgid "Buy &ldquo;%s&rdquo;"
 msgstr "&ldquo;%s&rdquo; を購入"
 
 #: includes/admin/class-wc-admin-taxonomies.php:309
-#: includes/class-wc-install.php:488 includes/class-wc-install.php:494
+#: includes/class-wc-install.php:492 includes/class-wc-install.php:498
 msgctxt "Default category slug"
 msgid "Uncategorized"
 msgstr "未分類"
@@ -1791,7 +1812,7 @@ msgstr "ショップページ設定"
 msgid "Invalid permission ID."
 msgstr "無効な許可 ID"
 
-#: includes/class-wc-countries.php:1096
+#: includes/class-wc-countries.php:1107
 msgid "Municipality / District"
 msgstr "市町村 / 地区"
 
@@ -2445,12 +2466,12 @@ msgstr "お客様へのインボイス / 注文の詳細"
 msgid "This key is invalid or has already been used. Please reset your password again if needed."
 msgstr "このキーは無効であるか、すでに使用されています。必要に応じて、もう一度パスワードをリセットしてください。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:723
+#: includes/api/class-wc-rest-product-variations-controller.php:733
 #: includes/api/class-wc-rest-products-controller.php:1549
 msgid "End date of sale price, as GMT."
 msgstr "販売価格の終了日 (GMT)。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:734
+#: includes/api/class-wc-rest-product-variations-controller.php:744
 msgid "Define if the variation is visible on the product's page."
 msgstr "バリエーションを商品のページに表示するかどうかを定義します。"
 
@@ -3153,11 +3174,11 @@ msgstr "注文予定日 : %s"
 msgid "Extensions %s"
 msgstr "機能拡張 %s"
 
-#: includes/admin/class-wc-admin-assets.php:334
+#: includes/admin/class-wc-admin-assets.php:335
 msgid "Enter a fixed amount or percentage to apply as a fee."
 msgstr "料金として適用する固定金額またはパーセンテージを入力します。"
 
-#: includes/admin/class-wc-admin-assets.php:333
+#: includes/admin/class-wc-admin-assets.php:334
 msgid "Enter a coupon code to apply to this order."
 msgstr "この注文に適用するクーポンコードを入力します。"
 
@@ -3498,7 +3519,7 @@ msgid "All Products"
 msgstr "すべての商品"
 
 #. translators: use local order of street name and house number.
-#: includes/class-wc-countries.php:649
+#: includes/class-wc-countries.php:650
 msgid "House number and street name"
 msgstr "番地"
 
@@ -4112,11 +4133,11 @@ msgstr "%s の有効化中にエラーが発生しました。後ほど、もう
 msgid "%s activated successfully. You will now receive updates for this product."
 msgstr "%s は正常に有効化されました。この商品の更新が送信されるようになります。"
 
-#: includes/admin/class-wc-admin-webhooks.php:315
+#: includes/admin/class-wc-admin-webhooks.php:290
 msgid "Create a new webhook"
 msgstr "新規 WebHook を作成"
 
-#: includes/admin/class-wc-admin-webhooks.php:314
+#: includes/admin/class-wc-admin-webhooks.php:289
 msgid "Webhooks are event notifications sent to URLs of your choice. They can be used to integrate with third-party services which support them."
 msgstr "Webhooks は、あなたが選択した URL に送信されるイベント通知です。それらは、それらをサポートするサードパーティのサービスと統合するために使用できます。"
 
@@ -4197,15 +4218,15 @@ msgstr "WooCommerce エンドポイント"
 msgid "Back to Attributes"
 msgstr "属性に戻る"
 
-#: includes/admin/class-wc-admin-assets.php:396
+#: includes/admin/class-wc-admin-assets.php:397
 msgid "Are you sure you want to delete this log?"
 msgstr "本当にこの履歴を削除しますか ?"
 
-#: includes/admin/class-wc-admin-assets.php:175
+#: includes/admin/class-wc-admin-assets.php:176
 msgid "Export"
 msgstr "エクスポート"
 
-#: includes/admin/class-wc-admin-assets.php:174
+#: includes/admin/class-wc-admin-assets.php:175
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:102
 msgid "Import"
 msgstr "インポート"
@@ -4366,12 +4387,12 @@ msgstr "作成"
 msgid "ID."
 msgstr "ID."
 
-#: includes/admin/class-wc-admin-assets.php:263
+#: includes/admin/class-wc-admin-assets.php:264
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:50
 msgid "Value (required)"
 msgstr "値 (必須)"
 
-#: includes/admin/class-wc-admin-assets.php:262
+#: includes/admin/class-wc-admin-assets.php:263
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:49
 msgid "Name (required)"
 msgstr "名前 (必須)"
@@ -4384,7 +4405,7 @@ msgstr "地域 ID."
 msgid "Recalculate"
 msgstr "再計算"
 
-#: includes/admin/class-wc-admin-assets.php:297
+#: includes/admin/class-wc-admin-assets.php:298
 msgid "Recalculate totals? This will calculate taxes based on the customers country (or the store base country) and update totals."
 msgstr "合計を再計算しますか？ これにより、お客様の国 (またはストアが拠点とする国) に基づく税を計算し、合計を更新します。"
 
@@ -4452,7 +4473,7 @@ msgstr "有効プラグイン"
 msgid "Customer sales"
 msgstr "お客様売上"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:462
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:466
 msgid "Customer provided note:"
 msgstr "お客様によるメモ:"
 
@@ -4959,11 +4980,11 @@ msgid "Invalid product"
 msgstr "無効なクーポン。"
 
 #. translators: %s: new order status
-#: includes/class-wc-order.php:366
+#: includes/class-wc-order.php:356
 msgid "Order status set to %s."
 msgstr "%s に設定された注文状況。"
 
-#: includes/class-wc-install.php:1074
+#: includes/class-wc-install.php:1108
 msgid "Visit premium customer support"
 msgstr "プレミアムカスタマーサポートへ移動"
 
@@ -4982,7 +5003,7 @@ msgstr "%s に投稿された値が無効です"
 msgid "Invalid data store."
 msgstr "データストアが無効です。"
 
-#: includes/class-wc-customer.php:962 includes/class-wc-order.php:1075
+#: includes/class-wc-customer.php:962 includes/class-wc-order.php:1065
 msgid "Invalid billing email address"
 msgstr "請求メールアドレスが無効です"
 
@@ -5002,15 +5023,15 @@ msgstr "無効なメールアドレス制限"
 msgid "Invalid discount type"
 msgstr "無効な値引きタイプ"
 
-#: includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:928
 msgid "Eircode"
 msgstr "Eircode"
 
-#: includes/class-wc-countries.php:656
+#: includes/class-wc-countries.php:657
 msgid "Apartment, suite, unit etc. (optional)"
 msgstr "マンション、建物名など (オプション)"
 
-#: includes/class-wc-countries.php:647
+#: includes/class-wc-countries.php:648
 msgid "Street address"
 msgstr "番地"
 
@@ -5045,7 +5066,7 @@ msgid "Invalid order"
 msgstr "無効な注文"
 
 #. translators: 1: key 2: URL
-#: includes/class-wc-cache-helper.php:206
+#: includes/class-wc-cache-helper.php:224
 msgid "In order for <strong>database caching</strong> to work with WooCommerce you must add %1$s to the \"Ignored Query Strings\" option in <a href=\"%2$s\">W3 Total Cache settings</a>."
 msgstr "<strong>データベースキャッシング</strong>を WooCommerce と連動させるには、<a href=\"%2$s\">W3 合計キャッシュ設定</a>で「無視するクエリ設定」オプションに %1$s を追加する必要があります。"
 
@@ -5514,14 +5535,14 @@ msgstr "WordPress cron ジョブは有効化済みですか ?"
 msgid "Shipping method enabled status."
 msgstr "配送方法の有効な状況。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:790
+#: includes/api/class-wc-rest-product-variations-controller.php:800
 #: includes/api/class-wc-rest-products-controller.php:1622
 #: includes/api/v1/class-wc-rest-products-controller.php:1905
 #: includes/api/v1/class-wc-rest-products-controller.php:2383
 msgid "Number of days until access to downloadable files expires."
 msgstr "ダウンロード可能なファイルへのアクセスが切れるまでの日数。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:784
+#: includes/api/class-wc-rest-product-variations-controller.php:794
 #: includes/api/class-wc-rest-products-controller.php:1616
 #: includes/api/v1/class-wc-rest-products-controller.php:1899
 #: includes/api/v1/class-wc-rest-products-controller.php:2377
@@ -5559,13 +5580,13 @@ msgid "A human readable label for the setting used in interfaces."
 msgstr "インタフェースで使用される設定のための人間が読めるラベル。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:173
-#: includes/api/class-wc-rest-product-variations-controller.php:914
+#: includes/api/class-wc-rest-product-variations-controller.php:924
 #: includes/api/class-wc-rest-products-controller.php:1884
 msgid "The date the image was last modified, as GMT."
 msgstr "画像が最後に変更された日付（GMT）。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:161
-#: includes/api/class-wc-rest-product-variations-controller.php:902
+#: includes/api/class-wc-rest-product-variations-controller.php:912
 #: includes/api/class-wc-rest-products-controller.php:1872
 msgid "The date the image was created, as GMT."
 msgstr "画像が作成された日付（GMT）。"
@@ -5578,17 +5599,17 @@ msgstr "商品が最後に変更された日付（GMT）。"
 msgid "The date the product was created, as GMT."
 msgstr "商品が作られた日付（GMT）。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:718
+#: includes/api/class-wc-rest-product-variations-controller.php:728
 #: includes/api/class-wc-rest-products-controller.php:1544
 msgid "End date of sale price, in the site's timezone."
 msgstr "サイトのタイムゾーンでのセール価格の終了日。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:713
+#: includes/api/class-wc-rest-product-variations-controller.php:723
 #: includes/api/class-wc-rest-products-controller.php:1539
 msgid "Start date of sale price, as GMT."
 msgstr "セール価格の販売開始日（GMT）。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:708
+#: includes/api/class-wc-rest-product-variations-controller.php:718
 #: includes/api/class-wc-rest-products-controller.php:1534
 msgid "Start date of sale price, in the site's timezone."
 msgstr "サイトのタイムゾーンでのセール価格の開始日。"
@@ -5741,7 +5762,7 @@ msgstr "ダウンロードアクセスの有効期限が切れる日付（GMT）
 #: includes/api/class-wc-rest-orders-controller.php:1424
 #: includes/api/class-wc-rest-orders-controller.php:1522
 #: includes/api/class-wc-rest-orders-controller.php:1580
-#: includes/api/class-wc-rest-product-variations-controller.php:973
+#: includes/api/class-wc-rest-product-variations-controller.php:983
 #: includes/api/class-wc-rest-products-controller.php:2006
 msgid "Meta data."
 msgstr "メタデータ。"
@@ -5768,7 +5789,7 @@ msgstr "この顧客は支払い中ですか ?"
 #: includes/api/class-wc-rest-orders-controller.php:1431
 #: includes/api/class-wc-rest-orders-controller.php:1529
 #: includes/api/class-wc-rest-orders-controller.php:1587
-#: includes/api/class-wc-rest-product-variations-controller.php:980
+#: includes/api/class-wc-rest-product-variations-controller.php:990
 #: includes/api/class-wc-rest-products-controller.php:2013
 msgid "Meta ID."
 msgstr "メタ ID。"
@@ -5954,19 +5975,19 @@ msgstr "ロギングを許可するには、%1$s を書き込み可能にする�
 msgid "Delete log"
 msgstr "ログを削除"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:138
+#: includes/admin/settings/views/html-webhooks-edit.php:141
 msgid "Legacy API v3 (deprecated)"
 msgstr "レガシー API v3 (非推奨)"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:137
+#: includes/admin/settings/views/html-webhooks-edit.php:140
 msgid "WP REST API Integration v1"
 msgstr "WP REST API 連携 v1"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:131
+#: includes/admin/settings/views/html-webhooks-edit.php:134
 msgid "REST API version used in the webhook deliveries."
 msgstr "Webhook 配信に使用される REST API のバージョン。"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:136
+#: includes/admin/settings/views/html-webhooks-edit.php:139
 msgid "WP REST API Integration v2"
 msgstr "WP REST API Integration v2"
 
@@ -6190,12 +6211,12 @@ msgstr "%s (存在しません)"
 msgid "Note type"
 msgstr "メモの種類"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:428
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:432
 msgid "Copy billing address"
 msgstr "請求先住所をコピー"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:325
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:438
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "Address:"
 msgstr "住所:"
 
@@ -6248,24 +6269,12 @@ msgstr "クレジットカードまたはお客様の PayPal アカウントを�
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
-#: includes/admin/class-wc-admin-profile.php:57
-#: includes/admin/class-wc-admin-profile.php:117
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:56
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:107
-#: includes/admin/settings/class-wc-settings-general.php:64
-#: includes/api/class-wc-rest-customers-controller.php:215
-#: includes/api/class-wc-rest-customers-controller.php:278
-#: includes/api/class-wc-rest-orders-controller.php:995
-#: includes/api/class-wc-rest-orders-controller.php:1058
-msgid "Address line 1"
-msgstr "住所詳細 1"
-
 #: includes/admin/class-wc-admin-post-types.php:848
 msgid "This is the WooCommerce shop page. The shop page is a special archive that lists your products. <a href=\"%s\">You can read more about this here</a>."
 msgstr "これは WooCommerce のショップページです。ショップページは、商品をリストする特殊な保管場所です。<a href=\"%s\">詳細については、ここを参照してください</a>。"
 
 #. translators: 1: user display name 2: user ID 3: user email
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:726
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:729
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:296
 #: includes/admin/settings/views/html-keys-edit.php:39
 #: includes/class-wc-ajax.php:1517
@@ -6289,7 +6298,19 @@ msgstr "%1$s / %2$s"
 #: includes/api/class-wc-rest-orders-controller.php:1063
 #: includes/customizer/class-wc-shop-customizer.php:678
 msgid "Address line 2"
-msgstr "住所詳細"
+msgstr "建物名・部屋番号"
+
+#: includes/admin/class-wc-admin-profile.php:57
+#: includes/admin/class-wc-admin-profile.php:117
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:56
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:107
+#: includes/admin/settings/class-wc-settings-general.php:64
+#: includes/api/class-wc-rest-customers-controller.php:215
+#: includes/api/class-wc-rest-customers-controller.php:278
+#: includes/api/class-wc-rest-orders-controller.php:995
+#: includes/api/class-wc-rest-orders-controller.php:1058
+msgid "Address line 1"
+msgstr "番地"
 
 #: includes/admin/class-wc-admin-log-table-list.php:242
 msgid "All sources"
@@ -6313,7 +6334,7 @@ msgstr "レベル"
 
 #: includes/admin/class-wc-admin-log-table-list.php:103
 #: includes/admin/reports/class-wc-report-downloads.php:214
-#: includes/class-wc-privacy-exporters.php:141
+#: includes/class-wc-privacy-exporters.php:144
 msgid "Timestamp"
 msgstr "タイムスタンプ"
 
@@ -6853,7 +6874,7 @@ msgstr "購入手続きページで SSL (HTTPS) を強制する (<a href=\"%s\" 
 
 #: includes/api/legacy/v2/class-wc-api-products.php:1734
 #: includes/api/legacy/v3/class-wc-api-products.php:2267
-#: includes/wc-rest-functions.php:117
+#: includes/wc-rest-functions.php:118
 msgid "Invalid image type."
 msgstr "無効な画像タイプ"
 
@@ -6868,7 +6889,7 @@ msgstr "バリエーションが表示されている場合。"
 #. translators: %s: error message
 #: includes/api/legacy/v2/class-wc-api-products.php:1711
 #: includes/api/legacy/v3/class-wc-api-products.php:2244
-#: includes/class-wc-auth.php:405 includes/wc-rest-functions.php:92
+#: includes/class-wc-auth.php:401 includes/wc-rest-functions.php:92
 msgid "Error: %s."
 msgstr "エラー: %s。"
 
@@ -7032,7 +7053,7 @@ msgstr "リモートイメージ %s の取得エラー"
 
 #: includes/api/legacy/v2/class-wc-api-products.php:1751
 #: includes/api/legacy/v3/class-wc-api-products.php:2284
-#: includes/wc-rest-functions.php:135
+#: includes/wc-rest-functions.php:136
 msgid "Zero size file downloaded."
 msgstr "ゼロサイズのファイルをダウンロードしました。"
 
@@ -7070,7 +7091,7 @@ msgid "Swazi lilangeni"
 msgstr "スワジ リランジェニ"
 
 #. translators: 1: param 2: type
-#: includes/wc-rest-functions.php:205
+#: includes/wc-rest-functions.php:206
 msgid "%1$s is not of type %2$s"
 msgstr "%1$s は %2$s タイプではありません。"
 
@@ -7497,7 +7518,7 @@ msgstr "無効にすると、この古い方法は使用できなくなります
 msgid "Allow customers to pick up orders themselves. By default, when using local pickup store base taxes will apply regardless of customer address."
 msgstr "お客様が店頭で商品を受け取ることが出来ます。基本では、店頭受取りにした場合、税金はお客様の住所を基に計算されます。"
 
-#: includes/wc-rest-functions.php:212
+#: includes/wc-rest-functions.php:213
 msgid "The date you provided is invalid."
 msgstr "提示した日付が無効です。"
 
@@ -7862,7 +7883,7 @@ msgid "A friendly summary of the response including the HTTP response code, mess
 msgstr "HTTP レスポンスコード、メッセージ、およびボディを含む応答の友好的な要約。"
 
 #. translators: 1: plugin name, 2: URL to WP plugin page.
-#: includes/class-wc-install.php:1228
+#: includes/class-wc-install.php:1262
 msgid "%1$s was installed but could not be activated. <a href=\"%2$s\">Please activate it manually by clicking here.</a>"
 msgstr "%1$s はインストールしましたが、有効になっていません。<a href=\"%2$s\">こちらをクリックして手動で有効にしてください。</a>"
 
@@ -7874,7 +7895,7 @@ msgstr "メール設定に戻る"
 #. manually.
 #. translators: 1: theme slug, 2: error message, 3: URL to install theme
 #. manually.
-#: includes/class-wc-install.php:1201 includes/class-wc-install.php:1288
+#: includes/class-wc-install.php:1235 includes/class-wc-install.php:1322
 msgid "%1$s could not be installed (%2$s). <a href=\"%3$s\">Please install it manually by clicking here.</a>"
 msgstr "%1$s はインストール出来ませんでした。 (%2$s) <a href=\"%3$s\">手動でインストールする場合はこちらをクリックしてください。</a>"
 
@@ -7917,92 +7938,92 @@ msgid "Secret key used to generate a hash of the delivered webhook and provided 
 msgstr "配信 Webhook のハッシュを生成するために使用され、リクエストヘッダーで提供される秘密鍵。提供されていない場合は、現在のユーザの ID またはユーザー名の MD5 ハッシュになります。"
 
 #: includes/api/class-wc-rest-orders-controller.php:768
-#: includes/api/legacy/v2/class-wc-api-orders.php:851
-#: includes/api/legacy/v3/class-wc-api-orders.php:897
+#: includes/api/legacy/v2/class-wc-api-orders.php:844
+#: includes/api/legacy/v3/class-wc-api-orders.php:888
 #: includes/api/v1/class-wc-rest-orders-controller.php:777
 msgid "Order item ID provided is not associated with order."
 msgstr "提供された注文商品IDは、オーダーに関連付けられていません。"
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:868
+#: includes/api/class-wc-rest-product-variations-controller.php:878
 #: includes/api/v1/class-wc-rest-products-controller.php:2461
 msgid "Variation height (%s)."
 msgstr "バリエーションの高さ (%s)"
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:862
+#: includes/api/class-wc-rest-product-variations-controller.php:872
 #: includes/api/v1/class-wc-rest-products-controller.php:2455
 msgid "Variation width (%s)."
 msgstr "バリエーションの幅 (%s)。"
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:856
+#: includes/api/class-wc-rest-product-variations-controller.php:866
 #: includes/api/v1/class-wc-rest-products-controller.php:2449
 msgid "Variation length (%s)."
 msgstr "バリエーションの長さ (%s)。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:850
+#: includes/api/class-wc-rest-product-variations-controller.php:860
 #: includes/api/v1/class-wc-rest-products-controller.php:2443
 msgid "Variation dimensions."
 msgstr "バリエーションの大きさ"
 
 #. translators: %s: weight unit
-#: includes/api/class-wc-rest-product-variations-controller.php:845
+#: includes/api/class-wc-rest-product-variations-controller.php:855
 #: includes/api/v1/class-wc-rest-products-controller.php:2438
 msgid "Variation weight (%s)."
 msgstr "バリエーションの重さ (%s)。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:819
+#: includes/api/class-wc-rest-product-variations-controller.php:829
 #: includes/api/v1/class-wc-rest-products-controller.php:2412
 msgid "Controls whether or not the variation is listed as \"in stock\" or \"out of stock\" on the frontend."
 msgstr "バリエーションがフロントエンドの「在庫切れ」「在庫」として記載されているかどうかを制御します。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:808
+#: includes/api/class-wc-rest-product-variations-controller.php:818
 #: includes/api/v1/class-wc-rest-products-controller.php:2401
 msgid "Stock management at variation level."
 msgstr "バリエーションレベルでの在庫管理。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:752
+#: includes/api/class-wc-rest-product-variations-controller.php:762
 #: includes/api/v1/class-wc-rest-products-controller.php:2345
 msgid "If the variation is downloadable."
 msgstr "もしバリエーションがダウンロード商品なら。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:746
+#: includes/api/class-wc-rest-product-variations-controller.php:756
 #: includes/api/v1/class-wc-rest-products-controller.php:2339
 msgid "If the variation is virtual."
 msgstr "バリエーションが仮想商品の場合。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:740
+#: includes/api/class-wc-rest-product-variations-controller.php:750
 #: includes/api/v1/class-wc-rest-products-controller.php:2328
 msgid "Shows if the variation can be bought."
 msgstr "バリエーションを購入できるかどうかを示します。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:728
+#: includes/api/class-wc-rest-product-variations-controller.php:738
 #: includes/api/v1/class-wc-rest-products-controller.php:2322
 msgid "Shows if the variation is on sale."
 msgstr "バリエーションがセール中かどうかを示します。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:703
+#: includes/api/class-wc-rest-product-variations-controller.php:713
 #: includes/api/v1/class-wc-rest-products-controller.php:2307
 msgid "Variation sale price."
 msgstr "バリエーションのセール価格。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:698
+#: includes/api/class-wc-rest-product-variations-controller.php:708
 #: includes/api/v1/class-wc-rest-products-controller.php:2302
 msgid "Variation regular price."
 msgstr "バリエーションの標準価格"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:692
+#: includes/api/class-wc-rest-product-variations-controller.php:702
 #: includes/api/v1/class-wc-rest-products-controller.php:2296
 msgid "Current variation price."
 msgstr "現行のバリエーション価格"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:680
+#: includes/api/class-wc-rest-product-variations-controller.php:690
 #: includes/api/v1/class-wc-rest-products-controller.php:2284
 msgid "Variation URL."
 msgstr "バリエーションURL"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:960
+#: includes/api/class-wc-rest-product-variations-controller.php:970
 #: includes/api/class-wc-rest-products-controller.php:1976
 #: includes/api/v1/class-wc-rest-products-controller.php:2251
 #: includes/api/v1/class-wc-rest-products-controller.php:2541
@@ -8201,28 +8222,28 @@ msgstr "商品セール価格"
 msgid "Start date of sale price."
 msgstr "セール価格の開始日"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:758
+#: includes/api/class-wc-rest-product-variations-controller.php:768
 #: includes/api/class-wc-rest-products-controller.php:1590
 #: includes/api/v1/class-wc-rest-products-controller.php:1873
 #: includes/api/v1/class-wc-rest-products-controller.php:2351
 msgid "List of downloadable files."
 msgstr "ダウンロードファイルのリスト"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:765
+#: includes/api/class-wc-rest-product-variations-controller.php:775
 #: includes/api/class-wc-rest-products-controller.php:1597
 #: includes/api/v1/class-wc-rest-products-controller.php:1880
 #: includes/api/v1/class-wc-rest-products-controller.php:2358
 msgid "File MD5 hash."
 msgstr "ファイルの MD5 ハッシュ"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:796
+#: includes/api/class-wc-rest-product-variations-controller.php:806
 #: includes/api/class-wc-rest-products-controller.php:1639
 #: includes/api/v1/class-wc-rest-products-controller.php:1929
 #: includes/api/v1/class-wc-rest-products-controller.php:2389
 msgid "Tax status."
 msgstr "税状況。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:875
+#: includes/api/class-wc-rest-product-variations-controller.php:885
 #: includes/api/class-wc-rest-products-controller.php:1736
 #: includes/api/v1/class-wc-rest-products-controller.php:2026
 #: includes/api/v1/class-wc-rest-products-controller.php:2468
@@ -8230,7 +8251,7 @@ msgid "Shipping class slug."
 msgstr "配送クラススラッグ。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:155
-#: includes/api/class-wc-rest-product-variations-controller.php:896
+#: includes/api/class-wc-rest-product-variations-controller.php:906
 #: includes/api/class-wc-rest-products-controller.php:1866
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:226
 #: includes/api/v1/class-wc-rest-products-controller.php:2156
@@ -8239,7 +8260,7 @@ msgid "The date the image was created, in the site's timezone."
 msgstr "サイトの時間設定による画像が作られた日付。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:167
-#: includes/api/class-wc-rest-product-variations-controller.php:908
+#: includes/api/class-wc-rest-product-variations-controller.php:918
 #: includes/api/class-wc-rest-products-controller.php:1878
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:232
 #: includes/api/v1/class-wc-rest-products-controller.php:2162
@@ -8247,19 +8268,19 @@ msgstr "サイトの時間設定による画像が作られた日付。"
 msgid "The date the image was last modified, in the site's timezone."
 msgstr "サイトの時間設定による画像が最後に更新された日付。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:936
+#: includes/api/class-wc-rest-product-variations-controller.php:946
 #: includes/api/class-wc-rest-products-controller.php:1906
 #: includes/api/v1/class-wc-rest-products-controller.php:2184
 #: includes/api/v1/class-wc-rest-products-controller.php:2517
 msgid "Image position. 0 means that the image is featured."
 msgstr "画像位置。 0だと画像が取り上げられていることを意味します。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:663
+#: includes/api/class-wc-rest-product-variations-controller.php:673
 #: includes/api/v1/class-wc-rest-products-controller.php:2272
 msgid "The date the variation was created, in the site's timezone."
 msgstr "サイトの時間設定によるバリエーションが作られた日付。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:669
+#: includes/api/class-wc-rest-product-variations-controller.php:679
 #: includes/api/v1/class-wc-rest-products-controller.php:2278
 msgid "The date the variation was last modified, in the site's timezone."
 msgstr "サイトの時間設定によるバリエーションが最後に更新された日付。"
@@ -8391,6 +8412,23 @@ msgstr "合計税額項目(割引後)"
 msgid "Tax subtotal."
 msgstr "税小計。"
 
+#: includes/api/class-wc-rest-coupons-controller.php:508
+#: includes/api/class-wc-rest-customers-controller.php:347
+#: includes/api/class-wc-rest-order-refunds-controller.php:406
+#: includes/api/class-wc-rest-order-refunds-controller.php:530
+#: includes/api/class-wc-rest-orders-controller.php:1148
+#: includes/api/class-wc-rest-orders-controller.php:1260
+#: includes/api/class-wc-rest-orders-controller.php:1351
+#: includes/api/class-wc-rest-orders-controller.php:1437
+#: includes/api/class-wc-rest-orders-controller.php:1535
+#: includes/api/class-wc-rest-orders-controller.php:1593
+#: includes/api/class-wc-rest-product-variations-controller.php:996
+#: includes/api/class-wc-rest-products-controller.php:2019
+#: includes/api/v1/class-wc-rest-order-refunds-controller.php:483
+#: includes/api/v1/class-wc-rest-orders-controller.php:1314
+msgid "Meta key."
+msgstr "メタキー。"
+
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:489
 #: includes/api/v1/class-wc-rest-orders-controller.php:1320
 msgid "Meta label."
@@ -8402,23 +8440,6 @@ msgstr "メタラベル。"
 msgid "Number of decimal points to use in each resource."
 msgstr "小数点数は、各リソースで使用します。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:508
-#: includes/api/class-wc-rest-customers-controller.php:347
-#: includes/api/class-wc-rest-order-refunds-controller.php:406
-#: includes/api/class-wc-rest-order-refunds-controller.php:530
-#: includes/api/class-wc-rest-orders-controller.php:1148
-#: includes/api/class-wc-rest-orders-controller.php:1260
-#: includes/api/class-wc-rest-orders-controller.php:1351
-#: includes/api/class-wc-rest-orders-controller.php:1437
-#: includes/api/class-wc-rest-orders-controller.php:1535
-#: includes/api/class-wc-rest-orders-controller.php:1593
-#: includes/api/class-wc-rest-product-variations-controller.php:986
-#: includes/api/class-wc-rest-products-controller.php:2019
-#: includes/api/v1/class-wc-rest-order-refunds-controller.php:483
-#: includes/api/v1/class-wc-rest-orders-controller.php:1314
-msgid "Meta key."
-msgstr "メタキー。"
-
 #: includes/api/class-wc-rest-coupons-controller.php:513
 #: includes/api/class-wc-rest-customers-controller.php:352
 #: includes/api/class-wc-rest-order-refunds-controller.php:411
@@ -8429,7 +8450,7 @@ msgstr "メタキー。"
 #: includes/api/class-wc-rest-orders-controller.php:1442
 #: includes/api/class-wc-rest-orders-controller.php:1540
 #: includes/api/class-wc-rest-orders-controller.php:1598
-#: includes/api/class-wc-rest-product-variations-controller.php:991
+#: includes/api/class-wc-rest-product-variations-controller.php:1001
 #: includes/api/class-wc-rest-products-controller.php:2024
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:495
 #: includes/api/v1/class-wc-rest-orders-controller.php:1326
@@ -8438,10 +8459,10 @@ msgstr "メタ値。"
 
 #: includes/api/class-wc-rest-orders-controller.php:519
 #: includes/api/legacy/class-wc-rest-legacy-orders-controller.php:249
-#: includes/api/legacy/v2/class-wc-api-orders.php:390
-#: includes/api/legacy/v2/class-wc-api-orders.php:542
-#: includes/api/legacy/v3/class-wc-api-orders.php:427
-#: includes/api/legacy/v3/class-wc-api-orders.php:582
+#: includes/api/legacy/v2/class-wc-api-orders.php:388
+#: includes/api/legacy/v2/class-wc-api-orders.php:535
+#: includes/api/legacy/v3/class-wc-api-orders.php:423
+#: includes/api/legacy/v3/class-wc-api-orders.php:573
 #: includes/api/v1/class-wc-rest-orders-controller.php:534
 msgid "Customer ID is invalid."
 msgstr "顧客 ID が無効です。"
@@ -8451,34 +8472,34 @@ msgstr "顧客 ID が無効です。"
 msgid "Product ID or SKU is required."
 msgstr "商品 ID か SKU が必要です。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:907
-#: includes/api/legacy/v3/class-wc-api-orders.php:953
+#: includes/api/legacy/v2/class-wc-api-orders.php:900
+#: includes/api/legacy/v3/class-wc-api-orders.php:944
 msgid "Product is invalid."
 msgstr "商品が無効です。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:912
-#: includes/api/legacy/v3/class-wc-api-orders.php:958
+#: includes/api/legacy/v2/class-wc-api-orders.php:905
+#: includes/api/legacy/v3/class-wc-api-orders.php:949
 msgid "Product quantity must be a positive float."
 msgstr "商品の数量は、正の浮動小数点数でなければなりません。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:917
-#: includes/api/legacy/v3/class-wc-api-orders.php:963
+#: includes/api/legacy/v2/class-wc-api-orders.php:910
+#: includes/api/legacy/v3/class-wc-api-orders.php:954
 msgid "Product quantity is required."
 msgstr "商品数が必須です。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:960
-#: includes/api/legacy/v3/class-wc-api-orders.php:1007
+#: includes/api/legacy/v2/class-wc-api-orders.php:953
+#: includes/api/legacy/v3/class-wc-api-orders.php:998
 msgid "Cannot create line item, try again."
 msgstr "ラインアイテムを作成することはできません、もう一度お試しください。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1036
-#: includes/api/legacy/v3/class-wc-api-orders.php:1083
+#: includes/api/legacy/v2/class-wc-api-orders.php:1029
+#: includes/api/legacy/v3/class-wc-api-orders.php:1074
 msgid "Shipping total must be a positive amount."
 msgstr "送料合計は、正の浮動小数点数でなければなりません。"
 
 #: includes/api/class-wc-rest-orders-controller.php:683
-#: includes/api/legacy/v2/class-wc-api-orders.php:1043
-#: includes/api/legacy/v3/class-wc-api-orders.php:1090
+#: includes/api/legacy/v2/class-wc-api-orders.php:1036
+#: includes/api/legacy/v3/class-wc-api-orders.php:1081
 #: includes/api/v1/class-wc-rest-orders-controller.php:693
 msgid "Shipping method ID is required."
 msgstr "配送方法IDは必須です。"
@@ -8548,13 +8569,13 @@ msgstr "特定のステータスが割り当て注文にセットした結果に
 msgid "Limit result set to orders assigned a specific customer."
 msgstr "特定の顧客に割り当て注文にセットした結果に制限。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1070
-#: includes/api/legacy/v3/class-wc-api-orders.php:1117
+#: includes/api/legacy/v2/class-wc-api-orders.php:1063
+#: includes/api/legacy/v3/class-wc-api-orders.php:1108
 msgid "Cannot update shipping method, try again."
 msgstr "配送方法を更新することはできません、もう一度お試しください。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1101
-#: includes/api/legacy/v3/class-wc-api-orders.php:1148
+#: includes/api/legacy/v2/class-wc-api-orders.php:1094
+#: includes/api/legacy/v3/class-wc-api-orders.php:1139
 msgid "Fee tax class is required when fee is taxable."
 msgstr "手数料は課税対象である場合に税費用クラスが必要です。"
 
@@ -8563,20 +8584,20 @@ msgstr "手数料は課税対象である場合に税費用クラスが必要で
 msgid "Fee name is required."
 msgstr "手数料名は必須です。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1141
-#: includes/api/legacy/v3/class-wc-api-orders.php:1188
+#: includes/api/legacy/v2/class-wc-api-orders.php:1134
+#: includes/api/legacy/v3/class-wc-api-orders.php:1179
 msgid "Cannot update fee, try again."
 msgstr "手数料を更新することはできません、もう一度お試しください。"
 
 #: includes/api/class-wc-rest-orders-controller.php:731
-#: includes/api/legacy/v2/class-wc-api-orders.php:1166
-#: includes/api/legacy/v3/class-wc-api-orders.php:1213
+#: includes/api/legacy/v2/class-wc-api-orders.php:1159
+#: includes/api/legacy/v3/class-wc-api-orders.php:1204
 #: includes/api/v1/class-wc-rest-orders-controller.php:739
 msgid "Coupon code is required."
 msgstr "クーポンコードは必須項目です。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1192
-#: includes/api/legacy/v3/class-wc-api-orders.php:1239
+#: includes/api/legacy/v2/class-wc-api-orders.php:1185
+#: includes/api/legacy/v3/class-wc-api-orders.php:1230
 msgid "Cannot update coupon, try again."
 msgstr "クーポンを更新することはできません、もう一度お試しください。"
 
@@ -8628,7 +8649,7 @@ msgstr "特定の属性を割り当てられた商品にセットした結果に
 msgid "An alphanumeric identifier for the resource unique to its type."
 msgstr "そのタイプに固有のリソースの英数字の識別子。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:955
+#: includes/api/class-wc-rest-product-variations-controller.php:965
 #: includes/api/class-wc-rest-products-controller.php:1926
 #: includes/api/class-wc-rest-products-controller.php:1971
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:462
@@ -8663,7 +8684,7 @@ msgid "Category archive display type."
 msgstr "カテゴリーアーカイブの表示タイプ。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:185
-#: includes/api/class-wc-rest-product-variations-controller.php:926
+#: includes/api/class-wc-rest-product-variations-controller.php:936
 #: includes/api/class-wc-rest-products-controller.php:1896
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:244
 #: includes/api/v1/class-wc-rest-products-controller.php:2174
@@ -8672,7 +8693,7 @@ msgid "Image name."
 msgstr "画像名。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:190
-#: includes/api/class-wc-rest-product-variations-controller.php:931
+#: includes/api/class-wc-rest-product-variations-controller.php:941
 #: includes/api/class-wc-rest-products-controller.php:1901
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:249
 #: includes/api/v1/class-wc-rest-products-controller.php:2179
@@ -8770,14 +8791,14 @@ msgstr "外部リンク商品ボタンのテキスト。外部リンク商品の
 msgid "Stock management at product level."
 msgstr "商品レベルでの在庫管理。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:814
+#: includes/api/class-wc-rest-product-variations-controller.php:824
 #: includes/api/class-wc-rest-products-controller.php:1657
 #: includes/api/v1/class-wc-rest-products-controller.php:1947
 #: includes/api/v1/class-wc-rest-products-controller.php:2407
 msgid "Stock quantity."
 msgstr "在庫数。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:825
+#: includes/api/class-wc-rest-product-variations-controller.php:835
 #: includes/api/class-wc-rest-products-controller.php:1668
 #: includes/api/v1/class-wc-rest-products-controller.php:1958
 #: includes/api/v1/class-wc-rest-products-controller.php:2418
@@ -8789,7 +8810,7 @@ msgstr "在庫管理をする場合、入荷待ちを許可したばあいも管
 msgid "Shows if the product is on backordered."
 msgstr "商品が入荷待ちの場合、表示。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:832
+#: includes/api/class-wc-rest-product-variations-controller.php:842
 #: includes/api/class-wc-rest-products-controller.php:1675
 #: includes/api/v1/class-wc-rest-products-controller.php:1965
 #: includes/api/v1/class-wc-rest-products-controller.php:2425
@@ -8885,7 +8906,7 @@ msgstr "タグスラッグ。"
 msgid "List of images."
 msgstr "イメージ一覧。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:943
+#: includes/api/class-wc-rest-product-variations-controller.php:953
 #: includes/api/class-wc-rest-products-controller.php:1914
 #: includes/api/v1/class-wc-rest-products-controller.php:2192
 #: includes/api/v1/class-wc-rest-products-controller.php:2524
@@ -8920,7 +8941,7 @@ msgstr "バリエーション一覧。"
 msgid "List of available term names of the attribute."
 msgstr "利用可能な属性の要素名の一覧。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:886
+#: includes/api/class-wc-rest-product-variations-controller.php:896
 #: includes/api/v1/class-wc-rest-products-controller.php:2479
 msgid "Variation image data."
 msgstr "バリエーション画像データ。"
@@ -8929,14 +8950,14 @@ msgstr "バリエーション画像データ。"
 msgid "Total of orders placed."
 msgstr "注文された合計。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:687
+#: includes/api/class-wc-rest-product-variations-controller.php:697
 #: includes/api/class-wc-rest-products-controller.php:1513
 #: includes/api/v1/class-wc-rest-products-controller.php:1806
 #: includes/api/v1/class-wc-rest-products-controller.php:2291
 msgid "Unique identifier."
 msgstr "固有の識別子。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:838
+#: includes/api/class-wc-rest-product-variations-controller.php:848
 #: includes/api/v1/class-wc-rest-products-controller.php:2431
 msgid "Shows if the variation is on backordered."
 msgstr "バリエーションがバックオーダ上にあるかどうかを示します。"
@@ -8945,7 +8966,7 @@ msgstr "バリエーションがバックオーダ上にあるかどうかを示
 msgid "Total charged for shipping."
 msgstr "送料の合計金額"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:950
+#: includes/api/class-wc-rest-product-variations-controller.php:960
 #: includes/api/class-wc-rest-products-controller.php:1921
 #: includes/api/class-wc-rest-products-controller.php:1966
 #: includes/api/v1/class-wc-rest-products-controller.php:2199
@@ -8982,7 +9003,7 @@ msgid "Product URL."
 msgstr "商品 URL。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:179
-#: includes/api/class-wc-rest-product-variations-controller.php:920
+#: includes/api/class-wc-rest-product-variations-controller.php:930
 #: includes/api/class-wc-rest-products-controller.php:1890
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:238
 #: includes/api/v1/class-wc-rest-products-controller.php:2168
@@ -8991,7 +9012,7 @@ msgid "Image URL."
 msgstr "画像 URL。"
 
 #: includes/api/class-wc-rest-product-categories-controller.php:150
-#: includes/api/class-wc-rest-product-variations-controller.php:891
+#: includes/api/class-wc-rest-product-variations-controller.php:901
 #: includes/api/class-wc-rest-products-controller.php:1861
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:221
 #: includes/api/v1/class-wc-rest-products-controller.php:2151
@@ -9066,7 +9087,7 @@ msgstr "アップセル商品 ID のリスト。"
 msgid "List of related products IDs."
 msgstr "関連商品 ID のリスト。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:880
+#: includes/api/class-wc-rest-product-variations-controller.php:890
 #: includes/api/class-wc-rest-products-controller.php:1741
 #: includes/api/v1/class-wc-rest-products-controller.php:2031
 #: includes/api/v1/class-wc-rest-products-controller.php:2473
@@ -9160,7 +9181,7 @@ msgstr "サイトのタイムゾーンによる注文が支払われた日付。
 msgid "True the prices included tax during checkout."
 msgstr "購入手続き時に税金が含まれているとします。"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:968
+#: includes/api/class-wc-rest-product-variations-controller.php:978
 #: includes/api/class-wc-rest-products-controller.php:2001
 #: includes/api/v1/class-wc-rest-products-controller.php:2561
 msgid "Menu order, used to custom sort products."
@@ -9232,7 +9253,7 @@ msgid "File details."
 msgstr "ファイル詳細。"
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:147
-#: includes/api/class-wc-rest-product-variations-controller.php:771
+#: includes/api/class-wc-rest-product-variations-controller.php:781
 #: includes/api/class-wc-rest-products-controller.php:1603
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:223
 #: includes/api/v1/class-wc-rest-products-controller.php:1886
@@ -9415,7 +9436,7 @@ msgstr "再割り当ての無効なリソースID。"
 #: includes/api/class-wc-rest-payment-gateways-controller.php:54
 #: includes/api/class-wc-rest-product-categories-controller.php:103
 #: includes/api/class-wc-rest-product-reviews-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:657
+#: includes/api/class-wc-rest-product-variations-controller.php:667
 #: includes/api/class-wc-rest-products-controller.php:82
 #: includes/api/class-wc-rest-products-controller.php:1429
 #: includes/api/class-wc-rest-setting-options-controller.php:84
@@ -9536,12 +9557,12 @@ msgid "Company name."
 msgstr "会社名。"
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:195
-#: includes/api/legacy/v2/class-wc-api-orders.php:1518
-#: includes/api/legacy/v2/class-wc-api-orders.php:1680
-#: includes/api/legacy/v2/class-wc-api-orders.php:1741
-#: includes/api/legacy/v3/class-wc-api-orders.php:1565
-#: includes/api/legacy/v3/class-wc-api-orders.php:1727
-#: includes/api/legacy/v3/class-wc-api-orders.php:1788
+#: includes/api/legacy/v2/class-wc-api-orders.php:1511
+#: includes/api/legacy/v2/class-wc-api-orders.php:1673
+#: includes/api/legacy/v2/class-wc-api-orders.php:1734
+#: includes/api/legacy/v3/class-wc-api-orders.php:1556
+#: includes/api/legacy/v3/class-wc-api-orders.php:1718
+#: includes/api/legacy/v3/class-wc-api-orders.php:1779
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:133
 msgid "Invalid order refund ID."
 msgstr "無効な注文払戻 ID 。"
@@ -9556,14 +9577,14 @@ msgid "Refund amount must be greater than zero."
 msgstr "払戻額はゼロ以上にしてください。"
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:296
-#: includes/api/legacy/v2/class-wc-api-orders.php:1617
-#: includes/api/legacy/v3/class-wc-api-orders.php:1664
+#: includes/api/legacy/v2/class-wc-api-orders.php:1610
+#: includes/api/legacy/v3/class-wc-api-orders.php:1655
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:308
 msgid "Cannot create order refund, please try again."
 msgstr "注文払戻が出来ません。もう一度行ってください。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1634
-#: includes/api/legacy/v3/class-wc-api-orders.php:1681
+#: includes/api/legacy/v2/class-wc-api-orders.php:1627
+#: includes/api/legacy/v3/class-wc-api-orders.php:1672
 #: includes/wc-order-functions.php:642
 msgid "An error occurred while attempting to create the refund using the payment gateway API."
 msgstr "決済APIを使っての払戻においてエラーが発生しました。"
@@ -9603,20 +9624,6 @@ msgstr "アイテム ID 。"
 #: includes/api/v1/class-wc-rest-report-top-sellers-controller.php:152
 msgid "Product name."
 msgstr "商品名。"
-
-#: includes/api/v1/class-wc-rest-customers-controller.php:743
-#: includes/api/v1/class-wc-rest-customers-controller.php:806
-#: includes/api/v1/class-wc-rest-orders-controller.php:1048
-#: includes/api/v1/class-wc-rest-orders-controller.php:1111
-msgid "Address line 1."
-msgstr "住所詳細1。"
-
-#: includes/api/v1/class-wc-rest-customers-controller.php:748
-#: includes/api/v1/class-wc-rest-customers-controller.php:811
-#: includes/api/v1/class-wc-rest-orders-controller.php:1053
-#: includes/api/v1/class-wc-rest-orders-controller.php:1116
-msgid "Address line 2."
-msgstr "住所詳細2。"
 
 #: includes/api/class-wc-rest-customers-controller.php:225
 #: includes/api/class-wc-rest-customers-controller.php:288
@@ -9678,8 +9685,8 @@ msgstr "電話番号。"
 msgid "List of shipping address data."
 msgstr "配送住所のデータ一覧。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1323
-#: includes/api/legacy/v3/class-wc-api-orders.php:1370
+#: includes/api/legacy/v2/class-wc-api-orders.php:1316
+#: includes/api/legacy/v3/class-wc-api-orders.php:1361
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:233
 msgid "Cannot create order note, please try again."
 msgstr "注文メモを作ることが出来ませんでした。再度お試しください。"
@@ -9732,7 +9739,7 @@ msgid "First name."
 msgstr "名"
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:776
+#: includes/api/class-wc-rest-product-variations-controller.php:786
 #: includes/api/class-wc-rest-products-controller.php:1608
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:229
 #: includes/api/v1/class-wc-rest-products-controller.php:1891
@@ -9831,6 +9838,20 @@ msgstr "配送は有効化されていますが、配送地域にまだ配送方
 msgid "Invalid signature - failed to sort parameters."
 msgstr "無効なシグネチャー - パラメターの並べ替えに失敗しました。"
 
+#: includes/api/v1/class-wc-rest-customers-controller.php:743
+#: includes/api/v1/class-wc-rest-customers-controller.php:806
+#: includes/api/v1/class-wc-rest-orders-controller.php:1048
+#: includes/api/v1/class-wc-rest-orders-controller.php:1111
+msgid "Address line 1."
+msgstr "番地."
+
+#: includes/api/v1/class-wc-rest-customers-controller.php:748
+#: includes/api/v1/class-wc-rest-customers-controller.php:811
+#: includes/api/v1/class-wc-rest-orders-controller.php:1053
+#: includes/api/v1/class-wc-rest-orders-controller.php:1116
+msgid "Address line 2."
+msgstr "建物名・部屋番号."
+
 #: includes/admin/views/html-notice-legacy-shipping.php:13
 msgid "New:"
 msgstr "最新:"
@@ -9888,6 +9909,7 @@ msgstr "１つの郵便番号に一行登録"
 #: includes/admin/views/html-notice-template-check.php:13
 #: includes/admin/views/html-notice-theme-support.php:12
 #: includes/admin/views/html-notice-updated.php:12
+#: includes/admin/views/html-notice-wootenberg.php:12
 #: includes/wc-template-functions.php:969
 msgid "Dismiss"
 msgstr "非表示"
@@ -9908,7 +9930,7 @@ msgstr "MaxMind GeoIP データベース。"
 msgid "cURL version."
 msgstr "cURL バージョン。"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:120
+#: includes/admin/settings/views/html-webhooks-edit.php:123
 msgid "The secret key is used to generate a hash of the delivered webhook and provided in the request headers."
 msgstr "秘密鍵は配信 webhook のハッシュを生成するために使用され、リクエストヘッダで提供しました。"
 
@@ -10214,20 +10236,6 @@ msgstr "注文処理についてより詳しく知る"
 msgid "Learn more about coupons"
 msgstr "クーポンについてより詳しく知る"
 
-#. translators: %s: items limit
-#: includes/abstracts/abstract-wc-rest-controller.php:103
-#: includes/api/legacy/v2/class-wc-api-coupons.php:529
-#: includes/api/legacy/v2/class-wc-api-customers.php:792
-#: includes/api/legacy/v2/class-wc-api-orders.php:1789
-#: includes/api/legacy/v2/class-wc-api-products.php:2306
-#: includes/api/legacy/v3/class-wc-api-coupons.php:529
-#: includes/api/legacy/v3/class-wc-api-customers.php:782
-#: includes/api/legacy/v3/class-wc-api-orders.php:1836
-#: includes/api/legacy/v3/class-wc-api-products.php:3119
-#: includes/api/legacy/v3/class-wc-api-taxes.php:465
-msgid "Unable to accept more than %s items for this request."
-msgstr "この要求に対して %s アイテムよりも多く受け入れることができません。"
-
 #: includes/abstracts/abstract-wc-rest-controller.php:388
 msgid "List of created resources."
 msgstr "作成されたリソースのリスト。"
@@ -10239,6 +10247,20 @@ msgstr "更新されたリソースのリスト。"
 #: includes/abstracts/abstract-wc-rest-controller.php:404
 msgid "List of delete resources."
 msgstr "削除されたリソースのリスト。"
+
+#. translators: %s: items limit
+#: includes/abstracts/abstract-wc-rest-controller.php:103
+#: includes/api/legacy/v2/class-wc-api-coupons.php:529
+#: includes/api/legacy/v2/class-wc-api-customers.php:792
+#: includes/api/legacy/v2/class-wc-api-orders.php:1782
+#: includes/api/legacy/v2/class-wc-api-products.php:2306
+#: includes/api/legacy/v3/class-wc-api-coupons.php:529
+#: includes/api/legacy/v3/class-wc-api-customers.php:782
+#: includes/api/legacy/v3/class-wc-api-orders.php:1827
+#: includes/api/legacy/v3/class-wc-api-products.php:3119
+#: includes/api/legacy/v3/class-wc-api-taxes.php:465
+msgid "Unable to accept more than %s items for this request."
+msgstr "この要求に対して %s アイテムよりも多く受け入れることができません。"
 
 #: includes/admin/class-wc-admin-help.php:42
 #: includes/admin/class-wc-admin-help.php:44
@@ -10322,7 +10344,7 @@ msgstr "ID が無効です。"
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:435
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:451
-#: includes/api/class-wc-rest-product-variations-controller.php:538
+#: includes/api/class-wc-rest-product-variations-controller.php:548
 #: includes/api/class-wc-rest-products-controller.php:1367
 #: includes/api/v1/class-wc-rest-products-controller.php:1683
 msgid "The %s does not support trashing."
@@ -10331,7 +10353,7 @@ msgstr "%s にはゴミ箱機能がありません。"
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:442
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:457
-#: includes/api/class-wc-rest-product-variations-controller.php:549
+#: includes/api/class-wc-rest-product-variations-controller.php:559
 #: includes/api/class-wc-rest-products-controller.php:1378
 #: includes/api/v1/class-wc-rest-products-controller.php:1689
 msgid "The %s has already been deleted."
@@ -10340,7 +10362,7 @@ msgstr "%s はすでに削除されています。"
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:452
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:467
-#: includes/api/class-wc-rest-product-variations-controller.php:563
+#: includes/api/class-wc-rest-product-variations-controller.php:573
 #: includes/api/class-wc-rest-products-controller.php:1392
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:316
 #: includes/api/v1/class-wc-rest-products-controller.php:1700
@@ -10417,6 +10439,27 @@ msgstr "リソースをリストすることはできません。"
 msgid "Sorry, you are not allowed to create resources."
 msgstr "あなたはリソースを作成する権限がありません。"
 
+#: includes/abstracts/abstract-wc-rest-crud-controller.php:72
+#: includes/abstracts/abstract-wc-rest-posts-controller.php:103
+#: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:101
+#: includes/abstracts/abstract-wc-rest-terms-controller.php:183
+#: includes/api/class-wc-rest-payment-gateways-controller.php:111
+#: includes/api/class-wc-rest-product-variations-controller.php:162
+#: includes/api/v1/class-wc-rest-customers-controller.php:183
+#: includes/api/v1/class-wc-rest-taxes-controller.php:158
+#: includes/api/v1/class-wc-rest-webhooks-controller.php:174
+msgid "Sorry, you are not allowed to edit this resource."
+msgstr "あなたはこのリソースを編集する権限がありません。"
+
+#. translators: %s: post type
+#: includes/abstracts/abstract-wc-rest-crud-controller.php:421
+#: includes/abstracts/abstract-wc-rest-posts-controller.php:438
+#: includes/api/class-wc-rest-product-variations-controller.php:530
+#: includes/api/class-wc-rest-products-controller.php:1336
+#: includes/api/v1/class-wc-rest-products-controller.php:1656
+msgid "Sorry, you are not allowed to delete %s."
+msgstr "あなたは %s を削除する権限がありません。"
+
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:56
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:87
 #: includes/abstracts/abstract-wc-rest-terms-controller.php:164
@@ -10433,18 +10476,6 @@ msgstr "あなたはリソースを作成する権限がありません。"
 msgid "Sorry, you cannot view this resource."
 msgstr "あなたはこのリソースを見ることはできません。"
 
-#: includes/abstracts/abstract-wc-rest-crud-controller.php:72
-#: includes/abstracts/abstract-wc-rest-posts-controller.php:103
-#: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:101
-#: includes/abstracts/abstract-wc-rest-terms-controller.php:183
-#: includes/api/class-wc-rest-payment-gateways-controller.php:111
-#: includes/api/class-wc-rest-product-variations-controller.php:162
-#: includes/api/v1/class-wc-rest-customers-controller.php:183
-#: includes/api/v1/class-wc-rest-taxes-controller.php:158
-#: includes/api/v1/class-wc-rest-webhooks-controller.php:174
-msgid "Sorry, you are not allowed to edit this resource."
-msgstr "あなたはこのリソースを編集する権限がありません。"
-
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:88
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:119
 #: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:119
@@ -10457,15 +10488,6 @@ msgstr "あなたはこのリソースを編集する権限がありません。
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:189
 msgid "Sorry, you are not allowed to delete this resource."
 msgstr "あなたはこのリソースを削除する権限がありません。"
-
-#. translators: %s: post type
-#: includes/abstracts/abstract-wc-rest-crud-controller.php:421
-#: includes/abstracts/abstract-wc-rest-posts-controller.php:438
-#: includes/api/class-wc-rest-product-variations-controller.php:520
-#: includes/api/class-wc-rest-products-controller.php:1336
-#: includes/api/v1/class-wc-rest-products-controller.php:1656
-msgid "Sorry, you are not allowed to delete %s."
-msgstr "あなたは %s を削除する権限がありません。"
 
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:141
 msgid "Sorry, you cannot create new resource."
@@ -10496,7 +10518,7 @@ msgstr "小切手を受け付けられるシンプルなオフライン決済。
 msgid "Whether to hide resources not assigned to any products."
 msgstr "いずれの商品にも割り当てられていないリソースを非表示にするかどうか。"
 
-#: includes/admin/class-wc-admin-assets.php:332
+#: includes/admin/class-wc-admin-assets.php:333
 msgid "Are you sure you wish to delete this note? This action cannot be undone."
 msgstr "本当にこのノートを削除してもよいですか ? この操作は取り消すことができません。"
 
@@ -10599,7 +10621,7 @@ msgstr "無効な投稿 ID 。"
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:235
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:404
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:499
+#: includes/api/class-wc-rest-product-variations-controller.php:509
 #: includes/api/class-wc-rest-products-controller.php:1307
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:303
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:460
@@ -10669,7 +10691,7 @@ msgstr "米国 (US) 外諸島"
 msgid "United States (US) Virgin Islands"
 msgstr "米国 (US) バージン諸島"
 
-#: includes/admin/class-wc-admin-assets.php:383
+#: includes/admin/class-wc-admin-assets.php:384
 #: includes/admin/views/html-admin-page-status-report.php:46
 msgid "Copying to clipboard failed. Please press Ctrl/Cmd+C to copy."
 msgstr "クリップボードへのコピーに失敗しました。コピーするには Ctrl/Cmd+C を使ってください。"
@@ -10724,7 +10746,7 @@ msgstr "パキスタン・ルピー"
 
 #. translators: %s: taxes
 #. translators: %s: tax information
-#: includes/class-wc-order.php:177 includes/wc-cart-functions.php:317
+#: includes/class-wc-order.php:173 includes/wc-cart-functions.php:317
 msgid "(includes %s)"
 msgstr "(%sを含む)"
 
@@ -10762,7 +10784,7 @@ msgstr "エラー : 配送URLが利用できません : %s"
 msgid "Error: Delivery URL returned response code: %s"
 msgstr "エラー : 配送URLが返信コードを戻した : %s"
 
-#: includes/class-wc-countries.php:1117
+#: includes/class-wc-countries.php:1128
 msgid "ZIP"
 msgstr "郵便番号"
 
@@ -10810,7 +10832,7 @@ msgstr "税クラスを削除できません"
 msgid "You do not have permission to read the tax classes count"
 msgstr "税クラスの数を見る権限がありません"
 
-#: includes/class-wc-countries.php:1015
+#: includes/class-wc-countries.php:1021
 msgid "State / Zone"
 msgstr "州 / 地域"
 
@@ -11201,7 +11223,7 @@ msgstr "注文"
 msgid "Drag and drop, or click to set admin variation order"
 msgstr "ドラッグアンドドロップやクリックでバリエーションの順番を管理設定します"
 
-#: includes/class-wc-install.php:345
+#: includes/class-wc-install.php:349
 msgid "Monthly"
 msgstr "月"
 
@@ -11213,7 +11235,7 @@ msgstr "バリエーションを追加する前に、<strong>属性</strong>タ�
 #. translators: %s: method
 #. translators: %s: payment method
 #. translators: %s: shipping method
-#: includes/abstracts/abstract-wc-order.php:1719
+#: includes/abstracts/abstract-wc-order.php:1726
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:251
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:303
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:320
@@ -11241,7 +11263,7 @@ msgstr "l Y年n月j日, h:ia"
 msgid "To track your order please enter your Order ID in the box below and press the \"Track\" button. This was given to you on your receipt and in the confirmation email you should have received."
 msgstr "現在の配送状況を確認するには、注文IDを入力して配送状況ボタンを押してください。この状況はメールで受け取っているはずの情報となります。"
 
-#: includes/class-wc-privacy-exporters.php:334
+#: includes/class-wc-privacy-exporters.php:337
 #: templates/order/form-tracking.php:27
 msgid "Order ID"
 msgstr "注文番号"
@@ -11654,10 +11676,6 @@ msgstr "数"
 msgid "Remove this item"
 msgstr "この項目を削除"
 
-#: templates/cart/cross-sells.php:27
-msgid "You may be interested in&hellip;"
-msgstr "興味がある可能性アリ&hellip;"
-
 #: templates/checkout/form-billing.php:29
 msgid "Billing &amp; Shipping"
 msgstr "請求 &amp; 配送"
@@ -11854,7 +11872,7 @@ msgstr "ユーザー名またはメールアドレス"
 #: includes/admin/class-wc-admin-profile.php:89
 #: includes/admin/class-wc-admin-setup-wizard.php:2116
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:84
-#: includes/class-wc-countries.php:1231 includes/class-wc-form-handler.php:243
+#: includes/class-wc-countries.php:1242 includes/class-wc-form-handler.php:243
 #: templates/myaccount/form-edit-account.php:43
 #: templates/myaccount/form-login.php:90
 msgid "Email address"
@@ -12341,24 +12359,28 @@ msgstr "配送先欄の%s"
 msgid "The order #%1$s from %2$s has been cancelled. The order was as follows:"
 msgstr "%2$s様の注文番号%1$sをキャンセルしました。注文内容はこちら: "
 
-#: includes/class-wc-privacy-exporters.php:145
-#: includes/class-wc-privacy-exporters.php:244
+#: includes/class-wc-privacy-exporters.php:148
+#: includes/class-wc-privacy-exporters.php:247
 msgid "IP Address"
 msgstr "IP アドレス"
 
 #: includes/class-wc-privacy-erasers.php:59
-#: includes/class-wc-privacy-exporters.php:194
+#: includes/class-wc-privacy-exporters.php:197
 msgid "Shipping Address 2"
 msgstr "お届け先住所2"
 
 #: includes/class-wc-privacy-erasers.php:48
-#: includes/class-wc-privacy-exporters.php:183
+#: includes/class-wc-privacy-exporters.php:186
 msgid "Billing Address 2"
 msgstr "請求先住所2"
 
 #: templates/checkout/form-login.php:32
 msgid "If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing &amp; Shipping section."
 msgstr "以前に買い物をしたことがある場合は、以下にあなたの詳細を入力してください。 新規のお客様は、[請求と配送]セクションに進んでください。"
+
+#: templates/cart/cross-sells.php:27
+msgid "You may be interested in&hellip;"
+msgstr "こちらの商品はいかがでしょうか &hellip;"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:542
@@ -12398,6 +12420,20 @@ msgstr "[{site_title}] キャンセル注文 ({order_number})"
 msgid "Subject"
 msgstr "件名"
 
+#: includes/emails/class-wc-email-cancelled-order.php:174
+#: includes/emails/class-wc-email-customer-completed-order.php:163
+#: includes/emails/class-wc-email-customer-invoice.php:218
+#: includes/emails/class-wc-email-customer-refunded-order.php:273
+#: includes/emails/class-wc-email-failed-order.php:174
+#: includes/emails/class-wc-email-new-order.php:179
+#: includes/emails/class-wc-email.php:628
+msgid "Choose which format of email to send."
+msgstr "どのフォーマットでメールを送信するか選択します"
+
+#: includes/emails/class-wc-email-customer-completed-order.php:33
+msgid "Order complete emails are sent to customers when their orders are marked completed and usually indicate that their orders have been shipped."
+msgstr "注文完了メールは、注文が出荷され、注文処理が完了した場合に送信されます。"
+
 #: includes/emails/class-wc-email-cancelled-order.php:139
 #: includes/emails/class-wc-email-customer-completed-order.php:137
 #: includes/emails/class-wc-email-customer-refunded-order.php:229
@@ -12413,20 +12449,6 @@ msgstr "件名"
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:97
 msgid "Enable/Disable"
 msgstr "有効化/無効化"
-
-#: includes/emails/class-wc-email-cancelled-order.php:174
-#: includes/emails/class-wc-email-customer-completed-order.php:163
-#: includes/emails/class-wc-email-customer-invoice.php:218
-#: includes/emails/class-wc-email-customer-refunded-order.php:273
-#: includes/emails/class-wc-email-failed-order.php:174
-#: includes/emails/class-wc-email-new-order.php:179
-#: includes/emails/class-wc-email.php:628
-msgid "Choose which format of email to send."
-msgstr "どのフォーマットでメールを送信するか選択します"
-
-#: includes/emails/class-wc-email-customer-completed-order.php:33
-msgid "Order complete emails are sent to customers when their orders are marked completed and usually indicate that their orders have been shipped."
-msgstr "注文完了メールは、注文が出荷され、注文処理が完了した場合に送信されます。"
 
 #: includes/emails/class-wc-email-customer-completed-order.php:93
 msgid "Your order is complete"
@@ -13584,7 +13606,7 @@ msgstr "商品を表示及び管理"
 msgid "An error occurred in the request and at the time were unable to send the consumer data"
 msgstr "リクエストでエラーが発生し、一度に消費者データを送信することができませんでした"
 
-#: includes/class-wc-auth.php:379
+#: includes/class-wc-auth.php:375
 msgid "Invalid nonce verification"
 msgstr "無効なnonce検証"
 
@@ -13628,27 +13650,27 @@ msgstr "残念ながら、<strong>%sへの発送はしておりません</strong
 msgid "Please rate the product."
 msgstr "商品を評価してください"
 
-#: includes/class-wc-countries.php:378
+#: includes/class-wc-countries.php:379
 msgid "to the"
 msgstr "to the"
 
-#: includes/class-wc-countries.php:378
+#: includes/class-wc-countries.php:379
 msgid "to"
 msgstr "to"
 
-#: includes/class-wc-countries.php:392
+#: includes/class-wc-countries.php:393
 msgid "the"
 msgstr "the"
 
-#: includes/class-wc-countries.php:425
+#: includes/class-wc-countries.php:426
 msgid "(ex. VAT)"
 msgstr "(付加価値税無し)"
 
-#: includes/class-wc-countries.php:425
+#: includes/class-wc-countries.php:426
 msgid "(ex. tax)"
 msgstr "(非課税)"
 
-#: includes/class-wc-countries.php:664
+#: includes/class-wc-countries.php:665
 msgid "Town / City"
 msgstr "市区町村"
 
@@ -13656,7 +13678,7 @@ msgstr "市区町村"
 #: includes/admin/class-wc-admin-profile.php:140
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:79
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:130
-#: includes/class-wc-countries.php:672
+#: includes/class-wc-countries.php:673
 #: templates/cart/shipping-calculator.php:55
 #: templates/cart/shipping-calculator.php:60
 #: templates/cart/shipping-calculator.php:72
@@ -13671,33 +13693,33 @@ msgstr "州 / 国"
 #: includes/admin/settings/class-wc-settings-general.php:100
 #: includes/admin/settings/class-wc-settings-tax.php:195
 #: includes/admin/settings/views/html-settings-tax.php:28
-#: includes/class-wc-countries.php:680
+#: includes/class-wc-countries.php:681
 #: templates/cart/shipping-calculator.php:91
 msgid "Postcode / ZIP"
 msgstr "郵便番号"
 
-#: includes/class-wc-countries.php:757
+#: includes/class-wc-countries.php:758
 msgid "Suburb"
 msgstr "郊外"
 
-#: includes/class-wc-countries.php:818
+#: includes/class-wc-countries.php:824
 msgid "Canton"
 msgstr "広東"
 
-#: includes/class-wc-countries.php:830 includes/class-wc-countries.php:906
-#: includes/class-wc-countries.php:1002
+#: includes/class-wc-countries.php:836 includes/class-wc-countries.php:912
+#: includes/class-wc-countries.php:1008
 msgid "Region"
 msgstr "地域"
 
-#: includes/class-wc-countries.php:903
+#: includes/class-wc-countries.php:909
 msgid "Town / District"
 msgstr "町 / 地区"
 
-#: includes/class-wc-countries.php:960
+#: includes/class-wc-countries.php:966
 msgid "Prefecture"
 msgstr "都道府県"
 
-#: includes/class-wc-countries.php:1085
+#: includes/class-wc-countries.php:1091
 msgid "Municipality"
 msgstr "自治体"
 
@@ -13996,12 +14018,12 @@ msgctxt "Order status"
 msgid "Refunded"
 msgstr "払い戻し"
 
-#: includes/class-wc-install.php:396
+#: includes/class-wc-install.php:400
 msgctxt "Page slug"
 msgid "cart"
 msgstr "cart"
 
-#: includes/class-wc-install.php:401
+#: includes/class-wc-install.php:405
 msgctxt "Page slug"
 msgid "checkout"
 msgstr "checkout"
@@ -14123,7 +14145,7 @@ msgstr "失敗"
 msgid "Customer details"
 msgstr "お客様情報"
 
-#: includes/class-wc-install.php:406
+#: includes/class-wc-install.php:410
 msgctxt "Page slug"
 msgid "my-account"
 msgstr "my-account"
@@ -14160,15 +14182,15 @@ msgstr "この商品を購入することはできません。"
 msgid "Invalid product SKU"
 msgstr "無効な商品 SKU"
 
-#: includes/class-wc-countries.php:414
+#: includes/class-wc-countries.php:415
 msgid "(incl. tax)"
 msgstr "(税込)"
 
-#: includes/class-wc-countries.php:414
+#: includes/class-wc-countries.php:415
 msgid "(incl. VAT)"
 msgstr "(VAT 込)"
 
-#: includes/class-wc-countries.php:403
+#: includes/class-wc-countries.php:404
 msgid "VAT"
 msgstr "付加価値税 (VAT)"
 
@@ -14178,7 +14200,7 @@ msgstr "付加価値税 (VAT)"
 msgid "Invalid payment method."
 msgstr "無効な決済方法です。"
 
-#: includes/class-wc-install.php:391
+#: includes/class-wc-install.php:395
 msgctxt "Page slug"
 msgid "shop"
 msgstr "shop"
@@ -14195,10 +14217,6 @@ msgstr "%sは無効な範囲 (scope) です。"
 #: includes/admin/settings/class-wc-settings-shipping.php:312
 msgid "Invalid shipping method!"
 msgstr "無効な配送方法です !"
-
-#: includes/class-wc-auth.php:322
-msgid "API disabled!"
-msgstr "API は無効 !"
 
 #: includes/class-wc-ajax.php:1827
 msgid "API Key updated successfully."
@@ -14368,23 +14386,23 @@ msgctxt "Admin menu name"
 msgid "Shipping classes"
 msgstr "配送クラス"
 
-#: includes/class-wc-install.php:1074
+#: includes/class-wc-install.php:1108
 msgid "Premium support"
 msgstr "プレミアムサポート"
 
-#: includes/class-wc-install.php:1073
+#: includes/class-wc-install.php:1107
 msgid "API docs"
 msgstr "API ドキュメント"
 
-#: includes/class-wc-install.php:1073
+#: includes/class-wc-install.php:1107
 msgid "View WooCommerce API docs"
 msgstr "WooCommerce API ドキュメントを表示"
 
-#: includes/class-wc-install.php:1072
+#: includes/class-wc-install.php:1106
 msgid "View WooCommerce documentation"
 msgstr "WooCommerce ドキュメントを表示"
 
-#: includes/class-wc-install.php:1056
+#: includes/class-wc-install.php:1090
 msgid "View WooCommerce settings"
 msgstr "WooCommerce 設定を表示"
 
@@ -14392,7 +14410,7 @@ msgstr "WooCommerce 設定を表示"
 msgid "Product backorder"
 msgstr "商品の予約注文"
 
-#: includes/class-wc-countries.php:632
+#: includes/class-wc-countries.php:633
 #: includes/customizer/class-wc-shop-customizer.php:677
 msgid "Company name"
 msgstr "会社名"
@@ -14436,7 +14454,7 @@ msgstr "「%1$s」の在庫数 (%2$s) がご注文数を満たしていません
 msgid "Sorry, \"%s\" is not in stock. Please edit your cart and try again. We apologize for any inconvenience caused."
 msgstr "「%s」の在庫がありません。カートを編集してもう一度お試しください。ご不便をおかけして申し訳ありません。"
 
-#: includes/class-wc-auth.php:405
+#: includes/class-wc-auth.php:401
 msgid "Access denied"
 msgstr "アクセス拒否"
 
@@ -14471,20 +14489,20 @@ msgstr "無効な webhook 配送 ID"
 msgid "Product tags"
 msgstr "商品タグ"
 
-#: includes/class-wc-countries.php:911 includes/class-wc-countries.php:925
-#: includes/class-wc-countries.php:1041 includes/class-wc-countries.php:1128
+#: includes/class-wc-countries.php:917 includes/class-wc-countries.php:931
+#: includes/class-wc-countries.php:1047 includes/class-wc-countries.php:1139
 msgid "County"
 msgstr "郡"
 
-#: includes/class-wc-countries.php:788 includes/class-wc-countries.php:810
-#: includes/class-wc-countries.php:835 includes/class-wc-countries.php:916
-#: includes/class-wc-countries.php:955 includes/class-wc-countries.php:993
-#: includes/class-wc-countries.php:1077 includes/class-wc-countries.php:1112
-#: includes/class-wc-countries.php:1159
+#: includes/class-wc-countries.php:789 includes/class-wc-countries.php:816
+#: includes/class-wc-countries.php:841 includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:961 includes/class-wc-countries.php:999
+#: includes/class-wc-countries.php:1083 includes/class-wc-countries.php:1123
+#: includes/class-wc-countries.php:1170
 msgid "Province"
 msgstr "州、省、地方、行政区分"
 
-#: includes/class-wc-countries.php:779
+#: includes/class-wc-countries.php:780
 msgid "District"
 msgstr "地区、管区 "
 
@@ -14500,7 +14518,7 @@ msgid "Refunded <span class=\"count\">(%s)</span>"
 msgid_plural "Refunded <span class=\"count\">(%s)</span>"
 msgstr[0] "返金済み <span class=\"count\">(%s)</span>"
 
-#: includes/class-wc-auth.php:399
+#: includes/class-wc-auth.php:395
 msgid "You do not have permission to access this page"
 msgstr "このページにアクセスする権限がありません"
 
@@ -14549,8 +14567,8 @@ msgid "No webhooks found."
 msgstr "webhook が見つかりません。"
 
 #: includes/class-wc-privacy-erasers.php:54
-#: includes/class-wc-privacy-exporters.php:189
-#: includes/class-wc-privacy-exporters.php:249
+#: includes/class-wc-privacy-exporters.php:192
+#: includes/class-wc-privacy-exporters.php:252
 msgid "Email Address"
 msgstr "Eメール"
 
@@ -14769,17 +14787,17 @@ msgstr "無効なクーポンコードです"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:212
 #: includes/api/legacy/v2/class-wc-api-customers.php:349
-#: includes/api/legacy/v2/class-wc-api-orders.php:367
-#: includes/api/legacy/v2/class-wc-api-orders.php:1292
-#: includes/api/legacy/v2/class-wc-api-orders.php:1585
+#: includes/api/legacy/v2/class-wc-api-orders.php:365
+#: includes/api/legacy/v2/class-wc-api-orders.php:1285
+#: includes/api/legacy/v2/class-wc-api-orders.php:1578
 #: includes/api/legacy/v2/class-wc-api-products.php:214
 #: includes/api/legacy/v2/class-wc-api-products.php:2019
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:171
 #: includes/api/legacy/v3/class-wc-api-coupons.php:210
 #: includes/api/legacy/v3/class-wc-api-customers.php:350
-#: includes/api/legacy/v3/class-wc-api-orders.php:404
-#: includes/api/legacy/v3/class-wc-api-orders.php:1339
-#: includes/api/legacy/v3/class-wc-api-orders.php:1632
+#: includes/api/legacy/v3/class-wc-api-orders.php:400
+#: includes/api/legacy/v3/class-wc-api-orders.php:1330
+#: includes/api/legacy/v3/class-wc-api-orders.php:1623
 #: includes/api/legacy/v3/class-wc-api-products.php:263
 #: includes/api/legacy/v3/class-wc-api-products.php:702
 #: includes/api/legacy/v3/class-wc-api-products.php:959
@@ -14814,6 +14832,25 @@ msgstr "そのクーポンコードは既にあります"
 msgid "Invalid coupon type - the coupon type must be any of these: %s"
 msgstr "無効なクーポンの種類 - クーポンの種類は以下のいずれかである必要があります： %s"
 
+#: includes/api/legacy/v2/class-wc-api-coupons.php:350
+#: includes/api/legacy/v2/class-wc-api-coupons.php:358
+#: includes/api/legacy/v3/class-wc-api-coupons.php:348
+#: includes/api/legacy/v3/class-wc-api-coupons.php:356
+msgid "Failed to update coupon"
+msgstr "クーポンの更新に失敗しました"
+
+#: includes/api/legacy/v2/class-wc-api-coupons.php:521
+#: includes/api/legacy/v2/class-wc-api-customers.php:784
+#: includes/api/legacy/v2/class-wc-api-orders.php:1774
+#: includes/api/legacy/v2/class-wc-api-products.php:2298
+#: includes/api/legacy/v3/class-wc-api-coupons.php:521
+#: includes/api/legacy/v3/class-wc-api-customers.php:774
+#: includes/api/legacy/v3/class-wc-api-orders.php:1819
+#: includes/api/legacy/v3/class-wc-api-products.php:3111
+#: includes/api/legacy/v3/class-wc-api-taxes.php:457
+msgid "No %1$s data specified to create/edit %1$s"
+msgstr "%1$sを作成・編集するために指定された%1$sデータがありません"
+
 #. translators: %s: parameter
 #: includes/api/legacy/v1/class-wc-api-server.php:412
 #: includes/api/legacy/v2/class-wc-api-coupons.php:226
@@ -14834,17 +14871,17 @@ msgstr "%s の項目がありません"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:324
 #: includes/api/legacy/v2/class-wc-api-customers.php:404
-#: includes/api/legacy/v2/class-wc-api-orders.php:511
-#: includes/api/legacy/v2/class-wc-api-orders.php:1351
-#: includes/api/legacy/v2/class-wc-api-orders.php:1664
+#: includes/api/legacy/v2/class-wc-api-orders.php:504
+#: includes/api/legacy/v2/class-wc-api-orders.php:1344
+#: includes/api/legacy/v2/class-wc-api-orders.php:1657
 #: includes/api/legacy/v2/class-wc-api-products.php:323
 #: includes/api/legacy/v2/class-wc-api-products.php:2102
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:242
 #: includes/api/legacy/v3/class-wc-api-coupons.php:322
 #: includes/api/legacy/v3/class-wc-api-customers.php:405
-#: includes/api/legacy/v3/class-wc-api-orders.php:551
-#: includes/api/legacy/v3/class-wc-api-orders.php:1398
-#: includes/api/legacy/v3/class-wc-api-orders.php:1711
+#: includes/api/legacy/v3/class-wc-api-orders.php:542
+#: includes/api/legacy/v3/class-wc-api-orders.php:1389
+#: includes/api/legacy/v3/class-wc-api-orders.php:1702
 #: includes/api/legacy/v3/class-wc-api-products.php:377
 #: includes/api/legacy/v3/class-wc-api-products.php:779
 #: includes/api/legacy/v3/class-wc-api-products.php:1004
@@ -14855,25 +14892,6 @@ msgstr "%s の項目がありません"
 #: includes/api/legacy/v3/class-wc-api-webhooks.php:242
 msgid "No %1$s data specified to edit %1$s"
 msgstr "%1$sを編集するために指定された%1$sデータがありません"
-
-#: includes/api/legacy/v2/class-wc-api-coupons.php:350
-#: includes/api/legacy/v2/class-wc-api-coupons.php:358
-#: includes/api/legacy/v3/class-wc-api-coupons.php:348
-#: includes/api/legacy/v3/class-wc-api-coupons.php:356
-msgid "Failed to update coupon"
-msgstr "クーポンの更新に失敗しました"
-
-#: includes/api/legacy/v2/class-wc-api-coupons.php:521
-#: includes/api/legacy/v2/class-wc-api-customers.php:784
-#: includes/api/legacy/v2/class-wc-api-orders.php:1781
-#: includes/api/legacy/v2/class-wc-api-products.php:2298
-#: includes/api/legacy/v3/class-wc-api-coupons.php:521
-#: includes/api/legacy/v3/class-wc-api-customers.php:774
-#: includes/api/legacy/v3/class-wc-api-orders.php:1828
-#: includes/api/legacy/v3/class-wc-api-products.php:3111
-#: includes/api/legacy/v3/class-wc-api-taxes.php:457
-msgid "No %1$s data specified to create/edit %1$s"
-msgstr "%1$sを作成・編集するために指定された%1$sデータがありません"
 
 #: includes/api/legacy/v1/class-wc-api-customers.php:186
 #: includes/api/legacy/v2/class-wc-api-customers.php:231
@@ -14917,57 +14935,57 @@ msgstr "この顧客情報を削除する権限がありません"
 msgid "You do not have permission to read the orders count"
 msgstr "注文件数の読み取り権限がありません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:374
-#: includes/api/legacy/v3/class-wc-api-orders.php:411
+#: includes/api/legacy/v2/class-wc-api-orders.php:372
+#: includes/api/legacy/v3/class-wc-api-orders.php:407
 msgid "You do not have permission to create orders"
 msgstr "注文する権限を持っていません。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:400
-#: includes/api/legacy/v3/class-wc-api-orders.php:437
+#: includes/api/legacy/v2/class-wc-api-orders.php:398
+#: includes/api/legacy/v3/class-wc-api-orders.php:433
 msgid "Cannot create order: %s"
 msgstr "注文を作る事が出来ません：%s"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:897
-#: includes/api/legacy/v3/class-wc-api-orders.php:943
+#: includes/api/legacy/v2/class-wc-api-orders.php:890
+#: includes/api/legacy/v3/class-wc-api-orders.php:934
 msgid "The product variation is invalid"
 msgstr "この商品のバリエーションは無効です"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1090
-#: includes/api/legacy/v3/class-wc-api-orders.php:1137
+#: includes/api/legacy/v2/class-wc-api-orders.php:1083
+#: includes/api/legacy/v3/class-wc-api-orders.php:1128
 msgid "Fee title is required"
 msgstr "費用タイトルが必要です"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1265
-#: includes/api/legacy/v2/class-wc-api-orders.php:1376
-#: includes/api/legacy/v2/class-wc-api-orders.php:1440
-#: includes/api/legacy/v3/class-wc-api-orders.php:1312
-#: includes/api/legacy/v3/class-wc-api-orders.php:1423
-#: includes/api/legacy/v3/class-wc-api-orders.php:1487
+#: includes/api/legacy/v2/class-wc-api-orders.php:1258
+#: includes/api/legacy/v2/class-wc-api-orders.php:1369
+#: includes/api/legacy/v2/class-wc-api-orders.php:1433
+#: includes/api/legacy/v3/class-wc-api-orders.php:1303
+#: includes/api/legacy/v3/class-wc-api-orders.php:1414
+#: includes/api/legacy/v3/class-wc-api-orders.php:1478
 msgid "An order note with the provided ID could not be found"
 msgstr "備考に付与されたIDがありません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1299
-#: includes/api/legacy/v3/class-wc-api-orders.php:1346
+#: includes/api/legacy/v2/class-wc-api-orders.php:1292
+#: includes/api/legacy/v3/class-wc-api-orders.php:1337
 msgid "You do not have permission to create order notes"
 msgstr "備考欄を作る権限がありません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1314
-#: includes/api/legacy/v3/class-wc-api-orders.php:1361
+#: includes/api/legacy/v2/class-wc-api-orders.php:1307
+#: includes/api/legacy/v3/class-wc-api-orders.php:1352
 msgid "Order note is required"
 msgstr "備考欄は必須です"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1452
-#: includes/api/legacy/v3/class-wc-api-orders.php:1499
+#: includes/api/legacy/v2/class-wc-api-orders.php:1445
+#: includes/api/legacy/v3/class-wc-api-orders.php:1490
 msgid "This order note cannot be deleted"
 msgstr "この注文メモは削除できません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1457
-#: includes/api/legacy/v3/class-wc-api-orders.php:1504
+#: includes/api/legacy/v2/class-wc-api-orders.php:1450
+#: includes/api/legacy/v3/class-wc-api-orders.php:1495
 msgid "Permanently deleted order note"
 msgstr "注文メモを完全に削除しました"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1592
-#: includes/api/legacy/v3/class-wc-api-orders.php:1639
+#: includes/api/legacy/v2/class-wc-api-orders.php:1585
+#: includes/api/legacy/v3/class-wc-api-orders.php:1630
 msgid "You do not have permission to create order refunds"
 msgstr "あなたは注文払い戻しを作成する権限がありません"
 
@@ -15200,8 +15218,8 @@ msgstr "無効な商品タイプ -商品のタイプは、これらのいずれ�
 msgid "Force SSL"
 msgstr "強制 SSL"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:434
-#: includes/api/legacy/v3/class-wc-api-orders.php:476
+#: includes/api/legacy/v2/class-wc-api-orders.php:432
+#: includes/api/legacy/v3/class-wc-api-orders.php:472
 msgid "Payment method ID and title are required"
 msgstr "決済方法 ID と名称が必要です。"
 
@@ -15209,10 +15227,10 @@ msgstr "決済方法 ID と名称が必要です。"
 msgid "It is strongly recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?"
 msgstr "先に進む前に、データベースをバックアップすることを強くお勧めします。本当にアップデーターを実行してもよいですか ?"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:528
-#: includes/api/legacy/v2/class-wc-api-orders.php:1598
-#: includes/api/legacy/v3/class-wc-api-orders.php:568
-#: includes/api/legacy/v3/class-wc-api-orders.php:1645
+#: includes/api/legacy/v2/class-wc-api-orders.php:521
+#: includes/api/legacy/v2/class-wc-api-orders.php:1591
+#: includes/api/legacy/v3/class-wc-api-orders.php:559
+#: includes/api/legacy/v3/class-wc-api-orders.php:1636
 msgid "Order ID is invalid"
 msgstr "注文 ID が無効です"
 
@@ -15294,13 +15312,13 @@ msgstr "このサイトでは JSONP がサポートされていません"
 msgid "No route was found matching the URL and request method"
 msgstr "URL とリクエストメソッド (request method) に合ったルートがありません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:872
-#: includes/api/legacy/v3/class-wc-api-orders.php:918
+#: includes/api/legacy/v2/class-wc-api-orders.php:865
+#: includes/api/legacy/v3/class-wc-api-orders.php:909
 msgid "Product ID or SKU is required"
 msgstr "商品 ID か SKU が必要です。"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:882
-#: includes/api/legacy/v3/class-wc-api-orders.php:928
+#: includes/api/legacy/v2/class-wc-api-orders.php:875
+#: includes/api/legacy/v3/class-wc-api-orders.php:919
 msgid "Product ID provided does not match this line item"
 msgstr "商品 ID が、この行の商品と一致していません"
 
@@ -15310,10 +15328,10 @@ msgstr "商品 ID が、この行の商品と一致していません"
 msgid "The JSONP callback function is invalid"
 msgstr "JSONP のコールバック関数が無効です"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1381
-#: includes/api/legacy/v2/class-wc-api-orders.php:1445
-#: includes/api/legacy/v3/class-wc-api-orders.php:1428
-#: includes/api/legacy/v3/class-wc-api-orders.php:1492
+#: includes/api/legacy/v2/class-wc-api-orders.php:1374
+#: includes/api/legacy/v2/class-wc-api-orders.php:1438
+#: includes/api/legacy/v3/class-wc-api-orders.php:1419
+#: includes/api/legacy/v3/class-wc-api-orders.php:1483
 msgid "The order note ID provided is not associated with the order"
 msgstr "提供された注文メモ ID は注文に関連付けられていません"
 
@@ -15333,12 +15351,12 @@ msgstr "無効なクーポン ID"
 msgid "Invalid customer ID"
 msgstr "無効なお客様 ID"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1259
-#: includes/api/legacy/v2/class-wc-api-orders.php:1369
-#: includes/api/legacy/v2/class-wc-api-orders.php:1433
-#: includes/api/legacy/v3/class-wc-api-orders.php:1306
-#: includes/api/legacy/v3/class-wc-api-orders.php:1416
-#: includes/api/legacy/v3/class-wc-api-orders.php:1480
+#: includes/api/legacy/v2/class-wc-api-orders.php:1252
+#: includes/api/legacy/v2/class-wc-api-orders.php:1362
+#: includes/api/legacy/v2/class-wc-api-orders.php:1426
+#: includes/api/legacy/v3/class-wc-api-orders.php:1297
+#: includes/api/legacy/v3/class-wc-api-orders.php:1407
+#: includes/api/legacy/v3/class-wc-api-orders.php:1471
 msgid "Invalid order note ID"
 msgstr "無効な注文メモ ID"
 
@@ -15417,41 +15435,41 @@ msgstr "webhook を作成する権限がありません"
 msgid "No %1$s found with the ID equal to %2$s"
 msgstr "%2$s に等しいIDを持つ %1$s は見つかりませんでした"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1692
-#: includes/api/legacy/v2/class-wc-api-orders.php:1753
-#: includes/api/legacy/v3/class-wc-api-orders.php:1739
-#: includes/api/legacy/v3/class-wc-api-orders.php:1800
+#: includes/api/legacy/v2/class-wc-api-orders.php:1685
+#: includes/api/legacy/v2/class-wc-api-orders.php:1746
+#: includes/api/legacy/v3/class-wc-api-orders.php:1730
+#: includes/api/legacy/v3/class-wc-api-orders.php:1791
 msgid "The order refund ID provided is not associated with the order."
 msgstr "提供された注文払い戻しIDが注文に関連付けられていません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1607
-#: includes/api/legacy/v3/class-wc-api-orders.php:1654
+#: includes/api/legacy/v2/class-wc-api-orders.php:1600
+#: includes/api/legacy/v3/class-wc-api-orders.php:1645
 msgid "Refund amount must be positive."
 msgstr "払い戻し額は正数でなければなりません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1605
-#: includes/api/legacy/v3/class-wc-api-orders.php:1652
+#: includes/api/legacy/v2/class-wc-api-orders.php:1598
+#: includes/api/legacy/v3/class-wc-api-orders.php:1643
 msgid "Refund amount is required."
 msgstr "払い戻し金額が必要です"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1525
-#: includes/api/legacy/v2/class-wc-api-orders.php:1687
-#: includes/api/legacy/v2/class-wc-api-orders.php:1748
-#: includes/api/legacy/v3/class-wc-api-orders.php:1572
-#: includes/api/legacy/v3/class-wc-api-orders.php:1734
-#: includes/api/legacy/v3/class-wc-api-orders.php:1795
+#: includes/api/legacy/v2/class-wc-api-orders.php:1518
+#: includes/api/legacy/v2/class-wc-api-orders.php:1680
+#: includes/api/legacy/v2/class-wc-api-orders.php:1741
+#: includes/api/legacy/v3/class-wc-api-orders.php:1563
+#: includes/api/legacy/v3/class-wc-api-orders.php:1725
+#: includes/api/legacy/v3/class-wc-api-orders.php:1786
 msgid "An order refund with the provided ID could not be found."
 msgstr "提供された ID では、払い戻しは見つかりませんでした"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1159
-#: includes/api/legacy/v3/class-wc-api-orders.php:1206
+#: includes/api/legacy/v2/class-wc-api-orders.php:1152
+#: includes/api/legacy/v3/class-wc-api-orders.php:1197
 msgid "Coupon discount total must be a positive amount."
 msgstr "クーポンの割引合計金額は正の数でなければいけません"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:450
-#: includes/api/legacy/v2/class-wc-api-orders.php:607
-#: includes/api/legacy/v3/class-wc-api-orders.php:492
-#: includes/api/legacy/v3/class-wc-api-orders.php:646
+#: includes/api/legacy/v2/class-wc-api-orders.php:448
+#: includes/api/legacy/v2/class-wc-api-orders.php:600
+#: includes/api/legacy/v3/class-wc-api-orders.php:488
+#: includes/api/legacy/v3/class-wc-api-orders.php:637
 msgid "Provided order currency is invalid."
 msgstr "注文で提供されている通貨が無効です"
 
@@ -15486,10 +15504,6 @@ msgstr "Storefront について詳しく読む"
 msgid "Learn more about templates"
 msgstr "テンプレートについてもっと調べる（英語）"
 
-#: includes/admin/views/html-notice-template-check.php:15
-msgid "<strong>Your theme (%1$s) contains outdated copies of some WooCommerce template files.</strong> These files may need updating to ensure they are compatible with the current version of WooCommerce. You can see which files are affected from the <a href=\"%2$s\">system status page</a>. If in doubt, check with the author of the theme."
-msgstr "<strong>あなたのテーマ (%1$s) には古いタイプの WooCommerce のテンプレートファイルが含まれます。</strong>現在、利用している WooCommerce のバージョンの新しいテンプレートファイルに変える必要があります。<a href=\"%2$s\">システム状況ページ</a>から影響を受けているファイルを確認してください。分からない場合は、テーマの作成者に確認してください。"
-
 #: includes/admin/views/html-notice-install.php:13
 msgid "Skip setup"
 msgstr "設定をスキップ"
@@ -15500,6 +15514,10 @@ msgstr "設定をスキップ"
 #: includes/export/class-wc-product-csv-exporter.php:98
 msgid "Sold individually?"
 msgstr "個別に販売しますか？"
+
+#: includes/admin/views/html-notice-template-check.php:15
+msgid "<strong>Your theme (%1$s) contains outdated copies of some WooCommerce template files.</strong> These files may need updating to ensure they are compatible with the current version of WooCommerce. You can see which files are affected from the <a href=\"%2$s\">system status page</a>. If in doubt, check with the author of the theme."
+msgstr "<strong>あなたのテーマ (%1$s) には古いタイプの WooCommerce のテンプレートファイルが含まれます。</strong>現在、利用している WooCommerce のバージョンの新しいテンプレートファイルに変える必要があります。<a href=\"%2$s\">システム状況ページ</a>から影響を受けているファイルを確認してください。分からない場合は、テーマの作成者に確認してください。"
 
 #: includes/admin/views/html-bulk-edit-product.php:29
 msgid "Decrease existing price by (fixed amount or %):"
@@ -15531,7 +15549,7 @@ msgctxt "Page setting"
 msgid "Shop base"
 msgstr "ショップベース"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:130
+#: includes/admin/settings/views/html-webhooks-edit.php:133
 msgid "API Version"
 msgstr "API バージョン"
 
@@ -15948,16 +15966,16 @@ msgstr "アクション"
 msgid "Custom"
 msgstr "カスタム"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:119
+#: includes/admin/settings/views/html-webhooks-edit.php:122
 msgid "Secret"
 msgstr "秘密鍵"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:156
-#: includes/admin/settings/views/html-webhooks-edit.php:165
+#: includes/admin/settings/views/html-webhooks-edit.php:159
+#: includes/admin/settings/views/html-webhooks-edit.php:168
 msgid "Created at"
 msgstr "作成日時"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:173
+#: includes/admin/settings/views/html-webhooks-edit.php:176
 msgid "Updated at"
 msgstr "更新 "
 
@@ -16084,7 +16102,7 @@ msgstr "出荷できる国を選ぶか、販売するすべての地域に出荷
 msgid "Friendly name for identifying this webhook, defaults to Webhook created on %s."
 msgstr "この webhook を識別するための分かり易い名前を%s上で作成。"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:109
+#: includes/admin/settings/views/html-webhooks-edit.php:112
 msgid "URL where the webhook payload is delivered."
 msgstr "webhook payload で配信された URL。"
 
@@ -16215,19 +16233,19 @@ msgstr "以下に基づく税の計算"
 msgid "Prices entered with tax"
 msgstr "税込み価格"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:184
+#: includes/admin/settings/views/html-webhooks-edit.php:187
 msgid "Save webhook"
 msgstr "Webhook を保存"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:149
+#: includes/admin/settings/views/html-webhooks-edit.php:152
 msgid "Webhook actions"
 msgstr "Webhook 処理"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:98
+#: includes/admin/settings/views/html-webhooks-edit.php:101
 msgid "Enter the action that will trigger this webhook."
 msgstr "この webhook をトリガーする処理を入力します。"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:97
+#: includes/admin/settings/views/html-webhooks-edit.php:100
 msgid "Action event"
 msgstr "イベントの処理"
 
@@ -16821,7 +16839,7 @@ msgstr "数量"
 #: includes/admin/meta-boxes/views/html-order-items.php:39
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:155
 #: includes/admin/settings/class-wc-settings-tax.php:29
-#: includes/class-wc-countries.php:403 includes/class-wc-order-item-tax.php:159
+#: includes/class-wc-countries.php:404 includes/class-wc-order-item-tax.php:159
 #: includes/class-wc-tax.php:762
 msgid "Tax"
 msgstr "税"
@@ -16831,7 +16849,7 @@ msgid "To edit this order change the status back to \"Pending\""
 msgstr "この注文を「支払い待ち」に戻す変更をする"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:235
-#: includes/class-wc-order.php:1971
+#: includes/class-wc-order.php:1961
 msgid "Refund"
 msgstr "払戻額"
 
@@ -16843,10 +16861,6 @@ msgstr "手数料を追加"
 #: templates/myaccount/form-reset-password.php:44
 msgid "Save"
 msgstr "保存"
-
-#: includes/admin/meta-boxes/views/html-order-items.php:265
-msgid "Restock refunded items"
-msgstr "払い戻された商品が在庫に戻りました"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:274
 msgid "Total available to refund"
@@ -17259,7 +17273,7 @@ msgstr "セール開始日"
 msgid "Sale end date"
 msgstr "販売終了日"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:803
+#: includes/api/class-wc-rest-product-variations-controller.php:813
 #: includes/api/class-wc-rest-products-controller.php:1646
 #: includes/api/v1/class-wc-rest-products-controller.php:1936
 #: includes/api/v1/class-wc-rest-products-controller.php:2396
@@ -17295,13 +17309,13 @@ msgid "Purchase note"
 msgstr "注意事項"
 
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:27
-#: includes/class-wc-privacy-exporters.php:346
+#: includes/class-wc-privacy-exporters.php:349
 #: includes/wc-account-functions.php:212
 msgid "Downloads remaining"
 msgstr "残りのダウンロード"
 
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:32
-#: includes/class-wc-privacy-exporters.php:358
+#: includes/class-wc-privacy-exporters.php:361
 msgid "Access expires"
 msgstr "アクセス有効期限"
 
@@ -17583,7 +17597,7 @@ msgstr "今月"
 msgid "Last month"
 msgstr "先月"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:675
+#: includes/api/class-wc-rest-product-variations-controller.php:685
 msgid "Variation description."
 msgstr "バリエーションの説明。"
 
@@ -17666,7 +17680,7 @@ msgstr "%1$s相当販売 (過去%2$d日間)"
 msgid "Enabled"
 msgstr "有効化済み"
 
-#: includes/admin/class-wc-admin-assets.php:200
+#: includes/admin/class-wc-admin-assets.php:201
 #: includes/admin/meta-boxes/views/html-product-data-advanced.php:47
 #: includes/admin/settings/class-wc-settings-products.php:410
 msgid "Enable reviews"
@@ -17703,9 +17717,13 @@ msgstr "クーポンによる絞り込み"
 msgid "Same as parent"
 msgstr "親商品と同じ"
 
-#: includes/class-wc-privacy-exporters.php:242
+#: includes/class-wc-privacy-exporters.php:245
 msgid "Order Total"
 msgstr "注文合計"
+
+#: includes/admin/meta-boxes/views/html-order-items.php:265
+msgid "Restock refunded items"
+msgstr "払い戻された商品を在庫に戻す"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1600
 msgid "Offline Payments"
@@ -17820,7 +17838,7 @@ msgstr "属性条件は、商品およびバリエーションに割り当てる
 msgid "Topic"
 msgstr "トピック"
 
-#: includes/class-wc-install.php:1072
+#: includes/class-wc-install.php:1106
 msgid "Docs"
 msgstr "ドキュメント"
 
@@ -17966,7 +17984,7 @@ msgstr "適用"
 #: includes/admin/class-wc-admin-profile.php:85
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:360
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:87
-#: includes/class-wc-countries.php:1221
+#: includes/class-wc-countries.php:1232
 #: includes/customizer/class-wc-shop-customizer.php:679
 msgid "Phone"
 msgstr "電話番号"
@@ -17992,18 +18010,18 @@ msgstr "お客様情報を呼び込む"
 msgid "No billing address set."
 msgstr "お客様情報が設定されていません"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:401
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:403
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:405
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:407
 #: includes/admin/meta-boxes/views/html-order-shipping.php:39
 #: includes/admin/meta-boxes/views/html-order-shipping.php:41
 msgid "Other"
 msgstr "その他"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:427
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:431
 msgid "Load shipping address"
 msgstr "配送先住所を呼び込む"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:438
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "No shipping address set."
 msgstr "配送先住所が設定されていません"
 
@@ -18272,11 +18290,11 @@ msgstr "ダウンロード可能なファイル"
 msgid "Webhook created on %s"
 msgstr "%sで作成された Webhook"
 
-#: includes/admin/class-wc-admin-webhooks.php:255
+#: includes/admin/class-wc-admin-webhooks.php:229
 msgid "Webhook updated successfully."
 msgstr "Webhook の更新が完了しました。"
 
-#: includes/admin/class-wc-admin-webhooks.php:259
+#: includes/admin/class-wc-admin-webhooks.php:233
 msgid "Webhook created successfully."
 msgstr "Webhook の作成が成功しました。"
 
@@ -18297,7 +18315,7 @@ msgid "Downloadable products give access to a file upon purchase."
 msgstr "ダウンロード商品は、購入時にファイルへのアクセス権を与える"
 
 #: includes/admin/class-wc-admin-webhooks-table-list.php:51
-#: includes/admin/settings/views/html-webhooks-edit.php:108
+#: includes/admin/settings/views/html-webhooks-edit.php:111
 msgid "Delivery URL"
 msgstr "配信 URL"
 
@@ -18336,7 +18354,7 @@ msgstr "このツールは、商品項目を再集計します。- カタログ�
 msgid "Linked Products"
 msgstr "関連商品"
 
-#: includes/admin/class-wc-admin-webhooks.php:295
+#: includes/admin/class-wc-admin-webhooks.php:269
 #: includes/admin/settings/class-wc-settings-advanced.php:44
 msgid "Webhooks"
 msgstr "Web フック"
@@ -18363,7 +18381,7 @@ msgstr "在庫数"
 msgid "Grant access"
 msgstr "アクセスを許可"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:501
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:505
 msgid "Customer provided note"
 msgstr "お客様からの注意事項"
 
@@ -18409,16 +18427,16 @@ msgstr "税率を表示"
 msgid "HTML email template"
 msgstr "HTML メールテンプレート"
 
-#: includes/admin/class-wc-admin-webhooks.php:309
+#: includes/admin/class-wc-admin-webhooks.php:284
 msgid "Search webhooks"
 msgstr "Webhook を検索"
 
-#: includes/admin/class-wc-admin-webhooks.php:295
+#: includes/admin/class-wc-admin-webhooks.php:269
 msgid "Add webhook"
 msgstr "Webhook を追加"
 
 #. translators: %d: count
-#: includes/admin/class-wc-admin-webhooks.php:251
+#: includes/admin/class-wc-admin-webhooks.php:225
 msgid "%d webhook permanently deleted."
 msgid_plural "%d webhooks permanently deleted."
 msgstr[0] "%d個の webhook を完全に削除しました。"
@@ -18478,12 +18496,12 @@ msgstr "クーポンがセール商品に適用すべきでない場合は、こ
 msgid "Virtual products are intangible and are not shipped."
 msgstr "バーチャル商品は無形のため、発送されません。"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:502
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:506
 msgid "Customer notes about the order"
 msgstr "注文に関する顧客メモ"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:413
-#: includes/class-wc-privacy-exporters.php:292
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:417
+#: includes/class-wc-privacy-exporters.php:295
 msgid "Transaction ID"
 msgstr "取引 ID"
 
@@ -18491,7 +18509,7 @@ msgstr "取引 ID"
 msgid "Value of the coupon."
 msgstr "クーポンの金額や割引率"
 
-#: includes/admin/class-wc-admin-webhooks.php:189
+#: includes/admin/class-wc-admin-webhooks-table-list.php:218
 msgid "You do not have permission to edit Webhooks"
 msgstr "Webhook を編集する権限がありません。"
 
@@ -18517,7 +18535,7 @@ msgstr "住所"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:165
 #: includes/admin/class-wc-admin-setup-wizard.php:881
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:424
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:428
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:99
 #: includes/admin/meta-boxes/views/html-order-shipping.php:17
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:79
@@ -18535,7 +18553,7 @@ msgstr "Webhook を更新する権限がありません。"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:606
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:607
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:387
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:391
 #: includes/admin/meta-boxes/views/html-order-shipping.php:24
 #: includes/admin/settings/class-wc-settings-accounts.php:169
 #: includes/admin/settings/class-wc-settings-accounts.php:181
@@ -18565,7 +18583,7 @@ msgstr "該当なし"
 msgid "Order Status"
 msgstr "注文ステータス:"
 
-#: includes/class-wc-privacy-exporters.php:241
+#: includes/class-wc-privacy-exporters.php:244
 msgid "Order Date"
 msgstr "注文日"
 
@@ -18946,7 +18964,7 @@ msgstr "キャンセル"
 #: includes/admin/class-wc-admin-profile.php:105
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:44
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:95
-#: includes/class-wc-countries.php:618 includes/class-wc-form-handler.php:240
+#: includes/class-wc-countries.php:619 includes/class-wc-form-handler.php:240
 #: templates/myaccount/form-edit-account.php:27
 msgid "First name"
 msgstr "名"
@@ -18955,7 +18973,7 @@ msgstr "名"
 #: includes/admin/class-wc-admin-profile.php:109
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:48
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:99
-#: includes/class-wc-countries.php:625 includes/class-wc-form-handler.php:241
+#: includes/class-wc-countries.php:626 includes/class-wc-form-handler.php:241
 #: templates/myaccount/form-edit-account.php:31
 msgid "Last name"
 msgstr "姓"
@@ -18967,8 +18985,8 @@ msgstr "姓"
 msgid "Company"
 msgstr "勤め先"
 
-#: includes/class-wc-countries.php:760 includes/class-wc-countries.php:998
-#: includes/class-wc-countries.php:1125
+#: includes/class-wc-countries.php:761 includes/class-wc-countries.php:1004
+#: includes/class-wc-countries.php:1136
 msgid "Postcode"
 msgstr "郵便番号"
 
@@ -18979,7 +18997,7 @@ msgstr "郵便番号"
 #: includes/admin/class-wc-admin-setup-wizard.php:396
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:72
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:123
-#: includes/class-wc-countries.php:640
+#: includes/class-wc-countries.php:641
 msgid "Country"
 msgstr "国"
 
@@ -19104,13 +19122,7 @@ msgstr "cm"
 msgid "mm"
 msgstr "mm"
 
-#: includes/admin/class-wc-admin-setup-wizard.php:415
-#: includes/admin/class-wc-admin-setup-wizard.php:417
-#: includes/class-wc-countries.php:763 includes/class-wc-countries.php:1120
-msgid "State"
-msgstr "州"
-
-#: includes/class-wc-install.php:392
+#: includes/class-wc-install.php:396
 msgctxt "Page title"
 msgid "Shop"
 msgstr "ショップ"
@@ -19126,7 +19138,7 @@ msgstr "メール"
 msgid "Ready!"
 msgstr "準備完了 !"
 
-#: includes/class-wc-install.php:402
+#: includes/class-wc-install.php:406
 msgctxt "Page title"
 msgid "Checkout"
 msgstr "支払い"
@@ -19177,7 +19189,7 @@ msgstr "商品を更新しました。 <a href=\"%s\">商品を表示</a>"
 msgid "Product published. <a href=\"%s\">View Product</a>"
 msgstr "商品を公開しました。<a href=\"%s\">商品ページを表示</a>"
 
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:649
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:652
 msgid "Order status changed by bulk edit:"
 msgstr "一括編集で注文ステータスを変更しました:"
 
@@ -19199,7 +19211,7 @@ msgstr "すべてを選択"
 msgid "Hidden"
 msgstr "非表示"
 
-#: includes/class-wc-install.php:397
+#: includes/class-wc-install.php:401
 msgctxt "Page title"
 msgid "Cart"
 msgstr "カート"
@@ -19207,10 +19219,6 @@ msgstr "カート"
 #: includes/admin/class-wc-admin-setup-wizard.php:1283
 msgid "PayPal email address"
 msgstr "PayPal メールアドレス"
-
-#: includes/admin/class-wc-admin-setup-wizard.php:395
-msgid "Where is your store based?"
-msgstr "店舗地域 (都道府県)"
 
 #: includes/admin/class-wc-admin-pointers.php:205
 msgid "When you are finished editing your product, hit the \"Publish\" button to publish your product to your store."
@@ -19239,9 +19247,9 @@ msgstr "市区町村"
 #: includes/admin/class-wc-admin-post-types.php:134
 #: includes/admin/class-wc-admin-post-types.php:153
 #: includes/admin/class-wc-admin-post-types.php:172
-#: includes/admin/settings/views/html-webhooks-edit.php:159
-#: includes/admin/settings/views/html-webhooks-edit.php:168
-#: includes/admin/settings/views/html-webhooks-edit.php:176
+#: includes/admin/settings/views/html-webhooks-edit.php:162
+#: includes/admin/settings/views/html-webhooks-edit.php:171
+#: includes/admin/settings/views/html-webhooks-edit.php:179
 #: includes/class-wc-webhook.php:397
 msgid "M j, Y @ G:i"
 msgstr "Y年n月j日 @ G:i"
@@ -19254,7 +19262,7 @@ msgstr "この商品のタイプを選択します。シンプル商品は(私�
 #: includes/admin/reports/class-wc-report-customer-list.php:215
 #: includes/admin/settings/class-wc-settings-advanced.php:222
 #: includes/class-wc-post-types.php:370
-#: includes/class-wc-privacy-exporters.php:73 includes/class-wc-query.php:109
+#: includes/class-wc-privacy-exporters.php:76 includes/class-wc-query.php:109
 #: includes/wc-account-functions.php:99
 msgid "Orders"
 msgstr "ご注文"
@@ -19271,7 +19279,7 @@ msgstr "1000の区切り記号。"
 msgid "Currency position."
 msgstr "通貨の位置。"
 
-#: includes/class-wc-install.php:407
+#: includes/class-wc-install.php:411
 msgctxt "Page title"
 msgid "My account"
 msgstr "マイアカウント"
@@ -19305,7 +19313,7 @@ msgstr "都道府県/国または州のコード"
 #: includes/admin/class-wc-admin-webhooks-table-list.php:92
 #: includes/admin/class-wc-admin-webhooks-table-list.php:206
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:63
-#: includes/admin/settings/views/html-webhooks-edit.php:195
+#: includes/admin/settings/views/html-webhooks-edit.php:198
 msgid "Delete permanently"
 msgstr "永久に削除"
 
@@ -19455,7 +19463,7 @@ msgid "Most stocked"
 msgstr "ほとんどの在庫"
 
 #. translators: %d: orders count
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:689
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:692
 msgid "%d order status changed."
 msgid_plural "%d order statuses changed."
 msgstr[0] "%d 件の注文ステータスを変更しました"
@@ -19463,6 +19471,16 @@ msgstr[0] "%d 件の注文ステータスを変更しました"
 #: includes/class-wc-privacy.php:112
 msgid "Payments"
 msgstr "決済方法"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:395
+msgid "Where is your store based?"
+msgstr "店舗地域 (国)"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:415
+#: includes/admin/class-wc-admin-setup-wizard.php:417
+#: includes/class-wc-countries.php:764 includes/class-wc-countries.php:1131
+msgid "State"
+msgstr "都道府県（もしくは州）"
 
 #: includes/admin/class-wc-admin-api-keys-table-list.php:48
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:470
@@ -19528,7 +19546,7 @@ msgstr "Read/Write"
 msgid "Unknown"
 msgstr "不明"
 
-#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.4.1)  #-#-#-#-#
+#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.4.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/admin/class-wc-admin-assets.php:84
 #: includes/admin/class-wc-admin-menus.php:59
@@ -19536,8 +19554,8 @@ msgstr "不明"
 #: includes/admin/helper/class-wc-helper.php:448
 #: includes/admin/helper/class-wc-helper.php:591
 #: includes/admin/helper/class-wc-helper.php:1338
-#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1638
-#: includes/class-wc-order.php:1639 includes/class-wc-privacy.php:31
+#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1628
+#: includes/class-wc-order.php:1629 includes/class-wc-privacy.php:31
 #: includes/customizer/class-wc-shop-customizer.php:36
 #: includes/wc-order-functions.php:913
 msgid "WooCommerce"
@@ -19557,60 +19575,60 @@ msgstr "桁区切りや通貨記号なしで金銭を(％s)形式で入力して
 msgid "Please enter in country code with two capital letters."
 msgstr "2つの大文字で国コードで入力してください。"
 
-#: includes/admin/class-wc-admin-assets.php:229
+#: includes/admin/class-wc-admin-assets.php:230
 msgid "Enter a value"
 msgstr "値を入力してください"
 
-#: includes/admin/class-wc-admin-assets.php:230
+#: includes/admin/class-wc-admin-assets.php:231
 msgid "Variation menu order (determines position in the list of variations)"
 msgstr "バリエーションの表示順(バリエーション一覧の表示順に依存)"
 
-#: includes/admin/class-wc-admin-assets.php:231
+#: includes/admin/class-wc-admin-assets.php:232
 msgid "Enter a value (fixed or %)"
 msgstr "値を入力(固定または％)"
 
-#: includes/admin/class-wc-admin-assets.php:234
+#: includes/admin/class-wc-admin-assets.php:235
 #: includes/admin/class-wc-admin-taxonomies.php:135
 #: includes/admin/class-wc-admin-taxonomies.php:245
 msgid "Choose an image"
 msgstr "画像を選択してください"
 
-#: includes/admin/class-wc-admin-assets.php:235
+#: includes/admin/class-wc-admin-assets.php:236
 msgid "Set variation image"
 msgstr "バリエーション画像を設定"
 
-#: includes/admin/class-wc-admin-assets.php:238
+#: includes/admin/class-wc-admin-assets.php:239
 msgid "No variations added"
 msgstr "バリエーションは追加されませんでした"
 
-#: includes/admin/class-wc-admin-assets.php:240
+#: includes/admin/class-wc-admin-assets.php:241
 msgid "Sale start date (YYYY-MM-DD format or leave blank)"
 msgstr "セール開始日時(YYYY-MM-DDフォーマットか空欄)"
 
-#: includes/admin/class-wc-admin-assets.php:241
+#: includes/admin/class-wc-admin-assets.php:242
 msgid "Sale end date (YYYY-MM-DD format or leave blank)"
 msgstr "セール終了日(YYYY-MM-DDフォーマットで入力、もしくは空欄)"
 
-#: includes/admin/class-wc-admin-assets.php:243
+#: includes/admin/class-wc-admin-assets.php:244
 msgid "%qty% variation"
 msgstr "%qty%バリエーション"
 
-#: includes/admin/class-wc-admin-assets.php:244
+#: includes/admin/class-wc-admin-assets.php:245
 msgid "%qty% variations"
 msgstr "%qty%バリエーション"
 
-#: includes/admin/class-wc-admin-assets.php:259
-#: includes/admin/class-wc-admin-assets.php:409
+#: includes/admin/class-wc-admin-assets.php:260
+#: includes/admin/class-wc-admin-assets.php:410
 #: includes/admin/settings/views/html-webhooks-edit.php:67
 #: includes/class-wc-frontend-scripts.php:566
 msgid "Select an option&hellip;"
 msgstr "オプションを選択&hellip;"
 
-#: includes/admin/class-wc-admin-assets.php:288
+#: includes/admin/class-wc-admin-assets.php:289
 msgid "Remove this attribute?"
 msgstr "この属性を削除しますか?"
 
-#: includes/admin/class-wc-admin-assets.php:289
+#: includes/admin/class-wc-admin-assets.php:290
 #: includes/admin/class-wc-admin-attributes.php:187
 #: includes/admin/class-wc-admin-attributes.php:254
 #: includes/admin/class-wc-admin-attributes.php:289
@@ -19632,35 +19650,35 @@ msgstr "この属性を削除しますか?"
 msgid "Name"
 msgstr "名前"
 
-#: includes/admin/class-wc-admin-assets.php:290
+#: includes/admin/class-wc-admin-assets.php:291
 #: includes/admin/meta-boxes/views/html-product-attribute.php:8
 #: includes/admin/meta-boxes/views/html-variation-admin.php:16
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:54
 msgid "Remove"
 msgstr "削除"
 
-#: includes/admin/class-wc-admin-assets.php:291
+#: includes/admin/class-wc-admin-assets.php:292
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:9
 #: includes/admin/meta-boxes/views/html-product-attribute.php:9
 #: includes/admin/meta-boxes/views/html-variation-admin.php:17
 msgid "Click to toggle"
 msgstr "クリックで切替"
 
-#: includes/admin/class-wc-admin-assets.php:292
+#: includes/admin/class-wc-admin-assets.php:293
 #: includes/admin/meta-boxes/views/html-product-attribute.php:29
 msgid "Value(s)"
 msgstr "値(s)"
 
-#: includes/admin/class-wc-admin-assets.php:295
+#: includes/admin/class-wc-admin-assets.php:296
 #: includes/admin/meta-boxes/views/html-product-attribute.php:80
 msgid "Used for variations"
 msgstr "バリエーションのために使用"
 
-#: includes/admin/class-wc-admin-assets.php:296
+#: includes/admin/class-wc-admin-assets.php:297
 msgid "Enter a name for the new attribute term:"
 msgstr "新しい属性の用語の名前を入力します:"
 
-#: includes/admin/class-wc-admin-assets.php:331
+#: includes/admin/class-wc-admin-assets.php:332
 msgid "You cannot add the same tax rate twice!"
 msgstr "二度同じ税率を追加することはできません！"
 
@@ -19759,7 +19777,7 @@ msgstr "条件"
 #: includes/admin/class-wc-admin-webhooks-table-list.php:82
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:401
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:313
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:425
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:429
 #: includes/admin/reports/class-wc-report-customer-list.php:159
 #: includes/admin/reports/class-wc-report-stock.php:135
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:54
@@ -19842,7 +19860,7 @@ msgstr "csvファイルで<strong>税率</strong>をインポート"
 
 #: includes/admin/class-wc-admin-menus.php:79
 #: includes/admin/views/html-admin-page-status-report.php:604
-#: includes/class-wc-install.php:1056
+#: includes/class-wc-install.php:1090
 msgid "Settings"
 msgstr "設定"
 
@@ -19880,7 +19898,7 @@ msgstr "デフォルト"
 #: includes/admin/reports/class-wc-report-downloads.php:215
 #: includes/admin/reports/class-wc-report-stock.php:173
 #: includes/class-wc-emails.php:402 includes/class-wc-post-types.php:303
-#: includes/class-wc-privacy-exporters.php:338
+#: includes/class-wc-privacy-exporters.php:341
 #: includes/data-stores/class-wc-product-data-store-cpt.php:105
 #: includes/wc-account-functions.php:211 templates/cart/cart.php:32
 #: templates/cart/cart.php:76 templates/checkout/form-pay.php:27
@@ -20017,16 +20035,16 @@ msgstr "北西部"
 msgid "Backordered"
 msgstr "入荷待ち"
 
-#: includes/abstracts/abstract-wc-order.php:1753
+#: includes/abstracts/abstract-wc-order.php:1760
 msgid "Subtotal:"
 msgstr "小計:"
 
-#: includes/abstracts/abstract-wc-order.php:1768
+#: includes/abstracts/abstract-wc-order.php:1775
 #: includes/admin/meta-boxes/views/html-order-items.php:151
 msgid "Discount:"
 msgstr "値引き:"
 
-#: includes/abstracts/abstract-wc-order.php:1844
+#: includes/abstracts/abstract-wc-order.php:1851
 #: includes/admin/meta-boxes/views/html-order-item.php:98
 #: includes/admin/meta-boxes/views/html-order-item.php:144
 #: templates/checkout/order-receipt.php:34 templates/checkout/thankyou.php:63
@@ -20081,7 +20099,7 @@ msgstr "5段階で %s の評価"
 #. translators: 1: first name 2: last name
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:168
 #: includes/api/class-wc-rest-network-orders-controller.php:127
-#: includes/class-wc-order.php:848 includes/class-wc-order.php:858
+#: includes/class-wc-order.php:838 includes/class-wc-order.php:848
 msgctxt "full name"
 msgid "%1$s %2$s"
 msgstr "%2$s %1$s"
@@ -20138,7 +20156,7 @@ msgstr "CVC"
 msgid "Please enter in a value less than the regular price."
 msgstr "標準価格よりも小さな値で入力してください。"
 
-#: includes/admin/class-wc-admin-assets.php:301
+#: includes/admin/class-wc-admin-assets.php:302
 #: includes/admin/class-wc-admin-post-types.php:746
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:120
 #: includes/admin/views/html-bulk-edit-product.php:200
@@ -20146,24 +20164,24 @@ msgstr "標準価格よりも小さな値で入力してください。"
 msgid "Featured"
 msgstr "おすすめ"
 
-#: includes/admin/class-wc-admin-assets.php:236
+#: includes/admin/class-wc-admin-assets.php:237
 msgid "variation added"
 msgstr "バリエーションを追加しました"
 
-#: includes/admin/class-wc-admin-assets.php:237
+#: includes/admin/class-wc-admin-assets.php:238
 msgid "variations added"
 msgstr "バリエーションを追加しました"
 
 #. translators: 1: old order status 2: new order status
-#: includes/class-wc-order.php:360
+#: includes/class-wc-order.php:350
 msgid "Order status changed from %1$s to %2$s."
 msgstr "注文状況を %1$s から %2$s に変更しました。"
 
-#: includes/admin/class-wc-admin-assets.php:329
+#: includes/admin/class-wc-admin-assets.php:330
 msgid "Could not grant access - the user may already have permission for this file or billing email is not set. Ensure the billing email is set, and the order has been saved."
 msgstr "アクセスを与えることができませんでした。- ユーザーにはこのファイルの許可が既に持っているか、請求メールがセットされていません。請求メールがセットされオーダーが保存されたことを確認してください。"
 
-#: includes/abstracts/abstract-wc-order.php:1783
+#: includes/abstracts/abstract-wc-order.php:1790
 #: includes/admin/meta-boxes/views/html-order-items.php:163
 msgid "Shipping:"
 msgstr "送料:"
@@ -20188,7 +20206,7 @@ msgid "shop"
 msgstr "shop"
 
 #. translators: %d: Number of variations
-#: includes/admin/class-wc-admin-assets.php:228
+#: includes/admin/class-wc-admin-assets.php:229
 msgid "Are you sure you want to link all variations? This will create a new variation for each and every possible combination of variation attributes (max %d per run)."
 msgstr "すべてのバリエーションをリンクさせてもよいですか ? この操作を行うと、可能な限りすべてのバリエーション要素の組み合わせにつきひとつの新しいバリエーションが作成されます (実行一回ごとに最大%d個) 。"
 
@@ -20201,17 +20219,17 @@ msgstr "カートに入れる"
 msgid "Enable Archives?"
 msgstr "アーカイブを有効にしますか ?"
 
-#: includes/abstracts/abstract-wc-order.php:1724
+#: includes/abstracts/abstract-wc-order.php:1731
 #: includes/class-wc-cart.php:1434 includes/class-wc-product-grouped.php:120
 msgid "Free!"
 msgstr "無料 !"
 
-#: includes/admin/class-wc-admin-assets.php:294
+#: includes/admin/class-wc-admin-assets.php:295
 #: includes/admin/meta-boxes/views/html-product-attribute.php:74
 msgid "Visible on the product page"
 msgstr "商品ページ上に表示"
 
-#: includes/admin/class-wc-admin-assets.php:283
+#: includes/admin/class-wc-admin-assets.php:284
 msgid "Please select some items."
 msgstr "いくつか項目を選択してください。"
 
@@ -20237,23 +20255,23 @@ msgstr "ここで新商品に名前を付けます。これは必須項目で店
 msgid "No product to duplicate has been supplied!"
 msgstr "複製する商品が存在しません"
 
-#: includes/admin/class-wc-admin-assets.php:299
+#: includes/admin/class-wc-admin-assets.php:300
 msgid "Load the customer's billing information? This will remove any currently entered billing information."
 msgstr "お客様の請求先情報を読み込みますか ? 操作を行うと、現在入力済みの請求先情報は削除されます。"
 
-#: includes/admin/class-wc-admin-assets.php:293
+#: includes/admin/class-wc-admin-assets.php:294
 msgid "Enter some text, or some attributes by pipe (|) separating values."
 msgstr "テキストを入力してください。複数の属性がある場合は、パイプ記号 ( | )で区切ってください。"
 
-#: includes/admin/class-wc-admin-assets.php:298
+#: includes/admin/class-wc-admin-assets.php:299
 msgid "Copy billing information to shipping information? This will remove any currently entered shipping information."
 msgstr "請求先情報を配送先情報にコピーしますか ? 操作を行うと、現在入力済みの配送先情報は削除されます。"
 
-#: includes/admin/class-wc-admin-assets.php:300
+#: includes/admin/class-wc-admin-assets.php:301
 msgid "Load the customer's shipping information? This will remove any currently entered shipping information."
 msgstr "お客様の配送先情報を読み込みますか ? 操作を行うと、現在入力済みの配送先情報は削除されます。"
 
-#: includes/admin/class-wc-admin-assets.php:330
+#: includes/admin/class-wc-admin-assets.php:331
 msgid "Are you sure you want to revoke access to this download?"
 msgstr "このダウンロードへのアクセスを取り消してもよいですか ?"
 
@@ -20261,31 +20279,31 @@ msgstr "このダウンロードへのアクセスを取り消してもよいで
 msgid "Are you sure you want to delete this attribute?"
 msgstr "この属性を削除してもよいですか ?"
 
-#: includes/admin/class-wc-admin-assets.php:286
+#: includes/admin/class-wc-admin-assets.php:287
 msgid "Are you sure you wish to delete this tax column? This action cannot be undone."
 msgstr "この税の列を削除してもよいですか ? この操作は取り消すことができません。"
 
-#: includes/admin/class-wc-admin-assets.php:285
+#: includes/admin/class-wc-admin-assets.php:286
 msgid "Are you sure you wish to delete this refund? This action cannot be undone."
 msgstr "この返金を削除してもよいですか ? この操作は取り消すことができません。"
 
-#: includes/admin/class-wc-admin-assets.php:284
+#: includes/admin/class-wc-admin-assets.php:285
 msgid "Are you sure you wish to process this refund? This action cannot be undone."
 msgstr "この返金を処理してもよいですか ? この操作は取り消すことができません。"
 
-#: includes/admin/class-wc-admin-assets.php:282
+#: includes/admin/class-wc-admin-assets.php:283
 msgid "Are you sure you want to remove the selected items? If you have previously reduced this item's stock, or this order was submitted by a customer, you will need to manually restore the item's stock."
 msgstr "選択した項目を削除してもよいですか ? 過去にこの商品の在庫を減らした場合、またはこれがお客様による注文の場合は、手動で商品の在庫を復元する必要があります。"
 
-#: includes/admin/class-wc-admin-assets.php:239
+#: includes/admin/class-wc-admin-assets.php:240
 msgid "Are you sure you want to remove this variation?"
 msgstr "このバリエーションを削除してもよいですか ?"
 
-#: includes/admin/class-wc-admin-assets.php:233
+#: includes/admin/class-wc-admin-assets.php:234
 msgid "Last warning, are you sure?"
 msgstr "最後の警告です。本当によいですか ?"
 
-#: includes/admin/class-wc-admin-assets.php:232
+#: includes/admin/class-wc-admin-assets.php:233
 msgid "Are you sure you want to delete all variations? This cannot be undone."
 msgstr "すべてのバリエーションを削除してもよいですか ? この操作は取り消すことができません。"
 
@@ -20294,11 +20312,11 @@ msgstr "すべてのバリエーションを削除してもよいですか ? こ
 msgid "Found a bug?"
 msgstr "バグを発見した場合"
 
-#: includes/admin/class-wc-admin-assets.php:287
+#: includes/admin/class-wc-admin-assets.php:288
 msgid "Remove this item meta?"
 msgstr "この商品メタを削除しますか ?"
 
-#: includes/admin/class-wc-admin-assets.php:242
+#: includes/admin/class-wc-admin-assets.php:243
 msgid "Save changes before changing page?"
 msgstr "ページ変更の前に変更を保存しますか ?"
 
@@ -20387,6 +20405,12 @@ msgstr "Github プロジェクト"
 msgid "WordPress.org project"
 msgstr "WordPress.org プロジェクト"
 
+#. translators: 1: GitHub issues URL 2: GitHub contribution guide URL 3: System
+#. status report URL
+#: includes/admin/class-wc-admin-help.php:68
+msgid "If you find a bug within WooCommerce core you can create a ticket via <a href=\"%1$s\">Github issues</a>. Ensure you read the <a href=\"%2$s\">contribution guide</a> prior to submitting your report. To help us solve your issue, please be as descriptive as possible and include your <a href=\"%3$s\">system status report</a>."
+msgstr "WooCommerce コアにバグを見つけた場合、<a href=\"%1$s\">Github イシュー</a>を作成して報告できます。必ず<a href=\"%2$s\">貢献ガイド</a>を事前にご覧ください。問題解決のためには、<a href=\"%3$s\">システム状況レポート</a>やできるだけ詳細な情報を含めてくださると助かります。"
+
 #. translators: %s: Documentation URL
 #: includes/admin/class-wc-admin-help.php:47
 msgid "Should you need help understanding, using, or extending WooCommerce, <a href=\"%s\">please read our documentation</a>. You will find all kinds of resources including snippets, tutorials and much more."
@@ -20406,12 +20430,6 @@ msgstr "宅配便"
 #: includes/admin/class-wc-admin-duplicate-product.php:114
 msgid "Product creation failed, could not find original product: %s"
 msgstr "商品の作成に失敗しました。元の商品を見つけることができませんでした: %s"
-
-#. translators: 1: GitHub issues URL 2: GitHub contribution guide URL 3: System
-#. status report URL
-#: includes/admin/class-wc-admin-help.php:68
-msgid "If you find a bug within WooCommerce core you can create a ticket via <a href=\"%1$s\">Github issues</a>. Ensure you read the <a href=\"%2$s\">contribution guide</a> prior to submitting your report. To help us solve your issue, please be as descriptive as possible and include your <a href=\"%3$s\">system status report</a>."
-msgstr "WooCommerce コアにバグを見つけた場合、<a href=\"%1$s\">Github イシュー</a>を作成して報告できます。必ず<a href=\"%2$s\">貢献ガイド</a>を事前にご覧ください。問題解決のためには、<a href=\"%3$s\">システム状況レポート</a>やできるだけ詳細な情報を含めてくださると助かります。"
 
 #. translators: 1: top seller product title 2: top seller quantity
 #: includes/admin/class-wc-admin-dashboard.php:138
@@ -20479,8 +20497,8 @@ msgstr "Consumer Key の最後"
 msgid "Card number"
 msgstr "カード番号"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:385
-#: includes/class-wc-order.php:1954 templates/checkout/order-receipt.php:39
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:389
+#: includes/class-wc-order.php:1944 templates/checkout/order-receipt.php:39
 #: templates/checkout/thankyou.php:69
 msgid "Payment method:"
 msgstr "決済方法:"
@@ -20514,7 +20532,7 @@ msgstr[0] "<strong>%s個の商品</strong>在庫不十分"
 msgid "Enable this if you want this attribute to have product archives in your store."
 msgstr "この属性の商品アーカイブページを作りたい場合はこれを有効化してください。"
 
-#: includes/admin/class-wc-admin-assets.php:305
+#: includes/admin/class-wc-admin-assets.php:306
 msgid "No customer selected"
 msgstr "選択したお客様はいません"
 
@@ -20563,7 +20581,7 @@ msgstr "クワズール・ナタール"
 msgid "Gauteng"
 msgstr "ハウテン"
 
-#: includes/admin/class-wc-admin-notices.php:132
+#: includes/admin/class-wc-admin-notices.php:135
 #: includes/admin/class-wc-admin-status.php:271
 #: includes/admin/class-wc-admin-status.php:290
 #: includes/admin/class-wc-admin-status.php:306

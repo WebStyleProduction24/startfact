@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-03-12 22:12:23+0000\n"
+"PO-Revision-Date: 2018-07-02 15:28:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,35 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: el_GR\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: admin/edit-contact-form.php:193
+msgid "Professional Services"
+msgstr "Επαγγελματικές Υπηρεσίες"
+
+#: admin/edit-contact-form.php:192
+msgid "https://contactform7.com/custom-development/"
+msgstr "https://contactform7.com/custom-development/"
+
+#: admin/edit-contact-form.php:188
+msgid "Support Forums"
+msgstr "Φόρα Υποστήριξης"
+
+#: admin/edit-contact-form.php:187
+msgid "https://wordpress.org/support/plugin/contact-form-7/"
+msgstr "https://wordpress.org/support/plugin/contact-form-7/"
+
+#. translators: 1: FAQ, 2: Docs ("FAQ & Docs")
+#: admin/edit-contact-form.php:176
+msgid "%1$s &#38; %2$s"
+msgstr "%1$s &#38; %2$s"
+
+#: admin/edit-contact-form.php:172
+msgid "Here are some available options to help solve your problems."
+msgstr "Εδώ υπάρχουν μερικές διαθέσιμες επιλογές να σας βοηθήσουν να λύσετε προβλήματα σας."
+
+#: admin/edit-contact-form.php:170
+msgid "Do you need help?"
+msgstr "Χρειάζεστε βοήθεια;"
 
 #: modules/acceptance.php:243
 msgid "Condition"
@@ -145,6 +174,11 @@ msgstr "To συνημμένο αρχείο δεν υπάρχει στο%path%."
 msgid "Invalid mailbox syntax is used in the %name% field."
 msgstr "Μη έγκυρη σύνταξη γραμματοκιβωτίου χρησιμοποιείται στο πεδίο %name%."
 
+#. translators: %names%: a list of form control names
+#: includes/config-validator.php:392
+msgid "Unavailable names (%names%) are used for form controls."
+msgstr "Μη διαθέσιμα ονόματα (%names%) χρησιμοποιούνται για τα χειριστήρια φόρμας."
+
 #: includes/config-validator.php:143
 msgid "There are invalid mail header fields."
 msgstr "Υπάρχουν μη έγκυρα πεδία κεφαλίδας ταχυδρομείου."
@@ -269,7 +303,7 @@ msgstr "Ο αριθμός είναι μεγαλύτερος από τον μέγ
 
 #: modules/number.php:126
 msgid "The number is smaller than the minimum allowed."
-msgstr "Ο αριθός είναι μικρότερος από τον ελάχιστο επιτρεπτό"
+msgstr "Ο αριθμός είναι μικρότερος από τον ελάχιστο επιτρεπτό"
 
 #: modules/number.php:121
 msgid "The number format is invalid."

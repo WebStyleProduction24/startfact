@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-05-30 10:19:03+0000\n"
+"PO-Revision-Date: 2018-06-26 08:54:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,27 +11,48 @@ msgstr ""
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
 
+#. Translators: %d parent ID.
+#: includes/api/class-wc-rest-product-variations-controller.php:410
+msgid "Cannot set attributes due to invalid parent product."
+msgstr "Kan inte ange attribut på grund av ogiltig, överordnad produkt."
+
+#: includes/admin/views/html-notice-wootenberg.php:30
+msgid "Install the WooCommerce Gutenberg Products Block"
+msgstr "Installera WooCommerce Gutenberg Products Block"
+
+#: includes/admin/views/html-notice-wootenberg.php:19
+msgid "Active the Gutenberg Products Block"
+msgstr "Aktivera WooCommerce Gutenberg Products Block"
+
+#: includes/admin/views/html-notice-wootenberg.php:15
+msgid "We noticed you're experimenting with Gutenberg: Try the WooCommerce Gutenberg Products Block for a powerful new way to feature products in posts."
+msgstr "Vi ser att du experimenterar med Gutenberg: Testa WooCommerce Gutenberg Products Block för ett kraftfullt nytt sätt att presentera produkter i inlägg."
+
+#: includes/admin/class-wc-admin-assets.php:170
+msgid "This action cannot be reversed. Are you sure you wish to erase personal data from the selected orders?"
+msgstr "Denna åtgärd kan inte ångras. Är du säker på att du vill radera personuppgifter från de valda beställningarna?"
+
 #. translators: %d: shipping package number
 #: includes/wc-cart-functions.php:228
 msgctxt "shipping packages"
 msgid "Shipping %d"
 msgstr "Fraktar %d"
 
-#: includes/class-wc-privacy-exporters.php:247
+#: includes/class-wc-privacy-exporters.php:250
 msgid "Shipping Address"
 msgstr "Leveransadress"
 
-#: includes/class-wc-privacy-exporters.php:246
+#: includes/class-wc-privacy-exporters.php:249
 msgid "Billing Address"
 msgstr "Faktureringsadress"
 
 #: includes/class-wc-privacy-erasers.php:58
-#: includes/class-wc-privacy-exporters.php:193
+#: includes/class-wc-privacy-exporters.php:196
 msgid "Shipping Address 1"
 msgstr "Leveransadress 1"
 
 #: includes/class-wc-privacy-erasers.php:47
-#: includes/class-wc-privacy-exporters.php:182
+#: includes/class-wc-privacy-exporters.php:185
 msgid "Billing Address 1"
 msgstr "Faktureringsadress 1"
 
@@ -39,15 +60,15 @@ msgstr "Faktureringsadress 1"
 msgid "Customer Payment Tokens"
 msgstr "Betalningstokens för kund"
 
-#: includes/class-wc-privacy-exporters.php:291
+#: includes/class-wc-privacy-exporters.php:294
 msgid "Payer PayPal address"
 msgstr "PayPal-adress för betalare"
 
-#: includes/class-wc-privacy-exporters.php:290
+#: includes/class-wc-privacy-exporters.php:293
 msgid "Payer last name"
 msgstr "Efternamn för betalare"
 
-#: includes/class-wc-privacy-exporters.php:289
+#: includes/class-wc-privacy-exporters.php:292
 msgid "Payer first name"
 msgstr "Förnamn för betalare"
 
@@ -126,6 +147,16 @@ msgstr "Kontodetaljer:"
 msgid "Take payments in person via BACS. More commonly known as direct bank/wire transfer"
 msgstr "Ta emot betalningar personligen via BACS, mer känt som banköverföring"
 
+#. Translators: This is a comma-separated list of very common words that should
+#. be excluded from a search, like a, an, and the. These are usually called
+#. "stopwords". You should not simply translate these individual words into
+#. your language. Instead, look for and provide commonly accepted stopwords in
+#. your language.
+#: includes/data-stores/class-wc-data-store-wp.php:483
+msgctxt "Comma-separated list of search stopwords in your language"
+msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
+msgstr "att,av,bara,blev,bli,blir,blivit,bort,borta,de,del,delen,dem,den,denna,deras,dess,dessa,det,detta,dig,din,dina,dit,ditt,dock,du,där,därför,då,efter,en,er,era,ert,ett,fick,fin,finnas,finns,få,får,fått,för,före,gör,göra,ha,hade,haft,har,hur,här,hög,i,in,ja,jag,ju,man,med,men,mer,mera,mig,min,mina,nej,ni,nog,nu,när,också,om,oss,på,sin,sina,själv,ska,säga,säger,så,tack,till,tills,upp,ur,ut,utan,vad,var,vara,varför,vem,verkligen,vi,vid,vilken,vilket,vill,vår,våra,vårt,än,ännu,är,även,åt,www"
+
 #: includes/customizer/class-wc-shop-customizer.php:812
 msgid "Optionally add some text for the terms checkbox that customers must accept."
 msgstr "Valfritt: lägg till text för villkorskryssrutan som kunderna måste godkänna."
@@ -161,16 +192,6 @@ msgstr "fältet %s"
 #: includes/customizer/class-wc-shop-customizer.php:671
 msgid "These options let you change the appearance of the WooCommerce checkout."
 msgstr "Dessa alternativ låter dig ändra utseendet i WooCommerce-kassan."
-
-#. Translators: This is a comma-separated list of very common words that should
-#. be excluded from a search, like a, an, and the. These are usually called
-#. "stopwords". You should not simply translate these individual words into
-#. your language. Instead, look for and provide commonly accepted stopwords in
-#. your language.
-#: includes/data-stores/class-wc-data-store-wp.php:483
-msgctxt "Comma-separated list of search stopwords in your language"
-msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
-msgstr "att,av,bara,blev,bli,blir,blivit,bort,borta,de,del,delen,dem,den,denna,deras,dess,dessa,det,detta,dig,din,dina,dit,ditt,dock,du,där,därför,då,efter,en,er,era,ert,ett,fick,fin,finnas,finns,få,får,fått,för,före,gör,göra,ha,hade,haft,har,hur,här,hög,i,in,ja,jag,ju,man,med,men,mer,mera,mig,min,mina,nej,ni,nog,nu,när,också,om,oss,på,sin,sina,själv,ska,säga,säger,så,tack,till,tills,upp,ur,ut,utan,vad,var,vara,varför,vem,verkligen,vi,vid,vilken,vilket,vill,vår,våra,vårt,än,ännu,är,även,åt,www"
 
 #: includes/class-wc-privacy.php:117
 msgid "Please see the <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">PayPal Privacy Policy</a> for more details."
@@ -301,27 +322,27 @@ msgstr "Medan du besöker vår webbplats, kommer vi att spåra:"
 msgid "This sample language includes the basics around what personal data your store may be collecting, storing and sharing, as well as who may have access to that data. Depending on what settings are enabled and which additional plugins are used, the specific information shared by your store will vary. We recommend consulting with a lawyer when deciding what information to disclose on your privacy policy."
 msgstr "Detta provspråk omfattar grunderna kring vilka personuppgifter som din butik samlar in, lagrar och delar, samt vilka som kan få tillgång till dessa uppgifter. Beroende på vilka inställningar som är aktiverade och vilka andra tillägg som används, varierar den specifika information som delas av din butik. Vi rekommenderar att rådfråga en advokat när du bestämmer vilken information som ska omfattas och beskrivas i din integritetspolicy."
 
-#: includes/class-wc-privacy-exporters.php:245
+#: includes/class-wc-privacy-exporters.php:248
 msgid "Browser User Agent"
 msgstr "Webbläsaranvändaragent"
 
-#: includes/class-wc-privacy-exporters.php:243
+#: includes/class-wc-privacy-exporters.php:246
 msgid "Items Purchased"
 msgstr "Köpta produkter"
 
-#: includes/class-wc-privacy-exporters.php:240
+#: includes/class-wc-privacy-exporters.php:243
 msgid "Order Number"
 msgstr "Ordernummer"
 
-#: includes/class-wc-privacy-exporters.php:354
+#: includes/class-wc-privacy-exporters.php:357
 msgid "Access granted"
 msgstr "Åtkomst beviljad"
 
-#: includes/class-wc-privacy-exporters.php:350
+#: includes/class-wc-privacy-exporters.php:353
 msgid "Download count"
 msgstr "Nedladdningsräknare"
 
-#: includes/class-wc-privacy-exporters.php:342
+#: includes/class-wc-privacy-exporters.php:345
 msgid "User email"
 msgstr "Användarens e-post"
 
@@ -333,11 +354,11 @@ msgstr "Kund-nedladdningar"
 msgid "Customer Orders"
 msgstr "Kundbeställningar"
 
-#: includes/class-wc-privacy-exporters.php:404
+#: includes/class-wc-privacy-exporters.php:407
 msgid "Payment Tokens"
 msgstr "Betalnings-tokens"
 
-#: includes/class-wc-privacy-exporters.php:408
+#: includes/class-wc-privacy-exporters.php:411
 msgid "Token"
 msgstr "Token"
 
@@ -346,104 +367,104 @@ msgid "Personal data removed."
 msgstr "Personuppgifter har tagits bort."
 
 #: includes/class-wc-privacy-erasers.php:63
-#: includes/class-wc-privacy-exporters.php:198
+#: includes/class-wc-privacy-exporters.php:201
 msgid "Shipping Country"
 msgstr "Land för leverans"
 
 #: includes/class-wc-privacy-erasers.php:62
-#: includes/class-wc-privacy-exporters.php:197
+#: includes/class-wc-privacy-exporters.php:200
 msgid "Shipping State"
 msgstr "Stat för leverans"
 
 #: includes/class-wc-privacy-erasers.php:61
-#: includes/class-wc-privacy-exporters.php:196
+#: includes/class-wc-privacy-exporters.php:199
 msgid "Shipping Postal/Zip Code"
 msgstr "Postnummer för leverans"
 
 #: includes/class-wc-privacy-erasers.php:60
-#: includes/class-wc-privacy-exporters.php:195
+#: includes/class-wc-privacy-exporters.php:198
 msgid "Shipping City"
 msgstr "Ort för leverans"
 
 #: includes/class-wc-privacy-erasers.php:57
-#: includes/class-wc-privacy-exporters.php:192
+#: includes/class-wc-privacy-exporters.php:195
 msgid "Shipping Company"
 msgstr "Företag för leverans"
 
 #: includes/class-wc-privacy-erasers.php:56
-#: includes/class-wc-privacy-exporters.php:191
+#: includes/class-wc-privacy-exporters.php:194
 msgid "Shipping Last Name"
 msgstr "Efternamn för leverans"
 
 #: includes/class-wc-privacy-erasers.php:55
-#: includes/class-wc-privacy-exporters.php:190
+#: includes/class-wc-privacy-exporters.php:193
 msgid "Shipping First Name"
 msgstr "Förnamn för leverans"
 
 #: includes/class-wc-privacy-erasers.php:53
-#: includes/class-wc-privacy-exporters.php:188
-#: includes/class-wc-privacy-exporters.php:248
+#: includes/class-wc-privacy-exporters.php:191
+#: includes/class-wc-privacy-exporters.php:251
 msgid "Phone Number"
 msgstr "Telefonnummer"
 
 #: includes/class-wc-privacy-erasers.php:52
-#: includes/class-wc-privacy-exporters.php:187
+#: includes/class-wc-privacy-exporters.php:190
 msgid "Billing Country"
 msgstr "Land för fakturering"
 
 #: includes/class-wc-privacy-erasers.php:51
-#: includes/class-wc-privacy-exporters.php:186
+#: includes/class-wc-privacy-exporters.php:189
 msgid "Billing State"
 msgstr "Stat för fakturering"
 
 #: includes/class-wc-privacy-erasers.php:50
-#: includes/class-wc-privacy-exporters.php:185
+#: includes/class-wc-privacy-exporters.php:188
 msgid "Billing Postal/Zip Code"
 msgstr "Postnummer för fakturering"
 
 #: includes/class-wc-privacy-erasers.php:49
-#: includes/class-wc-privacy-exporters.php:184
+#: includes/class-wc-privacy-exporters.php:187
 msgid "Billing City"
 msgstr "Ort för fakturering"
 
 #: includes/class-wc-privacy-erasers.php:46
-#: includes/class-wc-privacy-exporters.php:181
+#: includes/class-wc-privacy-exporters.php:184
 msgid "Billing Company"
 msgstr "Företag för fakturering"
 
 #: includes/class-wc-privacy-erasers.php:45
-#: includes/class-wc-privacy-exporters.php:180
+#: includes/class-wc-privacy-exporters.php:183
 msgid "Billing Last Name"
 msgstr "Efternamn för fakturering"
 
 #: includes/class-wc-privacy-erasers.php:44
-#: includes/class-wc-privacy-exporters.php:179
+#: includes/class-wc-privacy-exporters.php:182
 msgid "Billing First Name"
 msgstr "Förnamn för fakturering"
 
-#: includes/class-wc-privacy-exporters.php:137
-#: includes/class-wc-privacy-exporters.php:330
+#: includes/class-wc-privacy-exporters.php:140
+#: includes/class-wc-privacy-exporters.php:333
 msgid "Download ID"
 msgstr "Nedladdnings-ID"
 
-#: includes/class-wc-privacy-exporters.php:30 includes/class-wc-privacy.php:42
+#: includes/class-wc-privacy-exporters.php:32 includes/class-wc-privacy.php:42
 #: includes/class-wc-privacy.php:48
 msgid "Customer Data"
 msgstr "Kunduppgifter"
 
-#: includes/class-wc-order.php:379
+#: includes/class-wc-order.php:369
 msgid "Error during status transition."
 msgstr "Ett fel inträffade under statusövergången."
 
-#: includes/class-wc-order.php:339
+#: includes/class-wc-order.php:329
 msgid "Update status event failed."
 msgstr "Statusuppdateringshändelsen misslyckades."
 
-#: includes/class-wc-order.php:243
+#: includes/class-wc-order.php:239
 msgid "Error saving order."
 msgstr "Det gick inte att spara ordern."
 
-#: includes/class-wc-order.php:139
+#: includes/class-wc-order.php:136
 msgid "Payment complete event failed."
 msgstr "Händelsen för betalning genomförd misslyckades."
 
@@ -533,13 +554,13 @@ msgstr "%d behörigheter togs bort"
 
 #. translators: This is the headline for a list of access logs for downloads
 #. purchased from the store for a given user.
-#: includes/class-wc-privacy-exporters.php:133
+#: includes/class-wc-privacy-exporters.php:136
 msgid "Access to Purchased Downloads"
 msgstr "Tillgång till köpta nedladdningar"
 
 #. translators: This is the headline for a list of downloads purchased from the
 #. store for a given user.
-#: includes/class-wc-privacy-exporters.php:122
+#: includes/class-wc-privacy-exporters.php:125
 msgid "Purchased Downloads"
 msgstr "Köpta nedladdningar"
 
@@ -558,13 +579,13 @@ msgid "Unable to create order."
 msgstr "Det gick inte att skapa order."
 
 #. translators: user role
-#: includes/class-wc-install.php:857
+#: includes/class-wc-install.php:891
 msgctxt "User role"
 msgid "Customer"
 msgstr "Kund"
 
 #. translators: user role
-#: includes/class-wc-install.php:859
+#: includes/class-wc-install.php:893
 msgctxt "User role"
 msgid "Shop manager"
 msgstr "Butiksägare"
@@ -819,7 +840,7 @@ msgstr "Konton och integritet"
 msgid "Whitelist of billing emails to check against when an order is placed. Separate email addresses with commas. You can also use an asterisk (*) to match parts of an email. For example \"*@gmail.com\" would match all gmail addresses."
 msgstr "Lista över tillåtna e-postadresser för att kontrollera mot kundens e-postadress för fakturering när en beställning genomförs. Separera e-postadresserna med kommatecken. Du kan även använda en asterisk (*) för att matcha delar av en e-postadress. Till exempel skulle ”*@gmail.com” matcha alla gmail-adresser."
 
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:733
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:736
 msgid "Filter by registered customer"
 msgstr "Filtrera efter registrerad kund"
 
@@ -878,7 +899,7 @@ msgid "Remove personal data from orders"
 msgstr "Ta bort personliga uppgifter från beställningar"
 
 #. translators: %d: orders count
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:697
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:700
 msgid "Removed personal data from %d order."
 msgid_plural "Removed personal data from %d orders."
 msgstr[0] "Tog bort personuppgifter från %d beställning."
@@ -1058,7 +1079,7 @@ msgstr "Vecka/veckor"
 msgid "Day(s)"
 msgstr "Dag(ar)"
 
-#: includes/admin/class-wc-admin-notices.php:136
+#: includes/admin/class-wc-admin-notices.php:139
 #: includes/emails/class-wc-email.php:813
 msgid "You don&#8217;t have permission to do this."
 msgstr "Du saknar behörighet att utföra detta."
@@ -1759,7 +1780,7 @@ msgid "Buy &ldquo;%s&rdquo;"
 msgstr "Köp &ldquo;%s&rdquo;"
 
 #: includes/admin/class-wc-admin-taxonomies.php:309
-#: includes/class-wc-install.php:488 includes/class-wc-install.php:494
+#: includes/class-wc-install.php:492 includes/class-wc-install.php:498
 msgctxt "Default category slug"
 msgid "Uncategorized"
 msgstr "Okategoriserad"
@@ -1782,7 +1803,7 @@ msgstr "Hur ska produkterna sorteras i katalogen som standard?"
 msgid "Invalid permission ID."
 msgstr "Ogiltigt behörighets-ID."
 
-#: includes/class-wc-countries.php:1096
+#: includes/class-wc-countries.php:1107
 msgid "Municipality / District"
 msgstr "Kommun/Distrikt"
 
@@ -2444,12 +2465,12 @@ msgstr "Denna nyckel är ogiltig eller har redan använts. Vänligen återställ
 msgid "Customer invoice / Order details"
 msgstr "Kundfaktura / Orderdetaljer"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:723
+#: includes/api/class-wc-rest-product-variations-controller.php:733
 #: includes/api/class-wc-rest-products-controller.php:1549
 msgid "End date of sale price, as GMT."
 msgstr "Slutdatum för reapris, som GMT."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:734
+#: includes/api/class-wc-rest-product-variations-controller.php:744
 msgid "Define if the variation is visible on the product's page."
 msgstr "Ange om varianten är synlig på produktsidan."
 
@@ -3328,11 +3349,11 @@ msgstr "Kwanza-Norte"
 msgid "Kuando Kubango"
 msgstr "Kuando Kubango"
 
-#: includes/admin/class-wc-admin-assets.php:334
+#: includes/admin/class-wc-admin-assets.php:335
 msgid "Enter a fixed amount or percentage to apply as a fee."
 msgstr "Ange ett fast belopp eller en procentandel som ska tillämpas som en avgift."
 
-#: includes/admin/class-wc-admin-assets.php:333
+#: includes/admin/class-wc-admin-assets.php:334
 msgid "Enter a coupon code to apply to this order."
 msgstr "Ange en rabattkod som ska tillämpas på denna order."
 
@@ -3414,6 +3435,10 @@ msgstr "Butik- och sökresultat"
 msgid "Subject (paid)"
 msgstr "Ämne (betald)"
 
+#: includes/data-stores/class-wc-order-data-store-cpt.php:426
+msgid "Invalid customer query."
+msgstr "Ogiltig kundsökning."
+
 #. translators: %s: list of placeholders
 #: includes/admin/settings/class-wc-settings-emails.php:129
 #: includes/emails/class-wc-email-cancelled-order.php:158
@@ -3436,10 +3461,6 @@ msgstr "Ämne (betald)"
 #: includes/emails/class-wc-email.php:621
 msgid "Available placeholders: %s"
 msgstr "Tillgängliga platshållare: %s"
-
-#: includes/data-stores/class-wc-order-data-store-cpt.php:426
-msgid "Invalid customer query."
-msgstr "Ogiltig kundsökning."
 
 #: includes/shortcodes/class-wc-shortcode-checkout.php:110
 msgid "This order cannot be paid for. Please contact us if you need assistance."
@@ -3490,7 +3511,7 @@ msgid "All Products"
 msgstr "Alla produkter"
 
 #. translators: use local order of street name and house number.
-#: includes/class-wc-countries.php:649
+#: includes/class-wc-countries.php:650
 msgid "House number and street name"
 msgstr "Gatunamn och nummer"
 
@@ -4098,11 +4119,11 @@ msgstr "Ett fel uppstod vid in aktiveringen av %s. Försök igen senare."
 msgid "%s activated successfully. You will now receive updates for this product."
 msgstr "%s har aktiverats. Du kommer nu få uppdateringar för denna produkt."
 
-#: includes/admin/class-wc-admin-webhooks.php:315
+#: includes/admin/class-wc-admin-webhooks.php:290
 msgid "Create a new webhook"
 msgstr "Skapa en ny webbhook"
 
-#: includes/admin/class-wc-admin-webhooks.php:314
+#: includes/admin/class-wc-admin-webhooks.php:289
 msgid "Webhooks are event notifications sent to URLs of your choice. They can be used to integrate with third-party services which support them."
 msgstr "En webbhook är en händelsenotis som skickas till URL:er du väljer. De kan användas för att integrera med tjänster från tredje part som stöder dem."
 
@@ -4206,15 +4227,15 @@ msgstr "WooCommerce-ändpunkt"
 msgid "Back to Attributes"
 msgstr "Tillbaka till attribut"
 
-#: includes/admin/class-wc-admin-assets.php:396
+#: includes/admin/class-wc-admin-assets.php:397
 msgid "Are you sure you want to delete this log?"
 msgstr "Är du säker på att du vill radera den här loggen?"
 
-#: includes/admin/class-wc-admin-assets.php:175
+#: includes/admin/class-wc-admin-assets.php:176
 msgid "Export"
 msgstr "Exportera"
 
-#: includes/admin/class-wc-admin-assets.php:174
+#: includes/admin/class-wc-admin-assets.php:175
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:102
 msgid "Import"
 msgstr "Importera"
@@ -4367,12 +4388,12 @@ msgstr "Okänd förfrågningsmetod."
 msgid "Create"
 msgstr "Skapa"
 
-#: includes/admin/class-wc-admin-assets.php:262
+#: includes/admin/class-wc-admin-assets.php:263
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:49
 msgid "Name (required)"
 msgstr "Namn (krävs)"
 
-#: includes/admin/class-wc-admin-assets.php:263
+#: includes/admin/class-wc-admin-assets.php:264
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:50
 msgid "Value (required)"
 msgstr "Värde (krävs)"
@@ -4389,7 +4410,7 @@ msgstr "Zon-ID"
 msgid "Recalculate"
 msgstr "Räkna om"
 
-#: includes/admin/class-wc-admin-assets.php:297
+#: includes/admin/class-wc-admin-assets.php:298
 msgid "Recalculate totals? This will calculate taxes based on the customers country (or the store base country) and update totals."
 msgstr "Räkna om totalsummor? Detta kommer räkna om momser baserat på kundernas land (eller butikens basplats) och uppdatera totalsummor."
 
@@ -4458,7 +4479,7 @@ msgstr "Aktiva tillägg"
 msgid "Customer sales"
 msgstr "Kundförsäljning"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:462
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:466
 msgid "Customer provided note:"
 msgstr "Kundordernotering:"
 
@@ -4965,7 +4986,7 @@ msgid "Invalid variation ID"
 msgstr "Felaktigt variant-ID"
 
 #. translators: %s: new order status
-#: includes/class-wc-order.php:366
+#: includes/class-wc-order.php:356
 msgid "Order status set to %s."
 msgstr "Status på order satt till %s."
 
@@ -4973,7 +4994,7 @@ msgstr "Status på order satt till %s."
 msgid "Invalid product"
 msgstr "Felaktig produkt"
 
-#: includes/class-wc-install.php:1074
+#: includes/class-wc-install.php:1108
 msgid "Visit premium customer support"
 msgstr "Besök premium kundsupport"
 
@@ -5014,15 +5035,15 @@ msgstr "Ogiltig begränsning av e-postadress"
 msgid "Invalid discount type"
 msgstr "Ogiltig rabattyp"
 
-#: includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:928
 msgid "Eircode"
 msgstr "Eircode"
 
-#: includes/class-wc-countries.php:656
+#: includes/class-wc-countries.php:657
 msgid "Apartment, suite, unit etc. (optional)"
 msgstr "Lägenhet, rum, enhet osv (valfritt)"
 
-#: includes/class-wc-countries.php:647
+#: includes/class-wc-countries.php:648
 msgid "Street address"
 msgstr "Gatuadress"
 
@@ -5032,7 +5053,7 @@ msgstr "Gatuadress"
 msgid "Error:"
 msgstr "Fel:"
 
-#: includes/class-wc-customer.php:962 includes/class-wc-order.php:1075
+#: includes/class-wc-customer.php:962 includes/class-wc-order.php:1065
 msgid "Invalid billing email address"
 msgstr "Ogiltig e-postadress för fakturauppgifter"
 
@@ -5056,7 +5077,7 @@ msgid "Invalid order"
 msgstr "Ogiltig order"
 
 #. translators: 1: key 2: URL
-#: includes/class-wc-cache-helper.php:206
+#: includes/class-wc-cache-helper.php:224
 msgid "In order for <strong>database caching</strong> to work with WooCommerce you must add %1$s to the \"Ignored Query Strings\" option in <a href=\"%2$s\">W3 Total Cache settings</a>."
 msgstr "För att <strong>databas-caching</strong> ska fungera med WooCommerce måste du lägga till %1$s till alternativet ”Ignored Query Strings” i <a href=\"%2$s\">W3 Total Cache-inställningar</a>."
 
@@ -5525,14 +5546,14 @@ msgstr "Begränsa resultatet till produkter utifrån om de finns i lager eller i
 msgid "Limit result set to products with a specific tax class."
 msgstr "Begränsa resultatet till produkter med en viss momsgrupp."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:790
+#: includes/api/class-wc-rest-product-variations-controller.php:800
 #: includes/api/class-wc-rest-products-controller.php:1622
 #: includes/api/v1/class-wc-rest-products-controller.php:1905
 #: includes/api/v1/class-wc-rest-products-controller.php:2383
 msgid "Number of days until access to downloadable files expires."
 msgstr "Antal dagar kvar till åtkomst till nedladdningsbara filer löper ut."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:784
+#: includes/api/class-wc-rest-product-variations-controller.php:794
 #: includes/api/class-wc-rest-products-controller.php:1616
 #: includes/api/v1/class-wc-rest-products-controller.php:1899
 #: includes/api/v1/class-wc-rest-products-controller.php:2377
@@ -5570,13 +5591,13 @@ msgid "A human readable label for the setting used in interfaces."
 msgstr "En läsbar etikett för den inställning som används i gränssnitt."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:173
-#: includes/api/class-wc-rest-product-variations-controller.php:914
+#: includes/api/class-wc-rest-product-variations-controller.php:924
 #: includes/api/class-wc-rest-products-controller.php:1884
 msgid "The date the image was last modified, as GMT."
 msgstr "Datumet då bilden senast ändrades, som GMT."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:161
-#: includes/api/class-wc-rest-product-variations-controller.php:902
+#: includes/api/class-wc-rest-product-variations-controller.php:912
 #: includes/api/class-wc-rest-products-controller.php:1872
 msgid "The date the image was created, as GMT."
 msgstr "Datumet då bilden skapades, som GMT."
@@ -5589,17 +5610,17 @@ msgstr "Datumet då produkten senast ändrades, som GMT."
 msgid "The date the product was created, as GMT."
 msgstr "Datumet då produkten skapades, som GMT."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:718
+#: includes/api/class-wc-rest-product-variations-controller.php:728
 #: includes/api/class-wc-rest-products-controller.php:1544
 msgid "End date of sale price, in the site's timezone."
 msgstr "Slutdatum för reapriset, i webbplatsens tidszon."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:713
+#: includes/api/class-wc-rest-product-variations-controller.php:723
 #: includes/api/class-wc-rest-products-controller.php:1539
 msgid "Start date of sale price, as GMT."
 msgstr "Startdatum för reapris, som GMT."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:708
+#: includes/api/class-wc-rest-product-variations-controller.php:718
 #: includes/api/class-wc-rest-products-controller.php:1534
 msgid "Start date of sale price, in the site's timezone."
 msgstr "Startdatum för reapris, i webbplatsens tidszon."
@@ -5747,7 +5768,7 @@ msgstr "Datumet då nedladdningsåtkomsten löper ut, som GMT."
 #: includes/api/class-wc-rest-orders-controller.php:1424
 #: includes/api/class-wc-rest-orders-controller.php:1522
 #: includes/api/class-wc-rest-orders-controller.php:1580
-#: includes/api/class-wc-rest-product-variations-controller.php:973
+#: includes/api/class-wc-rest-product-variations-controller.php:983
 #: includes/api/class-wc-rest-products-controller.php:2006
 msgid "Meta data."
 msgstr "Metadata."
@@ -5774,7 +5795,7 @@ msgstr "Är kunden en betalande kund?"
 #: includes/api/class-wc-rest-orders-controller.php:1431
 #: includes/api/class-wc-rest-orders-controller.php:1529
 #: includes/api/class-wc-rest-orders-controller.php:1587
-#: includes/api/class-wc-rest-product-variations-controller.php:980
+#: includes/api/class-wc-rest-product-variations-controller.php:990
 #: includes/api/class-wc-rest-products-controller.php:2013
 msgid "Meta ID."
 msgstr "Meta-ID."
@@ -5966,19 +5987,19 @@ msgstr "Tillåt loggning genom göra %1$s skrivbar eller ange en anpassad %2$s."
 msgid "Delete log"
 msgstr "Radera loggen"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:138
+#: includes/admin/settings/views/html-webhooks-edit.php:141
 msgid "Legacy API v3 (deprecated)"
 msgstr "Legacy API v3 (föråldrat)"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:137
+#: includes/admin/settings/views/html-webhooks-edit.php:140
 msgid "WP REST API Integration v1"
 msgstr "WP REST API Integration v1"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:131
+#: includes/admin/settings/views/html-webhooks-edit.php:134
 msgid "REST API version used in the webhook deliveries."
 msgstr "REST API version som används för hantering av webhooks."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:136
+#: includes/admin/settings/views/html-webhooks-edit.php:139
 msgid "WP REST API Integration v2"
 msgstr "WP REST API Integration v2"
 
@@ -6203,12 +6224,12 @@ msgstr "%s (existerar inte längre)"
 msgid "Note type"
 msgstr "Anteckningstyp"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:428
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:432
 msgid "Copy billing address"
 msgstr "Kopiera faktureringsadress"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:325
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:438
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "Address:"
 msgstr "Adress:"
 
@@ -6292,7 +6313,7 @@ msgid "This is the WooCommerce shop page. The shop page is a special archive tha
 msgstr "Det här är butikssidan för WooCommerce. Butikssidan är ett speciellt arkiv som listar dina produkter. <a href=\"%s\">Läs mer om detta här</a>."
 
 #. translators: 1: user display name 2: user ID 3: user email
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:726
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:729
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:296
 #: includes/admin/settings/views/html-keys-edit.php:39
 #: includes/class-wc-ajax.php:1517
@@ -6326,7 +6347,7 @@ msgstr "Nivå"
 
 #: includes/admin/class-wc-admin-log-table-list.php:103
 #: includes/admin/reports/class-wc-report-downloads.php:214
-#: includes/class-wc-privacy-exporters.php:141
+#: includes/class-wc-privacy-exporters.php:144
 msgid "Timestamp"
 msgstr "Tidsstämpel"
 
@@ -6866,7 +6887,7 @@ msgstr "Tvinga SSL (HTTPS) på betalningssidorna (<a href=\"%s\" target=\"_blank
 
 #: includes/api/legacy/v2/class-wc-api-products.php:1734
 #: includes/api/legacy/v3/class-wc-api-products.php:2267
-#: includes/wc-rest-functions.php:117
+#: includes/wc-rest-functions.php:118
 msgid "Invalid image type."
 msgstr "Ogiltig bildtyp."
 
@@ -6881,7 +6902,7 @@ msgstr "Om varianten är synlig."
 #. translators: %s: error message
 #: includes/api/legacy/v2/class-wc-api-products.php:1711
 #: includes/api/legacy/v3/class-wc-api-products.php:2244
-#: includes/class-wc-auth.php:405 includes/wc-rest-functions.php:92
+#: includes/class-wc-auth.php:401 includes/wc-rest-functions.php:92
 msgid "Error: %s."
 msgstr "Fel: %s."
 
@@ -6998,7 +7019,7 @@ msgid "JCB"
 msgstr "JCB"
 
 #. translators: 1: param 2: type
-#: includes/wc-rest-functions.php:205
+#: includes/wc-rest-functions.php:206
 msgid "%1$s is not of type %2$s"
 msgstr "%1$s är inte av typen %2$s"
 
@@ -7142,7 +7163,7 @@ msgstr "Ogiltig URL %s."
 
 #: includes/api/legacy/v2/class-wc-api-products.php:1751
 #: includes/api/legacy/v3/class-wc-api-products.php:2284
-#: includes/wc-rest-functions.php:135
+#: includes/wc-rest-functions.php:136
 msgid "Zero size file downloaded."
 msgstr "Fil med storlek noll nedladdad."
 
@@ -7518,7 +7539,7 @@ msgstr "Maximalt antal objekt att returnera bland resultaten."
 msgid "Limit results to those matching a string."
 msgstr "Begränsa resultaten till de som matchar en sträng."
 
-#: includes/wc-rest-functions.php:212
+#: includes/wc-rest-functions.php:213
 msgid "The date you provided is invalid."
 msgstr "Den datum du angett är ogiltigt."
 
@@ -7860,7 +7881,7 @@ msgid "This is an order notification sent to customers containing order details 
 msgstr "Det här är ett ordermeddelande som skickas till kunder som innehåller orderdetaljer efter att en order placerats i kö."
 
 #. translators: 1: plugin name, 2: URL to WP plugin page.
-#: includes/class-wc-install.php:1228
+#: includes/class-wc-install.php:1262
 msgid "%1$s was installed but could not be activated. <a href=\"%2$s\">Please activate it manually by clicking here.</a>"
 msgstr "%1$s har installerats men kunde inte aktiveras. <a href=\"%2$s\">Aktivera manuellt genom att klicka här.</a>"
 
@@ -7872,7 +7893,7 @@ msgstr "Gå tillbaka till e-post."
 #. manually.
 #. translators: 1: theme slug, 2: error message, 3: URL to install theme
 #. manually.
-#: includes/class-wc-install.php:1201 includes/class-wc-install.php:1288
+#: includes/class-wc-install.php:1235 includes/class-wc-install.php:1322
 msgid "%1$s could not be installed (%2$s). <a href=\"%3$s\">Please install it manually by clicking here.</a>"
 msgstr "%1$s gick inte att installera (%2$s). <a href=\"%3$s\">Installera manuellt genom att klicka här.</a>"
 
@@ -7975,7 +7996,7 @@ msgstr "Orderstatus."
 msgid "Product type."
 msgstr "Produkttyp."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:955
+#: includes/api/class-wc-rest-product-variations-controller.php:965
 #: includes/api/class-wc-rest-products-controller.php:1926
 #: includes/api/class-wc-rest-products-controller.php:1971
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:462
@@ -7986,7 +8007,7 @@ msgid "Attribute name."
 msgstr "Attributnamn."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:150
-#: includes/api/class-wc-rest-product-variations-controller.php:891
+#: includes/api/class-wc-rest-product-variations-controller.php:901
 #: includes/api/class-wc-rest-products-controller.php:1861
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:221
 #: includes/api/v1/class-wc-rest-products-controller.php:2151
@@ -7996,10 +8017,10 @@ msgstr "Bild-ID."
 
 #: includes/api/class-wc-rest-orders-controller.php:519
 #: includes/api/legacy/class-wc-rest-legacy-orders-controller.php:249
-#: includes/api/legacy/v2/class-wc-api-orders.php:390
-#: includes/api/legacy/v2/class-wc-api-orders.php:542
-#: includes/api/legacy/v3/class-wc-api-orders.php:427
-#: includes/api/legacy/v3/class-wc-api-orders.php:582
+#: includes/api/legacy/v2/class-wc-api-orders.php:388
+#: includes/api/legacy/v2/class-wc-api-orders.php:535
+#: includes/api/legacy/v3/class-wc-api-orders.php:423
+#: includes/api/legacy/v3/class-wc-api-orders.php:573
 #: includes/api/v1/class-wc-rest-orders-controller.php:534
 msgid "Customer ID is invalid."
 msgstr "Kund-ID är ogiltigt."
@@ -8066,7 +8087,7 @@ msgid "Fee name."
 msgstr "Avgiftsnamn."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:155
-#: includes/api/class-wc-rest-product-variations-controller.php:896
+#: includes/api/class-wc-rest-product-variations-controller.php:906
 #: includes/api/class-wc-rest-products-controller.php:1866
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:226
 #: includes/api/v1/class-wc-rest-products-controller.php:2156
@@ -8074,7 +8095,7 @@ msgstr "Avgiftsnamn."
 msgid "The date the image was created, in the site's timezone."
 msgstr "Datumet då bilden skapades, i webbplatsens tidszon."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:950
+#: includes/api/class-wc-rest-product-variations-controller.php:960
 #: includes/api/class-wc-rest-products-controller.php:1921
 #: includes/api/class-wc-rest-products-controller.php:1966
 #: includes/api/v1/class-wc-rest-products-controller.php:2199
@@ -8103,7 +8124,7 @@ msgstr "Lagerhantering på produktnivå."
 #: includes/api/class-wc-rest-orders-controller.php:1437
 #: includes/api/class-wc-rest-orders-controller.php:1535
 #: includes/api/class-wc-rest-orders-controller.php:1593
-#: includes/api/class-wc-rest-product-variations-controller.php:986
+#: includes/api/class-wc-rest-product-variations-controller.php:996
 #: includes/api/class-wc-rest-products-controller.php:2019
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:483
 #: includes/api/v1/class-wc-rest-orders-controller.php:1314
@@ -8120,7 +8141,7 @@ msgstr "Metanyckel."
 #: includes/api/class-wc-rest-orders-controller.php:1442
 #: includes/api/class-wc-rest-orders-controller.php:1540
 #: includes/api/class-wc-rest-orders-controller.php:1598
-#: includes/api/class-wc-rest-product-variations-controller.php:991
+#: includes/api/class-wc-rest-product-variations-controller.php:1001
 #: includes/api/class-wc-rest-products-controller.php:2024
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:495
 #: includes/api/v1/class-wc-rest-orders-controller.php:1326
@@ -8183,28 +8204,28 @@ msgstr "Antal decimalpunkter som ska användas i varje resurs."
 msgid "Product ID or SKU is required."
 msgstr "Produkt-ID eller SKU krävs."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:907
-#: includes/api/legacy/v3/class-wc-api-orders.php:953
+#: includes/api/legacy/v2/class-wc-api-orders.php:900
+#: includes/api/legacy/v3/class-wc-api-orders.php:944
 msgid "Product is invalid."
 msgstr "Produkten är ogiltig."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:912
-#: includes/api/legacy/v3/class-wc-api-orders.php:958
+#: includes/api/legacy/v2/class-wc-api-orders.php:905
+#: includes/api/legacy/v3/class-wc-api-orders.php:949
 msgid "Product quantity must be a positive float."
 msgstr "Produktkvantiteten måste vara ett positivt flyttal."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:917
-#: includes/api/legacy/v3/class-wc-api-orders.php:963
+#: includes/api/legacy/v2/class-wc-api-orders.php:910
+#: includes/api/legacy/v3/class-wc-api-orders.php:954
 msgid "Product quantity is required."
 msgstr "Produktkvantitet krävs."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:960
-#: includes/api/legacy/v3/class-wc-api-orders.php:1007
+#: includes/api/legacy/v2/class-wc-api-orders.php:953
+#: includes/api/legacy/v3/class-wc-api-orders.php:998
 msgid "Cannot create line item, try again."
 msgstr "Det går inte att skapa radobjektet, försök igen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1036
-#: includes/api/legacy/v3/class-wc-api-orders.php:1083
+#: includes/api/legacy/v2/class-wc-api-orders.php:1029
+#: includes/api/legacy/v3/class-wc-api-orders.php:1074
 msgid "Shipping total must be a positive amount."
 msgstr "Det totala fraktbeloppet måste vara positivt."
 
@@ -8213,14 +8234,14 @@ msgstr "Det totala fraktbeloppet måste vara positivt."
 msgid "Fee name is required."
 msgstr "Avgiftsnamn krävs."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1141
-#: includes/api/legacy/v3/class-wc-api-orders.php:1188
+#: includes/api/legacy/v2/class-wc-api-orders.php:1134
+#: includes/api/legacy/v3/class-wc-api-orders.php:1179
 msgid "Cannot update fee, try again."
 msgstr "Det går inte att uppdatera avgiften, försök igen."
 
 #: includes/api/class-wc-rest-orders-controller.php:768
-#: includes/api/legacy/v2/class-wc-api-orders.php:851
-#: includes/api/legacy/v3/class-wc-api-orders.php:897
+#: includes/api/legacy/v2/class-wc-api-orders.php:844
+#: includes/api/legacy/v3/class-wc-api-orders.php:888
 #: includes/api/v1/class-wc-rest-orders-controller.php:777
 msgid "Order item ID provided is not associated with order."
 msgstr "Angivet orderobjekt-ID associeras inte med beställningen."
@@ -8402,7 +8423,7 @@ msgid "Category archive display type."
 msgstr "Visningstyp för kategoriarkiv."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:167
-#: includes/api/class-wc-rest-product-variations-controller.php:908
+#: includes/api/class-wc-rest-product-variations-controller.php:918
 #: includes/api/class-wc-rest-products-controller.php:1878
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:232
 #: includes/api/v1/class-wc-rest-products-controller.php:2162
@@ -8411,7 +8432,7 @@ msgid "The date the image was last modified, in the site's timezone."
 msgstr "Datumet då bilden senast ändrades, i webbplatsens tidszon."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:179
-#: includes/api/class-wc-rest-product-variations-controller.php:920
+#: includes/api/class-wc-rest-product-variations-controller.php:930
 #: includes/api/class-wc-rest-products-controller.php:1890
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:238
 #: includes/api/v1/class-wc-rest-products-controller.php:2168
@@ -8420,7 +8441,7 @@ msgid "Image URL."
 msgstr "Webbadress för bilden."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:185
-#: includes/api/class-wc-rest-product-variations-controller.php:926
+#: includes/api/class-wc-rest-product-variations-controller.php:936
 #: includes/api/class-wc-rest-products-controller.php:1896
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:244
 #: includes/api/v1/class-wc-rest-products-controller.php:2174
@@ -8429,7 +8450,7 @@ msgid "Image name."
 msgstr "Namn på bilden."
 
 #: includes/api/class-wc-rest-product-categories-controller.php:190
-#: includes/api/class-wc-rest-product-variations-controller.php:931
+#: includes/api/class-wc-rest-product-variations-controller.php:941
 #: includes/api/class-wc-rest-products-controller.php:1901
 #: includes/api/v1/class-wc-rest-product-categories-controller.php:249
 #: includes/api/v1/class-wc-rest-products-controller.php:2179
@@ -8512,7 +8533,7 @@ msgstr "Katalogens synlighet."
 msgid "Product short description."
 msgstr "Kortfattad produktbeskrivning."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:687
+#: includes/api/class-wc-rest-product-variations-controller.php:697
 #: includes/api/class-wc-rest-products-controller.php:1513
 #: includes/api/v1/class-wc-rest-products-controller.php:1806
 #: includes/api/v1/class-wc-rest-products-controller.php:2291
@@ -8559,14 +8580,14 @@ msgstr "Total försäljning."
 msgid "If the product is downloadable."
 msgstr "Om produkten kan laddas ned."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:758
+#: includes/api/class-wc-rest-product-variations-controller.php:768
 #: includes/api/class-wc-rest-products-controller.php:1590
 #: includes/api/v1/class-wc-rest-products-controller.php:1873
 #: includes/api/v1/class-wc-rest-products-controller.php:2351
 msgid "List of downloadable files."
 msgstr "Lista över nedladdningsbara filer."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:765
+#: includes/api/class-wc-rest-product-variations-controller.php:775
 #: includes/api/class-wc-rest-products-controller.php:1597
 #: includes/api/v1/class-wc-rest-products-controller.php:1880
 #: includes/api/v1/class-wc-rest-products-controller.php:2358
@@ -8587,7 +8608,7 @@ msgstr "Extern webbadress för produkt. Endast för externa produkter."
 msgid "Product external button text. Only for external products."
 msgstr "Extern knapptext för produkten. Endast för externa produkter."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:814
+#: includes/api/class-wc-rest-product-variations-controller.php:824
 #: includes/api/class-wc-rest-products-controller.php:1657
 #: includes/api/v1/class-wc-rest-products-controller.php:1947
 #: includes/api/v1/class-wc-rest-products-controller.php:2407
@@ -8627,14 +8648,14 @@ msgstr "Produktens bredd (%s)."
 msgid "Shows if the product need to be shipped."
 msgstr "Visar om produkten måste fraktas."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:875
+#: includes/api/class-wc-rest-product-variations-controller.php:885
 #: includes/api/class-wc-rest-products-controller.php:1736
 #: includes/api/v1/class-wc-rest-products-controller.php:2026
 #: includes/api/v1/class-wc-rest-products-controller.php:2468
 msgid "Shipping class slug."
 msgstr "Slug för fraktklass."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:880
+#: includes/api/class-wc-rest-product-variations-controller.php:890
 #: includes/api/class-wc-rest-products-controller.php:1741
 #: includes/api/v1/class-wc-rest-products-controller.php:2031
 #: includes/api/v1/class-wc-rest-products-controller.php:2473
@@ -8705,14 +8726,14 @@ msgstr "Tagg-slug."
 msgid "List of images."
 msgstr "Lista med bilder."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:936
+#: includes/api/class-wc-rest-product-variations-controller.php:946
 #: includes/api/class-wc-rest-products-controller.php:1906
 #: includes/api/v1/class-wc-rest-products-controller.php:2184
 #: includes/api/v1/class-wc-rest-products-controller.php:2517
 msgid "Image position. 0 means that the image is featured."
 msgstr "Bildens position. 0 betyder att bilden framhävs."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:943
+#: includes/api/class-wc-rest-product-variations-controller.php:953
 #: includes/api/class-wc-rest-products-controller.php:1914
 #: includes/api/v1/class-wc-rest-products-controller.php:2192
 #: includes/api/v1/class-wc-rest-products-controller.php:2524
@@ -8739,7 +8760,7 @@ msgstr "Lista med tillgängliga termnamn för attributet."
 msgid "Defaults variation attributes."
 msgstr "Standardvariationer för attribut."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:960
+#: includes/api/class-wc-rest-product-variations-controller.php:970
 #: includes/api/class-wc-rest-products-controller.php:1976
 #: includes/api/v1/class-wc-rest-products-controller.php:2251
 #: includes/api/v1/class-wc-rest-products-controller.php:2541
@@ -8754,101 +8775,101 @@ msgstr "Lista med variationer."
 msgid "Variation ID."
 msgstr "Variations-ID."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:663
+#: includes/api/class-wc-rest-product-variations-controller.php:673
 #: includes/api/v1/class-wc-rest-products-controller.php:2272
 msgid "The date the variation was created, in the site's timezone."
 msgstr "Datumet då variationen skapades, i webbplatsens tidszon."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:669
+#: includes/api/class-wc-rest-product-variations-controller.php:679
 #: includes/api/v1/class-wc-rest-products-controller.php:2278
 msgid "The date the variation was last modified, in the site's timezone."
 msgstr "Datumet då variationen senast ändrades, i webbplatsens tidszon."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:680
+#: includes/api/class-wc-rest-product-variations-controller.php:690
 #: includes/api/v1/class-wc-rest-products-controller.php:2284
 msgid "Variation URL."
 msgstr "Webbadress för variationen."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:692
+#: includes/api/class-wc-rest-product-variations-controller.php:702
 #: includes/api/v1/class-wc-rest-products-controller.php:2296
 msgid "Current variation price."
 msgstr "Aktuellt variationspris."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:698
+#: includes/api/class-wc-rest-product-variations-controller.php:708
 #: includes/api/v1/class-wc-rest-products-controller.php:2302
 msgid "Variation regular price."
 msgstr "Variationens ordinarie pris."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:703
+#: includes/api/class-wc-rest-product-variations-controller.php:713
 #: includes/api/v1/class-wc-rest-products-controller.php:2307
 msgid "Variation sale price."
 msgstr "Variationens reapris."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:728
+#: includes/api/class-wc-rest-product-variations-controller.php:738
 #: includes/api/v1/class-wc-rest-products-controller.php:2322
 msgid "Shows if the variation is on sale."
 msgstr "Visar om variationen reas ut."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:740
+#: includes/api/class-wc-rest-product-variations-controller.php:750
 #: includes/api/v1/class-wc-rest-products-controller.php:2328
 msgid "Shows if the variation can be bought."
 msgstr "Visar om variationen kan köpas."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:746
+#: includes/api/class-wc-rest-product-variations-controller.php:756
 #: includes/api/v1/class-wc-rest-products-controller.php:2339
 msgid "If the variation is virtual."
 msgstr "Om variationen är virtuell."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:752
+#: includes/api/class-wc-rest-product-variations-controller.php:762
 #: includes/api/v1/class-wc-rest-products-controller.php:2345
 msgid "If the variation is downloadable."
 msgstr "Om variationen kan laddas ned."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:808
+#: includes/api/class-wc-rest-product-variations-controller.php:818
 #: includes/api/v1/class-wc-rest-products-controller.php:2401
 msgid "Stock management at variation level."
 msgstr "Lagerhantering på variationsnivå."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:819
+#: includes/api/class-wc-rest-product-variations-controller.php:829
 #: includes/api/v1/class-wc-rest-products-controller.php:2412
 msgid "Controls whether or not the variation is listed as \"in stock\" or \"out of stock\" on the frontend."
 msgstr "Styr om variationen listas som \"i lager\" eller \"slut på lagret\" i frontend."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:838
+#: includes/api/class-wc-rest-product-variations-controller.php:848
 #: includes/api/v1/class-wc-rest-products-controller.php:2431
 msgid "Shows if the variation is on backordered."
 msgstr "Visar om variationen har restnoterats."
 
 #. translators: %s: weight unit
-#: includes/api/class-wc-rest-product-variations-controller.php:845
+#: includes/api/class-wc-rest-product-variations-controller.php:855
 #: includes/api/v1/class-wc-rest-products-controller.php:2438
 msgid "Variation weight (%s)."
 msgstr "Variationens vikt (%s)."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:850
+#: includes/api/class-wc-rest-product-variations-controller.php:860
 #: includes/api/v1/class-wc-rest-products-controller.php:2443
 msgid "Variation dimensions."
 msgstr "Variationens dimensioner."
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:856
+#: includes/api/class-wc-rest-product-variations-controller.php:866
 #: includes/api/v1/class-wc-rest-products-controller.php:2449
 msgid "Variation length (%s)."
 msgstr "Variationens längd (%s)."
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:862
+#: includes/api/class-wc-rest-product-variations-controller.php:872
 #: includes/api/v1/class-wc-rest-products-controller.php:2455
 msgid "Variation width (%s)."
 msgstr "Variationens bredd (%s)."
 
 #. translators: %s: dimension unit
-#: includes/api/class-wc-rest-product-variations-controller.php:868
+#: includes/api/class-wc-rest-product-variations-controller.php:878
 #: includes/api/v1/class-wc-rest-products-controller.php:2461
 msgid "Variation height (%s)."
 msgstr "Variationens höjd (%s)."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:886
+#: includes/api/class-wc-rest-product-variations-controller.php:896
 #: includes/api/v1/class-wc-rest-products-controller.php:2479
 msgid "Variation image data."
 msgstr "Bilddata för variationen."
@@ -8858,7 +8879,7 @@ msgstr "Bilddata för variationen."
 msgid "List of grouped products ID."
 msgstr "Lista med grupperade produkt-ID:n."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:968
+#: includes/api/class-wc-rest-product-variations-controller.php:978
 #: includes/api/class-wc-rest-products-controller.php:2001
 #: includes/api/v1/class-wc-rest-products-controller.php:2561
 msgid "Menu order, used to custom sort products."
@@ -8952,14 +8973,14 @@ msgstr "ID för leveranssätt."
 msgid "Shipping method name."
 msgstr "Namn på leveranssätt."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1070
-#: includes/api/legacy/v3/class-wc-api-orders.php:1117
+#: includes/api/legacy/v2/class-wc-api-orders.php:1063
+#: includes/api/legacy/v3/class-wc-api-orders.php:1108
 msgid "Cannot update shipping method, try again."
 msgstr "Det går inte att uppdatera leveranssätt, försök igen."
 
 #: includes/api/class-wc-rest-orders-controller.php:683
-#: includes/api/legacy/v2/class-wc-api-orders.php:1043
-#: includes/api/legacy/v3/class-wc-api-orders.php:1090
+#: includes/api/legacy/v2/class-wc-api-orders.php:1036
+#: includes/api/legacy/v3/class-wc-api-orders.php:1081
 #: includes/api/v1/class-wc-rest-orders-controller.php:693
 msgid "Shipping method ID is required."
 msgstr "ID för leveranssätt krävs."
@@ -9017,7 +9038,7 @@ msgstr "Totalbelopp debiterat för moms."
 msgid "Shows whether or not the product shipping is taxable."
 msgstr "Visar om frakten av produkten är momsbelagd."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:796
+#: includes/api/class-wc-rest-product-variations-controller.php:806
 #: includes/api/class-wc-rest-products-controller.php:1639
 #: includes/api/v1/class-wc-rest-products-controller.php:1929
 #: includes/api/v1/class-wc-rest-products-controller.php:2389
@@ -9084,8 +9105,8 @@ msgstr "Endast total radobjektsmoms."
 msgid "Total shipping tax amount for the order."
 msgstr "Total fraktmoms för beställningen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1101
-#: includes/api/legacy/v3/class-wc-api-orders.php:1148
+#: includes/api/legacy/v2/class-wc-api-orders.php:1094
+#: includes/api/legacy/v3/class-wc-api-orders.php:1139
 msgid "Fee tax class is required when fee is taxable."
 msgstr "Momsgrupp för avgift krävs när avgiften är belagd med moms."
 
@@ -9154,14 +9175,14 @@ msgstr "Totalt antal använda rabattkoder."
 msgid "Coupons line data."
 msgstr "Data på rabattkodsrad."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1192
-#: includes/api/legacy/v3/class-wc-api-orders.php:1239
+#: includes/api/legacy/v2/class-wc-api-orders.php:1185
+#: includes/api/legacy/v3/class-wc-api-orders.php:1230
 msgid "Cannot update coupon, try again."
 msgstr "Det går inte att uppdatera rabattkoden, försök igen."
 
 #: includes/api/class-wc-rest-orders-controller.php:731
-#: includes/api/legacy/v2/class-wc-api-orders.php:1166
-#: includes/api/legacy/v3/class-wc-api-orders.php:1213
+#: includes/api/legacy/v2/class-wc-api-orders.php:1159
+#: includes/api/legacy/v3/class-wc-api-orders.php:1204
 #: includes/api/v1/class-wc-rest-orders-controller.php:739
 msgid "Coupon code is required."
 msgstr "Rabattkod krävs."
@@ -9171,14 +9192,14 @@ msgstr "Rabattkod krävs."
 msgid "End date of sale price."
 msgstr "Slutdatum för reapris."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:825
+#: includes/api/class-wc-rest-product-variations-controller.php:835
 #: includes/api/class-wc-rest-products-controller.php:1668
 #: includes/api/v1/class-wc-rest-products-controller.php:1958
 #: includes/api/v1/class-wc-rest-products-controller.php:2418
 msgid "If managing stock, this controls if backorders are allowed."
 msgstr "Vid lagerhantering styr detta om restordrar tillåts."
 
-#: includes/api/class-wc-rest-product-variations-controller.php:832
+#: includes/api/class-wc-rest-product-variations-controller.php:842
 #: includes/api/class-wc-rest-products-controller.php:1675
 #: includes/api/v1/class-wc-rest-products-controller.php:1965
 #: includes/api/v1/class-wc-rest-products-controller.php:2425
@@ -9243,7 +9264,7 @@ msgid "Phone number."
 msgstr "Telefonnummer."
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:147
-#: includes/api/class-wc-rest-product-variations-controller.php:771
+#: includes/api/class-wc-rest-product-variations-controller.php:781
 #: includes/api/class-wc-rest-products-controller.php:1603
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:223
 #: includes/api/v1/class-wc-rest-products-controller.php:1886
@@ -9295,7 +9316,7 @@ msgid "Your database is being updated in the background."
 msgstr "Din databas uppdateras i bakgrunden."
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:776
+#: includes/api/class-wc-rest-product-variations-controller.php:786
 #: includes/api/class-wc-rest-products-controller.php:1608
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:229
 #: includes/api/v1/class-wc-rest-products-controller.php:1891
@@ -9456,7 +9477,7 @@ msgstr "Ogiltigt resurs-ID för omtilldelning."
 #: includes/api/class-wc-rest-payment-gateways-controller.php:54
 #: includes/api/class-wc-rest-product-categories-controller.php:103
 #: includes/api/class-wc-rest-product-reviews-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:657
+#: includes/api/class-wc-rest-product-variations-controller.php:667
 #: includes/api/class-wc-rest-products-controller.php:82
 #: includes/api/class-wc-rest-products-controller.php:1429
 #: includes/api/class-wc-rest-setting-options-controller.php:84
@@ -9596,8 +9617,8 @@ msgstr "Begränsa resultatet till resurser med en specifik e-postadress."
 msgid "Limit result set to resources with a specific role."
 msgstr "Begränsa resultatet till resurser med en specifik roll."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1323
-#: includes/api/legacy/v3/class-wc-api-orders.php:1370
+#: includes/api/legacy/v2/class-wc-api-orders.php:1316
+#: includes/api/legacy/v3/class-wc-api-orders.php:1361
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:233
 msgid "Cannot create order note, please try again."
 msgstr "Kan inte skapa beställningsmeddelande. Försök igen."
@@ -9634,12 +9655,12 @@ msgid "Invalid order ID."
 msgstr "Ogiltigt beställningsnummer."
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:195
-#: includes/api/legacy/v2/class-wc-api-orders.php:1518
-#: includes/api/legacy/v2/class-wc-api-orders.php:1680
-#: includes/api/legacy/v2/class-wc-api-orders.php:1741
-#: includes/api/legacy/v3/class-wc-api-orders.php:1565
-#: includes/api/legacy/v3/class-wc-api-orders.php:1727
-#: includes/api/legacy/v3/class-wc-api-orders.php:1788
+#: includes/api/legacy/v2/class-wc-api-orders.php:1511
+#: includes/api/legacy/v2/class-wc-api-orders.php:1673
+#: includes/api/legacy/v2/class-wc-api-orders.php:1734
+#: includes/api/legacy/v3/class-wc-api-orders.php:1556
+#: includes/api/legacy/v3/class-wc-api-orders.php:1718
+#: includes/api/legacy/v3/class-wc-api-orders.php:1779
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:133
 msgid "Invalid order refund ID."
 msgstr "Ogiltigt nummer för återbetalning av beställning."
@@ -9654,14 +9675,14 @@ msgid "Refund amount must be greater than zero."
 msgstr "Återbetalningsbeloppet måste vara över noll."
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:296
-#: includes/api/legacy/v2/class-wc-api-orders.php:1617
-#: includes/api/legacy/v3/class-wc-api-orders.php:1664
+#: includes/api/legacy/v2/class-wc-api-orders.php:1610
+#: includes/api/legacy/v3/class-wc-api-orders.php:1655
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:308
 msgid "Cannot create order refund, please try again."
 msgstr "Kan inte skapa återbetalning av beställningen. Försök igen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1634
-#: includes/api/legacy/v3/class-wc-api-orders.php:1681
+#: includes/api/legacy/v2/class-wc-api-orders.php:1627
+#: includes/api/legacy/v3/class-wc-api-orders.php:1672
 #: includes/wc-order-functions.php:642
 msgid "An error occurred while attempting to create the refund using the payment gateway API."
 msgstr "Ett fel uppstod när du försökte att skapa återbetalningen med betalningsgatewayen API."
@@ -9910,6 +9931,7 @@ msgstr "Ditt tema har en woocommerce.php-fil. Du kommer inte att kunna åsidosä
 #: includes/admin/views/html-notice-template-check.php:13
 #: includes/admin/views/html-notice-theme-support.php:12
 #: includes/admin/views/html-notice-updated.php:12
+#: includes/admin/views/html-notice-wootenberg.php:12
 #: includes/wc-template-functions.php:969
 msgid "Dismiss"
 msgstr "Avvisa"
@@ -9930,7 +9952,7 @@ msgstr "MaxMind GeoIP databas."
 msgid "cURL version."
 msgstr "cURL-version."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:120
+#: includes/admin/settings/views/html-webhooks-edit.php:123
 msgid "The secret key is used to generate a hash of the delivered webhook and provided in the request headers."
 msgstr "Den hemliga nyckeln används för att generera ett hashvärde av den mottagna webhook som skickas i begärans header."
 
@@ -10228,11 +10250,11 @@ msgstr "En enkel offline-betalmodul som låter dig ta emot betalning vid leveran
 #: includes/abstracts/abstract-wc-rest-controller.php:103
 #: includes/api/legacy/v2/class-wc-api-coupons.php:529
 #: includes/api/legacy/v2/class-wc-api-customers.php:792
-#: includes/api/legacy/v2/class-wc-api-orders.php:1789
+#: includes/api/legacy/v2/class-wc-api-orders.php:1782
 #: includes/api/legacy/v2/class-wc-api-products.php:2306
 #: includes/api/legacy/v3/class-wc-api-coupons.php:529
 #: includes/api/legacy/v3/class-wc-api-customers.php:782
-#: includes/api/legacy/v3/class-wc-api-orders.php:1836
+#: includes/api/legacy/v3/class-wc-api-orders.php:1827
 #: includes/api/legacy/v3/class-wc-api-products.php:3119
 #: includes/api/legacy/v3/class-wc-api-taxes.php:465
 msgid "Unable to accept more than %s items for this request."
@@ -10249,6 +10271,18 @@ msgstr "Lista över uppdaterade resurser."
 #: includes/abstracts/abstract-wc-rest-controller.php:404
 msgid "List of delete resources."
 msgstr "Lista över borttagna resurser."
+
+#: includes/abstracts/abstract-wc-rest-posts-controller.php:71
+#: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:83
+#: includes/abstracts/abstract-wc-rest-terms-controller.php:145
+#: includes/api/v1/class-wc-rest-customers-controller.php:150
+#: includes/api/v1/class-wc-rest-order-notes-controller.php:136
+#: includes/api/v1/class-wc-rest-product-reviews-controller.php:165
+#: includes/api/v1/class-wc-rest-tax-classes-controller.php:105
+#: includes/api/v1/class-wc-rest-taxes-controller.php:129
+#: includes/api/v1/class-wc-rest-webhooks-controller.php:145
+msgid "Sorry, you are not allowed to create resources."
+msgstr "Vi beklagar, du är inte behörig att skapa resurser."
 
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:57
 #: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:65
@@ -10272,18 +10306,6 @@ msgstr "Lista över borttagna resurser."
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:130
 msgid "Sorry, you cannot list resources."
 msgstr "Vi beklagar, du kan inte lista resurser."
-
-#: includes/abstracts/abstract-wc-rest-posts-controller.php:71
-#: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:83
-#: includes/abstracts/abstract-wc-rest-terms-controller.php:145
-#: includes/api/v1/class-wc-rest-customers-controller.php:150
-#: includes/api/v1/class-wc-rest-order-notes-controller.php:136
-#: includes/api/v1/class-wc-rest-product-reviews-controller.php:165
-#: includes/api/v1/class-wc-rest-tax-classes-controller.php:105
-#: includes/api/v1/class-wc-rest-taxes-controller.php:129
-#: includes/api/v1/class-wc-rest-webhooks-controller.php:145
-msgid "Sorry, you are not allowed to create resources."
-msgstr "Vi beklagar, du är inte behörig att skapa resurser."
 
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:56
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:87
@@ -10352,7 +10374,7 @@ msgstr "ID är ogiltigt."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:421
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:438
-#: includes/api/class-wc-rest-product-variations-controller.php:520
+#: includes/api/class-wc-rest-product-variations-controller.php:530
 #: includes/api/class-wc-rest-products-controller.php:1336
 #: includes/api/v1/class-wc-rest-products-controller.php:1656
 msgid "Sorry, you are not allowed to delete %s."
@@ -10361,7 +10383,7 @@ msgstr "Vi beklagar, du är inte behörig att ta bort %s."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:435
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:451
-#: includes/api/class-wc-rest-product-variations-controller.php:538
+#: includes/api/class-wc-rest-product-variations-controller.php:548
 #: includes/api/class-wc-rest-products-controller.php:1367
 #: includes/api/v1/class-wc-rest-products-controller.php:1683
 msgid "The %s does not support trashing."
@@ -10370,7 +10392,7 @@ msgstr "%s stöder inte kassering."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:442
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:457
-#: includes/api/class-wc-rest-product-variations-controller.php:549
+#: includes/api/class-wc-rest-product-variations-controller.php:559
 #: includes/api/class-wc-rest-products-controller.php:1378
 #: includes/api/v1/class-wc-rest-products-controller.php:1689
 msgid "The %s has already been deleted."
@@ -10379,7 +10401,7 @@ msgstr "%s har redan tagits bort."
 #. translators: %s: post type
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:452
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:467
-#: includes/api/class-wc-rest-product-variations-controller.php:563
+#: includes/api/class-wc-rest-product-variations-controller.php:573
 #: includes/api/class-wc-rest-products-controller.php:1392
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:316
 #: includes/api/v1/class-wc-rest-products-controller.php:1700
@@ -10440,6 +10462,19 @@ msgstr "Sortera samling efter objektattribut."
 msgid "Use WP Query arguments to modify the response; private query vars require appropriate authorization."
 msgstr "Använd WP frågeargument för att modifiera svaret; privata frågevariabler kräver lämplig behörighet."
 
+#: includes/abstracts/abstract-wc-rest-terms-controller.php:92
+#: includes/api/class-wc-rest-order-refunds-controller.php:112
+#: includes/api/v1/class-wc-rest-customers-controller.php:104
+#: includes/api/v1/class-wc-rest-order-notes-controller.php:105
+#: includes/api/v1/class-wc-rest-order-refunds-controller.php:107
+#: includes/api/v1/class-wc-rest-product-attribute-terms-controller.php:104
+#: includes/api/v1/class-wc-rest-product-attributes-controller.php:101
+#: includes/api/v1/class-wc-rest-tax-classes-controller.php:74
+#: includes/api/v1/class-wc-rest-taxes-controller.php:88
+#: includes/api/v1/class-wc-rest-webhooks-controller.php:104
+msgid "Required to be true, as resource does not support trashing."
+msgstr "Måste vara sant, eftersom resursen inte stöder kassering."
+
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:141
 msgid "Sorry, you cannot create new resource."
 msgstr "Vi beklagar, du kan inte skapa en ny resurs."
@@ -10470,19 +10505,6 @@ msgstr "Resursen kan inte tas bort."
 msgid "Sort collection by resource attribute."
 msgstr "Sortera samling efter resursattribut."
 
-#: includes/abstracts/abstract-wc-rest-terms-controller.php:92
-#: includes/api/class-wc-rest-order-refunds-controller.php:112
-#: includes/api/v1/class-wc-rest-customers-controller.php:104
-#: includes/api/v1/class-wc-rest-order-notes-controller.php:105
-#: includes/api/v1/class-wc-rest-order-refunds-controller.php:107
-#: includes/api/v1/class-wc-rest-product-attribute-terms-controller.php:104
-#: includes/api/v1/class-wc-rest-product-attributes-controller.php:101
-#: includes/api/v1/class-wc-rest-tax-classes-controller.php:74
-#: includes/api/v1/class-wc-rest-taxes-controller.php:88
-#: includes/api/v1/class-wc-rest-webhooks-controller.php:104
-msgid "Required to be true, as resource does not support trashing."
-msgstr "Måste vara sant, eftersom resursen inte stöder kassering."
-
 #: includes/abstracts/abstract-wc-rest-terms-controller.php:741
 msgid "Whether to hide resources not assigned to any products."
 msgstr "Om resurser som inte är tilldelade till produkter ska döljas."
@@ -10504,7 +10526,7 @@ msgstr "Begränsa resultaten till resurser med en specifik slug."
 msgid "Items"
 msgstr "Varor"
 
-#: includes/admin/class-wc-admin-assets.php:332
+#: includes/admin/class-wc-admin-assets.php:333
 msgid "Are you sure you wish to delete this note? This action cannot be undone."
 msgstr "Vill du ta bort det här meddelandet? Denna åtgärd kan inte ångras."
 
@@ -10600,7 +10622,7 @@ msgstr "Ogiltigt inläggs-ID."
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:235
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:404
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:153
-#: includes/api/class-wc-rest-product-variations-controller.php:499
+#: includes/api/class-wc-rest-product-variations-controller.php:509
 #: includes/api/class-wc-rest-products-controller.php:1307
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:303
 #: includes/api/v1/class-wc-rest-webhooks-controller.php:460
@@ -10683,7 +10705,7 @@ msgstr "Förenta staternas (USA) mindre öar i Oceanien och Västindien"
 msgid "United States (US) Virgin Islands"
 msgstr "Förenta staternas (USA) Jungfruöar"
 
-#: includes/admin/class-wc-admin-assets.php:383
+#: includes/admin/class-wc-admin-assets.php:384
 #: includes/admin/views/html-admin-page-status-report.php:46
 msgid "Copying to clipboard failed. Please press Ctrl/Cmd+C to copy."
 msgstr "Det gick inte att kopiera till urklipp. Vänligen använd CTRL/CMD+C för att kopiera."
@@ -10738,7 +10760,7 @@ msgstr "Dölj tomma kategorier"
 
 #. translators: %s: taxes
 #. translators: %s: tax information
-#: includes/class-wc-order.php:177 includes/wc-cart-functions.php:317
+#: includes/class-wc-order.php:173 includes/wc-cart-functions.php:317
 msgid "(includes %s)"
 msgstr "(inkl. %s)"
 
@@ -10766,7 +10788,7 @@ msgstr "Ogiltigt produkt-ID."
 msgid "Please select some product options before adding this product to your cart."
 msgstr "Välj produktalternativ innan du lägger denna produkt i din varukorg."
 
-#: includes/class-wc-countries.php:1117
+#: includes/class-wc-countries.php:1128
 msgid "ZIP"
 msgstr "Postnummer"
 
@@ -10824,7 +10846,7 @@ msgstr "Kunde inte radera momsgrupp"
 msgid "You do not have permission to read the tax classes count"
 msgstr "Du har inte behörighet att visa antalet momsgrupper"
 
-#: includes/class-wc-countries.php:1015
+#: includes/class-wc-countries.php:1021
 msgid "State / Zone"
 msgstr "Stat / Zon"
 
@@ -11204,7 +11226,7 @@ msgstr "Köp nu"
 #. translators: %s: method
 #. translators: %s: payment method
 #. translators: %s: shipping method
-#: includes/abstracts/abstract-wc-order.php:1719
+#: includes/abstracts/abstract-wc-order.php:1726
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:251
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:303
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:320
@@ -11217,7 +11239,7 @@ msgstr "via %s"
 msgid "%s removed."
 msgstr "%s borttagen."
 
-#: includes/class-wc-install.php:345
+#: includes/class-wc-install.php:349
 msgid "Monthly"
 msgstr "Månadsvis"
 
@@ -11352,7 +11374,7 @@ msgstr "Du har inte skapat denna typ av adress ännu."
 msgid "To track your order please enter your Order ID in the box below and press the \"Track\" button. This was given to you on your receipt and in the confirmation email you should have received."
 msgstr "För att följa din order, vänligen ange order nr samt e-postadress nedan och klicka på \"Följ order\". Order nr hittar du i ditt kvitto och i orderbekräftelsen."
 
-#: includes/class-wc-privacy-exporters.php:334
+#: includes/class-wc-privacy-exporters.php:337
 #: templates/order/form-tracking.php:27
 msgid "Order ID"
 msgstr "Order nr"
@@ -11746,7 +11768,7 @@ msgstr "Rea!"
 #: includes/admin/class-wc-admin-profile.php:89
 #: includes/admin/class-wc-admin-setup-wizard.php:2116
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:84
-#: includes/class-wc-countries.php:1231 includes/class-wc-form-handler.php:243
+#: includes/class-wc-countries.php:1242 includes/class-wc-form-handler.php:243
 #: templates/myaccount/form-edit-account.php:43
 #: templates/myaccount/form-login.php:90
 msgid "Email address"
@@ -12361,18 +12383,18 @@ msgstr "Rabattkod som ger fri frakt"
 msgid "Billing &amp; Shipping"
 msgstr "Fakturering och leverans"
 
-#: includes/class-wc-privacy-exporters.php:145
-#: includes/class-wc-privacy-exporters.php:244
+#: includes/class-wc-privacy-exporters.php:148
+#: includes/class-wc-privacy-exporters.php:247
 msgid "IP Address"
 msgstr "IP-adress"
 
 #: includes/class-wc-privacy-erasers.php:59
-#: includes/class-wc-privacy-exporters.php:194
+#: includes/class-wc-privacy-exporters.php:197
 msgid "Shipping Address 2"
 msgstr "Leveransadress 2"
 
 #: includes/class-wc-privacy-erasers.php:48
-#: includes/class-wc-privacy-exporters.php:183
+#: includes/class-wc-privacy-exporters.php:186
 msgid "Billing Address 2"
 msgstr "Faktureringsadress 2"
 
@@ -12827,6 +12849,10 @@ msgstr "E-postutskicket \"Kundfaktura\" kan skickas till kunden, innehållande o
 msgid "Customer \"new account\" emails are sent to the customer when a customer signs up via checkout or account pages."
 msgstr "E-postutskicket \"Nytt konto\" skickas till kunden när de registrerar sig i kassan eller via mitt konto-sidan."
 
+#: includes/emails/class-wc-email-customer-note.php:63
+msgid "Note added to your {site_title} order from {order_date}"
+msgstr "Notering skapad på din {site_title} order från {order_date}"
+
 #: includes/emails/class-wc-email-cancelled-order.php:139
 #: includes/emails/class-wc-email-customer-completed-order.php:137
 #: includes/emails/class-wc-email-customer-refunded-order.php:229
@@ -12842,10 +12868,6 @@ msgstr "E-postutskicket \"Nytt konto\" skickas till kunden när de registrerar s
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:97
 msgid "Enable/Disable"
 msgstr "Aktivera/inaktivera"
-
-#: includes/emails/class-wc-email-customer-note.php:63
-msgid "Note added to your {site_title} order from {order_date}"
-msgstr "Notering skapad på din {site_title} order från {order_date}"
 
 #: includes/emails/class-wc-email-customer-on-hold-order.php:57
 #: includes/emails/class-wc-email-customer-processing-order.php:59
@@ -13598,58 +13620,58 @@ msgstr "Du kan inte lägga till &quot;%s&quot; till varukorgen för produkten ä
 msgid "Account username"
 msgstr "Kontots användarnamn"
 
-#: includes/class-wc-countries.php:378
+#: includes/class-wc-countries.php:379
 msgid "to the"
 msgstr "till"
 
-#: includes/class-wc-countries.php:378
+#: includes/class-wc-countries.php:379
 msgid "to"
 msgstr "till"
 
-#: includes/class-wc-countries.php:392
+#: includes/class-wc-countries.php:393
 msgid "the"
 msgstr "&nbsp;"
 
-#: includes/class-wc-countries.php:414
+#: includes/class-wc-countries.php:415
 msgid "(incl. tax)"
 msgstr "(inkl. moms)"
 
-#: includes/class-wc-countries.php:779
+#: includes/class-wc-countries.php:780
 msgid "District"
 msgstr "Område"
 
-#: includes/class-wc-countries.php:788 includes/class-wc-countries.php:810
-#: includes/class-wc-countries.php:835 includes/class-wc-countries.php:916
-#: includes/class-wc-countries.php:955 includes/class-wc-countries.php:993
-#: includes/class-wc-countries.php:1077 includes/class-wc-countries.php:1112
-#: includes/class-wc-countries.php:1159
+#: includes/class-wc-countries.php:789 includes/class-wc-countries.php:816
+#: includes/class-wc-countries.php:841 includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:961 includes/class-wc-countries.php:999
+#: includes/class-wc-countries.php:1083 includes/class-wc-countries.php:1123
+#: includes/class-wc-countries.php:1170
 msgid "Province"
 msgstr "Provins"
 
-#: includes/class-wc-countries.php:818
+#: includes/class-wc-countries.php:824
 msgid "Canton"
 msgstr "Canton"
 
-#: includes/class-wc-countries.php:830 includes/class-wc-countries.php:906
-#: includes/class-wc-countries.php:1002
+#: includes/class-wc-countries.php:836 includes/class-wc-countries.php:912
+#: includes/class-wc-countries.php:1008
 msgid "Region"
 msgstr "Landskap"
 
-#: includes/class-wc-countries.php:903
+#: includes/class-wc-countries.php:909
 msgid "Town / District"
 msgstr "Stad / Distrikt"
 
-#: includes/class-wc-countries.php:960
+#: includes/class-wc-countries.php:966
 msgid "Prefecture"
 msgstr "Prefecture"
 
-#: includes/class-wc-countries.php:1085
+#: includes/class-wc-countries.php:1091
 msgid "Municipality"
 msgstr "Kommun"
 
 #: includes/class-wc-privacy-erasers.php:54
-#: includes/class-wc-privacy-exporters.php:189
-#: includes/class-wc-privacy-exporters.php:249
+#: includes/class-wc-privacy-exporters.php:192
+#: includes/class-wc-privacy-exporters.php:252
 msgid "Email Address"
 msgstr "E-postadress"
 
@@ -13839,17 +13861,17 @@ msgstr "Rabattkod"
 msgid "This is where you can add new coupons that customers can use in your store."
 msgstr "Här kan du lägga till nya rabattkoder som kunderna kan använda i butiken."
 
-#: includes/class-wc-install.php:391
+#: includes/class-wc-install.php:395
 msgctxt "Page slug"
 msgid "shop"
 msgstr "butik"
 
-#: includes/class-wc-install.php:396
+#: includes/class-wc-install.php:400
 msgctxt "Page slug"
 msgid "cart"
 msgstr "varukorg"
 
-#: includes/class-wc-install.php:406
+#: includes/class-wc-install.php:410
 msgctxt "Page slug"
 msgid "my-account"
 msgstr "mitt-konto"
@@ -13941,11 +13963,7 @@ msgstr "Visa och hantera produkter"
 msgid "The %s is not a valid URL"
 msgstr "%s är inte en giltig webbadress"
 
-#: includes/class-wc-auth.php:322
-msgid "API disabled!"
-msgstr "API inaktiverat!"
-
-#: includes/class-wc-auth.php:379
+#: includes/class-wc-auth.php:375
 msgid "Invalid nonce verification"
 msgstr "Ogiltig nonce verifiering"
 
@@ -13973,15 +13991,15 @@ msgstr "Tyvärr så <strong>fraktar vi inte %s</strong>. Vänligen ange en alter
 msgid "Please rate the product."
 msgstr "Recensera gärna produkten"
 
-#: includes/class-wc-countries.php:425
+#: includes/class-wc-countries.php:426
 msgid "(ex. tax)"
 msgstr "(exkl. moms)"
 
-#: includes/class-wc-countries.php:664
+#: includes/class-wc-countries.php:665
 msgid "Town / City"
 msgstr "Ort"
 
-#: includes/class-wc-countries.php:757
+#: includes/class-wc-countries.php:758
 msgid "Suburb"
 msgstr "Förort"
 
@@ -14101,7 +14119,7 @@ msgstr "Ogiltigt scope %s"
 msgid "An error occurred in the request and at the time were unable to send the consumer data"
 msgstr "Ett fel uppstod i begäran och kunde vid tidpunkten inte skicka användardata"
 
-#: includes/class-wc-install.php:401
+#: includes/class-wc-install.php:405
 msgctxt "Page slug"
 msgid "checkout"
 msgstr "kassan"
@@ -14129,7 +14147,7 @@ msgstr "Get cart skall inte anropas före wp_loaded funktionen."
 #: includes/admin/class-wc-admin-profile.php:140
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:79
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:130
-#: includes/class-wc-countries.php:672
+#: includes/class-wc-countries.php:673
 #: templates/cart/shipping-calculator.php:55
 #: templates/cart/shipping-calculator.php:60
 #: templates/cart/shipping-calculator.php:72
@@ -14144,25 +14162,25 @@ msgstr "Stat / Län"
 #: includes/admin/settings/class-wc-settings-general.php:100
 #: includes/admin/settings/class-wc-settings-tax.php:195
 #: includes/admin/settings/views/html-settings-tax.php:28
-#: includes/class-wc-countries.php:680
+#: includes/class-wc-countries.php:681
 #: templates/cart/shipping-calculator.php:91
 msgid "Postcode / ZIP"
 msgstr "Postnummer"
 
-#: includes/class-wc-countries.php:911 includes/class-wc-countries.php:925
-#: includes/class-wc-countries.php:1041 includes/class-wc-countries.php:1128
+#: includes/class-wc-countries.php:917 includes/class-wc-countries.php:931
+#: includes/class-wc-countries.php:1047 includes/class-wc-countries.php:1139
 msgid "County"
 msgstr "Län"
 
-#: includes/class-wc-countries.php:403
+#: includes/class-wc-countries.php:404
 msgid "VAT"
 msgstr "Moms"
 
-#: includes/class-wc-countries.php:425
+#: includes/class-wc-countries.php:426
 msgid "(ex. VAT)"
 msgstr "(exkl. moms)"
 
-#: includes/class-wc-countries.php:414
+#: includes/class-wc-countries.php:415
 msgid "(incl. VAT)"
 msgstr "(inkl. moms)"
 
@@ -14353,23 +14371,23 @@ msgctxt "Admin menu name"
 msgid "Shipping classes"
 msgstr "Fraktklasser"
 
-#: includes/class-wc-install.php:1074
+#: includes/class-wc-install.php:1108
 msgid "Premium support"
 msgstr "Premium-support"
 
-#: includes/class-wc-install.php:1073
+#: includes/class-wc-install.php:1107
 msgid "API docs"
 msgstr "API-dokumentation"
 
-#: includes/class-wc-install.php:1073
+#: includes/class-wc-install.php:1107
 msgid "View WooCommerce API docs"
 msgstr "Visa WooCommerce API-dokumentation"
 
-#: includes/class-wc-install.php:1072
+#: includes/class-wc-install.php:1106
 msgid "View WooCommerce documentation"
 msgstr "Visa WooCommerce-dokumentationen"
 
-#: includes/class-wc-install.php:1056
+#: includes/class-wc-install.php:1090
 msgid "View WooCommerce settings"
 msgstr "Visa WooCommerce-inställningarna"
 
@@ -14377,7 +14395,7 @@ msgstr "Visa WooCommerce-inställningarna"
 msgid "Product backorder"
 msgstr "Restnotering av produkt"
 
-#: includes/class-wc-countries.php:632
+#: includes/class-wc-countries.php:633
 #: includes/customizer/class-wc-shop-customizer.php:677
 msgid "Company name"
 msgstr "Företagsnamn"
@@ -14427,7 +14445,7 @@ msgstr "Du kan inte lägga till det antalet av ”%1$s” i din varukorg efterso
 msgid "Sorry, \"%s\" is not in stock. Please edit your cart and try again. We apologize for any inconvenience caused."
 msgstr "\"%s\" är slut i lager. Vänligen ändra din varukorg och försök igen. Vi ber om ursäkt för besväret."
 
-#: includes/class-wc-auth.php:405
+#: includes/class-wc-auth.php:401
 msgid "Access denied"
 msgstr "Åtkomst nekad"
 
@@ -14492,7 +14510,7 @@ msgstr "Lägg till ny rabattkod"
 msgid "Add coupon"
 msgstr "Lägg till rabattkod"
 
-#: includes/class-wc-auth.php:399
+#: includes/class-wc-auth.php:395
 msgid "You do not have permission to access this page"
 msgstr "Du har inte behörighet att komma åt den här sidan"
 
@@ -14890,39 +14908,39 @@ msgstr "Ogiltig kund"
 msgid "The JSONP callback function is invalid"
 msgstr "JSONP-callbackfunktionen är ogiltig"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:374
-#: includes/api/legacy/v3/class-wc-api-orders.php:411
+#: includes/api/legacy/v2/class-wc-api-orders.php:372
+#: includes/api/legacy/v3/class-wc-api-orders.php:407
 msgid "You do not have permission to create orders"
 msgstr "Du har inte behörighet att skapa ordrar"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:528
-#: includes/api/legacy/v2/class-wc-api-orders.php:1598
-#: includes/api/legacy/v3/class-wc-api-orders.php:568
-#: includes/api/legacy/v3/class-wc-api-orders.php:1645
+#: includes/api/legacy/v2/class-wc-api-orders.php:521
+#: includes/api/legacy/v2/class-wc-api-orders.php:1591
+#: includes/api/legacy/v3/class-wc-api-orders.php:559
+#: includes/api/legacy/v3/class-wc-api-orders.php:1636
 msgid "Order ID is invalid"
 msgstr "Order-ID ogiltigt"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1090
-#: includes/api/legacy/v3/class-wc-api-orders.php:1137
+#: includes/api/legacy/v2/class-wc-api-orders.php:1083
+#: includes/api/legacy/v3/class-wc-api-orders.php:1128
 msgid "Fee title is required"
 msgstr "Avgiftstitel krävs"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1259
-#: includes/api/legacy/v2/class-wc-api-orders.php:1369
-#: includes/api/legacy/v2/class-wc-api-orders.php:1433
-#: includes/api/legacy/v3/class-wc-api-orders.php:1306
-#: includes/api/legacy/v3/class-wc-api-orders.php:1416
-#: includes/api/legacy/v3/class-wc-api-orders.php:1480
+#: includes/api/legacy/v2/class-wc-api-orders.php:1252
+#: includes/api/legacy/v2/class-wc-api-orders.php:1362
+#: includes/api/legacy/v2/class-wc-api-orders.php:1426
+#: includes/api/legacy/v3/class-wc-api-orders.php:1297
+#: includes/api/legacy/v3/class-wc-api-orders.php:1407
+#: includes/api/legacy/v3/class-wc-api-orders.php:1471
 msgid "Invalid order note ID"
 msgstr "Ogiltigt ordernoterings-ID"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1299
-#: includes/api/legacy/v3/class-wc-api-orders.php:1346
+#: includes/api/legacy/v2/class-wc-api-orders.php:1292
+#: includes/api/legacy/v3/class-wc-api-orders.php:1337
 msgid "You do not have permission to create order notes"
 msgstr "Du har inte behörighet att skapa ordernoteringar"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1592
-#: includes/api/legacy/v3/class-wc-api-orders.php:1639
+#: includes/api/legacy/v2/class-wc-api-orders.php:1585
+#: includes/api/legacy/v3/class-wc-api-orders.php:1630
 msgid "You do not have permission to create order refunds"
 msgstr "Du har inte behörighet att skapa orderåterbetalningar"
 
@@ -15029,11 +15047,11 @@ msgstr "API användaren är ogiltig"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:521
 #: includes/api/legacy/v2/class-wc-api-customers.php:784
-#: includes/api/legacy/v2/class-wc-api-orders.php:1781
+#: includes/api/legacy/v2/class-wc-api-orders.php:1774
 #: includes/api/legacy/v2/class-wc-api-products.php:2298
 #: includes/api/legacy/v3/class-wc-api-coupons.php:521
 #: includes/api/legacy/v3/class-wc-api-customers.php:774
-#: includes/api/legacy/v3/class-wc-api-orders.php:1828
+#: includes/api/legacy/v3/class-wc-api-orders.php:1819
 #: includes/api/legacy/v3/class-wc-api-products.php:3111
 #: includes/api/legacy/v3/class-wc-api-taxes.php:457
 msgid "No %1$s data specified to create/edit %1$s"
@@ -15045,34 +15063,34 @@ msgstr "Ingen %1$s data angiven för att skapa/redigera %1$s"
 msgid "JSONP support is disabled on this site"
 msgstr "JSONP-support är inaktiverat på den här webbplatsen"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:872
-#: includes/api/legacy/v3/class-wc-api-orders.php:918
+#: includes/api/legacy/v2/class-wc-api-orders.php:865
+#: includes/api/legacy/v3/class-wc-api-orders.php:909
 msgid "Product ID or SKU is required"
 msgstr "Produkt-ID eller artikelnr krävs"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:897
-#: includes/api/legacy/v3/class-wc-api-orders.php:943
+#: includes/api/legacy/v2/class-wc-api-orders.php:890
+#: includes/api/legacy/v3/class-wc-api-orders.php:934
 msgid "The product variation is invalid"
 msgstr "Produktvarianten är ogiltig"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1457
-#: includes/api/legacy/v3/class-wc-api-orders.php:1504
+#: includes/api/legacy/v2/class-wc-api-orders.php:1450
+#: includes/api/legacy/v3/class-wc-api-orders.php:1495
 msgid "Permanently deleted order note"
 msgstr "Raderade ordernotering permanent"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:212
 #: includes/api/legacy/v2/class-wc-api-customers.php:349
-#: includes/api/legacy/v2/class-wc-api-orders.php:367
-#: includes/api/legacy/v2/class-wc-api-orders.php:1292
-#: includes/api/legacy/v2/class-wc-api-orders.php:1585
+#: includes/api/legacy/v2/class-wc-api-orders.php:365
+#: includes/api/legacy/v2/class-wc-api-orders.php:1285
+#: includes/api/legacy/v2/class-wc-api-orders.php:1578
 #: includes/api/legacy/v2/class-wc-api-products.php:214
 #: includes/api/legacy/v2/class-wc-api-products.php:2019
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:171
 #: includes/api/legacy/v3/class-wc-api-coupons.php:210
 #: includes/api/legacy/v3/class-wc-api-customers.php:350
-#: includes/api/legacy/v3/class-wc-api-orders.php:404
-#: includes/api/legacy/v3/class-wc-api-orders.php:1339
-#: includes/api/legacy/v3/class-wc-api-orders.php:1632
+#: includes/api/legacy/v3/class-wc-api-orders.php:400
+#: includes/api/legacy/v3/class-wc-api-orders.php:1330
+#: includes/api/legacy/v3/class-wc-api-orders.php:1623
 #: includes/api/legacy/v3/class-wc-api-products.php:263
 #: includes/api/legacy/v3/class-wc-api-products.php:702
 #: includes/api/legacy/v3/class-wc-api-products.php:959
@@ -15087,17 +15105,17 @@ msgstr "Ingen %1$s data angiven för att skapa %1$s"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:324
 #: includes/api/legacy/v2/class-wc-api-customers.php:404
-#: includes/api/legacy/v2/class-wc-api-orders.php:511
-#: includes/api/legacy/v2/class-wc-api-orders.php:1351
-#: includes/api/legacy/v2/class-wc-api-orders.php:1664
+#: includes/api/legacy/v2/class-wc-api-orders.php:504
+#: includes/api/legacy/v2/class-wc-api-orders.php:1344
+#: includes/api/legacy/v2/class-wc-api-orders.php:1657
 #: includes/api/legacy/v2/class-wc-api-products.php:323
 #: includes/api/legacy/v2/class-wc-api-products.php:2102
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:242
 #: includes/api/legacy/v3/class-wc-api-coupons.php:322
 #: includes/api/legacy/v3/class-wc-api-customers.php:405
-#: includes/api/legacy/v3/class-wc-api-orders.php:551
-#: includes/api/legacy/v3/class-wc-api-orders.php:1398
-#: includes/api/legacy/v3/class-wc-api-orders.php:1711
+#: includes/api/legacy/v3/class-wc-api-orders.php:542
+#: includes/api/legacy/v3/class-wc-api-orders.php:1389
+#: includes/api/legacy/v3/class-wc-api-orders.php:1702
 #: includes/api/legacy/v3/class-wc-api-products.php:377
 #: includes/api/legacy/v3/class-wc-api-products.php:779
 #: includes/api/legacy/v3/class-wc-api-products.php:1004
@@ -15222,7 +15240,7 @@ msgstr "Tabell finns inte"
 msgid "The number of decimal points shown in displayed prices."
 msgstr "Antalet decimaler att visa."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:130
+#: includes/admin/settings/views/html-webhooks-edit.php:133
 msgid "API Version"
 msgstr "API version"
 
@@ -15392,8 +15410,8 @@ msgstr "Du har inte behörighet att visa antalet webhooks"
 msgid "What currency prices are listed at in the catalog and which currency gateways will take payments in."
 msgstr "Vilken valuta som priser är listade med i produktkatalogen och vilken valuta som betalmoduler kommer att använda."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:434
-#: includes/api/legacy/v3/class-wc-api-orders.php:476
+#: includes/api/legacy/v2/class-wc-api-orders.php:432
+#: includes/api/legacy/v3/class-wc-api-orders.php:472
 msgid "Payment method ID and title are required"
 msgstr "Betalsättets ID och titel krävs"
 
@@ -15412,15 +15430,15 @@ msgstr "Sida har inte valts"
 msgid "Failed to update coupon"
 msgstr "Det gick inte att uppdatera rabattkod"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1381
-#: includes/api/legacy/v2/class-wc-api-orders.php:1445
-#: includes/api/legacy/v3/class-wc-api-orders.php:1428
-#: includes/api/legacy/v3/class-wc-api-orders.php:1492
+#: includes/api/legacy/v2/class-wc-api-orders.php:1374
+#: includes/api/legacy/v2/class-wc-api-orders.php:1438
+#: includes/api/legacy/v3/class-wc-api-orders.php:1419
+#: includes/api/legacy/v3/class-wc-api-orders.php:1483
 msgid "The order note ID provided is not associated with the order"
 msgstr "Angivet ordernoterings-ID är inte kopplat till ordern"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1452
-#: includes/api/legacy/v3/class-wc-api-orders.php:1499
+#: includes/api/legacy/v2/class-wc-api-orders.php:1445
+#: includes/api/legacy/v3/class-wc-api-orders.php:1490
 msgid "This order note cannot be deleted"
 msgstr "Denna ordernotering kan inte raderas"
 
@@ -15451,27 +15469,27 @@ msgstr "Den version av WordPress som är installerad på din webbplats."
 msgid "HTML/Multipart emails use DOMDocument to generate inline CSS in templates."
 msgstr "HTML/Multipart e-post använder DOMDocument för att skapa inline CSS i mallar."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:400
-#: includes/api/legacy/v3/class-wc-api-orders.php:437
+#: includes/api/legacy/v2/class-wc-api-orders.php:398
+#: includes/api/legacy/v3/class-wc-api-orders.php:433
 msgid "Cannot create order: %s"
 msgstr "Kan inte skapa order: %s"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:882
-#: includes/api/legacy/v3/class-wc-api-orders.php:928
+#: includes/api/legacy/v2/class-wc-api-orders.php:875
+#: includes/api/legacy/v3/class-wc-api-orders.php:919
 msgid "Product ID provided does not match this line item"
 msgstr "Angivet produkt-ID motsvarar inte denna orderrad"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1265
-#: includes/api/legacy/v2/class-wc-api-orders.php:1376
-#: includes/api/legacy/v2/class-wc-api-orders.php:1440
-#: includes/api/legacy/v3/class-wc-api-orders.php:1312
-#: includes/api/legacy/v3/class-wc-api-orders.php:1423
-#: includes/api/legacy/v3/class-wc-api-orders.php:1487
+#: includes/api/legacy/v2/class-wc-api-orders.php:1258
+#: includes/api/legacy/v2/class-wc-api-orders.php:1369
+#: includes/api/legacy/v2/class-wc-api-orders.php:1433
+#: includes/api/legacy/v3/class-wc-api-orders.php:1303
+#: includes/api/legacy/v3/class-wc-api-orders.php:1414
+#: includes/api/legacy/v3/class-wc-api-orders.php:1478
 msgid "An order note with the provided ID could not be found"
 msgstr "En ordernotering med angivet ID hittades inte"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1314
-#: includes/api/legacy/v3/class-wc-api-orders.php:1361
+#: includes/api/legacy/v2/class-wc-api-orders.php:1307
+#: includes/api/legacy/v3/class-wc-api-orders.php:1352
 msgid "Order note is required"
 msgstr "Ordernotering krävs"
 
@@ -15528,36 +15546,36 @@ msgstr "Du har inte behörighet att skapa webhooks."
 msgid "No %1$s found with the ID equal to %2$s"
 msgstr "Ingen %1$s hittades med ett ID lika med %2$s"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1692
-#: includes/api/legacy/v2/class-wc-api-orders.php:1753
-#: includes/api/legacy/v3/class-wc-api-orders.php:1739
-#: includes/api/legacy/v3/class-wc-api-orders.php:1800
+#: includes/api/legacy/v2/class-wc-api-orders.php:1685
+#: includes/api/legacy/v2/class-wc-api-orders.php:1746
+#: includes/api/legacy/v3/class-wc-api-orders.php:1730
+#: includes/api/legacy/v3/class-wc-api-orders.php:1791
 msgid "The order refund ID provided is not associated with the order."
 msgstr "Angivet ID för orderåterbetalningen är inte kopplat till ordern."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1607
-#: includes/api/legacy/v3/class-wc-api-orders.php:1654
+#: includes/api/legacy/v2/class-wc-api-orders.php:1600
+#: includes/api/legacy/v3/class-wc-api-orders.php:1645
 msgid "Refund amount must be positive."
 msgstr "Återbetalningsbelopp måste vara positivt."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1605
-#: includes/api/legacy/v3/class-wc-api-orders.php:1652
+#: includes/api/legacy/v2/class-wc-api-orders.php:1598
+#: includes/api/legacy/v3/class-wc-api-orders.php:1643
 msgid "Refund amount is required."
 msgstr "Återbetalningsbelopp måste anges."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1525
-#: includes/api/legacy/v2/class-wc-api-orders.php:1687
-#: includes/api/legacy/v2/class-wc-api-orders.php:1748
-#: includes/api/legacy/v3/class-wc-api-orders.php:1572
-#: includes/api/legacy/v3/class-wc-api-orders.php:1734
-#: includes/api/legacy/v3/class-wc-api-orders.php:1795
+#: includes/api/legacy/v2/class-wc-api-orders.php:1518
+#: includes/api/legacy/v2/class-wc-api-orders.php:1680
+#: includes/api/legacy/v2/class-wc-api-orders.php:1741
+#: includes/api/legacy/v3/class-wc-api-orders.php:1563
+#: includes/api/legacy/v3/class-wc-api-orders.php:1725
+#: includes/api/legacy/v3/class-wc-api-orders.php:1786
 msgid "An order refund with the provided ID could not be found."
 msgstr "Någon orderåterbetalning med angivet ID hittades inte."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:450
-#: includes/api/legacy/v2/class-wc-api-orders.php:607
-#: includes/api/legacy/v3/class-wc-api-orders.php:492
-#: includes/api/legacy/v3/class-wc-api-orders.php:646
+#: includes/api/legacy/v2/class-wc-api-orders.php:448
+#: includes/api/legacy/v2/class-wc-api-orders.php:600
+#: includes/api/legacy/v3/class-wc-api-orders.php:488
+#: includes/api/legacy/v3/class-wc-api-orders.php:637
 msgid "Provided order currency is invalid."
 msgstr "Angiven valuta för order är ogiltig"
 
@@ -15698,8 +15716,8 @@ msgstr "Att förstå statusrapporten"
 msgid "If you are modifying WooCommerce on a parent theme that you did not build personally we recommend using a child theme. See: <a href=\"%s\" target=\"_blank\">How to create a child theme</a>"
 msgstr "Om du modifierar WooCommerce på ett modertema som du själv inte byggt, så rekommenderar vi att du använder ett barntema istället. Läs: <a href=\"%s\" target=\"_blank\">Hur du skapar ett barntema</a>"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1159
-#: includes/api/legacy/v3/class-wc-api-orders.php:1206
+#: includes/api/legacy/v2/class-wc-api-orders.php:1152
+#: includes/api/legacy/v3/class-wc-api-orders.php:1197
 msgid "Coupon discount total must be a positive amount."
 msgstr "Rabattkodens totalsumma måste vara ett positivt belopp."
 
@@ -15901,11 +15919,11 @@ msgstr "Åtgärd"
 msgid "Custom"
 msgstr "Custom"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:119
+#: includes/admin/settings/views/html-webhooks-edit.php:122
 msgid "Secret"
 msgstr "Hemlig"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:173
+#: includes/admin/settings/views/html-webhooks-edit.php:176
 msgid "Updated at"
 msgstr "Uppdaterad"
 
@@ -16106,7 +16124,7 @@ msgstr "Välj ifall denna momssats även skall gälla på frakt."
 msgid "The options are &quot;Active&quot; (delivers payload), &quot;Paused&quot; (does not deliver), or &quot;Disabled&quot; (does not deliver due delivery failures)."
 msgstr "Inställningsmöjligheterna är &quot;Aktiv&quot; (skickar payload), &quot;Pausad&quot; (skickar inte), eller &quot;Inaktiverad&quot; (skickar inte pga leveransfel)."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:109
+#: includes/admin/settings/views/html-webhooks-edit.php:112
 msgid "URL where the webhook payload is delivered."
 msgstr "Webbadress dit webhookens payload levereras."
 
@@ -16143,8 +16161,8 @@ msgstr "Gratis"
 msgid "Download &amp; install"
 msgstr "Hämta &amp; installera"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:156
-#: includes/admin/settings/views/html-webhooks-edit.php:165
+#: includes/admin/settings/views/html-webhooks-edit.php:159
+#: includes/admin/settings/views/html-webhooks-edit.php:168
 msgid "Created at"
 msgstr "Skapad"
 
@@ -16228,19 +16246,19 @@ msgstr "Ytterligare momsgrupper"
 msgid "Enable taxes"
 msgstr "Aktivera moms"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:184
+#: includes/admin/settings/views/html-webhooks-edit.php:187
 msgid "Save webhook"
 msgstr "Spara Webhook"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:149
+#: includes/admin/settings/views/html-webhooks-edit.php:152
 msgid "Webhook actions"
 msgstr "Webhook Actions"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:98
+#: includes/admin/settings/views/html-webhooks-edit.php:101
 msgid "Enter the action that will trigger this webhook."
 msgstr "Ange vilken Action som utlöser denna webhook."
 
-#: includes/admin/settings/views/html-webhooks-edit.php:97
+#: includes/admin/settings/views/html-webhooks-edit.php:100
 msgid "Action event"
 msgstr "Action Event"
 
@@ -16662,7 +16680,7 @@ msgstr "Menyordning"
 msgid "Custom ordering position."
 msgstr "Anpassad position."
 
-#: includes/admin/class-wc-admin-assets.php:200
+#: includes/admin/class-wc-admin-assets.php:201
 #: includes/admin/meta-boxes/views/html-product-data-advanced.php:47
 #: includes/admin/settings/class-wc-settings-products.php:410
 msgid "Enable reviews"
@@ -16739,13 +16757,13 @@ msgstr "Antal"
 #: includes/admin/meta-boxes/views/html-order-items.php:39
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:155
 #: includes/admin/settings/class-wc-settings-tax.php:29
-#: includes/class-wc-countries.php:403 includes/class-wc-order-item-tax.php:159
+#: includes/class-wc-countries.php:404 includes/class-wc-order-item-tax.php:159
 #: includes/class-wc-tax.php:762
 msgid "Tax"
 msgstr "Moms"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:235
-#: includes/class-wc-order.php:1971
+#: includes/class-wc-order.php:1961
 msgid "Refund"
 msgstr "Återbetalning"
 
@@ -17411,13 +17429,13 @@ msgid "Purchase note"
 msgstr "Köpmeddelande"
 
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:27
-#: includes/class-wc-privacy-exporters.php:346
+#: includes/class-wc-privacy-exporters.php:349
 #: includes/wc-account-functions.php:212
 msgid "Downloads remaining"
 msgstr "Nedladdningar kvarstår"
 
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:32
-#: includes/class-wc-privacy-exporters.php:358
+#: includes/class-wc-privacy-exporters.php:361
 msgid "Access expires"
 msgstr "Åtkomsten går ut"
 
@@ -17652,7 +17670,7 @@ msgstr[1] "Sålde %1$d artiklar de senaste %2$d dagarna"
 msgid "Sold %1$s worth in the last %2$d days"
 msgstr "Har sålt till ett värde av %1$s de senaste %2$d dagarna"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:675
+#: includes/api/class-wc-rest-product-variations-controller.php:685
 msgid "Variation description."
 msgstr "Beskrivning av variant."
 
@@ -17709,7 +17727,7 @@ msgstr "Den nedladdningsbara filen %1$s kan inte användas eftersom filtypen int
 msgid "Shipping classes"
 msgstr "Fraktklasser"
 
-#: includes/api/class-wc-rest-product-variations-controller.php:803
+#: includes/api/class-wc-rest-product-variations-controller.php:813
 #: includes/api/class-wc-rest-products-controller.php:1646
 #: includes/api/v1/class-wc-rest-products-controller.php:1936
 #: includes/api/v1/class-wc-rest-products-controller.php:2396
@@ -17733,7 +17751,7 @@ msgstr "%s rabattkoder använda totalt"
 msgid "To edit this order change the status back to \"Pending\""
 msgstr "Byt tillbaka till statusen ”Inväntar betalning” för att redigera denna order"
 
-#: includes/class-wc-privacy-exporters.php:242
+#: includes/class-wc-privacy-exporters.php:245
 msgid "Order Total"
 msgstr "Totalsumma"
 
@@ -17849,7 +17867,7 @@ msgstr "Ämne"
 msgid "Webhook created on %s"
 msgstr "Webhook skapad på %s"
 
-#: includes/admin/class-wc-admin-webhooks.php:295
+#: includes/admin/class-wc-admin-webhooks.php:269
 #: includes/admin/settings/class-wc-settings-advanced.php:44
 msgid "Webhooks"
 msgstr "Webhooks"
@@ -17966,7 +17984,7 @@ msgstr "Genomför"
 #: includes/admin/class-wc-admin-profile.php:85
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:360
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:87
-#: includes/class-wc-countries.php:1221
+#: includes/class-wc-countries.php:1232
 #: includes/customizer/class-wc-shop-customizer.php:679
 msgid "Phone"
 msgstr "Telefon"
@@ -17992,19 +18010,19 @@ msgstr "Adress"
 msgid "No billing address set."
 msgstr "Faktureringsadress saknas."
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:401
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:403
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:405
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:407
 #: includes/admin/meta-boxes/views/html-order-shipping.php:39
 #: includes/admin/meta-boxes/views/html-order-shipping.php:41
 msgid "Other"
 msgstr "Övrigt"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:413
-#: includes/class-wc-privacy-exporters.php:292
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:417
+#: includes/class-wc-privacy-exporters.php:295
 msgid "Transaction ID"
 msgstr "Transaktions-ID"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:438
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "No shipping address set."
 msgstr "Leveransadress saknas."
 
@@ -18058,7 +18076,7 @@ msgstr "Lagersaldo"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:165
 #: includes/admin/class-wc-admin-setup-wizard.php:881
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:424
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:428
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:99
 #: includes/admin/meta-boxes/views/html-order-shipping.php:17
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:79
@@ -18234,19 +18252,19 @@ msgid "Attribute terms can be assigned to products and variations.<br/><br/><b>N
 msgstr "Attributtermer kan tilldelas till produkter och varianter.<br/><br/><b>Notering</b>: När en term raderas tas den bort från samtliga produkter och varianter som den är tilldelad till. Skapar du termen på nytt kommer den inte tilldelas automatiskt till produkter."
 
 #: includes/admin/class-wc-admin-webhooks-table-list.php:51
-#: includes/admin/settings/views/html-webhooks-edit.php:108
+#: includes/admin/settings/views/html-webhooks-edit.php:111
 msgid "Delivery URL"
 msgstr "Leverans-webbadress"
 
-#: includes/admin/class-wc-admin-webhooks.php:255
+#: includes/admin/class-wc-admin-webhooks.php:229
 msgid "Webhook updated successfully."
 msgstr "Webhook uppdaterad."
 
-#: includes/admin/class-wc-admin-webhooks.php:259
+#: includes/admin/class-wc-admin-webhooks.php:233
 msgid "Webhook created successfully."
 msgstr "Webhook skapad."
 
-#: includes/class-wc-install.php:1072
+#: includes/class-wc-install.php:1106
 msgid "Docs"
 msgstr "Dokumentation"
 
@@ -18285,7 +18303,7 @@ msgstr "Hämta kundens faktureringsadress"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:606
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:607
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:387
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:391
 #: includes/admin/meta-boxes/views/html-order-shipping.php:24
 #: includes/admin/settings/class-wc-settings-accounts.php:169
 #: includes/admin/settings/class-wc-settings-accounts.php:181
@@ -18311,7 +18329,7 @@ msgstr "Hämta kundens faktureringsadress"
 msgid "N/A"
 msgstr "Inte tillgänglig"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:427
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:431
 msgid "Load shipping address"
 msgstr "Hämta kundens leveransadress"
 
@@ -18457,7 +18475,7 @@ msgstr "Lagersaldo"
 msgid "Grant access"
 msgstr "Ge tillgång"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:501
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:505
 msgid "Customer provided note"
 msgstr "Kundnotering"
 
@@ -18499,16 +18517,16 @@ msgstr "Visa momssatser"
 msgid "HTML email template"
 msgstr "Mallfil för HTML e-post"
 
-#: includes/admin/class-wc-admin-webhooks.php:309
+#: includes/admin/class-wc-admin-webhooks.php:284
 msgid "Search webhooks"
 msgstr "Sök efter webhooks"
 
-#: includes/admin/class-wc-admin-webhooks.php:295
+#: includes/admin/class-wc-admin-webhooks.php:269
 msgid "Add webhook"
 msgstr "Lägg till webhook"
 
 #. translators: %d: count
-#: includes/admin/class-wc-admin-webhooks.php:251
+#: includes/admin/class-wc-admin-webhooks.php:225
 msgid "%d webhook permanently deleted."
 msgid_plural "%d webhooks permanently deleted."
 msgstr[0] "%d webhook raderades permanent."
@@ -18545,7 +18563,7 @@ msgstr "Betala vid leverans"
 msgid "Virtual products are intangible and are not shipped."
 msgstr "Virtuella produkter är immateriella och skickas inte."
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:502
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:506
 msgid "Customer notes about the order"
 msgstr "Kundens notering gällande ordern"
 
@@ -18561,7 +18579,7 @@ msgstr "Nästa steg"
 msgid "Delete WooCommerce tax rates"
 msgstr "Radera WooCommerce-momssatser"
 
-#: includes/admin/class-wc-admin-webhooks.php:189
+#: includes/admin/class-wc-admin-webhooks-table-list.php:218
 msgid "You do not have permission to edit Webhooks"
 msgstr "Du har inte behörighet att redigera Webhooks"
 
@@ -18593,7 +18611,7 @@ msgstr "Ett fel har uppstått."
 msgid "Order Status"
 msgstr "Orderstatus"
 
-#: includes/class-wc-privacy-exporters.php:241
+#: includes/class-wc-privacy-exporters.php:244
 msgid "Order Date"
 msgstr "Orderdatum"
 
@@ -18641,9 +18659,9 @@ msgstr "Produkten sparades."
 #: includes/admin/class-wc-admin-post-types.php:134
 #: includes/admin/class-wc-admin-post-types.php:153
 #: includes/admin/class-wc-admin-post-types.php:172
-#: includes/admin/settings/views/html-webhooks-edit.php:159
-#: includes/admin/settings/views/html-webhooks-edit.php:168
-#: includes/admin/settings/views/html-webhooks-edit.php:176
+#: includes/admin/settings/views/html-webhooks-edit.php:162
+#: includes/admin/settings/views/html-webhooks-edit.php:171
+#: includes/admin/settings/views/html-webhooks-edit.php:179
 #: includes/class-wc-webhook.php:397
 msgid "M j, Y @ G:i"
 msgstr "j M Y @ G:i"
@@ -18824,7 +18842,7 @@ msgstr[1] "%dnoteringar"
 msgid "Guest"
 msgstr "Gäst"
 
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:649
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:652
 msgid "Order status changed by bulk edit:"
 msgstr "Orderstatus ändrades för flera ordrar:"
 
@@ -18900,7 +18918,7 @@ msgstr "Avbryt"
 #: includes/admin/class-wc-admin-profile.php:105
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:44
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:95
-#: includes/class-wc-countries.php:618 includes/class-wc-form-handler.php:240
+#: includes/class-wc-countries.php:619 includes/class-wc-form-handler.php:240
 #: templates/myaccount/form-edit-account.php:27
 msgid "First name"
 msgstr "Förnamn"
@@ -18909,7 +18927,7 @@ msgstr "Förnamn"
 #: includes/admin/class-wc-admin-profile.php:109
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:48
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:99
-#: includes/class-wc-countries.php:625 includes/class-wc-form-handler.php:241
+#: includes/class-wc-countries.php:626 includes/class-wc-form-handler.php:241
 #: templates/myaccount/form-edit-account.php:31
 msgid "Last name"
 msgstr "Efternamn"
@@ -18921,8 +18939,8 @@ msgstr "Efternamn"
 msgid "Company"
 msgstr "Företag"
 
-#: includes/class-wc-countries.php:760 includes/class-wc-countries.php:998
-#: includes/class-wc-countries.php:1125
+#: includes/class-wc-countries.php:761 includes/class-wc-countries.php:1004
+#: includes/class-wc-countries.php:1136
 msgid "Postcode"
 msgstr "Postnummer"
 
@@ -18933,7 +18951,7 @@ msgstr "Postnummer"
 #: includes/admin/class-wc-admin-setup-wizard.php:396
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:72
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:123
-#: includes/class-wc-countries.php:640
+#: includes/class-wc-countries.php:641
 msgid "Country"
 msgstr "Land"
 
@@ -18957,7 +18975,7 @@ msgstr "E-post"
 #: includes/admin/reports/class-wc-report-customer-list.php:215
 #: includes/admin/settings/class-wc-settings-advanced.php:222
 #: includes/class-wc-post-types.php:370
-#: includes/class-wc-privacy-exporters.php:73 includes/class-wc-query.php:109
+#: includes/class-wc-privacy-exporters.php:76 includes/class-wc-query.php:109
 #: includes/wc-account-functions.php:99
 msgid "Orders"
 msgstr "Ordrar"
@@ -19064,7 +19082,7 @@ msgstr "cm"
 msgid "mm"
 msgstr "mm"
 
-#: includes/class-wc-install.php:397
+#: includes/class-wc-install.php:401
 msgctxt "Page title"
 msgid "Cart"
 msgstr "Varukorg"
@@ -19344,11 +19362,11 @@ msgstr "yard"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:415
 #: includes/admin/class-wc-admin-setup-wizard.php:417
-#: includes/class-wc-countries.php:763 includes/class-wc-countries.php:1120
+#: includes/class-wc-countries.php:764 includes/class-wc-countries.php:1131
 msgid "State"
 msgstr "Stat"
 
-#: includes/class-wc-install.php:392
+#: includes/class-wc-install.php:396
 msgctxt "Page title"
 msgid "Shop"
 msgstr "Webbutik"
@@ -19379,7 +19397,7 @@ msgstr "Färdigbehandlad"
 msgid "PayPal email address"
 msgstr "PayPal, e-postadress:"
 
-#: includes/class-wc-install.php:402
+#: includes/class-wc-install.php:406
 msgctxt "Page title"
 msgid "Checkout"
 msgstr "Till kassan"
@@ -19400,7 +19418,7 @@ msgstr "Tusentalsavgränsare."
 msgid "Currency position."
 msgstr "Valutaposition."
 
-#: includes/class-wc-install.php:407
+#: includes/class-wc-install.php:411
 msgctxt "Page title"
 msgid "My account"
 msgstr "Mitt konto"
@@ -19434,7 +19452,7 @@ msgstr "Statskod/Länskod"
 #: includes/admin/class-wc-admin-webhooks-table-list.php:92
 #: includes/admin/class-wc-admin-webhooks-table-list.php:206
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:63
-#: includes/admin/settings/views/html-webhooks-edit.php:195
+#: includes/admin/settings/views/html-webhooks-edit.php:198
 msgid "Delete permanently"
 msgstr "Radera permanent"
 
@@ -19508,7 +19526,7 @@ msgid "Most stocked"
 msgstr "Högst lagersaldo"
 
 #. translators: %d: orders count
-#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:689
+#: includes/admin/list-tables/class-wc-admin-list-table-orders.php:692
 msgid "%d order status changed."
 msgid_plural "%d order statuses changed."
 msgstr[0] "%d orderstatus ändrades."
@@ -19570,7 +19588,7 @@ msgstr "Skriv"
 msgid "Read/Write"
 msgstr "Läs/Skriv"
 
-#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.4.1)  #-#-#-#-#
+#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.4.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/admin/class-wc-admin-assets.php:84
 #: includes/admin/class-wc-admin-menus.php:59
@@ -19578,64 +19596,64 @@ msgstr "Läs/Skriv"
 #: includes/admin/helper/class-wc-helper.php:448
 #: includes/admin/helper/class-wc-helper.php:591
 #: includes/admin/helper/class-wc-helper.php:1338
-#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1638
-#: includes/class-wc-order.php:1639 includes/class-wc-privacy.php:31
+#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1628
+#: includes/class-wc-order.php:1629 includes/class-wc-privacy.php:31
 #: includes/customizer/class-wc-shop-customizer.php:36
 #: includes/wc-order-functions.php:913
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: includes/admin/class-wc-admin-assets.php:229
+#: includes/admin/class-wc-admin-assets.php:230
 msgid "Enter a value"
 msgstr "Ange ett värde"
 
-#: includes/admin/class-wc-admin-assets.php:231
+#: includes/admin/class-wc-admin-assets.php:232
 msgid "Enter a value (fixed or %)"
 msgstr "Ange ett värde (fast eller %)"
 
-#: includes/admin/class-wc-admin-assets.php:233
+#: includes/admin/class-wc-admin-assets.php:234
 msgid "Last warning, are you sure?"
 msgstr "Sista varningen, är du säker?"
 
-#: includes/admin/class-wc-admin-assets.php:234
+#: includes/admin/class-wc-admin-assets.php:235
 #: includes/admin/class-wc-admin-taxonomies.php:135
 #: includes/admin/class-wc-admin-taxonomies.php:245
 msgid "Choose an image"
 msgstr "Välj en bild"
 
-#: includes/admin/class-wc-admin-assets.php:259
-#: includes/admin/class-wc-admin-assets.php:409
+#: includes/admin/class-wc-admin-assets.php:260
+#: includes/admin/class-wc-admin-assets.php:410
 #: includes/admin/settings/views/html-webhooks-edit.php:67
 #: includes/class-wc-frontend-scripts.php:566
 msgid "Select an option&hellip;"
 msgstr "Välj ett alternativ&hellip;"
 
-#: includes/admin/class-wc-admin-assets.php:288
+#: includes/admin/class-wc-admin-assets.php:289
 msgid "Remove this attribute?"
 msgstr "Radera detta attribut?"
 
-#: includes/admin/class-wc-admin-assets.php:290
+#: includes/admin/class-wc-admin-assets.php:291
 #: includes/admin/meta-boxes/views/html-product-attribute.php:8
 #: includes/admin/meta-boxes/views/html-variation-admin.php:16
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:54
 msgid "Remove"
 msgstr "Ta bort"
 
-#: includes/admin/class-wc-admin-assets.php:292
+#: includes/admin/class-wc-admin-assets.php:293
 #: includes/admin/meta-boxes/views/html-product-attribute.php:29
 msgid "Value(s)"
 msgstr "Värde(n)"
 
-#: includes/admin/class-wc-admin-assets.php:294
+#: includes/admin/class-wc-admin-assets.php:295
 #: includes/admin/meta-boxes/views/html-product-attribute.php:74
 msgid "Visible on the product page"
 msgstr "Synlig på produktsidan"
 
-#: includes/admin/class-wc-admin-assets.php:296
+#: includes/admin/class-wc-admin-assets.php:297
 msgid "Enter a name for the new attribute term:"
 msgstr "Ange ett namn för den nya attributtermen:"
 
-#: includes/admin/class-wc-admin-assets.php:289
+#: includes/admin/class-wc-admin-assets.php:290
 #: includes/admin/class-wc-admin-attributes.php:187
 #: includes/admin/class-wc-admin-attributes.php:254
 #: includes/admin/class-wc-admin-attributes.php:289
@@ -19657,11 +19675,11 @@ msgstr "Ange ett namn för den nya attributtermen:"
 msgid "Name"
 msgstr "Namn"
 
-#: includes/admin/class-wc-admin-assets.php:305
+#: includes/admin/class-wc-admin-assets.php:306
 msgid "No customer selected"
 msgstr "Ingen kund vald"
 
-#: includes/admin/class-wc-admin-assets.php:331
+#: includes/admin/class-wc-admin-assets.php:332
 msgid "You cannot add the same tax rate twice!"
 msgstr "Du kan inte lägga till samma momssats två gånger!"
 
@@ -19776,7 +19794,7 @@ msgstr "Rapportera en bugg"
 #: includes/admin/class-wc-admin-webhooks-table-list.php:82
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:401
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:313
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:425
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:429
 #: includes/admin/reports/class-wc-report-customer-list.php:159
 #: includes/admin/reports/class-wc-report-stock.php:135
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:54
@@ -19801,7 +19819,7 @@ msgstr "Importera <strong>momssatser</strong> till din butik via en CSV-fil."
 
 #: includes/admin/class-wc-admin-menus.php:79
 #: includes/admin/views/html-admin-page-status-report.php:604
-#: includes/class-wc-install.php:1056
+#: includes/class-wc-install.php:1090
 msgid "Settings"
 msgstr "Inställningar"
 
@@ -19835,7 +19853,7 @@ msgstr "Standard"
 #: includes/admin/reports/class-wc-report-downloads.php:215
 #: includes/admin/reports/class-wc-report-stock.php:173
 #: includes/class-wc-emails.php:402 includes/class-wc-post-types.php:303
-#: includes/class-wc-privacy-exporters.php:338
+#: includes/class-wc-privacy-exporters.php:341
 #: includes/data-stores/class-wc-product-data-store-cpt.php:105
 #: includes/wc-account-functions.php:211 templates/cart/cart.php:32
 #: templates/cart/cart.php:76 templates/checkout/form-pay.php:27
@@ -19977,22 +19995,22 @@ msgstr "North West"
 msgid "Western Cape"
 msgstr "Western Cape"
 
-#: includes/abstracts/abstract-wc-order.php:1724
+#: includes/abstracts/abstract-wc-order.php:1731
 #: includes/class-wc-cart.php:1434 includes/class-wc-product-grouped.php:120
 msgid "Free!"
 msgstr "Gratis!"
 
-#: includes/abstracts/abstract-wc-order.php:1768
+#: includes/abstracts/abstract-wc-order.php:1775
 #: includes/admin/meta-boxes/views/html-order-items.php:151
 msgid "Discount:"
 msgstr "Rabatt:"
 
-#: includes/abstracts/abstract-wc-order.php:1783
+#: includes/abstracts/abstract-wc-order.php:1790
 #: includes/admin/meta-boxes/views/html-order-items.php:163
 msgid "Shipping:"
 msgstr "Frakt:"
 
-#: includes/abstracts/abstract-wc-order.php:1844
+#: includes/abstracts/abstract-wc-order.php:1851
 #: includes/admin/meta-boxes/views/html-order-item.php:98
 #: includes/admin/meta-boxes/views/html-order-item.php:144
 #: templates/checkout/order-receipt.php:34 templates/checkout/thankyou.php:63
@@ -20052,7 +20070,7 @@ msgstr "Från:"
 msgid "Backordered"
 msgstr "Restnoterad"
 
-#: includes/abstracts/abstract-wc-order.php:1753
+#: includes/abstracts/abstract-wc-order.php:1760
 msgid "Subtotal:"
 msgstr "Delsumma:"
 
@@ -20096,7 +20114,7 @@ msgstr "Permalänken \"%s\" är inte tillåten eftersom det är en reserverad te
 msgid "Slug \"%s\" is already in use. Change it, please."
 msgstr "Permalänken \"%s\" används redan. Vänligen byt ut den."
 
-#: includes/admin/class-wc-admin-notices.php:132
+#: includes/admin/class-wc-admin-notices.php:135
 #: includes/admin/class-wc-admin-status.php:271
 #: includes/admin/class-wc-admin-status.php:290
 #: includes/admin/class-wc-admin-status.php:306
@@ -20107,7 +20125,7 @@ msgstr "Åtgärden misslyckades. Vänligen uppdatera sidan och försök igen."
 #. translators: 1: first name 2: last name
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:168
 #: includes/api/class-wc-rest-network-orders-controller.php:127
-#: includes/class-wc-order.php:848 includes/class-wc-order.php:858
+#: includes/class-wc-order.php:838 includes/class-wc-order.php:848
 msgctxt "full name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
@@ -20192,79 +20210,79 @@ msgstr "Vänligen ange en landskod med två versala bokstäver."
 msgid "Please enter in a value less than the regular price."
 msgstr "Vänligen ange ett värde som är lägre än ordinarie pris."
 
-#: includes/admin/class-wc-admin-assets.php:230
+#: includes/admin/class-wc-admin-assets.php:231
 msgid "Variation menu order (determines position in the list of variations)"
 msgstr "Variant ordning (bestämmer placering i listan av varianter)"
 
-#: includes/admin/class-wc-admin-assets.php:235
+#: includes/admin/class-wc-admin-assets.php:236
 msgid "Set variation image"
 msgstr "Välj bild för variant"
 
-#: includes/admin/class-wc-admin-assets.php:236
+#: includes/admin/class-wc-admin-assets.php:237
 msgid "variation added"
 msgstr "variant tillagd"
 
-#: includes/admin/class-wc-admin-assets.php:237
+#: includes/admin/class-wc-admin-assets.php:238
 msgid "variations added"
 msgstr "varianter tillagda"
 
-#: includes/admin/class-wc-admin-assets.php:238
+#: includes/admin/class-wc-admin-assets.php:239
 msgid "No variations added"
 msgstr "Inga varianter tillagda"
 
-#: includes/admin/class-wc-admin-assets.php:239
+#: includes/admin/class-wc-admin-assets.php:240
 msgid "Are you sure you want to remove this variation?"
 msgstr "Är du säker på att du vill ta bort den här varianten?"
 
-#: includes/admin/class-wc-admin-assets.php:240
+#: includes/admin/class-wc-admin-assets.php:241
 msgid "Sale start date (YYYY-MM-DD format or leave blank)"
 msgstr "Rea startdatum (ÅÅÅÅ-MM-DD format eller lämna tomt)"
 
-#: includes/admin/class-wc-admin-assets.php:241
+#: includes/admin/class-wc-admin-assets.php:242
 msgid "Sale end date (YYYY-MM-DD format or leave blank)"
 msgstr "Rea slutdatum (ÅÅÅÅ-MM-DD format eller lämna tomt)"
 
-#: includes/admin/class-wc-admin-assets.php:242
+#: includes/admin/class-wc-admin-assets.php:243
 msgid "Save changes before changing page?"
 msgstr "Vill du spara ändringar innan du byter sida?"
 
-#: includes/admin/class-wc-admin-assets.php:243
+#: includes/admin/class-wc-admin-assets.php:244
 msgid "%qty% variation"
 msgstr "%qty% variant"
 
-#: includes/admin/class-wc-admin-assets.php:244
+#: includes/admin/class-wc-admin-assets.php:245
 msgid "%qty% variations"
 msgstr "%qty% varianter"
 
-#: includes/admin/class-wc-admin-assets.php:282
+#: includes/admin/class-wc-admin-assets.php:283
 msgid "Are you sure you want to remove the selected items? If you have previously reduced this item's stock, or this order was submitted by a customer, you will need to manually restore the item's stock."
 msgstr "Är du säker på att du vill radera valda artiklar? Om du nyligen minskat artikelns lagersaldo eller om ordern lades av en kund, behöver du manuellt återställa antal artiklar i lager."
 
-#: includes/admin/class-wc-admin-assets.php:283
+#: includes/admin/class-wc-admin-assets.php:284
 msgid "Please select some items."
 msgstr "Vänligen välj artiklar."
 
-#: includes/admin/class-wc-admin-assets.php:287
+#: includes/admin/class-wc-admin-assets.php:288
 msgid "Remove this item meta?"
 msgstr "Ta bort artikelns metadata?"
 
-#: includes/admin/class-wc-admin-assets.php:291
+#: includes/admin/class-wc-admin-assets.php:292
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:9
 #: includes/admin/meta-boxes/views/html-product-attribute.php:9
 #: includes/admin/meta-boxes/views/html-variation-admin.php:17
 msgid "Click to toggle"
 msgstr "Klicka för att aktivera/inaktivera"
 
-#: includes/admin/class-wc-admin-assets.php:293
+#: includes/admin/class-wc-admin-assets.php:294
 msgid "Enter some text, or some attributes by pipe (|) separating values."
 msgstr "Fyll i text eller attribut, avskilda med pipe (|) som avskiljare."
 
-#: includes/admin/class-wc-admin-assets.php:295
+#: includes/admin/class-wc-admin-assets.php:296
 #: includes/admin/meta-boxes/views/html-product-attribute.php:80
 msgid "Used for variations"
 msgstr "Används för varianter"
 
-#: includes/admin/class-wc-admin-assets.php:301
+#: includes/admin/class-wc-admin-assets.php:302
 #: includes/admin/class-wc-admin-post-types.php:746
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:120
 #: includes/admin/views/html-bulk-edit-product.php:200
@@ -20272,7 +20290,7 @@ msgstr "Används för varianter"
 msgid "Featured"
 msgstr "Utvald"
 
-#: includes/admin/class-wc-admin-assets.php:330
+#: includes/admin/class-wc-admin-assets.php:331
 msgid "Are you sure you want to revoke access to this download?"
 msgstr "Är du säker att du vill återkalla tillgång för denna nedladdning?"
 
@@ -20378,15 +20396,15 @@ msgctxt "enhanced select"
 msgid "Loading more results&hellip;"
 msgstr "Laddar fler resutat&hellip;"
 
-#: includes/admin/class-wc-admin-assets.php:298
+#: includes/admin/class-wc-admin-assets.php:299
 msgid "Copy billing information to shipping information? This will remove any currently entered shipping information."
 msgstr "Kopiera faktureringsuppgifter till leveransuppgifter? Detta kommer att ta bort befintliga leveransuppgifter."
 
-#: includes/admin/class-wc-admin-assets.php:299
+#: includes/admin/class-wc-admin-assets.php:300
 msgid "Load the customer's billing information? This will remove any currently entered billing information."
 msgstr "Hämta kundens faktureringsuppgifter? Detta kommer att ta bort befintliga faktureringsuppgifter."
 
-#: includes/admin/class-wc-admin-assets.php:300
+#: includes/admin/class-wc-admin-assets.php:301
 msgid "Load the customer's shipping information? This will remove any currently entered shipping information."
 msgstr "Hämta kundens leveransuppgifter? Detta kommer att ta bort befintliga leveransuppgifter."
 
@@ -20400,33 +20418,33 @@ msgstr "produkt-tagg"
 msgid "Product tag base"
 msgstr "Bassökväg för produkttaggar"
 
-#: includes/admin/class-wc-admin-assets.php:232
+#: includes/admin/class-wc-admin-assets.php:233
 msgid "Are you sure you want to delete all variations? This cannot be undone."
 msgstr "Är du säker på att du vill radera alla varianter? Detta går inte att ångra."
 
-#: includes/admin/class-wc-admin-assets.php:284
+#: includes/admin/class-wc-admin-assets.php:285
 msgid "Are you sure you wish to process this refund? This action cannot be undone."
 msgstr "Är du säker på att du vill genomföra denna återbetalning? Detta går inte att ångra."
 
-#: includes/admin/class-wc-admin-assets.php:285
+#: includes/admin/class-wc-admin-assets.php:286
 msgid "Are you sure you wish to delete this refund? This action cannot be undone."
 msgstr "Är du säker på att du vill radera denna återbetalning? Detta går inte att ångra."
 
-#: includes/admin/class-wc-admin-assets.php:286
+#: includes/admin/class-wc-admin-assets.php:287
 msgid "Are you sure you wish to delete this tax column? This action cannot be undone."
 msgstr "Är du säker på att du vill radera denna momskolumn? Detta går inte att ångra."
 
-#: includes/admin/class-wc-admin-assets.php:329
+#: includes/admin/class-wc-admin-assets.php:330
 msgid "Could not grant access - the user may already have permission for this file or billing email is not set. Ensure the billing email is set, and the order has been saved."
 msgstr "Kunde inte ge tillgång - användaren kanske redan har tillgång till den här filen eller så är e-post för fakturering inte vald. Kontrollera så att e-postadress för fakturering är vald, och att ordern har sparats."
 
 #. translators: %d: Number of variations
-#: includes/admin/class-wc-admin-assets.php:228
+#: includes/admin/class-wc-admin-assets.php:229
 msgid "Are you sure you want to link all variations? This will create a new variation for each and every possible combination of variation attributes (max %d per run)."
 msgstr "Är du säker på att du vill länka alla varianter? Detta kommer skapa en ny variant för varje möjlig kombination av alla attribut (max %d per omgång)."
 
 #. translators: 1: old order status 2: new order status
-#: includes/class-wc-order.php:360
+#: includes/class-wc-order.php:350
 msgid "Order status changed from %1$s to %2$s."
 msgstr "Beställningsstatus ändrad från %1$s till %2$s."
 
@@ -20612,8 +20630,8 @@ msgstr "Kreditkortskod"
 msgid "Card number"
 msgstr "Kreditkortsnummer"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:385
-#: includes/class-wc-order.php:1954 templates/checkout/order-receipt.php:39
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:389
+#: includes/class-wc-order.php:1944 templates/checkout/order-receipt.php:39
 #: templates/checkout/thankyou.php:69
 msgid "Payment method:"
 msgstr "Betalsätt:"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Responsive Lightbox &amp; Gallery - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-05-17 14:21:30+0000\n"
+"PO-Revision-Date: 2018-06-27 03:36:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -330,7 +330,7 @@ msgid "Gallery Categories"
 msgstr "Galerie-Kategorien"
 
 #. #-#-#-#-#  responsive-lightbox-code.pot (Responsive Lightbox & Gallery
-#. 2.0.4)  #-#-#-#-#
+#. 2.0.5)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/class-settings.php:1717 includes/class-settings.php:1734
 msgid "Responsive Lightbox & Gallery"
@@ -368,6 +368,10 @@ msgstr "Wenn auf true gesetzte, wird das Popup oben statt in der Mitte ausgerich
 msgid "Align top"
 msgstr "Oben ausrichten"
 
+#: includes/class-settings.php:1633
+msgid "Controls whether pressing the escape key will dismiss the active popup or not."
+msgstr "Kontrolliert, ob die Excape-Taste das aktive Popup entfernt oder nicht."
+
 #: includes/class-settings.php:1630
 msgid "Enable escape key"
 msgstr "ESC-Taste aktivieren"
@@ -391,6 +395,10 @@ msgstr "Schließen des Popups , wenn auf den dunklen Überleger geklickt wird."
 #: includes/class-settings.php:1609
 msgid "Close on background click"
 msgstr "Schließen bei Klick auf den Hintergrund"
+
+#: includes/class-settings.php:1605
+msgid "Close popup when user clicks on content of it. It's recommended to enable this option when you have only image in popup."
+msgstr "Popup schließen, wenn Benutzer auf den Inhalt klickt. Empfohlene Einstellung, wenn sich nur Bilder im Popup befinden."
 
 #: includes/class-settings.php:1602
 msgid "Close on content click"
@@ -471,18 +479,6 @@ msgstr "Vertikaler Abstand zwischen Galerie-Elementen"
 #: includes/class-settings.php:777
 msgid "Horizontal space between gallery items."
 msgstr "Horizontaler Abstand zwischen Galerie-Elementen"
-
-#: includes/class-settings.php:762
-msgid "small devices / tablets (?768px)"
-msgstr "Kleine Geräte / Tablets (≥768px)"
-
-#: includes/class-settings.php:755
-msgid "medium devices / desktops (?992px)"
-msgstr "Mittlere Geräte / Desktops (≥992px)"
-
-#: includes/class-settings.php:748
-msgid "large devices / desktops (?1200px)"
-msgstr "Große Geräte / Desktops (≥1200px)"
 
 #: includes/class-settings.php:732
 msgid "Basic Masonry Gallery settings"
@@ -732,17 +728,17 @@ msgstr "Zwischenraum"
 msgid "extra small devices / phones (<768px)"
 msgstr "Sehr kleine Geräte / Smartphones (≥768px)"
 
-#: includes/class-settings.php:483
-msgid "small devices / tablets (>768px)"
-msgstr "Kleine Geräte / Tablets (≥768px)"
+#: includes/class-settings.php:483 includes/class-settings.php:762
+msgid "small devices / tablets (&ge;768px)"
+msgstr "Kleine Geräte / Tablets (&ge;768px)"
 
-#: includes/class-settings.php:477
-msgid "medium devices / desktops (>992px)"
-msgstr "Mittlere Geräte / Desktops (≥992px)"
+#: includes/class-settings.php:477 includes/class-settings.php:755
+msgid "medium devices / desktops (&ge;992px)"
+msgstr "Mittlere Geräte / Desktops (&ge;992px)"
 
-#: includes/class-settings.php:471
-msgid "large devices / desktops (>1200px)"
-msgstr "Große Geräte / Desktops (≥1200px)"
+#: includes/class-settings.php:471 includes/class-settings.php:748
+msgid "large devices / desktops (&ge;1200px)"
+msgstr "Große Geräte / Desktops (&ge;1200px)"
 
 #: includes/class-settings.php:465 includes/class-settings.php:741
 msgid "Number of columns in a gallery depending on the device screen size. (if greater than 0 overrides the Columns option)"
@@ -900,616 +896,616 @@ msgstr "Volle Größe"
 msgid "Magnific Popup"
 msgstr "Magnific Popup"
 
-#: includes/class-galleries.php:3023
+#: includes/class-galleries.php:2978
 msgid "Dynamically generated first gallery image"
 msgstr "Dynamisch erstelltes erstes Galeriebild"
 
-#: includes/class-galleries.php:3021
+#: includes/class-galleries.php:2976
 msgid "Custom featured image URL"
 msgstr "URL des individuellen Beitragsbildes"
 
-#: includes/class-galleries.php:3013
+#: includes/class-galleries.php:2968
 msgid "First gallery image"
 msgstr "Erstes Galerie Bild"
 
-#: includes/class-galleries.php:3012
+#: includes/class-galleries.php:2967
 msgid "Select gallery featured image source:"
 msgstr "Wähle die Quelle des Galerie-Beitragsbildes"
 
-#: includes/class-galleries.php:2890
+#: includes/class-galleries.php:2845
 msgid "Source"
 msgstr "Quelle"
 
-#: includes/class-galleries.php:2889
+#: includes/class-galleries.php:2844
 msgid "Type"
 msgstr "Typ"
 
-#: includes/class-galleries.php:2888
+#: includes/class-galleries.php:2843
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: includes/class-galleries.php:2864
+#: includes/class-galleries.php:2819
 msgid "You can also place this gallery into your template files by using the template tag below"
 msgstr "Die Galerie kann mit dem nachstehende Template-Tag in den Template-Dateien platziert werden"
 
-#: includes/class-galleries.php:2862
+#: includes/class-galleries.php:2817
 msgid "You can place this gallery anywhere into your posts, pages, custom post types or widgets by using the shortcode below"
 msgstr "Du kannst diese Galerie überall in Deine Beiträge, Seiten, Custom Post Types oder Widgets mit dem nachstehenden Shortcode einfügen."
 
-#: includes/class-galleries.php:2687
+#: includes/class-galleries.php:2642
 msgid "Default Template"
 msgstr "Standard-Vorlage"
 
-#: includes/class-galleries.php:2610
+#: includes/class-galleries.php:2565
 msgid "Video"
 msgstr "Video"
 
-#: includes/class-galleries.php:2608
+#: includes/class-galleries.php:2563
 msgid "Standard"
 msgstr "Standard"
 
-#: includes/class-galleries.php:2607
+#: includes/class-galleries.php:2562
 msgid "Quote"
 msgstr "Zitat"
 
-#: includes/class-galleries.php:2606
+#: includes/class-galleries.php:2561
 msgid "Photo"
 msgstr "Photo"
 
-#: includes/class-galleries.php:2605
+#: includes/class-galleries.php:2560
 msgid "Link"
 msgstr "Link"
 
-#: includes/class-galleries.php:2603
+#: includes/class-galleries.php:2558
 msgid "Chat"
 msgstr "Chat"
 
-#: includes/class-galleries.php:2602
+#: includes/class-galleries.php:2557
 msgid "Audio"
 msgstr "Audio"
 
-#: includes/class-galleries.php:2601
+#: includes/class-galleries.php:2556
 msgid "Aside"
 msgstr "Seitlich"
 
-#: includes/class-galleries.php:2526
+#: includes/class-galleries.php:2481
 msgid "Untitled"
 msgstr "Ohnen Titel"
 
-#: includes/class-galleries.php:1772
+#: includes/class-galleries.php:1770
 msgid "Deselect"
 msgstr "Auswahl aufheben"
 
-#: includes/class-galleries.php:1758
+#: includes/class-galleries.php:1756
 msgid "(no title)"
 msgstr "(kein Titel)"
 
-#: includes/class-galleries.php:1657
+#: includes/class-galleries.php:1655
 msgid "Load more"
 msgstr "Weitere laden"
 
-#: includes/class-galleries.php:1648
+#: includes/class-galleries.php:1646
 msgid "Next &raquo;"
 msgstr "weiter &raquo;"
 
-#: includes/class-galleries.php:1647
+#: includes/class-galleries.php:1645
 msgid "&laquo; Previous"
 msgstr "&laquo; zurück"
 
-#: includes/class-galleries.php:1360
+#: includes/class-galleries.php:1359
 msgid "No data"
 msgstr "keine Daten"
 
-#: includes/class-galleries.php:1241
+#: includes/class-galleries.php:1240
 msgid "Gallery Code"
 msgstr "Galerie Code"
 
-#: includes/class-galleries.php:1237
+#: includes/class-galleries.php:1236
 msgid "Gallery %s"
 msgstr "Galerie %s"
 
-#: includes/class-galleries.php:873
+#: includes/class-galleries.php:872
 msgid "Update preview"
 msgstr "Vorschau aktualisieren"
 
-#: includes/class-galleries.php:670
+#: includes/class-galleries.php:669
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: includes/class-galleries.php:669
+#: includes/class-galleries.php:668
 msgid "Insert into post"
 msgstr "In Beitrag einfügen"
 
-#: includes/class-galleries.php:659
+#: includes/class-galleries.php:658
 msgid "Edit gallery"
 msgstr "Galerie bearbeiten"
 
-#: includes/class-galleries.php:658 includes/class-galleries.php:1718
-#: includes/class-galleries.php:2915
+#: includes/class-galleries.php:657 includes/class-galleries.php:1716
+#: includes/class-galleries.php:2870
 msgid "%s image"
 msgid_plural "%s images"
 msgstr[0] "%s Bild"
 msgstr[1] "%s Bilder"
 
-#: includes/class-galleries.php:649
+#: includes/class-galleries.php:648
 msgid "To insert your gallery into the editor, click on the \"Insert Gallery\" button below."
 msgstr "Zum Einfügen Deiner Galerie in den Editor, klicke auf den \"Galerie einfügen\" Button unterhalb."
 
-#: includes/class-galleries.php:648
+#: includes/class-galleries.php:647
 msgid "To select a gallery simply click on one of the boxes to the left."
 msgstr "Zur Auswahl einer Galerie klicke einfach auf eine der Boxen auf der linken Seite."
 
-#: includes/class-galleries.php:647
+#: includes/class-galleries.php:646
 msgid "Select A Gallery"
 msgstr "Galerie auswählen"
 
-#: includes/class-galleries.php:641
+#: includes/class-galleries.php:640
 msgid "Search galleries"
 msgstr "Galerien durchsuchen"
 
-#: includes/class-galleries.php:635
+#: includes/class-galleries.php:634
 msgid "Reload"
 msgstr "Erneut laden"
 
-#: includes/class-galleries.php:635
+#: includes/class-galleries.php:634
 msgid "Insert Gallery"
 msgstr "Galerie einfügen"
 
-#: includes/class-galleries.php:631 includes/class-tour.php:207
+#: includes/class-galleries.php:630 includes/class-tour.php:207
 msgid "Close"
 msgstr "Schließen"
 
-#: includes/class-galleries.php:613
+#: includes/class-galleries.php:612
 msgid "Add Gallery"
 msgstr "Galerie hinzufügen"
 
-#: includes/class-galleries.php:461
+#: includes/class-galleries.php:460
 msgid "Add custom, space saparated CSS classes (optional)."
 msgstr "Füge eigene, leerzeichen-separierte CSS Klassen hinzu (optional)"
 
-#: includes/class-galleries.php:459
+#: includes/class-galleries.php:458
 msgid "Custom Classes"
 msgstr "Eigene  Klassen"
 
-#: includes/class-galleries.php:454
+#: includes/class-galleries.php:453
 msgid "Enter the gallery description (optional)."
 msgstr "Galerie Beschreibung eingeben (optional)."
 
-#: includes/class-galleries.php:452
+#: includes/class-galleries.php:451
 msgid "Gallery Description"
 msgstr "Galerie Beschreibung"
 
-#: includes/class-galleries.php:447
+#: includes/class-galleries.php:446
 msgid "Select where to display the description."
 msgstr "Auswählen, wo die Beschreibung angezeigt wird."
 
-#: includes/class-galleries.php:445
+#: includes/class-galleries.php:444
 msgid "Description Position"
 msgstr "Position der Beschreibung"
 
-#: includes/class-galleries.php:440
+#: includes/class-galleries.php:439
 msgid "Select where to display the title."
 msgstr "Auswahl, wo der Titel angezeigt wird"
 
-#: includes/class-galleries.php:438
+#: includes/class-galleries.php:437
 msgid "Title Position"
 msgstr "Titel Position"
 
-#: includes/class-galleries.php:429
+#: includes/class-galleries.php:428
 msgid "Select image caption for gallery lightbox (used if supported by selected lightbox effect)."
 msgstr "Wähle das Bild-Caption für die Galerie-Lightbox (wird verwendet, falls vom ausgewählten Lightbox-Effekt unterstützt)."
 
-#: includes/class-galleries.php:422
+#: includes/class-galleries.php:421
 msgid "Select image title for gallery lightbox."
 msgstr "Titel für die Galerie-Lightbox wählen"
 
-#: includes/class-galleries.php:414
+#: includes/class-galleries.php:413
 msgid "height in px"
 msgstr "Höhe in px"
 
-#: includes/class-galleries.php:409
+#: includes/class-galleries.php:408
 msgid "width in px"
 msgstr "Breite in px"
 
-#: includes/class-galleries.php:405
+#: includes/class-galleries.php:404
 msgid "Choose the custom image size for gallery lightbox (used if Custom Image size is selected)."
 msgstr "Wähle die individuelle Größe für die Galerie Lightbox (falls individuelle Bildgröße ausgewählt ist)"
 
-#: includes/class-galleries.php:398
+#: includes/class-galleries.php:397
 msgid "Select image size for gallery lightbox."
 msgstr "Wähle die Bildgröße für die Galerie Lightbox"
 
-#: includes/class-galleries.php:396
+#: includes/class-galleries.php:395
 msgid "Image Size"
 msgstr "Bildgröße"
 
-#: includes/class-galleries.php:392
+#: includes/class-galleries.php:391
 msgid "Enable lightbox effect for the gallery."
 msgstr "Lightbox-Effekt für die Galerie aktivieren."
 
-#: includes/class-galleries.php:390
+#: includes/class-galleries.php:389
 msgid "Enable Lightbox"
 msgstr "Lightbox akivieren"
 
-#: includes/class-galleries.php:382
+#: includes/class-galleries.php:381
 msgid "On click"
 msgstr "Bei Klick"
 
-#: includes/class-galleries.php:381
+#: includes/class-galleries.php:380
 msgid "Automatically"
 msgstr "Automatisch"
 
-#: includes/class-galleries.php:378
+#: includes/class-galleries.php:377
 msgid "Select the load more trigger (infinite scroll only)."
 msgstr "Wähle des \"Mehr Laden\" Schalter (nur bei unendlichem scrollen)"
 
-#: includes/class-galleries.php:376
+#: includes/class-galleries.php:375
 msgid "Load More"
 msgstr "Weitere laden"
 
-#: includes/class-galleries.php:370
+#: includes/class-galleries.php:369
 msgid "Number of images per page."
 msgstr "Anzahl der Bilder pro Seite."
 
-#: includes/class-galleries.php:368
+#: includes/class-galleries.php:367
 msgid "Images per page"
 msgstr "Bilder pro Seite"
 
-#: includes/class-galleries.php:364
+#: includes/class-galleries.php:363
 msgid "top & bottom"
 msgstr "oben &amp; unten"
 
-#: includes/class-galleries.php:363
+#: includes/class-galleries.php:362
 msgid "top"
 msgstr "oben"
 
-#: includes/class-galleries.php:362
+#: includes/class-galleries.php:361
 msgid "bottom"
 msgstr "unten"
 
-#: includes/class-galleries.php:359
+#: includes/class-galleries.php:358
 msgid "Select pagination position."
 msgstr "Position der Seitennummerierung wählen."
 
-#: includes/class-galleries.php:357
+#: includes/class-galleries.php:356
 msgid "Pagination position"
 msgstr "Position der Seitennummerierung"
 
-#: includes/class-galleries.php:353
+#: includes/class-galleries.php:352
 msgid "infinite scroll"
 msgstr "unendlich scrollen"
 
-#: includes/class-galleries.php:352
+#: includes/class-galleries.php:351
 msgid "AJAX"
 msgstr "AJAX"
 
-#: includes/class-galleries.php:351
+#: includes/class-galleries.php:350
 msgid "standard"
 msgstr "Standard"
 
-#: includes/class-galleries.php:348
+#: includes/class-galleries.php:347
 msgid "Select pagination type."
 msgstr "Art der Seitennummerierung wählen."
 
-#: includes/class-galleries.php:346
+#: includes/class-galleries.php:345
 msgid "Pagination type"
 msgstr "Art der Seitenummerierung."
 
-#: includes/class-galleries.php:342
+#: includes/class-galleries.php:341
 msgid "Enable pagination."
 msgstr "Seitennummerierung aktivieren"
 
-#: includes/class-galleries.php:340
+#: includes/class-galleries.php:339
 msgid "Use pagination"
 msgstr "Seitennummerierung verwenden"
 
-#: includes/class-galleries.php:327
+#: includes/class-galleries.php:326
 msgid "Border Width"
 msgstr "Rahmenstärke"
 
-#: includes/class-galleries.php:322
+#: includes/class-galleries.php:321
 msgid "Border Color"
 msgstr "Rahmenfarbe"
 
-#: includes/class-galleries.php:313
+#: includes/class-galleries.php:312
 msgid "Background Opacity"
 msgstr "Hintergrund Transparenz"
 
-#: includes/class-galleries.php:308
+#: includes/class-galleries.php:307
 msgid "Background Color"
 msgstr "Hintergrundfarbe"
 
-#: includes/class-galleries.php:303
+#: includes/class-galleries.php:302
 msgid "Caption Color"
 msgstr "Caption Farbe"
 
-#: includes/class-galleries.php:298
+#: includes/class-galleries.php:297
 msgid "Title Color"
 msgstr "Title Farbe"
 
-#: includes/class-galleries.php:286 includes/class-galleries.php:287
-#: includes/class-galleries.php:288 includes/class-galleries.php:289
-#: includes/class-galleries.php:290 includes/class-galleries.php:291
-#: includes/class-galleries.php:292 includes/class-galleries.php:293
-#: includes/class-galleries.php:294
+#: includes/class-galleries.php:285 includes/class-galleries.php:286
+#: includes/class-galleries.php:287 includes/class-galleries.php:288
+#: includes/class-galleries.php:289 includes/class-galleries.php:290
+#: includes/class-galleries.php:291 includes/class-galleries.php:292
+#: includes/class-galleries.php:293
 msgid "Effect %s"
 msgstr "Effekt %s"
 
-#: includes/class-galleries.php:282
+#: includes/class-galleries.php:281
 msgid "Select thumbnail effect on hover."
 msgstr "Hover-Effekt für die Galerie-Thumbnails wählen"
 
-#: includes/class-galleries.php:280
+#: includes/class-galleries.php:279
 msgid "Hover effect"
 msgstr "Hover-Effekt"
 
-#: includes/class-galleries.php:275
+#: includes/class-galleries.php:274
 msgid "Select icon for the gallery thumbnails."
 msgstr "Icon  für die Galerie-Thumbnails wählen"
 
-#: includes/class-galleries.php:273
+#: includes/class-galleries.php:272
 msgid "Thumbnail icon"
 msgstr "Thumbnail Icon"
 
-#: includes/class-galleries.php:268
+#: includes/class-galleries.php:267
 msgid "Select caption for the gallery thumbnails."
 msgstr "Caption für die Galerie-Thumbnails wählen"
 
-#: includes/class-galleries.php:266
+#: includes/class-galleries.php:265
 msgid "Thumbnail caption"
 msgstr "Thumbnail Caption"
 
-#: includes/class-galleries.php:261
+#: includes/class-galleries.php:260
 msgid "Select title for the gallery thumbnails."
 msgstr "Titel für die Galerie-Thumbnails wählen"
 
-#: includes/class-galleries.php:259
+#: includes/class-galleries.php:258
 msgid "Thumbnail title"
 msgstr "Thumbnail Titel"
 
-#: includes/class-galleries.php:249
+#: includes/class-galleries.php:248
 msgid "Select the page template."
 msgstr "Seitenvorlage wählen"
 
-#: includes/class-galleries.php:247
+#: includes/class-galleries.php:246
 msgid "Page Template"
 msgstr "Seitenvorlage"
 
-#: includes/class-galleries.php:242
+#: includes/class-galleries.php:241
 msgid "Select the post parent."
 msgstr "Elternseite wählen"
 
-#: includes/class-galleries.php:240
+#: includes/class-galleries.php:239
 msgid "Page Parent"
 msgstr "Elternseite"
 
-#: includes/class-galleries.php:235
+#: includes/class-galleries.php:234
 msgid "Select the post author."
 msgstr "Autor wählen"
 
-#: includes/class-galleries.php:233
+#: includes/class-galleries.php:232
 msgid "Post Author"
 msgstr "Autor"
 
-#: includes/class-galleries.php:228
+#: includes/class-galleries.php:227
 msgid "Select the post taxonomy terms to query."
 msgstr "Auswahl des Beitrags-Typ für die Auswahl"
 
-#: includes/class-galleries.php:226
+#: includes/class-galleries.php:225
 msgid "Post Term"
 msgstr "Beitrags Bezeichnung"
 
-#: includes/class-galleries.php:221
+#: includes/class-galleries.php:220
 msgid "Select the post format."
 msgstr "beitragsformat wählen"
 
-#: includes/class-galleries.php:219
+#: includes/class-galleries.php:218
 msgid "Post Format"
 msgstr "Beitragsformat"
 
-#: includes/class-galleries.php:214
+#: includes/class-galleries.php:213
 msgid "Select the post status."
 msgstr "Beitragsstatus wählen"
 
-#: includes/class-galleries.php:212
+#: includes/class-galleries.php:211
 msgid "Post Status"
 msgstr "Beitrags Status"
 
-#: includes/class-galleries.php:207
+#: includes/class-galleries.php:206
 msgid "Select the post types to query."
 msgstr "Wählen des Beitrags-Typ für die Auswahl"
 
-#: includes/class-galleries.php:205
+#: includes/class-galleries.php:204
 msgid "Post Type"
 msgstr "Beitrags Typ"
 
-#: includes/class-galleries.php:200
+#: includes/class-galleries.php:199
 msgid "Enter maximum number of images for a post."
 msgstr "Eingabe der maximalen Anzahl der Bilder pro Beitrag"
 
-#: includes/class-galleries.php:198
+#: includes/class-galleries.php:197
 msgid "Images per Post"
 msgstr "Bilder pro Beitrag"
 
-#: includes/class-galleries.php:194
+#: includes/class-galleries.php:193
 msgid "Post Attached Images"
 msgstr "Zum Beitrag  zugeordnete Bilder"
 
-#: includes/class-galleries.php:193
+#: includes/class-galleries.php:192
 msgid "Post Thumbnails"
 msgstr "Thumbnails"
 
-#: includes/class-galleries.php:190
+#: includes/class-galleries.php:189
 msgid "Select the image source."
 msgstr "Bildquelle auswählen"
 
-#: includes/class-galleries.php:188
+#: includes/class-galleries.php:187
 msgid "Image Source"
 msgstr "Bildquelle"
 
-#: includes/class-galleries.php:183
+#: includes/class-galleries.php:182
 msgid "Enter the posts offset."
 msgstr "Eingabe Beitrags Offset"
 
-#: includes/class-galleries.php:181
+#: includes/class-galleries.php:180
 msgid "Posts Offset"
 msgstr "Beitrags-Offset"
 
-#: includes/class-galleries.php:173
+#: includes/class-galleries.php:172
 msgid "Select the posts order."
 msgstr "Sortierung der Posts wählen"
 
-#: includes/class-galleries.php:171
+#: includes/class-galleries.php:170
 msgid "Posts Order"
 msgstr "Beiträge Reihenfolge"
 
-#: includes/class-galleries.php:166
+#: includes/class-galleries.php:165
 msgid "Parent ID"
 msgstr "Eltern ID"
 
-#: includes/class-galleries.php:165
+#: includes/class-galleries.php:164
 msgid "Last modified date"
 msgstr "Letzte Änderung"
 
-#: includes/class-galleries.php:163
+#: includes/class-galleries.php:162
 msgid "Slug"
 msgstr "Slug"
 
-#: includes/class-galleries.php:161
+#: includes/class-galleries.php:160
 msgid "Author"
 msgstr "Autor"
 
-#: includes/class-galleries.php:157
+#: includes/class-galleries.php:156
 msgid "Select the posts sorting."
 msgstr "Sortierung der Beiträge  wählen"
 
-#: includes/class-galleries.php:155
+#: includes/class-galleries.php:154
 msgid "Posts Sorting"
 msgstr "Sortierung der Beiträge"
 
-#: includes/class-galleries.php:150
+#: includes/class-galleries.php:149
 msgid "Enter the number of posts."
 msgstr "Anzahl der Posts eingeben"
 
-#: includes/class-galleries.php:148
+#: includes/class-galleries.php:147
 msgid "Number of Posts"
 msgstr "Anzahl der Beiträge"
 
-#: includes/class-galleries.php:124
+#: includes/class-galleries.php:123
 msgid "Bottom"
 msgstr "unten"
 
-#: includes/class-galleries.php:123
+#: includes/class-galleries.php:122
 msgid "Top"
 msgstr "oben"
 
-#: includes/class-galleries.php:119 includes/class-galleries.php:403
+#: includes/class-galleries.php:118 includes/class-galleries.php:402
 msgid "Custom size"
 msgstr "Individuelle Größe"
 
-#: includes/class-galleries.php:117
+#: includes/class-galleries.php:116
 msgid "Full size"
 msgstr "Volle Größe"
 
-#: includes/class-galleries.php:108
+#: includes/class-galleries.php:107
 msgid "The settings below adjust miscellaneous options."
 msgstr "Die nachstehenden Einstellungen passen diverse Optionen an."
 
-#: includes/class-galleries.php:107
+#: includes/class-galleries.php:106
 msgid "Misc"
 msgstr "Verschiedenes"
 
-#: includes/class-galleries.php:104
+#: includes/class-galleries.php:103
 msgid "The settings below adjust the lightbox options."
 msgstr "Die nachstehenden Einstellungen passen die Lightbox-Optionen an."
 
-#: includes/class-galleries.php:100
+#: includes/class-galleries.php:99
 msgid "The settings below adjust the gallery pagination options."
 msgstr "Die nachstehenden Einstellungen passen die Seitennummerierung der Galerie an."
 
-#: includes/class-galleries.php:99
+#: includes/class-galleries.php:98
 msgid "Paging"
 msgstr "Paging"
 
-#: includes/class-galleries.php:96
+#: includes/class-galleries.php:95
 msgid "The settings below adjust the gallery design options."
 msgstr "Die nachstehenden Einstellungen passen das Deisgn der Galerie an."
 
-#: includes/class-galleries.php:95
+#: includes/class-galleries.php:94
 msgid "Design"
 msgstr "Design"
 
-#: includes/class-galleries.php:91
+#: includes/class-galleries.php:90
 msgid "The settings below adjust the configuration options for the gallery."
 msgstr "Die nachstehenden Einstellungen passen die Konfiguration der Galerie an."
 
-#: includes/class-galleries.php:90
+#: includes/class-galleries.php:89
 msgid "Config"
 msgstr "Config"
 
-#: includes/class-galleries.php:86
+#: includes/class-galleries.php:85
 msgid "Featured Content"
 msgstr "Hervorgehobener Inhalt"
 
-#: includes/class-galleries.php:85 includes/class-galleries.php:3014
+#: includes/class-galleries.php:84 includes/class-galleries.php:2969
 msgid "Media Library"
 msgstr "Mediathek"
 
-#: includes/class-galleries.php:83
+#: includes/class-galleries.php:82
 msgid "The settings below adjust the contents of the gallery."
 msgstr "Die nachstehenden Einstellungen passen den Inhalt der Galerie an."
 
-#: includes/class-galleries.php:78 includes/class-galleries.php:118
-#: includes/class-galleries.php:263 includes/class-galleries.php:270
-#: includes/class-galleries.php:424 includes/class-galleries.php:431
+#: includes/class-galleries.php:77 includes/class-galleries.php:117
+#: includes/class-galleries.php:262 includes/class-galleries.php:269
+#: includes/class-galleries.php:423 includes/class-galleries.php:430
 msgid "Global"
 msgstr "Generell"
 
-#: includes/class-galleries.php:75
+#: includes/class-galleries.php:74
 msgid "Edit image"
 msgstr "Bild bearbeiten"
 
-#: includes/class-galleries.php:75 includes/class-galleries.php:2609
+#: includes/class-galleries.php:74 includes/class-galleries.php:2564
 msgid "Status"
 msgstr "Status"
 
-#: includes/class-frontend.php:598
+#: includes/class-frontend.php:611
 msgid "Specify the number of columns."
 msgstr "Spaltenanzahl"
 
-#: includes/class-frontend.php:596
+#: includes/class-frontend.php:609
 msgid "Columns"
 msgstr "Spaltenanzahl"
 
-#: includes/class-frontend.php:588
+#: includes/class-frontend.php:601
 msgid "Specify the sort order."
 msgstr "Menüsortierung"
 
-#: includes/class-frontend.php:581
+#: includes/class-frontend.php:594
 msgid "Menu Order"
 msgstr "Menüsortierung"
 
-#: includes/class-frontend.php:580 includes/class-galleries.php:164
+#: includes/class-frontend.php:593 includes/class-galleries.php:163
 msgid "Date"
 msgstr "Datum"
 
-#: includes/class-frontend.php:575
+#: includes/class-frontend.php:588
 msgid "Specify how to sort the display thumbnails."
 msgstr "Lege fest, wie die Anzeige der Thumbnails sortiert wird"
 
-#: includes/class-frontend.php:573
+#: includes/class-frontend.php:586
 msgid "Orderby"
 msgstr "Sortieren nach"
 
-#: includes/class-frontend.php:564
+#: includes/class-frontend.php:577
 msgid "Specify where you want the image to link."
 msgstr "Lege fest, wo das Bild verlinkt wird."
 
-#: includes/class-frontend.php:562
+#: includes/class-frontend.php:575
 msgid "Link To"
 msgstr "Verlinken auf"
 
-#: includes/class-frontend.php:557
+#: includes/class-frontend.php:570
 msgid "Specify the image size to use for the thumbnail display."
 msgstr "Lege die Bildgröße für die Anzeige der Thumbnails fest."
 
@@ -1547,7 +1543,7 @@ msgstr "Dieses Bild verwenden"
 msgid "Use these images"
 msgstr "Diese Bilder verwenden"
 
-#: includes/class-galleries.php:75 responsive-lightbox.php:889
+#: includes/class-galleries.php:74 responsive-lightbox.php:889
 msgid "Remove image"
 msgstr "Bild entfernen"
 
@@ -1583,7 +1579,7 @@ msgstr "URL"
 msgid "Link to"
 msgstr "Verlinken auf"
 
-#: includes/class-frontend.php:555 includes/class-widgets.php:464
+#: includes/class-frontend.php:568 includes/class-widgets.php:464
 msgid "Size"
 msgstr "Größe"
 
@@ -1611,15 +1607,15 @@ msgstr "Mitte"
 msgid "Left"
 msgstr "Links"
 
-#: includes/class-galleries.php:3015 includes/class-widgets.php:331
+#: includes/class-galleries.php:2970 includes/class-widgets.php:331
 msgid "Custom URL"
 msgstr "Eigene URL"
 
-#: includes/class-frontend.php:567 includes/class-widgets.php:330
+#: includes/class-frontend.php:580 includes/class-widgets.php:330
 msgid "Attachment Page"
 msgstr "Anhang Seite"
 
-#: includes/class-frontend.php:568 includes/class-widgets.php:329
+#: includes/class-frontend.php:581 includes/class-widgets.php:329
 msgid "Media File"
 msgstr "Mediendatei"
 
@@ -1655,7 +1651,7 @@ msgstr "Spaltenanzahl"
 msgid "Image size"
 msgstr "Bildgröße"
 
-#: includes/class-frontend.php:586 includes/class-widgets.php:180
+#: includes/class-frontend.php:599 includes/class-widgets.php:180
 msgid "Order"
 msgstr "Sortierung"
 
@@ -1671,7 +1667,7 @@ msgstr "Galerieart"
 msgid "Delete image"
 msgstr "Bild löschen"
 
-#: includes/class-galleries.php:837 includes/class-widgets.php:128
+#: includes/class-galleries.php:836 includes/class-widgets.php:128
 #: responsive-lightbox.php:860 responsive-lightbox.php:890
 msgid "Select images"
 msgstr "Bilder auswählen"
@@ -1680,29 +1676,29 @@ msgstr "Bilder auswählen"
 msgid "Default"
 msgstr "Standard"
 
-#: includes/class-frontend.php:569 includes/class-galleries.php:122
+#: includes/class-frontend.php:582 includes/class-galleries.php:121
 #: includes/class-settings.php:150 includes/class-settings.php:545
 #: includes/class-settings.php:604 includes/class-widgets.php:81
 #: includes/class-widgets.php:328 includes/class-widgets.php:335
 msgid "None"
 msgstr "Kein"
 
-#: includes/class-frontend.php:592 includes/class-galleries.php:177
+#: includes/class-frontend.php:605 includes/class-galleries.php:176
 #: includes/class-widgets.php:73
 msgid "Descending"
 msgstr "Absteigend"
 
-#: includes/class-frontend.php:591 includes/class-galleries.php:176
+#: includes/class-frontend.php:604 includes/class-galleries.php:175
 #: includes/class-widgets.php:72
 msgid "Ascending"
 msgstr "Aufsteigend"
 
-#: includes/class-frontend.php:582 includes/class-galleries.php:167
+#: includes/class-frontend.php:595 includes/class-galleries.php:166
 #: includes/class-widgets.php:68
 msgid "Random"
 msgstr "Zufällig"
 
-#: includes/class-frontend.php:578 includes/class-galleries.php:160
+#: includes/class-frontend.php:591 includes/class-galleries.php:159
 #: includes/class-widgets.php:67
 msgid "ID"
 msgstr "ID"
@@ -1711,7 +1707,7 @@ msgstr "ID"
 msgid "Image date"
 msgstr "Bilddatum"
 
-#: includes/class-frontend.php:579 includes/class-galleries.php:162
+#: includes/class-frontend.php:592 includes/class-galleries.php:161
 #: includes/class-widgets.php:65 includes/class-widgets.php:121
 #: includes/class-widgets.php:445
 msgid "Title"
@@ -1725,13 +1721,13 @@ msgstr "Menüsortierung"
 msgid "Displays an image gallery."
 msgstr "Zeigt eine Bildergalerie an."
 
-#: includes/class-galleries.php:2604 includes/class-galleries.php:2879
+#: includes/class-galleries.php:2559 includes/class-galleries.php:2834
 #: includes/class-widgets.php:45 includes/class-widgets.php:53
 #: responsive-lightbox.php:728
 msgid "Gallery"
 msgstr "Galerie"
 
-#: includes/class-galleries.php:103 includes/class-settings.php:1693
+#: includes/class-galleries.php:102 includes/class-settings.php:1693
 msgid "Lightbox"
 msgstr "Lightbox"
 
@@ -1779,7 +1775,7 @@ msgstr "Lightbox für WordPress Bildergalerien aktivieren."
 msgid "Enable lightbox for WordPress image links."
 msgstr "Lightbox für WordPress Bildverlinkungen aktivieren."
 
-#: includes/class-galleries.php:82 includes/class-settings.php:233
+#: includes/class-galleries.php:81 includes/class-settings.php:233
 msgid "Images"
 msgstr "Bilder"
 
@@ -2602,11 +2598,11 @@ msgstr "Bild-Beschreibung"
 msgid "Image Alt Text"
 msgstr "Bild-Alternativtext"
 
-#: includes/class-galleries.php:427 includes/class-settings.php:152
+#: includes/class-galleries.php:426 includes/class-settings.php:152
 msgid "Image Caption"
 msgstr "Bildunterschrift"
 
-#: includes/class-galleries.php:420 includes/class-settings.php:151
+#: includes/class-galleries.php:419 includes/class-settings.php:151
 msgid "Image Title"
 msgstr "Bildtitel"
 
@@ -2678,7 +2674,7 @@ msgstr "ja"
 msgid "auto"
 msgstr "automatisch"
 
-#: includes/class-galleries.php:285 includes/class-settings.php:100
+#: includes/class-galleries.php:284 includes/class-settings.php:100
 #: includes/class-settings.php:158
 msgid "none"
 msgstr "keine"
