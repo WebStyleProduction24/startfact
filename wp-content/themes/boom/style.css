@@ -25,6 +25,7 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 	padding-top: 20px !important;
 }
 
+<<<<<<< HEAD
 body {
 	color: #000 !important;
 }
@@ -33,6 +34,27 @@ body {
 	height: 30px !important;
 }
 
+=======
+body{
+	color: #000!important;
+}
+.dslc-modules-section {
+	PADDING-BOTTOM: 0!IMPORTANT;
+}
+
+.qodef-btn span{
+	color: #000;
+}
+
+.qodef-btn:hover span {
+	color: #fff !important;
+}
+
+
+
+
+
+>>>>>>> jack36-PC
 
 
 
@@ -99,13 +121,27 @@ body {
 .wsp24_ h2 {
 	font-size: 17px !important;
 	font-weight: bold !important;
+	color: #000 !important;
 }
-.wsp24_ li{
+.wsp24_ h2 span {
+	color: #000 !important;
+}
+
+.wsp24_wrapper p {
+	font-size: 14px;
+}
+.wsp24_ li, .wsp24-tableSEO{
 	margin-bottom: 0px!important;
 	text-indent: 0!important;
 	list-style-position: outside!important;
 }
-
+.wsp24-tableSEO{
+	  padding: 10px 0;
+    border-bottom: 1px solid #9a9a9a1a;
+}
+.wsp24_tableSEOBorder{
+	margin-bottom: 40px;
+}
 .wsp24_ td {
 	text-align: left;
 	font-size: 1.15vw;
@@ -114,7 +150,7 @@ body {
 }
 
 .wsp24_ .wpb_wrapper p {
-	text-align: justify !important;
+	text-align: justify;
 }
 .wsp24_border {
 	/*border-radius: 1px;
@@ -127,7 +163,16 @@ body {
 .wsp24_content-padding-top {
 	padding-top: 20px !important;
 }
-
+.wsp24_price{
+    font-size: 20px !important;
+    font-weight: 700;
+    text-align: center !important;
+    color: #000000;
+    margin-top: 106px;
+}
+.wsp24_height{
+	    min-height: 550px;
+}
 @media (max-width: 991px) {
 	.wsp24_block-with-img img {
 		width: 100%;
@@ -153,9 +198,16 @@ body {
 	.wsp24_ h4 {
 		font-size: 15px !important;
 	}
+
 }
 
 @media (max-width: 767px) {
+	.wsp24_tableSEOBorder{
+		display: none;
+	}
+		.wsp24_price {
+		margin-top: 20px;
+	}
 	.wsp24_width-50 {
 		width: 100%;
 	}
