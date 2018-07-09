@@ -23,9 +23,9 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 
 .dslc-modules-section {
 	padding-top: 20px !important;
+	PADDING-BOTTOM: 0!IMPORTANT;
 }
 
-<<<<<<< HEAD
 body {
 	color: #000 !important;
 }
@@ -34,12 +34,7 @@ body {
 	height: 30px !important;
 }
 
-=======
-body{
-	color: #000!important;
-}
 .dslc-modules-section {
-	PADDING-BOTTOM: 0!IMPORTANT;
 }
 
 .qodef-btn span{
@@ -49,12 +44,6 @@ body{
 .qodef-btn:hover span {
 	color: #fff !important;
 }
-
-
-
-
-
->>>>>>> jack36-PC
 
 
 
