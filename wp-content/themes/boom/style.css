@@ -23,13 +23,18 @@ Custom Styles from Web Style Production (https://wsp24.ru) .wsp24_
 
 .dslc-modules-section {
 	padding-top: 20px !important;
+	PADDING-BOTTOM: 0!IMPORTANT;
 }
 
-body{
-	color: #000!important;
+body {
+	color: #000 !important;
 }
+
+.soc img, .soc a:last-child img {
+	height: 30px !important;
+}
+
 .dslc-modules-section {
-	PADDING-BOTTOM: 0!IMPORTANT;
 }
 
 .qodef-btn span{
@@ -39,11 +44,6 @@ body{
 .qodef-btn:hover span {
 	color: #fff !important;
 }
-
-
-
-
-
 
 
 
@@ -100,7 +100,7 @@ body{
 }
 
 .wsp24_background-f7f7f7 {
-	background-color: #f7f7f7 !important;
+	/*background-color: #f7f7f7 !important;*/
 }
 
 .wsp24_ {
@@ -142,8 +142,8 @@ body{
 	text-align: justify;
 }
 .wsp24_border {
-	border-radius: 1px;
-	border: 3px solid #ebebeb;
+	/*border-radius: 1px;
+	border: 3px solid #ebebeb;*/
 }
 .wsp24_title-page h1 span{
 	font-size: 40px !important;
