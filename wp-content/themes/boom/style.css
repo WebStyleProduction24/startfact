@@ -191,6 +191,12 @@ body {
 	width: 300px;
 	height: auto!important;
 }
+
+#dslc-module-e3e4c465035 > div > div img{
+	width: 250px !important;
+	height: auto!important;
+}
+
  #dslc-module-9187e509c0b .dslc-image img {
     /*width:300px!important;*/
 }
