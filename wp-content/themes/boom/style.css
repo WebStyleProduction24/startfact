@@ -107,6 +107,22 @@ body {
 	color: #000 !important;
 }
 
+.wsp24_ p, .wsp24_ .wpb_wrapper_text {
+	text-indent: 0;
+	line-height: 20px;
+}
+
+.wsp24_ p {
+	font-size: 13px;
+}
+
+.wsp24_title-page h1 span span {
+	font-size: 20px;
+	color: #fff !important;
+	position: relative;
+	top:-50px;
+}
+
 .wsp24_ h2 {
 	font-size: 17px !important;
 	font-weight: bold !important;
@@ -123,6 +139,11 @@ body {
 	margin-bottom: 0px!important;
 	text-indent: 0!important;
 	list-style-position: outside!important;
+
+      font-size: 13px!important;
+    font-weight: 400!important;
+    font-family: "Open Sans"!important;
+    line-height: 22px!important;
 }
 .wsp24-tableSEO{
 	  padding: 10px 0;
@@ -146,7 +167,7 @@ body {
 	border: 3px solid #ebebeb;*/
 }
 .wsp24_title-page h1 span{
-	font-size: 40px !important;
+	font-size: 40px;
 }
 
 .wsp24_content-padding-top {
@@ -160,8 +181,27 @@ body {
     margin-top: 106px;
 }
 .wsp24_height{
-	    min-height: 550px;
+	    min-height: 400px;
 }
+
+#dslc-module-9187e509c0b {
+	text-align: center;
+}
+#dslc-module-9187e509c0b > div > div img{
+	width: 300px;
+	height: auto!important;
+}
+ #dslc-module-9187e509c0b .dslc-image img {
+    /*width:300px!important;*/
+}
+
+@media (max-width: 1399px) and (min-width: 1201px) {
+.wsp24_height-200 {
+	height: 200px !important;
+	min-height: 10px !important;
+}
+}
+
 @media (max-width: 991px) {
 	.wsp24_block-with-img img {
 		width: 100%;
