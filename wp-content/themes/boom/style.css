@@ -162,6 +162,7 @@ body {
 .wsp24_height{
 	    min-height: 550px;
 }
+
 @media (max-width: 991px) {
 	.wsp24_block-with-img img {
 		width: 100%;
@@ -191,9 +192,9 @@ body {
 }
 
 @media (max-width: 767px) {
-	.wsp24_tableSEOBorder{
+	/*.wsp24_tableSEOBorder{
 		display: none;
-	}
+	}*/
 		.wsp24_price {
 		margin-top: 20px;
 	}
@@ -203,5 +204,9 @@ body {
 	.wsp24_width-50-b-m {
 		width: calc(100% - 36px);
 	}
+
+ .wsp24_btnLEAd a.qodef-btn.qodef-btn-small.qodef-btn-solid.qodef-btn-icon.qodef-btn-text_new{
+   left: 50%!important;
+}
 }
 
