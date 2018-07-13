@@ -206,7 +206,13 @@ body {
  #dslc-module-9187e509c0b .dslc-image img {
     /*width:300px!important;*/
 }
-
+#dslc-module-04b41b01827 input[type=submit] {
+    background: #81d742!important;
+    font-weight: 900!important;
+}
+#dslc-module-04b41b01827 input[type=submit]:hover {
+    border-color: #81d742!important;
+}
 @media (max-width: 1399px) and (min-width: 1201px) {
 .wsp24_height-200 {
 	height: 200px !important;
