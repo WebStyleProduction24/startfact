@@ -47,7 +47,9 @@ body {
 
 
 
-
+.wsp24_ .qodef-btn.qodef-btn-icon .qodef-btn-text {
+	float: none;
+}
 
 .wsp24_container-center {
 	margin: 0 auto;
@@ -154,9 +156,13 @@ body {
 }
 .wsp24_ td {
 	text-align: left;
-	font-size: 1.15vw;
+	font-size: 13px;
 	text-indent: 0 !important;
 	line-height: 22px !important;
+}
+
+.wsp24_ table {
+	margin-bottom: 15px;
 }
 
 .wsp24_ .wpb_wrapper p {
