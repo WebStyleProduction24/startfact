@@ -281,9 +281,52 @@ div.wsp24_border_bottom_none {
 	margin: 0!important;
 }
 
+#dslc-module-82b269f6ee8 input[type=submit], #dslc-module-82b269f6ee8 input[type=submit]:hover{
+	background-color: #81d742!important;
+	    font-size: 13px!important;
+    font-weight: 800!important;
+	border-color:#81d742!important;
+}
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?y600mx');
+  src:  url('fonts/icomoon.eot?y600mx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?y600mx') format('truetype'),
+    url('fonts/icomoon.woff?y600mx') format('woff'),
+    url('fonts/icomoon.svg?y600mx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-viber:before {
+  content: "\e900";
+  color: #665cac;
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
 
 @media (max-width: 1399px) and (min-width: 1201px) {
 	.wsp24_height-200 {
