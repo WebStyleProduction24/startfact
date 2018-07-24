@@ -6,5 +6,10 @@ Disallow: /wp-content/plugins/
 Disallow: /wp-content/cache/
 Disallow: /wp-content/themes/
 
+
+Disallow: /skrytie-indeksacii/
+Disallow: /indeksaciya-pochty/
+Disallow: /indeksaciya-pochty-2/
+
 Host: startfact.ru
 Sitemap: http://startfact.ru/page-sitemap.xml

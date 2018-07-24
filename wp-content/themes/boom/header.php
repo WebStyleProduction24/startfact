@@ -11,6 +11,8 @@
 	<?php do_action('qode_startit_header_meta'); ?>
 
 	<?php wp_head(); ?>
+
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
