@@ -89,7 +89,7 @@ body {
 .wsp24_padding-t-35-b-15 {
 	padding:35px 0 15px;
 }
-.wsp24_ {
+.wsp24_, .qodef-side-menu .wsp24_ p {
 	color: #000 !important;
 }
 .wsp24_ p, .wsp24_ .wpb_wrapper_text {
@@ -302,6 +302,20 @@ div.wsp24_border_bottom_none {
 
 .wsp24_left_15 {
 	left: 15px !important;
+}
+
+
+
+/*Contact-form -7 */
+
+#respond input[type=email], #respond input[type=text], #respond textarea, .post-password-form input[type=password], .wpcf7-form-control.wpcf7-date, .wpcf7-form-control.wpcf7-number, .wpcf7-form-control.wpcf7-quiz, .wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-select_optgroup, .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-textarea {
+	    margin-bottom: 11px !important;
+}
+#respond input[type=email], #respond input[type=text], #respond textarea, .post-password-form input[type=password], .wpcf7-form-control.wpcf7-date, .wpcf7-form-control.wpcf7-number, .wpcf7-form-control.wpcf7-quiz, .wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-select_optgroup, .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-textarea {
+    padding: 13px 15px!important;
+}
+[id^="popmake-"], [id*=" popmake-"] {
+	top: 20px !important;
 }
 
 
