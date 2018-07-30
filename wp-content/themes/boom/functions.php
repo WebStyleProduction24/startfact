@@ -1166,3 +1166,25 @@ function wpcf7_tag_generator_select_optgroup( $contact_form, $args = '' ){
     </div>
     <?php
 }
+
+
+
+// add_filter( 'walker_nav_menu_start_el', 'filter_walker_nav_menu_start_el', 10, 4 );
+
+// function filter_walker_nav_menu_start_el( $item_output, $item, $depth, $args ) {
+//     return '<div class="wrap-link">test</div>';
+// }
+
+
+add_filter( 'wp_nav_menu_items', 'your_custom_menu_item', 10, 2 );
+
+function your_custom_menu_item ( $items, $args ) {
+
+    if (is_single() && $args->theme_location == 'main-navigation') {
+
+        $items .= '<li>Что угодно</li>';
+
+    }
+
+    return $items;
+}

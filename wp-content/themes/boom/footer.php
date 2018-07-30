@@ -1,3 +1,5 @@
+
+
 <?php
 
 qode_startit_get_footer();
@@ -7,6 +9,20 @@ if(isset($qode_startit_toolbar)) include("toolbar.php");
 
 
 ?>
+
+
+<div id="realmodal-7669" class="realmodal">
+    <div class="realmodal-window">
+      <div data-realmodal="close"></div>
+      <div class="realmodal-header"></div>
+      <div class="realmodal-content">
+         <?php echo do_shortcode('[contact-form-7 id="6683" title="Обратный звонок"]'); ?>
+     </div>
+     <div class="realmodal-footer"></div>
+ </div>
+</div>
+
+
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -25,8 +41,8 @@ if(isset($qode_startit_toolbar)) include("toolbar.php");
         });
 
         var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/tag.js";
