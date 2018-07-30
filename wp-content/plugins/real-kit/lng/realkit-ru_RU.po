@@ -1,0 +1,211 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-12-04 16:56+0300\n"
+"PO-Revision-Date: 2016-12-04 16:56+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: e:/OpenServer/domains/wordpress/www/wp-content/plugins/"
+"real-kit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+
+#: modules/donate/settings.php:5
+msgid "I would be very grateful for any support!"
+msgstr "Буду безмерно благодарен за любую поддержку!"
+
+#: modules/donate/settings.php:8
+msgid "Yandex.Money:"
+msgstr "Яндекс.Деньги"
+
+#: modules/donate/settings.php:11
+msgid "Bitcoin:"
+msgstr ""
+
+#: modules/maintenance/index.php:13 modules/maintenance/index.php:16
+msgid "Site Maintenance"
+msgstr "Сайт в разработке"
+
+#: modules/maintenance/settings.php:14
+msgid "Maintenance mode"
+msgstr "Режим разработки"
+
+#: modules/maintenance/settings.php:22
+msgid "Enable maintenance mode."
+msgstr "Включить режим разработки."
+
+#: modules/maintenance/settings.php:30
+msgid "Maintenance page HTML"
+msgstr "HTML код страницы-заглушки"
+
+#: modules/modals/index.php:16 modules/modals/settings.php:12
+msgid "Modals"
+msgstr "Модальные окна"
+
+#: modules/modals/index.php:17
+msgid "Modal"
+msgstr "Модальное окно"
+
+#: modules/modals/index.php:18
+msgid "Add New"
+msgstr "Добавить новое"
+
+#: modules/modals/index.php:19
+msgid "Add New Modal"
+msgstr "Добавить новое модальное окно"
+
+#: modules/modals/index.php:20
+msgid "Edit Modal"
+msgstr "Редактировать модальное окно"
+
+#: modules/modals/index.php:21
+msgid "New Modal"
+msgstr "Новое модальное окно"
+
+#: modules/modals/index.php:22
+msgid "All Modals"
+msgstr "Все окна"
+
+#: modules/modals/index.php:23
+msgid "View Modal"
+msgstr "Просмотр"
+
+#: modules/modals/index.php:24
+msgid "Search Modal"
+msgstr "Найти модальное окно"
+
+#: modules/modals/index.php:25
+msgid "No Modal found"
+msgstr "Ничего не найдено"
+
+#: modules/modals/index.php:26
+msgid "No Modal found in Trash"
+msgstr "В корзине ничего не найдено"
+
+#: modules/modals/index.php:27
+msgid "real.Modals"
+msgstr ""
+
+#: modules/modals/index.php:48
+msgid "Modal updated."
+msgstr "Модальное окно обновлено"
+
+#: modules/modals/index.php:49
+msgid "Modal restored."
+msgstr "Модальное окно восстановлено"
+
+#: modules/modals/index.php:50
+msgid "Modal published."
+msgstr "Модальное окно опубликовано"
+
+#: modules/modals/index.php:51
+msgid "Modal saved."
+msgstr "Модальное окно сохранено"
+
+#: modules/modals/index.php:52
+msgid "Modal scheduled for:"
+msgstr "Публикация запланирована на:"
+
+#: modules/modals/index.php:52
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: modules/modals/index.php:53
+msgid "Modal draft updated."
+msgstr "Черновик модального окна обновлен"
+
+#: modules/modals/index.php:69
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: modules/modals/index.php:78 modules/modals/index.php:164
+msgid "Button Title"
+msgstr "Текст кнопки"
+
+#: modules/modals/index.php:160
+msgid "Open Button Shortcode"
+msgstr "Шорткод кнопки открытия"
+
+#: modules/modals/settings.php:20
+msgid "Use modal windows on this site."
+msgstr "Использовать модальные окна на этом сайте"
+
+#: modules/thumbnails/index.php:17 modules/thumbnails/index.php:38
+#: modules/thumbnails/index.php:63 modules/thumbnails/index.php:104
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: modules/thumbnails/index.php:20 modules/thumbnails/index.php:46
+#: modules/thumbnails/index.php:110
+msgid "Upload/Add"
+msgstr "Загрузить/Добавить"
+
+#: modules/thumbnails/index.php:49 modules/thumbnails/index.php:113
+msgid "Remove"
+msgstr "Удалить"
+
+#: modules/translit/settings.php:12
+msgid "Translit"
+msgstr "Транслитерация"
+
+#: modules/translit/settings.php:16
+msgid "Standard"
+msgstr "Стандарт"
+
+#: modules/translit/settings.php:21
+msgid "ISO 9:1995"
+msgstr "ISO 9:1995"
+
+#: modules/translit/settings.php:26
+msgid "GOST 16876-71"
+msgstr "ГОСТ 16876-71"
+
+#: modules/views/index.php:36 modules/views/settings.php:12
+msgid "Views"
+msgstr "Просмотры"
+
+#: modules/views/settings.php:20
+msgid "Use views counter on this site."
+msgstr "Включить счетчик просмотров на этом сайте."
+
+#: settings.php:8 settings.php:20
+msgid "real.Kit"
+msgstr ""
+
+#: settings.php:17
+msgid "Saved"
+msgstr "Сохранено"
+
+#: settings.php:34
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#~ msgid "Maintenance options"
+#~ msgstr "Настройки режима разработки"
+
+#~ msgid "Please reload the page (press F5)."
+#~ msgstr "Пожалуйста, перезагрузите страницу (можно нажать F5)"
+
+#~ msgid "Modals options"
+#~ msgstr "Настройки модальных окон"
+
+#~ msgid "Translit options"
+#~ msgstr "Настройки транслитерации"
+
+#~ msgid "views options"
+#~ msgstr "Настройки просмотров"
+
+#~ msgid "Donation"
+#~ msgstr "Благотворительность"
+
+#~ msgid "Open Modal"
+#~ msgstr "Открыть"

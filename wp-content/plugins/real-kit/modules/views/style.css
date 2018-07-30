@@ -1,0 +1,7 @@
+.realkit_views a {
+  display: none;
+  color: #A00;
+}
+.realkit_views:hover a {
+  display: block;
+}
