@@ -338,10 +338,10 @@ div.wsp24_border_bottom_none {
 }
 
 .button_consult {
-    position: absolute!important;
-    display: inline-block!important;
-    margin-top: -7%!important;
-    margin-left: 13%!important;
+	position: absolute!important;
+	display: inline-block!important;
+	margin-top: -7%!important;
+	margin-left: 13%!important;
 }
 
 .qodef-btn.qodef-btn-hover-animation:not(.qodef-btn-outline) {
@@ -492,6 +492,13 @@ span input.wpcf7-form-control.wpcf7-submit {
 }
 
 @media (max-width: 767px) {
+
+	a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
+    margin: -15% 0 0 5%!important;
+    top: 190px;
+    left: auto !important;
+}
+
 	[data-realmodal-target="#realmodal-7680"] {
 		padding: 0 !important;
 		bottom: 20px;
@@ -509,9 +516,6 @@ span input.wpcf7-form-control.wpcf7-submit {
 		padding: 0 !important;
 	}
 
-	.qodef-p-content a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
-		margin: -15% 0 0 !important;
-	}
 	.vc_row .vc_row, #wpcf7-f6781-p5002-o2 form.wpcf7-form {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
@@ -633,5 +637,11 @@ span input.wpcf7-form-control.wpcf7-submit {
 
 	.realmodal-window {
 		padding: 5px;
+	}
+}
+
+@media (max-width: 413px) {
+	.qodef-p-content a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
+		margin: -15% 0 0 !important;
 	}
 }
