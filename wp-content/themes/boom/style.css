@@ -490,14 +490,7 @@ span input.wpcf7-form-control.wpcf7-submit {
 		font-size: 16px !important
 	}
 }
-
 @media (max-width: 767px) {
-
-	a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
-    margin: -15% 0 0 5%!important;
-    top: 190px;
-    left: auto !important;
-}
 
 	[data-realmodal-target="#realmodal-7680"] {
 		padding: 0 !important;
@@ -602,6 +595,18 @@ span input.wpcf7-form-control.wpcf7-submit {
 	.wsp24_ td {
 		font-size: 10px;
 	}
+
+	.buttons_header a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1, .buttons_header a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_2 {
+		top: 190px !important;
+	}
+
+	.buttons_header a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
+		margin: -15% 0 0 3%!important;
+	}
+
+	.buttons_header .qodef-btn.qodef-btn-hover-animation:not(.qodef-btn-outline) {
+		left: auto !important;
+	}
 }
 
 @media (max-width: 500px) {
@@ -638,10 +643,12 @@ span input.wpcf7-form-control.wpcf7-submit {
 	.realmodal-window {
 		padding: 5px;
 	}
-}
 
-@media (max-width: 413px) {
-	.qodef-p-content a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
-		margin: -15% 0 0 !important;
+		.buttons_header a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1, .buttons_header a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_2 {
+		width: 60% !important;
 	}
+		.buttons_header a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
+			margin-left: 24px !important;
+			margin-bottom: 20px !important;	
+		}
 }
