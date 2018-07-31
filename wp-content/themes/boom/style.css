@@ -125,7 +125,7 @@ body {
 	list-style-position: outside!important;
 	font-size: 13px!important;
 	font-weight: 400!important;
-	line-height: 22px!important;
+	line-height: 17px!important;
 }
 .wsp24_ span.new_text {
 	font-family: Raleway,sans-serif;
@@ -136,7 +136,7 @@ body {
 	font-weight: 400 !important;
 }
 .wsp24-tableSEO{
-	padding: 10px 0;
+	padding: 0;
 	border-bottom: 1px solid #9a9a9a1a;
 }
 .wsp24_tableSEOBorder{
@@ -309,15 +309,114 @@ div.wsp24_border_bottom_none {
 /*Contact-form -7 */
 
 #respond input[type=email], #respond input[type=text], #respond textarea, .post-password-form input[type=password], .wpcf7-form-control.wpcf7-date, .wpcf7-form-control.wpcf7-number, .wpcf7-form-control.wpcf7-quiz, .wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-select_optgroup, .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-textarea {
-	    margin-bottom: 11px !important;
+	margin-bottom: 11px !important;
 }
 #respond input[type=email], #respond input[type=text], #respond textarea, .post-password-form input[type=password], .wpcf7-form-control.wpcf7-date, .wpcf7-form-control.wpcf7-number, .wpcf7-form-control.wpcf7-quiz, .wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-select_optgroup, .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-textarea {
-    padding: 13px 15px!important;
+	padding: 13px 15px!important;
 }
 [id^="popmake-"], [id*=" popmake-"] {
 	top: 20px !important;
 }
 
+.wsp24_ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .wsp24_ input.wpcf7-form-control.wpcf7-text, .wsp24_ select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, .wsp24_ select.wpcf7-form-control.wpcf7-select_optgroup.wpcf7-validates-as-required  {
+	padding: 10px 15px!important;
+	margin-bottom: 5px !important;
+}
+
+
+/*Real.Modal*/
+
+.button_class-wsp24 {
+	font-size: 16px;
+	line-height: 34px;
+	font-weight: 700;
+	color: #fff;
+	-webkit-transition: color .2s ease-out;
+	transition: color .2s ease-out;
+	background: none;
+	font-family: Raleway,sans-serif;
+}
+
+.button_consult {
+	position: absolute!important;
+	display: inline-block!important;
+	margin-top: -7%!important;
+	margin-left: 13%!important;
+}
+
+.qodef-btn.qodef-btn-hover-animation:not(.qodef-btn-outline) {
+	color: #fff !important;
+}
+#button_id.button_class {
+	background: 0 0;
+	margin: 0;
+	vertical-align: baseline;
+	outline: 0 !important;
+	border-color: #81d742 !important;
+	background-color: #81d742 !important;
+	display: inline-block;
+	position: relative;
+	outline: 0;
+	font-style: normal;
+	font-weight: 800;
+	font-family: inherit;
+	padding: 0 35px;
+	font-size: 13px;
+	line-height: 48px;
+	height: 48px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 2px solid #e6e6e6;
+	color: #fff;
+	background-color: transparent;
+	-webkit-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+	transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+	-webkit-box-sizing: initial;
+	-moz-box-sizing: initial;
+	box-sizing: initial;
+	cursor: pointer;
+}
+
+#button_id.button_class:hover {
+	color: #fff !important;
+}
+
+.qodef-mobile-header {
+	z-index: 100 !important;
+}
+
+#realmodal-7610 {
+	z-index: 999999999999999999999999999
+}
+.menu_button_wsp24 > a > span {
+	color: white !important;
+	background-color: red;
+	border-radius: 3px;
+	margin-right: 25px;
+}
+
+.custom-color-row .vc_column_container>.vc_column-inner>.wpb_wrapper {
+	height: 205px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+	margin-top: 15px !important;
+}
+
+span input.wpcf7-form-control.wpcf7-submit {
+	margin-top: 0px !important;
+}
+.wsp24_ button#button_id {
+	width: 25%;
+}
+
+.vk_block {
+	width: 50%;
+	float: left;
+}
 
 @media (max-width: 1399px) and (min-width: 1201px) {
 	.wsp24_height-200 {
@@ -333,10 +432,35 @@ div.wsp24_border_bottom_none {
 	.wsp24_title-page img, .wsp24_title-page .qodef-title-image {
 		height: inherit;
 	}
+	.qodef-mobile-header {
+		z-index: 101 !important;
+	}
+	.button_class-wsp24 {
+		background: none;
+		color: #8d8d8d;
+		line-height: 17px;
+		font-weight: normal;
+		font-size: 13px;
+		padding: 0;
+	}
+	.menu_button_wsp24 > a > span {
+		background: none;
+		color: #8d8d8d;
+		line-height: 17px;
+		font-weight: normal;
+		letter-spacing: 0;
+	}
 }
 
 
 @media (max-width: 991px) {
+	.wpcf7-captchar {
+		width: 100%;
+	}
+
+	.vk_block {
+		width: 100%;
+	}
 	.wsp24_block-with-img img {
 		width: 100%;
 	}
@@ -368,6 +492,34 @@ div.wsp24_border_bottom_none {
 }
 
 @media (max-width: 767px) {
+
+	a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
+    margin: -15% 0 0 5%!important;
+    top: 190px;
+    left: auto !important;
+}
+
+	[data-realmodal-target="#realmodal-7680"] {
+		padding: 0 !important;
+		bottom: 20px;
+	}
+
+	.realmodal-window {
+		width: 85%;
+	}
+
+	.wsp24_ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .wsp24_ input.wpcf7-form-control.wpcf7-text, .wsp24_ select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, .wsp24_ select.wpcf7-form-control.wpcf7-select_optgroup.wpcf7-validates-as-required {
+		padding: 5px 15px !important;
+	}
+
+	.qodef-btn {
+		padding: 0 !important;
+	}
+
+	.vc_row .vc_row, #wpcf7-f6781-p5002-o2 form.wpcf7-form {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
 	.wsp24_star {
 		left: 0; 
 	}
@@ -449,5 +601,47 @@ div.wsp24_border_bottom_none {
 	}
 	.wsp24_ td {
 		font-size: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.wpb_wrapper div#qodef-particles {
+		height: 550px !important;
+	}
+	.dslc-modules-section:not(.dslc-full), .wsp24_ .vc_row.wpb_row.vc_row-fluid.qodef-section {
+		padding-left: 15px!important;
+		padding-right: 15px!important;
+	}
+
+	.wsp24_ button#button_id {
+		width: 50%;
+	}
+
+	input.wpcf7-form-control.wpcf7-submit {
+		height: 40px!important;
+		line-height: 35px!important;
+	}
+	div.wpcf7 .ajax-loader {
+		display: none;
+	}
+
+	.qodef-two-columns-50-50 .qodef-column:last-child {
+		padding: 0 !important;
+	}
+
+	.wpcf7-form .wsp24_ > div > p {
+		font-size: 6px !important;
+		line-height: 6px !important;
+		margin: 5px !important;
+	}
+
+	.realmodal-window {
+		padding: 5px;
+	}
+}
+
+@media (max-width: 413px) {
+	.qodef-p-content a.qodef-btn.qodef-btn-large.qodef-btn-solid.button_1 {
+		margin: -15% 0 0 !important;
 	}
 }
