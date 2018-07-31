@@ -1,0 +1,19 @@
+th.column-thumb {
+  width: 90px;
+}
+img.taxonomy-thumb {
+  border: 1px solid silver;
+  max-width: 48px;
+  max-height: 48px;
+}
+img.taxonomy-thumb.edit {
+  max-width: 100px;
+  max-height: 100px;
+}
+.form-field label img.taxonomy-thumb {
+  margin-top: 10px;
+}
+.thumb.column-thumb span {
+  width: 48px;
+  height: 48px;
+}

@@ -1,0 +1,17 @@
+.donate_block {
+  margin: 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid silver;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+.donate_block p {
+  margin-top: 0;
+}
+.donate_block th {
+  padding-right: 10px;
+  text-align: left;
+}
