@@ -1359,7 +1359,7 @@
             "require-dev": {
                 "mikey179/vfsstream": "^1.6",
                 "ofbeaton/console-tester": "^1.1",
-                "site5/phantoman": "^1.1"
+                "site5/phantoman": "2.5.0"
             },
             "bin": [
                 "wpcept"
